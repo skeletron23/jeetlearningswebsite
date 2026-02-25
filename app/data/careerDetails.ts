@@ -18,13 +18,15 @@ export const careerDetails: Record<string, CareerDetail> = {
     title: "Actuarial Science",
     description: "Analyze financial risks using mathematics, statistics, and financial theories",
     overview:
-      "Actuaries are professionals who analyze financial risks using mathematics, statistics, and financial theories. They work primarily in insurance, pension funds, and investment firms to assess the likelihood of future events, especially those with financial implications.",
+      "Actuaries are professionals who analyze financial risks using mathematics, statistics, and financial theories. They work primarily in insurance, pension funds, and investment firms to assess the likelihood of future events, especially those with financial implications. In India, actuaries are officially regulated by the Institute of Actuaries of India (IAI) under the Actuaries Act, 2006. India currently has only 500–700 Fellow actuaries, but the government targets 25,000 by 2030 — a massive career opportunity.",
     eligibility: [
       "12th pass with Mathematics",
       "Bachelor's degree in any stream",
       "Strong analytical skills",
+      "Patience to qualify through demanding professional exams spanning 6–10 years",
+      "Sharp attention to detail and strong ethical standards",
     ],
-    duration: "3-5 years (Bachelor's) + Actuarial exams",
+    duration: "3-5 years (Bachelor's) + 6-10 years for professional exams",
     salary: "₹6-15 LPA (Entry level) | ₹20-50+ LPA (Experienced)",
     skills: [
       "Mathematical modeling",
@@ -32,14 +34,19 @@ export const careerDetails: Record<string, CareerDetail> = {
       "Risk assessment",
       "Financial analysis",
       "Problem-solving",
+      "Excel, Python, R, SQL",
+      "Actuarial software proficiency",
+      "Communication and presentation skills",
     ],
-    subjects: ["Mathematics", "Statistics", "Economics", "Finance", "Probability"],
+    subjects: ["Mathematics", "Statistics", "Economics", "Finance", "Probability", "Calculus"],
     colleges: [
       "Delhi University",
       "Mumbai University",
       "IIT Delhi",
       "Symbiosis Pune",
       "Christ University",
+      "Banaras Hindu University",
+      "Jadavpur University",
     ],
     jobRoles: [
       "Actuary",
@@ -47,6 +54,8 @@ export const careerDetails: Record<string, CareerDetail> = {
       "Insurance Underwriter",
       "Pension Consultant",
       "Investment Analyst",
+      "Pricing Analyst",
+      "Compliance Officer",
     ],
     companies: [
       "LIC",
@@ -55,9 +64,13 @@ export const careerDetails: Record<string, CareerDetail> = {
       "Bajaj Allianz",
       "Deloitte",
       "EY",
+      "PwC",
+      "KPMG",
+      "Aon",
+      "Willis Towers Watson",
     ],
     scope:
-      "High demand in insurance and financial sectors with excellent growth prospects globally",
+      "High demand in insurance and financial sectors with excellent growth prospects globally. India's actuarial market is rapidly expanding with government initiatives targeting 25,000 actuaries by 2030.",
   },
   banking_and_related_services: {
     title: "Banking and Related Services",
