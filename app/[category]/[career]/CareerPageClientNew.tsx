@@ -1,17 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { TrendingUp, Clock, Award, MapPin, Users, ArrowRight, Check, Target, Rocket, ChevronLeft, ChevronRight } from "lucide-react";
+import { formatCareerName } from "@/app/data/careers";
+import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
+import StackingSection from "@/app/components/StackingSection";
 import { CareerDetail } from "@/app/data/careerDetails";
+import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { FloatingNavbar } from "@/app/components/FloatingNavbar";
-import { ActuarialFuturisticHero } from "@/app/components/ActuarialFuturisticHero";
-import { ActuarialCompleteGuide } from "@/app/components/ActuarialCompleteGuide";
+import { ActuarialScienceHero } from "@/app/components/ActuarialScienceHero";
+import { ActuarialPathAccordion } from "@/app/components/ActuarialPathAccordion";
 import { ActuarialTimeline } from "@/app/components/ActuarialTimeline";
 import { ActuarialComparison } from "@/app/components/ActuarialComparison";
 import { ActuarialSkillsShowcase } from "@/app/components/ActuarialSkillsShowcase";
-import { TestimonialCarousel } from "@/app/components/TestimonialCarousel";
 import { useState } from "react";
 
 interface CareerPageClientProps {
@@ -24,6 +27,7 @@ interface CareerPageClientProps {
 }
 
 const CANAM_RED = "#C20000";
+const CANAM_RED_LINE = "#DA1313";
 
 export function CareerPageClient({
   category,
@@ -33,6 +37,7 @@ export function CareerPageClient({
   careerDetail,
   categoryData,
 }: CareerPageClientProps) {
+  const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const videos = [
@@ -51,112 +56,82 @@ export function CareerPageClient({
   };
 
   // Actuarial Science specific data
-  const actuarialGuideItems = [
+  const actuarialPathItems = [
     {
       id: "1",
       title: "What is Actuarial Science?",
       icon: "∑",
-      description: "Understanding the profession and massive career opportunity in India",
+      description: "Understanding the profession and opportunities",
       color: "#C20000",
       content: [
-        "Actuaries use mathematics, statistics, and probability to measure and manage financial risk",
-        "They predict future events like insurance claims, pension costs, and investment risks using data models",
-        "In India, actuaries are officially regulated by the Institute of Actuaries of India (IAI) under the Actuaries Act, 2006",
-        "India currently has only 500–700 Fellow actuaries, but the government targets 25,000 by 2030",
-      ],
-      highlights: [
-        "Massive career opportunity with government backing",
-        "Only 500-700 actuaries in India currently",
-        "Target of 25,000 actuaries by 2030",
-        "Officially regulated profession",
+        "Mathematics: Actuaries use maths, statistics, and probability to measure and manage financial risk.",
+        "Prediction: They predict future events like insurance claims, pension costs, and investment risks using data models.",
+        "Regulation: In India, actuaries are officially regulated by the Institute of Actuaries of India (IAI) under the Actuaries Act, 2006.",
+        "Opportunity: India currently has only 500–700 Fellow actuaries, but the government targets 25,000 by 2030 — a massive career opportunity.",
       ],
     },
     {
       id: "2",
       title: "Who Should Consider This Career?",
       icon: "🧮",
-      description: "Essential traits and skills required to succeed as an actuary",
+      description: "Essential traits and skills required",
       color: "#DA1313",
       content: [
-        "Strong love for probability, logical reasoning, and numerical problem-solving",
-        "Patience to qualify through demanding professional exams spanning 6–10 years",
-        "Sharp attention to detail, analytical thinking, and strong ethical standards",
-        "Ability to explain complex actuarial data to non-technical audiences clearly",
-        "Comfort with Excel, Python, R, SQL, and specialised actuarial software",
-      ],
-      highlights: [
-        "Mathematics and analytical mindset essential",
-        "Long-term commitment required (6-10 years)",
-        "Strong communication skills needed",
-        "Technical proficiency with programming languages",
+        "Mathematics: Strong love for probability, logical reasoning, and numerical problem-solving.",
+        "Perseverance: Patience to qualify through demanding professional exams spanning 6–10 years.",
+        "Integrity: Sharp attention to detail, analytical thinking, and strong ethical standards.",
+        "Communication: Ability to explain complex actuarial data to non-technical audiences clearly.",
+        "Technology: Comfort with Excel, Python, R, SQL, and specialised actuarial software.",
       ],
     },
     {
       id: "3",
       title: "Key Responsibilities & Work Process",
       icon: "📊",
-      description: "What actuaries do daily and their core responsibilities",
+      description: "What actuaries do daily",
       color: "#E70000",
       content: [
-        "Identify the business problem and determine what solution is actually needed",
-        "Use data, mathematics, and computers to find accurate solutions",
-        "Fix correct insurance prices and calculate future savings accurately",
-        "Study and manage risks in insurance and investment portfolios",
-        "Follow all government rules and regulatory guidelines strictly",
-        "Explain results and updated plans clearly to managers and officials",
-      ],
-      highlights: [
-        "Problem-solving and analysis are core activities",
-        "Risk management across multiple sectors",
-        "Regulatory compliance is critical",
-        "Communication with stakeholders essential",
+        "Understanding: Identify the business problem and what solution is actually needed.",
+        "Analysis: Use data, mathematics, and computers to find accurate solutions.",
+        "Pricing: Fix correct insurance prices and calculate future savings accurately.",
+        "Risk: Study and manage risks in insurance and investment portfolios.",
+        "Compliance: Follow all government rules and regulatory guidelines strictly.",
+        "Reporting: Explain results and updated plans clearly to managers and officials.",
       ],
     },
     {
       id: "4",
       title: "What Will It Cost?",
       icon: "💰",
-      description: "Financial investment breakdown for your actuarial journey",
+      description: "Financial investment breakdown",
       color: "#B30000",
       content: [
-        "ACET entrance exam is free with ₹1,500 annual student membership fee",
-        "Separate fees apply for each core and advanced paper",
-        "Study materials and optional coaching add extra expenses",
-        "Government colleges are cheaper; private universities cost significantly more",
-        "Overall investment ranges between ₹2 to ₹5 lakhs over 6–10 years",
-      ],
-      highlights: [
-        "Free ACET entrance exam",
-        "₹1,500 annual membership fee",
-        "Total investment: ₹2-5 lakhs over 6-10 years",
-        "Government colleges offer cost savings",
+        "ACET: Free entrance exam with ₹1,500 annual student membership fee.",
+        "Exams: Separate fees apply for each core and advanced paper.",
+        "Coaching: Study materials and optional coaching add extra expenses.",
+        "Degree: Government colleges are cheaper; private universities cost significantly more.",
+        "Total: Overall investment ranges between ₹2 to ₹5 lakhs over 6–10 years.",
       ],
     },
     {
       id: "5",
       title: "Scholarship Opportunities",
       icon: "🎓",
-      description: "Multiple financial aid options available for deserving students",
+      description: "Financial aid available",
       color: "#9B0000",
       content: [
-        "Central Sector Scholarship supports high-performing Class 12 students from low-income families",
-        "Post-Matric Scholarships available for SC, ST, OBC, and minority students",
-        "Merit-cum-Means and NMMS scholarships support deserving economically weaker students",
-        "AICTE Pragati and Saksham schemes support technical and professional course students",
-        "State governments and universities offer additional merit and need-based financial aid",
-      ],
-      highlights: [
-        "Central Sector Scholarship for top performers",
-        "Community-based scholarships available",
-        "Merit-cum-Means support for economically weaker students",
-        "AICTE schemes for technical students",
+        "Central: Central Sector Scholarship supports high-performing Class 12 students from low-income families.",
+        "Community: Post-Matric Scholarships available for SC, ST, OBC, and minority students.",
+        "Merit: Merit-cum-Means and NMMS scholarships support deserving economically weaker students.",
+        "AICTE: Pragati and Saksham schemes support technical and professional course students.",
+        "State: State governments and universities offer additional merit and need-based financial aid.",
       ],
     },
     {
       id: "6",
       title: "Key Challenges",
       icon: "⚠️",
-      description: "Realistic expectations about the actuarial career path",
+      description: "Realistic expectations",
       color: "#C20000",
       content: [
         "Extremely difficult exams with high failure rates (30–40% pass rate at advanced levels)",
@@ -164,18 +139,12 @@ export function CareerPageClient({
         "Limited awareness among school counsellors and parents in India",
         "Niche entry-level job market; most roles concentrated in Mumbai and Gurgaon",
       ],
-      highlights: [
-        "High exam difficulty with 30-40% pass rates",
-        "Requires 6-10 years of dedicated study",
-        "Limited job market in early career",
-        "Concentrated opportunities in major cities",
-      ],
     },
     {
       id: "7",
       title: "Start Now (Class 9–12)",
       icon: "📚",
-      description: "Your roadmap to becoming an actuary starting from school",
+      description: "Your roadmap to becoming an actuary",
       color: "#DA1313",
       content: [
         "Master probability, statistics, and calculus in school",
@@ -183,12 +152,6 @@ export function CareerPageClient({
         "Appear for the ACET in Class 12 (registration is free)",
         "Participate in the IAI Actuarial Olympiad and Maths competitions",
         "Explore free courses on Coursera, edX, and NPTEL",
-      ],
-      highlights: [
-        "Focus on mathematics and statistics in school",
-        "Learn programming basics early",
-        "Free ACET registration in Class 12",
-        "Participate in competitions and olympiads",
       ],
     },
   ];
@@ -247,7 +210,7 @@ export function CareerPageClient({
   const comparisonData = [
     {
       category: "Salary Growth",
-      icon: <span className="text-xl">📈</span>,
+      icon: <TrendingUp className="w-6 h-6" style={{ color: CANAM_RED }} />,
       items: [
         { label: "Entry Level", value: "₹6-15 LPA", highlight: false },
         { label: "Mid-Career", value: "₹20-35 LPA", highlight: true },
@@ -256,7 +219,7 @@ export function CareerPageClient({
     },
     {
       category: "Job Opportunities",
-      icon: <span className="text-xl">👥</span>,
+      icon: <Users className="w-6 h-6" style={{ color: CANAM_RED }} />,
       items: [
         { label: "Insurance", value: "High", highlight: true },
         { label: "Pensions", value: "Growing", highlight: false },
@@ -265,7 +228,7 @@ export function CareerPageClient({
     },
     {
       category: "Work-Life Balance",
-      icon: <span className="text-xl">⏰</span>,
+      icon: <Clock className="w-6 h-6" style={{ color: CANAM_RED }} />,
       items: [
         { label: "Flexibility", value: "Good", highlight: false },
         { label: "Remote Work", value: "Available", highlight: true },
@@ -274,7 +237,7 @@ export function CareerPageClient({
     },
     {
       category: "Global Demand",
-      icon: <span className="text-xl">🌍</span>,
+      icon: <Award className="w-6 h-6" style={{ color: CANAM_RED }} />,
       items: [
         { label: "India", value: "Growing", highlight: true },
         { label: "Abroad", value: "High", highlight: false },
@@ -308,13 +271,26 @@ export function CareerPageClient({
 
   return (
     <div className="min-h-screen bg-white">
-      <FloatingNavbar />
+      <Navbar />
 
-      {/* Actuarial Science Futuristic Hero */}
-      {career === "actuarial_science" && <ActuarialFuturisticHero />}
+      {/* Breadcrumb */}
+      <div className="border-b border-[#EEEEEE] backdrop-blur-sm relative" style={{ background: "rgba(255, 255, 255, 0.8)" }}>
+        <div className="max-w-[1090px] mx-auto px-4 sm:px-6 py-3 relative z-10">
+          <div className="flex items-center gap-2 font-poppins text-sm">
+            <Link href="/" className="text-[#757575] hover:text-[#C20000] transition-colors">Home</Link>
+            <span className="text-[#757575]">/</span>
+            <Link href={`/${category}`} className="text-[#757575] hover:text-[#C20000] transition-colors">{categoryName}</Link>
+            <span className="text-[#757575]">/</span>
+            <span className="font-medium" style={{ color: CANAM_RED }}>{careerName}</span>
+          </div>
+        </div>
+      </div>
 
-      {/* Complete Guide to Actuarial Science - MAIN CONTENT */}
-      {career === "actuarial_science" && <ActuarialCompleteGuide sections={actuarialGuideItems} />}
+      {/* Actuarial Science Custom Hero */}
+      {career === "actuarial_science" && <ActuarialScienceHero />}
+
+      {/* Actuarial Path Accordion */}
+      {career === "actuarial_science" && <ActuarialPathAccordion items={actuarialPathItems} />}
 
       {/* Actuarial Timeline */}
       {career === "actuarial_science" && <ActuarialTimeline steps={timelineSteps} />}
@@ -324,38 +300,6 @@ export function CareerPageClient({
 
       {/* Actuarial Skills Showcase */}
       {career === "actuarial_science" && <ActuarialSkillsShowcase categories={skillsCategories} />}
-
-      {/* Testimonial Carousel */}
-      {career === "actuarial_science" && (
-        <TestimonialCarousel
-          testimonials={[
-            {
-              id: "1",
-              name: "Anshul Sharma",
-              title: "Senior Actuary",
-              location: "Mumbai, India",
-              image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
-              quote: "The guidance I received was instrumental in my journey to becoming a Fellow Actuary. The structured approach and mentorship made all the difference.",
-            },
-            {
-              id: "2",
-              name: "Neha Patel",
-              title: "Risk Analyst",
-              location: "Bangalore, India",
-              image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop",
-              quote: "I went from being unsure about my career path to landing my dream job at a top insurance company. The comprehensive curriculum was exactly what I needed.",
-            },
-            {
-              id: "3",
-              name: "Shravan Kumar",
-              title: "Pension Specialist",
-              location: "Delhi, India",
-              image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop",
-              quote: "The practical insights and real-world examples helped me understand actuarial science beyond textbooks. Highly recommended for anyone serious about this career.",
-            },
-          ]}
-        />
-      )}
 
       {/* Video Carousel Section */}
       <section className="py-16 border-t border-[#EEEEEE] relative overflow-hidden" style={{ background: "rgba(238,238,238,0.50)" }}>
