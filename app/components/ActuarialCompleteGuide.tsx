@@ -1,7 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { ArrowRight, Star, CheckCircle2 } from "lucide-react";
+import { ActuarialIntroVisual } from "./ActuarialIntroVisual";
+import { ActuarialPathwayVisual } from "./ActuarialPathwayVisual";
+import { ActuarialInstitutionsVisual } from "./ActuarialInstitutionsVisual";
 
 const PRIMARY_BLUE = "#2563eb";
 const ACCENT_GOLD = "#f59e0b";
@@ -21,10 +23,10 @@ interface ActuarialCompleteGuideProps {
 }
 
 export function ActuarialCompleteGuide({ sections }: ActuarialCompleteGuideProps) {
-  const images = [
-    "/acturial/image copy.png",
-    "/acturial/image copy 2.png",
-    "/acturial/image copy 3.png",
+  const visualComponents = [
+    <ActuarialIntroVisual key="0" />,
+    <ActuarialPathwayVisual key="1" />,
+    <ActuarialInstitutionsVisual key="2" />,
   ];
 
   // Alternating layout patterns
@@ -64,19 +66,13 @@ export function ActuarialCompleteGuide({ sections }: ActuarialCompleteGuideProps
                 <section className="py-16 md:py-20 px-4 md:px-6 border-b border-slate-200 relative group bg-white">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-50/50 to-blue-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                   <div className="max-w-7xl mx-auto relative">
-                    <div className={`grid ${idx < images.length ? "lg:grid-cols-2" : "lg:grid-cols-1 max-w-4xl mx-auto"} gap-10 md:gap-16 items-center`}>
-                      {/* Image */}
-                      {idx < images.length && (
+                    <div className={`grid ${idx < visualComponents.length ? "lg:grid-cols-2" : "lg:grid-cols-1 max-w-4xl mx-auto"} gap-10 md:gap-16 items-center`}>
+                      {/* Visual Component */}
+                      {idx < visualComponents.length && (
                         <div className={`${isImageLeft ? "order-1" : "order-2"} relative`}>
                           <div className="absolute inset-0 bg-gradient-to-tr from-blue-200 to-indigo-200 rounded-3xl transform rotate-3 scale-105 shadow-xl transition-transform duration-500 group-hover:rotate-6" />
-                          <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-white">
-                            <Image
-                              src={images[idx]}
-                              alt={section.title}
-                              width={600}
-                              height={400}
-                              className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                            />
+                          <div className="relative w-full rounded-2xl shadow-lg bg-white transform hover:scale-105 transition-transform duration-700">
+                            {visualComponents[idx]}
                           </div>
                         </div>
                       )}
@@ -151,17 +147,11 @@ export function ActuarialCompleteGuide({ sections }: ActuarialCompleteGuideProps
                       ))}
                     </div>
 
-                    {/* Image Below */}
-                    {idx < images.length && (
+                    {/* Visual Component Below */}
+                    {idx < visualComponents.length && (
                       <div className="mt-16 md:mt-24">
-                        <div className="relative w-full rounded-[2rem] overflow-hidden border border-white shadow-2xl group">
-                          <Image
-                            src={images[idx]}
-                            alt={section.title}
-                            width={1200}
-                            height={500}
-                            className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-1000"
-                          />
+                        <div className="relative w-full rounded-[2rem] shadow-2xl group transition-transform duration-1000 bg-white">
+                          {visualComponents[idx]}
                         </div>
                       </div>
                     )}
@@ -210,17 +200,11 @@ export function ActuarialCompleteGuide({ sections }: ActuarialCompleteGuideProps
                       </div>
                     </div>
 
-                    {/* Full Width Image */}
-                    {idx < images.length && (
+                    {/* Full Width Visual Component */}
+                    {idx < visualComponents.length && (
                       <div className="mt-16 md:mt-24">
-                        <div className="relative w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group">
-                          <Image
-                            src={images[idx]}
-                            alt={section.title}
-                            width={1200}
-                            height={500}
-                            className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-1000"
-                          />
+                        <div className="relative w-full rounded-[2rem] shadow-2xl group transition-transform duration-1000 bg-white">
+                          {visualComponents[idx]}
                         </div>
                       </div>
                     )}
