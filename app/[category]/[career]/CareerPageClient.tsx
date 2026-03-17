@@ -4,9 +4,12 @@ import { useState } from "react";
 import { CareerDetail } from "@/app/data/careerDetails";
 import Footer from "@/app/components/Footer";
 import { FloatingNavbar } from "@/app/components/FloatingNavbar";
+import { SidebarNav } from "@/app/components/SidebarNav";
 import { CareerHero } from "@/app/components/CareerHero";
 import { CareerCompleteGuide } from "@/app/components/CareerCompleteGuide";
+import { CostBreakdown } from "@/app/components/CostBreakdown";
 import { getCareerPageData } from "@/app/data/careerPageData";
+import { allCareerCosts } from "@/app/data/costBreakdownData";
 
 interface CareerPageClientProps {
   category: string;
@@ -43,23 +46,47 @@ export function CareerPageClient({
   // data-driven for every career (including actuarial_science)
   const pageData = getCareerPageData(career);
 
+  const navItems = [
+    { id: "hero", label: "Overview", icon: "🎯" },
+    { id: "guide", label: "Complete Guide", icon: "📚" },
+    { id: "cost", label: "Cost Breakdown", icon: "💰" },
+    { id: "videos", label: "Videos", icon: "🎬" },
+    { id: "cta", label: "Get Started", icon: "🚀" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
+      <SidebarNav items={navItems} />
       <FloatingNavbar />
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      {pageData && <CareerHero data={pageData} />}
+      <div id="hero">
+        {pageData && <CareerHero data={pageData} />}
+      </div>
 
       {/* ── Complete Guide (7 unique carousel styles) ────────────── */}
-      {pageData && (
-        <CareerCompleteGuide
-          careerName={careerName}
-          sections={pageData.guideSections}
-        />
-      )}
+      <div id="guide">
+        {pageData && (
+          <CareerCompleteGuide
+            careerName={careerName}
+            sections={pageData.guideSections}
+          />
+        )}
+      </div>
+
+      {/* ── Cost Breakdown ────────────────────────────────────────── */}
+      <div id="cost">
+        {allCareerCosts[career] && (
+          <CostBreakdown
+            title="What Will It Cost?"
+            subtitle="Complete financial breakdown for your career journey"
+            items={allCareerCosts[career]}
+          />
+        )}
+      </div>
 
       {/* ── Video Carousel ────────────────────────────────────────── */}
-      <section className="py-10 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 bg-slate-50 border-t border-slate-200">
+      <section id="videos" className="py-10 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 md:mb-8 lg:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-2 md:mb-4 text-slate-800">
@@ -127,7 +154,7 @@ export function CareerPageClient({
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────── */}
-      <section className="relative py-12 md:py-16 lg:py-24 px-4 sm:px-6 md:px-8 overflow-hidden">
+      <section id="cta" className="relative py-12 md:py-16 lg:py-24 px-4 sm:px-6 md:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600" />
         <div className="absolute top-0 right-0 w-64 sm:w-80 md:w-96 lg:w-[400px] h-64 sm:h-80 md:h-96 lg:h-[400px] bg-blue-400/30 blur-[80px] md:blur-[100px] rounded-full" />
 

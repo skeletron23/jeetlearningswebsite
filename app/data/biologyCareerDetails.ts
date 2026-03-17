@@ -14,6 +14,7 @@ export interface BiologyCareerDetail {
   scholarships: string[];
   challenges: string[];
   startNow: string[];
+  imageUrl?: string;
 }
 
 export const biologyCareerDetails: Record<string, BiologyCareerDetail> = {

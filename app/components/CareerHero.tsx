@@ -1,6 +1,8 @@
 "use client";
 
 import { CareerPageData } from "@/app/data/careerPageData";
+import { DynamicIcon } from "./DynamicIcon";
+import { BarChart3 } from "lucide-react";
 
 const PRIMARY_BLUE = "#1E40AF";
 const ACCENT_GOLD = "#F59E0B";
@@ -12,12 +14,12 @@ interface CareerHeroProps {
 export function CareerHero({ data }: CareerHeroProps) {
   return (
     <div className="relative w-full overflow-hidden pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-10 sm:pb-12 md:pb-16 lg:pb-20">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50" />
+      {/* Bright Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50" />
 
-      {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-40 sm:w-64 md:w-80 lg:w-96 h-40 sm:h-64 md:h-80 lg:h-96 bg-blue-200 rounded-full opacity-10 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-32 sm:w-48 md:w-64 lg:w-80 h-32 sm:h-48 md:h-64 lg:h-80 bg-amber-200 rounded-full opacity-10 blur-3xl" />
+      {/* Decorative Elements - Bright Colors */}
+      <div className="absolute top-0 right-0 w-40 sm:w-64 md:w-80 lg:w-96 h-40 sm:h-64 md:h-80 lg:h-96 bg-blue-300 rounded-full opacity-15 blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-32 sm:w-48 md:w-64 lg:w-80 h-32 sm:h-48 md:h-64 lg:h-80 bg-purple-300 rounded-full opacity-15 blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
@@ -25,8 +27,8 @@ export function CareerHero({ data }: CareerHeroProps) {
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
             {/* Badge */}
             <div className="inline-block">
-              <span className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-amber-700 bg-amber-100">
-                {data.badge}
+              <span className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-blue-700 bg-blue-100 border border-blue-200 flex items-center gap-2">
+                <BarChart3 className="w-4 h-4" /> {data.badge.replace(/^[^\s]+\s/, "")}
               </span>
             </div>
 
@@ -35,7 +37,7 @@ export function CareerHero({ data }: CareerHeroProps) {
               <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-slate-900 mb-3 sm:mb-4 md:mb-6 leading-tight">
                 {data.heading}
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 leading-relaxed font-medium">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed font-medium">
                 {data.subheading}
               </p>
             </div>
@@ -48,10 +50,12 @@ export function CareerHero({ data }: CareerHeroProps) {
               {data.whyCards.map((card, idx) => (
                 <div
                   key={idx}
-                  className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition"
-                  style={{ borderLeft: `4px solid ${card.borderColor}` }}
+                  className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition border-l-4"
+                  style={{ borderLeftColor: card.borderColor }}
                 >
-                  <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">{card.icon}</div>
+                  <div className="flex-shrink-0" style={{ color: card.borderColor }}>
+                    <DynamicIcon name={card.icon} className="w-6 h-6 sm:w-7 sm:h-7" />
+                  </div>
                   <div className="min-w-0">
                     <p className="font-semibold text-xs sm:text-sm md:text-base text-slate-900">{card.title}</p>
                     <p className="text-xs text-slate-600">{card.description}</p>
@@ -63,13 +67,13 @@ export function CareerHero({ data }: CareerHeroProps) {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 pt-2 sm:pt-3 md:pt-4">
               <button
-                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base text-white transition-all hover:shadow-lg hover:scale-105"
+                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base text-white transition-all hover:shadow-lg hover:scale-105 shadow-md"
                 style={{ background: PRIMARY_BLUE }}
               >
                 Explore Career Path
               </button>
               <button
-                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base border-2 transition-all hover:bg-blue-50"
+                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base border-2 transition-all hover:bg-blue-50 shadow-sm"
                 style={{ borderColor: PRIMARY_BLUE, color: PRIMARY_BLUE }}
               >
                 Watch Video Guide
@@ -91,7 +95,7 @@ export function CareerHero({ data }: CareerHeroProps) {
                 {data.quickFacts.map((fact, idx) => (
                   <div key={idx} className="flex items-center gap-2 sm:gap-3 md:gap-4">
                     <div
-                      className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 rounded-full flex items-center justify-center text-sm sm:text-lg md:text-xl font-bold flex-shrink-0 ${fact.color}`}
+                      className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 rounded-full flex items-center justify-center text-sm sm:text-lg md:text-xl font-bold flex-shrink-0 text-white ${fact.color}`}
                     >
                       {idx + 1}
                     </div>

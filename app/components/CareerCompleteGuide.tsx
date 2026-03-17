@@ -17,66 +17,157 @@ interface Props {
   sections: CareerGuideSection[];
 }
 
-// ─── 1. HORIZONTAL SCROLL FLIP-ESQUE INFO CARDS ──────────────────
+// ─── 1. CREATIVE CAROUSEL INFO CARDS ──────────────────────────────
 function SectionWhat({ section }: { section: CareerGuideSection }) {
   const [active, setActive] = useState(0);
-  return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-950 to-indigo-900 overflow-hidden">
-      <div className="max-w-6xl mx-auto">
-        <SectionHeader section={section} light />
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-        {/* big card display */}
-        <div className="relative flex flex-col lg:flex-row gap-6 items-stretch">
-          {/* left: selector list */}
-          <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 lg:w-56 flex-shrink-0">
+  const handleNext = () => {
+    const newIndex = (active + 1) % section.content.length;
+    setActive(newIndex);
+    scrollToCard(newIndex);
+  };
+
+  const handlePrev = () => {
+    const newIndex = (active - 1 + section.content.length) % section.content.length;
+    setActive(newIndex);
+    scrollToCard(newIndex);
+  };
+
+  const scrollToCard = (index: number) => {
+    if (scrollRef.current) {
+      const cardWidth = 280 + 16; // card width + gap
+      scrollRef.current.scrollTo({
+        left: index * cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const colors = [BLUE, GOLD, GREEN, INDIGO, ROSE, TEAL];
+
+  return (
+    <section className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-hidden border-b border-blue-200">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader section={section} light={false} />
+
+        {/* carousel container */}
+        <div className="relative">
+          {/* cards carousel */}
+          <div ref={scrollRef} className="flex gap-4 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory scroll-smooth">
             {section.content.map((pt, i) => {
-              const first = pt.split(":")[0];
+              const title = pt.split(":")[0];
+              const content = pt.includes(":") ? pt.slice(pt.indexOf(":") + 1).trim() : pt;
+              const color = colors[i % colors.length];
+
               return (
-                <button
+                <div
                   key={i}
-                  onClick={() => setActive(i)}
-                  className="flex-shrink-0 px-4 py-3 rounded-xl text-left text-sm font-semibold transition-all duration-300"
+                  onClick={() => {
+                    setActive(i);
+                    scrollToCard(i);
+                  }}
+                  className={`snap-center flex-shrink-0 rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-500 shadow-lg hover:shadow-2xl transform ${
+                    active === i ? "scale-100 ring-2" : "scale-95 opacity-60 hover:opacity-80"
+                  }`}
                   style={{
-                    background: active === i ? GOLD : "rgba(255,255,255,0.08)",
-                    color:      active === i ? "#1e293b" : "rgba(255,255,255,0.7)",
-                    borderLeft: active === i ? `4px solid ${GOLD}` : "4px solid transparent",
+                    width: "280px",
+                    minHeight: "320px",
+                    background: `linear-gradient(135deg, ${color}15, ${color}05)`,
+                    border: active === i ? `3px solid ${color}` : `2px solid ${color}40`,
+                    ringColor: color,
                   }}
                 >
-                  {first}
-                </button>
+                  {/* card header */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-md"
+                      style={{ background: `linear-gradient(135deg, ${color}, ${color}dd)` }}
+                    >
+                      {section.icon}
+                    </div>
+                    <div
+                      className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-black"
+                      style={{ background: color }}
+                    >
+                      {i + 1}
+                    </div>
+                  </div>
+
+                  {/* card content */}
+                  <h3 className="text-lg md:text-xl font-black mb-3" style={{ color }}>
+                    {title}
+                  </h3>
+                  <p className="text-slate-700 text-sm md:text-base leading-relaxed font-medium line-clamp-4">
+                    {content}
+                  </p>
+
+                  {/* card footer */}
+                  <div className="mt-6 pt-4 border-t" style={{ borderColor: `${color}30` }}>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full" style={{ background: color }} />
+                      <p className="text-xs font-semibold text-slate-600">
+                        {active === i ? "Currently viewing" : "Click to view"}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               );
             })}
           </div>
 
-          {/* right: big content panel */}
-          <div
-            className="flex-1 rounded-2xl p-8 flex flex-col justify-between"
-            style={{
-              background: "rgba(255,255,255,0.07)",
-              border: "1px solid rgba(255,255,255,0.15)",
-              backdropFilter: "blur(12px)",
-              minHeight: "220px",
-            }}
-          >
-            <span className="text-5xl mb-4 block">{section.icon}</span>
-            <p className="text-white text-lg leading-relaxed font-medium">
-              {section.content[active]}
-            </p>
-            <div className="mt-6 flex gap-2">
-              {section.content.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className="rounded-full transition-all duration-300"
-                  style={{
-                    width: active === i ? "28px" : "10px",
-                    height: "10px",
-                    background: active === i ? GOLD : "rgba(255,255,255,0.3)",
-                  }}
-                />
-              ))}
-            </div>
+          {/* navigation buttons */}
+          <div className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10">
+            <button
+              onClick={handlePrev}
+              disabled={false}
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl"
+              style={{
+                background: BLUE,
+                color: "white",
+              }}
+            >
+              <span className="text-xl md:text-2xl font-black">←</span>
+            </button>
           </div>
+
+          <div className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-10">
+            <button
+              onClick={handleNext}
+              disabled={false}
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl"
+              style={{
+                background: BLUE,
+                color: "white",
+              }}
+            >
+              <span className="text-xl md:text-2xl font-black">→</span>
+            </button>
+          </div>
+        </div>
+
+        {/* progress indicators */}
+        <div className="mt-8 flex justify-center items-center gap-3">
+          <div className="flex gap-2">
+            {section.content.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setActive(i);
+                  scrollToCard(i);
+                }}
+                className="rounded-full transition-all duration-300 hover:scale-125"
+                style={{
+                  width: active === i ? "32px" : "10px",
+                  height: "10px",
+                  background: active === i ? BLUE : "#CBD5E1",
+                }}
+              />
+            ))}
+          </div>
+          <span className="text-xs md:text-sm font-semibold text-slate-600 ml-4">
+            {active + 1} / {section.content.length}
+          </span>
         </div>
       </div>
     </section>
@@ -88,19 +179,19 @@ function SectionWho({ section }: { section: CareerGuideSection }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const icons = ["🧠", "⏳", "🔬", "💬", "💻", "📋", "🎯", "🌟"];
   const bg = [
-    "from-violet-500 to-purple-600",
-    "from-blue-500 to-cyan-600",
-    "from-emerald-500 to-teal-600",
-    "from-amber-500 to-orange-600",
-    "from-rose-500 to-pink-600",
-    "from-indigo-500 to-blue-600",
-    "from-green-500 to-emerald-600",
-    "from-yellow-500 to-amber-600",
+    "from-violet-400 to-purple-500",
+    "from-blue-400 to-cyan-500",
+    "from-emerald-400 to-teal-500",
+    "from-amber-400 to-orange-500",
+    "from-rose-400 to-pink-500",
+    "from-indigo-400 to-blue-500",
+    "from-green-400 to-emerald-500",
+    "from-yellow-400 to-amber-500",
   ];
   return (
-    <section className="py-16 px-4 sm:px-6 bg-slate-50">
+    <section className="py-16 px-4 sm:px-6 bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto">
-        <SectionHeader section={section} />
+        <SectionHeader section={section} light={false} />
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {section.content.map((point, i) => {
             const label = point.split(":")[0];
@@ -110,18 +201,13 @@ function SectionWho({ section }: { section: CareerGuideSection }) {
                 key={i}
                 onMouseEnter={() => setHovered(i)}
                 onMouseLeave={() => setHovered(null)}
-                className={`relative rounded-2xl p-5 cursor-pointer transition-all duration-400 shadow-md`}
-                style={{
-                  background: `linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to))`,
-                  transform: hovered === i ? "translateY(-6px) scale(1.03)" : "none",
-                  boxShadow: hovered === i ? "0 20px 40px rgba(0,0,0,0.15)" : undefined,
-                }}
+                className={`relative rounded-2xl p-5 cursor-pointer transition-all duration-400 shadow-md hover:shadow-xl`}
               >
-                <div className={`bg-gradient-to-br ${bg[i % bg.length]} rounded-2xl p-5 h-full flex flex-col gap-3`}>
+                <div className={`bg-gradient-to-br ${bg[i % bg.length]} rounded-2xl p-5 h-full flex flex-col gap-3 transform transition-transform ${hovered === i ? "scale-105" : ""}`}>
                   <span className="text-3xl">{icons[i % icons.length]}</span>
                   <p className="text-white font-bold text-sm leading-tight">{label}</p>
                   {hovered === i && (
-                    <p className="text-white/80 text-xs leading-relaxed transition-all">{detail}</p>
+                    <p className="text-white/90 text-xs leading-relaxed transition-all">{detail}</p>
                   )}
                 </div>
               </div>
@@ -138,9 +224,9 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
   const [step, setStep] = useState(0);
   const stepIcons = ["🔎", "📊", "💲", "⚠️", "📜", "📣", "🔗"];
   return (
-    <section className="py-16 px-4 sm:px-6 bg-white overflow-hidden">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden border-b border-blue-200">
       <div className="max-w-6xl mx-auto">
-        <SectionHeader section={section} />
+        <SectionHeader section={section} light={false} />
 
         {/* step pills */}
         <div className="flex gap-2 overflow-x-auto pb-3 mb-8 scrollbar-hide">
@@ -150,9 +236,9 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
               <button
                 key={i}
                 onClick={() => setStep(i)}
-                className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300"
+                className="flex-shrink-0 flex items-center gap-2 px-3 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm"
                 style={{
-                  background: step === i ? BLUE : "#EFF6FF",
+                  background: step === i ? BLUE : "#F0F9FF",
                   color:      step === i ? "white" : BLUE,
                   border:     `2px solid ${step === i ? BLUE : "#DBEAFE"}`,
                 }}
@@ -166,10 +252,10 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
 
         {/* big step card */}
         <div
-          className="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8"
+          className="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-lg"
           style={{
-            background: `linear-gradient(135deg, ${BLUE}10, ${INDIGO}10)`,
-            border: `2px solid ${BLUE}30`,
+            background: `linear-gradient(135deg, ${BLUE}15, ${INDIGO}15)`,
+            border: `2px solid ${BLUE}40`,
           }}
         >
           <div
@@ -189,7 +275,7 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
         </div>
 
         {/* progress bar */}
-        <div className="mt-6 h-2 rounded-full bg-slate-100 overflow-hidden">
+        <div className="mt-6 h-2 rounded-full bg-slate-200 overflow-hidden">
           <div
             className="h-full rounded-full transition-all duration-500"
             style={{
@@ -204,7 +290,7 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
           <button
             onClick={() => setStep(s => Math.max(0, s - 1))}
             disabled={step === 0}
-            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30"
+            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30 shadow-sm"
             style={{ background: step === 0 ? "#E2E8F0" : BLUE, color: step === 0 ? "#94A3B8" : "white" }}
           >
             ← Prev
@@ -212,7 +298,7 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
           <button
             onClick={() => setStep(s => Math.min(section.content.length - 1, s + 1))}
             disabled={step === section.content.length - 1}
-            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30"
+            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30 shadow-sm"
             style={{ background: step === section.content.length - 1 ? "#E2E8F0" : BLUE, color: step === section.content.length - 1 ? "#94A3B8" : "white" }}
           >
             Next →
@@ -226,6 +312,7 @@ function SectionResponsibilities({ section }: { section: CareerGuideSection }) {
 // ─── 4. PRICING TILE CAROUSEL (swipe) ────────────────────────────
 function SectionCost({ section }: { section: CareerGuideSection }) {
   const [active, setActive] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const gradients = [
     "from-blue-600 to-indigo-700",
     "from-indigo-600 to-purple-700",
@@ -234,25 +321,37 @@ function SectionCost({ section }: { section: CareerGuideSection }) {
     "from-rose-600 to-red-700",
     "from-amber-500 to-orange-600",
   ];
+
+  const handleDotClick = (index: number) => {
+    setActive(index);
+    if (scrollRef.current) {
+      const cardWidth = 240 + 12; // card width + gap
+      scrollRef.current.scrollTo({
+        left: index * cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-slate-900 to-blue-950 overflow-hidden">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden border-b border-blue-200">
       <div className="max-w-5xl mx-auto">
-        <SectionHeader section={section} light />
+        <SectionHeader section={section} light={false} />
 
         {/* card row */}
-        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+        <div ref={scrollRef} className="flex gap-3 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory scroll-smooth">
           {section.content.map((point, i) => {
             const label = point.includes(":") ? point.split(":")[0] : `Item ${i + 1}`;
             const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
             return (
               <div
                 key={i}
-                onClick={() => setActive(i)}
+                onClick={() => handleDotClick(i)}
                 className={`snap-center flex-shrink-0 rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
                   active === i ? "scale-105 shadow-2xl" : "opacity-70 scale-95"
                 }`}
                 style={{
-                  width: "260px",
+                  width: "240px",
                   background: `linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to))`,
                   border: active === i ? `2px solid ${GOLD}` : "2px solid transparent",
                 }}
@@ -280,7 +379,7 @@ function SectionCost({ section }: { section: CareerGuideSection }) {
           {section.content.map((_, i) => (
             <button
               key={i}
-              onClick={() => setActive(i)}
+              onClick={() => handleDotClick(i)}
               className="rounded-full transition-all duration-300"
               style={{
                 width: active === i ? "28px" : "10px",
@@ -301,9 +400,9 @@ function SectionScholarship({ section }: { section: CareerGuideSection }) {
   const colors = [GREEN, TEAL, BLUE, INDIGO, "#7C3AED"];
   const badges = ["🏅", "🤝", "🌟", "🎯", "🏛️"];
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-emerald-50 to-teal-50">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-green-50 to-emerald-50 border-b border-green-200">
       <div className="max-w-5xl mx-auto">
-        <SectionHeader section={section} />
+        <SectionHeader section={section} light={false} />
         <div className="flex flex-col gap-4">
           {section.content.map((point, i) => {
             const label = point.includes(":") ? point.split(":")[0] : `Scholarship ${i + 1}`;
@@ -315,8 +414,8 @@ function SectionScholarship({ section }: { section: CareerGuideSection }) {
                 key={i}
                 className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                 style={{
-                  border: `2px solid ${isOpen ? color : "transparent"}`,
-                  background: isOpen ? "white" : "rgba(255,255,255,0.7)",
+                  border: `2px solid ${isOpen ? color : "#E5E7EB"}`,
+                  background: isOpen ? "white" : "rgba(255,255,255,0.8)",
                 }}
               >
                 <button
@@ -325,7 +424,7 @@ function SectionScholarship({ section }: { section: CareerGuideSection }) {
                 >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
-                    style={{ background: `${color}15` }}
+                    style={{ background: `${color}20` }}
                   >
                     {badges[i % badges.length]}
                   </div>
@@ -364,11 +463,11 @@ function SectionScholarship({ section }: { section: CareerGuideSection }) {
 function SectionChallenges({ section }: { section: CareerGuideSection }) {
   const [current, setCurrent] = useState(0);
   const severity = ["🔴 Critical", "🟠 High", "🟡 Medium", "🔴 Critical", "🟠 High", "🟡 Medium"];
-  const alertColors = [RED, "#EA580C", "#D97706", RED, "#EA580C", "#D97706"];
+  const alertColors = ["#EF4444", "#F97316", "#EAB308", "#EF4444", "#F97316", "#EAB308"];
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-red-950 to-rose-900 overflow-hidden">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-red-50 to-orange-50 overflow-hidden border-b border-red-200">
       <div className="max-w-5xl mx-auto">
-        <SectionHeader section={section} light />
+        <SectionHeader section={section} light={false} />
 
         {/* numbered challenge cards */}
         <div className="relative">
@@ -377,7 +476,7 @@ function SectionChallenges({ section }: { section: CareerGuideSection }) {
               <div
                 key={i}
                 onClick={() => setCurrent(i)}
-                className="snap-center flex-shrink-0 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300"
+                className="snap-center flex-shrink-0 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl"
                 style={{
                   width: "min(300px, 85vw)",
                   transform: current === i ? "scale(1.03)" : "scale(0.96)",
@@ -396,11 +495,10 @@ function SectionChallenges({ section }: { section: CareerGuideSection }) {
                 </div>
                 {/* body */}
                 <div
-                  className="p-6"
-                  style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(8px)" }}
+                  className="p-6 bg-white"
                 >
                   <p className="text-3xl mb-4">⚠️</p>
-                  <p className="text-white leading-relaxed text-sm">{point}</p>
+                  <p className="text-slate-700 leading-relaxed text-sm">{point}</p>
                 </div>
               </div>
             ))}
@@ -410,18 +508,18 @@ function SectionChallenges({ section }: { section: CareerGuideSection }) {
           <div className="mt-6 flex items-center justify-center gap-4">
             <button
               onClick={() => setCurrent(c => Math.max(0, c - 1))}
-              className="w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all"
-              style={{ background: "rgba(255,255,255,0.15)", color: "white" }}
+              className="w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all shadow-sm"
+              style={{ background: "#FED7AA", color: "#92400E" }}
             >
               ‹
             </button>
-            <span className="text-white/70 text-sm font-medium">
+            <span className="text-slate-600 text-sm font-medium">
               {current + 1} / {section.content.length}
             </span>
             <button
               onClick={() => setCurrent(c => Math.min(section.content.length - 1, c + 1))}
-              className="w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all"
-              style={{ background: "rgba(255,255,255,0.15)", color: "white" }}
+              className="w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all shadow-sm"
+              style={{ background: "#FED7AA", color: "#92400E" }}
             >
               ›
             </button>
@@ -446,12 +544,12 @@ function SectionStartNow({ section }: { section: CareerGuideSection }) {
   const lineColors = [GOLD, GREEN, BLUE, INDIGO, TEAL, ROSE, "#7C3AED"];
 
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-amber-50 to-yellow-50">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-purple-50 to-blue-50">
       <div className="max-w-4xl mx-auto">
-        <SectionHeader section={section} />
+        <SectionHeader section={section} light={false} />
 
         {/* progress bar */}
-        <div className="mb-8 p-5 rounded-2xl bg-white shadow-sm">
+        <div className="mb-8 p-5 rounded-2xl bg-white shadow-sm border border-purple-200">
           <div className="flex justify-between mb-2 text-sm font-semibold text-slate-600">
             <span>Your Progress</span>
             <span style={{ color: GOLD }}>{pct}% Complete</span>
@@ -486,7 +584,7 @@ function SectionStartNow({ section }: { section: CareerGuideSection }) {
                 <button
                   key={i}
                   onClick={() => toggle(i)}
-                  className="relative flex items-start gap-5 p-5 rounded-2xl text-left transition-all duration-300 hover:scale-[1.01]"
+                  className="relative flex items-start gap-5 p-5 rounded-2xl text-left transition-all duration-300 hover:scale-[1.01] shadow-sm"
                   style={{
                     background: done ? `${color}12` : "white",
                     border:     `2px solid ${done ? color : "#E2E8F0"}`,
@@ -533,7 +631,7 @@ function SectionStartNow({ section }: { section: CareerGuideSection }) {
 
         {pct === 100 && (
           <div
-            className="mt-8 p-6 rounded-2xl text-center"
+            className="mt-8 p-6 rounded-2xl text-center shadow-lg"
             style={{ background: `linear-gradient(135deg, ${GOLD}, ${GREEN})` }}
           >
             <p className="text-2xl mb-2">🎉</p>

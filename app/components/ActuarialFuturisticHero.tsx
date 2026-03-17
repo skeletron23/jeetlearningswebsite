@@ -1,5 +1,7 @@
 "use client";
 
+import { BarChart, Briefcase, Calculator, Globe, TrendingUp } from "lucide-react";
+
 const PRIMARY_BLUE = "#1E40AF";
 const ACCENT_GOLD = "#F59E0B";
 const LIGHT_BG = "#F0F9FF";
@@ -22,8 +24,8 @@ export function ActuarialFuturisticHero() {
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
             {/* Badge */}
             <div className="inline-block">
-              <span className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-amber-700 bg-amber-100">
-                📊 Career Exploration for Class 10+
+              <span className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-amber-700 bg-amber-100 flex items-center gap-2">
+                <BarChart className="w-4 h-4" /> Career Exploration for Class 10+
               </span>
             </div>
 
@@ -42,7 +44,9 @@ export function ActuarialFuturisticHero() {
               <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">Why Choose Actuarial Science?</h3>
 
               <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white border-l-4 border-amber-500 shadow-sm hover:shadow-md transition">
-                <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">💼</div>
+                <div className="flex-shrink-0 text-amber-500">
+                  <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
                 <div className="min-w-0">
                   <p className="font-semibold text-xs sm:text-sm md:text-base text-slate-900">High Earning Potential</p>
                   <p className="text-xs text-slate-600">One of the highest-paying careers in India</p>
@@ -50,7 +54,9 @@ export function ActuarialFuturisticHero() {
               </div>
 
               <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white border-l-4 border-blue-500 shadow-sm hover:shadow-md transition">
-                <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">🧮</div>
+                <div className="flex-shrink-0 text-blue-500">
+                  <Calculator className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
                 <div className="min-w-0">
                   <p className="font-semibold text-xs sm:text-sm md:text-base text-slate-900">Solve Real Problems</p>
                   <p className="text-xs text-slate-600">Use math to make important business decisions</p>
@@ -58,7 +64,9 @@ export function ActuarialFuturisticHero() {
               </div>
 
               <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white border-l-4 border-indigo-500 shadow-sm hover:shadow-md transition">
-                <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">🌐</div>
+                <div className="flex-shrink-0 text-indigo-500">
+                  <Globe className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
                 <div className="min-w-0">
                   <p className="font-semibold text-xs sm:text-sm md:text-base text-slate-900">Global Opportunities</p>
                   <p className="text-xs text-slate-600">Work anywhere in the world with this skill</p>
@@ -66,7 +74,9 @@ export function ActuarialFuturisticHero() {
               </div>
 
               <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 md:p-4 rounded-lg bg-white border-l-4 border-emerald-500 shadow-sm hover:shadow-md transition">
-                <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">📈</div>
+                <div className="flex-shrink-0 text-emerald-500">
+                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
                 <div className="min-w-0">
                   <p className="font-semibold text-xs sm:text-sm md:text-base text-slate-900">Growing Demand</p>
                   <p className="text-xs text-slate-600">India needs 25,000 actuaries by 2030</p>
