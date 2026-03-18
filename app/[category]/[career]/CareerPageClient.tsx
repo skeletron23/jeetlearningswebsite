@@ -47,17 +47,20 @@ export function CareerPageClient({
   const pageData = getCareerPageData(career);
 
   const navItems = [
-    { id: "hero", label: "Overview", icon: "🎯" },
-    { id: "guide", label: "Complete Guide", icon: "📚" },
-    { id: "cost", label: "Cost Breakdown", icon: "💰" },
-    { id: "videos", label: "Videos", icon: "🎬" },
-    { id: "cta", label: "Get Started", icon: "🚀" },
+    { id: "hero",  label: "Overview",       icon: "Target"       },
+    { id: "guide", label: "Complete Guide",  icon: "BookOpen"     },
+    { id: "cost",  label: "Cost Breakdown",  icon: "CircleDollarSign" },
+    { id: "videos",label: "Videos",          icon: "Monitor"      },
+    { id: "cta",   label: "Get Started",     icon: "Rocket"       },
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <SidebarNav items={navItems} />
       <FloatingNavbar />
+
+      {/* All content offset on lg screens to clear the sidebar */}
+      <div className="lg:pl-20">
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <div id="hero">
@@ -173,6 +176,8 @@ export function CareerPageClient({
           </button>
         </div>
       </section>
+
+      </div>{/* end lg:pl-20 */}
 
       <Footer />
     </div>

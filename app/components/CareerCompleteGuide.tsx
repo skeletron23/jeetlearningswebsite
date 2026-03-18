@@ -74,26 +74,26 @@ function SectionWhat({ section }: { section: CareerGuideSection }) {
                     setActive(i);
                     scrollToCard(i);
                   }}
-                  className={`snap-center flex-shrink-0 rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-500 shadow-lg hover:shadow-2xl transform ${
+                  className={`snap-center flex-shrink-0 rounded-3xl p-4 sm:p-6 md:p-8 cursor-pointer transition-all duration-500 shadow-lg hover:shadow-2xl transform ${
                     active === i ? "scale-100 ring-2" : "scale-95 opacity-60 hover:opacity-80"
                   }`}
                   style={{
-                    width: "280px",
-                    minHeight: "320px",
+                    width: "260px",
+                    minHeight: "300px",
                     background: `linear-gradient(135deg, ${color}15, ${color}05)`,
                     border: active === i ? `3px solid ${color}` : `2px solid ${color}40`,
                   }}
                 >
                   {/* card header */}
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-start justify-between mb-3 sm:mb-4">
                     <div
-                      className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-md"
+                      className="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl flex items-center justify-center shadow-md"
                       style={{ background: `linear-gradient(135deg, ${color}, ${color}dd)` }}
                     >
-                      <DynamicIcon name={section.icon} className="w-7 h-7 text-white" />
+                      <DynamicIcon name={section.icon} className="w-6 sm:w-7 h-6 sm:h-7 text-white" />
                     </div>
                     <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-black"
+                      className="w-7 sm:w-8 h-7 sm:h-8 rounded-full flex items-center justify-center text-white text-xs font-black"
                       style={{ background: color }}
                     >
                       {i + 1}
@@ -101,10 +101,10 @@ function SectionWhat({ section }: { section: CareerGuideSection }) {
                   </div>
 
                   {/* card content */}
-                  <h3 className="text-lg md:text-xl font-black mb-3" style={{ color }}>
+                  <h3 className="text-base sm:text-lg md:text-xl font-black mb-3" style={{ color }}>
                     {title}
                   </h3>
-                  <p className="text-slate-700 text-sm md:text-base leading-relaxed font-medium line-clamp-4">
+                  <p className="text-xs sm:text-sm md:text-base leading-relaxed font-medium line-clamp-4">
                     {content}
                   </p>
 
@@ -112,7 +112,7 @@ function SectionWhat({ section }: { section: CareerGuideSection }) {
                   <div className="mt-6 pt-4 border-t" style={{ borderColor: `${color}30` }}>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full" style={{ background: color }} />
-                      <p className="text-xs font-semibold text-slate-600">
+                      <p className="text-xs sm:text-xs md:text-sm font-semibold text-slate-600">
                         {active === i ? "Currently viewing" : "Click to view"}
                       </p>
                     </div>

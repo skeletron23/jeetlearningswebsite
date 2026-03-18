@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { DynamicIcon } from "./DynamicIcon";
 
 interface NavItem {
   id: string;
@@ -44,27 +45,27 @@ export function SidebarNav({ items }: SidebarNavProps) {
   };
 
   return (
-    <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-2 p-4">
+    <div className="fixed left-2 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-2 p-2">
       {/* Background pill */}
-      <div className="absolute inset-0 bg-white/80 backdrop-blur-md rounded-full -z-10" style={{ width: "80px", height: "auto" }} />
+      <div className="absolute inset-0 bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border border-slate-100 -z-10" />
 
       {items.map((item) => (
         <button
           key={item.id}
           onClick={() => scrollToSection(item.id)}
-          className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group"
+          className="relative w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 group"
           style={{
-            background: activeSection === item.id ? "#1E40AF" : "rgba(255,255,255,0.5)",
-            color: activeSection === item.id ? "white" : "#1E40AF",
-            border: activeSection === item.id ? "2px solid #1E40AF" : "2px solid transparent",
+            background: activeSection === item.id ? "#1E40AF" : "transparent",
+            color: activeSection === item.id ? "white" : "#64748B",
           }}
           title={item.label}
         >
-          <span className="text-2xl">{item.icon}</span>
+          <DynamicIcon name={item.icon} className="w-5 h-5" />
 
           {/* Tooltip */}
-          <div className="absolute left-20 bg-slate-900 text-white px-3 py-2 rounded-lg text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+          <div className="absolute left-14 bg-slate-900 text-white px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
             {item.label}
+            <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 bg-slate-900 rotate-45" />
           </div>
         </button>
       ))}
