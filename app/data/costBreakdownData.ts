@@ -373,13 +373,209 @@ export const agricultureCosts: CostItem[] = [
   },
 ];
 
+// ─── ARTS & DESIGN (GENERIC) ───────────────────────────────────────
+export const artsAndDesignCosts: CostItem[] = [
+  {
+    category: "Government Colleges",
+    amount: "₹1.5-3.0 Lakh",
+    description: "Annual tuition fees (NIFT/NID)",
+    icon: "🏫",
+    color: "#1E40AF",
+    details: [
+      "NIFT (All Campuses): ₹1.5-3.0 lakh per year",
+      "NID (B.Des/M.Des): ₹2.0-3.5 lakh per year",
+      "Includes studio and fundamental tool access",
+      "Highly competitive entrance (GATE/NID DAT)",
+    ],
+  },
+  {
+    category: "Private Colleges",
+    amount: "₹4.0-8.5 Lakh",
+    description: "Annual tuition fees",
+    icon: "🏢",
+    color: "#F59E0B",
+    details: [
+      "Pearl Academy: ₹4.5-7.5 lakh per year",
+      "Srishti Manipal: ₹4.0-6.0 lakh per year",
+      "ISDI (Mumbai): ₹5.0-8.5 lakh per year",
+      "Includes high-spec labs and industry networking",
+    ],
+  },
+  {
+    category: "Living Expenses",
+    amount: "₹15,000-25,000",
+    description: "Monthly in major cities (Delhi/Mumbai)",
+    icon: "🏠",
+    color: "#10B981",
+    details: [
+      "Hostel/PG Rent: ₹8,000-15,000 per month",
+      "Food & Utilities: ₹5,000-8,000 per month",
+      "Local Commute (Metro): ₹2,000-3,000 per month",
+    ],
+  },
+  {
+    category: "Tools & Materials",
+    amount: "₹80,000-1.5 Lakh",
+    description: "One-time technical investment",
+    icon: "💻",
+    color: "#3B82F6",
+    details: [
+      "High-spec Laptop (Design/Animation): ₹80,000-1.2 lakh",
+      "Fabrics/Gems/Wood/Raw Materials: ₹20,000-50,000 yearly",
+      "Software (Adobe CC/Rhino/Maya): ₹10,000-20,000 yearly",
+    ],
+  },
+];
+// ─── BIOTECHNOLOGY ───────────────────────────────────────────────
+export const biotechnologyCosts: CostItem[] = [
+  {
+    category: "Government (B.Tech/M.Sc)",
+    amount: "₹50,000-1.5 Lakh",
+    description: "Annual tuition fees",
+    icon: "🏫",
+    color: "#1E40AF",
+    details: [
+      "IITs/IISERs: ₹50,000-1.5 lakh per year",
+      "Central Universities: ₹30,000-80,000 per year",
+      "Includes specialized lab & consumable fees",
+    ],
+  },
+  {
+    category: "Private Colleges",
+    amount: "₹4-10 Lakh",
+    description: "Annual tuition fees",
+    icon: "🏢",
+    color: "#F59E0B",
+    details: [
+      "VIT/Manipal: ₹4-6 lakh per year",
+      "Jaypee/Amity: ₹3-5 lakh per year",
+      "Includes high-spec biotech infrastructure",
+    ],
+  },
+];
+
+// ─── WILDLIFE BIOLOGIST ──────────────────────────────────────────
+export const wildlifeBiologistCosts: CostItem[] = [
+  {
+    category: "Government Training",
+    amount: "₹10,000-50,000",
+    description: "Annual course fees at WII/NCBS",
+    icon: "🐾",
+    color: "#059669",
+    details: [
+      "Master's Programs: ₹10,000-30,000 per year",
+      "Field Training: Usually subsidized",
+    ],
+  },
+  {
+    category: "Field Equipment",
+    amount: "₹50,000-1.5 Lakh",
+    description: "Binoculars, GPS, Trekking gear",
+    icon: "🔭",
+    color: "#B45309",
+    details: [
+      "Professional Binoculars: ₹20,000-40,000",
+      "GPS/Field Tools: ₹30,000-60,000",
+    ],
+  },
+];
+
+// ─── FISHERY BIOLOGIST ───────────────────────────────────────────
+export const fisheryBiologistCosts: CostItem[] = [
+  {
+    category: "Government (B.F.Sc)",
+    amount: "₹10,000-40,000",
+    description: "Annual tuition fees",
+    icon: "🐟",
+    color: "#0284C7",
+    details: [
+      "Fisheries Colleges: ₹10,000-40,000 per year",
+      "Lab & Boat Fees: ₹5,000-10,000",
+    ],
+  },
+];
+
+// ─── OCEANOGRAPHER ───────────────────────────────────────────────
+export const oceanographerCosts: CostItem[] = [
+  {
+    category: "Premier Research (MoES)",
+    amount: "₹20,000-1 Lakh",
+    description: "Total course fees",
+    icon: "🚢",
+    color: "#1D4ED8",
+    details: [
+      "M.Sc Marine Science: ₹20,000-50,000 total",
+      "Ship-time Training: Usually covered by grants",
+    ],
+  },
+];
+
+// ─── CLINICAL RESEARCH ───────────────────────────────────────────
+export const clinicalResearchCosts: CostItem[] = [
+  {
+    category: "Government Colleges",
+    amount: "₹15,000-60,000",
+    description: "Total program fees",
+    icon: "🏫",
+    color: "#1E40AF",
+    details: [
+      "Jamia Hamdard: ₹20,000-40,000 yearly",
+      "Central Universities: ₹15,000-30,000 total",
+    ],
+  },
+  {
+    category: "Private Institutes",
+    amount: "₹1.5-5 Lakh",
+    description: "Specialized PG Diploma/M.Sc",
+    icon: "🏢",
+    color: "#F59E0B",
+    details: [
+      "ICRI (Delhi/Mumbai): ₹2.5-4.5 lakh",
+      "Private Medical Colleges: ₹1.5-3 lakh yearly",
+    ],
+  },
+];
+
+// ─── PHYSIOLOGY ──────────────────────────────────────────────────
+export const physiologyCosts: CostItem[] = [
+  {
+    category: "Government Colleges",
+    amount: "₹10,000-40,000",
+    description: "Annual tuition fees",
+    icon: "🏫",
+    color: "#1E40AF",
+    details: [
+      "AIIMS (M.Sc): ₹10,000-20,000 yearly",
+      "University of Calcutta: ₹8,000-15,000 yearly",
+    ],
+  },
+  {
+    category: "Private Universities",
+    amount: "₹80,000-3 Lakh",
+    description: "Annual tuition fees",
+    icon: "🏢",
+    color: "#F59E0B",
+    details: [
+      "Manipal Academy: ₹1.5-2.5 lakh yearly",
+      "Amity University: ₹80,000-1.5 lakh yearly",
+    ],
+  },
+];
+
 // Export all career costs
 export const allCareerCosts: Record<string, CostItem[]> = {
-  actuarial_science: actuarialScienceCosts,
+  chartered_accountant: actuarialScienceCosts,
   biochemistry: biochemistryCosts,
   bioinformatics: bioinformaticsCosts,
-  microbiology: microbiologyCosts,
+  biotechnology: biotechnologyCosts,
   genetics: geneticsCosts,
+  microbiology: microbiologyCosts,
+  wildlife_biologist: wildlifeBiologistCosts,
+  fishery_biologist: fisheryBiologistCosts,
+  oceanographer: oceanographerCosts,
+  clinical_research: clinicalResearchCosts,
+  physiology: physiologyCosts,
+  accessory_design: artsAndDesignCosts,
   agri_business_management: agricultureCosts,
   agricultural_engineer: agricultureCosts,
   agriculture_research: agricultureCosts,
@@ -393,4 +589,18 @@ export const allCareerCosts: Record<string, CostItem[]> = {
   poultry: agricultureCosts,
   sericulture: agricultureCosts,
   vertical_farming: agricultureCosts,
+  animator: artsAndDesignCosts,
+  cosmetology: artsAndDesignCosts,
+  creative_writer: artsAndDesignCosts,
+  fashion_designing: artsAndDesignCosts,
+  fine_arts: artsAndDesignCosts,
+  graphical_designing: artsAndDesignCosts,
+  interior_designing: artsAndDesignCosts,
+  interpreter_and_translator: artsAndDesignCosts,
+  liberal_arts: artsAndDesignCosts,
+  performing_arts: artsAndDesignCosts,
+  photography: artsAndDesignCosts,
+  product_designing: artsAndDesignCosts,
+  website_designer: artsAndDesignCosts,
+  youtuber: artsAndDesignCosts,
 };

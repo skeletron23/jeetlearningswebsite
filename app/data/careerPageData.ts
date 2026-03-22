@@ -1,4 +1,6 @@
 import { agricultureUpdateData } from './agricultureUpdateData';
+import { artsAndDesignUpdateData } from './artsAndDesignUpdateData';
+import { bioScienceUpdateData } from './bioScienceUpdateData';
 export interface CareerHeroStat {
   value: string;
   label: string;
@@ -3103,5 +3105,5 @@ export const careerPageData: Record<string, CareerPageData> = {
 };
 
 export function getCareerPageData(slug: string): CareerPageData | null {
-  return agricultureUpdateData[slug] || careerPageData[slug] || null;
+  return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || careerPageData[slug] || null;
 }
