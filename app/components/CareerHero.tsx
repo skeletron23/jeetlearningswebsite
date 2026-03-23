@@ -22,14 +22,14 @@ export function CareerHero({ data, imageUrl }: CareerHeroProps) {
           <img 
             src={imageUrl} 
             alt={data.heading} 
-            className="w-full h-full object-cover opacity-[0.14] mix-blend-multiply"
+            className="w-full h-full object-cover opacity-[0.35] mix-blend-multiply"
             style={{ filter: "saturate(1.2)" }}
             onError={(e) => {
               (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80";
             }}
           />
           {/* Overlay gradient to keep text readable */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 via-indigo-50/80 to-purple-50/90 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-indigo-50/70 to-purple-50/80" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50" />

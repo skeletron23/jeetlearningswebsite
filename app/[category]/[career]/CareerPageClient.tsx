@@ -11,7 +11,6 @@ import { CostBreakdown } from "@/app/components/CostBreakdown";
 import { getCareerPageData } from "@/app/data/careerPageData";
 import { allCareerCosts } from "@/app/data/costBreakdownData";
 import ImpactStrip from "@/app/components/ImpactStrip";
-import AwardsStrip from "@/app/components/AwardsStrip";
 import { careerImagesMap } from "../../data/careerImagesMap.js";
 
 interface CareerPageClientProps {
@@ -75,7 +74,6 @@ export function CareerPageClient({
           />
         )}
         <ImpactStrip />
-        <AwardsStrip />
       </div>
 
       {/* ── Complete Guide (7 unique carousel styles) ────────────── */}

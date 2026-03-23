@@ -8,7 +8,6 @@ import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 import { formatCareerName } from "@/app/data/careers";
 import Navbar from "@/app/components/Navbar";
 import ImpactStrip from "@/app/components/ImpactStrip";
-import AwardsStrip from "@/app/components/AwardsStrip";
 import Footer from "@/app/components/Footer";
 import { notFound } from "next/navigation";
 
@@ -69,14 +68,14 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
             // @ts-ignore
             src={categoryBackgroundsMap[category] || `https://loremflickr.com/1920/1080/flat,illustration,cartoon,${category.replace(/_/g, '-')},vector?lock=500`}
             alt={`${displayName} Category Background`}
-            className="w-full h-full object-cover opacity-[0.25] mix-blend-multiply"
+            className="w-full h-full object-cover opacity-[0.35] mix-blend-multiply"
             style={{ filter: "saturate(1.3)" }}
             onError={(e) => {
               (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1920&q=80";
             }}
           />
           {/* Overlay to ensure text legibility */}
-          <div className="absolute inset-0 bg-white/90 backdrop-blur-[4px]" />
+          <div className="absolute inset-0 bg-white/80" />
         </div>
 
         <div className="max-w-[1090px] mx-auto px-4 sm:px-6 py-10 relative z-10 flex flex-col md:flex-row items-center justify-center gap-8">
@@ -134,7 +133,6 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
         </div>
       </section>
       <ImpactStrip />
-      <AwardsStrip />
 
       {/* Results count */}
       <div className="max-w-[1090px] mx-auto px-4 sm:px-6 py-6">

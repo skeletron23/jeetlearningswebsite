@@ -54,14 +54,14 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
   const colors = [BLUE, GOLD, GREEN, INDIGO, ROSE, TEAL];
 
   return (
-    <section className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-x-hidden border-b border-blue-200">
+    <section className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-x-hidden border-b border-blue-200">
       <div className="max-w-7xl mx-auto">
         <SectionHeader section={section} light={false} />
 
         {/* carousel container */}
-        <div className="relative mt-8">
-          {/* cards carousel — py-8 prevents shadow/scale clipping */}
-          <div ref={scrollRef} className="flex gap-4 md:gap-6 overflow-x-auto py-8 px-4 sm:px-8 scrollbar-hide snap-x snap-mandatory scroll-smooth items-center">
+        <div className="relative mt-6">
+          {/* cards carousel — py-6 prevents shadow/scale clipping */}
+          <div ref={scrollRef} className="flex gap-3 md:gap-4 overflow-x-auto py-6 px-2 sm:px-4 scrollbar-hide snap-x snap-mandatory scroll-smooth items-center">
             {section.content.map((pt, i) => {
               const colonIndex = pt.indexOf(":");
               // Fix duplication bug: If no colon, provide a default title and use the whole string as content.
@@ -77,10 +77,10 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                     setActive(i);
                     scrollToCard(i);
                   }}
-                  className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[40px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-xl group`}
+                  className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[32px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-lg group`}
                   style={{
-                    width: isActive ? "min(420px, 85vw)" : "min(260px, 70vw)",
-                    minHeight: isActive ? "450px" : "380px",
+                    width: isActive ? "min(360px, 80vw)" : "min(220px, 65vw)",
+                    minHeight: isActive ? "380px" : "320px",
                     background: "white",
                   }}
                 >
@@ -88,7 +88,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                   <div 
                     className="absolute top-0 left-0 right-0 transition-all duration-700 ease-out"
                     style={{ 
-                      height: isActive ? "160px" : "120px",
+                      height: isActive ? "140px" : "100px",
                       background: `linear-gradient(135deg, ${color}, ${color}dd)` 
                     }}
                   >
@@ -99,19 +99,19 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                   </div>
 
                   {/* Top Badge */}
-                  <div className="relative z-10 px-6 pt-6 flex justify-between items-start">
-                    <div className="bg-white/20 backdrop-blur-md p-3 rounded-2xl shadow-sm border border-white/30">
-                      <DynamicIcon name={section.icon} className="w-6 h-6 text-white" />
+                  <div className="relative z-10 px-4 sm:px-6 pt-4 flex justify-between items-start">
+                    <div className="bg-white/20 backdrop-blur-md p-2 rounded-xl shadow-sm border border-white/30">
+                      <DynamicIcon name={section.icon} className="w-5 h-5 text-white" />
                     </div>
-                    <div className="text-white/90 font-black text-4xl opacity-50 font-poppins">
+                    <div className="text-white/90 font-black text-3xl opacity-50 font-poppins">
                       {i + 1}
                     </div>
                   </div>
 
                   {/* Content Area */}
                   <div 
-                    className="relative z-10 px-6 sm:px-8 transition-all duration-700 ease-out"
-                    style={{ marginTop: isActive ? "50px" : "30px" }}
+                    className="relative z-10 px-4 sm:px-6 transition-all duration-700 ease-out"
+                    style={{ marginTop: isActive ? "40px" : "20px" }}
                   >
                     <h3 className={`font-poppins font-black transition-all duration-500 line-clamp-2 ${isActive ? 'text-2xl mb-4' : 'text-xl mb-3'}`} style={{ color: "var(--color-slate-900)" }}>
                       {title}

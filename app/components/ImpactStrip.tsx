@@ -42,7 +42,7 @@ export default function ImpactStrip() {
                 <span className="text-xl md:text-2xl font-bold text-slate-800 leading-none mb-0.5">
                   {stat.value}
                 </span>
-                <span className="text-xs md:text-sm font-medium text-slate-500 uppercase tracking-wide">
+                <span className="text-xs md:text-sm font-light text-slate-500 uppercase tracking-wide">
                   {stat.label}
                 </span>
               </div>
