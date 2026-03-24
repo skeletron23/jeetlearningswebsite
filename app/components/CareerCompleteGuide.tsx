@@ -77,10 +77,9 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                     setActive(i);
                     scrollToCard(i);
                   }}
-                  className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[32px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-lg group`}
+                  className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[32px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-lg group flex flex-col`}
                   style={{
                     width: isActive ? "min(360px, 80vw)" : "min(220px, 65vw)",
-                    minHeight: isActive ? "380px" : "320px",
                     background: "white",
                   }}
                 >
@@ -110,14 +109,14 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
 
                   {/* Content Area */}
                   <div 
-                    className="relative z-10 px-4 sm:px-6 transition-all duration-700 ease-out"
+                    className="relative z-10 px-4 sm:px-6 pb-4 transition-all duration-700 ease-out flex-1 flex flex-col"
                     style={{ marginTop: isActive ? "40px" : "20px" }}
                   >
-                    <h3 className={`font-poppins font-black transition-all duration-500 line-clamp-2 ${isActive ? 'text-2xl mb-4' : 'text-xl mb-3'}`} style={{ color: "var(--color-slate-900)" }}>
+                    <h3 className={`font-poppins font-black transition-all duration-500 ${isActive ? 'text-2xl mb-4' : 'text-xl mb-3'}`} style={{ color: "var(--color-slate-900)" }}>
                       {title}
                     </h3>
                     
-                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 line-clamp-3 ${isActive ? 'text-base opacity-100' : 'text-sm opacity-80'}`}>
+                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 ${isActive ? 'text-base opacity-100' : 'text-sm opacity-80'}`}>
                        {content}
                     </p>
                   </div>
@@ -130,12 +129,6 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                       backgroundImage: `linear-gradient(90deg, ${color}, transparent)`
                     }}
                   />
-                  
-                  {/* Subtle click prompt when inactive */}
-                  <div className={`absolute bottom-6 left-6 right-6 transition-all duration-500 flex items-center gap-2 ${isActive ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
-                     <div className="w-8 h-px bg-slate-300" />
-                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest bg-white pr-2">Click to open</span>
-                  </div>
                 </div>
               );
             })}
@@ -272,91 +265,6 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
               </div>
             );
           })}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ─── 4. PRICING TILE CAROUSEL (swipe) ────────────────────────────
-function SectionCost({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [active, setActive] = useState(0);
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const gradients = [
-    "from-blue-600 to-indigo-700",
-    "from-indigo-600 to-purple-700",
-    "from-purple-600 to-pink-700",
-    "from-pink-600 to-rose-700",
-    "from-teal-600 to-cyan-700",
-    "from-amber-500 to-orange-600",
-  ];
-
-  const handleDotClick = (index: number) => {
-    setActive(index);
-    if (scrollRef.current) {
-      const cardWidth = 240 + 12; // card width + gap
-      scrollRef.current.scrollTo({
-        left: index * cardWidth,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-x-hidden border-b border-blue-200">
-      <div className="max-w-5xl mx-auto">
-        <SectionHeader section={section} light={false} />
-
-        {/* card row — py-4 gives space for the scale-105 shadow */}
-        <div ref={scrollRef} className="flex gap-3 overflow-x-auto py-4 px-1 scrollbar-hide snap-x snap-mandatory scroll-smooth">
-          {section.content.map((point, i) => {
-            const label = point.includes(":") ? point.split(":")[0] : `Item ${i + 1}`;
-            const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
-            return (
-              <div
-                key={i}
-                onClick={() => handleDotClick(i)}
-                className={`snap-center flex-shrink-0 rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
-                  active === i ? "scale-105 shadow-2xl" : "opacity-70 scale-95"
-                }`}
-                style={{
-                  width: "240px",
-                  background: `linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to))`,
-                  border: active === i ? `2px solid ${GOLD}` : "2px solid transparent",
-                }}
-              >
-                <div className={`bg-gradient-to-br ${gradients[i % gradients.length]} rounded-2xl p-6 h-full flex flex-col gap-4`}>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-black text-white">₹</span>
-                    <span
-                      className="text-xs font-bold px-3 py-1 rounded-full"
-                      style={{ background: "rgba(255,255,255,0.2)", color: "white" }}
-                    >
-                      {`0${i + 1}`}
-                    </span>
-                  </div>
-                  <p className="text-white font-bold text-base line-clamp-2">{label}</p>
-                  <p className="text-white/80 text-sm leading-relaxed line-clamp-3">{detail}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* dots */}
-        <div className="mt-6 flex justify-center gap-2">
-          {section.content.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => handleDotClick(i)}
-              className="rounded-full transition-all duration-300"
-              style={{
-                width: active === i ? "28px" : "10px",
-                height: "10px",
-                background: active === i ? GOLD : "rgba(255,255,255,0.3)",
-              }}
-            />
-          ))}
         </div>
       </div>
     </section>
@@ -566,7 +474,6 @@ const SECTION_COMPONENTS = [
   SectionWhat,
   SectionWho,
   SectionResponsibilities,
-  SectionCost,
   SectionScholarship,
   SectionChallenges,
   SectionStartNow,

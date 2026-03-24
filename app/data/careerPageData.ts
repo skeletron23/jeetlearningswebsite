@@ -3107,3 +3107,4 @@ export const careerPageData: Record<string, CareerPageData> = {
 export function getCareerPageData(slug: string): CareerPageData | null {
   return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || careerPageData[slug] || null;
 }
+

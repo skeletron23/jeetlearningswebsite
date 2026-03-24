@@ -86,18 +86,6 @@ export function ActuarialFuturisticHero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 pt-2 sm:pt-3 md:pt-4">
-              <button
-                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base text-white transition-all hover:shadow-lg hover:scale-105"
-                style={{ background: PRIMARY_BLUE }}
-              >
-                Explore Career Path
-              </button>
-              <button
-                className="px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg font-bold text-xs sm:text-sm md:text-base border-2 transition-all hover:bg-blue-50"
-                style={{ borderColor: PRIMARY_BLUE, color: PRIMARY_BLUE }}
-              >
-                Watch Video Guide
-              </button>
             </div>
           </div>
 

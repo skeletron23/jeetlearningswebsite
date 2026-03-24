@@ -63,19 +63,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Tuition Fees: Government colleges cost ₹15,000–₹8 lakh; private colleges ₹7–18 lakh.",
-          "Laptop: Around ₹60,000 needed for a good laptop.",
-          "Living: Monthly expenses in cities like Hyderabad cost ₹15,000–₹25,000.",
-          "Internship: Extra money needed for travel during rural field training."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -172,19 +159,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
           "Analysis & Design: Analyzing farm issues like water loss and designing technical solutions using AutoCAD or SolidWorks.",
           "Prototyping & Testing: Building lab models and conducting rigorous field tests under real-world weather conditions.",
           "Execution: Overseeing quality control, ensuring durability, and providing technical training and maintenance support."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Duration: B.Tech in Agricultural Engineering takes 4 years.",
-          "Fees: Government colleges cost ₹50,000–₹2.5 lakh; private ₹4–12 lakh for 4 years.",
-          "Living: Hostel and monthly expenses are ₹8,000–₹15,000.",
-          "Extras: Around ₹60,000 for laptop and ₹5,000–₹15,000 for exams."
         ]
       },
       {
@@ -287,18 +261,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Tuition Fees: Government universities cost ₹20,000–₹1.5 lakh; private ₹5–12 lakh.",
-          "Duration: 4 years B.Sc, 2 years M.Sc, 3–5 years Ph.D.",
-          "Stipend: Living costs ₹10,000–₹20,000 monthly; research students earn ₹31,000–₹35,000 per month."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -393,19 +355,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
           "Clinical Care: Diagnosing ailments via exams and imaging, then executing surgical or medicinal treatment plans.",
           "Preventive Health: Managing vaccinations, deworming, and tailored nutrition programs for livestock and pets.",
           "Public Safety: Monitoring \"Zoonotic\" diseases to prevent health crises from jumping from animal populations to humans."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Tuition Fees: Government colleges cost ₹30,000–₹1.5 lakh; private ₹10–25 lakh.",
-          "Living: Monthly hostel expenses are ₹10,000–₹18,000.",
-          "Coaching: NEET coaching may cost ₹50,000–₹1 lakh.",
-          "Equipment: Extra money needed for medical tools like stethoscope."
         ]
       },
       {
@@ -508,19 +457,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Course: Certificate ₹2,000–₹25,000; B.Sc ₹15,000–₹1.5 lakh yearly.",
-          "Starter: Bee boxes and tools cost ₹25,000–₹60,000.",
-          "License: FSSAI registration ₹2,000–₹5,000.",
-          "Living: ₹5,000–₹8,000 monthly hostel."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -618,18 +554,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Bachelor: Govt ₹20,000–₹50,000; private ₹50,000–₹1.5 lakh yearly.",
-          "Living: ₹4,000–₹12,000 per month.",
-          "Extras: Coaching and certificates cost extra."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -722,18 +646,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
           "Procurement: Collecting raw milk for pasteurization and fortification.",
           "Value Addition: Creating premium products like cheese, paneer, and ghee.",
           "logistics: Managing the \"cold chain\" to maintain product integrity until delivery."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Tuition (Govt): ₹20,000–₹1.5 lakh for 4 years.",
-          "Private: ₹5–12 lakh total.",
-          "Living: ₹10,000–₹20,000 monthly for food and hostel."
         ]
       },
       {
@@ -833,18 +745,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Degree: Govt ₹20,000–₹50,000; private ₹50,000–₹2 lakh yearly.",
-          "Certificates: ₹5,000–₹60,000 depending on the provider.",
-          "Tools: Minimal starter kit cost around ₹3,000–₹10,000."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -938,18 +838,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
           "Quality: Test food for safety, toxins, and nutrients.",
           "Research: Develop new products like plant-based meat.",
           "Operations: Design better packaging to keep food fresh."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Bachelor: Govt ₹20,000–₹1 lakh; private ₹50,000–₹2.5 lakh yearly.",
-          "Master/PhD: Extra 2-5 years needed for good jobs.",
-          "Living: ₹5,000–₹15,000 monthly."
         ]
       },
       {
@@ -1049,18 +937,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "B.Sc: Govt ₹10,000–₹50,000; private ₹50,000–₹1.5 lakh yearly.",
-          "Living: Hostel costs ₹3,000–₹10,000 monthly in rural agri-hubs.",
-          "Tools: Minimal costs for basic field gear."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1154,18 +1030,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
           "Health: Managing vaccinations and ensuring clean air/water.",
           "Nutrition: Formulating high-protein feed for optimal growth.",
           "Management: Overseeing automation and waste recycling systems."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Vocational: ₹5,000–₹25,000 for short training.",
-          "B.Sc/B.V.Sc: Govt ₹10,000–₹50,000; private ₹50,000–₹2 lakh yearly.",
-          "Living: Mostly rural-based with low hostel costs."
         ]
       },
       {
@@ -1265,18 +1129,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "Diploma/Degree: Govt ₹10,000–₹40,000 yearly.",
-          "Living: Mostly based in silk hubs like Mysore or Bhagalpur; low costs.",
-          "Business: Setting up a small unit costs ₹50,000–₹2 lakh."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1373,18 +1225,6 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "A complete look at educational and living expenses.",
-        color: RED2,
-        content: [
-          "B.Tech/Agri: Govt ₹50,000–₹2 lakh; private ₹4–12 lakh total.",
-          "Training: Specialized hydroponic courses ₹10,000–₹50,000.",
-          "Living: Mostly metro-based; high costs (₹15,000–₹25,000 monthly)."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1423,3 +1263,4 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
     ]
   }
 };
+

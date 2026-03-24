@@ -564,7 +564,19 @@ export const physiologyCosts: CostItem[] = [
 
 // Export all career costs
 export const allCareerCosts: Record<string, CostItem[]> = {
+  actuarial_science: actuarialScienceCosts,
   chartered_accountant: actuarialScienceCosts,
+  banking_and_related_services: actuarialScienceCosts,
+  company_secretary: actuarialScienceCosts,
+  cost_accountant: actuarialScienceCosts,
+  economics: actuarialScienceCosts,
+  financial_analyst: actuarialScienceCosts,
+  financial_and_investment_planning: actuarialScienceCosts,
+  financial_risk_management: actuarialScienceCosts,
+  architect: actuarialScienceCosts,
+  construction: actuarialScienceCosts,
+  maintenance_and_operation_management: actuarialScienceCosts,
+  urban_planning_and_management: actuarialScienceCosts,
   biochemistry: biochemistryCosts,
   bioinformatics: bioinformaticsCosts,
   biotechnology: biotechnologyCosts,

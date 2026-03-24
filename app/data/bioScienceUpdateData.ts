@@ -63,19 +63,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment in tech and science.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹35,000 – ₹3,00,000 for the full degree.",
-          "Private Universities: ₹5,00,000 – ₹17,00,000 for 4-year programs.",
-          "Duration: 4 years (B.Tech/B.Sc+M.Sc).",
-          "Tech Requirements: A high-performance laptop (₹80k+) is needed for data crunching."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -169,19 +156,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
           "Testing: Evaluating drug efficiency and toxicity in controlled settings.",
           "Diagnostics: Performing clinical tests to detect biomarkers for diseases.",
           "Quality Control: Monitoring chemical composition in food and pharmaceuticals."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Lab-intensive education cost.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹10,000 – ₹50,000 per year.",
-          "Private Universities: ₹1,00,000 – ₹2,00,000 per year.",
-          "Duration: 3 years B.Sc + 2 years M.Sc (highly recommended).",
-          "Equipment: Lab coats and basic safety gear are standard requirements."
         ]
       },
       {
@@ -281,19 +255,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Education and professional fees.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹50,000 – ₹1,50,000 for the full program.",
-          "Private Universities: ₹4,00,000 – ₹10,00,000 total.",
-          "Duration: 4 years B.Tech/B.Sc.",
-          "Equipment: Regular lab fees for specialized biological consumables."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -387,19 +348,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
           "Quality Monitoring: Ensuring bacterial safety in the food and beverage sectors.",
           "Antibiotic Research: Studying how microbes evolve to resist modern treatments.",
           "Environmental Oversight: Monitoring microbial levels in water and industrial waste."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Lab and course spend.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹20,000 – ₹1,00,000 for B.Sc/M.Sc.",
-          "Private Universities: ₹3,00,000 – ₹8,00,000 total.",
-          "Duration: 3 years (B.Sc) plus 2 years specialized (M.Sc).",
-          "Consumables: Regular spend on Petri dishes and media for home labs is optional."
         ]
       },
       {
@@ -499,19 +447,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment in genetic science.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹30,000 – ₹1,50,000 for the full degree.",
-          "Private Universities: ₹3,00,000 – ₹10,00,000 total.",
-          "Duration: 3-4 years (B.Sc) plus 2 years (M.Sc).",
-          "Consumables: Specialized DNA extraction kits are expensive but provided via labs."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -605,19 +540,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
           "Conflict Management: Researching why human-wildlife conflict happens and how to prevent it.",
           "Census: Conducting official wildlife counts (like the Tiger Census).",
           "Restoration: Planning and executing habitat recovery in degraded forest zones."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Training in the wild.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹10,000 – ₹50,000 for relevant B.Sc/M.Sc programs.",
-          "Private Universities: ₹1,00,000 – ₹3,00,000 yearly.",
-          "Duration: 3 years (B.Sc) plus 2 years (M.Sc) at institutes like WII.",
-          "Living: Field stations are often free, but basic amenities can be scarce."
         ]
       },
       {
@@ -717,19 +639,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment in aquatic science.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹10,000 – ₹40,000 for professional degrees.",
-          "Private Universities: ₹1,00,000 – ₹4,00,000 total.",
-          "Duration: 4 years (B.F.Sc - Bachelor of Fisheries Science).",
-          "Equipment: Life jackets and basic field water testing kits are supplied."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -823,19 +732,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
           "Climate Study: Researching how ocean currents and temperatures affect global warming.",
           "Mineral Hunt: Exploring for 'Polymetallic Nodules' on the deep seabed.",
           "Pollution Monitor: Studying the impact of plastics and chemical runoff on marine life."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment in deep sea science.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹20,000 – ₹1,00,000 for the entire course.",
-          "Private Universities: Very rare; mostly specialized at institutes like NIOT or NCAOR.",
-          "Duration: 3 years (B.Sc) plus 2 years (M.Sc) in Marine Sciences.",
-          "Stamina: Requires weeks at sea on research vessels with all costs usually covered by grants."
         ]
       },
       {
@@ -935,19 +831,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Tuition and certification spend.",
-        color: BLUE2,
-        content: [
-          "Government: ₹15,000 – ₹60,000 (Central Universities/Jamia Hamdard).",
-          "Private Institutes: ₹1.5L – ₹5L (ICRI/Private Medical Colleges).",
-          "Duration: 3-5 years (Bachelors + specialized PG Diploma).",
-          "Exams: Professional certification fees (like ACRP) may apply later."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1044,19 +927,6 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Education and lab expenses.",
-        color: BLUE2,
-        content: [
-          "Government Colleges: ₹10,000 – ₹40,000/year (AIIMS, Univ of Calcutta).",
-          "Private Universities: ₹80,000 – ₹3L/year (Manipal, Amity University).",
-          "Duration: 3 years (B.Sc) plus 2 years (M.Sc).",
-          "PhD: Recommended for top-tier research roles, often funded by fellowships."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1095,3 +965,4 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
     ]
   }
 };
+

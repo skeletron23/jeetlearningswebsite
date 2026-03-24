@@ -66,19 +66,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment required for education.",
-        color: BLUE2,
-        content: [
-          "Government: NIFT/NID cost ₹1.5–3 lakh yearly; tough entrance exams required.",
-          "Private: Pearl and others cost ₹4–8 lakh yearly.",
-          "Duration: B.Des takes 4 years; M.Des takes 2 years.",
-          "Extras: ₹20,000–₹50,000 yearly for materials and laptop."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -173,20 +160,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Observation & Creativity: Analyzing natural movements—like how people walk or leaves fall—and translating physical textures into 3D models.",
           "Soft Skills: Exceptional patience for frame-by-frame work and clear communication with directors and coders.",
           "Hard Skills: Mastery of anatomy, lighting, and industry-standard tools like Blender, Maya, or Unreal Engine."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Financial investment in education.",
-        color: BLUE2,
-        content: [
-          "Government (NID/IIT): NID/IIT fees ₹2–16 lakh for 4-year programs.",
-          "Private: Arena/MAAC diplomas cost ₹1.5–6 lakh.",
-          "Duration: Degrees take 3–4 years; diplomas 1–2 years.",
-          "Living: ₹15,000–₹25,000 monthly in big cities.",
-          "Equipment: ₹80,000–₹1.5 lakh for good computer."
         ]
       },
       {
@@ -291,20 +264,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Educational and setup expenses.",
-        color: BLUE2,
-        content: [
-          "Government: DSEU or Nagpur University cost ₹14,000–₹40,000 total.",
-          "Private: VLCC, Lakme, Orane charge ₹1.5–5 lakh with certificates.",
-          "Duration: Courses last 3 months to 3 years.",
-          "Living: ₹15,000–₹25,000 monthly in big cities.",
-          "Kits: Extra money needed for personal-care tools."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -403,19 +362,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Outlining: Mapping out the beginning, middle, and end.",
           "Drafting: The \"messy\" stage of getting words onto the page.",
           "Editing: Polishing and rewriting until the story shines."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Educational spend.",
-        color: BLUE2,
-        content: [
-          "Government: DU/FTII fees ₹15,000–₹1.5 lakh for writing courses.",
-          "Private: Srishti and Pearl cost ₹2.5–6 lakh yearly.",
-          "Duration: Degrees last 3 years; PG diplomas 1–2 years.",
-          "Tools: Need good laptop, fast internet, and books."
         ]
       },
       {
@@ -520,19 +466,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Investment in a fashion degree.",
-        color: BLUE2,
-        content: [
-          "Government: NIFT/NID cost ₹10.4–14.3 lakh for 4 years.",
-          "Private: Pearl/ISDI charge ₹15–28.6 lakh.",
-          "Living: ₹15,000–₹25,000 monthly in big cities.",
-          "Materials: ₹20,000–₹50,000 yearly for fabrics and tools."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -631,18 +564,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Creation: Focused execution over many hours.",
           "Critique: Reviewing work with a hard eye for changes.",
           "Exhibition: Preparing work for galleries or digital delivery."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Studio and educational costs.",
-        color: BLUE2,
-        content: [
-          "Fees: Govt colleges ₹10,000–₹25,000 yearly; private ₹2.5–6 lakh.",
-          "Duration: BFA takes 4 years; MFA takes 2 years.",
-          "Supplies: ₹50,000–₹1.5 lakh needed for materials."
         ]
       },
       {
@@ -748,19 +669,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Tech and degree spend.",
-        color: BLUE2,
-        content: [
-          "Government: NID/IIT cost ₹1.5–12 lakh for 4 years.",
-          "Private: Pearl or MIT-ADT up to ₹25 lakh.",
-          "Living: ₹15,000–₹25,000 monthly.",
-          "Equipment: ₹70,000–₹1.2 lakh for laptop/tablet."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -858,19 +766,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Design Development: Building 3D models and furniture picking.",
           "Contract Admin: Supervising contractors and site work.",
           "Styling & Handover: Final touches with plants and rugs."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Education and tech spend.",
-        color: BLUE2,
-        content: [
-          "Government: JJ School/MSU ₹15,000–₹1.5 lakh total.",
-          "Private: Pearl/UID charge ₹4–8 lakh yearly.",
-          "Duration: 3–4 Years for B.Des/B.Arch.",
-          "Laptop: ₹80,000–₹1.2 lakh needed."
         ]
       },
       {
@@ -975,19 +870,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "University and center fees.",
-        color: BLUE2,
-        content: [
-          "Public Uni: ₹5,000–₹40,000 yearly.",
-          "Cultural Centers: ₹15,000–₹30,000.",
-          "Duration: 3 Years Bachelor; 2 Years Master.",
-          "Living: ₹10,000–₹20,000 monthly."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1084,19 +966,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Analysis: Looking for the \"Connective Tissue\" between sources.",
           "Synthesis: Creating a new idea or solution that combines these views.",
           "Communication: Presenting the solution clearly and persuasively."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Public vs private spend.",
-        color: BLUE2,
-        content: [
-          "Government (LSR/St. Stephen’s): ₹20,000–₹1 lakh for 3 years.",
-          "Private (Ashoka/Flame): ₹6–12 lakh yearly.",
-          "Duration: NEP allows 3-year degree or 4-year Honours.",
-          "Living: ₹15,000–₹25,000 monthly in cities."
         ]
       },
       {
@@ -1197,19 +1066,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "The \"Blocking\" Phase: Determining physical positioning on stage.",
           "The \"Dress\" Rehearsal: Full costumes, lights, and sound integration.",
           "Execution: The final live performance or film 'take'."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Training and tool spend.",
-        color: BLUE2,
-        content: [
-          "Government (NSD): ₹5,000–₹30,000 total for quality training.",
-          "Private: Whistling Woods/KM Music charge ₹4–12 lakh yearly.",
-          "Duration: 3-year degrees or 1-2 year diplomas.",
-          "Extras: ₹20,000–₹1 lakh for costumes and instruments."
         ]
       },
       {
@@ -1314,19 +1170,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Gear and degree spend.",
-        color: BLUE2,
-        content: [
-          "Government: FTII/JNAFAU cost ₹40,000–₹1.5 lakh total.",
-          "Private (Light & Life): ₹2.5–8 lakh yearly.",
-          "Equipment: Camera kit costs ₹1.5–3.5 lakh.",
-          "Living: ₹15,000–₹25,000 monthly in cities."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1425,19 +1268,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
           "Prototype: Build physical versions in foam, clay, or 3D print.",
           "Test: Give it to real people and fix identified breaks.",
           "Manufacture: Prepare blueprints for factory production."
-        ]
-      },
-      {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Educational and studio spend.",
-        color: BLUE2,
-        content: [
-          "Government (NID/IIT): ₹1.5–4 lakh yearly.",
-          "Private (Pearl/Srishti): ₹5–10 lakh yearly.",
-          "Duration: 4 Years B.Des; 2 Years M.Des.",
-          "Laptop: ₹1 lakh+ high-performance machine needed."
         ]
       },
       {
@@ -1543,19 +1373,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Laptop and degree spend.",
-        color: BLUE2,
-        content: [
-          "Government (NID/IIT): ₹1.5–4 lakh yearly.",
-          "Private (Pearl/MIT): ₹5–9 lakh yearly.",
-          "Living: ₹15,000–₹25,000 monthly.",
-          "Laptop: ₹80,000–₹1.5 lakh specialized machine needed."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1657,18 +1474,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "cost",
-        title: "What Will It Cost?",
-        icon: "IndianRupee",
-        description: "Zero to pro entry costs.",
-        color: BLUE2,
-        content: [
-          "Entry-Level: Smartphone and sunlight (₹0).",
-          "Setup: Mic and ring light (₹2,500–₹8,000).",
-          "Degree: Media courses ₹10,000–₹40,000 govt; ₹2.5–6 lakh private yearly."
-        ]
-      },
-      {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
@@ -1708,3 +1513,4 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
     ]
   }
 };
+
