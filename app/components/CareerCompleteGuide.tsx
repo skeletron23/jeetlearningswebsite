@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { CareerGuideSection } from "@/app/data/careerPageData";
 import { DynamicIcon } from "./DynamicIcon";
 import {
@@ -117,7 +117,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                       {title}
                     </h3>
                     
-                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 ${isActive ? 'text-base line-clamp-none opacity-100' : 'text-sm line-clamp-4 opacity-80'}`}>
+                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 line-clamp-3 ${isActive ? 'text-base opacity-100' : 'text-sm opacity-80'}`}>
                        {content}
                     </p>
                   </div>
@@ -193,7 +193,6 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
 
 // ─── 2. TRAIT BADGE GRID with MODAL ──────────────────────────────
 function SectionWho({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [hovered, setHovered] = useState<number | null>(null);
   const icons = [Brain, Hourglass, Microscope, MessageSquare, Monitor, ClipboardList, Target, Star];
   const bg = [
     "from-violet-400 to-purple-500",
@@ -212,20 +211,14 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {section.content.map((point, i) => {
             const label = point.split(":")[0];
-            const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
             return (
               <div
                 key={i}
-                onMouseEnter={() => setHovered(i)}
-                onMouseLeave={() => setHovered(null)}
-                className={`relative rounded-2xl p-5 cursor-pointer transition-all duration-400 shadow-md hover:shadow-xl`}
+                className={`relative rounded-2xl p-5 cursor-pointer transition-all duration-400 shadow-md hover:shadow-lg`}
               >
-                <div className={`bg-gradient-to-br ${bg[i % bg.length]} rounded-2xl p-5 h-full flex flex-col gap-3 transform transition-transform ${hovered === i ? "scale-105" : ""}`}>
+                <div className={`bg-gradient-to-br ${bg[i % bg.length]} rounded-2xl p-5 h-full flex flex-col gap-3 transition-all`}>
                   {(() => { const IC = icons[i % icons.length]; return <IC className="w-8 h-8 text-white" />; })()}
                   <p className="text-white font-bold text-sm leading-tight">{label}</p>
-                  {hovered === i && (
-                    <p className="text-white/90 text-xs leading-relaxed transition-all">{detail}</p>
-                  )}
                 </div>
               </div>
             );
@@ -240,94 +233,65 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
 function SectionResponsibilities({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   const [step, setStep] = useState(0);
   const stepIcons = ["Search", "BarChart3", "DollarSign", "ShieldAlert", "FileText", "Megaphone", "Link"];
+  const stepColors = ["#3B82F6", "#8B5CF6", "#EC4899", "#F59E0B", "#10B981", "#06B6D4", "#6366F1"];
+  
+  // Auto-scroll effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStep(prev => (prev + 1) % section.content.length);
+    }, 5000); // Change every 5 seconds
+    return () => clearInterval(interval);
+  }, [section.content.length]);
+  
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden border-b border-blue-200">
+    <section className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
 
-        {/* step pills */}
-        <div className="flex gap-2 overflow-x-auto pb-3 mb-8 scrollbar-hide">
-          {section.content.map((pt, i) => {
-            const label = pt.split(":")[0];
-            return (
-              <button
-                key={i}
-                onClick={() => setStep(i)}
-                className="flex-shrink-0 flex items-center gap-2 px-3 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm"
-                style={{
-                  background: step === i ? BLUE : "#F0F9FF",
-                  color:      step === i ? "white" : BLUE,
-                  border:     `2px solid ${step === i ? BLUE : "#DBEAFE"}`,
-                }}
-              >
-                <DynamicIcon name={stepIcons[i % stepIcons.length]} className="w-4 h-4" />
-                <span>Step {i + 1}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* big step card with topic image integration */}
-        <div
-          className="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-lg relative overflow-hidden"
-          style={{
-            background: `linear-gradient(135deg, ${BLUE}15, ${INDIGO}15)`,
-            border: `2px solid ${BLUE}40`,
-          }}
-        >
-          {/* Dynamic illustration for this specific career and step */}
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-[0.08] pointer-events-none hidden md:block">
-            <img 
-               src={`https://loremflickr.com/800/800/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},step${step + 1}?lock=${careerName.length + step}`} 
-               alt="" 
-               className="w-full h-full object-cover mix-blend-multiply" 
-            />
-          </div>
+        {/* main content card - clean and modern */}
+        <div className="relative mt-8">
           <div
-            className="w-24 h-24 md:w-32 md:h-32 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-xl"
-            style={{ background: `linear-gradient(135deg, ${BLUE}, ${INDIGO})` }}
-          >
-            <DynamicIcon name={stepIcons[step % stepIcons.length]} className="w-12 h-12 md:w-16 md:h-16 text-white" />
-          </div>
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: BLUE }}>
-              Step {step + 1} of {section.content.length}
-            </p>
-            <p className="text-slate-800 text-lg md:text-2xl font-bold leading-relaxed">
-              {section.content[step]}
-            </p>
-          </div>
-        </div>
-
-        {/* progress bar */}
-        <div className="mt-6 h-2 rounded-full bg-slate-200 overflow-hidden">
-          <div
-            className="h-full rounded-full transition-all duration-500"
+            className="rounded-3xl p-8 md:p-12 shadow-xl border-2 transition-all duration-500 overflow-hidden"
             style={{
-              width: `${((step + 1) / section.content.length) * 100}%`,
-              background: `linear-gradient(to right, ${BLUE}, ${INDIGO})`,
+              background: "white",
+              borderColor: stepColors[step],
+              boxShadow: `0 20px 60px ${stepColors[step]}20`,
             }}
-          />
-        </div>
+          >
+            {/* top accent bar */}
+            <div 
+              className="absolute top-0 left-0 right-0 h-1"
+              style={{ background: `linear-gradient(90deg, ${stepColors[step]}, ${stepColors[(step + 1) % stepColors.length]})` }}
+            />
 
-        {/* prev / next */}
-        <div className="mt-4 flex justify-between">
-          <button
-            onClick={() => setStep(s => Math.max(0, s - 1))}
-            disabled={step === 0}
-            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30 shadow-sm flex items-center gap-1"
-            style={{ background: step === 0 ? "#E2E8F0" : BLUE, color: step === 0 ? "#94A3B8" : "white" }}
-          >
-            <ChevronLeft className="w-4 h-4" /> Prev
-          </button>
-          <button
-            onClick={() => setStep(s => Math.min(section.content.length - 1, s + 1))}
-            disabled={step === section.content.length - 1}
-            className="px-5 py-2 rounded-full text-sm font-bold transition-all disabled:opacity-30 shadow-sm flex items-center gap-1"
-            style={{ background: step === section.content.length - 1 ? "#E2E8F0" : BLUE, color: step === section.content.length - 1 ? "#94A3B8" : "white" }}
-          >
-            Next <ChevronRight className="w-4 h-4" />
-          </button>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
+              {/* icon box */}
+              <div
+                className="w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-500"
+                style={{ background: `linear-gradient(135deg, ${stepColors[step]}, ${stepColors[(step + 1) % stepColors.length]})` }}
+              >
+                <DynamicIcon name={stepIcons[step % stepIcons.length]} className="w-10 h-10 md:w-12 md:h-12 text-white" />
+              </div>
+
+              {/* content */}
+              <div className="flex-1">
+                <p className="text-slate-800 text-lg md:text-2xl font-bold leading-relaxed transition-all duration-500">
+                  {section.content[step]}
+                </p>
+                
+                {/* progress bar */}
+                <div className="mt-6 h-1 bg-slate-200 rounded-full overflow-hidden">
+                  <div
+                    className="h-full transition-all duration-500"
+                    style={{
+                      width: `${((step + 1) / section.content.length) * 100}%`,
+                      background: stepColors[step],
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -343,7 +307,7 @@ function SectionCost({ section, careerName }: { section: CareerGuideSection; car
     "from-indigo-600 to-purple-700",
     "from-purple-600 to-pink-700",
     "from-pink-600 to-rose-700",
-    "from-rose-600 to-red-700",
+    "from-teal-600 to-cyan-700",
     "from-amber-500 to-orange-600",
   ];
 
@@ -391,8 +355,8 @@ function SectionCost({ section, careerName }: { section: CareerGuideSection; car
                       {`0${i + 1}`}
                     </span>
                   </div>
-                  <p className="text-white font-bold text-base">{label}</p>
-                  <p className="text-white/80 text-sm leading-relaxed">{detail}</p>
+                  <p className="text-white font-bold text-base line-clamp-2">{label}</p>
+                  <p className="text-white/80 text-sm leading-relaxed line-clamp-3">{detail}</p>
                 </div>
               </div>
             );
@@ -421,7 +385,6 @@ function SectionCost({ section, careerName }: { section: CareerGuideSection; car
 
 // ─── 5. SCHOLARSHIP BADGE ACCORDION ──────────────────────────────
 function SectionScholarship({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [open, setOpen] = useState<number | null>(0);
   const colors = [GREEN, TEAL, BLUE, INDIGO, "#7C3AED"];
   const badges = ["Medal", "Handshake", "Star", "Target", "Building"];
   return (
@@ -437,20 +400,16 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
             const label = point.includes(":") ? point.split(":")[0] : `Scholarship ${i + 1}`;
             const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
             const color = colors[i % colors.length];
-            const isOpen = open === i;
             return (
               <div
                 key={i}
                 className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                 style={{
-                  border: `2px solid ${isOpen ? color : "#E5E7EB"}`,
-                  background: isOpen ? "white" : "rgba(255,255,255,0.8)",
+                  border: `2px solid ${color}`,
+                  background: "white",
                 }}
               >
-                <button
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center gap-4 p-5 text-left"
-                >
+                <div className="w-full flex items-center gap-4 p-5 text-left">
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: `${color}20`, color }}
@@ -460,25 +419,14 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
                   <div className="flex-1">
                     <p className="font-bold text-slate-800">{label}</p>
                   </div>
+                </div>
+                <div className="px-5 pb-5 pl-[76px]">
                   <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm flex-shrink-0 transition-transform duration-300"
-                    style={{
-                      background: color,
-                      transform: isOpen ? "rotate(45deg)" : "none",
-                    }}
-                  >
-                    +
-                  </div>
-                </button>
-                {isOpen && (
-                  <div className="px-5 pb-5 pl-[76px]">
-                    <div
-                      className="h-0.5 mb-3 rounded-full"
-                      style={{ background: `${color}30` }}
-                    />
-                    <p className="text-slate-600 leading-relaxed">{detail}</p>
-                  </div>
-                )}
+                    className="h-0.5 mb-3 rounded-full"
+                    style={{ background: `${color}30` }}
+                  />
+                  <p className="text-slate-600 leading-relaxed">{detail}</p>
+                </div>
               </div>
             );
           })}
@@ -528,7 +476,7 @@ function SectionChallenges({ section, careerName }: { section: CareerGuideSectio
                 {/* body */}
                 <div className="p-6 bg-white">
                   <AlertTriangle className="w-8 h-8 mb-4" style={{ color: alertColors[i % alertColors.length] }} />
-                  <p className="text-slate-700 leading-relaxed text-sm">{point}</p>
+                  <p className="text-slate-700 leading-relaxed text-sm line-clamp-4">{point}</p>
                 </div>
               </div>
             ))}
@@ -562,116 +510,60 @@ function SectionChallenges({ section, careerName }: { section: CareerGuideSectio
 
 // ─── 7. ANIMATED ROADMAP CHECKLIST ───────────────────────────────
 function SectionStartNow({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [checked, setChecked] = useState<Set<number>>(new Set());
-  const toggle = (i: number) => {
-    setChecked(prev => {
-      const next = new Set(prev);
-      next.has(i) ? next.delete(i) : next.add(i);
-      return next;
-    });
-  };
-  const pct = Math.round((checked.size / section.content.length) * 100);
   const lineColors = [GOLD, GREEN, BLUE, INDIGO, TEAL, ROSE, "#7C3AED"];
 
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-purple-50 to-blue-50 relative overflow-hidden">
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-purple-50 to-blue-50 relative">
       <div className="absolute bottom-0 right-0 w-1/3 h-2/3 opacity-10 pointer-events-none hidden md:block mix-blend-multiply">
         <img src={`https://loremflickr.com/600/600/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},success?lock=99`} alt="" className="w-full h-full object-contain" />
       </div>
       <div className="max-w-4xl mx-auto relative z-10">
         <SectionHeader section={section} light={false} />
 
-        {/* progress bar */}
-        <div className="mb-8 p-5 rounded-2xl bg-white shadow-sm border border-purple-200">
-          <div className="flex justify-between mb-2 text-sm font-semibold text-slate-600">
-            <span>Your Progress</span>
-            <span style={{ color: GOLD }}>{pct}% Complete</span>
-          </div>
-          <div className="h-3 rounded-full bg-slate-100 overflow-hidden">
-            <div
-              className="h-full rounded-full transition-all duration-500"
-              style={{
-                width: `${pct}%`,
-                background: `linear-gradient(to right, ${GOLD}, ${GREEN})`,
-              }}
-            />
-          </div>
-          <p className="text-xs text-slate-400 mt-2">
-            {checked.size} of {section.content.length} steps done
-          </p>
-        </div>
-
         {/* checklist steps */}
-        <div className="relative">
-          {/* vertical line */}
-          <div
-            className="absolute left-6 top-4 bottom-4 w-0.5 rounded-full"
-            style={{ background: "linear-gradient(to bottom, #FCD34D, #6EE7B7)" }}
-          />
-
-          <div className="flex flex-col gap-4">
-            {section.content.map((point, i) => {
-              const done = checked.has(i);
-              const color = lineColors[i % lineColors.length];
-              return (
-                <button
-                  key={i}
-                  onClick={() => toggle(i)}
-                  className="relative flex items-start gap-5 p-5 rounded-2xl text-left transition-all duration-300 hover:scale-[1.01] shadow-sm"
+        <div className="flex flex-col gap-4">
+          {section.content.map((point, i) => {
+            const color = lineColors[i % lineColors.length];
+            return (
+              <div
+                key={i}
+                className="relative flex items-start gap-5 p-6 rounded-2xl text-left transition-all duration-300 shadow-sm hover:shadow-md"
+                style={{
+                  background: "white",
+                  border: `2px solid ${color}`,
+                }}
+              >
+                {/* circle */}
+                <div
+                  className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-black transition-all duration-300"
                   style={{
-                    background: done ? `${color}12` : "white",
-                    border:     `2px solid ${done ? color : "#E2E8F0"}`,
-                    boxShadow:  done ? `0 4px 20px ${color}20` : "0 2px 8px rgba(0,0,0,0.04)",
+                    background: color,
+                    color: "white",
                   }}
                 >
-                  {/* circle */}
-                  <div
-                    className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-black transition-all duration-300"
-                    style={{
-                      background: done ? color : "white",
-                      border:     `3px solid ${color}`,
-                      color:      done ? "white" : color,
-                    }}
-                  >
-                    {done ? <CheckCircle2 className="w-5 h-5" /> : i + 1}
-                  </div>
+                  {i + 1}
+                </div>
 
-                  <div className="flex-1 min-w-0">
-                    <p
-                      className="text-base leading-relaxed font-medium transition-all duration-300"
-                      style={{
-                        color:          done ? "#475569" : "#1E293B",
-                        textDecoration: done ? "line-through" : "none",
-                        opacity:        done ? 0.7 : 1,
-                      }}
-                    >
-                      {point}
-                    </p>
-                    {done && (
-                      <span
-                        className="inline-flex items-center gap-1 mt-1 text-xs font-bold px-2 py-0.5 rounded-full"
-                        style={{ background: `${color}20`, color }}
-                      >
-                        <CheckCircle2 className="w-3 h-3" /> Done!
-                      </span>
-                    )}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
+                {/* text content */}
+                <div className="flex-1 pt-1">
+                  <p className="text-base leading-relaxed font-medium text-slate-800">
+                    {point}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        {pct === 100 && (
-          <div
-            className="mt-8 p-6 rounded-2xl text-center shadow-lg"
-            style={{ background: `linear-gradient(135deg, ${GOLD}, ${GREEN})` }}
-          >
-            <PartyPopper className="w-8 h-8 text-white mx-auto mb-2" />
-            <p className="text-white font-black text-xl">All steps complete!</p>
-            <p className="text-white/80 text-sm mt-1">You're already ahead of the competition.</p>
-          </div>
-        )}
+        {/* completion message */}
+        <div
+          className="mt-8 p-6 rounded-2xl text-center shadow-lg"
+          style={{ background: `linear-gradient(135deg, ${GOLD}, ${GREEN})` }}
+        >
+          <PartyPopper className="w-8 h-8 text-white mx-auto mb-2" />
+          <p className="text-white font-black text-xl">All steps complete!</p>
+          <p className="text-white/80 text-sm mt-1">You're already ahead of the competition.</p>
+        </div>
       </div>
     </section>
   );
