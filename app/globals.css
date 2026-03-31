@@ -266,3 +266,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #B30000;
 }
+
+
+/* Dropdown overflow fix */
+nav {
+  overflow: visible !important;
+}
+
+.group:hover > div {
+  overflow: visible !important;
+}

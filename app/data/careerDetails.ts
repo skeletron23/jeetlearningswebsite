@@ -874,6 +874,595 @@ export const careerDetails: Record<string, CareerDetail> = {
     companies: ["HSBC", "Standard Chartered", "Credit Suisse", "Barclays", "Big 4 Consulting Firms"],
     scope: "Critical role in banking and corporate sectors, especially with increasing regulatory oversight."
   },
+  biotechnology_research: {
+    title: "Biotechnology Research",
+    description: "Use living organisms to create products that solve real-world problems in healthcare, agriculture, and industry",
+    overview: "Biotechnology Research is the science of using living organisms—like bacteria, yeast, plant cells, or even human DNA—to create products that solve real-world problems. In 21st-century India, biotechnology is no longer a niche subject. It is the powerhouse behind our pharmacies, the secret to our food security, and our best weapon against climate change. As India targets a $300 billion bioeconomy by 2030, the Biotechnology Researcher is the professional holding the blueprint for this transformation. Biotech researchers are microscopic engineers tweaking genetic codes, crop innovators developing resilient seeds, and vaccine architects designing shields that protect millions of people.",
+    eligibility: [
+      "12th pass with Science (PCB or PCMB)",
+      "Bachelor's degree in Biotechnology, Microbiology, or related life sciences",
+      "Strong foundation in Biology and Chemistry",
+      "Patience and attention to detail for long-term research projects",
+      "Logical curiosity and observational mastery"
+    ],
+    duration: "4 years (B.Tech/B.Sc.) + 2 years (M.Tech/M.Sc.) + 3-5 years (Ph.D. for advanced roles)",
+    salary: "₹4.5-7 LPA (Entry level) | ₹12-22 LPA (Mid-level) | ₹35-65+ LPA (Senior/Leadership) | ₹1 Crore+ (CXO Level)",
+    skills: [
+      "Molecular Biology",
+      "Biostatistics",
+      "CRISPR gene-editing",
+      "Lab techniques (PCR, DNA sequencing, cell culture)",
+      "Data analysis and bioinformatics",
+      "AI and Machine Learning",
+      "Scientific writing",
+      "Problem-solving",
+      "Teamwork and collaboration"
+    ],
+    subjects: ["Biology", "Chemistry", "Microbiology", "Genetics", "Biochemistry", "Bioinformatics", "Statistics"],
+    colleges: [
+      "IISc Bangalore",
+      "IIT Delhi",
+      "JNU Delhi",
+      "National Chemical Laboratory (Pune)",
+      "Regional Centre for Biotechnology (Faridabad)",
+      "VIT Vellore",
+      "Manipal (MAHE)",
+      "Amity Institute of Biotechnology",
+      "BITS Pilani"
+    ],
+    jobRoles: [
+      "Research Scientist",
+      "Microbiologist",
+      "Quality Control Officer",
+      "AI Drug Discovery Analyst",
+      "Genome Editor",
+      "Bio-entrepreneur",
+      "Scientific Writer",
+      "Patent Consultant"
+    ],
+    companies: [
+      "Biocon",
+      "Serum Institute of India",
+      "Dr. Reddy's Laboratories",
+      "Cipla",
+      "Lupin",
+      "Genentech",
+      "Amgen",
+      "Novartis",
+      "Roche",
+      "Biotech startups (3,500+ in India)"
+    ],
+    scope: "India is the 'Pharmacy of the World' and a global leader in agriculture. India has 3,500+ biotech startups, projected to hit 10,000+ by 2030. Industry growing at 17.9% CAGR. High demand in biopharmaceuticals, agri-biotech, industrial biotech, and bioinformatics. Top cities: Hyderabad (Vaccine Capital), Bangalore (Biotech Hub), Pune (Serum Institute), Gurgaon/Manesar. Emerging opportunities in Bio-AI, personalized medicine, and lab-grown food."
+  },
+  physiology: {
+    title: "Physiology",
+    description: "Study how living systems work and understand the mechanisms behind biological functions",
+    overview: "Physiology is the study of how living systems work. While an anatomist looks at the 'parts' (like the heart or lungs), a physiologist asks, 'How does it work?' and 'Why does it react this way?' In 21st-century India, as we move toward a 'Viksit Bharat' by 2047, our focus is shifting from simply treating diseases to understanding 'Wellness.' Physiology is the science at the very heart of this shift. India is facing a 'lifestyle disease' epidemic (diabetes, hypertension). Physiologists are the ones discovering how to prevent these through better understanding of our body's internal balance (Homeostasis).",
+    eligibility: [
+      "12th pass with Science (PCB)",
+      "Strong foundation in Biology and Chemistry",
+      "Bachelor's degree in B.Sc. Physiology or MBBS",
+      "Analytical and detail-oriented mindset",
+      "Interest in understanding biological mechanisms"
+    ],
+    duration: "3 years (B.Sc. Physiology) + 2-3 years (M.Sc.) OR 5.5 years (MBBS) + 3 years (MD Physiology)",
+    salary: "₹4.5-7.5 LPA (Entry level) | ₹12-22 LPA (Mid-level) | ₹35-65+ LPA (Senior/Leadership)",
+    skills: [
+      "Data analysis and interpretation",
+      "High-tech equipment operation",
+      "Research methodology",
+      "Scientific writing",
+      "Problem-solving",
+      "Attention to detail",
+      "Python/MATLAB for data analysis",
+      "Critical thinking",
+      "Laboratory techniques"
+    ],
+    subjects: ["Biology", "Chemistry", "Physics", "Biochemistry", "Anatomy", "Pathology", "Statistics"],
+    colleges: [
+      "AIIMS New Delhi",
+      "AIIMS Rishikesh",
+      "JIPMER Puducherry",
+      "University of Calcutta",
+      "King George's Medical University (Lucknow)",
+      "Kasturba Medical College (Manipal)",
+      "St. John's Medical College (Bangalore)",
+      "Amity University",
+      "IPGMER Kolkata",
+      "BJ Medical College Pune"
+    ],
+    jobRoles: [
+      "Clinical Physiologist",
+      "Research Physiologist",
+      "Exercise Physiologist",
+      "Sleep Physiologist",
+      "Aviation/Space Physiologist",
+      "Lab Director",
+      "Professor",
+      "Health-Tech Consultant"
+    ],
+    companies: [
+      "AIIMS and Medical Colleges",
+      "Pharmaceutical Companies (R&D)",
+      "Sports Authority of India (SAI)",
+      "Hospitals and Diagnostic Labs",
+      "ISRO (Space Research)",
+      "Fitness and Wellness Centers",
+      "Health-Tech Startups",
+      "Research Institutes"
+    ],
+    scope: "Growing demand in Exercise Physiology and Clinical Research at 12% annually. By 2030, demand for non-clinical physiologists in fitness and tech industry expected to double. Emerging opportunities in AI-driven health monitoring, wearable technology interpretation, and elderly physiology (Geron-Physiology)."
+  },
+  microbiology: {
+    title: "Microbiology",
+    description: "Study microscopic organisms and their impact on health, food, industry, and the environment",
+    overview: "Microbiology is the study of microscopic organisms—bacteria, viruses, fungi, and parasites. A Microbiologist is a detective who studies these 'invisible giants' that live in the soil we walk on, the air we breathe, and inside our bodies. Some are heroes that help us digest food or create life-saving medicines, while others are villains that cause global pandemics. In 21st-century India, as we move towards 2030, this career is no longer just about sitting in a lab; it is about solving the biggest mysteries of health, food security, and climate change. India is the 'Pharmacy of the World' and one of the largest food producers. We need microbiologists to lead the fight against new diseases, ensure our exports are safe, and help our industries grow sustainably.",
+    eligibility: [
+      "12th pass with Science (PCB)",
+      "Strong foundation in Biology and Chemistry",
+      "Bachelor's degree in B.Sc. Microbiology or B.Tech Biotechnology",
+      "Meticulous and detail-oriented mindset",
+      "Patience and curiosity about microscopic life"
+    ],
+    duration: "3 years (B.Sc. Microbiology) + 2 years (M.Sc.) OR 3 years (B.Tech) + 2 years (M.Tech)",
+    salary: "₹3-5.5 LPA (Entry level) | ₹12-22 LPA (Mid-level) | ₹40-75+ LPA (Senior/Leadership)",
+    skills: [
+      "Microscopy and lab techniques",
+      "Culturing and identification",
+      "Data analysis and bioinformatics",
+      "DNA sequencing and analysis",
+      "Antibiotic sensitivity testing",
+      "Scientific writing",
+      "Problem-solving",
+      "Attention to detail",
+      "Collaboration and communication"
+    ],
+    subjects: ["Biology", "Chemistry", "Microbiology", "Biochemistry", "Genetics", "Statistics", "Bioinformatics"],
+    colleges: [
+      "Indian Institute of Science (IISc)",
+      "University of Delhi",
+      "Banaras Hindu University (BHU)",
+      "Savitribai Phule Pune University",
+      "Vellore Institute of Technology (VIT)",
+      "Manipal Academy of Higher Education",
+      "Amity University",
+      "Lovely Professional University (LPU)",
+      "IGNOU (Distance Learning)"
+    ],
+    jobRoles: [
+      "Research Scientist",
+      "Clinical Microbiologist",
+      "Quality Control Officer",
+      "Food Safety Auditor",
+      "AI-Microbial Analyst",
+      "Probiotic Product Designer",
+      "Lab Director",
+      "Astrobiologist"
+    ],
+    companies: [
+      "Cipla",
+      "Biocon",
+      "Nestlé",
+      "Amul",
+      "Apollo Diagnostics",
+      "Metropolis Healthcare",
+      "Serum Institute of India",
+      "Dr. Reddy's Laboratories",
+      "Pharmaceutical and Food Companies"
+    ],
+    scope: "Indian microbiology testing market growing at 10.26% CAGR, reaching over $318 Million by 2030. High demand in pharmaceuticals, food & beverage, healthcare diagnostics, and agriculture. Top cities: Bangalore, Hyderabad, Pune, Mumbai, Ahmedabad. High international demand in USA, Germany, and Ireland for Ph.D. holders."
+  },
+  fishery_biologist: {
+    title: "Fishery Biologist",
+    description: "Study fish populations, aquatic ecosystems, and sustainable fisheries management",
+    overview: "Fishery Biology is the scientific study of fish populations, their habitats, and the ecosystems they live in. It isn't just about 'counting fish'; it's about managing one of India's most vital natural resources. In 21st-century India, as we look towards a 'Blue Economy,' the role of a Fishery Biologist has become one of the most critical and exciting scientific careers. India is the third-largest fish producer in the world, and we need 'Blue Guardians' to ensure this growth is sustainable. With climate change warming our oceans and a growing population needing protein, Fishery Biologists are the ones ensuring that our 'Blue Food' supply remains safe and plentiful.",
+    eligibility: [
+      "12th pass with Science (PCB or PCMB)",
+      "Strong foundation in Biology and Chemistry",
+      "Bachelor's degree in B.F.Sc. (Bachelor of Fishery Science)",
+      "Comfort with water and outdoor fieldwork",
+      "Interest in marine conservation and sustainable practices"
+    ],
+    duration: "4 years (B.F.Sc.) + 2 years (M.F.Sc.) OR 3-5 years (Ph.D. for research roles)",
+    salary: "₹4.5-8.4 LPA (Entry level) | ₹10-18 LPA (Mid-level) | ₹25-45+ LPA (Senior/Leadership)",
+    skills: [
+      "Field sampling and data collection",
+      "Water quality analysis",
+      "GIS and data modeling",
+      "Fish health assessment",
+      "Aquaculture management",
+      "Scientific writing",
+      "Community engagement",
+      "Problem-solving",
+      "Underwater research techniques"
+    ],
+    subjects: ["Biology", "Chemistry", "Zoology", "Ecology", "Genetics", "Statistics", "Environmental Science"],
+    colleges: [
+      "CIFE Mumbai",
+      "KUFOS Kochi",
+      "College of Fisheries Mangalore",
+      "WB University of Animal & Fishery Sciences Kolkata",
+      "SAGE University Bhopal",
+      "Centurion University Odisha",
+      "G.B. Pant University Uttarakhand",
+      "Veraval College Gujarat",
+      "COF Agartala Tripura"
+    ],
+    jobRoles: [
+      "Fisheries Officer",
+      "Research Scientist",
+      "Aquaculture Farm Manager",
+      "Fish Health Specialist",
+      "Population Biologist",
+      "Conservation Biologist",
+      "AI-Aquaculture Specialist",
+      "Marine Forensic Expert"
+    ],
+    companies: [
+      "Government Fisheries Department",
+      "ICAR (Indian Council of Agricultural Research)",
+      "CMFRI (Central Marine Fisheries Research Institute)",
+      "MPEDA (Marine Products Export Development Authority)",
+      "Aquaculture Hatcheries",
+      "Seafood Export Companies",
+      "NGOs (WWF, Nature Conservation Foundation)",
+      "Research Institutes"
+    ],
+    scope: "India needs over 15,000 fisheries graduates annually but supply is only 4,500—huge job security. Sector growing at ~10% annually, targeting $15 Billion export market by 2030. High international demand in Norway, Australia, and Vietnam. Emerging opportunities in smart aquaculture, lab-grown seafood, and climate-resilient breeding."
+  },
+  genetics: {
+    title: "Genetics",
+    description: "Study heredity and genetic variations to understand diseases, improve crops, and advance personalized medicine",
+    overview: "Genetics is the study of heredity—how traits are passed from parents to children through genes. A Geneticist is a detective who explores the blueprint of life, studying DNA to understand how mutations cause diseases, helping families understand inherited risks, and developing seeds that can grow in difficult weather. In 21st-century India, Genetics is the bridge between biology and the future of technology. It is the science behind the medicines we take, the crops that feed our billions, and the high-tech tools used to solve ancient mysteries. India has a massive population with unique genetic diversity. As we move toward a $300 billion bioeconomy by 2030, we need geneticists to lead the 'Genome India Project,' protect our biodiversity, and revolutionize healthcare.",
+    eligibility: [
+      "12th pass with Science (PCB or PCMB)",
+      "Strong foundation in Biology and Chemistry",
+      "Bachelor's degree in B.Sc. Genetics or B.Tech Genetic Engineering",
+      "Logical and analytical mindset",
+      "Interest in coding and data analysis"
+    ],
+    duration: "3-4 years (B.Sc./B.Tech) + 2 years (M.Sc.) OR 3-5 years (Ph.D. for research roles)",
+    salary: "₹4-8 LPA (Entry level) | ₹12-25 LPA (Mid-level) | ₹40-75+ LPA (Senior/Leadership)",
+    skills: [
+      "DNA sequencing and analysis",
+      "Bioinformatics and data analysis",
+      "Lab techniques and sample processing",
+      "Statistical analysis",
+      "Python/R programming",
+      "Genetic counseling",
+      "Scientific writing",
+      "Problem-solving",
+      "Communication and empathy"
+    ],
+    subjects: ["Biology", "Chemistry", "Organic Chemistry", "Statistics", "Genetics", "Bioinformatics", "Coding"],
+    colleges: [
+      "IISc Bangalore",
+      "Jawaharlal Nehru University (JNU)",
+      "University of Delhi (DU)",
+      "BHU Varanasi",
+      "CCMB Hyderabad",
+      "Vellore Institute of Technology (VIT)",
+      "Manipal Academy of Higher Education",
+      "BITS Pilani",
+      "Lovely Professional University (LPU)"
+    ],
+    jobRoles: [
+      "Cytogeneticist",
+      "Medical Lab Technologist",
+      "Genetic Counselor",
+      "Research Scientist",
+      "AI-Genomic Data Scientist",
+      "CRISPR Gene Editor",
+      "University Professor",
+      "Forensic Consultant"
+    ],
+    companies: [
+      "MedGenome",
+      "Strand Life Sciences",
+      "Biocon",
+      "Dr. Reddy's Laboratories",
+      "Monsanto",
+      "Mahyco",
+      "Apollo Diagnostics",
+      "Metropolis Healthcare",
+      "Pharmaceutical and Biotech Companies"
+    ],
+    scope: "Indian human genetics market growing at 10.8% CAGR, reaching over $1.7 Billion in 2025. High demand in healthcare diagnostics, pharmaceuticals, and agri-biotech. Top cities: Bangalore, Hyderabad, Pune, Delhi-NCR, Chennai. High international demand in USA, Germany, and Switzerland for Ph.D. holders. Emerging opportunities in AI-driven genomics, CRISPR gene editing, and personalized medicine."
+  },
+  clinical_research: {
+    title: "Clinical Research",
+    description: "Determine the safety and effectiveness of medications, devices, and treatment regimens for human use",
+    overview: "Clinical Research is the branch of healthcare science that determines the safety and effectiveness of medications, devices, diagnostic products, and treatment regimens intended for human use. If doctors are the soldiers on the front lines of health, clinical researchers are the 'intelligence officers' and 'scientists' working behind the scenes to give them the best weapons possible. India is currently a global hub for clinical trials. With our diverse population and world-class doctors, global companies like Pfizer, Novartis, and Serum Institute of India rely on Indian clinical researchers to develop the next generation of life-saving miracles.",
+    eligibility: [
+      "12th pass with Science (PCB or PCMB)",
+      "Bachelor's degree in B.Pharm, B.Sc (Life Sciences), MBBS, or BDS",
+      "Strong attention to detail and ethical integrity",
+      "Interest in healthcare and patient safety",
+      "Good communication and organizational skills"
+    ],
+    duration: "1 year (PG Diploma) to 2 years (Master's) after graduation",
+    salary: "₹3.5-6.5 LPA (Entry level) | ₹12-22 LPA (Mid-level) | ₹35-60+ LPA (Senior/Leadership)",
+    skills: [
+      "GCP (Good Clinical Practice) knowledge",
+      "Data management and analysis",
+      "Patient recruitment and monitoring",
+      "Medical writing",
+      "Pharmacology understanding",
+      "Regulatory knowledge",
+      "Communication and empathy",
+      "Attention to detail",
+      "Problem-solving"
+    ],
+    subjects: ["Pharmacology", "Biostatistics", "Medical Ethics", "Regulatory Affairs", "Data Management", "Clinical Pharmacology"],
+    colleges: [
+      "AIIMS Delhi",
+      "NIPER Mohali",
+      "NIPER Hyderabad",
+      "TISS Mumbai",
+      "ICRI (Multiple Cities)",
+      "Cliniminds",
+      "Amity University",
+      "JSS Mysore",
+      "IIT Kharagpur-Medical"
+    ],
+    jobRoles: [
+      "Clinical Research Coordinator (CRC)",
+      "Clinical Research Associate (CRA)",
+      "Data Manager",
+      "Pharmacovigilance Associate",
+      "Medical Writer",
+      "Site Monitor",
+      "Clinical Trial Manager",
+      "Regulatory Affairs Specialist"
+    ],
+    companies: [
+      "IQVIA",
+      "Parexel",
+      "Sun Pharma",
+      "Cipla",
+      "Serum Institute of India",
+      "Pfizer",
+      "Novartis",
+      "Multi-specialty Hospitals",
+      "Contract Research Organizations (CROs)"
+    ],
+    scope: "India Clinical Trials market projected to reach $3.37 Billion by 2030, growing at ~8.6% annually. High demand in CROs, pharmaceutical companies, and hospitals. Top cities: Bangalore, Hyderabad, Mumbai, Chennai, Delhi-NCR. High international demand in USA, Germany, and Australia. Emerging opportunities in AI-driven trials, wearable tech, and decentralized trials."
+  },
+  bioinformatics: {
+    title: "Bioinformatics",
+    description: "Bridge between Biology and Computer Science to analyze biological data and design digital solutions for healthcare",
+    overview: "Bioinformatics is a 'multidisciplinary' field—a marriage between Biology, Chemistry, Mathematics, and Computer Science. A Bioinformatics professional is a Digital Architect of Biology who takes massive amounts of biological data (like the human genome) and uses computers to find patterns that a human eye could never see. They design drugs using computer-based simulations, help doctors understand a patient's specific genetic code for 'Precision Medicine,' and build digital tools to fight global pandemics. In 21st-century India, Bioinformatics is the bridge between India's IT and Pharmaceutical strengths. With the rise of AI-driven biology and the 'Genome India Project,' we need Digital Biologists who can navigate this data-rich world.",
+    eligibility: [
+      "12th pass with Science (PCMB)",
+      "Bachelor's degree in B.Tech Bioinformatics or B.Sc. (Biotech/CS) with Bioinformatics",
+      "Strong foundation in both Biology and Computer Science",
+      "Logical and analytical mindset",
+      "Interest in coding and data analysis"
+    ],
+    duration: "4 years (B.Tech) or 3+2 years (B.Sc.+M.Sc.) + 2 years (M.Tech/M.Sc. in Bioinformatics)",
+    salary: "₹4.5-7.5 LPA (Entry level) | ₹15-28 LPA (Mid-level) | ₹35-55+ LPA (Senior/Leadership) | ₹80+ LPA (CXO/Director)",
+    skills: [
+      "Python and R programming",
+      "Linux and command-line tools",
+      "SQL and database management",
+      "Genomics and sequence analysis",
+      "Machine Learning and AI",
+      "Data visualization",
+      "Statistical analysis",
+      "Problem-solving",
+      "Communication skills"
+    ],
+    subjects: ["Biology", "Computer Science", "Mathematics", "Statistics", "Genetics", "Biochemistry", "Data Science"],
+    colleges: [
+      "IISc Bangalore",
+      "IBAB Bangalore",
+      "IIT Hyderabad",
+      "JNU Delhi",
+      "University of Pune",
+      "Amity University",
+      "VIT Vellore",
+      "Manipal (MAHE)",
+      "JIIT Noida"
+    ],
+    jobRoles: [
+      "Bioinformatics Analyst",
+      "Computational Biologist",
+      "Biostatistician",
+      "AI Drug Discovery Lead",
+      "Genomics Data Scientist",
+      "Precision Medicine Consultant",
+      "Research Scientist",
+      "Data Scientist"
+    ],
+    companies: [
+      "Cipla",
+      "Sun Pharma",
+      "Biocon",
+      "Strand Life Sciences",
+      "TCS",
+      "Wipro",
+      "Infosys",
+      "Healthcare Startups",
+      "Pharmaceutical Companies"
+    ],
+    scope: "India Bioinformatics market projected to reach $1.15 Billion by 2030 with 19% CAGR. High shortage of talent in AI-driven drug discovery and Genomics. Top cities: Bangalore (The Hub), Hyderabad, Pune, Gurgaon. Very high remote work potential. Massive international demand in USA, UK, and Germany. Emerging opportunities in Generative AI for biology, cloud-native bioinformatics, and ethical AI."
+  },
+  biochemistry: {
+    title: "Biochemistry",
+    description: "Study chemical processes within living organisms to develop medicines, improve food, and advance healthcare",
+    overview: "Biochemistry is the study of chemical processes within and relating to living organisms. It combines the 'What' of Biology with the 'How' of Chemistry. A Biochemist is a Molecular Architect who studies how molecules like proteins, lipids, and DNA interact to keep us alive, designs new medicines for diseases like diabetes and cancer, improves the nutritional value of our food, and ensures that every batch of vaccine or medicine produced is safe and effective. In 21st-century India, Biochemistry is the bridge between Biology and Chemistry. India is the 'Pharmacy of the World,' producing more vaccines and generic medicines than almost any other country. Biochemists are the brains behind this massive industry, ensuring India remains a global leader in healthcare and biotechnology.",
+    eligibility: [
+      "12th pass with Science (PCB or PCMB)",
+      "Strong foundation in Biology and Chemistry",
+      "Bachelor's degree in B.Sc. Biochemistry or Integrated M.Sc.",
+      "Curious and analytical mindset",
+      "Interest in molecular-level problem solving"
+    ],
+    duration: "3 years (B.Sc.) + 2 years (M.Sc.) OR 5 years (Integrated M.Sc.) + 3-5 years (Ph.D. for research roles)",
+    salary: "₹3.5-6 LPA (Entry level) | ₹10-18 LPA (Mid-level) | ₹25-45+ LPA (Senior/Leadership) | ₹60+ LPA (Director/CXO)",
+    skills: [
+      "Protein analysis and characterization",
+      "Enzyme kinetics and metabolism",
+      "Molecular modeling and simulation",
+      "Lab techniques (chromatography, spectroscopy)",
+      "Data analysis and interpretation",
+      "Scientific writing",
+      "Problem-solving",
+      "Attention to detail",
+      "Collaboration skills"
+    ],
+    subjects: ["Biology", "Chemistry", "Organic Chemistry", "Biochemistry", "Genetics", "Mathematics", "Statistics"],
+    colleges: [
+      "IISc Bangalore",
+      "AIIMS Delhi",
+      "Banaras Hindu University (BHU)",
+      "University of Delhi (DU)",
+      "VIT Vellore",
+      "Manipal (MAHE)",
+      "Amity University",
+      "Lovely Professional University (LPU)",
+      "University of Madras"
+    ],
+    jobRoles: [
+      "Research Scientist",
+      "Clinical Biochemist",
+      "Quality Control Officer",
+      "Drug Developer",
+      "Food Scientist",
+      "Bioinformatics Analyst",
+      "Genetic Counselor",
+      "Sustainability Officer"
+    ],
+    companies: [
+      "Cipla",
+      "Sun Pharma",
+      "Biocon",
+      "Apollo Diagnostics",
+      "Dr. Lal PathLabs",
+      "Monsanto India",
+      "Serum Institute of India",
+      "Pharmaceutical Companies",
+      "Diagnostic Labs"
+    ],
+    scope: "Indian Diagnostic and Biotech market growing at 11% CAGR, projected to reach $34 Billion by 2030. High demand in pharmaceuticals, biotechnology, hospitals, and diagnostics. Top cities: Hyderabad, Bangalore, Mumbai, Pune, Ahmedabad. High international demand in USA, Germany, and Switzerland for Ph.D. holders. Emerging opportunities in AI-drug discovery, CRISPR gene editing, and personalized medicine."
+  },
+  youtuber: {
+    title: "YouTuber",
+    description: "Create and share digital video content to educate, entertain, and engage audiences on YouTube",
+    overview: "A YouTuber is a digital content creator who produces and shares videos on YouTube. Being a YouTuber has moved from a 'fun hobby' to a massive professional industry. YouTubers are creative directors brainstorming ideas that grab attention, technical crews handling cameras and sound, community builders engaging with audiences, and business strategists managing brand deals and monetization. In India, YouTube has the largest audience in the world. As of 2024, YouTube contributed over ₹15,000 Crore (USD 1.8 Billion) to India's GDP and supported nearly 9.3 Lakh jobs. In a world where attention is the new currency, YouTubers are the bankers.",
+    eligibility: [
+      "12th pass (any stream)",
+      "Strong interest in content creation and storytelling",
+      "Comfort with being on camera or creating digital content",
+      "Passion for a specific niche or topic",
+      "Willingness to learn video editing and digital marketing"
+    ],
+    duration: "Self-paced learning + 6-12 months to build initial audience",
+    salary: "₹1.5-5 LPA (Entry level, 10k-50k subs) | ₹12-35 LPA (Mid-level, 100k-500k subs) | ₹60 L-2 Crore+ (Senior, 1M+ subs) | ₹5-100 Crore+ (Top 1%)",
+    skills: [
+      "Video editing and production",
+      "Storytelling and scriptwriting",
+      "SEO and content optimization",
+      "Data analytics and audience insights",
+      "Social media marketing",
+      "Photography and cinematography",
+      "Audio engineering",
+      "Graphic design",
+      "Business acumen"
+    ],
+    subjects: ["Mass Communication", "Digital Marketing", "Multimedia", "Graphic Design", "Business Studies", "Psychology"],
+    colleges: [
+      "IIMC Delhi",
+      "AJK-MCRC (Jamia Millia Islamia)",
+      "FTII Pune",
+      "Satyajit Ray Film & TV Institute (Kolkata)",
+      "Whistling Woods (Mumbai)",
+      "Symbiosis Pune",
+      "Xavier Institute of Communications (Mumbai)",
+      "Amity University",
+      "Online: YouTube Creators Academy, Udemy, Skillshare"
+    ],
+    jobRoles: [
+      "Content Creator",
+      "Social Media Manager",
+      "Video Editor",
+      "Scriptwriter",
+      "Brand Ambassador",
+      "Podcast Producer",
+      "Virtual YouTuber (VTuber)",
+      "AI Content Prompt Engineer"
+    ],
+    companies: [
+      "YouTube",
+      "Social Media Agencies",
+      "EdTech Startups",
+      "Gaming Companies",
+      "Entertainment Studios",
+      "Digital Marketing Agencies",
+      "Production Houses",
+      "Independent Creator"
+    ],
+    scope: "Indian Creator Economy valued at USD 12.28 Billion (₹1 Lakh Crore) in 2025, growing at 22.2% CAGR. Top industries: EdTech, Gaming, Finance, Travel, Beauty/Fashion. 100% remote work potential. International opportunities with 5-10x higher RPM for English content. Emerging trends: AI collaboration, spatial video for VR, hyper-regional content in regional languages."
+  },
+  accessory_design: {
+    title: "Accessory Design",
+    description: "Create innovative and stylish accessories including jewelry, footwear, bags, and wearable tech",
+    overview: "Accessory Design is a specialized branch of design that focuses on creating everything a person wears or carries other than clothes—handbags, footwear, belts, eyewear, jewelry, watches, and wearable tech. An Accessory Designer is part engineer, part artist, and part trend-spotter who doesn't just 'draw' but understands materials—how leather bends, how metal shines, and how a shoe supports a foot. They bridge the gap between a creative dream and a product you can actually buy in a store. In 21st-century India, this isn't just about making pretty things. It is a booming billion-dollar industry where traditional craftsmanship meets high-tech 3D printing and sustainable 'vegan' materials.",
+    eligibility: [
+      "12th pass (any stream, Fine Arts preferred)",
+      "Strong drawing and sketching skills",
+      "Interest in fashion, design, and materials",
+      "Attention to detail and aesthetic sense",
+      "Willingness to learn CAD and design software"
+    ],
+    duration: "4 years (B.Des in Accessory Design) + 2 years (M.Des for specialization)",
+    salary: "₹4.5-7 LPA (Entry level) | ₹12-20 LPA (Mid-level) | ₹35-60+ LPA (Senior/Leadership)",
+    skills: [
+      "Sketching and rendering",
+      "CAD software (Rhino, Matrix, Adobe Illustrator)",
+      "Material knowledge and sourcing",
+      "3D modeling and prototyping",
+      "Technical design and specifications",
+      "Trend forecasting",
+      "Problem-solving",
+      "Collaboration with artisans",
+      "Sustainability and eco-design"
+    ],
+    subjects: ["Fine Arts", "Design Fundamentals", "Fashion Design", "Materials Science", "Business Studies", "Digital Design"],
+    colleges: [
+      "NIFT (18 campuses)",
+      "National Institute of Design (NID) Ahmedabad",
+      "FDDI (Footwear Design)",
+      "Pearl Academy (Delhi/Mumbai/Jaipur)",
+      "Symbiosis Institute of Design (Pune)",
+      "UID (Ahmedabad)",
+      "ISDI (Mumbai)",
+      "Amity University"
+    ],
+    jobRoles: [
+      "Jewelry Designer",
+      "Footwear Designer",
+      "Handbag Designer",
+      "Visual Merchandiser",
+      "Wearable Tech Designer",
+      "AI Design Strategist",
+      "Virtual Fashion Designer (NFT/Metaverse)",
+      "Bio-Material Innovator"
+    ],
+    companies: [
+      "Titan",
+      "Tanishq",
+      "Nike",
+      "Bata",
+      "Liberty",
+      "Myntra",
+      "Ajio",
+      "Sabyasachi",
+      "Hidesign",
+      "Luxury Brands"
+    ],
+    scope: "Indian personal accessories market projected to reach $3.01 Billion by 2030, growing at 7.6% annually. Top cities: Bangalore (Tech/Lifestyle), Mumbai (Luxury), Jaipur (Gems), Kanpur (Leather). High demand for Wearable Tech Designers and Sustainable Material Researchers. Emerging opportunities in AI-generated design, smart accessories, and circular economy design."
+  },
 };
 
 export function getCareerDetail(careerSlug: string): CareerDetail | null {

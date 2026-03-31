@@ -9,6 +9,7 @@ import { CareerHero } from "@/app/components/CareerHero";
 import { CareerCompleteGuide } from "@/app/components/CareerCompleteGuide";
 import { CostBreakdown } from "@/app/components/CostBreakdown";
 import { getCareerPageData } from "@/app/data/careerPageData";
+import { getCareerVideos } from "@/app/data/careerVideos";
 import { allCareerCosts } from "@/app/data/costBreakdownData";
 import { careerImagesMap } from "../../data/careerImagesMap.js";
 
@@ -34,18 +35,12 @@ export function CareerPageClient({
 }: CareerPageClientProps) {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
-  const videos = [
-    { id: 1, title: `${careerName} Overview`,   url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-    { id: 2, title: "Career Path Guide",         url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-    { id: 3, title: "Student Testimonials",      url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-    { id: 4, title: "Exam Preparation Tips",     url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  ];
+  // data-driven for every career (including actuarial_science)
+  const pageData = getCareerPageData(career);
+  const videos = getCareerVideos(career);
 
   const nextVideo = () => setCurrentVideoIndex((p) => (p + 1) % videos.length);
   const prevVideo = () => setCurrentVideoIndex((p) => (p - 1 + videos.length) % videos.length);
-
-  // data-driven for every career (including actuarial_science)
-  const pageData = getCareerPageData(career);
 
   const navItems = [
     { id: "hero",  label: "Overview",       icon: "Target"       },
@@ -98,6 +93,7 @@ export function CareerPageClient({
       </div>
 
       {/* ── Video Carousel ────────────────────────────────────────── */}
+      {videos.length > 0 && (
       <section id="videos" className="py-10 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 md:mb-8 lg:mb-12">
@@ -113,8 +109,8 @@ export function CareerPageClient({
             <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src={videos[currentVideoIndex].url}
-                title={videos[currentVideoIndex].title}
+                src={videos[currentVideoIndex]?.url}
+                title={videos[currentVideoIndex]?.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -123,7 +119,7 @@ export function CareerPageClient({
 
           <div className="text-center mb-6 md:mb-8">
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-800">
-              {videos[currentVideoIndex].title}
+              {videos[currentVideoIndex]?.title}
             </h3>
             <p className="text-xs sm:text-sm mt-2 text-slate-500 font-medium">
               Video {currentVideoIndex + 1} of {videos.length}
@@ -164,6 +160,7 @@ export function CareerPageClient({
           </div>
         </div>
       </section>
+      )}
 
       </div>{/* end lg:pl-20 */}
 

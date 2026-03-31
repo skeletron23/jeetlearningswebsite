@@ -6,82 +6,90 @@ const BLUE2 = "#3B82F6";
 export const bioScienceUpdateData: Record<string, CareerPageData> = {
   bioinformatics: {
     slug: "bioinformatics",
-    badge: "🔬 Scientific Innovation for Class 10+",
-    heading: "Bioinformatics",
+    badge: "💻 Scientific Innovation for Class 10+",
+    heading: "The Digital Architect of Biology — Bioinformatics",
     subheading: "Decoding the language of life through software, algorithms, and genomic data science.",
     whyCards: [
-      { icon: "Dna", title: "Genomic Analyst", description: "Use software tools to interpret DNA sequences and protein blueprints.", borderColor: "#10B981" },
-      { icon: "Terminal", title: "Algorithm Design", description: "Develop complex statistical models for drug discovery and disease mapping.", borderColor: "#059669" },
-      { icon: "Database", title: "Big Data Biologist", description: "Manage massive biological databases to solve global health challenges.", borderColor: "#3B82F6" },
-      { icon: "TrendingUp", title: "AI-Driven Research", description: "Join a $14.7B industry transformed by AI and machine learning.", borderColor: "#F59E0B" }
+      { icon: "Dna", title: "The Data Translator", description: "Take massive biological data and use computers to find patterns humans can't see.", borderColor: "#10B981" },
+      { icon: "Terminal", title: "The Drug Designer", description: "Use computer simulations to predict which medicine will work best instead of wet lab testing.", borderColor: "#059669" },
+      { icon: "Database", title: "The Genetic Map Maker", description: "Help doctors understand patient's genetic code for precision medicine treatment.", borderColor: "#3B82F6" },
+      { icon: "TrendingUp", title: "AI-Driven Research", description: "Join a $1.15B industry transformed by AI, machine learning, and genomic data science.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years (B.Tech/B.Sc)", color: "bg-green-100 text-green-700" },
-      { label: "Key Skills", detail: "Python, R, SQL, Genomics", color: "bg-blue-100 text-blue-700" },
-      { label: "Growth", detail: "10%+ CAGR (Genomics)", color: "bg-purple-100 text-purple-700" }
+      { label: "Entry Salary", detail: "₹4.5L - ₹7.5L PA", color: "bg-green-100 text-green-700" },
+      { label: "Key Skills", detail: "Python, R, SQL, Linux", color: "bg-blue-100 text-blue-700" },
+      { label: "Market Growth", detail: "19% CAGR (2026-2030)", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "$14.7B", label: "Global Market 2032", gradient: "from-green-500 to-green-600" },
-      { value: "AI", label: "Core Tech Driver", gradient: "from-blue-500 to-blue-600" }
+      { value: "$1.15B", label: "Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "19%", label: "CAGR Growth Rate", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Computational biological analysis.",
+        description: "The marriage between Biology and Computer Science.",
         color: BLUE,
         content: [
-          "The Genomic Decoder: Bioinformatics uses software tools and algorithms to analyze and interpret complex biological data, particularly DNA and protein sequences.",
-          "Interdisciplinary Core: It bridges biology, computer science, and statistics to understand cellular mechanisms.",
-          "Global Impact: From drug discovery and personalized medicine to predicting the next viral outbreak using data science."
+          "The Digital Detective: Bioinformatics is a multidisciplinary field—a marriage between Biology, Chemistry, Mathematics, and Computer Science.",
+          "The Code-Breaker: You solve mysteries hidden inside a single drop of blood or a tiny strand of DNA. Find the code that causes disease or design vaccines that save millions.",
+          "India's Tech-Bio Bridge: India is a global leader in IT and Pharmaceuticals. Bioinformatics combines these two strengths. With the Genome India Project, we need Digital Biologists.",
+          "Real-World Impact: From AI-driven drug discovery to personalized medicine, from fighting pandemics to understanding genetic diseases."
         ]
       },
       {
         id: "who",
         title: "Who Should Consider This Career?",
         icon: "User",
-        description: "Ideal for the analytical mind.",
+        description: "Essential traits and skills required for success.",
         color: BLUE2,
         content: [
-          "The Analytical Scientist: Do you enjoy both Biology and Math/Coding?",
-          "Traits: Analytical mindset, logical reasoning, and high attention to detail.",
-          "Hard Skills: Proficiency in Python/R programming, genomics, and sequence alignment techniques."
+          "The Logical Puzzle-Solver: Do you love connecting dots and finding hidden patterns in data?",
+          "Patience for Perfection: Biological data is 'messy.' Can you spend hours 'cleaning' data to find one single truth?",
+          "The Balanced Brain: Are you equally comfortable with Biology (living things) and Logic (coding)?",
+          "Hard Skills: Python, R, Linux, SQL, and a strong grasp of Genomics.",
+          "Soft Skills: Collaborative spirit and the ability to explain 'tech' to 'non-tech' people."
         ]
       },
       {
         id: "responsibilities",
         title: "Key Responsibilities & Work Process",
         icon: "Briefcase",
-        description: "From data gathering to discovery.",
+        description: "A day in the life of a bioinformatician.",
         color: BLUE,
         content: [
-          "Data Analysis: Developing algorithms for gene identification and biological mapping.",
-          "Research: Analyzing clinical trial data to assist in drug discovery.",
-          "Modeling: Predicting protein structures and interactions using AI tools like AlphaFold.",
-          "Management: Building and maintaining secure databases for global biological research."
+          "The Lab Login (9 AM): Your day begins with a high-performance workstation. Check server logs—last night your NGS pipeline processed data from 500 patients. Ensure algorithms correctly identified mutations.",
+          "Collaborative Huddle (11:30 AM): Meet with 'Wet Lab' scientists. They discovered a new protein. Your job is to 'blast' that protein's sequence against a global database to see what it does.",
+          "Lunch and Logic (1:30 PM): Brainstorm with colleagues. 'Why did the AI model flag this gene as false positive?' Realize the algorithm needs a better filter for background noise.",
+          "Algorithm Optimization (3:30 PM): Write scripts in Python or R. Build a tool to simulate how a virus attaches to human cells. Build a digital battlefield to defeat disease.",
+          "Visualizing Success (6 PM): Create 3D visualization of DNA structure. Explain findings to company directors. Log off knowing your code moved us closer to a cure."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Aid for biotech students.",
+        description: "Financial aid to help speed up your education journey.",
         color: BLUE,
         content: [
-          "DBT-BET: Department of Biotechnology Eligibility Test fellowships.",
-          "GATE Fellowship: Support for postgraduate research at premier institutes.",
-          "ICMR JRF: Junior Research Fellowship for medical and biological data research."
+          "INSPIRE Fellowship: For science merit students with high academic standing.",
+          "GAT-B Stipends: ₹12k/month for postgraduate bioinformatics students.",
+          "ARM Scholarship: Biotecnika's scholarship for biotech and bioinformatics students.",
+          "Biocon Rama Mazumdar Scholarship: For students pursuing biotech and bioinformatics.",
+          "ISCB Travel Grants: International Society for Computational Biology travel support."
         ]
       },
       {
         id: "challenges",
         title: "Key Challenges",
         icon: "AlertTriangle",
-        description: "Hurdles in the data lab.",
+        description: "The difficult realities you must be ready to face.",
         color: BLUE2,
         content: [
-          "Tech Evolution: Constant pressure to update programming skills in a fast-changing field.",
+          "Constant Re-skilling: You must learn a new coding language or tool every year.",
+          "Data Fatigue: Staring at screens and massive spreadsheets can be mentally draining.",
+          "Interdisciplinary Stress: You have to speak the 'language' of both a coder and a doctor—which takes years to master.",
           "Infrastructure Needs: Heavy reliance on high-performance computational clusters.",
           "Research Competition: Intense focus required to secure spots in global labs."
         ]
@@ -90,12 +98,15 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
         id: "startnow",
         title: "Start Now (Class 9–12)",
         icon: "Rocket",
-        description: "Actions for high schoolers.",
+        description: "Actionable steps you can take today.",
         color: BLUE,
         content: [
-          "Academic Focus: Build a strong foundation in both Biology and Mathematics.",
-          "Learn Coding: Start with basic Python or R from Class 11.",
-          "Stay Informed: Follow how AI is transforming biology on platforms like ScienceDaily."
+          "Master Python: It is the 'lingua franca' of the field. Start a project on Kaggle.",
+          "Logic and Math: Focus on Statistics. Bioinformatics is 50% math!",
+          "Read Scientific Blogs: Follow GenomeWeb or Nature News to see what's trending.",
+          "DIY Experiments: Use online tools like NCBI BLAST to play with real DNA sequences from home.",
+          "Build Foundation: Strong foundation in both Biology and Mathematics is critical.",
+          "Learn Linux: Familiarize yourself with Linux command line basics."
         ]
       }
     ]
@@ -103,95 +114,106 @@ export const bioScienceUpdateData: Record<string, CareerPageData> = {
   biochemistry: {
     slug: "biochemistry",
     badge: "🔬 Scientific Innovation for Class 10+",
-    heading: "Biochemistry",
+    heading: "The Molecular Architect — Biochemistry",
     subheading: "Exploring the chemical blueprints of life at the cellular and molecular level.",
     whyCards: [
-      { icon: "FlaskConical", title: "Molecular Explorer", description: "Study chemical processes within living organisms to unlock cellular secrets.", borderColor: "#10B981" },
-      { icon: "Microscope", title: "Diagnostic Expert", description: "Perform clinical diagnostics and test drug efficiency and toxicity safely.", borderColor: "#059669" },
-      { icon: "Dna", title: "Drug Discovery", description: "Bridge biology and chemistry to develop life-saving medications.", borderColor: "#3B82F6" },
-      { icon: "ShieldCheck", title: "Food Safety", description: "Ensure the chemical integrity of nutrition and consumer products.", borderColor: "#F59E0B" }
+      { icon: "FlaskConical", title: "The Cell Explorer", description: "Study how molecules like proteins, lipids, and DNA interact to keep us alive.", borderColor: "#10B981" },
+      { icon: "Microscope", title: "The Drug Developer", description: "Work in pharmaceutical companies to design new medicines for diseases.", borderColor: "#059669" },
+      { icon: "Dna", title: "The Food Scientist", description: "Improve nutritional value and create sustainable alternatives like plant-based meat.", borderColor: "#3B82F6" },
+      { icon: "ShieldCheck", title: "The Quality Controller", description: "Ensure every batch of vaccine or medicine is safe and effective.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Starting Pay", detail: "₹3.5L - ₹7L PA", color: "bg-green-100 text-green-700" },
-      { label: "Personality", detail: "Meticulous & Persistent", color: "bg-blue-100 text-blue-700" },
-      { label: "Lab Focus", detail: "HPLC & Enzyme Kinetics", color: "bg-purple-100 text-purple-700" }
+      { label: "Entry Salary", detail: "₹3.5L - ₹6L PA", color: "bg-green-100 text-green-700" },
+      { label: "Personality", detail: "Curious, Patient, Detail-Oriented", color: "bg-blue-100 text-blue-700" },
+      { label: "Key Skills", detail: "Biology, Chemistry, Math, Coding", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "₹7L", label: "Top Starting LPA", gradient: "from-green-500 to-green-600" },
-      { value: "Lab", label: "Core Work Setting", gradient: "from-blue-500 to-blue-600" }
+      { value: "11%", label: "Market CAGR Growth", gradient: "from-green-500 to-green-600" },
+      { value: "$34B", label: "Market by 2030", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "The chemistry of living things.",
+        description: "Understanding the chemistry of life itself.",
         color: BLUE,
         content: [
-          "The Molecular Scientist: Biochemistry is the study of chemical processes within and relating to living organisms.",
-          "The Bridge: It connects biology and chemistry to explore cellular mechanisms and signaling pathways.",
-          "Human Health: Crucial for understanding disease pathology and metabolic syndromes."
+          "The Detective Inside Cells: Biochemistry is the study of chemical processes within and relating to living organisms. It combines the 'What' of Biology with the 'How' of Chemistry.",
+          "The Bridge Between Sciences: It connects biology and chemistry to explore how molecules like proteins, lipids, and DNA interact to keep us alive.",
+          "India's Pharmacy: India is the 'Pharmacy of the World.' We produce more vaccines and generic medicines than almost any other country. Biochemists are the brains behind this massive industry.",
+          "Real-World Impact: Biochemists figure out how food turns into energy, how viruses hijack human bodies, and how plants can cure diseases."
         ]
       },
       {
         id: "who",
         title: "Who Should Consider This Career?",
         icon: "User",
-        description: "Ideal for the persistent researcher.",
+        description: "Essential traits and skills required for success.",
         color: BLUE2,
         content: [
-          "Traits: Curiosity, persistence, and extreme meticulousness with measurements.",
-          "Skills: Molecular biology techniques, chromatography (HPLC), and enzyme kinetics analysis.",
-          "Environment: Perfect for those who love working with complex glassware and precision instruments."
+          "The Curious Soul: Do you always ask 'Why' and 'How' things work? This is essential for research.",
+          "The Patient Observer: Experiments often fail. Can you stay calm and try again for the 100th time?",
+          "The Detail-Oriented Eye: Can you notice a tiny color change in a liquid or a small spike on a graph?",
+          "Analytical Thinking: Are you good at solving puzzles and connecting different pieces of information?",
+          "Hard Skills: Strong foundation in Biology and Organic Chemistry, comfort with Mathematics and Computer Simulations."
         ]
       },
       {
         id: "responsibilities",
         title: "Key Responsibilities & Work Process",
         icon: "Briefcase",
-        description: "Experiments to diagnostics.",
+        description: "A day in the life of a biochemist.",
         color: BLUE,
         content: [
-          "Experimentation: Understanding cellular pathways to identify biological targets.",
-          "Testing: Evaluating drug efficiency and toxicity in controlled settings.",
-          "Diagnostics: Performing clinical tests to detect biomarkers for diseases.",
-          "Quality Control: Monitoring chemical composition in food and pharmaceuticals."
+          "The Lab Huddle (9 AM): Your day begins at a high-tech research facility. You start with a team meeting to discuss results of experiments.",
+          "Pipettes and Precision (11:30 AM): Using high-precision pipettes to transfer liquids between test tubes. Testing how enzymes react with specific sugars.",
+          "Lunch and Data (1:30 PM): Brainstorming with colleagues about why reactions failed and checking pH levels.",
+          "The Digital Lab (3:30 PM): Creating 3D models of molecules using advanced software. Simulating how drug molecules 'dock' into viruses.",
+          "The Review (6 PM): Documenting every step in a digital lab notebook. In science, if it isn't documented, it didn't happen."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for researchers.",
+        description: "Financial aid to help speed up your education journey.",
         color: BLUE,
         content: [
-          "INSPIRE Fellowship: Support for basic science students with high academic standing.",
+          "INSPIRE Scholarship: ₹80k/year for top board scorers in science.",
+          "KVPY (Kishore Vaigyanik Protsahan Yojana): Fellowships specifically for basic sciences students.",
+          "Prathibha Scholarship: State-level scholarships for science students (e.g., Kerala).",
           "UGC-NET JRF: Grants for pursuing PhD in top Indian universities.",
-          "KVPY: Scholarships specifically designed to encourage science research."
+          "Corporate Scholarships: Biocon and other biotech companies offer scholarships for biochemistry students."
         ]
       },
       {
         id: "challenges",
         title: "Key Challenges",
         icon: "AlertTriangle",
-        description: "Risks in the research lab.",
+        description: "The difficult realities you must be ready to face.",
         color: BLUE2,
         content: [
-          "Endurance: Long, repetitive hours spent standing in laboratory environments.",
-          "Safety: Regular exposure to hazardous chemicals and biological samples.",
-          "Patience: Research results often take months of failed attempts to manifest."
+          "The Long Wait: Research takes years. You might work on one medicine for a decade before it hits the market.",
+          "Academic Rigor: You never stop studying. The 'textbooks' of biochemistry change every year.",
+          "Lab Hours: You might have to check an experiment at 2 AM or work on weekends if cells are growing.",
+          "Safety Concerns: Regular exposure to hazardous chemicals and biological samples requires strict protocols.",
+          "Patience Required: Research results often take months of failed attempts to manifest."
         ]
       },
       {
         id: "startnow",
         title: "Start Now (Class 9–12)",
         icon: "Rocket",
-        description: "Action for young biochemists.",
+        description: "Actionable steps you can take today.",
         color: BLUE,
         content: [
-          "Organic Chemistry: Focus deeply on Organic Chemistry and Biomolecules chapters.",
-          "Olympiads: Participate in National Science Olympiads to build problem-solving speed.",
-          "Self-Study: Read about the Krebs cycle and basic metabolic pathways early on."
+          "Read Popular Science: Follow ScienceDaily or Scientific American to stay updated on breakthroughs.",
+          "Coding Basics: Learn Python. In the future, every biochemist will also be a data scientist.",
+          "Kitchen Science: Try baking or making curd. Both are complex biochemical reactions!",
+          "Visit a Lab: Ask your teacher to take you to a local hospital or college lab to see machines in action.",
+          "Focus on Organic Chemistry: Master the Krebs cycle and basic metabolic pathways early on.",
+          "Participate in Olympiads: Join National Science Olympiads to build problem-solving speed."
         ]
       }
     ]

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { careerCategories } from "@/app/data/careers";
 
@@ -10,6 +10,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,19 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleDropdownLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setIsDropdownHovered(false);
+    }, 100);
+  };
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+    }
+    setIsDropdownHovered(true);
+  };
 
   const categories = Object.entries(careerCategories).map(([slug, data]) => ({
     slug,
@@ -58,30 +73,44 @@ export default function Navbar() {
               </Link>
 
               {/* Categories Dropdown */}
-              <div className="relative group">
-                <button className="flex items-center gap-1.5 font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors py-2 group">
+              <div 
+                className="relative"
+                onMouseEnter={handleDropdownEnter}
+                onMouseLeave={handleDropdownLeave}
+              >
+                <button className="flex items-center gap-1.5 font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors py-2">
                   Programs
-                  <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-[var(--color-canam-red)] group-hover:rotate-180 transition-all duration-300" />
+                  <ChevronDown 
+                    className={`w-4 h-4 text-slate-400 hover:text-[var(--color-canam-red)] transition-all duration-300 ${isDropdownHovered ? 'rotate-180 text-[var(--color-canam-red)]' : ''}`}
+                  />
                 </button>
 
-                {/* Dropdown Menu */}
-                <div className="absolute top-full -left-6 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <div className="bg-white/90 backdrop-blur-xl border border-slate-100/50 rounded-2xl shadow-xl p-3 min-w-[300px] overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-slate-50/50 pointer-events-none" />
-                    <div className="relative z-10 space-y-1">
-                      {categories.map((category) => (
-                        <Link
-                          key={category.slug}
-                          href={`/${category.slug}`}
-                          className="group flex items-center px-4 py-3 text-slate-600 hover:text-[var(--color-canam-red)] hover:bg-[var(--color-canam-red)]/5 rounded-xl transition-all duration-200 font-inter text-sm font-medium"
-                        >
-                          <span className="flex-1">{category.name}</span>
-                          <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[var(--color-canam-red)]">→</span>
-                        </Link>
-                      ))}
+                {/* Dropdown Menu - Full width from left */}
+                {isDropdownHovered && (
+                  <div className="fixed top-[92px] left-0 right-0 pt-4 z-50 animate-in fade-in duration-200">
+                    <div 
+                      className="w-full bg-white/95 backdrop-blur-xl border-b border-slate-100/50 shadow-2xl p-6"
+                      onMouseEnter={handleDropdownEnter}
+                      onMouseLeave={handleDropdownLeave}
+                    >
+                      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
+                        <div className="grid grid-cols-5 gap-8">
+                          {categories.map((category) => (
+                            <Link
+                              key={category.slug}
+                              href={`/${category.slug}`}
+                              className="group flex items-center justify-between px-3 py-2 text-slate-600 hover:text-[var(--color-canam-red)] hover:bg-[var(--color-canam-red)]/5 rounded-lg transition-all duration-200 font-inter text-sm font-medium"
+                              onClick={() => setIsDropdownHovered(false)}
+                            >
+                              <span className="flex-1">{category.name}</span>
+                              <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[var(--color-canam-red)] ml-2">→</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
 
             </div>

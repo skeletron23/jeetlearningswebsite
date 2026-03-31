@@ -273,8 +273,10 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
 
 // ─── 5. SCHOLARSHIP BADGE ACCORDION ──────────────────────────────
 function SectionScholarship({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+  const [expanded, setExpanded] = useState<number | null>(null);
   const colors = [GREEN, TEAL, BLUE, INDIGO, "#7C3AED"];
   const badges = ["Medal", "Handshake", "Star", "Target", "Building"];
+  
   return (
     <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-green-50 to-emerald-50 border-b border-green-200 relative overflow-hidden">
       {/* Decorative topic illustration */}
@@ -288,6 +290,8 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
             const label = point.includes(":") ? point.split(":")[0] : `Scholarship ${i + 1}`;
             const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
             const color = colors[i % colors.length];
+            const isExpanded = expanded === i;
+            
             return (
               <div
                 key={i}
@@ -297,7 +301,10 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
                   background: "white",
                 }}
               >
-                <div className="w-full flex items-center gap-4 p-5 text-left">
+                <button
+                  onClick={() => setExpanded(isExpanded ? null : i)}
+                  className="w-full flex items-center gap-4 p-5 text-left hover:bg-slate-50 transition-colors"
+                >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: `${color}20`, color }}
@@ -307,14 +314,23 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
                   <div className="flex-1">
                     <p className="font-bold text-slate-800">{label}</p>
                   </div>
-                </div>
-                <div className="px-5 pb-5 pl-[76px]">
                   <div
-                    className="h-0.5 mb-3 rounded-full"
-                    style={{ background: `${color}30` }}
-                  />
-                  <p className="text-slate-600 leading-relaxed">{detail}</p>
-                </div>
+                    className="flex-shrink-0 transition-transform duration-300"
+                    style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
+                  >
+                    <ChevronLeft className="w-5 h-5" style={{ color }} />
+                  </div>
+                </button>
+                
+                {isExpanded && (
+                  <div className="px-5 pb-5 pl-[76px] border-t border-slate-100 pt-4 animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div
+                      className="h-0.5 mb-3 rounded-full"
+                      style={{ background: `${color}30` }}
+                    />
+                    <p className="text-slate-600 leading-relaxed whitespace-pre-wrap">{detail}</p>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -324,11 +340,12 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
   );
 }
 
-// ─── 6. CHALLENGE ALERT CARDS (horizontal swipe) ─────────────────
+// ─── 6. CHALLENGE ALERT CARDS (expandable) ─────────────────────
 function SectionChallenges({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [current, setCurrent] = useState(0);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const severity = ["Critical", "High", "Medium", "Critical", "High", "Medium"];
   const alertColors = ["#EF4444", "#F97316", "#EAB308", "#EF4444", "#F97316", "#EAB308"];
+  
   return (
     <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-red-50 to-orange-50 overflow-hidden border-b border-red-200 relative">
       <div className="absolute top-1/2 left-0 w-1/4 h-2/3 opacity-[0.06] pointer-events-none hidden lg:block transform -translate-y-1/2 -translate-x-1/3 rotate-[-10deg]">
@@ -337,59 +354,48 @@ function SectionChallenges({ section, careerName }: { section: CareerGuideSectio
       <div className="max-w-5xl mx-auto relative z-10">
         <SectionHeader section={section} light={false} />
 
-        {/* numbered challenge cards */}
-        <div className="relative">
-          <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
-            {section.content.map((point, i) => (
+        {/* expandable challenge cards */}
+        <div className="flex flex-col gap-4">
+          {section.content.map((point, i) => {
+            const isExpanded = expanded === i;
+            return (
               <div
                 key={i}
-                onClick={() => setCurrent(i)}
-                className="snap-center flex-shrink-0 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 style={{
-                  width: "min(300px, 85vw)",
-                  transform: current === i ? "scale(1.03)" : "scale(0.96)",
-                  opacity: current === i ? 1 : 0.65,
+                  background: "white",
                 }}
               >
                 {/* top bar */}
-                <div
-                  className="px-5 py-3 flex items-center justify-between"
+                <button
+                  onClick={() => setExpanded(isExpanded ? null : i)}
+                  className="w-full px-5 py-3 flex items-center justify-between hover:opacity-90 transition-opacity"
                   style={{ background: alertColors[i % alertColors.length] }}
                 >
-                  <span className="text-white font-bold text-xs uppercase tracking-wider">
-                    Challenge #{i + 1}
-                  </span>
-                  <span className="text-white text-xs">{severity[i % severity.length]}</span>
-                </div>
+                  <div className="flex items-center gap-3">
+                    <AlertTriangle className="w-5 h-5 text-white flex-shrink-0" />
+                    <span className="text-white font-bold text-sm uppercase tracking-wider">
+                      Challenge #{i + 1}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-white text-xs">{severity[i % severity.length]}</span>
+                    <div
+                      className="transition-transform duration-300"
+                      style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
+                    >
+                      <ChevronLeft className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
+                </button>
+                
                 {/* body */}
                 <div className="p-6 bg-white">
-                  <AlertTriangle className="w-8 h-8 mb-4" style={{ color: alertColors[i % alertColors.length] }} />
-                  <p className="text-slate-700 leading-relaxed text-sm line-clamp-4">{point}</p>
+                  <p className="text-slate-700 leading-relaxed text-base whitespace-pre-wrap">{point}</p>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* counter */}
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <button
-              onClick={() => setCurrent(c => Math.max(0, c - 1))}
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-all shadow-sm"
-              style={{ background: "#FED7AA", color: "#92400E" }}
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <span className="text-slate-600 text-sm font-medium">
-              {current + 1} / {section.content.length}
-            </span>
-            <button
-              onClick={() => setCurrent(c => Math.min(section.content.length - 1, c + 1))}
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-all shadow-sm"
-              style={{ background: "#FED7AA", color: "#92400E" }}
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

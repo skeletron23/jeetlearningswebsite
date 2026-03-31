@@ -6,63 +6,130 @@ const BLUE2 = "#3B82F6";
 export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
   accessory_design: {
     slug: "accessory_design",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Detail Architect for Class 10+",
     heading: "Accessory Design",
-    subheading: "Transforming creative blueprints into functional, marketable luxury products.",
+    subheading: "Creating the 'magic details' that define how people look and feel—from luxury jewelry to wearable tech.",
     whyCards: [
-      { icon: "Briefcase", title: "Product Range", description: "Design everything from footwear and handbags to luxury jewelry and tech wearables.", borderColor: "#10B981" },
-      { icon: "Layers", title: "Material Science", description: "Master the structural integrity of leather, metals, and textiles.", borderColor: "#059669" },
-      { icon: "TrendingUp", title: "Economic Value", description: "Join India's luxury market, a global growth engine for designer talent.", borderColor: "#3B82F6" },
-      { icon: "Fingerprint", title: "Brand Identity", description: "Become a vital gatekeeper of lifestyle aesthetics and global brand identity.", borderColor: "#F59E0B" }
+      { icon: "Briefcase", title: "Billion-Dollar Industry", description: "India's personal accessories market projected to reach $3.01B by 2030, growing at 7.6% annually.", borderColor: "#10B981" },
+      { icon: "Layers", title: "Material Mastery", description: "Master leather, metals, textiles, and sustainable 'vegan' materials with 3D printing technology.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Luxury Growth Hub", description: "Bangalore, Mumbai, Jaipur, and Kanpur are global centers for accessory design and manufacturing.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "Artisan Collaboration", description: "Bridge modern CAD design with ancient craftsmanship—the secret sauce of Indian accessory design.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "2-4 Years (B.Des/M.Des)", color: "bg-green-100 text-green-700" },
-      { label: "Software", detail: "Rhino, Matrix, Adobe Illustrator", color: "bg-blue-100 text-blue-700" },
-      { label: "Focus", detail: "Structural Integrity & Materiality", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "4 Years (B.Des) + 2 Years (M.Des)", color: "bg-green-100 text-green-700" },
+      { label: "Software", detail: "Rhino, Matrix, Adobe Illustrator, CAD", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹60L+ (Entry to Senior)", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "No. 1", label: "Luxury Growth Hub", gradient: "from-green-500 to-green-600" },
-      { value: "2026", label: "Market Peak Year", gradient: "from-blue-500 to-blue-600" }
+      { value: "$3.01B", label: "Market Size by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "7.6%", label: "Annual Growth Rate", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Understanding the focus of accessory designing.",
+        description: "The soul of personal style—creating everything people wear or carry.",
         color: BLUE,
         content: [
-          "Product Range: Includes personal items like footwear and handbags, luxury goods such as fine jewelry and watches, and tech-driven wearable devices.",
-          "The Designer's Role: Professionals act as trend-spotters and material experts, understanding the structural integrity of leather, metals, and textiles to transform creative blueprints into functional products.",
-          "Economic Value: In 2026, India's luxury market is a global growth engine, making designers vital \"gatekeepers\" of lifestyle aesthetics and brand identity."
+          "Personal Accessories: Handbags, footwear, belts, and eyewear that complete an outfit.",
+          "Luxury & Lifestyle: Fine and costume jewelry, watches, and wearable tech devices.",
+          "Space & Leisure: Home décor accents, travel gear, and high-fashion tech cases.",
+          "The Designer's Role: Part engineer, part artist, part trend-spotter. You understand how leather bends, how metal shines, and how a shoe supports a foot. You bridge the gap between creative dreams and products people buy in stores.",
+          "Industry Scope: In 2026, this is a booming billion-dollar industry where traditional craftsmanship meets high-tech 3D printing and sustainable materials."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: From Sketch to Showcase",
+        icon: "Clock",
+        description: "Real workflow of an accessory designer.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Inspiration Hunt: Start in a sunlit studio in Bangalore or Delhi. Create mood boards with textures of weathered stone, recycled ocean plastic, and retro-futurism vibes for next summer's collection.",
+          "11:30 AM - The 3D Workshop: Use CAD software to model futuristic sunglasses frames. Send files to a 3D printer and watch your digital design turn into a physical prototype.",
+          "2:00 PM - The Material Maze: Visit leather and textile markets. Touch different materials. Is cork fabric durable enough for a wallet? Does recycled brass feel premium? Negotiate with suppliers for the perfect balance of cost and quality.",
+          "4:30 PM - The Artisan Huddle: Visit the sampling unit where master craftsmen (karigars) hand-stitch your prototype. Explain specific folds you want in leather. This collaboration between modern design and ancient skills is the secret sauce.",
+          "7:00 PM - The Brand Sync: Video call with marketing team to discuss how to showcase sustainability on Instagram. Leave knowing tomorrow, a version of your idea will be held in someone's hand."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Accessory DNA",
         icon: "User",
-        description: "Traits and skills for the ideal candidate.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Sketching & Rendering: The ability to put ideas on paper or screen quickly.",
-          "CAD Software: Proficiency in tools like Rhino, Matrix, or Adobe Illustrator.",
-          "Material Knowledge: Understanding wood, metal, plastic, leather, and gems.",
-          "Detail Obsession: A critical eye for perfection in small-scale products.",
-          "Problem-Solving: Figuring out how to make a high-heel comfortable or a bag lightweight."
+          "Hard Skills - The Tools: Sketching & Rendering (put ideas on paper/screen quickly), CAD Software (Rhino, Matrix, Adobe Illustrator), Material Knowledge (wood, metal, plastic, leather, gems).",
+          "Soft Skills - The Mindset: Detail Obsession (care about exact shade of zipper or weight of earring), Trend Forecasting (eye for what will be cool six months from now), Problem-Solving (make high-heels comfortable or bags lightweight).",
+          "The Self-Check: Do you look at people's shoes before their faces? Do you love taking apart old watches or making your own jewelry? If yes, you have the Accessory DNA."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Design Thinking Process",
         icon: "Briefcase",
-        description: "Day-to-day workflow of a designer.",
+        description: "From thought to store shelf.",
+        color: BLUE2,
+        content: [
+          "Trend Research: Analyze global fashion cycles and consumer behavior to identify emerging patterns.",
+          "Concept & Ideation: Create mood boards and rough sketches to explore design directions.",
+          "Technical Design: Create precise digital blueprints (CAD) with exact measurements and specifications.",
+          "Prototyping: Make the first 'sample' using 3D printing or hand-crafting techniques.",
+          "Quality & Sourcing: Test durability and find the right factories to manufacture the product at scale."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Trend Research: Analyzing global fashion cycles and consumer behavior.",
-          "Concept & Ideation: Creating mood boards and rough sketches.",
-          "Technical Design: Creating precise digital blueprints (CAD) with exact measurements.",
-          "Prototyping: Making the first \"sample\" using 3D printing or hand-crafting.",
-          "Quality & Sourcing: Testing durability and finding the right factories to manufacture."
+          "After Class 10: Take any stream (Fine Arts/Commerce/Science). Focus on drawing. Build a basic Art Portfolio.",
+          "After Class 12: Apply for B.Des (Accessory Design) or Lifestyle Accessory Design. Entrance exams: NIFT, NID DAT, UCEED, Pearl Academy.",
+          "After Graduation: Pursue M.Des or specialized PG Diploma in Jewelry/Footwear. Exams: CEED, NIFT PG.",
+          "Top Institutions: NIFT (18 campuses), NID (Ahmedabad/Gandhinagar), FDDI (Footwear), Pearl Academy (Delhi/Mumbai/Jaipur), Symbiosis (Pune), UID (Ahmedabad)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Assistant Designer): ₹4.5L–₹7L annually.",
+          "Mid-Level (Senior Designer): ₹12L–₹20L annually.",
+          "Senior/Leadership (Design Head/CDO): ₹35L–₹60L+ annually.",
+          "Metro vs. Tier-2: Metros like Mumbai and Bangalore pay ~20% more, but Tier-2 cities like Jaipur (Jewelry) and Agra/Kanpur (Leather) are global manufacturing hubs.",
+          "Industry Growth: Personal accessories market projected to reach $3.01B by 2030, growing at 7.6% annually."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and emerging opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Jewelry (Titan, Tanishq), Footwear (Nike, Bata, Liberty), E-commerce (Myntra, Ajio), Luxury Brands (Sabyasachi, Hidesign).",
+          "Top Cities: Bangalore (Tech/Lifestyle), Mumbai (Luxury/Bollywood), Jaipur (Gems), Kanpur (Leather).",
+          "New-Age Potential: Huge demand for Wearable Tech Designers (Smartwatches/VR headsets) and Sustainable Material Researchers.",
+          "Career Opportunities: Jewelry Designer, Footwear Designer, Visual Merchandiser, AI Design Strategist, Virtual Fashion (NFT/Metaverse) Designer, Bio-Material Innovator, Freelancing (D2C brands, consulting)."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Government (NIFT/NID): ₹1.5L–₹3L per year (Highly competitive).",
+          "Private (Pearl/ISDI/UID): ₹4L–₹8L per year.",
+          "Duration: 4 years for B.Des; 2 years for M.Des.",
+          "Additional Costs: ₹20,000–₹50,000 annually on material kits (leather, metal, tools) and a high-end laptop for design software."
         ]
       },
       {
@@ -72,35 +139,79 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "National Scholarship Portal (NSP): Top-Class scheme pays full fees and gives allowances for SC/ST students.",
-          "Sarthak: NIFT gives 25%–100% fee waiver based on need.",
-          "Adobe: Up to $25,000 yearly for design students.",
-          "Inlaks: Up to $100,000 for higher design studies abroad."
+          "Central Govt (NSP): National Scholarship Portal schemes based on merit and income.",
+          "Institutional (NIFT): Sarthak financial assistance scheme (up to 100% tuition waiver).",
+          "Private: Adobe Design Circle Scholarships and Inlaks Shivdasani Foundation for higher studies abroad.",
+          "Professional Bodies: GJEPC (Gem & Jewellery Export Promotion Council) for networking and support."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Council of Architecture (CoA): Not mandatory but some specialized interior accessory designers register.",
+          "GJEPC: Gem & Jewellery Export Promotion Council (great for networking in jewelry sector).",
+          "Adobe Certified Professional: Illustrator/Photoshop certification adds massive value.",
+          "Rhino 3D Certification: Essential for CAD-based design roles.",
+          "These certifications significantly enhance career prospects and earning potential."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "The hard realities of the industry.",
+        description: "The hard truths of the industry.",
+        color: BLUE,
+        content: [
+          "Physical Strain: Long hours hunched over workstations or in dusty factories can lead to back pain and eye strain.",
+          "Trend Pressure: You are only as good as your next collection. The pressure to be 'new' is constant and relentless.",
+          "Material Waste: The industry faces criticism for environmental impact. Your challenge will be to design 'Green' and sustainable.",
+          "Competition: Global competition from established luxury brands and emerging designers worldwide."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in accessory design.",
         color: BLUE2,
         content: [
-          "Physical Strain: You’ll spend long hours hunched over workstations or in dusty factories.",
-          "Trend Pressure: You are only as good as your next collection. The pressure to be \"new\" is constant.",
-          "Material Waste: The industry faces criticism for environmental impact; your challenge will be to design \"Green.\""
+          "AI-Generated Design: AI tools will help designers generate 1,000 variations of a ring in seconds. The human role shifts to 'Curator' and creative director.",
+          "Smart Accessories: Bags that charge your phone, rings that track stress levels, and wearable tech integration.",
+          "The 'Circular' Economy: Designing accessories that can be fully recycled or composted—sustainability is no longer optional.",
+          "Virtual Fashion: NFT and Metaverse designers creating digital-only accessories for virtual avatars.",
+          "Bio-Materials: Lab-grown leather and innovative sustainable materials replacing traditional production."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Actionable steps for students.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Start a \"Design Journal\": Sketch every interesting watch, bag, or shoe you see.",
-          "Doodle in 3D: Learn basic software like Tinkercad (it’s free and fun!).",
-          "Material Experiment: Try making something out of waste—plastic bottles, old tires, or scrap metal.",
-          "Follow the Masters: Read about designers like Sabyasachi Mukherjee or Farah Khan Ali."
+          "Start a 'Design Journal': Sketch every interesting watch, bag, or shoe you see. Build a visual library of inspiration.",
+          "Doodle in 3D: Learn basic software like Tinkercad (free and fun!). Get comfortable with 3D thinking.",
+          "Material Experiment: Try making something out of waste—plastic bottles, old tires, or scrap metal. Understand material properties.",
+          "Follow the Masters: Read about designers like Sabyasachi Mukherjee, Farah Khan Ali, Dilip Kapur, Poonam Soni, and Suhani Pittie.",
+          "Visit Markets: Spend time in leather markets, jewelry districts, and fashion hubs to understand real-world production."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Accessory Designers",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Sabyasachi Mukherjee: Famous for his 'Calcutta' clutches and royal jewelry that redefined Indian luxury globally.",
+          "Farah Khan Ali: Renowned gemologist and jewelry designer known for bold, intricate designs blending tradition and modernity.",
+          "Dilip Kapur: Founder of Hidesign; proved Indian leather craftsmanship could compete with the best in Paris.",
+          "Poonam Soni: Pioneer who introduced the concept of 'Bespoke Jewelry' to India, revolutionizing personalization.",
+          "Suhani Pittie: Known for contemporary metal jewelry blending tribal art with modern chic aesthetics."
         ]
       }
     ]
