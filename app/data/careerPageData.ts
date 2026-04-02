@@ -2,6 +2,10 @@ import { agricultureUpdateData } from './agricultureUpdateData';
 import { artsAndDesignUpdateData } from './artsAndDesignUpdateData';
 import { bioScienceUpdateData } from './bioScienceUpdateData';
 import { architectureAndConstructionUpdateData } from './architectureAndConstructionUpdateData';
+import { hospitalityUpdateData } from './hospitalityUpdateData';
+import { healthScienceUpdateData } from './healthScienceUpdateData';
+import { educationUpdateData } from './educationUpdateData';
+import { businessManagementUpdateData } from './businessManagementUpdateData';
 export interface CareerHeroStat {
   value: string;
   label: string;
@@ -5825,9 +5829,11 @@ export const careerPageData: Record<string, CareerPageData> = {
       },
     ],
   },
+  ...hospitalityUpdateData,
+  ...healthScienceUpdateData,
 };
 
 export function getCareerPageData(slug: string): CareerPageData | null {
-  return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || architectureAndConstructionUpdateData[slug] || careerPageData[slug] || null;
+  return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || architectureAndConstructionUpdateData[slug] || educationUpdateData[slug] || businessManagementUpdateData[slug] || careerPageData[slug] || null;
 }
 

@@ -10994,6 +10994,3542 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       }
     ]
+  },
+  data_scientist: {
+    slug: "data_scientist",
+    badge: "📊 The Modern-Day Oracle for Class 10+",
+    heading: "Data Scientist",
+    subheading: "Turning raw data into valuable insights—the detective who finds hidden patterns that drive decisions.",
+    whyCards: [
+      { icon: "TrendingUp", title: "30% Annual Growth", description: "Demand for data professionals growing at ~30% annually. One of the fastest-growing careers.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Top 3 Global Market", description: "India expected to be one of the top 3 data science markets in the world by 2026.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "Highest-Paying Tech Career", description: "₹6L–₹1.5Cr+ annually. Among the highest-paid professionals in India.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "Every Industry Needs Data", description: "E-commerce, healthcare, finance, sports—every sector is hiring data scientists." , borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3-4 Years (B.Tech) or 2 Years (M.Tech)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Python, SQL, Tableau, Machine Learning, Statistics", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹6L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "30%", label: "Annual Growth Rate", gradient: "from-green-500 to-green-600" },
+      { value: "Top 3", label: "Global Data Science Market", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The modern oracle.",
+        color: BLUE,
+        content: [
+          "Data Scientist Defined: Remember the oracle in ancient stories who could predict the future? In the 21st century, that oracle is a Data Scientist. But instead of a crystal ball, they use Data.",
+          "The Role: A Data Scientist is a detective who digs through massive mountains of information (data) to find hidden patterns, trends, and insights.",
+          "Real Questions They Answer: How can Swiggy deliver your food 5 minutes faster? Which players should the Mumbai Indians buy in the next IPL auction? Is this credit card transaction a fraud or genuine?",
+          "Why It Matters: We live in a digital world. Every click, like, and swipe generates data. But data is useless if it's just sitting there. Data Scientists turn this 'raw noise' into 'valuable music' (insights) that helps companies, governments, and doctors make smarter decisions.",
+          "The Impact: They are the brains behind the 'Smart' in Smart India.",
+          "The Scope: Data Science combines Mathematics, Computer Science, and Business Acumen to solve real-world problems."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Rohan, Senior Data Scientist",
+        icon: "Clock",
+        description: "Real workflow at a ride-hailing app in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Dashboard Check: Rohan walks into his office (or logs in from home). He doesn't start with emails. He checks his Dashboards. Overnight, his team ran an experiment: 'If we offer a ₹10 discount to users who haven't booked a ride in 30 days, do they come back?' The data is in. It worked!",
+          "11:00 AM - The Huddle: He meets with the Product Managers. They have a problem: 'Drivers are cancelling too many rides in Indiranagar between 6 PM and 8 PM.' Rohan's job is to find out why. Is it traffic? Is the fare too low? He promises to dig into the data.",
+          "1:00 PM - Lunch & Learning: Lunch with the team. They discuss the latest 'Large Language Model' (AI) and how it might change their coding style. Data Science is a field where you learn something new every day.",
+          "2:30 PM - Deep Work: Rohan puts on his headphones. He opens Python (a coding language) and pulls up the ride data for Indiranagar. He cleans the data (removing errors), runs statistical tests, and builds a Machine Learning model to predict cancellations.",
+          "5:00 PM - Storytelling: He finds the answer! It turns out, drivers cancel because the destination is often towards high-traffic zones where they get stuck for hours. He creates a simple, colorful graph to show this to the management. He suggests a 'Traffic Surcharge' to motivate drivers.",
+          "7:00 PM - Wrap Up: He wraps up. He feels good. His analysis didn't just move numbers on a screen; it solved a real-world frustration for thousands of commuters."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Data Scientist's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Curious Cat: You constantly ask 'Why?' (e.g., Why did this video go viral?)",
+          "The Math Whiz: You actually like Statistics and Probability. You see the world in numbers.",
+          "The Pattern Spotter: You are good at solving puzzles and finding connections others miss.",
+          "The Storyteller: You can explain complex math to your non-math friends simply.",
+          "The Skeptic: You don't trust opinions; you trust facts.",
+          "Hard Skills: Coding (Python/R), Statistics, SQL (Database language), Machine Learning.",
+          "Soft Skills: Communication (Data Storytelling), Business Acumen (Understanding how companies make money), Curiosity.",
+          "The Self-Check: Do you love solving mysteries? Do you see patterns in data? If yes, you have the Data Scientist DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Data Science Lifecycle.",
+        color: BLUE2,
+        content: [
+          "Business Understanding: Asking the right question (e.g., 'How do we reduce customer dropout?').",
+          "Data Mining: Gathering data from databases, web scraping, or sensors.",
+          "Data Cleaning: This is 60-70% of the job. Fixing spelling mistakes, missing values, and messy formats. 'Garbage in, Garbage out.'",
+          "Exploration (EDA): Making graphs to see basic trends.",
+          "Modeling: Using Machine Learning algorithms to make predictions.",
+          "Visualization & Deployment: Presenting the results to the boss or putting the model into the app."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is the best route because Mathematics is the backbone of this career. Alternative: Commerce with Mathematics (Economics/Stats focus) is also a valid path.",
+          "Step 2 - After Class 12: Undergraduate Degree (3-4 Years): B.Tech in Computer Science/Data Science (Gold Standard), B.Sc. in Statistics/Mathematics (Excellent if you master coding later), B.A./B.Sc. in Economics (Econometrics is very similar to Data Science). Entrance Exams: JEE Mains/Advanced (IITs/NITs), ISI Admission Test (Indian Statistical Institute - highly prestigious), CUET.",
+          "Step 3 - After Graduation: Postgraduate (Optional but Recommended): M.Tech in Data Science/AI, M.Sc. in Statistics/Big Data Analytics, MBA in Business Analytics (for management-focused roles). Lateral Entry: Engineers from other fields often switch by doing 6-12 month Bootcamps or certifications.",
+          "Top Institutions: IIT Delhi, IIT Kanpur, ISI Kolkata, IIT Bombay, IIT Madras, Chennai Mathematical Institute (CMI), IISc Bengaluru."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: Massive. According to NASSCOM, India is expected to be one of the top 3 data science markets in the world.",
+          "Growth: The demand for data professionals is growing at ~30% annually.",
+          "Talent Gap: There is a shortage of skilled professionals. Companies have the budget but can't find people who know both math and coding well.",
+          "Entry-Level (0-2 Yrs): Jr. Data Scientist, Data Analyst: ₹6L–₹10L.",
+          "Mid-Level (3-7 Yrs): Sr. Data Scientist, ML Engineer: ₹12L–₹25L.",
+          "Senior-Level (8-15 Yrs): Lead Data Scientist, Data Architect: ₹30L–₹60L.",
+          "Leadership: Head of Data, Chief Data Officer (CDO): ₹80L–₹1.5Cr+.",
+          "Note: Salaries in Product Companies (Google, Flipkart, Uber) are significantly higher than Service Companies (TCS, Wipro), sometimes starting at ₹15-20L for freshers from IITs."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: E-Commerce & Retail (Amazon, Flipkart, Myntra - Personalized recommendations), BFSI (Banking & Finance) (HDFC, Paytm, PhonePe - Fraud detection, Credit scoring), Healthcare (1mg, Apollo - Predicting diseases), Travel & Logistics (Uber, Ola, Zomato - Route optimization).",
+          "Top Cities: Bengaluru (The Silicon Valley of India), Gurugram, Hyderabad, Pune, Mumbai.",
+          "Remote Work: High potential. Many US/European startups hire Indian data scientists remotely.",
+          "Emerging Opportunities: AI Ethics, Sports Analytics, Climate Data Science, Healthcare Analytics."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees (Annual): IITs/NITs/Government Colleges: ₹1L–₹2.5L, Private Universities: ₹2.5L–₹6L, ISI (Indian Statistical Institute): Free (plus they give you a stipend!).",
+          "Bootcamps: ₹1L–₹3L (for intensive 6-9 month courses).",
+          "Tools: A powerful laptop (min 16GB RAM) is essential (~₹70,000+).",
+          "ROI: With starting salaries of ₹6L+, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for data science in India.",
+        color: BLUE,
+        content: [
+          "North: IIT Delhi/IIT Kanpur (Top-tier research in AI/Data), IIIT Delhi (Specialized in CS and AI).",
+          "East: Indian Statistical Institute (ISI) Kolkata (The 'Mecca' of Statistics in India), IIT Kharagpur.",
+          "West: IIT Bombay (Innovative Data Science programs), NMIMS Mumbai (Strong Business Analytics programs).",
+          "South: Chennai Mathematical Institute (CMI) (World-class for Math/CS), IIT Madras (Offers a unique Online B.Sc. in Data Science - open to all), IISc Bengaluru (Best for research - M.Tech/PhD).",
+          "Online: IIT Madras Online B.Sc. in Data Science (accessible to all)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "PMRF (Prime Minister's Research Fellowship): For PhD students (₹70,000/month).",
+          "Reliance Foundation Scholarships: For undergraduates in AI/Data Science.",
+          "DST-Inspire: For top rankers in Science pursuing B.Sc./M.Sc.",
+          "Google Scholarship: Specifically for women in computer science.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Corporate Sponsorships: Tech companies sometimes sponsor talented students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications (The 'Badges' of credibility): Google Data Analytics Certificate, Microsoft Certified Azure Data Scientist Associate, IBM Data Science Professional Certificate.",
+          "Competitions: Kaggle (Not a certification, but your Kaggle Rank is often more valuable than a degree. It's a platform where you solve real data problems).",
+          "Industry Recognition: GitHub contributions (showcase your work), Hackathon wins, Research publications.",
+          "Continuing Education: Regular courses to stay updated with latest data science trends."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in data science careers.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Data Analyst (focuses on visualization and reporting - Excel/SQL/Tableau), Data Scientist (focuses on prediction and modeling - Python/ML), Data Engineer (builds the pipelines to transport data - Big Data/Cloud).",
+          "New-Age Careers: AI Ethicist (ensuring data isn't biased against certain groups), Prompt Engineer (designing inputs for AI models like ChatGPT), Sports Analyst (working with IPL teams to plan strategies).",
+          "Freelancing: Consulting for small businesses to analyze their sales data, building custom dashboards, data analysis projects.",
+          "Entrepreneurship: Starting a data analytics startup, building data tools for specific industries."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of data science careers.",
+        color: BLUE,
+        content: [
+          "Constant Learning: New tools come out every month. You cannot stop studying.",
+          "Messy Data: Real-world data is ugly. You spend 80% of your time cleaning it, not doing 'cool AI stuff.'",
+          "Imposter Syndrome: The field is so vast (Math + CS + Business) that you will often feel like you don't know enough.",
+          "Business Pressure: Sometimes, the data says 'No,' but the boss wants to hear 'Yes.' Navigating this requires diplomacy.",
+          "High Expectations: Everyone expects you to predict the future perfectly. Managing expectations is crucial.",
+          "Work-Life Balance: During critical projects, you might work long hours."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of data science.",
+        color: BLUE2,
+        content: [
+          "AutoML: Tools will automate the boring parts of coding, so Data Scientists will focus more on strategy than syntax.",
+          "Edge Analytics: Analyzing data on the device (like a smartwatch) instead of sending it to a server.",
+          "Data Privacy: With laws like the DPDP Act in India, knowing how to handle data legally will be a massive skill.",
+          "Explainable AI: Understanding why AI makes decisions (not just that it does).",
+          "Real-Time Analytics: Processing and analyzing data as it happens, not after.",
+          "Quantum Computing: Will revolutionize how we process massive datasets."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Master Excel: It's the grandfather of data science. Learn Pivot Tables and VLOOKUP.",
+          "Learn Python: Start with 'Python for Kids' or Codecademy. It's the language of data.",
+          "Play with Data: Download your own Spotify or Netflix data (they let you do this!) and try to find patterns in your listening habits.",
+          "Statistics: Don't just memorize formulas in Math class; understand what they mean.",
+          "Kaggle: Join Kaggle and participate in beginner competitions.",
+          "YouTube Channels: Follow channels like StatQuest, 3Blue1Brown, and Sentdex."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring data science leaders from India.",
+        color: BLUE2,
+        content: [
+          "DJ Patil: An Indian-American mathematician who coined the term 'Data Scientist' and served as the Chief Data Scientist of the USA under Barack Obama.",
+          "Nandan Nilekani: The architect of Aadhaar. He showed the world how data can be used to serve 1.4 billion people.",
+          "Kiran Bedi: (As Lt. Governor) Used data-driven policing (predictive policing) to reduce crime, showing data isn't just for tech companies.",
+          "Dr. B. Ravindran: Head of the Robert Bosch Centre for Data Science & AI at IIT Madras, a leading academic voice.",
+          "Muskan Jha: (Relatable Example) Representing the thousands of young Kaggle Grandmasters from India putting the country on the global data map."
+        ]
+      }
+    ]
+  },
+  electronics_communication_engineering: {
+    slug: "electronics_communication_engineering",
+    badge: "⚡ The Architects of the Future for Class 10+",
+    heading: "Electronics & Communication Engineering (ECE)",
+    subheading: "If Computer Science is the 'brain' of the modern world, Electronics and Communication Engineering (ECE) is its 'nervous system.' Design the chips that power your iPhone, build the 5G towers that stream your videos, and create the sensors that help self-driving cars 'see.'",
+    whyCards: [
+      { icon: "Zap", title: "Semiconductor Era", description: "India's ₹76,000 Crore Semiconductor Mission racing to become the world's next chip manufacturing hub.", borderColor: "#10B981" },
+      { icon: "Cpu", title: "Hardware Innovation", description: "Design chips, 5G towers, IoT sensors, and the physical engines that run the digital world.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "20% CAGR Growth", description: "Semiconductor industry projected to grow at ~20% CAGR. 10-15 Lakh skilled professional shortage by 2026.", borderColor: "#3B82F6" },
+      { icon: "DollarSign", title: "Premium Salaries", description: "₹12L–₹1Cr+ annually. Product companies (Intel/Nvidia) pay significantly more than service companies.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + 2 Years (M.Tech Optional)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "VLSI, EDA, Oscilloscope, Arduino, Verilog", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹12L–₹1Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$300B", label: "Indian Electronics Market by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "20%", label: "Semiconductor CAGR", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The nervous system of the digital world.",
+        color: BLUE,
+        content: [
+          "ECE Definition: Electronics and Communication Engineering is the field that designs the chips, circuits, and communication systems that power modern technology.",
+          "The Nervous System: If Computer Science is the 'brain,' ECE is the 'nervous system'—the physical infrastructure that carries signals and data.",
+          "What They Do: ECE professionals design the chips that power your iPhone, build the 5G towers that stream your videos, and create the sensors that help self-driving cars 'see.'",
+          "The Scope: Work at the intersection of hardware and software. Design microprocessors, embedded systems, wireless networks, and IoT devices.",
+          "Why It Matters: We are entering the 'Semiconductor Era.' With the Indian government launching the India Semiconductor Mission (ISM) with a ₹76,000 Crore budget, the country is racing to become the world's next chip manufacturing hub.",
+          "The Impact: From smart cities to defense drones, nothing moves without electronics. As an ECE engineer, you aren't just coding an app; you are building the physical engine that runs the digital world."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Arjun, VLSI Design Engineer",
+        icon: "Clock",
+        description: "Real workflow at a semiconductor MNC in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Fabrication Report: Arjun scans his emails. A report from the fabrication lab in Taiwan has arrived. The new microchip he helped design has a minor 'voltage drop' issue. He pulls up the schematic on his three-monitor setup.",
+          "11:00 AM - The Simulation Grind: He runs a simulation using complex EDA (Electronic Design Automation) tools. He is designing a sub-circuit for a new smartwatch processor. It needs to consume 20% less battery than last year's model. This is a game of nanometers—one wrong wire connection, and the chip fails.",
+          "1:30 PM - The Embedded Systems Huddle: Lunch with colleagues from the 'Embedded Systems' team. They are writing code for a new electric scooter's dashboard. They argue about whether 5G or WiFi-6 is better for IoT devices.",
+          "3:30 PM - The Clean Room Supervision: Arjun enters the 'Clean Room' (remotely, via camera) to supervise a testing phase. He analyzes waveforms on an oscilloscope. The signal looks clean. He breathes a sigh of relief.",
+          "6:00 PM - The Global Sync: A video call with the US team. They discuss the 'Architecture Specs' for the next-generation AI chip. Arjun suggests a change in the memory layout to speed up data processing.",
+          "7:30 PM - The Invisible Impact: He wraps up. His work is invisible to the average person, but when millions of people wear that smartwatch next year, it will be Arjun's logic keeping it alive for 2 days on a single charge."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The ECE Engineer DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Tinkerer: You were the kid who opened up remote controls or toys to see the green board inside.",
+          "The Physics Lover: You enjoy chapters on Electricity, Magnetism, and Logic Gates.",
+          "The Patient Problem-Solver: Debugging hardware is harder than software. You can't just 'Ctrl+Z' a burnt wire. You need immense patience.",
+          "The Abstract Thinker: You can visualize invisible signals (current, voltage, radio waves) moving through a circuit.",
+          "Hard Skills: Circuit Design, Digital Logic, Microcontrollers (Arduino/Raspberry Pi), Signal Processing, Programming (C/C++, Verilog).",
+          "Soft Skills: Analytical thinking, precision (attention to detail is critical), and adaptability (tech changes every 6 months)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The typical ECE professional workflow.",
+        color: BLUE2,
+        content: [
+          "Requirement Analysis: Understanding what the device needs to do (e.g., 'Make a router that covers 3000 sq ft').",
+          "Schematic Design: Drawing the blueprint of the circuit using software like Cadence or Altium.",
+          "Simulation: Testing the design virtually to ensure it doesn't overheat or fail using SPICE simulators.",
+          "Prototyping: Building a real-life test model on a PCB (Printed Circuit Board).",
+          "Testing & Validation: Using tools like Oscilloscopes and Spectrum Analyzers to fix bugs and verify performance.",
+          "Mass Production: Overseeing the factory process to manufacture millions of units while maintaining quality."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is mandatory. Focus: Strong grasp of Physics (Electricity/Magnetism) and Mathematics (Calculus).",
+          "Step 2 - After Class 12: Undergraduate Degree (4 Years): B.Tech / B.E. in Electronics & Communication Engineering (ECE) - the core degree, B.Tech in Electronics & Instrumentation - focuses on industrial sensors and control, B.Tech in Telecommunication Engineering - specialized for the 5G/Telecom sector. Entrance Exams: JEE Mains/Advanced (National), BITSAT, VITEEE, MHT-CET (State levels).",
+          "Step 3 - After Graduation: Job (Core Industry): Join companies like Qualcomm, Intel, or BEL directly. Postgraduate (Recommended for Chip Design): M.Tech in VLSI Design / Embedded Systems (highly valued and high-paying), M.Tech in Wireless Communication / Signal Processing. Entrance Exam: GATE (Graduate Aptitude Test in Engineering)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: EXPLOSIVE. The Indian electronics market is expected to reach $300 Billion by 2026.",
+          "Hiring Trends: The government predicts a shortage of 10-15 Lakh skilled professionals in the ESDM (Electronics System Design & Manufacturing) sector by 2026.",
+          "Growth: The semiconductor industry alone is projected to grow at a CAGR of ~20%.",
+          "Entry-Level (Service Companies): Graduate Engineer Trainee: ₹4L–₹7L annually.",
+          "Entry-Level (Product/VLSI): Design Engineer: ₹12L–₹20L annually.",
+          "Mid-Level: Sr. Verification Engineer, Lead Architect: ₹25L–₹45L annually.",
+          "Senior-Level: Principal Engineer, Chip Architect: ₹50L–₹80L+ annually.",
+          "Leadership: Director of Engineering, CTO: ₹1Cr+ annually.",
+          "Note: Product companies (Intel/Nvidia) pay significantly more than Service companies (TCS/Wipro)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Semiconductors (VLSI) - Intel, Qualcomm, NVIDIA, AMD, Texas Instruments. Consumer Electronics - Samsung, Apple, boAt, Dyson. Telecommunications - Jio, Airtel, Ericsson, Nokia (5G/6G Research). Automotive (EVs) - Tata Motors, Tesla, Ola Electric (BMS - Battery Management Systems). Public Sector (PSUs) - ISRO (Space), DRDO (Defense), BEL (Bharat Electronics), BHEL.",
+          "Top Cities: Bengaluru (Chip Design Capital), Hyderabad, Noida (Manufacturing Hub), Pune (Automotive Electronics).",
+          "International: High demand in Taiwan (TSMC), South Korea (Samsung), Germany, and USA.",
+          "Remote Opportunities: Growing trend for senior-level design roles and consulting positions."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees (4 Years): IITs/NITs: ₹6L–₹10L (Total for 4 years). Private Universities (BITS, Manipal, VIT): ₹12L–₹25L.",
+          "Bootcamps (Optional): Specialized VLSI training courses (6 months) cost ₹50,000–₹1.5L.",
+          "Tools: A laptop with good RAM (16GB) is essential (~₹60k-80k). Hardware kits (Arduino/Breadboards) cost ~₹5,000.",
+          "ROI: With starting salaries of ₹12L+ in product companies, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: IIT Delhi / IIT Roorkee (Premier institutes), BITS Pilani (Pilani Campus - excellent industry connections), Thapar Institute, Patiala.",
+          "South: IIT Madras (Known for the 'Shakti Processor' - India's first indigenous microprocessor), IISc Bengaluru (Best for M.Tech/Research in Nano-electronics), Manipal Institute of Technology (MIT - Satya Nadella's alma mater), VIT Vellore.",
+          "West: IIT Bombay (Top-tier VLSI research), COEP Tech University (Pune - strong legacy).",
+          "East: IIT Kharagpur (Strong Electronics & Electrical dept), Jadavpur University, Kolkata (High ROI - low fees, good placement)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Visvesvaraya PhD Scheme: Special government funding for electronics/IT research.",
+          "Pragati Scholarship (AICTE): For girl students in technical education.",
+          "PM Research Fellowship (PMRF): For doctoral students in IITs/IISc (₹70k/month).",
+          "Siemens / Intel Scholarships: Corporate scholarships for meritorious engineering students.",
+          "State-Level Schemes: Various state governments offer scholarships for engineering students from economically weaker sections."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: IEEE (Institute of Electrical and Electronics Engineers) - the world's largest technical society. IETE (Institution of Electronics and Telecommunication Engineers) - the national body in India.",
+          "Certifications: Embedded Systems - Certified by CDAC. VLSI Design - Courses from specialized institutes like Maven Silicon or Sandeepani. IoT Certification - from NPTEL or Coursera.",
+          "Industry Recognition: Certifications from Cadence, Synopsys, and Mentor Graphics (EDA tool providers) are highly valued.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in ECE careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Electronics Engineer (designing circuits/PCBs), Network Engineer (managing telecom networks), Testing Engineer (quality control in factories), Embedded Systems Engineer (firmware development).",
+          "New-Age Careers: IoT Architect (creating smart home ecosystems), Robotics Engineer (designing the 'brains' of robots), Drone Systems Engineer (building flight controllers for drones), 5G/6G Network Architect.",
+          "Emerging Roles: Edge AI Engineer (running AI on small chips), Wearable Tech Designer, Quantum Computing Engineer.",
+          "Freelancing: PCB Design freelancing (Upwork), IoT Consultant for startups, Hardware design consulting."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of the ECE career.",
+        color: BLUE,
+        content: [
+          "Rapid Obsolescence: What you study in the 1st year might be outdated by the 4th year. You must self-learn constantly.",
+          "High Entry Barrier: Core companies (like Qualcomm) often prefer M.Tech graduates or students from Tier-1 colleges.",
+          "Complexity: Unlike software where bugs can be patched instantly, a hardware bug can cost millions and take months to fix (Respin).",
+          "Physical Strain: Long hours in labs and at workstations can lead to eye strain and repetitive stress injuries.",
+          "Pressure: Chip design has zero tolerance for errors. The pressure to be perfect is immense."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in ECE.",
+        color: BLUE2,
+        content: [
+          "6G Technology: While we use 5G, engineers are already researching 6G for 2030, which will enable hologram calls and ultra-low latency applications.",
+          "Wearable Tech: Clothes that monitor health (Smart Textiles) and integrate seamlessly with your body.",
+          "Edge AI: Running AI on small chips without the internet (e.g., a CCTV camera detecting a thief instantly).",
+          "Quantum Computing: Revolutionary computing paradigm that will solve problems classical computers can't.",
+          "Chiplet Architecture: Moving away from monolithic chips to modular 'chiplets' that can be mixed and matched.",
+          "Sustainable Electronics: Green chip design and recycling of electronic waste."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Buy an Arduino Kit: Start building small projects like an 'Automatic Plant Waterer' or 'Line Follower Robot.' Cost: ~₹2,000-5,000.",
+          "Learn C++: It is the language of hardware. Start with simple programs on Arduino.",
+          "Physics is Key: Pay extra attention to 'Semiconductors' and 'Current Electricity' chapters in Class 12.",
+          "Tinker: Fix your old radio or broken toys. Don't be afraid to use a screwdriver!",
+          "Online Courses: Explore free resources on YouTube (Great Scott Gadgets, Paul McWhorter) and Coursera.",
+          "Join Robotics Clubs: Participate in school robotics competitions like FIRST Robotics or local maker spaces."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian ECE Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Satya Nadella: CEO of Microsoft. He holds a B.E. in Electronics & Communication (Manipal) before he moved to CS.",
+          "Vinod Dham: Known as the 'Father of the Pentium Chip.' He led the team at Intel that created the processor running most of the world's computers.",
+          "Muthayya Vanitha: Project Director of Chandrayaan-2 at ISRO. A brilliant Electronics System Engineer who led India's lunar mission.",
+          "Vinod Khosla: Co-founder of Sun Microsystems. An IIT Delhi alum who revolutionized computing hardware.",
+          "Prof. Anurag Kumar: Former Director of IISc and a pioneer in communication networks research in India."
+        ]
+      }
+    ]
+  },
+  gis_expert: {
+    slug: "gis_expert",
+    badge: "🗺️ The Map Magicians for Class 10+",
+    heading: "GIS Expert",
+    subheading: "Have you ever wondered how Google Maps knows exactly where the traffic jam is? Or how Swiggy finds the fastest route to your house? Or how the government decides exactly where to build a new metro line? The answer is GIS—Geographic Information Systems. You are a 'Location Scientist' building 'Smart Maps.'",
+    whyCards: [
+      { icon: "Map", title: "Smart Cities Backbone", description: "Plan sewage pipes, streetlights, 5G towers, and metro lines using spatial data analysis.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "12-14% CAGR Growth", description: "Indian geospatial economy expected to cross ₹63,000 Crore by 2025 with National Geospatial Policy liberalization.", borderColor: "#059669" },
+      { icon: "Satellite", title: "Satellite Intelligence", description: "Use ISRO's Bhuvan, drone imagery, and LiDAR data to solve real-world problems.", borderColor: "#3B82F6" },
+      { icon: "DollarSign", title: "Premium Salaries", description: "₹8L–₹80L+ annually. High-paying tech career with remote work opportunities.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + 2 Years (M.Tech)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "ArcGIS, QGIS, Python, Satellite Imagery, Drones", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹8L–₹80L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹63K Cr", label: "Indian Geospatial Economy by 2025", gradient: "from-green-500 to-green-600" },
+      { value: "12-14%", label: "Annual Growth Rate", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Location science and spatial intelligence.",
+        color: BLUE,
+        content: [
+          "GIS Definition: Geographic Information Systems (GIS) is the science of capturing, analyzing, and visualizing spatial data on digital maps.",
+          "The Role: A GIS Expert is a 'Location Scientist.' They don't just look at maps; they build 'Smart Maps.' They take data (like population numbers, rainfall, road networks, or disease outbreaks) and layer it onto a digital map to find patterns that no spreadsheet can show.",
+          "Why It Matters: In 21st-century India, GIS is the backbone of development. Disaster Management: When a cyclone hits Odisha, GIS experts track its path to evacuate the right villages. Smart Cities: They plan where to put sewage pipes, streetlights, and 5G towers. Agriculture: They use satellite data to tell farmers exactly which part of their field needs fertilizer.",
+          "The Scope: It is a high-tech career that blends Geography, Computer Science, and Data Analysis to solve real-world problems.",
+          "The Impact: Your maps help governments make decisions affecting millions of lives. Your analysis can predict disasters, optimize logistics, and plan sustainable cities.",
+          "The Reality: You are a silent guardian. You didn't get your boots muddy, but your digital maps help save lives and resources."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Karthik, GIS Analyst",
+        icon: "Clock",
+        description: "Real workflow at a Disaster Management agency in Hyderabad.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Command Center: Karthik arrives at the 'Command Control Centre.' Large screens cover the walls. A heavy monsoon is predicted for the coast. His job? Predict which areas will flood.",
+          "10:30 AM - Satellite Analysis: He pulls up satellite imagery from ISRO's Bhuvan portal. He overlays this with a 'Digital Elevation Model' (a 3D map of the land's height). He runs a simulation: 'If it rains 200mm, where does the water go?'",
+          "1:00 PM - The Team Huddle: Lunch with his team—a mix of coders and meteorologists. They discuss a glitch in their Python script that processes drone images.",
+          "2:30 PM - Urgent Relief Mission: A district collector wants to know the best route to send relief trucks to a remote village where the bridge has collapsed. Karthik uses 'Network Analysis' software. He finds a dirt track that is safe for heavy trucks and sends the GPS coordinates to the driver's phone.",
+          "5:00 PM - Disease Mapping: He creates a 'Heat Map' showing dengue cases in the city. The red zones show where mosquito fogging is needed most urgently. He sends this visual report to the Health Department.",
+          "7:30 PM - The Impact: Karthik logs off. He didn't get his boots muddy, but his digital maps helped save lives and resources today. He feels like a silent guardian."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The GIS Expert DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Visual Thinker: You understand information better when it's in a diagram or map rather than a long essay.",
+          "The Techie-Geographer: You love maps (Geography) but also enjoy computers and coding (Tech).",
+          "The Pattern Finder: You can spot connections. (e.g., 'Why do all the coffee shops open near colleges?')",
+          "Detail-Oriented: One wrong coordinate can send a rescue team to the wrong mountain. You need precision.",
+          "Hard Skills: Understanding Coordinates (Latitude/Longitude), Software proficiency (ArcGIS, QGIS), Basic Coding (Python is huge in GIS!), Data Management (SQL).",
+          "Soft Skills: Problem-solving, spatial reasoning, and communication (explaining your map to a non-expert)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Spatial Analysis Cycle",
+        icon: "Briefcase",
+        description: "The GIS workflow from data to insights.",
+        color: BLUE2,
+        content: [
+          "Data Acquisition: Getting data from satellites, drones, GPS surveys, or government census records. Understanding different data sources and their accuracy.",
+          "Data Cleaning: Fixing errors. (e.g., 'This road doesn't connect to that highway in real life, let me fix the digital line'). This is often 60-70% of the work.",
+          "Spatial Analysis: The core work. Running queries like 'Show me all hospitals within 5km of this flood zone.' Using tools like buffer analysis, overlay analysis, and network analysis.",
+          "Cartography (Visualization): Making the final map look beautiful and easy to understand (using colors, legends, and symbols). Good design is crucial for communication.",
+          "App Development: Creating a web app so the public can view the map on their phones. Building interactive dashboards for decision-makers.",
+          "Reporting: Presenting findings to stakeholders and explaining the implications of spatial patterns."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is the best route because modern GIS requires math and logic. Alternative: Humanities students with Geography can enter, but they must learn technical skills (coding/software) separately.",
+          "Step 2 - After Class 12: Undergraduate Degree (3-4 Years): B.Tech in Geoinformatics / Civil Engineering - the most technical and high-paying route. B.Sc. in Geography / Geology - a strong foundation, but needs a Master's for good jobs. B.C.A. / B.Sc. Computer Science - you can switch to GIS later if you love coding. Entrance Exams: JEE Mains, GATE (for M.Tech later), CUET.",
+          "Step 3 - After Graduation: Postgraduate (The 'Golden Ticket'): M.Tech / M.Sc. in Geoinformatics / Remote Sensing - this is the industry standard. P.G. Diploma in GIS - a quick 1-year route for graduates to get job-ready. Top Exam: GATE (Geomatics Engineering paper)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: EXPLOSIVE. With the Indian government's National Geospatial Policy (2022) liberalizing the map sector, private companies are hiring aggressively.",
+          "Growth: The Indian geospatial economy is expected to cross ₹63,000 Crore by 2025, growing at 12-14%.",
+          "Entry-Level (GIS Analyst, LiDAR Technician): ₹3.5L–₹6L annually.",
+          "Mid-Level (Sr. GIS Developer, Photogrammetrist): ₹8L–₹15L annually.",
+          "Senior-Level (GIS Architect, Project Manager): ₹18L–₹30L annually.",
+          "Leadership (Director of Geospatial Strategy, CTO): ₹40L–₹80L+ annually.",
+          "Growth Trajectory: You can start as a 'Digitizer' (drawing maps) but quickly move to 'Developer' (coding map apps) where salaries double."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Urban Planning - Smart Cities Mission (planning metros, sewers). Agri-Tech - Cropin, DeHaat (monitoring crop health from space). Logistics - Swiggy, Zomato, Uber, Delhivery (Route optimization). Disaster Management - State Disaster Management Authorities (SDMAs). Utilities - Reliance Jio (planning fiber cables), Adani Gas (pipeline mapping).",
+          "Top Cities: Hyderabad (The GIS Capital - home to NRSC), Bengaluru (Tech GIS), Noida/Delhi (Govt Projects), Dehradun (Survey of India HQ).",
+          "Remote Work: Very High. You can process satellite data for a US client from your home in Indore.",
+          "Emerging Opportunities: Climate change analysis, renewable energy site selection, urban heat island mapping."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (IIRS, IITs): ₹1L–₹2.5L (Total). Private Universities (Symbiosis, NIIT): ₹4L–₹8L.",
+          "Duration: B.Tech: 4 Years. M.Sc./M.Tech: 2 Years.",
+          "Tools: You need a high-performance laptop (Gaming laptop with Graphic Card preferred for rendering 3D maps). Cost: ₹80,000+.",
+          "ROI: With starting salaries of ₹8L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "The 'Holy Grail': Indian Institute of Remote Sensing (IIRS), Dehradun - ISRO's own training center. Getting in here is prestigious.",
+          "North: IIT Kanpur / IIT Roorkee - top Geomatics departments. Jamia Millia Islamia, Delhi - M.Sc. in Disaster Management & Climate Sustainability Studies (GIS focused).",
+          "South: Anna University, Chennai - Institute of Remote Sensing. JNTU Hyderabad - hub for GIS studies.",
+          "West: Symbiosis Institute of Geoinformatics (SIG), Pune - excellent private institute with good placements. CEPT University, Ahmedabad - best for Urban Planning GIS.",
+          "East: IIT Kharagpur - strong research. BIT Mesra, Ranchi."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "GATE Scholarship: If you clear GATE, the government pays you ₹12,400/month during your M.Tech.",
+          "IIRS ISRO Outreach Program: Many courses are free or low-cost.",
+          "DST (Dept of Science & Tech) Fellowships: For PhD research in geospatial science.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "State-Level Schemes: Various state governments offer scholarships for engineering students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: Indian Society of Remote Sensing (ISRS) - student membership helps in networking. AGI (Association of Geospatial Industries) - the industry lobby group.",
+          "Certifications (Highly Valued): Esri Technical Certification - for ArcGIS software (the industry standard). QGIS Certification - for open-source expertise.",
+          "Industry Recognition: GitHub contributions, research publications, and project portfolios showcase your expertise.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in GIS careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: GIS Analyst (making maps and reports), Surveyor (using GPS tools on the ground), Cartographer (creating beautiful maps).",
+          "New-Age Careers: LiDAR Specialist (processing 3D laser data for self-driving cars), Drone Pilot & Mapper (flying drones to create 3D models of buildings), Location Intelligence Analyst (telling Starbucks where to open their next cafe based on footfall data).",
+          "Emerging Roles: Digital Twin Developer (creating virtual city replicas), Indoor Navigation Specialist, Climate Data Analyst.",
+          "Freelancing: Creating custom maps for real estate developers or travel bloggers. Consulting for startups on location-based services."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of GIS careers.",
+        color: BLUE,
+        content: [
+          "Tedious Work: Cleaning data can be boring. You might spend days just fixing 'broken lines' on a map.",
+          "Software Cost: Professional software (ArcGIS) is expensive. Learning often happens on pirated or trial versions until you get a job.",
+          "Eye Strain: You will stare at screens searching for tiny pixels all day.",
+          "Data Quality Issues: Real-world data is messy. Garbage in, garbage out—bad data leads to bad maps.",
+          "Rapid Technology Change: New tools and satellite systems emerge constantly. Continuous learning is essential."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in GIS.",
+        color: BLUE2,
+        content: [
+          "Digital Twins: Creating a complete digital copy of a city (like Mumbai) to test scenarios like 'What if a bomb goes off here?' or 'What if sea levels rise?'",
+          "Indoor GIS: Mapping inside buildings (malls, airports) so you can navigate to a specific shop.",
+          "AI + GIS: AI will automatically identify houses, roads, and trees from satellite images, saving humans thousands of hours.",
+          "Real-Time GIS: Processing live data streams from IoT sensors and drones for instant decision-making.",
+          "Metaverse Mapping: Creating virtual geographic spaces for gaming and virtual tourism.",
+          "Climate Intelligence: Using GIS to model climate change impacts and plan adaptation strategies."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Google Earth Pro: Download it (it's free). Learn to measure distances, create paths, and look at historical imagery (Time Slider).",
+          "Learn Python: It is the language of modern mapping. Start with basics on Codecademy or YouTube.",
+          "Play Geoguessr: A game that tests your ability to recognize locations. It builds spatial awareness.",
+          "Make a Map: Use 'Google My Maps' to create a custom map of your school campus or neighborhood.",
+          "Explore QGIS: Download the free, open-source GIS software and follow tutorials.",
+          "Join Communities: Participate in OpenStreetMap to contribute to global mapping efforts."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian GIS Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Dr. K. Sivan: Former Chairman of ISRO. While a rocket scientist, his leadership advanced India's remote sensing capabilities (Bhuvan).",
+          "Rakesh Verma: Co-founder of MapmyIndia. He built India's first digital map database when Google Maps didn't exist.",
+          "Lalitesh Katragadda: The man behind Google Map Maker, which allowed Indians to map their own streets.",
+          "Agendra Kumar: Managing Director of Esri India, the company that provides the software running most of India's GIS.",
+          "Dr. Shailesh Nayak: Former Secretary, Ministry of Earth Sciences, a pioneer in using GIS for ocean and coastal management."
+        ]
+      }
+    ]
+  },
+  ethical_hacking: {
+    slug: "ethical_hacking",
+    badge: "🔐 The Digital Bodyguard for Class 10+",
+    heading: "Ethical Hacking",
+    subheading: "In movies, hackers are hooded figures in dark rooms stealing money. In reality, Ethical Hackers are the good guys who save the day. They are the 'Digital Bodyguards' of the internet, hired to break into systems to find weak spots before the bad guys do.",
+    whyCards: [
+      { icon: "Shield", title: "Digital Bodyguards", description: "Protect India's digital borders as the country moves towards a $5 Trillion economy with everything online.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "18% CAGR Growth", description: "Indian cybersecurity market growing rapidly. 3.5 Million cybersecurity jobs shortage globally.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "Premium Salaries", description: "₹10L–₹2Cr+ annually. Bug bounty hunters earn lakhs per month finding vulnerabilities.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "DPDP Act Mandate", description: "With India's Data Protection Law, every company must secure their data—massive hiring spree.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + Certifications", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Kali Linux, Burp Suite, Metasploit, Python", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹10L–₹2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "3.5M", label: "Global Cybersecurity Jobs Shortage", gradient: "from-green-500 to-green-600" },
+      { value: "18%", label: "Indian Market CAGR", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The good guys protecting the digital world.",
+        color: BLUE,
+        content: [
+          "Ethical Hacking Definition: An Ethical Hacker (or White Hat Hacker) is hired by a company to break into their own systems. Why? To find the weak spots before the bad guys (Black Hat Hackers) do.",
+          "The Role: They simulate cyber-attacks on websites, apps, and networks to find 'bugs' or holes.",
+          "Why It Matters: In Digital India, everything is online—your dad's bank account, your Aadhaar data, and national defense secrets. Ethical hackers stand between this sensitive data and cybercriminals.",
+          "The Impact: As we move towards a $5 Trillion economy, they are the soldiers protecting our digital borders.",
+          "The Scope: Ethical hackers work across multiple domains—banking security, government defense, corporate IT, and even entertainment platforms.",
+          "The Reality: You break the law (technically) to uphold the law. It's a rush of adrenaline knowing you potentially saved crores of rupees and protected thousands of customers from theft."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Sameer, Penetration Tester",
+        icon: "Clock",
+        description: "Real workflow at a cybersecurity firm in Gurugram.",
+        color: BLUE2,
+        content: [
+          "10:00 AM - The Mission Brief: Sameer reaches the office. His mission today is exciting: The client is a major private bank launching a new 'Gold Loan App.' They have given Sameer permission to try and hack it.",
+          "11:30 AM - Reconnaissance Mode: Sameer doesn't start coding yet. He acts like a detective, scanning the app to see what technology it uses. He notices the app uses an old version of a database that might have a weakness.",
+          "1:30 PM - The Team Huddle: Lunch with his team. They talk about a massive data breach in the news yesterday and discuss how it could have been prevented. It's a constant game of cat-and-mouse.",
+          "3:00 PM - The Attack: Sameer uses a tool called Burp Suite to intercept data between the app and the bank's server. He tries to trick the server into giving him access to a random user's account. After 2 hours of trying different scripts—Bingo! He bypasses the login screen.",
+          "5:00 PM - The Report: He doesn't steal money (that would be illegal!). Instead, he takes a screenshot as proof and immediately writes a report to the bank's IT team: 'Critical Vulnerability found in Login Module. Fix immediately.'",
+          "7:00 PM - The Victory: He logs off. Today, he potentially saved the bank crores of rupees and protected thousands of customers from theft. He feels a rush of adrenaline."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Ethical Hacker DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Breaker: As a kid, you liked taking toys apart to see how they worked. You have a 'destructive' curiosity.",
+          "The Puzzle Solver: You love riddles and don't give up easily. Hacking is 99% failure and 1% success.",
+          "The Rule Bender: You naturally think outside the box. When someone says 'You can't do that,' you ask 'Why not?'",
+          "Ethical Core: This is crucial. You must have high integrity. With great power comes great responsibility.",
+          "Hard Skills: Computer Networking (IPs, DNS), Operating Systems (Linux/Kali is your best friend), Coding (Python, JavaScript, SQL).",
+          "Soft Skills: Persistence (patience is key), Creative Thinking, and Report Writing (you have to explain the hack to the boss)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & VAPT Workflow",
+        icon: "Briefcase",
+        description: "The Vulnerability Assessment and Penetration Testing process.",
+        color: BLUE2,
+        content: [
+          "Permission: Getting written approval to hack (The 'Get Out of Jail Free' card). This is critical—without it, you're a criminal.",
+          "Reconnaissance (Recon): Gathering info about the target without touching it. Research the company's tech stack, employees, and infrastructure.",
+          "Scanning: Using tools to find open doors (ports) or weak spots. Tools like Nmap help identify vulnerabilities.",
+          "Exploitation: The actual 'hacking' part where you enter the system. This requires creativity and technical skill.",
+          "Reporting: Writing a detailed guide on how you got in and how to fix it. Clear communication is essential.",
+          "Patching: Helping the developers close the hole and verify the fix works."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is ideal because you need logic and math. However, smart students from any stream can learn hacking if they are tech-savvy. Action: Start learning Linux and Python online.",
+          "Step 2 - After Class 12: Undergraduate Degree (4 Years): B.Tech in Computer Science (Cybersecurity Specialization) - offered by many universities now, B.Sc. in Digital Forensics / Cybersecurity, BCA - a good option if you back it up with certifications. Entrance Exams: JEE Mains, VITEEE, SRMJEEE.",
+          "Step 3 - After Graduation: Certifications (The Real Degree): In this field, a certificate is often more valuable than a master's. CEH (Certified Ethical Hacker) - the entry-level standard, OSCP (Offensive Security Certified Professional) - the 'Gold Standard' for serious hackers (very tough practical exam). Postgraduate: M.Tech in Cybersecurity (Institutes like IIIT-Delhi or NFSU - National Forensic Sciences University)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: Massive. India is projected to have a shortage of 3.5 Million cybersecurity jobs globally, with a huge chunk in India.",
+          "Growth: The Indian cybersecurity market is growing at a CAGR of ~18%.",
+          "Trend: With the DPDP Act (Data Protection Law), every company must secure their data, leading to a hiring spree.",
+          "Entry-Level (Jr. Security Analyst, VAPT Intern): ₹4L–₹7L annually.",
+          "Mid-Level (Penetration Tester, Security Consultant): ₹10L–₹20L annually.",
+          "Senior-Level (Security Architect, Bug Bounty Hunter): ₹25L–₹50L annually.",
+          "Leadership (CISO - Chief Information Security Officer): ₹80L–₹2Cr+ annually.",
+          "Bug Bounties: Talented freelance hackers in India earn lakhs per month just by finding bugs in companies like Google, Facebook, and Zomato."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: BFSI (Banking) - HDFC, SBI, Paytm (Highest hirers). IT Services - TCS, Wipro, Infosys (have huge security teams). Consulting - Big 4 (Deloitte, EY, KPMG, PwC) audit other companies' security. Government/Defense - CERT-In (Indian Computer Emergency Response Team), DRDO, Police Cyber Cells.",
+          "Top Cities: Bengaluru (Tech Hub), Gurugram/Noida (Corporate HQs), Pune, Hyderabad.",
+          "Remote Work: Extremely high potential. You can hack a server in London while sitting in your bedroom in Lucknow.",
+          "Emerging Opportunities: Cloud Security, IoT Security, AI Security, Blockchain Security."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and certification costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: B.Tech: ₹5L–₹15L. Certifications (Expensive but worth it): CEH: ₹35,000–₹50,000. OSCP: ~₹1L (includes lab access).",
+          "Tools: A powerful laptop (16GB RAM min) is needed (~₹80,000). Most hacking tools (Kali Linux, Metasploit) are free/open source.",
+          "ROI: With starting salaries of ₹10L+ and bug bounty opportunities, you can recover your investment quickly.",
+          "Additional: Online courses and certifications from platforms like Coursera, Udemy, and HackTheBox cost ₹5,000–₹20,000."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government: National Forensic Sciences University (NFSU), Gandhinagar - the premier institute for cyber forensics. IIIT Delhi / IIIT Allahabad - excellent M.Tech programs in Security. IIT Kanpur - C3i Hub for cybersecurity.",
+          "Private: Amrita Vishwa Vidyapeetham - top-ranked for cybersecurity research (CTF team bi0s). SRM University / VIT - good B.Tech specializations. Manipal Institute of Technology - strong cybersecurity programs.",
+          "Online: Coursera, Udemy, HackTheBox, TryHackMe - excellent for self-paced learning and practical skills."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Sierrah Cyber Scholarship: For women in cybersecurity.",
+          "AICTE Pragati: For girls in technical education.",
+          "Corporate Grants: Companies like Google and Microsoft often have 'Cybersecurity Skilling Programs' that offer free training and exam vouchers to students.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Government Schemes: Various state governments offer scholarships for engineering students from economically weaker sections."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications (Mandatory/Highly Recommended): Beginner: CompTIA Security+, CEH. Pro: OSCP, CISSP (for management).",
+          "Communities: Null and OWASP (Open Web Application Security Project). Joining a local 'Null Chapter' meet-up in your city is the best way to network.",
+          "Industry Recognition: Bug bounty platforms like HackerOne and Bugcrowd showcase your skills and reputation.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in cybersecurity careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Network Security Engineer (protecting office Wi-Fi and firewalls), SOC Analyst (monitoring screens 24/7 for attacks), Security Administrator (managing user access and permissions).",
+          "New-Age Careers: Cloud Security Engineer (protecting data on AWS/Azure), IoT Security Researcher (hacking smart bulbs and cars to fix them), Forensic Investigator (helping police solve cybercrimes), AI Security Specialist.",
+          "Freelancing: Bug Bounty Hunting. Platforms like HackerOne or Bugcrowd pay you to hack companies legally. Earn ₹50,000–₹50 Lakhs per vulnerability.",
+          "Entrepreneurship: Starting your own cybersecurity consulting firm or security tools company."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of ethical hacking.",
+        color: BLUE,
+        content: [
+          "Burnout: Hackers work long hours. The stress of knowing 'one mistake can ruin the company' is high.",
+          "Constant Study: New viruses come out daily. You have to study every single day to stay ahead.",
+          "Legal Risks: One wrong click (hacking a site without permission) can land you in jail. The line between White Hat and Black Hat is thin.",
+          "Ethical Dilemmas: You may discover vulnerabilities that could be exploited for massive damage. The responsibility is immense.",
+          "Work-Life Balance: Critical incidents can happen anytime, requiring immediate response."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in cybersecurity.",
+        color: BLUE2,
+        content: [
+          "AI vs AI Hacking: Future wars will be fought between 'AI Attackers' and 'AI Defenders.' Humans will just manage the bots.",
+          "Quantum Cryptography: As computers get faster, old passwords will break. We will need Quantum-proof security.",
+          "War on Deepfakes: Security experts will be needed to verify if a video of the PM is real or AI-generated.",
+          "Zero Trust Architecture: Moving from 'trust but verify' to 'never trust, always verify' security models.",
+          "Autonomous Security: Self-healing systems that detect and fix vulnerabilities without human intervention.",
+          "Blockchain Security: Securing decentralized systems and cryptocurrencies."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Install Kali Linux: It's a free operating system for hackers. Learn to use the terminal (black screen with green text).",
+          "Play CTFs (Capture The Flag): These are hacking games for students. Websites like TryHackMe or HackTheBox are great places to start.",
+          "Learn Networking: Understand what an IP address, Mac Address, and Router actually do.",
+          "Coding: Python is the most useful language for writing quick hacking scripts. Start with basics.",
+          "Join Communities: Participate in local Null chapters or OWASP meetings to network and learn.",
+          "Build a Lab: Set up a virtual machine to practice hacking safely without breaking anything."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Ethical Hackers",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Anand Prakash: One of the world's top Bug Bounty hunters. He has found bugs in Facebook, Uber, and Twitter, earning crores in rewards. Founder of Pingsafe.",
+          "Trishneet Arora: Founder of TAC Security. He started hacking at 19 and is now a millionaire advising governments.",
+          "Ankit Fadia: One of the early pioneers who popularized ethical hacking in India through his books and TV shows.",
+          "Rahul Tyagi: Co-founder of Lucideus (now Safe Security). A prominent trainer and speaker in the Indian cyber circuit.",
+          "Sunny Vaghela: A tech-entrepreneur who has helped investigations in cyber-crime cases for the police."
+        ]
+      }
+    ]
+  },
+  it_business_analyst: {
+    slug: "it_business_analyst",
+    badge: "🌉 The Bridge Builder for Class 10+",
+    heading: "IT Business Analyst",
+    subheading: "Have you ever wondered how a confused customer explains what they want to a silent genius developer? That's where the IT Business Analyst comes in. You are the 'Translator' and 'Architect' of the software world, ensuring technology actually solves real-world problems.",
+    whyCards: [
+      { icon: "Users", title: "Bridge Builder", description: "Connect business needs with technical solutions. Translate vague ideas into concrete features.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "14% CAGR Growth", description: "Business Analysis job market growing faster than traditional coding jobs. High demand in GCCs.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹9L–₹80L+ Salaries", description: "Mid-level BAs earn ₹9L–₹16L. Leadership roles reach ₹80L+. MBA accelerates growth.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Remote-Friendly", description: "70% of BA work is on Zoom/Teams calls. Ideal for remote work and global opportunities.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + MBA (Optional)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "JIRA, Excel, Visio, SQL, Lucidchart", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹9L–₹80L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "14%", label: "Job Market CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "70%", label: "Remote Work Potential", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Translating business needs into technical solutions.",
+        color: BLUE,
+        content: [
+          "IT BA Definition: An IT Business Analyst is the 'Translator' and 'Architect' of the software world. They listen to what a business needs, translate that into technical requirements, and guide developers to build it.",
+          "The Role: They bridge the gap between business stakeholders (who don't understand tech) and developers (who don't understand business). They ensure technology actually solves real-world problems.",
+          "What They Do: Listen to what a business needs (e.g., 'We need an app to sell shoes'), translate that into technical requirements (e.g., 'The app needs a login screen, a payment gateway, and a database'), and guide the developers to build it.",
+          "Why It Matters: In Digital India, every company is becoming a tech company. Banks need apps, hospitals need patient portals, and schools need e-learning platforms. Without BAs, developers would build the wrong things, and businesses would waste crores of rupees.",
+          "The Impact: You are the person who ensures technology actually solves real-world problems. You didn't write code, yet you built the product.",
+          "The Reality: You are the director of a movie—getting the best performance out of everyone."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Sneha, IT Business Analyst",
+        icon: "Clock",
+        description: "Real workflow at a Fintech company in Mumbai.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - The Stand-up Meeting: Sneha starts her day with a 'Stand-up Meeting.' The developers are stuck. They don't understand how the 'Loan Calculator' feature should work. Sneha opens her laptop, draws a quick flowchart on the whiteboard, and explains the logic: 'If the user's salary is < ₹30k, disable the Gold Loan option.' The developers nod. Problem solved.",
+          "11:00 AM - Client Meeting: She meets with the 'Client'—a bank manager who is terrified of technology. He vaguely says, 'I want the app to be safe.' Sneha asks smart questions to dig deeper: 'Do you mean fingerprint login? OTPs? Or face recognition?' She turns his vague fear into a concrete feature list.",
+          "1:30 PM - QA Huddle: Lunch with the Quality Assurance (QA) team. They joke about a bug found in the latest release. Sneha notes it down to check if the requirements she wrote were clear enough.",
+          "3:00 PM - Documentation Mode: She writes 'User Stories' (simple descriptions of features) in a tool called JIRA. She writes: 'As a user, I want to download my statement as a PDF so I can file taxes.' This single sentence guides the coding team for the next 2 days.",
+          "5:00 PM - Demo Call: She shows the new app prototype to the bank manager. He smiles and says, 'This is exactly what I imagined!'",
+          "7:00 PM - The Victory: Sneha logs off. She didn't write a single line of code today, yet she built the product. She feels like the director of a movie."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Business Analyst DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Questioner: You were the kid who asked 'Why?' until adults got annoyed. You need to dig to the root cause of a problem.",
+          "The Peacemaker: You can handle conflict. Developers and Business people often argue; you are the diplomat who finds a middle ground.",
+          "The Simplifier: You can explain complex things simply. (e.g., teaching your grandmother how to use WhatsApp).",
+          "The Organizer: You love making lists, flowcharts, and plans.",
+          "Hard Skills: Documentation (JIRA, MS Office), Visualization (Visio, Lucidchart), Data Basics (SQL, Excel), and understanding the Software Development Life Cycle (SDLC).",
+          "Soft Skills: Active Listening, Negotiation, and Presentation skills."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & BA Workflow",
+        icon: "Briefcase",
+        description: "The Business Analysis cycle.",
+        color: BLUE2,
+        content: [
+          "Elicitation: Interviewing stakeholders (users/clients) to gather requirements. Asking the right questions to understand their pain points.",
+          "Analysis: Breaking down those requirements. 'Is this feasible? Is it too expensive? Can we do it in 3 months?'",
+          "Documentation: Writing BRDs (Business Requirement Documents) or User Stories. Creating clear, actionable specifications.",
+          "Communication: Explaining the requirements to the technical team. Making sure developers understand what to build.",
+          "Validation (UAT): Testing the final software to ensure it matches what the business asked for (User Acceptance Testing).",
+          "Stakeholder Management: Keeping everyone aligned and managing expectations throughout the project."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Commerce or Science (PCM) are both excellent. Science helps with the technical logic. Commerce helps understand business finance and processes.",
+          "Step 2 - After Class 12: Undergraduate Degree (3-4 Years): B.Tech (CS/IT) - the strongest route for IT BAs. BCA / B.Sc. IT - good technical foundation. BBA / B.Com - valid, but you must learn IT concepts separately. Entrance Exams: JEE Mains, CUET, IPU-CET.",
+          "Step 3 - After Graduation: Direct Job: Join IT service companies (TCS, Infosys, Wipro) as a 'Systems Engineer' or 'Junior Analyst.' Postgraduate (The Accelerator): MBA in IT / Systems / Business Analytics - the golden ticket to senior roles. PGDM in Management - focus on Operations or IT. Entrance Exams: CAT, XAT, SNAP, MAT.",
+          "Step 4 - Lateral Entry: Software Developers often switch to BA roles if they love talking to people more than coding. QA/Testers make great BAs because they already know how the system breaks."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: HIGH. With Global Capability Centers (GCCs) exploding in India (companies like JP Morgan, Walmart setting up tech hubs here), the demand for BAs who understand global business is soaring.",
+          "Growth: The Business Analysis job market in India is projected to grow at 14% CAGR, faster than traditional coding jobs.",
+          "Entry-Level (Jr. Business Analyst, Associate Consultant): ₹4.5L–₹7L annually.",
+          "Mid-Level (IT Business Analyst, Product Owner): ₹9L–₹16L annually.",
+          "Senior-Level (Sr. BA, Principal Consultant): ₹18L–₹30L annually.",
+          "Leadership (Director of Product, CIO): ₹45L–₹80L+ annually.",
+          "Metro Factor: Bengaluru and Pune pay the highest due to the product-company culture."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: IT Services - TCS, Accenture, Capgemini (working for foreign clients). BFSI (Banking) - HDFC, Axis, Wells Fargo (building banking apps). E-Commerce - Flipkart, Amazon (improving supply chain logic). Consulting - Deloitte, McKinsey, EY (advising companies on digital transformation).",
+          "Top Cities: Bengaluru (Tech Hub), Pune (Banking Tech), Gurugram (Consulting Hub), Hyderabad.",
+          "Remote Work: High potential. BAs spend 70% of their time on Zoom/Teams calls, making it ideal for remote work.",
+          "Emerging Opportunities: Product Management, Digital Transformation, Data Analytics, AI/ML Product roles."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and certification costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: B.Tech/BCA: ₹4L–₹10L. MBA (Private): ₹10L–₹25L (The expensive route but high ROI). MBA (Govt/FMS): ₹2L–₹4L.",
+          "Certifications: ECBA (Entry Certificate in Business Analysis): ~₹25,000 (Great for freshers). CSPO (Certified Scrum Product Owner): ~₹25,000 (For Agile roles).",
+          "ROI: With starting salaries of ₹9L+ and MBA accelerating growth to ₹18L+, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "For MBA/PGDM (The Best Route for BAs): IIM Bangalore / Calcutta - top-tier Business Analytics programs. Symbiosis (SCMHRD/SICSR), Pune - famous for IT/Systems MBA. Great Lakes Institute, Chennai - known for Analytics/Tech MBA. NMIMS, Mumbai - strong industry connections. IIIT Bangalore/Hyderabad - M.Tech programs with a strong product focus. Delhi School of Economics - affordable and high quality.",
+          "For B.Tech: IIT Delhi, IIT Bombay, BITS Pilani - strong CS/IT programs with business focus.",
+          "Online: Coursera, edX - MBA and BA certification programs."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Institute-Specific Scholarships: Top B-Schools (like IIMs) have need-based financial aid.",
+          "IDFC First Bank MBA Scholarship: For students in select MBA colleges.",
+          "Google Scholarship: For Computer Science students (can pivot to BA).",
+          "State Schemes: MahaDBT (Maharashtra), e-Kalyan (Jharkhand) for professional courses.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "IIBA (International Institute of Business Analysis): The global 'mother ship' for BAs. Their certifications (ECBA, CCBA, CBAP) are the gold standard.",
+          "PMI (Project Management Institute): Offers PBA (Professional in Business Analysis).",
+          "Scrum Alliance: For CSM or CSPO certifications (essential for modern agile teams).",
+          "Industry Recognition: JIRA expertise, SQL knowledge, and project portfolio showcase your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in BA careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: IT Business Analyst - the standard role. Functional Consultant - specializing in one tool (like SAP or Salesforce). Systems Analyst - analyzing and improving business processes.",
+          "New-Age Careers: Product Owner - the 'CEO of the Product.' A step up from BA in Agile teams. Data Storyteller - a mix of Data Analyst and Business Analyst. Digital Transformation Consultant - helping old companies go digital.",
+          "Emerging Roles: AI Product Manager, Sustainability Analyst, UX Researcher.",
+          "Freelancing: Offering 'Requirement Gathering' services to startups on Upwork. Consulting for small businesses on process improvement."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of BA careers.",
+        color: BLUE,
+        content: [
+          "The 'Sandwich' Problem: You are crushed between the Business (who wants everything now) and Developers (who say it takes time). Managing this stress is key.",
+          "Ambiguity: Clients often don't know what they want. You have to be a mind reader.",
+          "Technological Change: If the tech stack changes (e.g., from Web to AI), you must relearn what is possible.",
+          "Scope Creep: Requirements keep changing. Managing scope and saying 'No' is crucial.",
+          "Documentation Burden: Writing clear requirements takes time and effort."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in business analysis.",
+        color: BLUE2,
+        content: [
+          "AI Business Analyst: You won't just gather requirements; you will use AI tools to generate them. BAs will become 'AI Supervisors.'",
+          "Low-Code/No-Code: BAs will start building simple apps themselves using drag-and-drop tools, without needing developers for everything.",
+          "Sustainability Analyst: BAs helping companies track their carbon footprint using IT systems.",
+          "Product-Centric BA: Moving from project-based to product-based thinking.",
+          "Data-Driven BA: Using advanced analytics to make business decisions.",
+          "Remote-First BA: Global teams collaborating across time zones."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Master Excel: Learn how to organize data. It's a BA's best friend. Pivot tables, VLOOKUP, and data visualization are essential.",
+          "Organize Events: Plan the school fest. Gathering requirements from teachers and coordinating with student volunteers is exactly what a BA does.",
+          "Learn to Diagram: Use free tools like Canva or Draw.io to make flowcharts of daily tasks (e.g., 'How I get ready for school').",
+          "Tech Awareness: Read news about apps and updates. Ask 'Why did Instagram change this button?'",
+          "Communication Skills: Join debate clubs or public speaking groups. BAs need to present ideas clearly.",
+          "Learn SQL Basics: Understand how databases work. It helps you communicate with developers."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian BA/Product Leaders",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Nandan Nilekani: Co-founder of Infosys and Architect of Aadhaar. He is the ultimate 'System Analyst' who gathered requirements for a nation of 1.4 billion.",
+          "N. Chandrasekaran: Chairman of Tata Sons. He started his career in software but rose because of his ability to align technology with business goals.",
+          "Indra Nooyi: Former CEO of PepsiCo. Her background in strategy and consulting mirrors the high-level work of a Business Analyst.",
+          "Sundar Pichai: CEO of Google. His early career in Product Management (Chrome) is the modern evolution of the Business Analyst role.",
+          "Debjani Ghosh: President of NASSCOM. She champions the bridge between policy, business, and technology in India."
+        ]
+      }
+    ]
+  },
+  internet_of_things: {
+    slug: "internet_of_things",
+    badge: "🌐 The Magicians of Connected Things for Class 10+",
+    heading: "Internet of Things (IoT)",
+    subheading: "Imagine if your refrigerator could text you, 'Hey, we are out of milk!' or if a farmer could water his crops miles away just by tapping a button on his phone. This isn't magic; it is the Internet of Things (IoT). You give a 'voice' and 'brain' to physical objects.",
+    whyCards: [
+      { icon: "Zap", title: "Smart Everything", description: "Smart cities, smart homes, smart farms—embed sensors in ordinary objects to make them intelligent.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "10%+ CAGR Growth", description: "Indian IoT market projected to reach $3.62 Billion by 2034. 500M+ connected devices by 2026.", borderColor: "#059669" },
+      { icon: "Cpu", title: "Hardware + Software", description: "Unique blend of electronics, coding, and cloud platforms. Premium salaries for dual expertise.", borderColor: "#3B82F6" },
+      { icon: "DollarSign", title: "₹12L–₹1.5Cr+ Salaries", description: "IoT professionals command premium pay. Solutions Architects earn ₹12L–₹22L mid-career.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + Certifications", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Arduino, Raspberry Pi, Python, AWS IoT, Sensors", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹12L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$3.62B", label: "Indian IoT Market by 2034", gradient: "from-green-500 to-green-600" },
+      { value: "500M+", label: "Connected Devices by 2026", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Connecting the physical world to the digital world.",
+        color: BLUE,
+        content: [
+          "IoT Definition: Internet of Things (IoT) is about giving a 'voice' and 'brain' to physical objects. You take ordinary things—cars, watches, lightbulbs, or factory machines—and embed them with sensors and software so they can connect to the internet and talk to each other.",
+          "The Role: An IoT professional bridges the gap between hardware and software. They design systems where devices collect data, communicate, and make intelligent decisions.",
+          "Why It Matters: In 21st-century India, IoT is the nervous system of our future. Smart Cities: It helps streetlights turn off automatically to save electricity. Healthcare: It allows doctors to monitor a patient's heart rate remotely. Industry 4.0: It helps factories predict when a machine will break before it actually breaks.",
+          "The Scope: IoT combines Electronics, Computer Science, Cloud Computing, and Data Analytics to create connected ecosystems.",
+          "The Impact: As an IoT professional, you are building a world where everything is connected, making life safer, easier, and more efficient.",
+          "The Reality: You are solving real-world problems. Today, you didn't just write code; you potentially saved a farmer's harvest or prevented a factory breakdown."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Vikram, IoT Solutions Architect",
+        icon: "Clock",
+        description: "Real workflow at an Agri-Tech startup in Pune.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - Remote Monitoring: Vikram logs into his dashboard. He isn't checking emails; he is checking the soil moisture levels of a grape farm in Nashik, 200 km away. The sensors show the soil is too dry.",
+          "10:30 AM - Hardware Design Meeting: He meets with the hardware team. They are designing a new 'Smart Collar' for cattle that tracks their health. Vikram argues that the battery needs to last longer. They decide to switch to a 'Low Power Wide Area Network' (LoRaWAN) chip.",
+          "1:00 PM - App Developer Huddle: Lunch with the app developers. They discuss how to show the data to farmers in a simple way. 'Farmers don't want graphs,' Vikram says. 'They just want a red or green light.'",
+          "3:00 PM - Field Testing: Vikram drives to a nearby greenhouse. He installs a new temperature sensor. He opens his laptop and writes a quick code to connect the sensor to the cloud. Beep! The data appears on his screen. It works!",
+          "5:30 PM - Predictive Analytics: Back at the office, he analyzes data from yesterday. An anomaly is detected—a water pump in a client's farm is vibrating strangely. His AI model predicts it will fail in 2 days. He sends an automated alert to the farmer: 'Service your pump immediately.'",
+          "7:30 PM - The Impact: He heads home. Today, he didn't just write code; he potentially saved a farmer's harvest."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The IoT Engineer DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Tinkerer: You love opening up toys, remote controls, or old phones to see the green circuit board inside.",
+          "The Hybrid Mind: You like both hardware (wires, soldering) and software (coding apps).",
+          "The Lazy Smart Person: You constantly think, 'Why do I have to do this manually? Can't a machine do it?'",
+          "The Problem Solver: You enjoy solving physical puzzles, not just abstract math problems.",
+          "Hard Skills: Knowledge of sensors, Microcontrollers (Arduino/Raspberry Pi), Coding (Python/C++), and Cloud Platforms (AWS IoT/Azure).",
+          "Soft Skills: Curiosity, patience (hardware fails a lot!), and the ability to explain tech to non-tech people."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & IoT Workflow",
+        icon: "Briefcase",
+        description: "Bridging the physical and digital worlds.",
+        color: BLUE2,
+        content: [
+          "Device Layer: Selecting the right sensors (heat, light, motion) and microchips. Understanding sensor specifications and accuracy.",
+          "Connectivity: Deciding how the device talks to the internet (Wi-Fi, Bluetooth, 5G, or Zigbee). Choosing the right protocol for the use case.",
+          "Data Processing: Sending the massive amount of data to the 'Cloud' (internet servers). Managing data pipelines and ensuring reliability.",
+          "Analytics: Using software to make sense of the data (e.g., 'The temperature is rising too fast!'). Building dashboards and alerts.",
+          "Action: Triggering a response (e.g., Turning on the AC automatically). Implementing automation logic.",
+          "Security: Ensuring devices are protected from hacking and data is encrypted."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is the gold standard. You need Physics to understand circuits and Math for logic. Action: Buy an Arduino Starter Kit online and start building small projects at home.",
+          "Step 2 - After Class 12: Undergraduate Degree (4 Years): B.Tech in Electronics & Communication (ECE) - the best foundation for the hardware side. B.Tech in Computer Science (CSE) with IoT Specialization - best for the software/cloud side. B.Tech in Mechatronics - a great mix of mechanical and electronics. Entrance Exams: JEE Mains/Advanced, BITSAT, VITEEE, MHT-CET.",
+          "Step 3 - After Graduation: Postgraduate (Optional but Good): M.Tech in IoT & Sensor Systems, M.Tech in Embedded Systems. Lateral Entry (For Switchers): If you are a standard software engineer, you can switch to IoT by doing a 6-month certification course (e.g., from CDAC or NPTEL) focusing on Embedded C and IoT protocols."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: EXPLOSIVE. The Indian IoT market is projected to reach $3.62 Billion by 2034, growing at a rapid pace of over 10% annually.",
+          "Adoption: By 2026, India is expected to have over 500 million connected devices.",
+          "Hiring Trends: Major hiring is happening in Industrial IoT (IIoT)—factories making their machines 'smart.'",
+          "Entry-Level (IoT Developer, Embedded Engineer): ₹4.5L–₹8L annually.",
+          "Mid-Level (IoT Solutions Architect, Firmware Engineer): ₹12L–₹22L annually.",
+          "Senior-Level (IoT Program Manager, Principal Architect): ₹28L–₹55L annually.",
+          "Leadership (CTO, Head of Connected Products): ₹80L–₹1.5Cr+ annually.",
+          "Note: IoT professionals are paid a premium because they know both hardware and software."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Automotive (EVs) - Ola Electric, Ather, Tata Motors (Connected Cars). Smart Home/Consumer - Wipro Lighting, Havells, Godrej (Smart Locks). Agri-Tech - Cropin, Fasal (Smart Farming). Industrial - L&T, Siemens, Bosch (Smart Factories). IT Services - TCS, Infosys, HCL (Building IoT platforms for global clients).",
+          "Top Cities: Bengaluru (The IoT Capital), Pune (Automotive/Industrial Hub), Hyderabad, Chennai, Delhi-NCR.",
+          "Remote Work: Moderate. Unlike pure software, IoT often requires you to be in the lab to test the physical devices.",
+          "Emerging Opportunities: 5G IoT, Edge Computing, IoT Security, Wearable Tech."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (IITs/NITs): ₹6L–₹10L. Private Universities: ₹10L–₹18L.",
+          "Bootcamps: Specialized IoT training (C-DAC, private institutes) costs ₹50,000–₹1.5L.",
+          "Tools: You will need a laptop (~₹60k) and a budget for 'Maker Kits' (Raspberry Pi, Sensors, Wires) which can cost ₹5,000–₹10,000 per year for hobby projects.",
+          "ROI: With starting salaries of ₹12L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: IIT Delhi - Centre for Sensors, Instrumentation and Cyber-Physical Systems Engineering (SeNSE). BITS Pilani - excellent innovative culture.",
+          "South: IIT Madras - has a dedicated 'Pravartak' center for sensors. VIT Vellore - B.Tech with IoT specialization. Manipal Institute of Technology - strong in mechatronics/electronics.",
+          "West: COEP Tech University (Pune) - deep ties with the automotive industry. Symbiosis Institute of Technology - IoT specializations.",
+          "East: IIT Kharagpur - strong Embedded Systems research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "AICTE Pragati Scholarship: For girls pursuing technical education.",
+          "Visvesvaraya PhD Scheme: For advanced research in Electronics/IT.",
+          "Corporate Scholarships: Companies like Bolt IoT and Siemens often run scholarship programs or contests where winners get free training kits and internships.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Government Schemes: Various state governments offer scholarships for engineering students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: IEEE Sensors Council - global body for sensor professionals. IETE (Institution of Electronics and Telecommunication Engineers) - Indian body.",
+          "Certifications: AWS Certified IoT Developer - highly valued by companies using cloud. Cisco Certified Network Associate (CCNA) - good for the networking side of IoT. C-DAC Diploma in Embedded Systems - a gold standard for freshers in India.",
+          "Industry Recognition: GitHub contributions, hackathon wins, and project portfolios showcase your expertise.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in IoT careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Embedded Engineer (writing code for the chips inside devices), Network Engineer (making sure devices stay connected), Hardware Designer (designing circuit boards).",
+          "New-Age Careers: IoT Security Expert (hackers love smart bulbs! We need experts to secure them), Wearable Tech Designer (designing the next smart ring or fitness tracker), Edge Computing Specialist (making devices smart enough to think without the internet).",
+          "Emerging Roles: 5G IoT Specialist, Digital Twin Developer, IoT Data Analyst.",
+          "Freelancing: Building custom home automation systems for rich clients or small businesses. Consulting for startups on IoT architecture."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of IoT careers.",
+        color: BLUE,
+        content: [
+          "Hardware is Hard: Software bugs can be fixed with a download. Hardware bugs might mean recalling 10,000 devices. The stakes are high.",
+          "Security Risks: IoT devices are often easy targets for hackers. You have to be paranoid about security.",
+          "Fragmented Standards: There are too many different ways devices talk (Zigbee, Z-Wave, BLE, Wi-Fi), which can be confusing.",
+          "Power Constraints: Devices often run on batteries. Optimizing power consumption is a constant challenge.",
+          "Scalability Issues: Managing millions of devices and their data is complex."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in IoT.",
+        color: BLUE2,
+        content: [
+          "5G & IoT: With 5G, we can connect millions of devices in a small area. This will enable Autonomous Driving and Remote Surgery.",
+          "Green IoT: Sensors that run without batteries, harvesting energy from heat or vibration.",
+          "IoB (Internet of Bodies): Implantable devices that monitor health from inside your body.",
+          "Edge AI: Devices that can think and make decisions without connecting to the cloud.",
+          "Quantum IoT: Using quantum computing to process massive IoT data streams.",
+          "Autonomous Systems: Self-managing IoT networks that fix themselves without human intervention."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Buy a Raspberry Pi: It's a tiny computer for ₹4,000. Learn to make it do cool things (like a magic mirror or a retro game console).",
+          "Learn Python: It is the easiest language to start controlling devices.",
+          "Participate in Hackathons: Look for 'Smart India Hackathon' or school science fairs.",
+          "Understanding Physics: Don't sleep in the 'Electricity' and 'Magnetism' classes; they are the basics of IoT.",
+          "Build Projects: Start with simple projects like a temperature monitor or a motion-activated light.",
+          "Join Communities: Participate in maker spaces and IoT communities to learn from others."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian IoT Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Tarun Mehta & Swapnil Jain: Founders of Ather Energy. They built India's first 'Smart Scooter' which is basically an IoT device on wheels.",
+          "Anil Agiwal: A prolific inventor at Samsung India, holding over 400 patents in 4G/5G and IoT communications.",
+          "Kapil Bhattad: Engineering Director at Qualcomm, working on the wireless tech that connects IoT devices.",
+          "Shashwath T.R.: CEO of Mindgrove Technologies, an Indian company building indigenous 'System on Chips' (SoCs) for IoT devices.",
+          "Bhavish Aggarwal: Founder of Ola Electric, pushing the boundaries of connected vehicle technology in India."
+        ]
+      }
+    ]
+  },
+  mobile_app_developer: {
+    slug: "mobile_app_developer",
+    badge: "📱 The Architects of the Pocket for Class 10+",
+    heading: "Mobile App Developer",
+    subheading: "Look at your smartphone. It's not just a slab of glass and plastic; it's a magic wand. You tap a button, and food arrives. You tap another, and you can see your friend's face in Canada. The magician who makes this happen is a Mobile App Developer.",
+    whyCards: [
+      { icon: "Smartphone", title: "App Capital", description: "India is the #1 country for app downloads. Every business needs an app. 1.4 billion Indians use apps daily.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "Explosive Growth", description: "Cross-platform developers (Flutter/React Native) in high demand. Companies moving away from native-only development.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹12L–₹1.2Cr+ Salaries", description: "Among the highest-paid software engineers. Remote work means earning Bengaluru salary from anywhere.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Freelance Goldmine", description: "Build apps for international clients on Upwork and earn in Dollars. Indie hacker potential is huge.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) or 6 Months (Bootcamp)", color: "bg-green-100 text-green-700" },
+      { label: "Languages", detail: "Kotlin, Swift, Flutter, React Native, Java", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹12L–₹1.2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "#1", label: "App Downloads Globally", gradient: "from-green-500 to-green-600" },
+      { value: "1.4B", label: "Indian App Users", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Building the apps that power billions of smartphones.",
+        color: BLUE,
+        content: [
+          "Mobile App Developer Definition: A Mobile App Developer is a software engineer who builds applications for smartphones and tablets. They write the code that makes an app look good (UI), work smoothly (Performance), and do useful things (Logic).",
+          "The Role: They create everything from tracking your run to editing your selfie. They bridge the gap between design and functionality.",
+          "Why It Matters: India is the 'App Capital' of the world. From paying for chai with UPI to booking a train ticket on IRCTC, our entire lives run on apps. As a developer, you aren't just writing code; you are building the tools that 1.4 billion Indians use every single day.",
+          "The Scope: Mobile developers work across Android, iOS, and cross-platform technologies. They handle UI/UX, performance optimization, and backend integration.",
+          "The Impact: You see someone in the metro using the very app you helped build. That feeling? Pure pride.",
+          "The Reality: You are a creator. Coding an app is like digital LEGO; you build something from scratch that people can actually touch and use."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Riya, Android Developer",
+        icon: "Clock",
+        description: "Real workflow at a Fintech startup in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "10:00 AM - Daily Stand-up: Riya reaches her office (a cool co-working space). She grabs a coffee and joins the 'Daily Stand-up'. Her team is building a new feature: A 'Split Bill' option for college students. She updates the team: 'I've finished the design, but the payment gateway is crashing. I'll fix it today.'",
+          "11:30 AM - Deep Work Mode: Riya puts on her headphones. She opens Android Studio (her coding software) and starts writing code in Kotlin. She needs to make sure that when you click 'Split,' the app calculates the math instantly without freezing.",
+          "1:30 PM - Team Lunch: Lunch with the iOS team. They tease each other about which is better—Android or iPhone. They discuss a new update from Google that changes how notifications work. In this job, you have to learn something new every week!",
+          "3:30 PM - Bug Hunting: The testing team found a problem: The app crashes if the user has slow internet. Riya connects her phone to the laptop and simulates a 2G network. She finds the error in line 450 of her code and fixes it.",
+          "5:30 PM - Code Review: She pushes her code to GitHub (a cloud storage for code). Her senior reviews it and gives a 'Thumbs Up.' The feature is ready to be tested!",
+          "7:00 PM - The Victory: Riya logs off. On her way home, she sees someone in the metro using the very app she helped build. That feeling? Pure pride."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The App Developer DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Creator: You love making things. Coding an app is like digital LEGO; you build something from scratch that people can actually touch and use.",
+          "The Problem Solver: You don't get frustrated when things don't work. You get curious. Why did this crash?",
+          "The Detail-Obsessed: You notice small things—like a button being slightly off-center or an animation being too slow.",
+          "The Self-Learner: Tech changes fast. You are willing to watch YouTube tutorials to learn a new trick.",
+          "Hard Skills: For Android: Kotlin or Java. For iOS (Apple): Swift. Cross-Platform (Both): Flutter (Dart) or React Native.",
+          "Soft Skills: Logic, Patience (fixing bugs takes time!), and Empathy (understanding how a user thinks)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & App Development Workflow",
+        icon: "Briefcase",
+        description: "The process of building an app from concept to deployment.",
+        color: BLUE2,
+        content: [
+          "Wireframing: Drawing a rough sketch of what the app screens will look like. Understanding user flows.",
+          "UI/UX Design: Turning sketches into beautiful, colorful designs. Ensuring the app is intuitive and visually appealing.",
+          "Coding (Frontend): Writing code to make the buttons and screens work. Building the user interface.",
+          "API Integration: Connecting the app to the internet (backend) so it can save data, fetch information, and communicate with servers.",
+          "Testing: Trying to break the app to find bugs before users do. Testing on different devices and network conditions.",
+          "Deployment: Uploading the app to the Google Play Store or Apple App Store. Managing app updates and versions."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is the best route because logic and math help in coding. Alternative: You can technically learn coding from any stream (Commerce/Arts) if you are passionate, but Science gives you a head start for engineering exams.",
+          "Step 2 - After Class 12: Undergraduate Degree (3-4 Years): B.Tech in Computer Science (CSE) / IT - the 'Gold Standard' degree. BCA (Bachelor of Computer Applications) - a great practical alternative focused on software. B.Sc. Computer Science - a strong theoretical foundation. Entrance Exams: JEE Mains (National), BITSAT, VITEEE, CUET (for Central Universities).",
+          "Step 3 - After Graduation: The 'Specialist' Route: Do a specialized course in Android or iOS Development. Colleges often teach general coding; you need specific skills for apps. Lateral Entry (For Non-CS Grads): Did Mechanical Engineering? No problem. Join a Coding Bootcamp (6 months) like Scaler or Masai School to learn App Development and switch careers."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: EXPLOSIVE. India is the #1 country in the world for app downloads. Every business—from your local gym to Reliance—needs an app.",
+          "Hiring Trends: Companies are moving away from 'Android only' or 'iOS only.' The hot trend is 'Cross-Platform Developers' (Flutter/React Native) who can build one app that runs on both phones.",
+          "Entry-Level (Jr. Android/iOS Developer): ₹4L–₹8L annually.",
+          "Mid-Level (Sr. Flutter Developer / App Architect): ₹12L–₹22L annually.",
+          "Senior-Level (Lead Mobile Engineer / Tech Lead): ₹25L–₹45L annually.",
+          "Leadership (VP of Engineering / CTO): ₹60L–₹1.2Cr+ annually.",
+          "Metro vs. Non-Metro: Bengaluru and Gurugram pay the highest. However, remote work means you can earn a 'Bengaluru Salary' while living in Jaipur or Indore."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Fintech - Paytm, PhonePe, CRED (Highest paying). E-Commerce & Delivery - Flipkart, Zomato, Swiggy, Zepto. OTT & Media - Hotstar, JioCinema, Spotify. EdTech - PhysicsWallah, Unacademy. IT Services - TCS, Infosys (Building apps for foreign clients).",
+          "Top Cities: Bengaluru (The Startup Capital), Gurugram, Pune, Hyderabad, Noida.",
+          "Freelancing: HUGE potential. You can build apps for small businesses or international clients on Upwork and earn in Dollars ($).",
+          "Emerging Opportunities: AR/VR apps, Wearable apps, Super Apps, AI-powered apps."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: B.Tech (Govt - IITs/NITs): ₹6L–₹10L. B.Tech (Private - VIT, Manipal): ₹12L–₹20L. BCA (Private): ₹3L–₹6L.",
+          "Bootcamps/Online Courses: ₹20,000–₹2L (For intensive 6-month job-ready courses).",
+          "Equipment: You need a decent laptop. For Android: Any good Windows laptop (~₹60k). For iOS: You must have a MacBook (starts ~₹80k). This makes iOS development a bit more expensive to start.",
+          "ROI: With starting salaries of ₹12L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: IIIT Delhi - excellent for specialized CS branches. DTU / NSUT (Delhi) - strong coding culture.",
+          "South: IIIT Hyderabad - the best coding college in India (even better than some IITs for CS). VIT Vellore / SRM Chennai - good exposure to companies. PES University, Bengaluru.",
+          "West: VJTI Mumbai / COEP Pune - top government colleges. Symbiosis Institute of Computer Studies (Pune).",
+          "Online: Scaler / UpGrad / Masai - excellent for learning specific app development skills if your college curriculum is outdated."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Google Generation Scholarship: Specifically for computer science students.",
+          "AICTE Pragati: For girls in technical education.",
+          "Reliance Foundation Undergraduate Scholarship: For meritorious students in AI/CS.",
+          "College-Specific: Most private universities (like Amity/Lovely Professional) offer 100% tuition waivers for students with 90%+ in Class 12.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Google Certified Android Developer: The official badge from Google. Highly valuable.",
+          "Apple Certified iOS Developer: Adds immense value if you want to work abroad.",
+          "Meta React Native Specialization: Available on Coursera.",
+          "Industry Recognition: GitHub contributions, app portfolio, and hackathon wins showcase your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in mobile development careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Android Developer - specialist in Google's ecosystem. iOS Developer - specialist in Apple's ecosystem (High salary, less competition). Mobile Engineer - working on core platform features.",
+          "New-Age Careers: Flutter Developer - the 'All-Rounder' who codes once for both mobile and web. AR/VR App Developer - building 'Metaverse' apps or games like Pokemon Go. Wearable App Dev - building apps for Smartwatches (Apple Watch/Galaxy Watch).",
+          "Emerging Roles: Super App Developer, AI-Powered App Developer, Blockchain Mobile Developer.",
+          "Freelancing: 'Indie Hacker' – Building your own small apps (like a diet tracker or game) and earning money from ads or subscriptions."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of mobile development.",
+        color: BLUE,
+        content: [
+          "The 'Update' Fatigue: Google and Apple change their rules every year. You have to constantly update your app and your skills.",
+          "Device Fragmentation: Android has thousands of phones (Samsung, Xiaomi, Oppo). Your app might work on one but crash on another. Fixing this is frustrating.",
+          "Screen Time: You will be staring at screens for 10-12 hours a day. Eye strain is real.",
+          "Performance Optimization: Making apps run smoothly on low-end devices is challenging.",
+          "Security Concerns: Protecting user data and preventing hacking is a constant responsibility."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in mobile development.",
+        color: BLUE2,
+        content: [
+          "Super Apps: Apps like Tata Neu or WeChat that do everything (chat, pay, shop, fly). Developers will build 'Mini-Apps' inside these giants.",
+          "AI-Powered Apps: Apps won't just be buttons; they will talk. (e.g., An app that scans your fridge and tells you what to cook).",
+          "Low-Code/No-Code: Simple apps will be built by drag-and-drop tools. Developers will be paid to build complex, high-security apps that robots can't build.",
+          "Foldable Phones: Apps optimized for foldable screens will be the next frontier.",
+          "Wearable Ecosystem: Apps for smartwatches, AR glasses, and other wearables.",
+          "Offline-First Apps: Apps that work seamlessly even without internet."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Build a 'Hello World' App: Download MIT App Inventor (it's free and uses drag-and-drop). You can build a working Android app in 1 hour without coding!",
+          "Learn Logic: Play games like Human Resource Machine or Lightbot that teach coding logic without code.",
+          "Learn Java or Python: These are the alphabets of coding. Start with Code.org or Khan Academy.",
+          "Design: Doodle app ideas on paper. Where should the 'Buy' button go? That's UI/UX design!",
+          "Build Projects: Create simple apps like a calculator, to-do list, or weather app.",
+          "Join Communities: Participate in hackathons and coding clubs to learn from others."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Mobile App Developers",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Imran Khan (The App Guru): A government school teacher from Alwar, Rajasthan, who self-learned coding and built 80+ educational apps for students, earning praise from the Prime Minister.",
+          "Bhavish Aggarwal: Co-founder of Ola. He wrote the initial code for Ola Cabs, proving that a simple app can change urban transport.",
+          "Deepinder Goyal: Founder of Zomato. Started by uploading menus online; now runs the country's food lifeline.",
+          "Lalitesh Katragadda: The man behind Google Maps India. He led the team that built the map data you use every day.",
+          "Shreyas Doshi: A product leader icon (ex-Stripe/Twitter/Google) followed by thousands of developers for his insights on building great products."
+        ]
+      }
+    ]
+  },
+  it_project_manager: {
+    slug: "it_project_manager",
+    badge: "⚓ The Captain of the Ship for Class 10+",
+    heading: "IT Project Manager",
+    subheading: "Imagine building a house. You have bricklayers, electricians, and painters. But who makes sure the bricks arrive on time? In the digital world, an IT Project Manager is the 'Captain of the Ship'—managing people, timelines, budgets, and ensuring complex software projects don't collapse into chaos.",
+    whyCards: [
+      { icon: "Users", title: "Team Leader", description: "Manage teams of developers, testers, and designers. Lead without being bossy. Motivate and unblock obstacles.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "11-15% CAGR Growth", description: "India becoming the world's 'Digital Capability Center.' Every new GCC needs PMs to run it.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹14L–₹1Cr+ Salaries", description: "Mid-level PMs earn ₹14L–₹25L. PMP Certification increases salary by ~20%. Leadership roles reach ₹1Cr+.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Remote-Friendly", description: "PMs mostly coordinate via Zoom/Teams. Perfect for remote work and managing global teams.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + Certifications", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "JIRA, MS Project, Scrum, Agile, Excel", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹14L–₹1Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "11-15%", label: "Job Market CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "+20%", label: "Salary Boost with PMP", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Leading teams and managing complex software projects.",
+        color: BLUE,
+        content: [
+          "IT PM Definition: An IT Project Manager is the 'Captain of the Ship.' They don't write code (usually). Instead, they manage the people who write code. They plan the timeline, manage the budget, solve team conflicts, and talk to the client.",
+          "The Role: They are the glue that holds the project together. They ensure complex software projects worth millions of dollars don't collapse into chaos.",
+          "Why It Matters: Indian IT companies (like TCS, Infosys) and Global Capability Centers (like Google, JPMorgan in India) build massive software. Without a PM, these projects would miss deadlines and waste money.",
+          "The Scope: PMs work across the entire Software Development Life Cycle (SDLC)—from planning to execution to delivery.",
+          "The Impact: You don't write code, but because of you, the server gets fixed, the client is calmed down, and the team knows exactly what to do tomorrow.",
+          "The Reality: You are the 'Chief Morale Officer,' the diplomat, the organizer, and the problem-solver all rolled into one."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Rohan, IT Project Manager",
+        icon: "Clock",
+        description: "Real workflow at a multinational bank's tech hub in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Daily Stand-up: Rohan starts his day with a 'Daily Stand-up' meeting. His team of 8 developers and 2 testers gathers in a circle (or on Zoom). Each person says what they did yesterday and what they will do today. One developer, Priya, says, 'I'm stuck because the server is down.' Rohan notes this—it's his job to unblock her.",
+          "11:00 AM - Unblocking & Tracking: He calls the IT Infrastructure team to fix the server for Priya. Then, he opens a tool called JIRA. He sees a 'Burndown Chart' that shows if the project is on track to finish by Friday. The line is dipping too slowly. He realizes they might miss the deadline.",
+          "1:00 PM - Team Morale: Lunch with the team. Rohan keeps the mood light. A stressed team makes mistakes, so he acts as the 'Chief Morale Officer,' cracking jokes about the latest cricket match.",
+          "3:00 PM - Client Call: A manager from the bank's London office joins the video call. She is unhappy because a feature is missing. Rohan stays calm. He doesn't blame his team. He explains the technical challenges diplomatically and negotiates a new date for that feature.",
+          "5:00 PM - Sprint Planning: He sits down to plan the 'Sprint' for next week. He assigns tasks based on who is good at what. He acts like a chess player, moving pieces to win the game.",
+          "7:00 PM - The Victory: Rohan logs off. He didn't write a single line of code, but because of him, the server was fixed, the client was calmed down, and the team knows exactly what to do tomorrow."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Project Manager DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Organizer: You are the friend who plans the entire Goa trip—booking tickets, collecting money, and making the itinerary.",
+          "The Calm Head: When things go wrong (e.g., the train is cancelled), you don't panic; you look for alternatives.",
+          "The Communicator: You can explain technical things to non-technical people (like explaining an app glitch to your grandfather).",
+          "The 'People Person': You can get work done without being bossy. You know how to motivate lazy people and calm down angry ones.",
+          "Hard Skills: Methodologies like Agile & Scrum (how modern software is built), Tools like JIRA / MS Project, Budgeting, Risk Management.",
+          "Soft Skills: Negotiation, Leadership, Time Management, and Empathy."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & SDLC Workflow",
+        icon: "Briefcase",
+        description: "The Software Development Life Cycle managed by PMs.",
+        color: BLUE2,
+        content: [
+          "Initiation: Defining the goal. 'We need to build a mobile banking app in 6 months.' Understanding the scope and objectives.",
+          "Planning: Breaking the huge goal into small, 2-week tasks called Sprints. Creating a budget and timeline. Identifying risks.",
+          "Execution: The team starts coding. The PM removes obstacles (blockers). Ensures resources are available and team is productive.",
+          "Monitoring: Tracking progress daily. 'Are we spending too much money? Are we late?' Using tools like JIRA and Burndown Charts.",
+          "Closing: Delivering the software to the client and celebrating the team's success. Conducting retrospectives to improve.",
+          "Stakeholder Management: Keeping clients, executives, and team members aligned and informed."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) or Commerce are both fine. Science helps if you want to manage technical projects. Commerce/Arts: You can still be a PM, but you might manage business-process projects.",
+          "Step 2 - After Class 12: Undergraduate Degree (3-4 Years): B.Tech (CS/IT) - the most common route. Engineers often become the best PMs because they understand the work. BCA / B.Sc. IT - good technical base. BBA / BBM - focuses on management. You will need to learn IT concepts later. Entrance Exams: JEE Mains, CUET, CETs.",
+          "Step 3 - After Graduation: The 'Developer First' Route: Most PMs start as Software Developers or Testers. After 3-5 years, if they show leadership skills, they are promoted to Team Lead and then Project Manager. The 'Direct Management' Route: MBA in IT / Systems / Operations - you can join directly as a 'Junior PM' or 'Business Analyst' after an MBA. Entrance Exams: CAT, MAT, XAT, SNAP.",
+          "Step 4 - Certification (The Accelerator): Getting a PMP (Project Management Professional) or Scrum Master certification is almost mandatory to reach senior levels."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: HIGH. India is becoming the world's 'Digital Capability Center.' Every new office opened by a foreign company needs PMs to run it.",
+          "Growth: The demand for project management roles in India is expected to grow by 11-15% annually.",
+          "Entry-Level (Junior PM / Project Coordinator): ₹6L–₹10L annually.",
+          "Mid-Level (IT Project Manager / Scrum Master): ₹14L–₹25L annually.",
+          "Senior-Level (Senior PM / Delivery Manager): ₹28L–₹45L annually.",
+          "Leadership (Program Director / VP of Delivery): ₹60L–₹1Cr+ annually.",
+          "Note: Getting a PMP Certification instantly increases salary potential by ~20%."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: IT Services - TCS, Infosys, Wipro, Accenture (managing projects for global clients). Global Capability Centers (GCCs) - JPMorgan, Walmart, Mercedes-Benz (hiring PMs for their India tech hubs). Product Startups - Swiggy, Zomato, Cred (need 'Agile' managers who move fast). Consulting - Deloitte, KPMG (advising clients on big tech changes).",
+          "Top Cities: Bengaluru (Tech Capital), Pune, Hyderabad, Gurugram, Chennai.",
+          "Remote Work: Very High. PMs mostly coordinate via Zoom/Teams, making it perfect for remote work.",
+          "Emerging Opportunities: Agile Coaching, Program Management, Digital Transformation, Scrum Master roles."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and certification costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: B.Tech/BCA: ₹4L–₹12L. MBA (Private): ₹10L–₹25L.",
+          "Certifications (Crucial Investment): PMP (Project Management Professional): Exam fee is approx ₹42,000–₹50,000. It is expensive but pays for itself quickly. CSM (Certified Scrum Master): Approx ₹25,000 for a 2-day workshop.",
+          "ROI: With starting salaries of ₹14L+ and certifications increasing salary by 20%, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "For MBA/PGDM (Management Route): IIMs (Indore/Kozhikode/Lucknow) - offer great Operations/IT electives. NITIE (IIM Mumbai) - best for Operations & Project Management. Symbiosis (SCMHRD/SICSR), Pune - IT-focused MBA. SP Jain (SPJIMR), Mumbai - known for Information Management.",
+          "For B.Tech: IIT Delhi, IIT Bombay, BITS Pilani - strong CS/IT programs with management focus.",
+          "Online/Executive Education: UpGrad / Great Learning - offer PGP in Management for working professionals."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "PMI Educational Foundation: Offers scholarships for students pursuing project management degrees.",
+          "Corporate Sponsorship: Many IT companies (like Infosys, HCL) will pay for your PMP certification if you are a high-performing employee.",
+          "IDFC First Bank MBA Scholarship: For MBA students in India.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Government Schemes: Various state governments offer scholarships for engineering students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "PMI (Project Management Institute): The global boss of this profession. Must-Have: PMP (Gold Standard for experienced PMs). Entry-Level: CAPM (Certified Associate in Project Management) – good for freshers.",
+          "Scrum Alliance: Must-Have: CSM (Certified Scrum Master) – Essential for software jobs.",
+          "PRINCE2: Another certification popular in UK/European companies.",
+          "Industry Recognition: JIRA expertise, Agile knowledge, and project portfolio showcase your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in PM careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: IT Project Manager - managing budgets and timelines. Delivery Manager - managing multiple project managers. Program Manager - overseeing multiple related projects.",
+          "New-Age Careers: Scrum Master - a 'Servant Leader' who coaches the team on Agile processes (very high demand). Product Manager - focuses more on what to build (vision) rather than how to build (execution). Agile Coach - teaching huge companies how to work faster.",
+          "Emerging Roles: Digital Transformation Manager, Agile Release Train Engineer, Portfolio Manager.",
+          "Freelancing: Working as a freelance PM for US startups on platforms like Toptal. Consulting for companies on process improvement."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of PM careers.",
+        color: BLUE,
+        content: [
+          "The 'Meat in the Sandwich': You are stuck between a demanding client and an overworked team. You take the heat from both sides.",
+          "Stress: Deadlines are stressful. If the server crashes on Friday night, you are the one who has to stay up.",
+          "Accountability without Authority: You often have to convince people to work who don't report to you directly. Influence is key.",
+          "Scope Creep: Requirements keep changing. Managing scope and saying 'No' is crucial.",
+          "Work-Life Balance: Critical issues can happen anytime, requiring immediate response."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in project management.",
+        color: BLUE2,
+        content: [
+          "AI Project Managers: AI tools will automatically track budgets and schedules. Human PMs will focus purely on people management and strategy.",
+          "Remote Team Management: Managing a team where one person is in Poland, one in Pune, and one in Vietnam. Cultural intelligence will be a key skill.",
+          "Green Project Management: Managing projects with a focus on sustainability and carbon footprint.",
+          "Autonomous Teams: Self-organizing teams that need less management oversight.",
+          "Hybrid Delivery Models: Combining Waterfall, Agile, and DevOps methodologies.",
+          "Global Delivery Centers: Managing distributed teams across multiple time zones and cultures."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Organize School Events: Take charge of the Annual Day or Sports Day. You will learn planning, delegation, and crisis management.",
+          "Use Tools: Try Trello or Notion (free apps) to manage your homework and exam schedule. It's exactly like professional PM software.",
+          "Group Projects: In school projects, be the one who assigns tasks and checks if everyone finishes on time. That's a PM role!",
+          "Leadership Roles: Join student councils or clubs. Lead teams and manage budgets.",
+          "Communication Skills: Join debate clubs or public speaking groups. PMs need to present ideas clearly.",
+          "Learn Agile Basics: Read about Scrum and Agile methodologies. Understand the concepts early."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian PM/Leadership Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "N. Chandrasekaran: Chairman of Tata Sons. He started as a software professional and rose through the ranks of 'Delivery Management' to lead TCS and now the Tata Group.",
+          "Salil Parekh: CEO of Infosys. Known for his impeccable execution and management skills in the IT services industry.",
+          "C.P. Gurnani: Former CEO of Tech Mahindra. A legendary leader who managed the massive crisis/project of reviving Satyam Computers.",
+          "Debjani Ghosh: President of NASSCOM. A leader who manages the 'project' of steering India's entire tech industry.",
+          "Indra Nooyi: While a CEO, her career is a masterclass in managing complex global initiatives (projects) at PepsiCo."
+        ]
+      }
+    ]
+  },
+  software_engineer: {
+    slug: "software_engineer",
+    badge: "💻 The Code to Your Future for Class 10+",
+    heading: "Software Engineer",
+    subheading: "Imagine you are an architect, but instead of using bricks and cement to build houses, you use logic and languages to build digital worlds. That, in essence, is Software Engineering. You aren't just typing code; you are building solutions that millions of people might use every day.",
+    whyCards: [
+      { icon: "Code", title: "Innovation Hub", description: "India is no longer the 'Back Office of the World'—we are the 'Innovation Hub.' UPI, Swiggy, Zomato—all built by Indian engineers.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "$300-350B Market", description: "India's IT industry projected to reach $300-350 Billion by 2026. Explosive growth in AI, Cloud, and Data roles.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹15L–₹1Cr+ Salaries", description: "Mid-level engineers earn ₹15L–₹35L. Top product companies pay freshers ₹20L+. Leadership roles reach ₹1Cr+.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Remote-Friendly", description: "Work for US/European companies from India. High remote work potential. Earn in Dollars while living in India.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) or 3 Years (BCA)", color: "bg-green-100 text-green-700" },
+      { label: "Languages", detail: "Python, Java, C++, JavaScript, Go, Rust", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹15L–₹1Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$300-350B", label: "India's IT Market by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "₹20L+", label: "Fresher Salary at Top Companies", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Building digital solutions that impact millions.",
+        color: BLUE,
+        content: [
+          "Software Engineer Definition: A Software Engineer designs, develops, tests, and maintains software applications. This could be anything from the Instagram app on your phone and the banking website your parents use, to the complex systems running flights or rocket launches at ISRO.",
+          "The Role: They are architects of the digital world. They use logic and programming languages to build solutions.",
+          "Why It Matters: In today's India, this career is the backbone of the economy. We are known as the 'Back Office of the World' no more; we are now the 'Innovation Hub.' From UPI (which the world envies) to Swiggy and Zomato, software engineers in India are solving real-world problems.",
+          "The Scope: Software engineers work across frontend (what users see), backend (the logic), mobile apps, cloud infrastructure, AI/ML, and more.",
+          "The Impact: You aren't just typing code; you are building solutions that millions of people might use every day.",
+          "The Reality: It is a career of creation, logic, and impact. You solve complex puzzles and see your work used by millions."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Aaryan, Software Engineer",
+        icon: "Clock",
+        description: "Real workflow at a tech product company in Bangalore.",
+        color: BLUE2,
+        content: [
+          "08:30 AM - Morning Routine: Aaryan's day doesn't start with a tie and blazer. He wakes up, grabs his coffee, and checks his emails on his phone. He works in a 'hybrid' model, so today is a work-from-home day.",
+          "10:00 AM - Daily Stand-up: Aaryan logs into Zoom/Teams with his 6-member team. In 15 minutes, they discuss: What did I do yesterday? What will I do today? Are there any blockers? Aaryan mentions he's stuck on a 'bug' (error) in the payment gateway code.",
+          "11:00 AM – 1:00 PM - Deep Focus Time: Aaryan puts on his noise-canceling headphones. He opens his Code Editor (a specialized writing tool for code). He is writing 'Python' logic to ensure that when a user clicks 'Pay', the money is deducted correctly. It's like solving a complex math puzzle where every comma matters.",
+          "1:30 PM - Lunch & Learning: Lunch break. He watches a quick YouTube video on a new AI tool while eating. Continuous learning is part of the job!",
+          "3:00 PM - Pair Programming: He pairs up with a colleague, Priya, to debug the error he mentioned earlier. They look at lines of code together, hypothesize solutions, and test them. 'Bingo! It was a logic error in line 45.' The relief is instant.",
+          "5:00 PM - Code Review & Deployment: Before his code goes 'live,' a senior engineer reviews it. They suggest a more efficient way to write the same logic. Aaryan makes the changes. He 'pushes' his code to the central repository and logs off. His brain is tired, but he feels satisfied."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Software Engineer DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Puzzle Solver: Do you enjoy riddles, Sudoku, or figuring out why a gadget isn't working?",
+          "The Patient Builder: Can you sit for hours working on a single problem without giving up?",
+          "The Lifelong Learner: Are you okay with the fact that what you learn today might be outdated in 3 years?",
+          "The Team Player: Contrary to the 'lonely hacker' stereotype, you will talk to people all day. Communication is key.",
+          "Soft Skills: Analytical thinking, creativity, communication, and resilience (fixing bugs can be frustrating!).",
+          "Hard Skills: Logic & Mathematics, knowledge of programming languages (Python, Java, C++, or JavaScript), and understanding of Data Structures (how data is organized)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & SDLC Workflow",
+        icon: "Briefcase",
+        description: "The Software Development Life Cycle.",
+        color: BLUE2,
+        content: [
+          "Requirement Analysis: Understanding what the client wants (e.g., 'I want a button that saves this photo').",
+          "System Design: Planning how to build it (drawing flowcharts, choosing the right database).",
+          "Development (Coding): The actual building phase. Writing clean, efficient code.",
+          "Testing: Trying to break what you built to find errors. Ensuring quality.",
+          "Deployment: Putting the code on the server so users can access it.",
+          "Maintenance: Fixing issues that pop up later or updating the software. Continuous improvement."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - The Traditional Engineering Route (Most Common): Class 10: Score well (Science & Math focus). Class 11-12: Choose Science Stream (PCM) - Physics, Chemistry, Math. Computer Science as an elective is a huge plus. Entrance Exams: Prepare for JEE Main (for NITs/IIITs), JEE Advanced (for IITs), or state exams like MHT-CET / KCET / WBJEE. Undergraduate Degree: B.Tech / B.E. in Computer Science Engineering (CSE) or Information Technology (IT). (4 Years).",
+          "Pathway B - The Non-Engineering Route: Class 12: Any stream (Science/Commerce/Arts) with Mathematics. Undergraduate: BCA (Bachelor of Computer Applications) or B.Sc. Computer Science (3 Years). Postgraduate (Recommended): MCA (Master of Computer Applications) or M.Sc. CS. This makes you equivalent to a B.Tech graduate in the job market.",
+          "Pathway C - The New-Age / Skills-Based Route: Complete any degree + Join a rigorous Coding Bootcamp (6-12 months). Build a strong Portfolio (projects on GitHub). Apply to startups that value skills over degrees."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: India's IT industry is projected to reach $300-350 Billion by 2026.",
+          "Hiring Trends: While mass hiring (hiring thousands of freshers for basic roles) has slowed slightly, 'value hiring' (hiring skilled talent in AI, Cloud, and Data) has exploded.",
+          "Entry-Level (Jr. Software Engineer, 0-2 Yrs): ₹6L–₹12L (Tier-1 cities), ₹3.5L–₹7L (Tier-2/3 cities). Top-tier product companies pay freshers ₹20L+.",
+          "Mid-Level (Sr. Software Engineer, 3-7 Yrs): ₹15L–₹35L (Tier-1 cities), ₹10L–₹20L (Tier-2/3 cities).",
+          "Senior-Level (Tech Lead / Architect, 8-12 Yrs): ₹40L–₹70L (Tier-1 cities), ₹25L–₹45L (Tier-2/3 cities).",
+          "Leadership (VP Engineering / CTO): ₹1Cr+ (Tier-1 cities), ₹60L+ (Tier-2/3 cities)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: IT Services (TCS, Infosys), Product (Google, Microsoft), FinTech (Paytm, Zerodha), E-commerce (Flipkart, Amazon), and increasingly Non-Tech sectors like Automobiles (EVs) and Banking.",
+          "Top Cities: The Big 3: Bangalore (Silicon Valley of India), Hyderabad, Pune. North Hubs: Gurgaon, Noida. South Hubs: Chennai. Emerging: Indore, Kochi, Ahmedabad, Bhubaneswar.",
+          "Remote Work: Very high potential. Many Indian engineers work for US/European companies from their homes in India.",
+          "Emerging Opportunities: AI/ML, Cloud Computing, DevOps, Blockchain, Green Tech."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "IITs / NITs (Govt): ₹6L–₹10L (Total for 4 years).",
+          "Top Private (BITS/VIT): ₹18L–₹25L (Total for 4 years).",
+          "State Govt Colleges: ₹2L–₹4L (Total for 4 years).",
+          "Living Costs (Hostel/Mess): ₹1.5L–₹2L per year (Metro).",
+          "Additional Costs: Laptop (₹50k–₹80k), Online Courses/Certifications (₹20k/year).",
+          "ROI: With starting salaries of ₹15L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government (Public): IITs: Bombay, Delhi, Madras, Kanpur, Kharagpur (The 'Holy Grails'). NITs: Trichy, Warangal, Surathkal (Excellent placements). IIITs: Hyderabad (Top tier for coding), Bangalore, Delhi. Jadavpur University, Kolkata: Extremely low fees, high ROI.",
+          "Private: BITS Pilani: (Pilani, Goa, Hyderabad campuses). Comparable to IITs. VIT: Vellore. Thapar Institute: Patiala. Manipal Institute of Technology: Manipal. SRM Institute: Chennai.",
+          "Online: Coursera, edX, Udacity - for specialized skills and certifications."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Central Govt: Central Sector Scheme of Scholarship - for college students (top 20th percentile). PMSS (Prime Minister's Scholarship Scheme) - for wards of Ex-Servicemen. AICTE Pragati Scholarship - specifically for girls pursuing technical education (₹50,000/year).",
+          "Private/Corporate: Reliance Foundation Undergraduate Scholarship. HDFC Badhte Kadam. Swami Dayanand Education Foundation Scholarship.",
+          "Institute Specific: Most IITs/NITs have 'Merit-cum-Means' (MCM) scholarships waiving 66% to 100% tuition fees for students with family income < ₹5L/year."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Cloud Certifications (High Value): AWS Certified Solutions Architect, Google Cloud Associate.",
+          "Coding Profiles: A 5-star rating on CodeChef or LeetCode often holds more value than a paper certificate.",
+          "Industry Recognition: GitHub contributions, open-source projects, and hackathon wins showcase your skills.",
+          "Note: Unlike doctors or lawyers, software engineers do not need a government license to practice. However, certifications validate your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in software engineering careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Frontend Developer (builds what you see), Backend Developer (builds the logic), QA Engineer (Tester), Full Stack Developer (both frontend and backend).",
+          "New-Age Careers: AI/ML Engineer - teaching computers to 'learn.' DevOps Engineer - managing cloud infrastructure. Blockchain Developer - building secure, decentralized ledgers. Cloud Architect - designing scalable systems.",
+          "Freelancing & Entrepreneurship: Freelance - work for clients globally via Upwork/Toptal (hourly rates: $20–$100). Indie Hacker - build your own small app/tool and sell it (SaaS).",
+          "Emerging Roles: Quantum Computing Engineer, Security Engineer, Data Engineer."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of software engineering.",
+        color: BLUE,
+        content: [
+          "Burnout: The pressure to deliver quickly can be intense.",
+          "The Learning Treadmill: You have to study even at age 40. If you stop learning, you become obsolete.",
+          "Sedentary Lifestyle: Back pain and eye strain are common occupational hazards.",
+          "Job Security: Tech layoffs happen. Your security lies in your skills, not your employer.",
+          "Imposter Syndrome: The field is vast. You will often feel like you don't know enough."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in software engineering.",
+        color: BLUE2,
+        content: [
+          "AI Agents: We are moving from 'Chatbots' to 'Agents' that can perform tasks for you. Engineers will build these agents.",
+          "AI Won't Replace You, But...: A software engineer using AI will replace a software engineer who doesn't. Coding is becoming faster; the focus is shifting to System Design and Problem Solving.",
+          "Green Tech: Software to manage energy consumption and optimize EVs will be huge.",
+          "Quantum Computing: A new frontier for software engineers.",
+          "Decentralized Systems: Blockchain and Web3 technologies will create new opportunities.",
+          "Edge Computing: Processing data closer to the source instead of in centralized clouds."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Learn Python: It's English-like and powerful. Use free resources like YouTube or Codecademy.",
+          "Competitive Programming: Create an account on Hackerrank or CodeChef. Try solving one easy problem a week.",
+          "Build Something: Don't just read. Build a simple website about your favorite hobby using HTML/CSS.",
+          "Math Matters: Pay attention to Algebra and Logic.",
+          "Join Communities: Participate in coding clubs and hackathons.",
+          "Read Code: Study open-source projects on GitHub to learn best practices."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Software Engineers",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "N.R. Narayana Murthy: The father of the Indian IT sector (Infosys). He proved India could build world-class software.",
+          "Sundar Pichai: CEO of Alphabet (Google). An IIT Kharagpur alumnus who leads one of the world's biggest tech companies.",
+          "Satya Nadella: CEO of Microsoft. He transformed Microsoft into a cloud giant.",
+          "Falguni Nayar: Founder of Nykaa. She used tech to revolutionize beauty retail in India.",
+          "Nithin Kamath: Founder of Zerodha. A trader-turned-tech-founder who built India's largest stock broker without external funding."
+        ]
+      }
+    ]
+  },
+  software_testing_qa: {
+    slug: "software_testing_qa",
+    badge: "🔍 The Digital Detectives for Class 10+",
+    heading: "Software Testing & QA",
+    subheading: "If Software Engineers are the 'Architects' who build the digital world, Software Testers are the 'Safety Inspectors' who make sure it doesn't collapse. You are the ultimate gatekeeper of the digital economy, finding bugs before users do.",
+    whyCards: [
+      { icon: "Bug", title: "Quality Gatekeeper", description: "Prevent bugs that could cost crores. When UPI transfers reach instantly, thank a QA engineer. When games don't crash, thank a tester.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "15% CAGR Growth", description: "India Software Testing market growing at 15% CAGR. As AI and IoT grow, testing demand grows faster than development.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹7L–₹1.5Cr+ Salaries", description: "Mid-level Automation Engineers earn ₹7L–₹14L. SDETs earn ₹30L–₹50L+. Leadership roles reach ₹1.5Cr+.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Freelance Goldmine", description: "Bug bounty hunting on uTest and Bugcrowd. Get paid per bug found. High earning potential for skilled testers.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) or 4-6 Months (Training)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Selenium, Postman, JIRA, SQL, Python, Java", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹7L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "15%", label: "Market CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "50,000+", label: "Users Protected Per Bug Caught", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Finding bugs before users do. Ensuring quality and reliability.",
+        color: BLUE,
+        content: [
+          "Software Testing & QA Definition: Software Testing & Quality Assurance (QA) is the art of investigating a piece of software to find 'bugs' (errors) before the users do. It is not just about finding faults; it is about assuring quality.",
+          "The Role: QA professionals are 'Safety Inspectors' who make sure the digital world doesn't collapse. They investigate, test, and verify software to ensure it works as intended.",
+          "Why It Matters: When you transfer money via UPI and it reaches your friend instantly without getting lost, thank a Software Tester. When you play a heavy mobile game and it doesn't crash your phone, thank a QA engineer.",
+          "The Scope: In today's India, where everything from grocery delivery to rocket launches is digital, a single bug can cost crores of rupees or damage a company's reputation forever.",
+          "The Impact: You are the ultimate gatekeeper of the digital economy. Your work prevents crashes, data loss, and security breaches.",
+          "The Reality: You are a detective, an advocate for users, and a quality guardian all rolled into one."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Sneha, SDET",
+        icon: "Clock",
+        description: "Real workflow at a FinTech startup in Pune.",
+        color: BLUE2,
+        content: [
+          "09:00 AM - Triage Meeting: Sneha starts her day with a 'Triage Meeting.' The development team released a new update for their payment app last night. Sneha's automated scripts ran overnight, and she sees three red flags on her dashboard.",
+          "10:30 AM - Detective Mode: She puts on her 'Detective Hat.' One of the bugs is tricky—the app crashes only when a user tries to pay exactly ₹1,000 using an iPhone. She tries to replicate this manually on a test device. Tap, tap, crash. 'Gotcha!' she whispers. She records her screen and logs the defect in JIRA.",
+          "12:00 PM - Collaboration: She sits with Rahul, a developer. He claims, 'It works on my machine!' Sneha calmly shows him the data logs proving it fails under slow internet conditions. They work together to find the root cause.",
+          "02:00 PM - Automation Mode: After lunch, Sneha switches to 'Automation Mode.' She writes code in Java (using Selenium) that will automatically test this payment feature 500 times in 5 minutes. She is 'teaching' a robot to do the boring work.",
+          "04:30 PM - Release Call: The managers ask, 'Sneha, is the app safe to go live?' She reviews her checklist: Security? Pass. Speed? Pass. That iPhone bug? Fixed. She gives the thumbs up: 'Green signal for launch.'",
+          "06:00 PM - The Victory: She logs off, satisfied. Today, she prevented a crash that would have annoyed 50,000 users."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The QA Professional DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The 'Destructive' Creative: Do you enjoy finding loopholes in rules? Do you like trying to break things just to see how sturdy they are?",
+          "The Eagle Eye: Do you spot spelling mistakes in textbooks or continuity errors in movies?",
+          "The Diplomat: Can you tell someone they made a mistake (a developer) without making them angry?",
+          "The User's Advocate: Do you care deeply about whether a product is easy to use, not just if it 'works'?",
+          "Soft Skills: Critical thinking, curiosity, patience, and strong communication.",
+          "Hard Skills: Understanding of logic, basic coding (Python/Java), knowledge of databases (SQL), and familiarity with testing tools (Selenium, Postman)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & STLC Workflow",
+        icon: "Briefcase",
+        description: "The Software Testing Life Cycle.",
+        color: BLUE2,
+        content: [
+          "Test Planning: Deciding what to test (e.g., 'We need to test the login page'). Understanding requirements and scope.",
+          "Test Design: Writing 'Test Cases.' (e.g., Step 1: Enter wrong password. Expected Result: Show error message.)",
+          "Environment Setup: Preparing the devices, servers, and data needed for testing.",
+          "Test Execution: Running the tests (manually or via automation scripts). Documenting results.",
+          "Defect Reporting: Logging bugs with proof (screenshots/logs). Providing clear reproduction steps.",
+          "Retesting & Closure: Verifying the fixes and giving the final sign-off. Ensuring quality standards are met."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - The Engineering Route (High Growth / SDET Roles): Class 12: Science Stream (PCM). Degree: B.Tech/B.E. in CSE or IT. Campus Placement: Target roles like 'SDET' or 'Automation Engineer.' Growth: Fast track to Test Architect/Manager roles.",
+          "Pathway B - The Non-Engineering / Science Route: Class 12: Any stream with Math/Computer Science. Degree: BCA, B.Sc. (CS/IT), or even B.Com/B.A. (with strong aptitude). Training: Join a specialized Software Testing Training Institute (e.g., QSpiders, seedinfotech) for a 4-6 month diploma. Entry Role: Manual Tester or Junior QA Analyst. Upskill: Learn Automation (Selenium) within 2 years to jump to higher salary brackets."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: The India Software Testing market is growing at 15% CAGR. As AI and IoT grow, the need for testing grows faster than development.",
+          "Hiring Trends: The era of 'only Manual Testing' is fading. The market demands 'Full Stack QA'—testers who can check functionality, security, and speed, and can write code to automate it.",
+          "Entry-Level (QA Engineer / Tester, 0-2 Yrs): ₹3.5L–₹5L (Service-based), ₹6L–₹12L (Product-based).",
+          "Mid-Level (Automation Engineer, 3-6 Yrs): ₹7L–₹14L (Service-based), ₹15L–₹25L (Product-based).",
+          "Senior-Level (Test Lead / SDET II, 7-12 Yrs): ₹16L–₹25L (Service-based), ₹30L–₹50L+ (Product-based).",
+          "Leadership (QA Manager / Director): ₹30L+ (Service-based), ₹80L–₹1.5Cr (Product-based)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: BFSI (Banking & Finance) - Banks need zero-error software (HDFC, ICICI tech divisions). E-Commerce - Amazon, Flipkart, Myntra (User experience is king here). Healthcare Tech - Testing medical devices and apps. Gaming - Testing games for bugs (Yes, you can get paid to play games!).",
+          "Top Cities: Pune - Known as the 'QA Hub of India' with massive testing centers. Bangalore - For high-end SDET and Product roles. Chennai & Hyderabad - Major hubs for service-based testing.",
+          "Remote/Freelance: Very high potential. Platforms like uTest and Bugcrowd allow Indians to hunt bugs for global companies and get paid per bug (Bounty Hunting).",
+          "Emerging Opportunities: Security Testing, Performance Testing, AI Testing, IoT Testing."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and certification costs.",
+        color: BLUE2,
+        content: [
+          "College Route (B.Tech/BCA): Govt Colleges: ₹2L–₹6L (4 years). Pvt Colleges: ₹5L–₹15L (4 years).",
+          "Specialized Training (Post-College): Testing Institutes (e.g., QSpiders/MindScripts): ₹30,000–₹60,000 for a 4-6 month 'Job Oriented Course' (Manual + Automation).",
+          "Certifications: ISTQB Foundation Level: Approx. ₹5,000–₹6,000 (Exam fee).",
+          "ROI: With starting salaries of ₹7L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Formal Degree (B.Tech/MCA): IITs/NITs/IIITs - best for getting directly into top product firms as SDETs. VIT/Manipal/SRM - strong campus placements for QA roles.",
+          "Specialized Testing Training (The 'Finishing Schools'): C-DAC (Centre for Development of Advanced Computing) - Govt of India. Offers PG Diploma in Advanced Computing/Mobile Computing (highly respected). QSpiders / JSpiders - chains across India (Bangalore, Pune, Delhi) famous for placement-linked testing training. Seed Infotech (Pune) - a veteran institute for testing. MindScripts - specialized in QA training.",
+          "Online: Coursera, Udacity - for specialized QA and automation courses."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "ISTQB Scholar Program: Sometimes offers fee waivers for meritorious students.",
+          "Google Conference and Travel Scholarships: For women and minorities in tech (often applicable for QA conferences).",
+          "NSP (National Scholarship Portal): Standard scholarships for SC/ST/OBC/Minority students pursuing technical degrees.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Government Schemes: Various state governments offer scholarships for engineering students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "ISTQB (International Software Testing Qualifications Board): The gold standard. Acts like a global passport. Entry Level: ISTQB Foundation Level (CTFL) - highly recommended for freshers. Mid Level: ISTQB Agile Tester, ISTQB Test Analyst. Specialized: Certified Ethical Hacker (CEH) for Security Testing.",
+          "Industry Recognition: Selenium certification, Postman certification, and project portfolio showcase your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in QA careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Manual Tester - executing tests by hand (declining but still exists). Automation Engineer - writing code to test code (high demand). QA Analyst - analyzing requirements and designing test strategies.",
+          "New-Age Careers: SDET (Software Development Engineer in Test) - a developer who works in testing. Highest paid. Performance Engineer - the person who ensures the website doesn't crash during the 'Big Billion Day' sale. Security Tester (Pen-Tester) - ethical hackers who break into systems to find weak spots.",
+          "Emerging Roles: AI Testing Specialist, IoT Testing Engineer, Blockchain QA Engineer.",
+          "Freelancing: 'Crowd Testing' is huge. Companies release an app to a crowd of freelance testers (like you) and pay for every valid bug found."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of QA careers.",
+        color: BLUE,
+        content: [
+          "The 'Second Class Citizen' Syndrome: Sometimes, developers are treated as 'stars' and testers as 'support.' This is changing, but it exists.",
+          "The Blame Game: If a bug escapes to production, the Tester is often blamed: 'Why didn't you catch this?'",
+          "Repetitive Work: Executing the same test cases manually can get boring (which is why you must learn Automation).",
+          "Constant Catch-up: Developers use new tech daily; you have to learn it just as fast to test it.",
+          "Pressure: Release deadlines can be stressful. You have to balance thoroughness with speed."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in QA.",
+        color: BLUE2,
+        content: [
+          "AI in Testing: AI tools will write test cases for us. The human role will shift to supervising AI and strategic thinking.",
+          "Shift-Left: Testing will no longer happen after coding. It will happen during coding.",
+          "IoT Testing: As our fridges and cars get connected, testing 'hardware + software' combined will be a massive field.",
+          "Codeless Automation: Tools are emerging that let you automate tests without writing deep code, lowering the barrier to entry.",
+          "Continuous Testing: Testing will be integrated into every stage of development, not just at the end.",
+          "Security Testing: With cyber threats increasing, security testing will become a critical specialization."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Break Things (Digitally): When you use an app, try to make it crash. Click buttons quickly, turn off the internet while saving, etc. If you find a bug, screenshot it. You just did QA!",
+          "Learn Logic: Play games like 'Sudoku' or 'Chess.' Testing is 90% logic.",
+          "Learn Basic SQL: Learn how to talk to databases. It's a superpower for testers.",
+          "Beta Testing: Sign up as a 'Beta Tester' for games or apps on the Play Store. You get early access and learn how to report feedback.",
+          "Build a Portfolio: Document bugs you find and how you reported them. This becomes your QA portfolio.",
+          "Join Communities: Participate in testing forums and communities to learn from experienced testers."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian QA Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Babu Manickam: Founder of TestLeaf. A thought leader in the Selenium and Automation space in India, helping thousands transition into QA careers.",
+          "Sandeep Maske: Founder of Testriq QA Lab. A prominent figure in the independent software testing services industry.",
+          "Pradeep Soundararajan: CEO of Moolya Testing. He is known as a 'Tester's Tester,' famous for his philosophical and human-centric approach to finding bugs.",
+          "Smita Mishra: Founder of Fandoro. An influential voice in QA, advocating for women in tech and modern testing practices.",
+          "Anand Ramdeo: A prominent QA thought leader and speaker, known for his work in test automation and quality engineering."
+        ]
+      }
+    ]
+  },
+  video_game_designer: {
+    slug: "video_game_designer",
+    badge: "🎮 The Architects of Fun for Class 10+",
+    heading: "Video Game Designer",
+    subheading: "If you think this career is just about sitting on a couch and playing video games all day, I have some bad news (and some good news). A Video Game Designer is not a 'player'—they are the architect. They decide the rules, the story, the characters, and what makes the game 'fun.'",
+    whyCards: [
+      { icon: "Gamepad2", title: "Bigger Than Bollywood", description: "Indian gaming industry is currently bigger than Bollywood in terms of revenue. From Ludo King to Raji: An Ancient Epic, Indian games are going global.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "$8.9B Market by 2030", description: "Indian gaming market projected to hit $8.9 Billion by 2030. Largest number of mobile game downloads in the world.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "₹8L–₹80L+ Salaries", description: "Mid-level designers earn ₹8L–₹18L. Lead designers earn ₹20L–₹35L. Directors reach ₹80L+.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Remote-Friendly", description: "Many designers work for US/European studios from India. High remote work potential. Global opportunities.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Des) or 3 Years (Specialized)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Unity, Unreal Engine, Blender, C#, Game Design Docs", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹8L–₹80L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$8.9B", label: "Indian Gaming Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "#1", label: "Mobile Game Downloads Globally", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Creating the blueprint for interactive entertainment.",
+        color: BLUE,
+        content: [
+          "Video Game Designer Definition: A Video Game Designer is the architect of games. They decide the rules, the story, the characters, and what makes the game 'fun.' Think of them like the director of a movie, but for an interactive experience.",
+          "The Role: While a Game Developer writes the code (the matrix), and a Game Artist draws the visuals, the Game Designer creates the blueprint. They answer questions like: 'How high should Mario jump?', 'What happens when the player runs out of ammo?', or 'How do we make this level difficult but not frustrating?'",
+          "Why It Matters: The gaming industry in India is currently bigger than Bollywood in terms of revenue. From Ludo King to Raji: An Ancient Epic, Indian games are going global.",
+          "The Scope: Game designers work across mobile games, console games, PC games, VR experiences, and educational games.",
+          "The Impact: You aren't just entertaining people; you are building digital playgrounds where millions socialize, compete, and relax.",
+          "The Reality: You are a creative director, a mathematician, a psychologist, and a storyteller all rolled into one."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Kabir, Level Designer",
+        icon: "Clock",
+        description: "Real workflow at a gaming studio in Hyderabad.",
+        color: BLUE2,
+        content: [
+          "09:30 AM - Studio Arrival: Kabir arrives at the studio. The vibe is casual—t-shirts, sneakers, and action figures on desks. He grabs a coffee and joins the 'Daily Scrum' (a quick standing meeting). The team is building a new battle-royale mobile game.",
+          "10:15 AM - Deep Work: Kabir opens 'Unreal Engine' on his dual-monitor setup. He is designing a new map called 'The Ruins.' He places obstacles, loot boxes, and sniper points. He isn't writing code; he is using a visual editor to place objects.",
+          "01:00 PM - Lunch & Playtest: This is the fun part. The whole team gathers to play the latest version of the game. They shout, laugh, and compete. But Kabir is observing: 'Why is no one using the bridge I built? Is it too exposed?' He takes mental notes.",
+          "02:30 PM - Documentation: Kabir updates the GDD (Game Design Document). This is the 'Bible' of the game. He writes a detailed page explaining exactly how a new weapon, the 'Plasma Rifle,' should work—its range, damage, and reload time.",
+          "04:00 PM - Collaboration: He sits with Ananya, the concept artist. 'This alien monster looks too scary for our target audience (kids),' he says. They discuss changing the color palette to make it look goofier.",
+          "06:30 PM - Competitive Analysis: He wraps up. Before leaving, he plays a competitor's game for 20 minutes—not for fun, but to analyze what they did right."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Game Designer DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Dungeon Master: Did you invent your own rules for Hide-and-Seek or board games when you were a kid?",
+          "The Analyst: When you play a game, do you think, 'This level is bad because the enemies spawn too fast' instead of just getting angry?",
+          "The Storyteller: Do you love creating worlds, histories, and characters?",
+          "The Empath: Can you understand what makes other people happy or frustrated?",
+          "Soft Skills: Communication (explaining your vision to coders), Critical Thinking, and immense Patience.",
+          "Hard Skills: Logic & Math (probability, geometry), Tools (familiarity with game engines like Unity or Unreal Engine), Writing (ability to write clear technical documents)."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Game Production Cycle",
+        icon: "Briefcase",
+        description: "The game design workflow.",
+        color: BLUE2,
+        content: [
+          "Concept Phase: Brainstorming the core idea. ('What if we made a cricket game played in space?')",
+          "Prototyping: Creating a rough, ugly version of the game using paper or basic shapes just to see if the 'mechanics' are fun.",
+          "Documentation: Writing the Game Design Document (GDD). This manual evolves constantly and guides the entire team.",
+          "Level Design: Building the actual environments where the game takes place. Placing enemies, items, and obstacles.",
+          "Balancing: Tweaking numbers. If a sword is too powerful, the designer reduces its damage from 50 to 45.",
+          "Playtesting Analysis: Watching users play and fixing the parts where they get stuck or bored."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - The Design Route (Focus on Creativity/Art): Class 12: Any stream (Arts/Humanities/Science). Entrance Exams: NID DAT (National Institute of Design), UCEED (for IIT Bombay), or private college exams. Undergraduate: B.Des (Bachelor of Design) in Interaction Design or Game Design (4 Years). Portfolio: Build a portfolio of paper prototypes and concept art.",
+          "Pathway B - The Technical Route (Focus on Logic/Coding): Class 12: Science Stream (PCM) is mandatory. Undergraduate: B.Tech in Computer Science (4 Years). Specialization: Do a certification or minor in Game Design/Development. Role: You enter as a 'Technical Game Designer' (Highly paid).",
+          "Pathway C - The Specialized Game Degree: Class 12: Any stream. Undergraduate: B.Sc. in Game Design & Development or B.A. in Digital Arts (3 Years). Institutions: Specialized private colleges like Backstage Pass or ICAT."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Size: The Indian gaming market is projected to hit $8.9 Billion by 2030.",
+          "Growth: India has the largest number of mobile game downloads in the world. We are moving from 'playing' games to 'making' them.",
+          "Entry-Level (Jr. Game Designer / Level Designer, 0-2 Yrs): ₹4L–₹7L (Tier-1), ₹3L–₹5L (Tier-2).",
+          "Mid-Level (Game Designer / Systems Designer, 3-6 Yrs): ₹8L–₹18L (Tier-1), ₹6L–₹12L (Tier-2).",
+          "Senior-Level (Lead Designer / Creative Director, 7-10 Yrs): ₹20L–₹35L (Tier-1), ₹15L–₹25L (Tier-2).",
+          "Leadership (Game Director / Producer): ₹40L–₹80L+ (Tier-1), ₹30L+ (Tier-2)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Mobile Gaming - the biggest sector in India (Ludo King, Teen Patti, casual games). Ed-Tech - companies like Byju's use 'Gamification' designers to make learning fun. Casino/Real Money Gaming (RMG) - a massive, high-paying sector (Dream11, Junglee Games). Indie Studios - small teams making creative PC/Console games.",
+          "Top Cities: Bangalore - the gaming capital of India. Pune - hosting major studios like Ubisoft and SuperGaming. Hyderabad - a major hub for game development and VFX.",
+          "Remote Work: High potential. Many designers work for US/European studios from India.",
+          "Emerging Opportunities: Metaverse design, VR/AR games, Esports game design."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Govt (NID / IITs): ₹8L–₹12L (Total for 4 years). Very high competition.",
+          "Private Universities: ₹14L–₹24L (Total for 4 years). Better infrastructure for gaming.",
+          "Specialized Diplomas: ₹4L–₹8L (Shorter duration: 1-2 years).",
+          "Tools & Equipment: ₹1.5L. You need a powerful Gaming PC/Laptop.",
+          "ROI: With starting salaries of ₹8L+ and high demand, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government (Public): National Institute of Design (NID) - (Ahmedabad/Bangalore/Gandhinagar). Offers 'New Media Design' or 'Digital Game Design.' Top tier. IDC School of Design, IIT Bombay - offers Interaction Design/Animation. Excellent for the technical + creative mix.",
+          "Private & Specialized: Backstage Pass Institute of Gaming (Hyderabad/Bangalore) - one of the few colleges dedicated only to gaming. Srishti Manipal Institute of Art, Design and Technology (Bangalore) - known for artistic and experimental game design. ICAT Design & Media College - (Chennai/Bangalore/Hyderabad). UPES (Dehradun) - School of Design offers B.Des in Game Design. Asian Academy of Film & Television (AAFT), Noida - offers B.Sc in Game Design.",
+          "Online: Coursera, Udacity - for specialized game design courses."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Institutional Scholarships: Colleges like UPES and LPU offer up to 50-100% tuition waivers based on board marks or entrance exam ranks (e.g., LPU Nest).",
+          "Adobe India Women-in-Technology Scholarship: For female students traversing the tech/design overlap.",
+          "Inlaks Shivdasani Foundation: Offers scholarships for design students to study abroad or at top Indian institutes.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Government Schemes: Various state governments offer scholarships for design students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Unity Certified Associate - proves you know the Unity engine. Unreal Engine Certification - high value for AAA (big budget) game jobs.",
+          "Memberships: IGDA (International Game Developers Association) - the India chapter is very active and great for networking.",
+          "Portfolio: No license is required, but a Portfolio is mandatory. Showcase your game designs, prototypes, and level designs.",
+          "Industry Recognition: Game jam wins, published games, and community contributions showcase your skills.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in game design careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Level Designer - builds the map/environment. Systems Designer - designs the math and rules (economy, combat). Narrative Designer - writes the dialogue and story. Combat Designer - specializes in combat mechanics.",
+          "New-Age Careers: Metaverse Architect - designing virtual spaces for Facebook (Meta) or Microsoft. Gamification Consultant - helping banks or gyms make their apps 'addictive' like games. Esports Game Designer - designing games specifically to be watched as a spectator sport.",
+          "Emerging Roles: AI Game Designer, VR/AR Experience Designer, Serious Games Designer.",
+          "Freelancing: Selling 'Game Assets' (3D models, level kits) on the Unity Asset Store is a viable business."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of game design.",
+        color: BLUE,
+        content: [
+          "The 'Crunch': This is the dark side of gaming. Near release dates, designers often work 14-16 hours a day for weeks. It is exhausting.",
+          "Instability: Game studios can shut down overnight if a game flops.",
+          "Criticism: Gamers are passionate. If they don't like your change, they will be very vocal (and sometimes rude) on social media.",
+          "Sedentary Life: You sit. A lot. Back problems are common.",
+          "Pressure: The success or failure of a game often rests on design decisions. The pressure can be immense."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in game design.",
+        color: BLUE2,
+        content: [
+          "AI as a Co-Pilot: AI tools will generate landscapes and dialogues instantly. The Designer's job will shift from 'making' to 'curating' and 'directing' the AI.",
+          "Serious Games: Games used for training surgeons, pilots, or soldiers. This sector is booming.",
+          "Esports Growth: Designing games specifically to be watched as a spectator sport.",
+          "Metaverse Integration: Games becoming part of larger virtual worlds.",
+          "Blockchain Gaming: NFTs and play-to-earn mechanics becoming mainstream.",
+          "Hyper-Personalization: Games that adapt to individual player preferences in real-time."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Don't Just Play, Analyze: Keep a 'Game Journal.' Write down why you liked a game. What was the loop? Why was it fun?",
+          "Learn to Code (Basics): Learn C# (C-Sharp). It is the language of Unity. You don't need to be a master, but you need to understand it.",
+          "Paper Prototyping: Design a board game using paper and dice. Force your family to play it. If they have fun, you are a designer.",
+          "Participate in Game Jams: Events like 'Global Game Jam' happen annually. You can join online and try to build a game in 48 hours.",
+          "Build a Portfolio: Create simple games using Unity or Unreal Engine. Document your design process.",
+          "Join Communities: Participate in game design forums and communities to learn from experienced designers."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Game Designers",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Poornima Seetharaman: A Hall of Fame winner and Director at Zynga. She is a pioneer for women in Indian gaming.",
+          "Rohith Bhat: Founder of 99Games (creators of Star Chef). He put Udupi (a small town) on the global gaming map.",
+          "Hrishi Oberoi: Founder of Photon Tadpole. He has been instrumental in the Indian indie game scene.",
+          "Raji Team (Nodding Heads Games): The team behind Raji: An Ancient Epic, which proved India can make world-class console games based on our own mythology.",
+          "Anuj Chandra: Co-founder of Juego Studios, known for creating innovative Indian games."
+        ]
+      }
+    ]
+  },
+  anthropologist: {
+    slug: "anthropologist",
+    badge: "🔍 The Human Story Decoder for Class 10+",
+    heading: "Anthropologist",
+    subheading: "Study human beings—their origins, evolution, behavior, cultures, and societies. Preserve India's 705 tribes, 19,500+ languages, and diverse cultural heritage.",
+    whyCards: [
+      { icon: "Globe", title: "India's Cultural Treasure", description: "705 tribes, 19,500+ languages, and diverse cultural heritage waiting to be documented and preserved.", borderColor: "#10B981" },
+      { icon: "Users", title: "Four Specializations", description: "Physical/Biological, Cultural/Social, Linguistic, and Archaeology—choose your path to understanding humanity.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Growing Tech Opportunities", description: "UX research, AI ethics, digital ethnography—anthropology meets tech with ₹6-20L salaries.", borderColor: "#3B82F6" },
+      { icon: "Award", title: "Social Impact Career", description: "Work in tribal welfare, forensics, healthcare, museums, and academia—make a real difference in society.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "BA (3 Yrs) + MA (2 Yrs) + Optional PhD (3-5 Yrs)", color: "bg-green-100 text-green-700" },
+      { label: "Entry Exams", detail: "CUET, CUET-PG, UGC NET, IIT-JAM", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹2.5L–₹25L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "705", label: "Tribes in India", gradient: "from-green-500 to-green-600" },
+      { value: "19,500+", label: "Languages to Document", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Understanding humanity through culture, biology, and society.",
+        color: BLUE,
+        content: [
+          "Anthropology Definition: The scientific study of human beings—their origins, evolution, behavior, cultures, and societies.",
+          "Four Main Branches: Physical/Biological Anthropology (human evolution, DNA, bones), Cultural/Social Anthropology (societies, traditions, beliefs), Linguistic Anthropology (languages, communication), Archaeology (past civilizations).",
+          "The Role: Anthropologists conduct fieldwork living with communities, analyze bones and DNA, document languages and cultures, and help preserve India's incredible diversity.",
+          "Why It Matters: India has 705 tribes and 19,500+ languages. Many are disappearing. Anthropologists are the guardians of this heritage.",
+          "The Scope: Work in tribal welfare, forensics, healthcare, corporate research, museums, and academia.",
+          "The Impact: You are not just studying people; you are preserving human history and helping marginalized communities."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Priya, Cultural Anthropologist",
+        icon: "Clock",
+        description: "Real workflow of an anthropologist in the field.",
+        color: BLUE2,
+        content: [
+          "6:00 AM - Field Awakening: Priya wakes up in a small village in Chhattisgarh where she is documenting tribal rituals. She lives with the community, not in a hotel. This is fieldwork.",
+          "8:00 AM - Breakfast & Observation: She shares breakfast with the family. She observes everything—how they greet each other, what they eat, how they organize their day. She takes field notes.",
+          "10:00 AM - Interviews: She sits with elders and records their stories. 'Tell me about your grandfather's migration.' She uses a voice recorder and notebook. She is building an oral history.",
+          "1:00 PM - Lunch & Rest: She eats with the community. She learns about their food, agriculture, and seasonal cycles.",
+          "3:00 PM - Photography & Documentation: She photographs rituals, artifacts, and daily life. Every image is labeled with date, location, and context.",
+          "6:00 PM - Analysis: Back at her makeshift office, she transcribes interviews and organizes field notes. She cross-references with historical records.",
+          "8:00 PM - Reflection: She writes in her research journal, reflecting on what she learned and what questions emerged."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Anthropologist DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Personality Traits: Intense curiosity about cultures, empathy, cultural sensitivity, adaptability, patience, and comfort with ambiguity.",
+          "Hard Skills: Research methodology, fieldwork techniques, statistical analysis, ethnographic writing, language learning, and data analysis.",
+          "Emerging Skills: Digital ethnography, GIS mapping, DNA analysis, data science, UX research methods, and coding.",
+          "The Self-Check: Do you love learning about different cultures? Are you comfortable living in unfamiliar places? Do you ask 'why' constantly? If yes, you have the Anthropologist DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Research Workflow",
+        icon: "Briefcase",
+        description: "From fieldwork to publication.",
+        color: BLUE2,
+        content: [
+          "Research Design: Plan your study—what questions will you answer? Which community will you study?",
+          "Fieldwork: Live with communities, conduct interviews, observe daily life, and collect data.",
+          "Data Analysis: Organize field notes, transcribe interviews, identify patterns, and draw conclusions.",
+          "Documentation: Write ethnographic reports, academic papers, and preserve cultural knowledge.",
+          "Collaboration: Work with communities, government agencies, NGOs, and other researchers.",
+          "Dissemination: Present findings at conferences, publish in journals, and share knowledge with stakeholders."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 12: BA/BSc in Anthropology (3 years) available in limited colleges, or BA in Sociology (3 years) with wider availability. Prefer Humanities, but Science students can enter.",
+          "After Graduation: MA/MSc in Anthropology (2 years) is essential for professional career. MPhil (1-2 years) is optional and being phased out. PhD (3-5 years) is for university teaching and senior research roles.",
+          "Entry Exams: CUET, CUET-PG, UGC NET (mandatory for teaching), IIT-JAM, and university-specific exams.",
+          "Top Institutions: Delhi University (500+ students, largest dept), Panjab University, Lucknow University, Calcutta University (oldest in Asia, est. 1920), Visva-Bharati, NEHU Shillong, Deccan College Pune, MSU Baroda, Dr. Harisingh Gour University Sagar, PRSU Raipur, and IGNOU (distance education)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (0-3 years): ₹2-5 LPA (Average: ₹3.5 LPA). Positions: Research Assistant, Junior Researcher.",
+          "Mid-Level (4-8 years): ₹5-10 LPA. Positions: Senior Researcher, UX Researcher (tech companies).",
+          "Senior-Level (8-15 years): ₹10-16 LPA. Positions: Professor, Research Director, Senior Consultant.",
+          "Leadership (15+ years): ₹16-25 LPA. Positions: Department Head, Institute Director.",
+          "Corporate Anthropologist/UX Researcher: ₹6-20 LPA (higher than academia). Growing sector in tech companies."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: University professor/researcher, Anthropological Survey of India officer, Museum curator, NGO professional (tribal welfare, development), Government tribal welfare departments, Forensic anthropologist (police, labs).",
+          "New-Age Careers: UX Researcher in tech companies (₹6-20 LPA), Corporate anthropologist/organizational culture consultant, Digital ethnographer studying online communities, Design researcher for product companies, Medical/public health anthropologist, AI ethics researcher, Data analyst with anthropology background.",
+          "Freelancing: Independent researcher/consultant, Cultural sensitivity trainer for corporates, Content creator (blogs, YouTube, podcasts), Documentary filmmaker, Cultural tour operator.",
+          "Top Cities: Delhi NCR (major hub), Kolkata (rich academic tradition), Pune (Deccan College), Mumbai, Bangalore (corporate roles).",
+          "Sectors: Universities, research institutes, NGOs, corporate (growing), forensic labs, tribal research institutes."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and education costs.",
+        color: BLUE2,
+        content: [
+          "Government Colleges: ₹10,000-60,000/year. Very affordable but highly competitive.",
+          "Private Colleges: ₹50,000-3,00,000/year. Better infrastructure and placement support.",
+          "PhD Programs: Often funded. UGC JRF: ₹31,000-35,000/month. ICSSR Doctoral Fellowships available.",
+          "Total Investment: BA (₹30,000-2,40,000) + MA (₹20,000-1,80,000) + PhD (often funded) = ₹50,000-4,20,000 for full education.",
+          "ROI: With corporate opportunities offering ₹6-20 LPA, you can recover investment in 1-3 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: Delhi University (500+ students, largest dept), Panjab University (Chandigarh), Lucknow University.",
+          "East: Calcutta University (oldest in Asia, est. 1920), Visva-Bharati (Shantiniketan), NEHU Shillong.",
+          "West: Deccan College Pune (premier research institute), MSU Baroda.",
+          "Central: Dr. Harisingh Gour University Sagar, PRSU Raipur.",
+          "Distance Education: IGNOU offers BA in Anthropology.",
+          "Specializations: Deccan College is known for Archaeology. Delhi University for Cultural Anthropology. Calcutta University for Physical Anthropology."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "UGC NET/JRF Fellowship: ₹31,000-35,000/month for PhD. Highly competitive but fully funded.",
+          "ICSSR Doctoral Fellowships: For PhD students in social sciences.",
+          "Central Sector Scholarship: For students scoring 80th percentile+, family income <₹8 LPA.",
+          "SC/ST/OBC Post-Matric Scholarships: Available from state governments.",
+          "State Government Schemes: Various scholarships for merit and need-based aid.",
+          "Institutional Merit and Need-Based Aid: Most universities offer scholarships for top performers."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: Indian Anthropological Association (IAA), Indian Council of Social Science Research (ICSSR), Anthropological Survey of India (ASI).",
+          "Certifications: UGC NET (mandatory for teaching), ICSSR Certification, Field Research Certification from universities.",
+          "Portfolio: Build a portfolio of research papers, field reports, and publications.",
+          "Industry Recognition: Published research, conference presentations, and community contributions showcase expertise.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in anthropology careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: University Professor, Research Scientist, Museum Curator, Government Officer (Anthropological Survey of India), NGO Director.",
+          "New-Age Careers: UX Researcher (tech companies), Corporate Anthropologist, Digital Ethnographer, Design Researcher, Medical Anthropologist, AI Ethics Researcher, Data Analyst.",
+          "Emerging Roles: Climate Anthropology (studying human climate adaptation), Forensic Anthropology (expanding 10-15% annually), Metaverse Anthropology (studying virtual communities).",
+          "Freelancing: Independent research consultant, Cultural sensitivity trainer, Content creator, Documentary filmmaker, Cultural tour operator.",
+          "Interdisciplinary Roles: Anthropology + Data Science, Design, Policy, Healthcare."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of anthropology.",
+        color: BLUE,
+        content: [
+          "Limited Job Market: Far fewer positions than mainstream careers like engineering or management.",
+          "Modest Starting Salaries: ₹2-4 LPA compared to ₹6-8 LPA for engineering graduates.",
+          "Lengthy Education: Minimum 5 years (BA + MA), ideally 8-10 years with PhD.",
+          "Challenging Fieldwork: Remote areas, basic facilities, safety concerns, and emotional toll from working with marginalized communities.",
+          "Academic Pressure: Need to publish, secure competitive grants, and maintain research funding.",
+          "Job Instability: Many positions are contractual/project-based, not permanent.",
+          "Social Pressure: Family and society may not understand the field or its value.",
+          "Emotional Challenges: Working with marginalized communities can be emotionally draining."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in anthropology.",
+        color: BLUE2,
+        content: [
+          "Digital Revolution: Growing demand for digital ethnographers and social media analysts. 20-25% annual growth in tech sector roles.",
+          "Tech Sector Growth: UX researchers, AI ethics specialists, and data analysts with anthropology background are highly valued.",
+          "Corporate Recognition: More companies hiring anthropologists for user research and organizational culture consulting.",
+          "Forensic Expansion: 10-15% growth as forensic labs expand and demand for forensic anthropologists increases.",
+          "Climate Anthropology: Emerging field studying human climate adaptation and environmental justice.",
+          "Interdisciplinary Roles: Anthropology + Data Science, Design, Policy, Healthcare becoming mainstream.",
+          "Required Skills: Python/R, digital methods, data analysis, and interdisciplinary collaboration essential for future roles."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Read About Cultures: Watch documentaries (NatGeo, Discovery), read books like 'Sapiens' by Harari and 'Guns, Germs, Steel' by Diamond.",
+          "Visit Museums: Explore anthropology museums like Indian Museum Kolkata and National Museum Delhi.",
+          "Practice Observation: Keep a field journal. Observe your community and document daily life, traditions, and social patterns.",
+          "Learn Languages: Study regional, tribal, or Sanskrit languages to prepare for fieldwork.",
+          "Volunteer with NGOs: Work with organizations supporting tribal communities and marginalized groups.",
+          "Study History & Geography: Build foundational knowledge of India's diverse regions and cultures.",
+          "Develop Documentation Skills: Learn photography, videography, and audio recording.",
+          "Take Online Courses: Coursera and NPTEL offer courses on social sciences and anthropology.",
+          "Follow Current Affairs: Stay updated on tribal issues, social movements, and cultural preservation efforts."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Anthropologists",
+        icon: "User",
+        description: "Inspiring figures in the field.",
+        color: BLUE2,
+        content: [
+          "Irawati Karve: India's first woman anthropologist, Sahitya Akademi winner. Pioneer in studying Indian society and kinship systems.",
+          "S.C. Dube: Legendary scholar and former Director of Anthropological Survey of India. Known for village studies and rural development research.",
+          "Verrier Elwin: Tribal rights advocate who influenced Nehru's tribal policy. Lived with tribal communities and documented their cultures.",
+          "Leela Dube: Pioneer feminist anthropologist. Studied gender, kinship, and social change in Indian society.",
+          "M.N. Srinivas: Introduced concepts of 'Sanskritization' and 'dominant caste.' Revolutionized understanding of Indian society.",
+          "N.K. Bose: Physical anthropologist and Gandhian. Worked with Mahatma Gandhi and studied Indian society.",
+          "André Béteille: Padma Bhushan awardee. Studied caste, inequality, and social stratification in India."
+        ]
+      }
+    ]
+  },
+  archaeologist: {
+    slug: "archaeologist",
+    badge: "🏛️ The Detective of the Past for Class 10+",
+    heading: "Archaeologist",
+    subheading: "Uncover India's 5,000-year-old civilizations, ancient monuments, and hidden stories buried beneath our feet. From Indus Valley cities to medieval forts, every dig site tells a unique story.",
+    whyCards: [
+      { icon: "Globe", title: "5,000 Years of History", description: "India's rich past with thousands of heritage sites waiting to be discovered and preserved.", borderColor: "#10B981" },
+      { icon: "Layers", title: "3,600+ Protected Monuments", description: "Archaeological Survey of India manages over 3,600 protected monuments across the country.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Growing Tech Integration", description: "AI, LiDAR, drones, and 3D modeling revolutionizing archaeological research and discovery.", borderColor: "#3B82F6" },
+      { icon: "Award", title: "Heritage Tourism Boom", description: "India's tourism industry growing at 10-12% annually, creating new opportunities in heritage management.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "BA (3 Yrs) + MA (2 Yrs) + Optional PhD (3-5 Yrs)", color: "bg-green-100 text-green-700" },
+      { label: "Entry Exams", detail: "CUET, CUET-PG, UGC NET, SSC, UPSC", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹30L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "3,600+", label: "Protected Monuments in India", gradient: "from-green-500 to-green-600" },
+      { value: "60+", label: "Archaeology Colleges in India", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Studying human history through excavation and analysis of physical remains.",
+        color: BLUE,
+        content: [
+          "Archaeologist Definition: A detective of the past who studies human history and prehistory through excavation and analysis of artifacts, structures, and physical remains.",
+          "What They Study: Pottery shards, ancient coins, temple ruins, burial sites, tools, and entire lost cities. They piece together clues to understand how people lived, what they believed, and why civilizations rose or fell.",
+          "The Role: Conduct field surveys, excavate sites carefully layer by layer, analyze and date artifacts, preserve monuments, research and publish findings, work with museums, teach future archaeologists, and collaborate with government bodies.",
+          "Why It Matters: In an age of rapid development, archaeological work ensures irreplaceable heritage is documented, protected, or relocated before it's lost forever. Sites like Ajanta Caves, Hampi, and Nalanda attract millions of tourists and generate revenue.",
+          "The Scope: Work in government departments, museums, cultural resource management, tourism, academia, UNESCO, and international organizations.",
+          "The Impact: You are preserving human history and helping society understand its roots and cultural identity."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Priya, Field Archaeologist",
+        icon: "Clock",
+        description: "Real workflow at an excavation site in Rajasthan.",
+        color: BLUE2,
+        content: [
+          "6:30 AM - Early Morning at the Site: Priya arrives at an excavation site in rural Rajasthan as the sun rises. She's investigating what might be a 2,000-year-old settlement. Armed with trowel, brush, and field notebook, she begins the day's dig.",
+          "9:00 AM - Careful Excavation: Archaeology isn't treasure hunting. Every layer of soil matters. Priya carefully scrapes away dirt, centimeter by centimeter, looking for pottery fragments, bones, or coins. When she spots something, she photographs it, measures its exact location using GPS, and records detailed notes.",
+          "12:00 PM - Lunch Break and Team Discussion: Under a tent, the team gathers to review morning finds. They discuss whether ash indicates a fire, what pottery style suggests about trade routes, and whether they've found evidence of a temple or residential area.",
+          "2:00 PM - Lab Work and Analysis: Back at the project office, Priya catalogs today's findings. She cleans a pottery shard under a magnifying glass, sketches its shape, and prepares it for carbon dating. She updates the site's digital database.",
+          "5:00 PM - Research and Writing: Evenings are spent reading research papers, comparing findings with similar sites, and drafting reports. Priya is working on a paper about early Iron Age settlements.",
+          "7:00 PM - Reflection: As the day ends, Priya reflects on how each tiny discovery brings her closer to understanding an entire civilization."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Archaeologist DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Personality Traits: Deep curiosity about history and culture, patience and attention to detail, physical stamina for outdoor work, analytical mindset, passion for preservation, and team spirit.",
+          "Hard Skills: Excavation techniques, survey and mapping skills (GPS, GIS), scientific analysis (carbon dating, stratigraphy, pottery analysis), documentation (field notes, photography, digital cataloging), research and writing, knowledge of history, and technology proficiency (AI, drones, LiDAR, 3D modeling).",
+          "Soft Skills: Problem-solving, critical thinking, communication, adaptability, and cultural sensitivity.",
+          "The Self-Check: Do you find ancient civilizations endlessly fascinating? Are you comfortable living in unfamiliar places? Do you ask 'why' constantly? If yes, you have the Archaeologist DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Research Workflow",
+        icon: "Briefcase",
+        description: "From fieldwork to publication.",
+        color: BLUE2,
+        content: [
+          "Field Surveys and Site Identification: Walking through regions to identify potential archaeological sites based on surface finds, local knowledge, or historical records.",
+          "Excavation: Methodically digging at sites, documenting each layer (stratigraphy), and carefully extracting artifacts.",
+          "Laboratory Analysis: Cleaning, categorizing, and analyzing finds. This includes dating (radiocarbon, thermoluminescence), chemical analysis, and comparative studies.",
+          "Conservation and Restoration: Preserving fragile artifacts and monuments using scientific methods.",
+          "Documentation and Reporting: Creating detailed records, drawings, photographs, and digital models of findings.",
+          "Research and Publication: Writing research papers, presenting at conferences, and contributing to academic knowledge.",
+          "Public Engagement: Conducting heritage walks, museum exhibitions, and educational programs.",
+          "Collaboration: Working with government bodies (ASI), universities, and international organizations."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 12: Choose Humanities stream (History, Geography, Sociology). BA/BA (Hons) in Archaeology or History (3 years). Entrance Exams: CUET, university-specific exams.",
+          "After Graduation: MA in Archaeology/Ancient History/Heritage Management (2 years) is essential. PG Diploma in Archaeology from ASI Institute (2 years). Entrance Exams: CUET-PG, university-specific exams.",
+          "Doctoral Studies: PhD in Archaeology (3-5 years) for teaching and senior research roles. Entrance: UGC NET or university-specific exams.",
+          "ASI Entry Routes: Assistant Archaeologist (Group B) through SSC exam. Deputy Superintending Archaeologist (Group A) through UPSC exam. Direct recruitment for specialized positions.",
+          "Top Institutions: Banaras Hindu University (Varanasi), University of Delhi, Institute of Archaeology (ASI, New Delhi), Deccan College (Pune), Maharaja Sayajirao University (Baroda), University of Calcutta, University of Madras."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (0-3 years): ₹1.5L–₹5L (Average: ₹3.5L). Positions: Research Assistant, Junior Researcher.",
+          "Mid-Level (4-8 years): ₹5L–₹10L. Positions: Senior Researcher, Museum Curator, Conservation Officer.",
+          "Senior-Level (8-15 years): ₹10L–₹18L. Positions: Professor, Research Director, Senior Consultant.",
+          "Leadership (15+ years): ₹18L–₹30L+. Positions: Department Head, Institute Director, ASI Director-General.",
+          "Government (ASI): Assistant Archaeologist starts at ₹35,000-40,000/month (Level 6 pay scale, excluding allowances).",
+          "Metro vs. Tier-2/3: Metro cities (Delhi, Mumbai, Pune) offer 10-20% higher salaries. Tier-2/3 cities have lower salaries but greater fieldwork opportunities."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Government Archaeological Departments (ASI, State Archaeology), Museums (National Museum, Indian Museum Kolkata, Government Museum Chennai), Academia (Universities, research institutes), UNESCO and International Organizations.",
+          "New-Age Careers: Digital Archaeologist (AI, GIS, 3D modeling), Drone/LiDAR Specialist, Archaeological Data Analyst, Heritage Tourism Consultant, Cultural Resource Management (CRM) Consultant, Virtual Archaeology Specialist (VR/AR), Archaeological Content Creator, Forensic Archaeologist.",
+          "Freelancing: Heritage Walk Guide, Archaeological Consultant, Heritage Startup, Archaeological Writer/Author, Online Course Creator, Archaeological Photographer.",
+          "Top Cities: Delhi (ASI headquarters, Institute of Archaeology), Pune (Deccan College), Varanasi (BHU), Mumbai, Kolkata, Chennai, Vadodara, Bhopal, Lucknow, Hyderabad, Bangalore.",
+          "Sectors: Government departments, museums, cultural resource management firms, tourism companies, academia, UNESCO, international NGOs, corporate CSR."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and education costs.",
+        color: BLUE2,
+        content: [
+          "BA/BA (Hons) in History/Archaeology: Government ₹10,000-50,000/year, Private ₹50,000-2,00,000/year (3 years).",
+          "MA in Archaeology/Ancient History: Government ₹15,000-60,000/year, Private ₹80,000-3,00,000/year (2 years).",
+          "PG Diploma in Archaeology (ASI Institute): Minimal, government-funded (2 years).",
+          "PhD in Archaeology: Fellowships available (UGC/JRF), or ₹1,00,000-3,00,000 total (3-5 years).",
+          "Additional Costs: Living/Hostel (₹6,000-15,000/month), Field Kits (₹5,000-15,000 one-time), Books (₹5,000-10,000/year), Entrance Exam Coaching (₹10,000-30,000), Fieldwork Travel (₹20,000-50,000).",
+          "ROI: With corporate opportunities in CRM and heritage consulting offering ₹6-18 LPA, investment can be recovered in 2-4 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North India: Banaras Hindu University (Varanasi), University of Delhi, Institute of Archaeology (ASI, New Delhi), Kurukshetra University, Panjab University (Chandigarh), Lucknow University, Allahabad University.",
+          "West India: Maharaja Sayajirao University of Baroda (Gujarat), Deccan College Post-Graduate and Research Institute (Pune), University of Mumbai.",
+          "South India: University of Madras (Chennai), University of Mysore (Karnataka), Kannur University (Kerala), Andhra University (Visakhapatnam), Bangalore University.",
+          "East India: University of Calcutta, Visva-Bharati University (Shantiniketan, West Bengal).",
+          "Central India: Dr. Harisingh Gour University (Sagar, MP), Vikram University (Ujjain, MP), Indira Gandhi National Tribal University (Amarkantak, MP).",
+          "Northeast India: Gauhati University (Assam), North Eastern Hill University (Meghalaya).",
+          "Private: St. Xavier's College (Mumbai), K J Somaiya Institute of Dharma Studies (Mumbai), Jain University (Bangalore)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE2,
+        content: [
+          "Central Government Schemes: Central Sector Scheme of Scholarships (80th percentile+, family income <₹8L), Post Matric Scholarships (SC/ST/OBC), UGC Scholarships for PG Students, UGC NET/JRF Fellowship (₹31,000-35,000/month for PhD).",
+          "ICHR Fellowships: Indian Council of Historical Research offers Junior and Senior Research Fellowships for archaeology research.",
+          "State Government Schemes: Maharashtra (Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Punarnathan Yojana), West Bengal (Swami Vivekananda Merit-cum-Means Scholarship), Uttar Pradesh (UP Scholarship Scheme), Gujarat (Post SSC Scholarship Scheme).",
+          "Institutional Scholarships: BHU (merit scholarships, need-based aid), Deccan College (research fellowships), University of Delhi (merit-based scholarships).",
+          "Private/Corporate: Sitaram Jindal Foundation, Tata Trusts, Dr. Ambedkar Central Sector Scheme, Foundation for Academic Excellence and Access (FAEA)."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: Indian Archaeological Society, Society of South Asian Archaeology (SOSAA), Indian Council of Historical Research (ICHR), Rock Art Society India (RASI), ICOMOS India, World Archaeological Congress (WAC).",
+          "Certifications: PG Diploma in Archaeology from ASI Institute (highly regarded), Certificate courses in Heritage Conservation, Museum Studies, Digital Archaeology and GIS, Archaeological Science.",
+          "Specialized Training: Radiocarbon dating techniques, LiDAR and remote sensing, 3D modeling and photogrammetry, Conservation chemistry.",
+          "Licensing: No mandatory license required. However, ASI employment requires MA in Archaeology/History and clearing SSC/UPSC exams. Research permits needed from ASI or state archaeology departments.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in archaeology careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Archaeologist (Government/ASI), Museum Curator, Conservation Officer, University Professor/Lecturer, Heritage Manager, Epigrapher, Numismatist.",
+          "New-Age Careers: Digital Archaeologist (AI, GIS, 3D modeling), Drone/LiDAR Specialist, Archaeological Data Analyst, Heritage Tourism Consultant, Cultural Resource Management (CRM) Consultant, Virtual Archaeology Specialist (VR/AR), Archaeological Content Creator, Forensic Archaeologist.",
+          "Emerging Roles: Climate Anthropology specialist, Metaverse Archaeologist, Blockchain Provenance Specialist.",
+          "Freelancing: Heritage Walk Guide (₹30,000-1,00,000/month), Archaeological Consultant (₹50,000-3,00,000/project), Heritage Startup, Archaeological Writer/Author (₹50,000-5,00,000/book), Online Course Creator (₹20,000-2,00,000/month), Archaeological Photographer (₹40,000-2,00,000/month).",
+          "Interdisciplinary Roles: Archaeology + Data Science, Design, Policy, Healthcare."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of archaeology.",
+        color: BLUE,
+        content: [
+          "Limited Job Opportunities: Far fewer positions than mainstream careers. Government recruitment (ASI) is irregular and highly competitive.",
+          "Modest Starting Salaries: Entry-level salaries (₹2-4 LPA) are lower than engineering or management careers requiring similar education.",
+          "Physically Demanding Work: Long hours in harsh conditions—scorching sun, monsoon rains, remote locations with basic facilities. Not a desk job.",
+          "Slow Career Progression: Moving from junior to senior positions often takes 10-15 years.",
+          "Funding Challenges: Research projects depend on grants and funding, which can be difficult to secure.",
+          "Bureaucracy: Working with government departments (ASI, state archaeology) involves significant bureaucratic processes.",
+          "Work-Life Balance: During excavation seasons (winter months), work can consume most of your time. Long periods away from home are common.",
+          "Precarious Employment: Many positions are project-based or contractual, leading to job insecurity.",
+          "Limited Public Awareness: Archaeology is not mainstream. Explaining your job to relatives can be exhausting.",
+          "Infrastructure Gaps: Many institutions lack modern equipment, laboratories, and digital tools standard in developed countries."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in archaeology.",
+        color: BLUE2,
+        content: [
+          "AI and Machine Learning: Site discovery with 80-90% accuracy, artifact classification, predictive modeling, and ancient script decipherment.",
+          "LiDAR and Remote Sensing: Penetrates dense vegetation to reveal hidden structures. Drone-based surveys making mapping faster and cheaper.",
+          "Digital Twins and 3D Modeling: Creating digital replicas for virtual tourism, restoration planning, damage assessment, and VR/AR experiences.",
+          "Molecular Archaeology: DNA analysis revealing migration patterns, disease history, and genetic relationships. Isotope and protein residue analysis.",
+          "Crowdsourcing and Citizen Science: Public participation in archaeological research, satellite image analysis by volunteers, crowdfunding projects.",
+          "Heritage Conservation Technology: Nano-materials for preservation, advanced sensors for monitoring, climate-controlled storage with IoT.",
+          "Underwater and Space Archaeology: Growing focus on marine sites and emerging field of space archaeology.",
+          "Blockchain for Provenance: Tracking artifact ownership and preventing illegal trafficking.",
+          "Impact on Employment: New roles for data scientists, AI specialists, digital heritage managers. Required skills: Python, R, GIS, data analysis, digital modeling."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Develop Strong History Foundation: Focus on ancient and medieval history. Read beyond textbooks—explore history magazines and documentaries. Resources: 'India: A History' by John Keay, 'Wonder That Was India' by A.L. Basham.",
+          "Learn Geography and Mapping: Understand topography and climate patterns. Practice map reading and spatial thinking. Tools: Google Earth, QGIS tutorials.",
+          "Build Scientific Thinking: Take interest in Chemistry (conservation), Biology (biological remains), Physics (dating techniques). Learn the scientific method.",
+          "Develop Research Skills: Practice writing research papers on historical topics. Learn proper citation. Develop critical reading skills.",
+          "Visit Archaeological Sites and Museums: Red Fort (Delhi), Hampi (Karnataka), Sanchi Stupa (MP), Ajanta-Ellora (Maharashtra), Mahabalipuram (Tamil Nadu).",
+          "Learn Digital Skills: Python (data analysis), Photoshop/GIMP (photography), Blender (3D modeling), QGIS (GIS software).",
+          "Join Heritage Clubs: Create or join heritage appreciation clubs. Organize heritage walks and awareness campaigns.",
+          "Participate in Competitions: Heritage quiz competitions, essay competitions on history, photography competitions on heritage themes.",
+          "Read Archaeology Blogs: Archaeological Survey of India, INTACH, The Archaeology News Network.",
+          "Learn Languages: Sanskrit (epigraphy), regional languages (fieldwork), English (academic publishing).",
+          "Develop Photography Skills: Archaeological documentation relies heavily on photography. Practice composition and detail photography.",
+          "Volunteer or Intern: INTACH, local museums, heritage projects. Look for summer internships.",
+          "Build Physical Fitness: Fieldwork is physically demanding. Develop stamina through sports, trekking, or regular exercise.",
+          "Cultivate Patience: Practice activities requiring patience—model building, detailed drawing, puzzles.",
+          "Stay Updated: Follow archaeology news and discoveries. Join online communities and forums."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Archaeologists",
+        icon: "User",
+        description: "Inspiring figures in the field.",
+        color: BLUE2,
+        content: [
+          "B.B. Lal (1921-2022): Padma Vibhushan Awardee, Former Director-General of ASI. Excavated Kalibangan, Hastinapura, and Ayodhya. Over 70 years of research on ancient Indian civilizations.",
+          "Rakesh Tewari: Former Director-General of ASI (2014-2017). Groundbreaking work at Lahuradewa site demonstrating rice cultivation in 9th millennium BP. Significant contributions to Iron Age settlements.",
+          "K.K. Muhammed: Padma Shri Awardee, Former Regional Director (North) of ASI. Discovered Ibadat Khana and first Christian Chapel at Fatehpur Sikri. Excavated Kesaria Stupa and Bateshwar temple complex.",
+          "Vasant Shinde: Vice-Chancellor, Deccan College. Led excavations at Rakhigarhi (largest Indus Valley site). First author on 2019 DNA research on Harappan genome. Founder of SOSAA.",
+          "Debala Mitra (1929-2023): First Woman Director-General of ASI (1981-1984). Pioneer in Buddhist archaeology. Authored 'Buddhist Monuments' and 'Ratnagiri.'",
+          "R.S. Bisht: Excavated Kalibangan, Banawali, and Dholavira (Harappan sites). Revealed sophisticated water management systems of Indus Valley Civilization.",
+          "Amara Sinha Nag: Contemporary underwater archaeologist. Worked on marine archaeological sites along Indian coastline. Contributed to understanding ancient maritime trade.",
+          "Rakhaldas Bandyopadhyay: Discoverer of Mohenjo-daro (1922). Discovery revolutionized understanding of ancient Indian history and Indus Valley Civilization."
+        ]
+      }
+    ]
+  },
+  fashion_management: {
+    slug: "fashion_management",
+    badge: "👗 The Style Architect for Class 10+",
+    heading: "Fashion Management",
+    subheading: "Blending creativity with commerce. Turn designer dreams into billion-dollar brands. ₹5L–₹65L+ salaries with 12.87% CAGR growth.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$124B Market by 2030", description: "India's fashion retail market expected to cross $124 billion by 2030. Explosive growth opportunity.", borderColor: "#10B981" },
+      { icon: "Zap", title: "₹5L–₹65L+ Salaries", description: "Entry-level ₹5L–₹8L. Mid-level ₹12L–₹22L. Senior ₹35L–₹65L+. Leadership ₹75L+. Fast growth trajectory.", borderColor: "#059669" },
+      { icon: "Globe", title: "Global Opportunities", description: "High demand in Italy, France, UAE for managers who understand global supply chain and sustainability.", borderColor: "#3B82F6" },
+      { icon: "Award", title: "E-commerce Boom", description: "E-commerce fashion roles growing at 27% CAGR. Myntra, Ajio, and D2C brands hiring aggressively.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "Bachelor's + MBA/PG Diploma (2-3 years)", color: "bg-blue-100 text-blue-700" },
+      { label: "Entry Exam", detail: "NIFT, CUET, CAT, GMAT", color: "bg-purple-100 text-purple-700" },
+      { label: "Salary Range", detail: "₹5L–₹65L+ per annum", color: "bg-green-100 text-green-700" }
+    ],
+    statCards: [
+      { value: "$124B", label: "Market Size by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "12.87%", label: "CAGR Growth Rate", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The business side of fashion—bridging creativity with commerce.",
+        color: BLUE,
+        content: [
+          "Fashion Management Definition: The business side of fashion. Bridge between designer's creative vision and customer's wardrobe. Blend magic of design with logic of business.",
+          "The Trend Scout: Predict what colors and styles customers will want next year. Use AI and market reports to forecast trends.",
+          "The Brand Storyteller: Decide how brands like Zudio or Sabyasachi should talk to customers through ads and social media.",
+          "The Market Navigator: Manage 'buying' and 'merchandising'—deciding exactly how many shirts a store needs so they don't run out or have too many leftovers.",
+          "Why It Matters: India is one of world's largest consumers of fashion. As we move towards sustainable and tech-driven shopping, we need managers who understand how to run ethical, profitable, and modern businesses.",
+          "The Scope: Work in Retail Brands, E-commerce, Export Houses, Luxury Labels, or as fashion consultant."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Brand Strategist",
+        icon: "Clock",
+        description: "Real workflow of a fashion manager.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Trend Forecast: Day begins at vibrant corporate office in Gurgaon. Review data from previous week. Trend Forecasting software shows eco-friendly 'slow-fashion' linen trousers trending among Gen-Z in Bangalore. Shift more stock to South Indian stores.",
+          "11:30 AM - The Creative Huddle: Meet with design team. They show sketches for 'Winter 2026' collection. Not critiquing art—looking at price point. Silk embroidery beautiful but might be too expensive for college students. Find middle ground using high-quality blend.",
+          "2:00 PM - The Influencer Strategy: Over working lunch, finalize list of 10 influencers for next launch. Not just looking for 'followers'—looking for creators who align with brand's sustainability values.",
+          "4:30 PM - The Retail Walkthrough: Visit flagship store. Notice 'Visual Merchandising' (window display) isn't catching attention. Work with store manager to change lighting and mannequin outfits to feature 'Hero Product' of month.",
+          "7:00 PM - The Global Logistics Call: Call with manufacturing unit in Tirupur. Fabric supply delayed due to storm. Quickly pivot and authorize backup supplier to ensure 'Diwali Collection' hits shelves on time."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Fashion Business DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Analytical Mind: Do you enjoy looking at charts and spotting patterns? (Hard Skill: Data Analysis)",
+          "Visual Sense: Can you tell why one store window looks 'cool' and another looks 'messy'? (Hard Skill: Visual Merchandising)",
+          "People Person: Can you negotiate with supplier in morning and inspire marketing team in afternoon? (Soft Skill: Negotiation & Leadership)",
+          "Adaptability: Fashion moves fast. Can you change plans if new trend goes viral overnight? (Trait: Agility)",
+          "The Self-Check: Do you follow fashion trends? Can you see business potential in designs? Do you love organizing and strategizing? If yes, you have Fashion Business DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Product Lifecycle",
+        icon: "Briefcase",
+        description: "The complete fashion manager workflow.",
+        color: BLUE2,
+        content: [
+          "Trend Research: Predicting what's next using AI and market reports. Analyzing consumer behavior.",
+          "Product Development: Working with designers to ensure products are 'market-ready.' Balancing creativity with profitability.",
+          "Merchandising & Buying: Deciding 'What to buy, how much, and for which store.' Managing inventory.",
+          "Promotion & Sales: Launching campaigns and managing customer experience. Driving sales through marketing.",
+          "Retail Management: Overseeing store operations and visual merchandising. Ensuring brand consistency.",
+          "Supply Chain: Managing manufacturing, logistics, and distribution. Ensuring timely delivery.",
+          "Financial Management: Monitoring budgets and ensuring profitability. Analyzing sales data."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Choose any stream (Humanities, Commerce, or Science). Humanities helps with psychology; Commerce helps with numbers. Class 12 Boards.",
+          "After Class 12: Pursue Bachelor's in Fashion Management (B.F.M.) or Fashion Communication. Entrance Exams: NIFT Entrance Exam, CUET.",
+          "After Graduation: If you have BBA or B.Com, pursue MBA in Fashion Management or PG Diploma. Entrance Exams: NIFT (GAT), CAT, GMAT.",
+          "Top Institutions: NIFT (18 campuses), Pearl Academy (Delhi/Mumbai/Jaipur), FDDI (Noida/Chennai), Symbiosis Institute of Design (Pune).",
+          "Specializations: Retail Management, E-commerce, Merchandising, Brand Management, Sustainability."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Junior Merchandiser): ₹5L–₹8L per annum. Retail brands or e-commerce companies.",
+          "Mid-Level (Brand Manager): ₹12L–₹22L per annum. Leading teams and managing collections.",
+          "Senior/Leadership (Chief Merchandise Officer): ₹35L–₹65L+ per annum. Strategic leadership roles.",
+          "City Comparison: Mumbai and Delhi pay highest. Surat and Ludhiana are huge hubs for 'Export Management' roles.",
+          "Growth Trajectory: Industry growing at CAGR of 12.87%, with E-commerce roles growing even faster at 27%.",
+          "Market Size: India's fashion retail market expected to cross $124 billion by 2030."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Retail Brands (Zara, Reliance Trends), E-commerce (Myntra, Ajio), Export Houses, Luxury Labels (Sabyasachi, Hidesign).",
+          "Top Cities: Mumbai, Delhi-NCR, Bangalore, Jaipur, Surat, Ludhiana.",
+          "Top Companies: Zara, H&M, Reliance Trends, Myntra, Ajio, Nykaa Fashion, Sabyasachi, Hidesign.",
+          "Emerging Opportunities: AI-Trend Forecaster, E-commerce Manager, Sustainability Consultant, Virtual Fashion Designer.",
+          "International: High demand in Italy, France, UAE for managers who understand global supply chain.",
+          "Entrepreneurship: Starting niche 'D2C' (Direct-to-Consumer) brand or fashion consultancy."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and training costs.",
+        color: BLUE2,
+        content: [
+          "Government Fees: ₹1.5L–₹3.5L per year (NIFT/FDDI). Highly competitive but affordable.",
+          "Private Fees: ₹4L–₹7L per year (Pearl Academy, ISDI). Better infrastructure and placement support.",
+          "Duration: 4 years for Bachelor's; 2 years for Master's.",
+          "Living Costs: ₹15,000–₹25,000 per month in major metros.",
+          "Additional Costs: Software tools (₹10k–₹30k), certifications (₹20k–₹50k), internships.",
+          "Total Investment: Approximately ₹5L–₹15L for complete education.",
+          "ROI: With entry-level salaries of ₹5L–₹8L per annum, you can recover investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top fashion management institutes across India.",
+        color: BLUE,
+        content: [
+          "Government: NIFT (18 campuses: Delhi, Mumbai, Bangalore, Jodhpur, Kolkata, Chennai, Hyderabad, Gandhinagar), FDDI (Noida, Chennai).",
+          "Private: Pearl Academy (Delhi, Mumbai, Jaipur), Amity School of Fashion Technology, Symbiosis Institute of Design (Pune), ISDI (Delhi).",
+          "Geographic Diversity: North (NIFT Delhi, Pearl Delhi), South (NIFT Bangalore, FDDI Chennai), West (NIFT Mumbai, Pearl Mumbai), East (NIFT Kolkata).",
+          "Note: Choose institutes with strong faculty, industry connections, and good placement record."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE,
+        content: [
+          "Central: PM-YASASVI Post-Matric Scholarship for OBC/EBC students (Family income < ₹2.5L).",
+          "State: Various state merit scholarships for design and management courses.",
+          "Institutional: NIFT offers 'Means-cum-Merit' financial assistance for students from lower-income backgrounds.",
+          "Private: Various corporate scholarships from fashion brands and retail companies.",
+          "Merit-Based: Most institutes offer scholarships for top performers in entrance exams."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: BLUE2,
+        content: [
+          "Certifications: Short-term modules in Fashion Analytics, CLO 3D (Virtual Garments), Sustainable Fashion Practices.",
+          "Memberships: Fashion Design Council of India (FDCI). Great for networking and industry connections.",
+          "Professional Bodies: NIFT Alumni Association, Pearl Academy Alumni Network.",
+          "Continuing Education: Must stay updated with latest trends, technologies, and sustainability practices."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in fashion management.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Retail Manager, Fashion Buyer, Merchandiser, Brand Manager, Store Manager.",
+          "New-Age Careers: AI-Trend Forecaster, E-commerce Manager, Sustainability Consultant, Virtual Fashion Designer (Metaverse).",
+          "Specialized Roles: Visual Merchandiser, Supply Chain Manager, Inventory Manager, Marketing Manager.",
+          "Entrepreneurship: Starting niche 'D2C' (Direct-to-Consumer) brand or fashion consultancy.",
+          "Consulting: Fashion consultant for retail companies, trend forecasting consultant.",
+          "International: Opportunities in Italy, France, UAE for senior roles and management positions."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of fashion management.",
+        color: BLUE,
+        content: [
+          "High Pressure: Industry works on 'seasons.' During launch, 14-hour workdays are common.",
+          "The 'Waste' Problem: Managing unsold inventory is huge stress for business. Overstock = lost money.",
+          "Continuous Learning: Tech like AI-driven virtual try-ons changes every few months. Must keep up.",
+          "Fast-Paced: Fashion moves quickly. Trends can change overnight. Must be adaptable.",
+          "Sustainability Pressure: Increasing pressure to reduce waste and use sustainable materials.",
+          "Competition: Global competition from established luxury brands and emerging designers.",
+          "Work-Life Balance: Seasonal peaks can require long hours and weekend work."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in fashion management.",
+        color: BLUE2,
+        content: [
+          "AI Personalization: AI will predict your size and style so accurately that 'returns' will drop by 20%.",
+          "Circular Fashion: Brands will start 'Buy-back' programs where you return old clothes for credit.",
+          "Virtual Fashion: Selling 'digital-only' clothes for avatars in the Metaverse.",
+          "Sustainability Focus: Brands increasingly judged by environmental impact. ESG becoming standard.",
+          "Hyper-Localization: Fashion becoming more local. Brands creating region-specific collections.",
+          "Direct-to-Consumer: D2C brands growing faster than traditional retail. Cutting out middlemen.",
+          "Tech Integration: Augmented Reality (AR) try-ons, blockchain for supply chain transparency."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Read Trend Reports: Follow websites like Business of Fashion (BoF) or Vogue Business. Understand industry.",
+          "Master Excel: Business management is 50% spreadsheets. Learn basic formulas now!",
+          "Start a Blog/Reel: Practice explaining why certain fashion trends are happening. Build communication skills.",
+          "Volunteer: Work at local boutique or school fest's merchandise stall. Get real experience.",
+          "Follow Brands: Analyze how brands like Zudio or Sabyasachi market themselves. Learn strategy.",
+          "Networking: Connect with fashion professionals. Learn about different roles and companies.",
+          "Sustainability: Learn about sustainable fashion practices. This is the future.",
+          "Entrance Prep: Start early preparation for NIFT entrance exam or CUET."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Fashion Leaders",
+        icon: "User",
+        description: "Inspiring figures in the field.",
+        color: BLUE2,
+        content: [
+          "Anita Dongre: Master of 'Sustainable Luxury' who built massive fashion empire (House of Anita Dongre).",
+          "Falguni Nayar: Founder of Nykaa. Started in finance but redefined how India buys fashion and beauty.",
+          "Masaba Gupta: Millennial icon who turned 'quirky prints' into powerful lifestyle brand.",
+          "Sabyasachi Mukherjee: Didn't just design clothes—managed 're-branding' of Indian weddings globally.",
+          "Ritu Kumar: Pioneer who successfully scaled traditional Indian crafts into modern retail business.",
+          "Isha Gupta: Founder of Isha Gupta Couture. Known for sustainable luxury and ethical practices.",
+          "Rahul Mishra: International fashion designer who brought Indian craftsmanship to global runways."
+        ]
+      }
+    ]
   }
 };
 

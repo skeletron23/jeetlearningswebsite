@@ -461,6 +461,61 @@ export const careerVideos: Record<string, CareerVideo[]> = {
       url: "https://www.youtube.com/embed/zQqEejPXVC8",
     },
   ],
+  environmental_scientist: [
+    {
+      id: 1,
+      title: "Environmental Scientist Career Overview - The Earth's Detective",
+      url: "https://www.youtube.com/embed/nDw6caTbhuc",
+    },
+    {
+      id: 2,
+      title: "Pollution Control & Environmental Impact Assessment",
+      url: "https://www.youtube.com/embed/kVxbnf-cLIQ",
+    },
+    {
+      id: 3,
+      title: "Climate Science & Sustainability Careers",
+      url: "https://www.youtube.com/embed/_m-IIBpcZl4",
+    },
+  ],
+  forest_officer: [
+    {
+      id: 1,
+      title: "Forest Officer Career Overview - The Guardian of the Wild",
+      url: "https://www.youtube.com/embed/PzzE1706jds",
+    },
+  ],
+  geology: [
+    {
+      id: 1,
+      title: "Geology Career Overview - The Earth's Detective",
+      url: "https://www.youtube.com/embed/3dKvcdSRP6s",
+    },
+    {
+      id: 2,
+      title: "Mineral Exploration & Critical Minerals for EV Revolution",
+      url: "https://www.youtube.com/embed/DA67iXuV77g",
+    },
+  ],
+  oceanography: [
+    {
+      id: 1,
+      title: "Oceanography Career Overview - Decoding the Blue Heart of Earth",
+      url: "https://www.youtube.com/embed/zwA8h7XyLZ4",
+    },
+    {
+      id: 2,
+      title: "Ocean Research, Monsoon Prediction & Blue Economy",
+      url: "https://www.youtube.com/embed/5TmrERR819o",
+    },
+  ],
+  wildlife_biologist: [
+    {
+      id: 1,
+      title: "Wildlife Biologist Career Overview - The Voice of the Wild",
+      url: "https://www.youtube.com/embed/K3oAXHOUKzE",
+    },
+  ],
   actuarial_science: [
     {
       id: 1,
@@ -1009,6 +1064,633 @@ export const careerVideos: Record<string, CareerVideo[]> = {
       id: 2,
       title: "Smart Contracts, Web3 Development & Blockchain Future in India",
       url: "https://www.youtube.com/embed/ShoJmT3GWfk",
+    },
+  ],
+  data_scientist: [
+    {
+      id: 1,
+      title: "Data Scientist Career Overview - The Modern-Day Oracle",
+      url: "https://www.youtube.com/embed/a3RSa1U6ae8",
+    },
+    {
+      id: 2,
+      title: "Machine Learning, AI & Data Science Future in India",
+      url: "https://www.youtube.com/embed/XKlfQbxDOO0",
+    },
+  ],
+  electronics_communication_engineering: [
+    {
+      id: 1,
+      title: "Electronics & Communication Engineering Career Overview - The Architects of the Future",
+      url: "https://www.youtube.com/embed/N3I4CEJGMCMs",
+    },
+    {
+      id: 2,
+      title: "VLSI, 5G & Semiconductor Future in India",
+      url: "https://www.youtube.com/embed/Z3ruVE-uQFY",
+    },
+  ],
+  ethical_hacking: [
+    {
+      id: 1,
+      title: "Ethical Hacking Career Overview - The Digital Bodyguard",
+      url: "https://www.youtube.com/embed/GyOuh6eIPZY",
+    },
+    {
+      id: 2,
+      title: "Penetration Testing, Bug Bounty & Cybersecurity Future in India",
+      url: "https://www.youtube.com/embed/hEQM3SRWC54",
+    },
+  ],
+  gis_expert: [
+    {
+      id: 1,
+      title: "GIS Expert Career Overview - The Map Magicians",
+      url: "https://www.youtube.com/embed/xMwxvq19XxU",
+    },
+    {
+      id: 2,
+      title: "Satellite Mapping, Smart Cities & Geospatial Future in India",
+      url: "https://www.youtube.com/embed/UKoj5xoyfDQ",
+    },
+  ],
+  internet_of_things: [
+    {
+      id: 1,
+      title: "IoT Career Overview - The Magicians of Connected Things",
+      url: "https://www.youtube.com/embed/jqae_v4bx5w",
+    },
+    {
+      id: 2,
+      title: "Smart Devices, 5G & IoT Future in India",
+      url: "https://www.youtube.com/embed/RtnJ7roVmYM",
+    },
+  ],
+  it_business_analyst: [
+    {
+      id: 1,
+      title: "IT Business Analyst Career Overview - The Bridge Builder",
+      url: "https://www.youtube.com/embed/FY69oncFXQE",
+    },
+    {
+      id: 2,
+      title: "Business Analysis, Product Management & Digital Transformation in India",
+      url: "https://www.youtube.com/embed/FP0rOvPwMdQ",
+    },
+  ],
+  it_project_manager: [
+    {
+      id: 1,
+      title: "IT Project Manager Career Overview - The Captain of the Ship",
+      url: "https://www.youtube.com/embed/qrVikzCXkq0",
+    },
+    {
+      id: 2,
+      title: "Project Manager vs Product Manager & Leadership in India",
+      url: "https://www.youtube.com/embed/azaeoANOLWA",
+    },
+  ],
+  mobile_app_developer: [
+    {
+      id: 1,
+      title: "Mobile App Developer Career Overview - The Architects of the Pocket",
+      url: "https://www.youtube.com/embed/tZTzidVpZ6c",
+    },
+    {
+      id: 2,
+      title: "Flutter vs Native Development & Mobile App Future in India",
+      url: "https://www.youtube.com/embed/x-8tqQj0Igk",
+    },
+  ],
+  software_engineer: [
+    {
+      id: 1,
+      title: "Software Engineer Career Overview - The Code to Your Future",
+      url: "https://www.youtube.com/embed/KMtaud07YEo",
+    },
+    {
+      id: 2,
+      title: "Day in the Life of a Software Engineer in Bangalore",
+      url: "https://www.youtube.com/embed/IMl-opomOgU",
+    },
+  ],
+  software_testing_qa: [
+    {
+      id: 1,
+      title: "Software Testing & QA Career Overview - The Digital Detectives",
+      url: "https://www.youtube.com/embed/B_3J4nJ3uOg",
+    },
+    {
+      id: 2,
+      title: "SDET, Automation & QA Future in India",
+      url: "https://www.youtube.com/embed/KMAp1iSM7S0",
+    },
+  ],
+  video_game_designer: [
+    {
+      id: 1,
+      title: "Video Game Designer Career Overview - Creating Digital Worlds",
+      url: "https://www.youtube.com/embed/rJ1iA-33fss",
+    },
+    {
+      id: 2,
+      title: "Game Design in India - From Concept to Console",
+      url: "https://www.youtube.com/embed/iohbl9IpPgA",
+    },
+  ],
+  anthropologist: [
+    {
+      id: 1,
+      title: "Anthropologist Career Overview - Understanding Human Diversity",
+      url: "https://www.youtube.com/embed/mWCNjRjb4aw",
+    },
+    {
+      id: 2,
+      title: "Anthropology in India - Preserving Cultural Heritage",
+      url: "https://www.youtube.com/embed/FXuqUOXX4WY",
+    },
+  ],
+  archaeologist: [
+    {
+      id: 1,
+      title: "Archaeologist Career Overview - Uncovering the Past",
+      url: "https://www.youtube.com/embed/5Cr6VUboOr0",
+    },
+    {
+      id: 2,
+      title: "Archaeology in India - Discovering Ancient Civilizations",
+      url: "https://www.youtube.com/embed/Hry0qO3oA7w",
+    },
+  ],
+  airhostess: [
+    {
+      id: 1,
+      title: "Air Hostess Career Overview - Safety and Service at 35,000 Feet",
+      url: "https://www.youtube.com/embed/IZgxgimlWH8",
+    },
+    {
+      id: 2,
+      title: "Aviation Career in India - The Sky's Professional",
+      url: "https://www.youtube.com/embed/1NHPoRUsDds",
+    },
+  ],
+  culinary_arts: [
+    {
+      id: 1,
+      title: "Culinary Arts Career Overview - The Art and Science of Food",
+      url: "https://www.youtube.com/embed/bGDMOwvEjLw",
+    },
+    {
+      id: 2,
+      title: "Chef Career in India - From Kitchen to Global Stage",
+      url: "https://www.youtube.com/embed/tQkI7zgbn78",
+    },
+  ],
+  event_planner: [
+    {
+      id: 1,
+      title: "Event Planning Career Overview - The Architect of Experiences",
+      url: "https://www.youtube.com/embed/I8tLqq9iqv0",
+    },
+    {
+      id: 2,
+      title: "Event Planning in India - Creating Unforgettable Moments",
+      url: "https://www.youtube.com/embed/HxCsd0oYYVs",
+    },
+  ],
+  hotel_management: [
+    {
+      id: 1,
+      title: "Hotel Management Career Overview - The CEO of Hospitality",
+      url: "https://www.youtube.com/embed/aRjXaBQibmI",
+    },
+    {
+      id: 2,
+      title: "Hotel Management in India - Creating Guest Experiences",
+      url: "https://www.youtube.com/embed/aM-7IIOsDWQ",
+    },
+  ],
+  travel_and_tourism: [
+    {
+      id: 1,
+      title: "Travel and Tourism Career Overview - Designer of Adventures",
+      url: "https://www.youtube.com/embed/o6GgQPiX-TA",
+    },
+    {
+      id: 2,
+      title: "Travel and Tourism in India - Enabling Experiences",
+      url: "https://www.youtube.com/embed/NVgmdhDxPbw",
+    },
+  ],
+  wedding_planner: [
+    {
+      id: 1,
+      title: "Wedding Planning Career Overview - Architect of Happily Ever After",
+      url: "https://www.youtube.com/embed/lw9vvSpgyQU",
+    },
+    {
+      id: 2,
+      title: "Wedding Planning in India - Creating Cherished Moments",
+      url: "https://www.youtube.com/embed/EpCZrRczHDw",
+    },
+  ],
+  alternative_medicine: [
+    {
+      id: 1,
+      title: "Alternative Medicine Career Overview - Healer of Nature",
+      url: "https://www.youtube.com/embed/tl9e4AVFfAE",
+    },
+    {
+      id: 2,
+      title: "AYUSH Careers in India - Healing Through Nature's Wisdom",
+      url: "https://www.youtube.com/embed/Vf15QtNbK8k",
+    },
+    {
+      id: 3,
+      title: "Alternative Medicine - Bridging Ancient Wisdom and Modern Science",
+      url: "https://www.youtube.com/embed/433t8-kGe5A",
+    },
+  ],
+  audiologist: [
+    {
+      id: 1,
+      title: "Audiologist Career Overview - The Science of Sound and Balance",
+      url: "https://www.youtube.com/embed/EAmxL45mRgE",
+    },
+    {
+      id: 2,
+      title: "Hearing Aids, Cochlear Implants & Life-Changing Technology",
+      url: "https://www.youtube.com/embed/rP1GHHEbixY",
+    },
+  ],
+  dentist: [
+    {
+      id: 1,
+      title: "Dentist Career Overview - The Architect of Smiles",
+      url: "https://www.youtube.com/embed/lvHVmP5iEpw",
+    },
+    {
+      id: 2,
+      title: "Cosmetic Dentistry, Implants & Digital Smile Design",
+      url: "https://www.youtube.com/embed/BrzKN_PJ8X4",
+    },
+    {
+      id: 3,
+      title: "Dental Specializations & Career Opportunities",
+      url: "https://www.youtube.com/embed/ttf_yn5bNbA",
+    },
+  ],
+  dietician: [
+    {
+      id: 1,
+      title: "Dietician Career Overview - The Architect of Health Through Food",
+      url: "https://www.youtube.com/embed/GHcZ7833BV0",
+    },
+    {
+      id: 2,
+      title: "Nutrition Science, Sports Nutrition & Wellness Coaching",
+      url: "https://www.youtube.com/embed/cSdHJHSVhFE",
+    },
+    {
+      id: 3,
+      title: "Nutrigenomics, AI Integration & Future of Nutrition",
+      url: "https://www.youtube.com/embed/5GIwXzPt3PM",
+    },
+  ],
+  general_physician: [
+    {
+      id: 1,
+      title: "General Physician Career Overview - The Guardian of First Contact",
+      url: "https://www.youtube.com/embed/xBkZe-GNIRM",
+    },
+    {
+      id: 2,
+      title: "MBBS, MD Specialization & Medical Career Pathways",
+      url: "https://www.youtube.com/embed/tdFGxIeG-o4",
+    },
+  ],
+  homeopathy: [
+    {
+      id: 1,
+      title: "Homeopathy Career Overview - The Art of Individualized Healing",
+      url: "https://www.youtube.com/embed/gVqcySApvZ0",
+    },
+    {
+      id: 2,
+      title: "Case-Taking, Materia Medica & Homeopathic Principles",
+      url: "https://www.youtube.com/embed/VSpbMiwmVx4",
+    },
+    {
+      id: 3,
+      title: "BHMS Education, Career Opportunities & Global Demand",
+      url: "https://www.youtube.com/embed/oWvQ22oF9G8",
+    },
+  ],
+  hospital_management: [
+    {
+      id: 1,
+      title: "Hospital Management Career Overview - The Architects of Healthcare",
+      url: "https://www.youtube.com/embed/J2aRx-2NAOE",
+    },
+    {
+      id: 2,
+      title: "MHA, MBA Healthcare & Healthcare Administration Careers",
+      url: "https://www.youtube.com/embed/Kc0FNH0HzZ8",
+    },
+  ],
+  medical_diagnostic_services: [
+    {
+      id: 1,
+      title: "Medical Diagnostic Services Career Overview - The Detectives of Healthcare",
+      url: "https://www.youtube.com/embed/yV8FGTrkRZ0",
+    },
+    {
+      id: 2,
+      title: "DMLT, B.Sc. MLT & Diagnostic Technology Careers",
+      url: "https://www.youtube.com/embed/Ovbe9lnLyrc",
+    },
+  ],
+  medical_transcription: [
+    {
+      id: 1,
+      title: "Medical Transcription Career Overview - The Silent Scribes of Healthcare",
+      url: "https://www.youtube.com/embed/QbeCOWOEi5M",
+    },
+    {
+      id: 2,
+      title: "MT Diploma, AHDI Certification & Remote Work Opportunities",
+      url: "https://www.youtube.com/embed/cL-pcUQkcuo",
+    },
+  ],
+  nurse_medical_assistant: [
+    {
+      id: 1,
+      title: "Nursing Career Overview - The Heartbeat of Healthcare",
+      url: "https://www.youtube.com/embed/9WqwmAYktAQ",
+    },
+    {
+      id: 2,
+      title: "ANM, GNM, B.Sc. Nursing & International Opportunities",
+      url: "https://www.youtube.com/embed/4bDw80g4YQ8",
+    },
+  ],
+  operation_theatre_technician: [
+    {
+      id: 1,
+      title: "OT Technician Career Overview - The Invisible Heroes of Surgery",
+      url: "https://www.youtube.com/embed/ndqK-rnrVmA",
+    },
+    {
+      id: 2,
+      title: "DOTT, B.Sc. OT Technology & Robotic Surgery Careers",
+      url: "https://www.youtube.com/embed/HB79LttplFQ",
+    },
+  ],
+  optometry: [
+    {
+      id: 1,
+      title: "Optometry Career Overview - The Visionaries of Healthcare",
+      url: "https://www.youtube.com/embed/ivrgSeiEl2Y",
+    },
+    {
+      id: 2,
+      title: "B.Optom Course Details & Vision Care Career Opportunities",
+      url: "https://www.youtube.com/embed/_Hb_otWjfG8",
+    },
+  ],
+  pharmacist: [
+    {
+      id: 1,
+      title: "Pharmacist Career Overview - The Master of Molecules",
+      url: "https://www.youtube.com/embed/23M4ZBMab60",
+    },
+    {
+      id: 2,
+      title: "B.Pharm, M.Pharm & Pharmaceutical Industry Careers",
+      url: "https://www.youtube.com/embed/hVw1sgXFNQA",
+    },
+  ],
+  public_healthcare_administration: [
+    {
+      id: 1,
+      title: "Public Healthcare Administration Career Overview - Architects of Healthy Nations",
+      url: "https://www.youtube.com/embed/-0TwvSx6a9I",
+    },
+  ],
+  medical_radiology_technician: [
+    {
+      id: 1,
+      title: "Medical Radiology Technician Career Overview - The Invisible Detectives",
+      url: "https://www.youtube.com/embed/yxBtXkERNH4",
+    },
+    {
+      id: 2,
+      title: "X-Ray, CT, MRI & Imaging Technology Careers",
+      url: "https://www.youtube.com/embed/KIVQLvzH368",
+    },
+  ],
+  therapy_science: [
+    {
+      id: 1,
+      title: "Therapy Science Career Overview - The Architects of Recovery",
+      url: "https://www.youtube.com/embed/heNQ3ZzlLrM",
+    },
+    {
+      id: 2,
+      title: "Physiotherapy, Occupational Therapy & Mental Health Careers",
+      url: "https://www.youtube.com/embed/sDQdfEMtDkQ",
+    },
+  ],
+  corporate_trainer: [
+    {
+      id: 1,
+      title: "Corporate Trainer Career Overview - The Catalyst of Growth",
+      url: "https://www.youtube.com/embed/C_qFC5NF9X8",
+    },
+  ],
+  image_consultant: [
+    {
+      id: 1,
+      title: "Image Consultant Career Overview - The Architect of Presence",
+      url: "https://www.youtube.com/embed/q6BwwXJLhwE",
+    },
+  ],
+  librarian_and_education_administration: [
+    {
+      id: 1,
+      title: "Librarian Career Overview - The Information Alchemist",
+      url: "https://www.youtube.com/embed/9WX3sBt_Uck",
+    },
+    {
+      id: 2,
+      title: "Education Administration & Library Management",
+      url: "https://www.youtube.com/embed/YOcEWTFF1_M",
+    },
+    {
+      id: 3,
+      title: "Digital Libraries & Information Science",
+      url: "https://www.youtube.com/embed/ZTdE3wfakio",
+    },
+  ],
+  professor: [
+    {
+      id: 1,
+      title: "Professor Career Overview - Architect of Minds",
+      url: "https://www.youtube.com/embed/18nnZ0wcwu8",
+    },
+    {
+      id: 2,
+      title: "Career as a Professor: Eligibility and Salary",
+      url: "https://www.youtube.com/embed/x1ZrGvleCXI",
+    },
+  ],
+  school_teacher: [
+    {
+      id: 1,
+      title: "School Teacher Career Overview - The Nation Builder",
+      url: "https://www.youtube.com/embed/68mqDbJkv2A",
+    },
+    {
+      id: 2,
+      title: "Teacher Training and Eligibility in India 2026",
+      url: "https://www.youtube.com/embed/V8WfZ_ra3ek",
+    },
+  ],
+  technical_trainer: [
+    {
+      id: 1,
+      title: "Technical Trainer Career Overview - The Skill Architect",
+      url: "https://www.youtube.com/embed/placeholder1",
+    },
+  ],
+  bpo: [
+    {
+      id: 1,
+      title: "BPO Career Overview - The Global Engine",
+      url: "https://www.youtube.com/embed/7L4mokvB1jU",
+    },
+    {
+      id: 2,
+      title: "BPO Industry Growth and Career Opportunities in India",
+      url: "https://www.youtube.com/embed/BubEjtvjNJQ",
+    },
+  ],
+  business_analytics: [
+    {
+      id: 1,
+      title: "Business Analytics Career Overview - The Data Detective",
+      url: "https://www.youtube.com/embed/5MCPe0NY4q4",
+    },
+    {
+      id: 2,
+      title: "Data Analytics Career Path and Salary in India",
+      url: "https://www.youtube.com/embed/BwxJaS9pm98",
+    },
+    {
+      id: 3,
+      title: "Business Analytics Skills and Job Opportunities",
+      url: "https://www.youtube.com/embed/GNgeQ4H9QB0",
+    },
+  ],
+  business_financial_management: [
+    {
+      id: 1,
+      title: "Business Financial Management Career Overview - The Engine of Growth",
+      url: "https://www.youtube.com/embed/5XILI2TnrPk",
+    },
+    {
+      id: 2,
+      title: "Financial Strategy & Corporate Finance in India",
+      url: "https://www.youtube.com/embed/96VY-9__yrI",
+    },
+  ],
+  business_operations_manager: [
+    {
+      id: 1,
+      title: "Business Operations Manager Career Overview - The Master Orchestrator",
+      url: "https://www.youtube.com/embed/XUxgmo_ozjU",
+    },
+    {
+      id: 2,
+      title: "Operations Management & Process Optimization in India",
+      url: "https://www.youtube.com/embed/lqQA7U0EcUg",
+    },
+  ],
+  fashion_management: [
+    {
+      id: 1,
+      title: "Fashion Management Career Overview - The Style Architect",
+      url: "https://www.youtube.com/embed/6Ivvkp4WMOQ",
+    },
+    {
+      id: 2,
+      title: "Fashion Retail & E-commerce Management in India",
+      url: "https://www.youtube.com/embed/zaml2MNNqyw",
+    },
+  ],
+  human_resources: [
+    {
+      id: 1,
+      title: "Human Resources Career Overview - The People Powerhouse",
+      url: "https://www.youtube.com/embed/aBifB6tGay0",
+    },
+    {
+      id: 2,
+      title: "HR Management & Talent Acquisition in India",
+      url: "https://www.youtube.com/embed/cJ1M2YGiBSU",
+    },
+    {
+      id: 3,
+      title: "Employee Relations & Organizational Development",
+      url: "https://www.youtube.com/embed/EKxbMZDk0EU",
+    },
+  ],
+  international_business: [
+    {
+      id: 1,
+      title: "International Business Career Overview - The Global Bridge",
+      url: "https://www.youtube.com/embed/jTLX0V8l1w8",
+    },
+    {
+      id: 2,
+      title: "Global Trade & International Expansion in India",
+      url: "https://www.youtube.com/embed/-n-r0I4lOh0",
+    },
+  ],
+  it_management: [
+    {
+      id: 1,
+      title: "IT Management Career Overview - The Digital Architect",
+      url: "https://www.youtube.com/embed/bSsnjFzaNK8",
+    },
+    {
+      id: 2,
+      title: "IT Leadership & Digital Transformation in India",
+      url: "https://www.youtube.com/embed/N_ya6gWM7Ro",
+    },
+  ],
+  project_management: [
+    {
+      id: 1,
+      title: "Project Management Career Overview - The Master Strategist",
+      url: "https://www.youtube.com/embed/hiDOu4L5Lvo",
+    },
+    {
+      id: 2,
+      title: "Project Leadership & Delivery Excellence in India",
+      url: "https://www.youtube.com/embed/IYV3XgG1Zks",
+    },
+  ],
+  retail_management: [
+    {
+      id: 1,
+      title: "Retail Management Career Overview - The Retail Revolution",
+      url: "https://www.youtube.com/embed/vVfCC7t1ohY",
+    },
+    {
+      id: 2,
+      title: "Retail Leadership & Store Operations in India",
+      url: "https://www.youtube.com/embed/qetB7DIQX-A",
     },
   ],
 };

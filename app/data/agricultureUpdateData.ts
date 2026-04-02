@@ -2124,6 +2124,273 @@ export const agricultureUpdateData: Record<string, CareerPageData> = {
         ]
       }
     ]
+  },
+  environmental_scientist: {
+    slug: "environmental_scientist",
+    badge: "🌍 The Earth's Detective for Class 10+",
+    heading: "Environmental Scientist",
+    subheading: "Solve crimes against nature. Protect air, water, and soil. Join India's fastest-growing field with 8% CAGR and massive demand from ESG-focused companies.",
+    whyCards: [
+      { icon: "Leaf", title: "8% Market CAGR", description: "India Environmental Testing market reaching $1.6B by 2030. Rapid growth in pollution control and ESG compliance.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "₹4L–₹1.5Cr+ Salaries", description: "Entry-level ₹4L–₹7L. Senior specialists ₹20L–₹35L+. Leadership roles ₹50L–₹1.5Cr+ in MNCs.", borderColor: "#059669" },
+      { icon: "Globe", title: "Global Opportunities", description: "High demand in World Bank, UN Environment Programme, and international climate NGOs.", borderColor: "#3B82F6" },
+      { icon: "Award", title: "AI & Satellite Tech Future", description: "Work with AI to spot forest fires, illegal mining from space. Carbon markets creating new jobs.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3-4 Years (B.Sc./B.Tech)", color: "bg-green-100 text-green-700" },
+      { label: "Entry Exam", detail: "CUET-UG, State Exams, GATE", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹1.5Cr+ per annum", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$1.6B", label: "India Environmental Testing Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "8%", label: "Market CAGR", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Solving crimes against nature and protecting the environment.",
+        color: RED,
+        content: [
+          "Environmental Scientist Definition: A specialist who studies physical, chemical, and biological parts of environment to protect it and us. A detective solving crimes against nature.",
+          "The Role: The Field Detective (collect samples from soil, air, water), The Lab Analyst (use chemicals and technology to find hidden pollutants), The Compliance Expert (compare results with India's environmental laws), The Solution Architect (recommend ways to fix damage or prevent it).",
+          "What They Do: Conduct site assessments, perform lab analysis, check compliance with environmental laws, write Environmental Impact Assessment (EIA) reports, recommend mitigation strategies, monitor pollution levels.",
+          "Why It Matters: India facing rapid urbanization challenges—air pollution in Delhi, water scarcity in Bengaluru, Western Ghats protection. Environmental Scientists don't just identify problems; they find solutions.",
+          "The Scope: Work in government pollution control boards, private environmental consultancies, energy companies, green-tech startups, or international organizations.",
+          "The Impact: You're guardians of our future, ensuring that as India progresses, our air, water, and soil remain healthy for generations to come."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Earth's Detective",
+        icon: "Clock",
+        description: "Real workflow of an environmental scientist.",
+        color: RED2,
+        content: [
+          "8:00 AM - The Field Call: Start day not at desk, but at edge of local lake. Dressed in waterproof boots and carrying mobile lab kit, collect water samples from three different spots. Investigating tip about illegal chemical discharge.",
+          "11:30 AM - Laboratory Deep-Dive: Back at firm's high-tech lab. Meticulously test water samples for pH levels, heavy metals, and oxygen content. Wear white lab coat and safety goggles, look into microscope to identify harmful microorganisms.",
+          "2:00 PM - The Data Puzzle: After lunch, sit at computer. Use GIS (Geographic Information System) software to map where pollution is moving in lake. Compare today's data with last month's records. It's a puzzle—find exact source.",
+          "4:30 PM - The Strategy Meeting: Meet with senior Environmental Engineer and legal expert. Present findings. Discuss how to help nearby factory update waste-treatment plant so lake stays clean. Explain data clearly so everyone understands risk.",
+          "7:00 PM - Research & Learning: Before heading home, read new government notification about India's updated Plastic Waste Management rules. In this field, rules change as we find better ways to protect Earth. Staying updated is part of job."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Green DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: RED,
+        content: [
+          "Personality Traits: Curiosity (always ask 'Why is this river turning brown?' or 'How does forest survive drought?'), Analytical Thinking (break big problem into small pieces, look at facts), Patience (scientific research takes time—test 100 samples before finding answer), Ethics (care deeply about truth and doing right for planet).",
+          "Soft Skills: Communication (explain complex science to non-scientists like politicians or factory owners), Problem-Solving (creative solutions for environmental challenges), Resilience (handle frustration when business interests conflict with environmental needs), Leadership (guide teams toward sustainable solutions).",
+          "Hard Skills: Knowledge of chemistry and biology, Understanding of GIS and data analysis, Lab analysis expertise, Environmental law knowledge, Technical proficiency with monitoring equipment.",
+          "The Self-Check: Do you always ask 'Why?' about environmental issues? Can you break down complex problems? Do you have patience for long-term research? If yes, you have the Green DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Diagnostic Workflow",
+        icon: "Briefcase",
+        description: "The complete environmental science cycle.",
+        color: RED2,
+        content: [
+          "Site Assessment: Visiting location to observe and collect samples of soil, air, or water. Understanding environmental conditions.",
+          "Lab Analysis: Using chemicals and technology to find hidden pollutants. Identifying contaminants and their concentrations.",
+          "Compliance Check: Comparing results with India's environmental laws (CPCB standards). Ensuring regulatory compliance.",
+          "Reporting: Writing detailed 'Environmental Impact Assessment' (EIA) report. Documenting findings comprehensively.",
+          "Mitigation: Recommending ways to fix damage or prevent it in future. Proposing solutions and strategies.",
+          "Monitoring: Tracking pollution levels over time. Ensuring effectiveness of mitigation measures.",
+          "Collaboration: Working with engineers, lawyers, and government officials. Ensuring holistic environmental protection.",
+          "Documentation: Maintaining detailed records of all assessments and findings. Ensuring traceability and accountability."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: RED,
+        content: [
+          "After Class 10: Focus on Science (PCB or PCM). This is mandatory for environmental science degrees. Board Exams (Focus: Chemistry and Biology).",
+          "After Class 12 (Science): Enroll in 3-year B.Sc. Environmental Science or 4-year B.Tech Environmental Engineering. Entrance Exams: CUET-UG, State-level entrance exams.",
+          "After Graduation: Specialize for higher pay and career advancement. Pursue M.Sc. or M.Tech in specialized areas like Climate Science, Toxicology, or Environmental Management. Entrance Exams: GATE, UGC-NET.",
+          "Top Institutions: Jawaharlal Nehru University (JNU) Delhi, Banaras Hindu University (BHU) Varanasi, Indian Institute of Science (IISc) Bengaluru, IIT Bombay & IIT Kanpur, Anna University Chennai.",
+          "Specializations: Climate Science, Toxicology, Waste Management, Water Resources, Air Quality Management, Environmental Impact Assessment."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: RED2,
+        content: [
+          "Entry-Level (0-2 years): ₹4L–₹7L per annum. Government pollution control boards or private consultancies.",
+          "Mid-Level (5-10 years): ₹12L–₹18L per annum. Senior positions in consultancies or government agencies.",
+          "Senior-Level (10+ years): ₹20L–₹35L per annum. Leading environmental departments or consultancies.",
+          "Leadership/CXO (Sustainability Head): ₹50L–₹1.5Cr+ per annum. Common in MNCs with strong ESG goals.",
+          "Metro vs. Tier-2: Metros (Delhi, Mumbai, Bengaluru) highest salaries. Tier-2/3 (Vapi, Kanpur, Nagpur) growing demand in industrial hubs.",
+          "Market Size: India Environmental Testing market expected to reach $1.6B by 2030, growing at 8% annually.",
+          "Growth Trajectory: Entry to Senior Specialist takes 8-12 years with consistent experience and specialization."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: RED,
+        content: [
+          "Public Sector: Central and State Pollution Control Boards (CPCB/SPCB), Ministry of Environment (MoEFCC), National Environmental Engineering Research Institute (NEERI).",
+          "Private Sector: Environmental Consultancies (EY, PwC, Tata Projects), Energy companies (NTPC, Reliance), Green Tech startups.",
+          "International: World Bank, UN Environment Programme (UNEP), global climate change NGOs, international development organizations.",
+          "Emerging Opportunities: Carbon Accounting Specialist, Climate Modeler (using AI), Sustainability Manager, ESG Consultant, Waste-to-Wealth Entrepreneur.",
+          "Freelancing: High demand for environmental audits and compliance consulting. Remote opportunities in data analysis.",
+          "Entrepreneurship: Starting waste-to-wealth startup, green-audit agency, or environmental consulting firm."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and training costs.",
+        color: RED2,
+        content: [
+          "Government Institutions: ₹15,000–₹60,000 (Total 3-year B.Sc. fees). Very affordable but highly competitive.",
+          "Private Institutions: ₹2L–₹6L (Total 3-year B.Sc. fees). Better infrastructure and placement support.",
+          "Living Costs: ₹12,000–₹20,000 per month in cities like Delhi or Pune.",
+          "Additional Costs: Certifications in GIS or Carbon Accounting (₹5k–₹20k), entrance coaching (₹20k–₹50k), lab equipment (₹10k–₹20k).",
+          "Total Investment: Approximately ₹8L–₹18L for complete degree.",
+          "ROI: With entry-level salaries of ₹4L–₹7L per annum, you can recover investment in 2-3 years. Senior positions ROI much faster."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top environmental science institutes across India.",
+        color: RED,
+        content: [
+          "Government/Premier: Jawaharlal Nehru University (JNU) Delhi, Banaras Hindu University (BHU) Varanasi, Indian Institute of Science (IISc) Bengaluru, IIT Bombay, IIT Kanpur.",
+          "South: Anna University Chennai, University of Madras, Manipal Academy of Higher Education.",
+          "East: Jadavpur University Kolkata, University of Calcutta.",
+          "Private: Amity University Noida, TERI School of Advanced Studies Delhi, Lovely Professional University (LPU).",
+          "Note: Choose institutes with strong faculty, modern lab facilities, field exposure, and industry connections."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: RED2,
+        content: [
+          "Central: NSP (National Scholarship Portal) schemes for meritorious students. Post-matric and merit-cum-means scholarships.",
+          "Fellowships: UGC-NET JRF provides monthly stipend of approx. ₹37,000 for Ph.D. students. CSIR-NET JRF for research positions.",
+          "Private: British Council Scholarships for Women in STEM, Tata Trusts scholarships for developmental studies.",
+          "Merit-Based: Most institutes offer scholarships for top entrance exam performers.",
+          "Government Sponsorships: Ministry of Environment occasionally sponsors students for specialized environmental training."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Professional organizations and credentials.",
+        color: RED,
+        content: [
+          "QCI (Quality Council of India): For NABET accreditation (essential for EIA consultants). Mandatory for environmental consultancy firms.",
+          "LEED Certification: If you want to specialize in 'Green Buildings.' Globally recognized credential.",
+          "ISO 14001 Auditor: Globally recognized certification for environmental management systems. High demand in industry.",
+          "Professional Memberships: Indian Association of Environmental Professionals, Environmental Engineers Association.",
+          "Continuing Education: Must stay updated on latest environmental regulations and technologies. Annual professional development required."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in environmental science careers.",
+        color: RED2,
+        content: [
+          "Conventional Careers: Environmental Consultant, Pollution Control Officer, Waste Management Specialist, Environmental Auditor, EIA Specialist.",
+          "New-Age Careers: Sustainability Manager (Carbon footprint expert), Climate Modeler (using AI to predict weather), Ecotoxicologist, Carbon Accountant, ESG Consultant.",
+          "Entrepreneurship: Starting waste-to-wealth startup, green-audit agency, environmental consulting firm, or sustainability consulting business.",
+          "Freelancing: Environmental audits, compliance consulting, data analysis, research writing, environmental impact assessments.",
+          "Specialized Roles: Air Quality Specialist, Water Resources Manager, Soil Scientist, Environmental Health Officer, Climate Change Analyst."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of environmental science.",
+        color: RED,
+        content: [
+          "Slow Impact: Environmental change takes years. You may not see your results immediately. Patience essential.",
+          "Policy Hurdles: Sometimes business interests conflict with environmental needs, requiring tough negotiations.",
+          "Field Hardships: You might have to visit remote areas with no basic facilities to collect data. Physical demands high.",
+          "Bureaucratic Delays: Government approvals and policy changes can be slow. Frustration common.",
+          "Limited Resources: Many organizations underfunded. You may work with limited equipment and budget.",
+          "Emotional Toll: Seeing environmental destruction can be emotionally draining. Self-care important.",
+          "Competitive Field: Growing number of environmental professionals. Need to differentiate through specialization.",
+          "Continuous Learning: Must stay updated on latest environmental regulations, technologies, and research. Ongoing professional development required."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in environmental science.",
+        color: RED2,
+        content: [
+          "AI & Satellite Tech: Use AI to spot forest fires or illegal mining from space in real-time. Satellite monitoring becoming standard.",
+          "Carbon Markets: Companies will 'buy and sell' air quality, creating thousands of jobs for Carbon Accountants. New economic model emerging.",
+          "Circular Economy: Designing products that never become waste—everything will be recycled. Zero-waste future.",
+          "Climate Modeling: Advanced AI models predicting climate impacts with precision. Predictive environmental management.",
+          "Precision Monitoring: Real-time environmental monitoring through IoT sensors and wearables. Data-driven decisions.",
+          "Global Standardization: International environmental standards becoming more stringent. Global opportunities increasing.",
+          "Green Tech Innovation: Rapid development of clean energy and environmental remediation technologies. New career paths emerging.",
+          "ESG Integration: Companies integrating Environmental, Social, Governance goals. Massive demand for ESG consultants."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: RED,
+        content: [
+          "Science Mastery: Focus on Chemistry and Biology. Build strong foundation in environmental sciences.",
+          "Learn GIS: Start exploring Google Earth Pro for free to understand mapping and spatial analysis.",
+          "Eco-Clubs: Join or start green club in school to practice leadership and environmental advocacy.",
+          "Read Up: Follow 'Centre for Science and Environment' (CSE) or Down to Earth magazine. Stay informed on environmental issues.",
+          "Data Analysis: Learn basic Excel and data visualization. Environmental work is increasingly data-driven.",
+          "Field Work: Volunteer for environmental NGOs or local cleanup drives. Gain practical field experience.",
+          "Tech Skills: Learn basic coding and GIS software. Technical skills increasingly important.",
+          "Research Interest: Read research papers on environmental science. Understand evidence-based approach.",
+          "Networking: Connect with environmental professionals and organizations. Learn about different career paths.",
+          "Entrance Prep: Start early preparation for entrance exams (CUET, State exams). Join coaching if needed."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Environmental Pioneers",
+        icon: "User",
+        description: "Inspiring figures in the field.",
+        color: RED2,
+        content: [
+          "Sunderlal Bahuguna: Leader of Chipko Movement who taught world that trees are worth more than gold. Environmental activism pioneer.",
+          "Medha Patkar: Woman behind Narmada Bachao Andolan, fighting for both nature and people. Social-environmental justice advocate.",
+          "Salim Ali: The 'Birdman of India' who pioneered nature conservation and ornithology. Founder of Bombay Natural History Society.",
+          "Rajendra Singh: The 'Waterman of India' who revived dead rivers in Rajasthan using traditional methods. Water conservation hero.",
+          "M.S. Swaminathan: Known as 'Father of Green Revolution,' combined agricultural science with environmental care. Sustainable agriculture pioneer.",
+          "Vandana Shiva: Environmental activist and physicist fighting for biodiversity and farmers' rights. Global environmental leader.",
+          "Anil Agarwal: Founder of Centre for Science and Environment (CSE). Environmental journalism and advocacy pioneer."
+        ]
+      }
+    ]
   }
 };
 
