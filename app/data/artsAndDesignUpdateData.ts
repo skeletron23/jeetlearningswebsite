@@ -10743,6 +10743,257 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       }
     ]
+  },
+  blockchain_engineer: {
+    slug: "blockchain_engineer",
+    badge: "⛓️ The Architect of Trust for Class 10+",
+    heading: "Blockchain Engineer",
+    subheading: "Building unchangeable digital systems—creating trust machines that power the decentralized future.",
+    whyCards: [
+      { icon: "TrendingUp", title: "40-50% CAGR Growth", description: "Indian blockchain sector growing at massive rate. Huge talent gap with massive opportunity.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Global Remote Opportunities", description: "Earn San Francisco salaries from Indore. One of the most remote-friendly careers.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "Highest-Paying Tech Career", description: "₹6L–₹1Cr+ annually. Web3 salaries often higher than traditional IT.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "Future of Finance & Trust", description: "CBDCs, tokenization, DeFi—blockchain is reshaping how the world moves value.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) or 6-12 Months (Bootcamp)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Solidity, Rust, Web3.js, Ethereum, Polygon", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹6L–₹1Cr+ (Entry to Elite)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "40-50%", label: "Blockchain Sector CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "Global", label: "Remote Work Opportunities", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Building trust machines.",
+        color: BLUE,
+        content: [
+          "Blockchain Defined: Imagine if you could create a digital notebook that everyone can write in, but no one can ever erase or cheat. That, in simple terms, is a Blockchain.",
+          "The Role: A Blockchain Engineer is the architect who builds these unchangeable digital systems. They don't just build websites; they build 'Trust Machines.'",
+          "The Scope: They write code for systems where money, data, or contracts move directly between people without needing a middleman like a bank or a lawyer.",
+          "Why It Matters: In today's India, blockchain is being used to stop fake medicines in the supply chain, issue un-hackable education certificates (like by CBSE), and create new digital economies (Cryptocurrency and NFTs).",
+          "The Vision: You are not just a coder; you are building the 'Internet of Value' (Web3).",
+          "The Impact: You are creating systems that could reshape how the world handles trust, ownership, and transactions."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Dev, Smart Contract Engineer",
+        icon: "Clock",
+        description: "Real workflow at a Web3 gaming startup in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "10:00 AM - Stand-up Meeting: Dev starts his day with a 'Stand-up' meeting on Discord (not Zoom!). His team is building a game where players actually own the magic swords they win as NFTs.",
+          "11:30 AM - Deep Focus Mode: Dev is writing a Smart Contract in a language called Solidity. He is coding a rule: 'If Player A defeats the Dragon, automatically send 50 Gold Coins to their wallet.' He has to be extremely careful—if there is a bug here, hackers could steal millions.",
+          "1:30 PM - Lunch & Discussion: Lunch with his team. They argue passionately about the latest 'Crypto Crash' and whether 'Metaverse' land is a good investment. The conversation is fast and geeky.",
+          "3:00 PM - Security Audit: Dev performs a Security Audit. He tries to 'hack' his own code to find weaknesses. He realizes one loop is costing too much 'Gas' (transaction fee) and rewrites it to make it cheaper for users.",
+          "5:00 PM - Global Collaboration: He jumps on a call with a community of developers from Poland and Nigeria. Blockchain is global; he rarely works only with Indians.",
+          "7:00 PM - Continuous Learning: Work ends, but the learning doesn't. He spends an hour on Twitter (X) reading about a new blockchain update. In this field, if you stop reading for a week, you fall behind."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Blockchain Engineer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Cryptographer: You love secrets, codes, and solving riddles.",
+          "The Libertarian: You like the idea of systems that run without a 'boss' or a central authority.",
+          "The Perfectionist: You are careful. In blockchain, you can't just 'Control+Z' a mistake after deployment.",
+          "The Math Whiz: You enjoy logic and probability (essential for cryptography).",
+          "High Risk Appetite: You are okay with an industry that changes overnight.",
+          "Hard Skills: Strong programming (Python, JavaScript, Solidity), understanding of cryptography, and knowledge of distributed systems.",
+          "Soft Skills: Problem-solving, attention to detail, and ability to learn quickly.",
+          "The Self-Check: Do you love solving complex puzzles? Do you believe in decentralization? If yes, you have the Blockchain DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The blockchain development lifecycle.",
+        color: BLUE2,
+        content: [
+          "Architecture Design: Deciding which chain to use (Ethereum? Solana? Polygon?) based on speed and cost.",
+          "Smart Contract Development: Writing the self-executing code that runs the app. This code is immutable once deployed.",
+          "Frontend Integration: Connecting the blockchain backend to a website so normal people can use it (using tools like Web3.js).",
+          "Security Auditing: Rigorously testing code to prevent hacks. A single bug can cost millions.",
+          "Mainnet Deployment: The scary/exciting moment of launching the code to the live network.",
+          "Monitoring & Optimization: Continuously monitoring performance and optimizing gas fees and transaction speed."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is highly recommended. Mathematics is the backbone of blockchain. Tip: Start learning Python or JavaScript online immediately.",
+          "Step 2 - After Class 12: Undergraduate Degree (4 Years): B.Tech in Computer Science (CSE) (standard route), B.Tech with Specialization in Blockchain (offered by UPES, VIT, SRM). Entrance Exams: JEE Mains, BITSAT, VITEEE.",
+          "Step 3 - After Graduation: Specialized Certification (6 Months - 1 Year): Certified Blockchain Developer (from Blockchain Council), Bootcamps (e.g., Metacrafters, Alchemy University). Lateral Entry: If you are already a Software Engineer, you can switch to Blockchain by learning Solidity and Rust in 6 months.",
+          "Top Institutions: IIT Kanpur (C3i Hub), IIT Bombay, IIIT Hyderabad, Kerala Blockchain Academy, BITS Pilani, UPES Dehradun."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: Massive talent gap. India has one of the largest bases of crypto users but a shortage of core engineers.",
+          "Growth: The Indian blockchain sector is projected to grow at a massive CAGR of ~40-50%, driven by Fintech and Government adoption.",
+          "Entry-Level (0-2 Yrs): Jr. Smart Contract Dev, Solidity Intern: ₹6L–₹12L.",
+          "Mid-Level (3-7 Yrs): Blockchain Developer, dApp Engineer: ₹15L–₹30L.",
+          "Senior-Level (8-15 Yrs): Protocol Engineer, Lead Architect: ₹40L–₹80L+.",
+          "Elite/Global: Core Developer (Remote for US/EU firms): ₹1Cr+.",
+          "Remote Factor: This is one of the most 'remote-friendly' careers. A developer in Indore can easily earn a San Francisco salary."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Fintech & DeFi (CoinDCX, Zerodha exploring tech, Juspay), Tech Consulting (TCS, Infosys, Wipro have huge blockchain units), Supply Chain (Maersk, Walmart tracking goods), Web3 Startups (Polygon Matic, Push Protocol, Shardeum).",
+          "Top Cities: Bengaluru (Crypto Capital of India), Gurugram, Hyderabad, Pune.",
+          "Global Opportunities: Dubai and Singapore are hiring Indian blockchain talent aggressively.",
+          "Emerging Opportunities: CBDCs, DeFi protocols, NFT platforms, Metaverse development."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees: B.Tech: ₹4L–₹15L, Bootcamps/Online Courses: ₹0–₹1L (Many top Web3 resources like CryptoZombies are free!).",
+          "Tools: A decent laptop (MacBook preferred by devs) ~₹1L.",
+          "Gas Fees: You might spend ₹5,000–₹10,000 just experimenting with deploying code on mainnets during your learning phase.",
+          "ROI: With starting salaries of ₹6L+, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for blockchain in India.",
+        color: BLUE,
+        content: [
+          "Government: IIT Kanpur (known for blockchain research and cybersecurity), IIT Bombay (has active student Web3 clubs), IIIT Hyderabad (excellent research in distributed ledger technology), Kerala Blockchain Academy (KBA) (govt initiative offering specific diplomas).",
+          "Private: BITS Pilani (offers a PGP in Full Stack Engineering - Blockchain track), UPES Dehradun (B.Tech CSE Blockchain & IoT), Amity University (Blockchain specializations).",
+          "Online/Alternative: UpGrad/Simplilearn (professional certifications), 100xDevs/Superteam (community-led cohorts - often free and very high quality)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Web3 Grants: This is unique to this industry. Foundations like Polygon, Solana, or Ethereum Foundation give 'Grants' (free money) to students to build projects. This is better than a scholarship!",
+          "Developer DAOs: Communities like Developer DAO often sponsor memberships for students.",
+          "Standard Engineering Scholarships: AICTE Pragati (for girls), NSP.",
+          "Corporate Sponsorships: Some Web3 companies sponsor talented students.",
+          "Bounty Programs: Earn money by finding bugs in code (Bug Bounty Hunting)."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Certified Blockchain Expert (CBE) by Blockchain Council, ConsenSys Academy Ethereum Developer Course (Industry Gold Standard).",
+          "Communities: In Web3, your 'Professional Body' is the community. Joining Superteam India or Builders Tribe on Discord is essential.",
+          "Industry Recognition: GitHub contributions (showcase your work), Hackathon wins, Bug bounty hall of fame.",
+          "Continuing Education: Regular courses to stay updated with latest blockchain trends."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in blockchain careers.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Blockchain Developer (writing code for apps), Solutions Architect (designing the full system for a bank or hospital), Protocol Engineer (building blockchain protocols).",
+          "New-Age Careers: Token Economist (designing the 'money logic' for a new coin), Smart Contract Auditor (the 'Safety Inspector' who checks code for millions of dollars in bugs), Metaverse Architect (building virtual worlds).",
+          "Freelancing: 'Bounty Hunting' (finding bugs in code for rewards)—some Indian students earn lakhs just doing this on weekends!",
+          "Entrepreneurship: Starting a Web3 startup, building blockchain tools for specific industries."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of blockchain careers.",
+        color: BLUE,
+        content: [
+          "Volatility: The market crashes. A lot. You might get a job offer, and the next week the company runs out of money because crypto prices fell. Job security is lower than in TCS/Infosys.",
+          "Regulatory Grey Area: The Indian government's stance on crypto (the money) is strict, though they love blockchain (the tech). This creates some uncertainty.",
+          "Burnout: The technology changes so fast that you have to study every weekend to stay relevant.",
+          "High Responsibility: A single bug can cost millions. The pressure is immense.",
+          "Imposter Syndrome: The field is so new that everyone feels like they don't know enough.",
+          "Work-Life Balance: During market rallies or crashes, you might work around the clock."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of blockchain technology.",
+        color: BLUE2,
+        content: [
+          "CBDCs (Digital Rupee): The RBI is building the 'E-Rupee.' Blockchain engineers will be needed to build the banking infrastructure for this.",
+          "Blockchain + AI: Using blockchain to verify if a video is real or a 'Deepfake' made by AI.",
+          "Tokenization of Assets: By 2030, you might buy a 'share' of a flat in Mumbai on the blockchain instead of doing paper registration.",
+          "Interoperability: Different blockchains communicating seamlessly with each other.",
+          "Scalability Solutions: Layer 2 solutions and new consensus mechanisms making blockchain faster and cheaper.",
+          "Enterprise Adoption: Major corporations integrating blockchain into their core operations."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Learn to Code: Start with Python. Then try Solidity (the language of Ethereum).",
+          "Play with Metamask: Install a crypto wallet (ask your parents first!). Understand how transactions work.",
+          "Participate in Hackathons: Look for 'ETHIndia' or 'Solana Hackathons.' They often have tracks for school students.",
+          "Learn Cryptography Basics: Understand what 'Hashing' and 'Public/Private Keys' are.",
+          "Read Whitepapers: Start with Bitcoin and Ethereum whitepapers to understand the fundamentals.",
+          "Join Communities: Follow blockchain communities on Discord and Twitter to stay updated."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring blockchain leaders from India.",
+        color: BLUE2,
+        content: [
+          "Sandeep Nailwal: Co-founder of Polygon (Matic). He turned a small startup from India into a Top 20 global crypto project worth billions.",
+          "Nischal Shetty: Founder of WazirX and Shardeum. A pioneer who has fought for crypto regulation in India.",
+          "Sumit Gupta: Co-founder of CoinDCX, India's first crypto unicorn, focusing on making crypto safe and accessible.",
+          "Harsh Rajat: Founder of Push Protocol, innovating how notifications work on the decentralized web.",
+          "Tanvi Ratna: A policy expert and founder of Policy 4.0, advising governments globally on how to regulate blockchain."
+        ]
+      }
+    ]
   }
 };
 

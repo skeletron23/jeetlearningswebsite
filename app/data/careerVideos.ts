@@ -999,6 +999,18 @@ export const careerVideos: Record<string, CareerVideo[]> = {
       url: "https://www.youtube.com/embed/HAN2z7vLsIE",
     },
   ],
+  blockchain_engineer: [
+    {
+      id: 1,
+      title: "Blockchain Engineer Career Overview - The Architect of Trust",
+      url: "https://www.youtube.com/embed/TO7E7NcdEEY",
+    },
+    {
+      id: 2,
+      title: "Smart Contracts, Web3 Development & Blockchain Future in India",
+      url: "https://www.youtube.com/embed/ShoJmT3GWfk",
+    },
+  ],
 };
 
 export function getCareerVideos(careerSlug: string): CareerVideo[] {
