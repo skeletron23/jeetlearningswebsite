@@ -218,1011 +218,2286 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
   },
   animator: {
     slug: "animator",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Illusionist of the Digital Age for Class 10+",
     heading: "Animator",
-    subheading: "Designing digital worlds and characters that shape global pop culture.",
+    subheading: "Breathing life into still images—from Netflix shows to AAA games, you're the wizard behind the magic.",
     whyCards: [
-      { icon: "Gamepad2", title: "Game Design", description: "Build exciting worlds andBackstories that make players feel inside the game.", borderColor: "#10B981" },
-      { icon: "Sparkles", title: "Creative Hub", description: "India is becoming a global creative hub for OTT and gaming content.", borderColor: "#059669" },
-      { icon: "UserCircle", title: "Character Creation", description: "Make hair, light, and movement look real using industry-standard software.", borderColor: "#3B82F6" },
-      { icon: "Globe", title: "Cultural Reach", description: "Shape global pop culture by sharing Indian stories with the world.", borderColor: "#F59E0B" }
+      { icon: "Wand2", title: "Character Creation", description: "Give characters souls, quirks, and emotions—not just draw them.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Global Hub", description: "India is moving from 'back-office' to creating global hits on OTT and gaming.", borderColor: "#059669" },
+      { icon: "Zap", title: "Technical Magic", description: "Use complex software to make hair flow naturally and light reflect realistically.", borderColor: "#3B82F6" },
+      { icon: "TrendingUp", title: "Billion-Rupee Industry", description: "Indian animation sector expected to reach ₹190 billion by 2027, growing at 22% CAGR.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3-4 Years Degree", color: "bg-green-100 text-green-700" },
-      { label: "Tools", detail: "Blender, Maya, Unreal Engine", color: "bg-blue-100 text-blue-700" },
-      { label: "Sector", detail: "OTT, Gaming, VFX Hub", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3-4 Years (Degree) or 1-2 Years (Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Maya, Blender, After Effects, Unreal Engine", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹45L+ (Entry to Senior)", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "₹250Cr", label: "Creator Lab Budget", gradient: "from-green-500 to-green-600" },
-      { value: "High", label: "Global Demand", gradient: "from-blue-500 to-blue-600" }
+      { value: "₹190B", label: "Market Size by 2027", gradient: "from-green-500 to-green-600" },
+      { value: "30k+", label: "New Jobs Annually by 2030", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Introduction to the world of animation.",
+        description: "The art of creating motion illusion through still images.",
         color: BLUE,
         content: [
-          "Role of Animators: Animators design characters and build exciting worlds — from future cities to magical lands — using special software to make hair, light, and movement look real.",
-          "Industry: India is becoming a global creative hub. OTT platforms and gaming have increased demand for high-quality digital stories.",
-          "Opportunities: Creators can share Indian stories with the world and shape global pop culture using modern animation and visual effects."
+          "Animation Definition: The art of creating the illusion of motion by displaying a sequence of still images rapidly.",
+          "Character Creation: You don't just draw characters; you give them souls, quirks, and emotions.",
+          "World Building: Design backgrounds—be it a futuristic Mumbai in 2070 or a magical forest.",
+          "Technical Magic: Use complex software to ensure hair flows naturally in wind or light reflects realistically off glass.",
+          "Why It Matters: India has moved from being a 'back-office' for Hollywood to creating its own global hits. With OTT platforms and gaming boom, India needs thousands of creative minds to tell local stories globally."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Frame-by-Frame Wizard",
+        icon: "Clock",
+        description: "Real workflow of a professional animator.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Review Session: Begin at a creative studio in Hyderabad or Pune. Review the sequence you worked on yesterday with the Animation Director. Every millisecond counts.",
+          "11:30 AM - The Character 'Rig': Back at your workstation with high-end PC and drawing tablet, start 'Rigging'—building a digital skeleton for a 3D character so it can move its arms and blink its eyes.",
+          "1:30 PM - Brainstorming Lunch: Lunch with storyboard artists and writers. Discuss the 'vibe' of a new scene. Should the character look scared or surprised? Act out expressions in the mirror to understand muscle movements.",
+          "3:30 PM - The Animation Grind: Focused work using Autodesk Maya or Blender. Move the digital character frame by frame. To make a character walk for 5 seconds, you might spend the entire afternoon fine-tuning the weight of each step.",
+          "6:00 PM - The Final Polish: Add 'secondary motion'—like character's clothes swaying or dust kicking up. Hit 'Render' and leave the computer to process heavy files overnight."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Animator DNA",
         icon: "User",
-        description: "Traits and skills needed.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Observation & Creativity: Analyzing natural movements and translating textures—like weight or softness—into digital models.",
-          "Soft Skills: Exceptional patience for frame-by-frame work and clear communication with cross-functional teams.",
-          "Hard Skills: Mastery of anatomy, lighting, and industry-standard software like Blender, Maya, or Unreal Engine."
+          "The Patient Observer: Do you find yourself watching how people walk or how a leaf falls?",
+          "The Creative Problem-Solver: Can you figure out how to make a 3D model look 'heavy' or 'soft'?",
+          "Soft Skills: Patience (weeks to finish one minute of film), Communication (work with directors, coders, musicians).",
+          "Hard Skills: Drawing Basics (anatomy and lighting vital even in 3D), Tech-Agility (mastery of Maya, Blender, After Effects, Unreal Engine)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Animation Pipeline",
         icon: "Briefcase",
-        description: "Day-to-day operations.",
+        description: "The complete animation workflow.",
+        color: BLUE2,
+        content: [
+          "Pre-Production: Storyboarding (sketching the story) and Concept Art.",
+          "Production: 3D Modeling (sculpting), Rigging (adding a skeleton), and Animation (the actual movement).",
+          "Post-Production: Lighting, Compositing (merging layers), and Visual Effects (VFX)."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Observation & Creativity: Analyzing natural movements—like how people walk or leaves fall—and translating physical textures into 3D models.",
-          "Soft Skills: Exceptional patience for frame-by-frame work and clear communication with directors and coders.",
-          "Hard Skills: Mastery of anatomy, lighting, and industry-standard tools like Blender, Maya, or Unreal Engine."
+          "After Class 10: Take any stream. Start a Diploma in 2D Animation or take short-term software courses (Photoshop/Flash). Build a basic 'Showreel' (portfolio).",
+          "After Class 12: Pursue B.Des (Animation), B.Sc Animation, or BFA (open to Science, Commerce, Arts). Entrance: NID DAT, UCEED, or University CETs.",
+          "After Graduation: For career-switchers, pursue M.Des or 1-year Professional PG Diploma in 3D Animation/VFX. Internship at studios like Technicolor or 88 Pictures."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE,
+        content: [
+          "Entry-level (Junior Animator): ₹3.0L–₹6.0L annually.",
+          "Mid-level (Senior Animator): ₹8.0L–₹15.0L annually.",
+          "Senior/Leadership (Lead/Director): ₹20.0L–₹45.0L+ annually.",
+          "Metro vs. Tier-2: Mumbai and Bangalore offer highest pay; Pune and Chandigarh are emerging as low-cost high-quality hubs.",
+          "Market Growth: Indian animation and VFX sector expected to reach ₹190 billion by 2027, growing at CAGR of ~22%.",
+          "Projections: AI and Real-time engines (Unreal) expected to create 30,000+ new jobs annually by 2030."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Film (CGI/VFX), Gaming (AAA and Mobile), Advertising, Ed-Tech (Animated learning), E-commerce.",
+          "Top Cities: Mumbai (Bollywood/VFX), Bangalore (Gaming), Hyderabad (Animation hubs), Pune.",
+          "Remote/Freelance: High! Freelance animators charge ₹1,500–₹5,000 per hour depending on skill.",
+          "International: Indian animators highly sought after by studios in Canada, USA, and New Zealand."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Govt. Institutions (NID/IIT): ₹2.0L–₹16.0L (Highly subsidized to premium).",
+          "Private Institutes (Arena/MAAC): ₹1.5L–₹6.0L.",
+          "Duration: 3-4 years (Degree) or 1-2 years (Diploma).",
+          "Living Costs: ₹15,000–₹25,000/month in major cities.",
+          "Additional: Powerful PC/Laptop needed (approx. ₹80k–₹1.5L)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government: NID Ahmedabad, IDC-IIT Bombay, Satyajit Ray Film & Television Institute (Kolkata).",
+          "Private: MIT-ID (Pune), UPES (Dehradun), Srishti Manipal (Bangalore), Artemisia College (Bhopal).",
+          "Online: Animation Mentor, CG Spectrum, Coursera."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for aspiring animators.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Merit-cum-Means (NID/IIT): NID/IIT give ₹30,000–₹50,000 yearly for low-income top students.",
-          "Inclusion: Some private institutes give fee discounts for girls.",
-          "State: Telangana and Karnataka offer special grants for media students.",
-          "Budget: ₹250 crore set aside for content creator labs."
+          "NID/IIT Scholarships: Merit-cum-means scholarships for economically weaker sections.",
+          "Female-Specific: Many private institutes (like ADMEC) offer 10-20% fee waivers for girls to encourage diversity.",
+          "State Schemes: Telangana and Karnataka have specific grants for students pursuing 'AVGC' (Animation, Visual Effects, Gaming, Comics) courses."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Certifications: Adobe Certified Professional, Autodesk Certified User, Unreal Engine Academic Partner status.",
+          "Memberships: ABAI (Karnataka) and T-AIM (Telangana) provide great networking.",
+          "These credentials significantly enhance career prospects and earning potential."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: 2D/3D Animator, Storyboard Artist, Layout Artist.",
+          "New-Age: Metaverse Architect, AI Animation Prompt Engineer, Virtual Reality (VR) Designer.",
+          "Entrepreneurship: Starting your own YouTube Animation Channel or a boutique VFX studio."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Potential hurdles in the career.",
+        description: "The hard truths of the industry.",
+        color: BLUE,
+        content: [
+          "The 'Crunch': When a movie or game is close to release, you may have to work 12-14 hour days.",
+          "Physical Strain: Staring at screens and sitting for long hours can lead to back pain and eye strain.",
+          "Software Updates: You must learn new tools every 6 months or your skills will become 'ancient'."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in animation.",
         color: BLUE2,
         content: [
-          "The \"Crunch\": When a movie or game is close to release, you may have to work 12–14-hour days.",
-          "Physical Strain: Staring at screens and sitting for long hours can lead to back pain and eye strain.",
-          "Software Updates: You must learn new tools every 6 months or your skills will become \"ancient.\""
+          "AI Co-Pilots: AI won't replace animators, but it will handle 'boring' tasks (like cleaning up frames), letting you focus on acting and story.",
+          "Real-Time Everything: Movie-quality animation will be made instantly using gaming technology (Unreal Engine).",
+          "Hybrid Styles: Mixing 2D hand-drawn looks with 3D models (like Spider-Verse movies)."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Steps for students to begin.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Doodle Everywhere: Use a sketchbook to draw people or your pet.",
-          "Learn Free Software: Download Blender or Krita and follow YouTube tutorials.",
-          "Observe Motion: Watch movies to see how characters move when happy vs. sad.",
-          "Tell Stories: Use Stop Motion Studio with clay toys or Lego to create films."
+          "Doodle Everywhere: Keep a sketchbook. Draw people at the bus stop or your pets sleeping.",
+          "Learn Free Software: Download Blender or Krita. Thousands of free tutorials on YouTube.",
+          "Watch Movies Differently: Don't just watch the story; watch how a character moves when happy vs. sad.",
+          "Tell Stories: Use apps like Stop Motion Studio to make short films with clay toys or Lego."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Animators",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Ram Mohan: Known as the 'Godfather of Indian Animation.' Worked on the legendary Ramayana: The Legend of Prince Rama.",
+          "Rajiv Chilaka: Creator of Chhota Bheem and founder of Green Gold Animation.",
+          "Bhimsain Khurana: Pioneer who created the iconic Ek Anek Ekta ('Hind Desh Ke Niwasi') animation.",
+          "Kireet Khurana: Award-winning director of India's first live-action/3D hybrid film Toonpur Ka Super Hero.",
+          "Gitanjali Rao: Independent animator whose film Bombay Rose won global acclaim at Venice and Cannes."
         ]
       }
     ]
   },
   cosmetology: {
     slug: "cosmetology",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Aesthetics Architect for Class 10+",
     heading: "Cosmetology",
-    subheading: "Advanced skin care, aesthetic procedures, and scientific beauty innovation.",
+    subheading: "Imagine you are an artist, but instead of a canvas, your medium is the human face, skin, and hair. You are the person who doesn't just 'apply makeup' but understands the deep science of how cells regenerate, how lasers can erase scars, and how to help someone regain their confidence.",
     whyCards: [
-      { icon: "Zap", title: "Skin Specialist", description: "Treat aging, acne, and pigmentation with lasers and chemical peels.", borderColor: "#10B981" },
-      { icon: "Scissors", title: "Hair Expert", description: "Analyze scalp health and lead advanced hair restoration procedures.", borderColor: "#059669" },
-      { icon: "Palette", title: "Aesthetic Artist", description: "Master HD makeup and styling for film, media, and bridal.", borderColor: "#3B82F6" },
-      { icon: "FlaskConical", title: "Product Innovator", description: "Create 'clean beauty' products backed by science and eco-friendly tech.", borderColor: "#F59E0B" }
+      { icon: "Zap", title: "Skin Specialist", description: "Perform advanced treatments like chemical peels, microdermabrasion, and laser therapy to treat acne, aging, and pigmentation.", borderColor: "#10B981" },
+      { icon: "Scissors", title: "Hair Expert", description: "Analyze scalp health and perform treatments ranging from deep conditioning to advanced hair restoration.", borderColor: "#059669" },
+      { icon: "Palette", title: "Aesthetic Artist", description: "Master the art of semi-permanent makeup, bridal styling, and high-definition (HD) makeup for film and media.", borderColor: "#3B82F6" },
+      { icon: "FlaskConical", title: "Product Innovator", description: "Work in labs to create 'clean beauty' products—skincare that is scientifically backed and eco-friendly.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
       { label: "Duration", detail: "3 Months - 3 Years", color: "bg-green-100 text-green-700" },
-      { label: "Personality", detail: "Empathic, Steady Hands", color: "bg-blue-100 text-blue-700" },
-      { label: "Growth", detail: "High-End Clinical Demand", color: "bg-purple-100 text-purple-700" }
+      { label: "Salary Range", detail: "₹3.5L–₹1Cr+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "10.6% CAGR, 4th Largest Market by 2030", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "PMKVY", label: "Skill India Support", gradient: "from-green-500 to-green-600" },
-      { value: "50%", label: "Fee Waivers Possible", gradient: "from-blue-500 to-blue-600" }
+      { value: "$40B", label: "India's Beauty Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "10.6%", label: "Industry CAGR", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Skin, hair, and aesthetic expertise.",
+        description: "Blending dermatology, trichology, and aesthetics into professional beauty science.",
         color: BLUE,
         content: [
-          "The Skin Specialist: They perform advanced treatments like chemical peels and laser therapy to treat acne, aging, and pigmentation.",
+          "Cosmetology is the professional study and application of beauty treatments. It is a broad field that blends Dermatology (skin science), Trichology (hair science), and Aesthetics.",
+          "The Skin Specialist: They perform advanced treatments like chemical peels, microdermabrasion, and laser therapy to treat acne, aging, and pigmentation.",
           "The Hair Expert: They analyze scalp health and perform treatments ranging from deep conditioning to advanced hair restoration.",
-          "The Aesthetic Artist: They master the art of semi-permanent makeup, bridal styling, and high-definition (HD) makeup.",
-          "The Product Innovator: Many cosmetologists work in labs to create \"clean beauty\" products backed by science."
+          "The Aesthetic Artist: They master the art of semi-permanent makeup, bridal styling, and high-definition (HD) makeup for film and media.",
+          "The Product Innovator: Many cosmetologists work in labs to create 'clean beauty' products—skincare that is scientifically backed and eco-friendly.",
+          "Why it matters: In a world of high-definition cameras and social media, 'skin health' is the new wealth. But beyond looks, cosmetologists help people recovering from accidents or skin conditions feel like themselves again."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Glow Curator",
+        icon: "Clock",
+        description: "Real workflow of a professional cosmetologist.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - The Morning Consultation: Your day begins at a sleek, white-walled aesthetic clinic in a city like Bangalore or Mumbai. Your first client is a young professional struggling with 'adult acne.' You don't just suggest a cream; you use a Digital Skin Analyzer to show them the hydration levels and sun damage deep beneath their skin layers.",
+          "11:30 AM - The Laser Precision: You move to the procedure room. Wearing protective goggles, you operate a Q-switched Laser to help a client remove a tattoo they no longer want. It's a game of physics and biology—using light pulses to shatter ink particles so the body can naturally wash them away.",
+          "1:30 PM - The Product Huddle: Over lunch, you meet with a representative from a 'Cosmeceutical' brand. You discuss the latest research on Hyaluronic Acid and Vitamin C serums. You are a scientist at heart, always keeping up with what ingredients actually work.",
+          "3:30 PM - The Bridal Transformation: The afternoon brings a change of pace. A bride-to-be arrives for her final trial. You switch from 'doctor-mode' to 'artist-mode.' You use an airbrush makeup tool to create a look that is flawless under heavy camera lights but feels light as air on her skin.",
+          "6:00 PM - The Digital Outreach: Before wrapping up, you record a 60-second video for your 50,000 followers on Instagram. You explain the 'Truth about Sunscreen.' You leave the clinic knowing you've helped ten different people feel a little more comfortable in their own skin."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Cosmetology DNA",
         icon: "User",
-        description: "Ideal traits and soft skills.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
           "The Perfectionist: Do you notice the tiniest details in a drawing or an outfit?",
-          "The Science Explorer: Are you fascinated by how chemicals react?",
-          "The People Person: Can you listen to someone’s insecurities with empathy?",
+          "The Science Explorer: Are you fascinated by how chemicals react or how the human body heals?",
+          "The People Person: Can you listen to someone's insecurities with empathy and make them feel safe?",
           "Soft Skills: Active listening, steady hands (vital for procedures!), and creative visualization.",
-          "Hard Skills: Knowledge of skin anatomy, chemistry of products, and operating machines."
+          "Hard Skills: Knowledge of skin anatomy, chemistry of products, and operating aesthetic machinery."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Aesthetic Treatment Cycle",
         icon: "Briefcase",
-        description: "Workflow in a clinic or salon.",
+        description: "The complete workflow from diagnosis to education.",
+        color: BLUE2,
+        content: [
+          "Diagnosis: Using tech to understand the client's skin/hair type.",
+          "Prescription: Designing a customized routine or 'treatment plan.'",
+          "Procedure: Performing the actual service (Laser, Peel, or Styling).",
+          "Education: Teaching the client how to maintain the results at home."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Diagnosis: Utilizing advanced imaging technology to analyze skin elasticity or scalp health.",
-          "Prescription: Crafting a personalized treatment plan tailored to biological needs.",
-          "Procedure: Executing clinical services like chemical peels or laser resurfacing.",
-          "Education: Empowering clients with knowledge and home-care protocols."
+          "After Class 10: Enroll in a Diploma in Beauty Culture or Vocational Course (6–12 months). Exams: Not usually required; direct admission in private institutes.",
+          "After Class 12: Pursue a B.Sc. in Cosmetology or a Bachelor in Design (B.Des) - Fashion Communication. Exams: Direct admission or institutional entrance tests.",
+          "After Graduation: Medical doctors (MBBS) can pursue a Diploma in Medical Cosmetology. Exams: NEET-PG for specialized dermatology routes.",
+          "Career Progression: Start as a Beauty Associate or Assistant Hair Stylist → Work as a Skin Consultant, Makeup Artist, or Beauty Trainer → Work as a Clinical Cosmetologist or Aesthetic Physician."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Cosmetologist): ₹3.5L–₹6.0L | Mid-level (Senior Aesthetician): ₹12L–₹20L | Senior-level (Clinic Head/Trainer): ₹30L–₹45L | Leadership (CXO/Brand Founder): ₹1 Crore+",
+          "Growth: The industry is growing at 10.6% CAGR. By 2030, India will be the 4th largest beauty market globally.",
+          "Metro vs. Tier-2: While Mumbai/Delhi offer the highest starting pay, cities like Lucknow and Indore are seeing a 40% rise in luxury salon openings."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Medical Aesthetics Clinics, Luxury Hotels & Spas, Film & TV, Cosmetic Manufacturing, and Ed-Tech (Beauty Education).",
+          "Top Cities: Mumbai, Bangalore, Delhi-NCR, Hyderabad, and Pune.",
+          "Freelance Potential: Exceptionally high. 40% of top-earning makeup artists and hairstylists are self-employed."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (Nagpur Univ/DSEU): ₹14,000–₹40,000 (Total) | Private (VLCC/Lakme/Orane): ₹1.5L–₹5L (Total).",
+          "Duration: 3 months (Short cert) to 3 years (Degree).",
+          "Living Costs: ₹15,000–₹25,000/month in Tier-1 cities."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Public/Govt: Meerabai Delhi Skill University (DSEU), Rashtrasant Tukadoji Maharaj Nagpur University, NIFT Delhi (for Fashion/Lifestyle focus).",
+          "Private: Lakmé Academy, VLCC Institute, Orane International, Pearl Academy, Indian Institute of Aesthetic Medicine (IIAM).",
+          "Online: Skill India Digital, LTA School of Beauty (Blended models)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Financial aid for beauty courses.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "PMKVY (Skill India): Free or low-cost skill training with certificate.",
-          "NSP: PM-YASASVI and Post-Matric give up to ₹20,000 yearly.",
-          "Institutional: Orane and VLCC offer up to 50% fee waiver.",
-          "State: Kerala and West Bengal give stipends up to ₹8,000 monthly."
+          "PMKVY (Pradhan Mantri Kaushal Vikas Yojana): Offers free or subsidized skill training in beauty and wellness.",
+          "NSP (National Scholarship Portal): Post-matric scholarships for SC/ST/OBC students.",
+          "Institutional: Orane and VLCC offer 'merit-cum-means' scholarships for economically weaker students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "B&WSSC (Beauty & Wellness Sector Skill Council): The primary body under the Skill India mission.",
+          "Certifications: CIDESCO (Switzerland) and ITEC (UK) are the 'Gold Standards' that allow you to work in 60+ countries."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Beautician, Hair Stylist, Salon Manager.",
+          "New-Age: Clinical Aesthetician, Beauty Tech Consultant, Scalp Microbiome Specialist, AI-Makeup Analyst.",
+          "Entrepreneurship: Launching a D2C Organic Skincare Brand or a chain of Medi-Spas."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Tough aspects of the profession.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
           "Physical Demand: You will be on your feet for 8–10 hours a day.",
-          "Health Risks: Exposure to chemicals and lasers requires strict safety adherence.",
-          "Client Pressure: Managing high expectations and emotional insecurities calmly."
+          "Health Risks: Exposure to chemicals and high-intensity lasers requires strict safety adherence.",
+          "Client Pressure: Dealing with people's appearances is emotional; you must manage high expectations and occasional complaints calmly."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in cosmetology.",
+        color: BLUE,
+        content: [
+          "AI-Personalization: Smart mirrors that analyze your skin and suggest a custom serum mixed by a robot on the spot.",
+          "Sustainability: 'Waterless Beauty' products and zero-plastic packaging will become the industry norm.",
+          "Home-Tech: Wearable LED masks and microcurrent devices that bring clinic-level results to the bedroom."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Preparation steps.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Biology & Chemistry: Focus on \"Skin\" and \"Chemical Reactions\" chapters.",
-          "Color Theory: Take up art or painting to understand skin tones.",
-          "Digital Savvy: Learn basic video editing.",
-          "Communication: Practice \"Active Listening\" to understand client needs."
+          "Biology & Chemistry: Pay attention to the 'Skin' and 'Chemical Reactions' chapters.",
+          "Color Theory: Take up art or painting to understand how different colors complement skin tones.",
+          "Digital Savvy: Learn basic video editing—every successful cosmetologist today is also a content creator.",
+          "Communication: Practice 'Active Listening'—the best cosmetologists are the ones who truly understand what their client wants."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Cosmetologists",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Shahnaz Husain: The 'Queen of Herbal Beauty' who put Indian Ayurveda on the global map.",
+          "Jawed Habib: A hairstyling legend who turned hair-cutting into a structured business empire.",
+          "Dr. Rinky Kapoor: A celebrity dermatologist and cosmetologist known for pioneering work in non-surgical aesthetics.",
+          "Dr. Arvinder Singh: A TEDx speaker and world-record holder in clinical cosmetology education.",
+          "Namrata Soni: One of India's top celebrity makeup artists, known for her work with Sonam Kapoor and Vogue."
         ]
       }
     ]
   },
   creative_writer: {
     slug: "creative_writer",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Architect of Worlds for Class 10+",
     heading: "Creative Writer",
-    subheading: "Crafting narratives across novels, scripts, and digital brand identities.",
+    subheading: "Have you ever finished a movie and thought, 'I wish I could have decided the ending,' or stayed up until 3:00 AM because you just couldn't put a book down? That feeling of being transported to another world is the work of a Creative Writer.",
     whyCards: [
-      { icon: "Book", title: "The Storyteller", description: "Create complex characters and immersive worlds for novels and stories.", borderColor: "#10B981" },
-      { icon: "Tv", title: "Script Specialist", description: "Write dialogue and action for films, TV, and viral YouTube content.", borderColor: "#059669" },
-      { icon: "TowerControl", title: "Brand Voice", description: "Help companies connect with customers through compelling brand storytelling.", borderColor: "#3B82F6" },
-      { icon: "Sword", title: "Experience Design", description: "Design quests and backstories for gaming to immerse players deeply.", borderColor: "#F59E0B" }
+      { icon: "Book", title: "The Storyteller", description: "Create characters, plots, and settings for novels, short stories, or poems.", borderColor: "#10B981" },
+      { icon: "Tv", title: "Script Specialist", description: "Write dialogue and 'action lines' for films, TV shows, and YouTube videos.", borderColor: "#059669" },
+      { icon: "Gamepad2", title: "Experience Designer", description: "Write quests and character backstories that make players feel inside the game.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "Brand Voice", description: "Use storytelling to help companies connect with people, making a product feel like part of your life.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3 Years Degree", color: "bg-green-100 text-green-700" },
-      { label: "Personality", detail: "Observant, Disciplined", color: "bg-blue-100 text-blue-700" },
-      { label: "Key Tool", detail: "SEO, Blogs, Newsletters", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3 Years (UG) or 1-2 Years (PG/Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹50L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "10.5% CAGR, ₹3.08 Trillion by 2026", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "100%", label: "Potential Scholarships", gradient: "from-green-500 to-green-600" },
-      { value: "Global", label: "Grant Opportunities", gradient: "from-blue-500 to-blue-600" }
+      { value: "₹3.08T", label: "Media & Entertainment Market by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "40%", label: "Growth in Gaming Writing Since 2023", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "The scope of professional writing.",
+        description: "The art of using words to entertain, provoke thought, and share the human experience.",
         color: BLUE,
         content: [
+          "Creative writing is the art of using words to entertain, provoke thought, and share the human experience. Unlike technical or news writing, creative writing focuses on narrative, character, and emotional impact.",
           "The Storyteller: They create characters, plots, and settings for novels, short stories, or poems.",
-          "The Script Specialist: They write the dialogue and \"action lines\" for films, TV shows, and YouTube videos.",
-          "The Experience Designer: In gaming, they write the quests and backstories that make players feel inside the game.",
-          "The Brand Voice: They use storytelling to help companies connect with people powerfully."
+          "The Script Specialist: They write the dialogue and 'action lines' for films, TV shows, and YouTube videos.",
+          "The Experience Designer: In gaming, they write the quests and character backstories that make players feel like they are inside the game.",
+          "The Brand Voice: They use storytelling to help companies connect with people, making a product feel like a part of your life rather than just an item on a shelf.",
+          "Why it matters: India is currently the world's largest producer of films and has one of the fastest-growing gaming and podcasting markets. As global platforms like Amazon and Netflix invest heavily in Indian 'Local Originals,' the demand for writers who can tell authentic Indian stories has never been higher."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Word Weaver",
+        icon: "Clock",
+        description: "Real workflow of a professional creative writer.",
+        color: BLUE2,
+        content: [
+          "8:30 AM - The Morning Ritual: Your day begins not at an office, but often at your favorite corner of a café or a dedicated home studio. You start with 'Morning Pages'—writing three pages of whatever comes to your mind just to 'prime the engine.' No pressure, no editing; just flow.",
+          "10:00 AM - The Script Scrutiny: You are currently working as a Junior Scriptwriter for a popular OTT web series. You log into a Zoom call with the 'Writers' Room.' The lead writer (Showrunner) wants to change the climax of Episode 4. You spend two hours brainstorming: If the hero chooses his friend over the money, does it make him look weak or noble?",
+          "1:00 PM - Research & Inspiration: Lunch is a quick break, followed by research. Since your story is set in a small town in Himachal Pradesh, you spend an hour watching travel vlogs and reading local folklore to get the 'texture' of the language right.",
+          "3:00 PM - The Deep Work: This is the 'Drafting' phase. You put on your noise-canceling headphones and write 1,500 words of dialogue. You are in 'The Flow'—where you lose track of time and the characters start talking in your head.",
+          "5:30 PM - The Brand Pivot: As a freelance writer, you also handle 'Copywriting' for a sustainable fashion startup. You switch gears from a 1920s period drama to writing a punchy, 10-word caption for an Instagram post about bamboo-fiber t-shirts.",
+          "8:00 PM - The Community Connection: You wrap up the day by attending an online poetry slam or a writers' workshop. Hearing others read their work reminds you why you love this job. You head to bed, usually with a notebook on your nightstand, just in case a character decides to say something brilliant at midnight."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Writer's DNA",
         icon: "User",
-        description: "Ideal writer traits.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Observation & Empathy: A \"people-watcher\" who understands nuanced human behaviour.",
-          "Analytical Reading: Deconstructing metaphors and narrative techniques while reading.",
-          "Core Soft Skills: High discipline to write daily and handle frequent rejections.",
-          "Technical Hard Skills: Mastery of grammar and frameworks like the \"Hero’s Journey.\""
+          "The Observationalist: Do you notice the way a stranger taps their foot when they are nervous? Writers are people-watchers.",
+          "The Voracious Reader: You don't just read for the story; you notice how the author used that specific metaphor.",
+          "The Empath: Can you understand why a 'villain' might feel they are actually the hero of their own story?",
+          "Soft Skills: Resilience (you must be able to handle 'Rejection Letters' without giving up), Discipline (writing is 10% inspiration and 90% showing up at your desk even when you don't feel like it).",
+          "Hard Skills: Grammar & Vocabulary (the 'tools' of your trade), Structural Knowledge (understanding the 'Hero's Journey' or the 'Three-Act Structure')."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Writing Workflow",
         icon: "Briefcase",
-        description: "The writing workflow.",
-        color: BLUE,
+        description: "The complete creative writing process.",
+        color: BLUE2,
         content: [
-          "Ideation: Catching a tiny spark of an idea (The \"What If?\").",
+          "Ideation: Catching a tiny spark of an idea (The 'What If?').",
           "Research: Gathering facts to make the world feel real.",
           "Outlining: Mapping out the beginning, middle, and end.",
-          "Drafting: The \"messy\" stage of getting words onto the page.",
-          "Editing: Polishing and rewriting until the story shines."
+          "Drafting: The 'messy' stage of getting words onto the page.",
+          "Editing: The most important stage—cutting, polishing, and rewriting until the story shines."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Any stream is okay, but Humanities (English/Psychology) helps. Start a blog or Wattpad account.",
+          "After Class 12: Pursue B.A. in English Literature, Journalism, or Mass Communication. Exams: CUET (Central Universities), IPU CET.",
+          "After Graduation: M.A. in Creative Writing or specialized diplomas in Screenwriting. Exams: FTII Jet Exam (for Screenwriting), XIC OET.",
+          "Career Switch: From any field, take a PG Diploma in Advertising/Copywriting or a Creative Writing workshop. Certifications: Coursera (Wesleyan/Michigan), MasterClass."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Content Writer/Junior Scriptwriter): ₹3.5L–₹6.5L | Mid-level (Senior Copywriter/Author): ₹10L–₹18L | Senior/Leadership (Creative Director/Showrunner): ₹25L–₹50L+",
+          "Metro vs. Tier-2: Mumbai (The hub of Film/TV) pays the highest, but the Remote Work revolution means you can earn 'Mumbai salaries' while living in a Tier-3 city.",
+          "Market Growth: The Indian Media & Entertainment sector is growing at 10.5% annually and is expected to reach ₹3.08 Trillion by 2026.",
+          "Demand: Hiring for Narrative Designers (Gaming) and Podcast Scriptwriters has grown by 40% since 2023."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: OTT Platforms (Netflix/Hotstar), Gaming Studios (Ubisoft Pune/Nazara), Advertising Agencies (Ogilvy/MullenLowe), Publishing Houses (Penguin/HarperCollins), and Corporate Brands.",
+          "Top Cities: Mumbai (Screenwriting), Bangalore (Tech/Gaming writing), Delhi (Publishing/News).",
+          "International: Indian writers are increasingly hired by global gaming companies and international animation studios for 'cultural consulting.'"
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (DU/FTII): ₹15,000–₹1.5L (Highly subsidized) | Private (Srishti/Pearl/XIC): ₹2.5L–₹6L (Annual).",
+          "Duration: 3 years (UG), 1-2 years (PG/Diploma).",
+          "Additional: A good laptop, a stable internet connection, and books!"
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Public: FTII Pune (The gold standard for scripts), Delhi University, Jadavpur University (Kolkata), University of Hyderabad.",
+          "Private: Xavier Institute of Communications (Mumbai), Symbiosis (Pune), Srishti Manipal (Bangalore), Ashoka University (Sonipat).",
+          "Online: IGNOU (Diploma in Creative Writing), MICA (Copywriting specialized)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Grants for writers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Central Aid: NSP gives post-matric help to low-income families.",
-          "Merit: Ashoka and Symbiosis can cover up to 100% fees for top writers.",
-          "Global: Inlaks and Charles Wallace give grants for studying abroad."
+          "Central: NSP (National Scholarship Portal) for students from low-income families.",
+          "Institutional: Ashoka and Symbiosis offer Merit-cum-Means scholarships (up to 100% tuition waiver).",
+          "Private: Inlaks Shivdasani Foundation (for studying writing abroad), Charles Wallace India Trust."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Screenwriters Association (SWA): Essential for scriptwriters to protect their work and get legal help.",
+          "The Poetry Society of India: Great for networking and workshops.",
+          "Certifications: HubSpot Content Marketing (Free), Google Digital Garage."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Author, Journalist, Teacher.",
+          "New-Age: Narrative Designer (Games), UX Writer (App dialogue), Ghostwriter (Writing for celebrities/CEOs), Web Series Staff Writer.",
+          "Entrepreneurship: Starting a YouTube Storytelling channel, launching a Substack newsletter, or Self-publishing on Amazon KDP."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Reality check for writers.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Financial Volatility: Freelancers face unpredictable monthly income cycles.",
-          "Mental Strain: Persistent \"writer’s block\" and strict creative deadlines.",
-          "Social Isolation: Long periods of solitary work required."
+          "Income Instability: Especially as a freelancer, some months are 'feast' and some are 'famine.'",
+          "Writer's Block: The mental stress of 'having' to be creative on a deadline.",
+          "Isolation: You will spend a lot of time alone with your thoughts."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in creative writing.",
+        color: BLUE,
+        content: [
+          "AI Collaboration: AI (like ChatGPT) won't replace writers, but it will become a 'Writing Assistant' for outlining and research. The human role will shift toward 'Emotional Editing' and 'Unique Voice.'",
+          "Transmedia Storytelling: A story that starts as a book, becomes a movie, and then an interactive VR game.",
+          "The 'Niche' Era: High demand for writers who can write in regional Indian languages (Tamil, Marathi, Bhojpuri) for global apps."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early steps for students.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Start a Blog/Newsletter: Use platforms like Substack or Medium.",
-          "Join Competitions: Participate in National Youth Poetry Slams.",
-          "Learn Basic SEO: Understanding Google is a superpower for modern writers.",
-          "Listen to Podcasts: Follow 'The Screenwriting Life' or 'The Creative Penn'."
+          "Start a Blog/Newsletter: Use platforms like Substack or Medium. Consistency is key.",
+          "Join Competitions: Participate in the National Youth Poetry Slam or local essay contests.",
+          "Learn Basic SEO: Understanding how Google works is a superpower for a modern writer.",
+          "Listen to Podcasts: Follow The Screenwriting Life or The Creative Penn to learn the industry secrets."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Arundhati Roy: The first Indian to win the Booker Prize; she showed that an Indian voice can command the world's attention.",
+          "Varun Grover: A civil engineer turned stand-up comic and lyricist (Masaan, Sacred Games). He is the modern face of Indian screenwriting.",
+          "Amish Tripathi: The man who made Indian mythology 'cool' for Gen-Z. He proved that self-published authors can become superstars.",
+          "Juhi Chaturvedi: The writer behind Piku and October; she is famous for finding magic in everyday life.",
+          "Ankur Warikoo: A 'New-Age' writer who uses storytelling on social media to build a massive career in non-fiction."
         ]
       }
     ]
   },
   fashion_designing: {
     slug: "fashion_designing",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Style Visionary for Class 10+",
     heading: "Fashion Design",
-    subheading: "Blending trends, material science, and storytelling into wearable art.",
+    subheading: "Imagine you're looking at a piece of fabric. To most, it's just cloth. But to a Fashion Designer, it's a blueprint for confidence, a medium for storytelling, and a tool for cultural change.",
     whyCards: [
       { icon: "Eye", title: "Trend Forecaster", description: "Predict colors and styles that will rule the market two years ahead.", borderColor: "#10B981" },
       { icon: "PenTool", title: "Technical Architect", description: "Master the conversion of 2D cloth into perfectly fitting 3D garments.", borderColor: "#059669" },
       { icon: "Leaf", title: "Material Scientist", description: "Experiment with eco-fabrics like mushroom leather and recycled ocean plastic.", borderColor: "#3B82F6" },
-      { icon: "Speech", title: "Storyteller", description: "Give every collection a unique theme, mood, and powerful message.", borderColor: "#F59E0B" }
+      { icon: "Sparkles", title: "Storyteller", description: "Give every collection a unique theme, mood, and powerful message.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years (B.Des)", color: "bg-green-100 text-green-700" },
-      { label: "Fees", detail: "₹10L - ₹28L Total", color: "bg-blue-100 text-blue-700" },
-      { label: "Scheme", detail: "NIFT Sarthak (100% Waiver)", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "4 Years (B.Des) or 2 Years (M.Des)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹60L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "10% CAGR, $105B Market by 2030", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "100%", label: "NIFT Fee Help", gradient: "from-green-500 to-green-600" },
-      { value: "$25k", label: "Adobe Grant", gradient: "from-blue-500 to-blue-600" }
+      { value: "$105B", label: "Indian Apparel Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "10%", label: "Annual Growth Rate", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Forecasting and crafting the future of apparel.",
+        description: "The art of applying design, aesthetics, and natural beauty to clothing.",
         color: BLUE,
         content: [
-          "The Trend Forecaster: They predict colors and styles two years in advance.",
-          "The Technical Architect: Converting 2D cloth into perfect 3D garments.",
-          "The Material Scientist: Experimenting with recycled and sustainable fabrics.",
-          "The Storyteller: Infusing collections with themes, moods, and messages."
+          "Fashion Design is the art of applying design, aesthetics, and natural beauty to clothing and its accessories. It is influenced by cultural and social attitudes and has varied over time and place.",
+          "The Trend Forecaster: They predict what colors and styles people will want to wear two years from now.",
+          "The Technical Architect: They don't just draw; they understand how a 2D piece of cloth becomes a 3D garment that fits a human body perfectly.",
+          "The Material Scientist: They experiment with fabrics—from traditional silk to modern fabrics made from recycled ocean plastic or mushroom leather.",
+          "The Storyteller: Every collection has a theme, a mood, and a message.",
+          "Why it matters: India is one of the world's largest textile producers. As the global fashion industry shifts toward sustainability and unique cultural identities, Indian designers are leading the charge, blending 'Make in India' craftsmanship with global luxury standards."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: From Sketch to Stitch",
+        icon: "Clock",
+        description: "Real workflow of a professional fashion designer.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Creative Spark: Your day begins in a sun-drenched studio in Shahpur Jat, Delhi, or a modern design house in Mumbai. You start with 'Mood Boarding'—pinning up swatches of indigo-dyed cotton, photographs of monsoon clouds, and sketches of oversized silhouettes. You are searching for the 'soul' of your next Autumn/Winter collection.",
+          "11:30 AM - The Drape and Draft: You move to the 'Cutting Table.' You aren't just sketching; you're draping raw muslin over a mannequin (a 'dress form'). You pin and tuck until the fabric moves exactly how you imagined. Then, you translate those pins into a flat paper pattern. This is where art meets geometry.",
+          "1:30 PM - Sourcing the Soul: Lunch is a quick bite before you head to a local textile cluster. You spend the afternoon with weavers or embroiderers. You discuss how to modernize a traditional Zardosi stitch. You are a designer, but today you are also a student of traditional Indian craft.",
+          "4:00 PM - The Digital Fitting: Back at the studio, you use CLO 3D software. You simulate how a silk gown will flow as a digital avatar walks down a virtual runway. This technology saves months of physical sampling and reduces fabric waste.",
+          "7:00 PM - The Business of Beauty: Before heading home, you meet with the marketing team to discuss the Instagram campaign for your new launch. You leave the studio tired but exhilarated, knowing that something you imagined today will soon be part of someone's most precious memories."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Fashion DNA",
         icon: "User",
-        description: "Ideal designer traits.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Visual Imagination: Seeing a finished garment by looking at raw rolls of fabric.",
-          "Detail Obsession: A critical eye for crooked stitches or wrong shades.",
-          "Resilience: Handling rejection and restarting quickly.",
-          "Soft Skills: Empathy to understand customer desires deeply.",
-          "Hard Skills: Pattern Making, Illustration, and CAD."
+          "Visual Imagination: Can you see a finished garment just by looking at a roll of fabric?",
+          "Detail Obsession: Does a slightly crooked stitch or the wrong shade of button bother you?",
+          "Resilience: Can you handle a 'reject' from a buyer and start all over again with a smile?",
+          "Soft Skills: Empathy (to understand what customers want), Collaboration, and Persuasion.",
+          "Hard Skills: Pattern Making, Illustration, Fabric Science, and CAD (Computer-Aided Design)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Product Development Lifecycle",
         icon: "Briefcase",
-        description: "Design and production cycle.",
-        color: BLUE,
+        description: "The complete design and production cycle.",
+        color: BLUE2,
         content: [
           "Market Research: Identifying trends and consumer needs.",
           "Concept Ideation: Creating themes and sketches.",
-          "Prototyping: Creating the first \"sample\" garment.",
+          "Prototyping: Creating the first 'sample' garment.",
           "Sourcing: Finding the right fabrics and artisans.",
-          "Quality Control: Perfection before the product hits stores."
+          "Quality Control: Ensuring every piece is perfect before it hits the store."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Enroll in a Diploma in Fashion Design (1–2 years) at polytechnics. Focus on building a 'Portfolio' of sketches and creative projects.",
+          "After Class 12: Pursue a B.Des (Fashion Design) or B.FTech (Apparel Production). Exams: NIFT, NID DAT, UCEED, Pearl Academy Entrance.",
+          "After Graduation: Pursue an M.Des or a PG Diploma in Fashion Management. Exams: CEED, NIFT PG.",
+          "Career Progression: Start as a Design Assistant or Boutique Intern → Work as a Junior Designer, Stylist, or Fashion Illustrator → Transition into Design Strategy, Buying, or Brand Management."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Designer): ₹3.5L–₹6.5L | Mid-level (Senior Designer/Stylist): ₹10L–₹18L | Senior/Leadership (Design Head): ₹30L–₹60L+ | Celebrity Designer/CXO: ₹1 Crore+",
+          "Industry Growth: The Indian apparel market is expected to reach $105 Billion by 2030, growing at ~10% annually.",
+          "Growth Trajectory: It typically takes 3–5 years to move from an assistant to a lead designer role."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Export Houses, Retail Brands (Zudio, Westside, Zara), Luxury Couture Houses, E-commerce (Myntra, Ajio), and Film/TV Styling.",
+          "Top Cities: Delhi-NCR (Manufacturing/Couture), Mumbai (Styling/Bollywood), Bangalore (Tech-Fashion/Retail), and Tirupur/Ludhiana (Knitwear Hubs).",
+          "Gig Economy: High potential for Freelance Fashion Illustrators and Personal Stylists."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees (Total Degree): Govt. Institutions (NIFT/NID): ₹6L–₹12L (Highly competitive) | Private Institutions (Pearl/ISDI): ₹15L–₹25L.",
+          "Duration: 4 years (B.Des) or 2 years (M.Des).",
+          "Living Costs: ₹15,000–₹25,000/month in Tier-1 cities.",
+          "Additional Costs: Fabric for projects, specialized software, and high-end sewing machines (₹20,000–₹50,000 annually)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Public/Govt: NIFT (18 campuses across India), National Institute of Design (NID) (Ahmedabad/Gandhinagar), Footwear Design and Development Institute (FDDI).",
+          "Private: Pearl Academy (Delhi/Mumbai/Jaipur), Symbiosis Institute of Design (Pune), Srishti Manipal (Bangalore).",
+          "Regional Diversity: North (NIFT Delhi), South (NIFT Chennai), West (NID Gandhinagar), East (NIFT Kolkata)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for designers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "NIFT Sarthak Scheme: 100% fee help for low-income families.",
-          "Merit: Pearl and Lakhotia give 25–50% scholarships.",
-          "Adobe: Up to $25,000 yearly for design students.",
-          "Fashion: Hansa Agarwal support up to ₹50,000."
+          "Central: NIFT Sarthak (Up to 100% fee waiver based on income); NSP (National Scholarship Portal).",
+          "Institutional: Most private colleges offer merit-based scholarships (up to 50% waiver).",
+          "Private: Adobe Design Circle Scholarships; L'Oréal India For Young Women in Science (for textile research)."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "FDC (Fashion Design Council of India): The primary body for organizing Fashion Weeks and networking.",
+          "Certifications: Adobe Illustrator for Fashion, CLO 3D Certification, Sustainable Fashion Professional (via online platforms like Coursera)."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Fashion Designer, Stylist, Merchandiser.",
+          "New-Age: AI Fashion Strategist, 3D Digital Garment Designer, Sustainable Sourcing Manager, Metaverse Fashion Designer.",
+          "Entrepreneurship: Starting a D2C (Direct-to-Consumer) brand on Instagram or an upcycling startup."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "The grind behind the glitter.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "The Grind: Long hours during Fashion Weeks and production.",
-          "The \"Glitter\" Myth: 90% technical work—measuring, stitching, and Excel.",
-          "Trend Pressure: Constant pressure to stay relevant in a fast market."
+          "The Grind: Expect long hours, especially during Fashion Weeks or production seasons.",
+          "The 'Glitter' Myth: 90% of the job is technical—measuring, stitching, and Excel sheets—not just glamorous parties.",
+          "Trend Pressure: You are constantly under pressure to stay relevant in a fast-changing market."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in fashion design.",
+        color: BLUE,
+        content: [
+          "Circular Fashion: Designing clothes that are meant to be recycled or composted.",
+          "Smart Textiles: Jackets that track your heart rate or fabrics that change color with your mood.",
+          "On-Demand Manufacturing: No more massive inventories; clothes will be 3D printed or made only after you click 'Buy.'"
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Action for aspirants.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Doodle with Purpose: Sketch people at bus stops and malls.",
-          "Learn Basic Stitching: Shadow local tailors on machine work.",
-          "Digital Skills: Familiarize with Canva and Adobe Spark.",
-          "Follow the Masters: Read about Anita Dongre and Rahul Mishra."
+          "Doodle with Purpose: Sketch what people wear at the bus stop or mall.",
+          "Learn Basic Stitching: Ask your local tailor to show you how a machine works.",
+          "Digital Skills: Start playing with Canva or Adobe Spark.",
+          "Follow the Masters: Read about Anita Dongre (Sustainable Business) or Rahul Mishra (Handicraft)."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Sabyasachi Mukherjee: The king of heritage luxury; he proved that Indian tradition is the ultimate global trend.",
+          "Anita Dongre: A pioneer in sustainable fashion and one of India's most successful businesswomen.",
+          "Rahul Mishra: The first Indian to win the International Woolmark Prize; he brought Indian embroidery to the Paris Haute Couture week.",
+          "Masaba Gupta: Known for her bold prints and for breaking the traditional 'mold' of a designer to become a cultural icon.",
+          "Ritu Kumar: The veteran who revived ancient Indian block printing and made it a staple of modern wardrobes."
         ]
       }
     ]
   },
   fine_arts: {
     slug: "fine_arts",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Visionary's Canvas for Class 10+",
     heading: "Fine Arts",
-    subheading: "Telling cultural stories and preserving history through visual art and sculpture.",
+    subheading: "Imagine you are standing in front of a giant, blank wall. To some, it's just a slab of concrete. But to you, it's a portal. With a brush, a chisel, or a digital stylus, you have the power to create a world that didn't exist five minutes ago.",
     whyCards: [
-      { icon: "Paintbrush", title: "Storytelling", description: "Use colors and textures to tell powerful stories on canvas and digital screens.", borderColor: "#10B981" },
-      { icon: "History", title: "Cultural Guardian", description: "Restore old paintings and create works reflecting modern Indian identity.", borderColor: "#059669" },
-      { icon: "Layout", title: "Visual Architect", description: "Design the 'look and feel' of movies, video games, and public spaces.", borderColor: "#3B82F6" },
-      { icon: "Lightbulb", title: "Problem Solver", description: "Solve complex problems by thinking 'outside the box' via artistic vision.", borderColor: "#F59E0B" }
+      { icon: "Paintbrush", title: "Storyteller", description: "Use colors, shapes, and textures to tell stories—on canvas, through sculptures, or via digital screens.", borderColor: "#10B981" },
+      { icon: "History", title: "Cultural Guardian", description: "Preserve our history by restoring old paintings or creating new works reflecting modern Indian identity.", borderColor: "#059669" },
+      { icon: "Layout", title: "Visual Architect", description: "Design the 'look and feel' of movies, video games, and even public spaces.", borderColor: "#3B82F6" },
+      { icon: "Lightbulb", title: "Problem Solver", description: "Help solve complex problems by thinking 'outside the box'—why big companies like Google and Apple love hiring creative minds.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years (BFA)", color: "bg-green-100 text-green-700" },
-      { label: "Government", detail: "₹10k - ₹25k / year", color: "bg-blue-100 text-blue-700" },
-      { label: "Award", detail: "Lalit Kala Akademi Scholarships", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "4 Years (BFA) or 2 Years (MFA)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3L–₹75L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Market Size", detail: "₹5,500–₹6,000 Crore Annually", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "₹20k/mo", label: "Lalit Kala Stipend", gradient: "from-green-500 to-green-600" },
-      { value: "4+2Y", label: "Professional Path", gradient: "from-blue-500 to-blue-600" }
+      { value: "₹6,000Cr", label: "India's Art Market Size", gradient: "from-green-500 to-green-600" },
+      { value: "₹480B", label: "Gaming & Animation by 2027", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Visual stories and cultural preservation.",
+        description: "The pursuit of creating art for its aesthetic, intellectual, or emotional value.",
         color: BLUE,
         content: [
-          "The Storyteller: They use colours and textures to tell stories on many mediums.",
-          "The Cultural Guardian: Restoring history and creating modern Indian reflections.",
-          "The Visual Architect: Designing the aesthetics of films and games.",
-          "The Problem Solver: Thinking outside the box to solve complex visual issues."
+          "Fine Arts is the pursuit of creating art for its aesthetic, intellectual, or emotional value. It's about expressing ideas that words sometimes can't capture.",
+          "The Storyteller: They use colors, shapes, and textures to tell stories—on canvas, through sculptures, or via digital screens.",
+          "The Cultural Guardian: They preserve our history by restoring old paintings or creating new works that reflect our modern Indian identity.",
+          "The Visual Architect: They design the 'look and feel' of movies, video games, and even public spaces.",
+          "The Problem Solver: Believe it or not, artists help solve complex problems by thinking 'outside the box,' which is why big companies like Google and Apple love hiring creative minds.",
+          "Why it matters: In 2026, India is witnessing an 'Orange Economy' boom—a surge in creative industries. As our economy grows, people want more beauty, culture, and unique experiences. Fine artists are the ones who provide that."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Creative Marathon",
+        icon: "Clock",
+        description: "Real workflow of a professional fine artist.",
+        color: BLUE2,
+        content: [
+          "09:00 AM - The Quiet Hour: Your day begins in your studio—a room filled with the smell of linseed oil or the soft hum of your high-end drawing tablet. You start with 'Visual Journaling,' sketching small ideas before moving to your main project: a large-scale commission for a corporate office in Gurugram.",
+          "11:30 AM - The Physical Grind: You're working on a sculpture today. It's messy, physical, and exhilarating. You're mixing clay or welding metal, translating a 3D vision from your head into the real world. Every strike of the tool is a decision.",
+          "02:00 PM - The Digital Pivot: After a quick lunch, you switch gears. You're a freelance Concept Artist for a gaming studio. You spend three hours on your tablet, designing the environment for a new game based on Indian mythology. You're painting with 'digital light' now.",
+          "05:00 PM - The Business of Art: Being an artist is also about being an entrepreneur. You spend an hour responding to emails from a gallery in Mumbai, updating your website, and posting a 'Process Video' on Instagram. Your followers love seeing how a piece of art grows from a single line.",
+          "08:00 PM - The Inspiration Hunt: You wrap up the day by visiting a local art exhibition or reading about a new art movement. You head to bed, but your mind is already sketching the first line of tomorrow's work."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Artist DNA",
         icon: "User",
-        description: "Necessary artistic foundations.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Artistic Observation: Capturing details from natural lighting to expressions.",
-          "Resilience: Maintaining persistence in a competitive field.",
-          "Interpersonal Mastery: Using empathy and clear articulation of concepts.",
-          "Technical Foundation: Drawing fundamentals and agility in Photoshop/Blender."
+          "Observational Mastery: Do you notice the way light hits a leaf or the specific expression on a stranger's face?",
+          "Persistence: Can you work on a single painting for 50 hours until it's 'just right'?",
+          "Soft Skills: Empathy (the ability to feel and then show those feelings through your work), Communication (explaining the 'meaning' behind your art to a buyer or a curator).",
+          "Hard Skills: Drawing Fundamentals (perspective, anatomy, and color theory are your 'ABCDs'), Digital Agility (comfort with software like Photoshop, Procreate, or Blender)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Professional Process",
         icon: "Briefcase",
-        description: "The artist's workflow.",
+        description: "The complete artistic workflow.",
+        color: BLUE2,
+        content: [
+          "Ideation: Researching a theme (e.g., 'Sustainability') and sketching 20-30 rough ideas.",
+          "Preparation: Choosing the right medium—be it oil paints, digital software, or stone.",
+          "Creation: The long, focused hours of bringing the vision to life.",
+          "Critique: Looking at your work with a 'hard eye' and making changes.",
+          "Exhibition/Delivery: Preparing the work for a gallery, a client, or a digital platform."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Ideation: Researching themes and sketching dozens of ideas.",
-          "Preparation: Choosing mediums like oil, digital, or stone.",
-          "Creation: Focused execution over many hours.",
-          "Critique: Reviewing work with a hard eye for changes.",
-          "Exhibition: Preparing work for galleries or digital delivery."
+          "After Class 10: Choose any stream (Humanities is common, but Science/Commerce is fine too). Take local art classes and build a 'Portfolio.'",
+          "After Class 12: Pursue a Bachelor of Fine Arts (BFA) or B.Design. Exams: CUET, NID DAT, or institutional tests like Sir J.J. School's.",
+          "After Graduation: Pursue a Master of Fine Arts (MFA) or specialized diplomas. Specialize in Painting, Sculpture, Applied Arts, or Digital Art.",
+          "Lateral Entry: Graduates from any field can take PG Diplomas in Art Therapy or Curatorial Studies. Pivot via specialized certification courses."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Art Market Size: India's art market is valued between ₹5,500 and ₹6,000 Crore annually (combined auctions, galleries, and fests).",
+          "Salary Ranges (Annual INR): Entry-level (Junior Illustrator/Teacher): ₹3.0L–₹6.5L | Mid-level (Senior Artist/Art Director): ₹12L–₹22L | Senior/Leadership (Creative Director/Renowned Artist): ₹35L–₹75L+ | Note: Successful independent artists can earn much more per individual sale.",
+          "Hiring Trends: Massive demand in the Gaming and Animation sectors (projected to hit ₹480 Billion by 2027)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Gaming & Film (Concept Art), Advertising (Art Direction), Education (Teaching), Wellness (Art Therapy), and Museums/Galleries (Curating).",
+          "Top Cities: Mumbai (Commercial Art), Delhi (Galleries/Govt), Bangalore (Tech/Gaming), and Baroda/Santiniketan (Academic hubs).",
+          "Freelance Potential: Extremely High. Artists can sell globally via platforms like SaatchiArt or ArtRight.in."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (e.g., College of Art, Delhi): ₹10,000–₹25,000 per year | Private (e.g., Shrishti Manipal): ₹2.5L–₹6L per year.",
+          "Duration: 4 years for BFA; 2 years for MFA.",
+          "Additional Costs: High-quality art supplies (paints, brushes, stone) or a high-end PC/tablet (₹50,000–₹1.5L)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: College of Art (Delhi), BHU (Varanasi).",
+          "South: Government College of Fine Arts (Chennai), Srishti Manipal (Bangalore).",
+          "East: Kala Bhavana, Visva Bharati (Santiniketan), Government College of Art & Craft (Kolkata).",
+          "West: Sir J.J. School of Art (Mumbai), MSU (Baroda)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Stipends for artists.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Lalit Kala Akademi: ₹20,000/month for young artists.",
-          "Ministry of Culture: ₹5,000/month for 2 years.",
-          "Institutional: 'Merit-cum-Means' waivers available for talent."
+          "Central: Lalit Kala Akademi Scholarship (₹20,000/month for young artists).",
+          "Central: Scholarships to Young Artists (Ministry of Culture) (₹5,000/month for 2 years).",
+          "Institutional: Most BFA colleges have 'Merit-cum-Means' waivers for talented students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Lalit Kala Akademi: The national academy for visual arts.",
+          "Certifications: Adobe Certified Professional (for Digital Art) adds massive value to your resume."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Visual Artist (Painter/Sculptor), Art Teacher, Museum Curator.",
+          "New-Age: Concept Artist (Gaming), UI/UX Designer, Digital Illustrator, AI-Assisted Mythology Artist.",
+          "Entrepreneurship: Starting an Online Art Gallery, Mural Painting Service, or a brand of customized lifestyle products (Art-merch)."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "The hustle of an artist.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "The \"Hustle\": Managing sales, accounts, and your own brand.",
-          "Income Flux: Unpredictable monthly sales cycles for independents.",
-          "Emotional Labour: Putting a piece of yourself into every work."
+          "The 'Hustle': Early in your career, you have to be your own manager, accountant, and salesperson.",
+          "Income Flux: Independent artists may have some months with huge sales and others with none.",
+          "Emotional Labor: Creating art can be exhausting; you put a piece of yourself into every work."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in fine arts.",
+        color: BLUE,
+        content: [
+          "AI Collaboration: AI won't replace artists; it will be a 'co-pilot' for generating base ideas, while the artist adds the 'Human Soul.'",
+          "Sustainable Art: Growing demand for art made with eco-friendly, non-toxic, and recycled materials.",
+          "Art Therapy: As mental health becomes a priority, artists will work in hospitals and schools as healers."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early artistic habits.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Sketchbook Habit: Draw daily to improve creativity.",
-          "Software: Learn Krita and Blender for digital mastery.",
-          "Museums: Study colors and styles in local galleries.",
-          "Competitions: Build confidence through art contests."
+          "The Sketchbook Habit: Sketch one object every day—a shoe, a cup, or your dog.",
+          "Explore Free Software: Download Krita or Blender. They are free, professional tools used by artists worldwide.",
+          "Visit Museums: Don't just look; try to copy a famous painting in your notebook.",
+          "Enter Contests: Participate in the Camel Art Contest or the Kala Ghoda Arts Festival."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Amrita Sher-Gil: A pioneer who merged Indian themes with Western techniques, showing that Indian art is world-class.",
+          "M.F. Husain: The 'Picasso of India,' who took Indian art to global auction houses with record-breaking prices.",
+          "Sameer Kulavoor: A modern star who works with global brands like Apple and Nike while keeping his artistic voice unique.",
+          "Alicia Souza: She turned her cute, relatable illustrations into a massive lifestyle brand, showing how art can be a great business.",
+          "Subodh Gupta: Known for making high-art out of everyday Indian steel utensils, proving that inspiration is everywhere."
         ]
       }
     ]
   },
   graphical_designing: {
     slug: "graphical_designing",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Visual Storyteller for Class 10+",
     heading: "Graphic Designing",
-    subheading: "Crafting digital experiences and brand identities through visual communication.",
+    subheading: "Imagine you are walking down a busy street in Mumbai or scrolling through your Instagram feed. What makes you stop? That 'stop-and-look' power is the work of a Graphic Designer.",
     whyCards: [
-      { icon: "PenTool", title: "Brand Architect", description: "Create iconic brand identities like the blue of Tata or the red of Zomato.", borderColor: "#10B981" },
-      { icon: "Cursor", title: "Experience Maker", description: "Design UI/UX for apps and websites to make them easy and intuitive.", borderColor: "#059669" },
-      { icon: "Share2", title: "Media Strategist", description: "Create viral carousels and graphics that tell stories in seconds.", borderColor: "#3B82F6" },
-      { icon: "Package", title: "Print Master", description: "Design everything physical, from snack packaging to library book covers.", borderColor: "#F59E0B" }
+      { icon: "PenTool", title: "Brand Architect", description: "Create logos and 'brand identities' (like the blue of Tata or the red of Zomato) that help people recognize a company instantly.", borderColor: "#10B981" },
+      { icon: "Cursor", title: "Digital Experience Maker", description: "Design how apps and websites look (UI/UX), making sure they are easy for you to use.", borderColor: "#059669" },
+      { icon: "Share2", title: "Social Media Strategist", description: "Create those viral 'carousels' and graphics that tell stories in seconds.", borderColor: "#3B82F6" },
+      { icon: "Package", title: "Print Master", description: "Design everything physical—from the packaging of your favorite chips to the covers of the books in your library.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years (B.Des)", color: "bg-green-100 text-green-700" },
-      { label: "Tools", detail: "Adobe CC, Figma, Canva", color: "bg-blue-100 text-blue-700" },
-      { label: "Scheme", detail: "NIFT/NID (100% Waiver)", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3-4 Years (B.Des) or 1 Year (PG Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3L–₹55L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "22% Annual Growth in E-commerce/EdTech", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "100%", label: "Potential Fee Waiver", gradient: "from-green-500 to-green-600" },
-      { value: "₹1.2L", label: "Laptop/Tech Kit", gradient: "from-blue-500 to-blue-600" }
+      { value: "22%", label: "Annual Job Growth Rate", gradient: "from-green-500 to-green-600" },
+      { value: "40%", label: "Freelance Designers Globally", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Branding and digital storytelling.",
+        description: "The art of combining text and images to communicate ideas.",
         color: BLUE,
         content: [
-          "The Brand Architect: Creating logos and recognizable digital identities.",
-          "The Digital Experience Maker: Designing UI/UX to ensure ease of app/web use.",
-          "The Social Media Strategist: Designing viral visual content and stories.",
-          "The Print Master: Designing physical packaging and book covers."
+          "Graphic Designing is the art of combining text and images to communicate ideas. A professional in this field—a Graphic Designer—uses digital tools and artistic principles to solve problems and tell stories.",
+          "The Brand Architect: They create logos and 'brand identities' (like the blue of Tata or the red of Zomato) that help people recognize a company instantly.",
+          "The Digital Experience Maker: They design how apps and websites look (UI/UX), making sure they are easy for you to use.",
+          "The Social Media Strategist: They create those viral 'carousels' and graphics that tell stories in seconds.",
+          "The Print Master: They design everything physical—from the packaging of your favorite chips to the covers of the books in your library.",
+          "Why it matters: India's digital economy is exploding. With over 900 million internet users, every business—from a small tea shop in a village to a giant tech firm in Bangalore—needs a visual identity to stand out."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Pixels & Passion Journey",
+        icon: "Clock",
+        description: "Real workflow of a professional graphic designer.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - The Creative Caffeine Kick: Your day begins at a vibrant agency in Pune or perhaps your home studio in a cozy corner of Dehradun. You start by checking 'Visual Trends' on Behance or Pinterest. Today, you're working on a rebranding project for a sustainable Indian startup.",
+          "11:30 AM - The Deep Dive into 'The Suite': You open Adobe Illustrator. You aren't just drawing; you are experimenting with 'Typography' (the style of text) and color psychology. Does this shade of green feel 'eco-friendly' or just 'old'? You spend two hours fine-tuning the curve of a single letter in a logo.",
+          "2:00 PM - The Feedback Loop: Lunch is a quick break before a video call with a client. They love the logo but want the colors to be 'bolder.' You don't take it personally; you listen, explain your design choices, and take notes. Communication is 50% of the job.",
+          "4:30 PM - The AI-Assisted Sprint: You switch to Adobe Photoshop. You use AI tools to quickly remove backgrounds or generate textures, saving you hours of manual work. You use this extra time to focus on the 'Concept'—the big idea that makes the design special.",
+          "7:00 PM - The Final Export: Before wrapping up, you 'export' your files in different formats—one for a giant billboard and one for a tiny mobile app icon. You hit 'Send' on the final presentation. You leave your desk knowing that tomorrow, thousands of people might see and be inspired by something you created today."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Designer DNA",
         icon: "User",
-        description: "Optimal skills for designers.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The Curious Observer: Noticing fonts and layouts on every sign.",
-          "Problem-Solver: Simplifying messy ideas into clear visuals.",
-          "Empathy: Seeing the world through the user's eyes.",
-          "Professional Mastery: Using Adobe CC, Figma, and Canva.",
-          "Design Theory: Command of balance, color, and hierarchy."
+          "The Curious Observer: Do you notice the fonts on signs or the layout of your favorite magazine?",
+          "Problem-Solver: Can you take a messy idea and make it clear and simple?",
+          "Soft Skills: Empathy (can you see the world through the eyes of the person who will use your design?), Resilience (can you handle 'Version 12' of a design without losing your temper?).",
+          "Hard Skills: Mastery of Tools (Adobe Creative Cloud—Photoshop, Illustrator, InDesign—Canva, and Figma), Design Theory (understanding color, balance, hierarchy, and space)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Creative Pipeline",
         icon: "Briefcase",
-        description: "The design pipeline.",
+        description: "The complete design workflow.",
+        color: BLUE2,
+        content: [
+          "The Brief: Meeting the client to understand the goal. (e.g., 'I want to sell organic honey to teenagers.')",
+          "Research: Looking at what competitors are doing and finding a 'gap.'",
+          "Ideation & Sketching: Making 20-30 rough 'thumbnails' on paper.",
+          "Digital Drafting: Bringing the best 2-3 ideas into the computer.",
+          "Review & Refinement: Fixing and polishing based on feedback.",
+          "Final Delivery: Sending the files for print or digital use."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "The Brief: Understanding the client's goal deeply.",
-          "Research: Finding the \"gap\" in competitor offerings.",
-          "Ideation: Making dozens of rough paper thumbnails.",
-          "Digital Drafting: Developing the best 2-3 concepts.",
-          "Refinement: Polishing based on professional feedback.",
-          "Delivery: Sending files for final print or digital usage."
+          "After Class 10: Any stream is okay. Start taking short-term Certificate Courses in Photoshop/Illustrator. Focus: Build a 'Portfolio' (a collection of your best work).",
+          "After Class 12: Pursue a Bachelor of Design (B.Des) or B.Sc. in Animation & Multimedia (3-4 years). Exams: NID DAT, UCEED, NIFT, or University-specific tests.",
+          "After Graduation: Pursue a Master of Design (M.Des) or a specialized PG Diploma.",
+          "Lateral Entry: Graduates from any field can switch via 1-year professional diplomas."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Designer): ₹3.0L–₹5.5L | Mid-level (Senior Designer): ₹8.0L–₹15.0L | Senior/Leadership (Creative Director): ₹25.0L–₹55.0L+",
+          "Metro vs. Tier-2: Metros (Bangalore/Mumbai) offer 30% higher pay, but Tier-2 cities (Pune/Indore) offer a better balance of lower living costs and growing demand.",
+          "Job Growth: E-commerce and EdTech hiring for visual designers is growing at 22% annually.",
+          "Projections: By 2030, the demand for AI-integrated designers will double."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Advertising Agencies (Ogilvy, DDB Mudra), IT Companies (TCS, Google), E-commerce (Amazon, Myntra), and Startups.",
+          "Top Cities: Bangalore (The Design Tech Hub), Mumbai (The Creative Capital), Delhi-NCR, and Hyderabad.",
+          "Remote/Gig Potential: Extremely High. 40% of Indian graphic designers now work as freelancers for global clients on platforms like Upwork or Behance."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Govt. Institutions (NID/IIT): ₹1.5L–₹12.0L (Total for 4 years).",
+          "Private Institutions (Pearl/MIT): ₹15L–₹25L (Total).",
+          "Living Costs: ₹15,000–₹25,000 per month in major education hubs.",
+          "Additional: A powerful PC/Laptop (₹70k–₹1.2L) and a drawing tablet (₹5k–₹30k)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government: NID Ahmedabad, IDC-IIT Bombay, NIFT Delhi, College of Art (Delhi).",
+          "Private: Pearl Academy (Mumbai/Delhi), Symbiosis Institute of Design (Pune), Srishti Manipal (Bangalore), MIT-ID (Pune).",
+          "Online: Coursera (CalArts), Udemy, and Interaction Design Foundation."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Fee waivers for designers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Merit-cum-Means: Up to 100% waiver at NIFT/NID for needy students.",
-          "PM-USP: ₹12,000–₹20,000 yearly for top professional students.",
-          "Private: Pearl offers 25–50% entrance-based scholarships."
+          "NID/NIFT Merit-cum-Means: Financial aid for students from low-income families (up to 100% waiver).",
+          "PM-USP Scheme: For students pursuing professional degrees.",
+          "Private: Many colleges like Pearl Academy offer 25-50% entrance-based scholarships."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Certifications: Adobe Certified Professional (Visual Design) and Google UX Design Professional Certificate.",
+          "Bodies: Association of Designers of India (ADI) is the primary body for networking and professional standards."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Brand Identity Designer, Illustrator, Layout Artist.",
+          "New-Age: UI/UX Designer, Motion Graphics Artist, Metaverse Visualizer, AI Content Strategist.",
+          "Entrepreneurship: Starting your own Design Agency or selling digital assets (fonts/templates) globally."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Design reality checks.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Subjective Feedback: Handling critiques of your creative vision.",
-          "Tight Deadlines: High-stress environments near campaign launches.",
-          "Tech Overload: Staying a 'Permanent Student' of software updates."
+          "Subjective Feedback: A client might hate a color you love. You need a 'thick skin.'",
+          "Tight Deadlines: 'Campaign Launches' often mean late nights and high stress.",
+          "Tech Overload: Software updates every few months; you must be a 'Permanent Student.'"
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in graphic design.",
+        color: BLUE,
+        content: [
+          "AI as a Co-Pilot: AI tools (like Midjourney or Firefly) will handle the manual work, while the designer focuses on Strategy and Storytelling.",
+          "Immersive Design: Designing for AR/VR where graphics aren't just flat but 'around' you.",
+          "Sustainable Design: A shift toward 'Eco-friendly' digital assets that use less server energy."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Steps for students.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Doodle with Purpose: Sketch everyday objects from multiple angles.",
-          "Master Canva: Entry point for layout and color understanding.",
-          "Photography: Learn lighting and composition fundamentals.",
-          "Follow the Masters: Join Behance to follow top Indian designers."
+          "Doodle with a Purpose: Sketch everyday objects from different angles.",
+          "Master Canva: It's a great 'Starter Pack' to understand layout and color.",
+          "Learn Basic Photography: It helps you understand lighting and composition.",
+          "Follow the Masters: Create a Behance account and 'follow' top Indian designers to see what's possible."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "R.K. Laxman: While a cartoonist, his 'Common Man' is a masterclass in iconic visual identity.",
+          "Sudarshan Dheer: The legend behind the logos of HP, ICICI, and Titan.",
+          "Yeswant Chaudhary: A pioneer of Indian corporate identity.",
+          "Gopi Prasannaa: The visionary behind the sleek, modern visual designs for major Indian films and brands.",
+          "Alicia Souza: She turned her cute, relatable illustrations into a massive lifestyle brand."
         ]
       }
     ]
   },
   interior_designing: {
     slug: "interior_designing",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Space Magician for Class 10+",
     heading: "Interior Designing",
-    subheading: "Mastering spatial intuition and technical planning to transform environments.",
+    subheading: "Imagine walking into a room that immediately makes you feel calm, productive, or incredibly excited. That person who decided where the walls should go, what color the curtains should be, or how the light should hit the floor is an Interior Designer.",
     whyCards: [
-      { icon: "Layout", title: "Problem Solver", description: "Maximize space and make tiny apartments feel like palaces.", borderColor: "#10B981" },
-      { icon: "DraftingCompass", title: "Technical Planner", description: "Design blueprints for electrical, plumbing, and lighting integration.", borderColor: "#059669" },
-      { icon: "Box", title: "Material Expert", description: "Expert knowledge of wood, paint, and sustainable monsoon-proof materials.", borderColor: "#3B82F6" },
-      { icon: "Palette", title: "Mood Creator", description: "Apply color psychology to make hospitals peaceful or offices energetic.", borderColor: "#F59E0B" }
+      { icon: "Layout", title: "Problem Solver", description: "Figure out how to make a tiny 1BHK apartment feel like a palace or how to make an office so comfortable that employees actually enjoy being there.", borderColor: "#10B981" },
+      { icon: "DraftingCompass", title: "Technical Planner", description: "Create 'Blueprints' (technical drawings) that show where electrical wires, water pipes, and lights should be placed.", borderColor: "#059669" },
+      { icon: "Box", title: "Material Expert", description: "Know which wood lasts longest in the monsoon, which paint is safe for kids, and how to use recycled materials to save the planet.", borderColor: "#3B82F6" },
+      { icon: "Palette", title: "Mood Creator", description: "Use 'Color Psychology' to pick palettes that can make a hospital feel peaceful or a gym feel high-energy.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3-4 Years Degree", color: "bg-green-100 text-green-700" },
-      { label: "Tools", detail: "AutoCAD, 3ds Max, VR", color: "bg-blue-100 text-blue-700" },
-      { label: "Salary", detail: "Strong Market Demand", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3-4 Years (B.Des) or 2-3 Years (Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹65L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "11.7% CAGR, $81.2B Market by 2030", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "100%", label: "Scholarships Available", gradient: "from-green-500 to-green-600" },
-      { value: "₹1.2L", label: "Pro Laptop Cost", gradient: "from-blue-500 to-blue-600" }
+      { value: "$81.2B", label: "India's Interior Design Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "11.7%", label: "Annual Growth Rate (CAGR)", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Space, technicality, and mood.",
+        description: "Creating interior environments that support health, safety, and well-being.",
         color: BLUE,
         content: [
-          "The Problem Solver: Making tiny spaces feel expansive.",
-          "The Technical Planner: Creating blueprints for electrical and plumbing.",
-          "The Material Expert: Choosing the right wood and child-safe paints.",
-          "The Mood Creator: Using color psychology for emotional impact."
+          "Interior Design is the professional and comprehensive practice of creating interior environments that support the health, safety, and well-being of the people using them.",
+          "The Problem Solver: They don't just pick colors; they figure out how to make a tiny 1BHK apartment feel like a palace or how to make an office so comfortable that employees actually enjoy being there.",
+          "The Technical Planner: They create 'Blueprints' (technical drawings) that show where electrical wires, water pipes, and lights should be placed.",
+          "The Material Expert: They know which wood lasts longest in the monsoon, which paint is safe for kids, and how to use recycled materials to save the planet.",
+          "The Mood Creator: Using 'Color Psychology,' they pick palettes that can make a hospital feel peaceful or a gym feel high-energy.",
+          "Why it matters: India's interior design market is racing toward a massive $81.2 Billion by 2030. With more Indians moving to cities and wanting 'Instagrammable' yet functional homes, the demand for designers who understand modern Indian lifestyles is at an all-time high."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Creative Marathon",
+        icon: "Clock",
+        description: "Real workflow of a professional interior designer.",
+        color: BLUE2,
+        content: [
+          "09:30 AM - The Site Visit: Your day begins not at a desk, but at a 'Site'—a half-finished apartment in a buzzing suburb of Mumbai or Gurgaon. Wearing a hard hat, you meet the carpenter and electrician. You're checking if the 'false ceiling' is being built exactly according to your 3D model. One wrong measurement could ruin the whole look!",
+          "12:00 PM - The Material Hunt: You head to a massive marble and tile showroom. You're looking for a specific 'vein' in the stone that matches the kitchen counters you've designed. You spend an hour touching fabrics, feeling the grain of the wood, and checking the 'Tactility' (how materials feel to the touch).",
+          "02:30 PM - The Digital Deep-Dive: After a quick lunch, you're back at your studio. You open SketchUp or Autodesk Revit. You spend the afternoon building a 3D virtual tour for a client. You aren't just drawing; you're 'Light Mapping'—simulating how sunlight will move across the room at 4:00 PM in the summer.",
+          "05:00 PM - The Client Pitch: You present your 'Mood Board' to a young couple. You explain why you chose 'Sage Green' for their study (it helps focus!) and how the hidden storage under their bed will save space. You have to be a bit of a salesperson and a lot of a storyteller here.",
+          "07:30 PM - The Trend Catch-up: Before heading home, you browse the latest international design blogs. You see a new trend of '3D-Printed Furniture' from Milan and wonder how you can use it in your next project. You leave the studio tired, but your head is already dreaming in colors and textures for tomorrow."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Space Watcher",
         icon: "User",
-        description: "Optimal designer traits.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "Spatial Intuition: Ability to mentally rearrange room layouts.",
-          "Aesthetic Detail: Focus on textures and lighting temperatures.",
-          "Interpersonal Agility: Negotiation skills and client empathy.",
-          "Technical Mastery: 3D visualization and CAD proficiency."
+          "The 'Space Watcher': Do you walk into a room and immediately think, 'The sofa should be over there instead'?",
+          "The Detail Detective: Do you notice the texture of a wall or the specific shade of a lightbulb?",
+          "Soft Skills: Empathy (you must be able to listen to what a client needs, even if they can't explain it well), Negotiation (you'll be managing plumbers, carpenters, and wealthy clients—you need to be 'people-smart').",
+          "Hard Skills: Visual-Spatial Intelligence (the ability to imagine a 3D space just by looking at a 2D floor plan), Tech-Savvy (comfort with software like AutoCAD, 3ds Max, and VR tools)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Design Pipeline",
         icon: "Briefcase",
-        description: "From vibe to handover.",
+        description: "The complete design workflow.",
+        color: BLUE2,
+        content: [
+          "Programming: Meeting the client to understand their budget and 'vibe.'",
+          "Schematic Design: Creating rough sketches and 'Mood Boards' (collections of colors and materials).",
+          "Design Development: Building detailed 3D models and picking the exact furniture and lights.",
+          "Contract Administration: Hiring the contractors (painters, electricians) and supervising the actual construction.",
+          "Styling & Handover: Adding the final touches—the plants, the paintings, and the rugs—before the client moves in."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Programming: Understanding budget and client 'vibe'.",
-          "Schematic Design: Creating sketches and mood boards.",
-          "Design Development: Building 3D models and furniture picking.",
-          "Contract Admin: Supervising contractors and site work.",
-          "Styling & Handover: Final touches with plants and rugs."
+          "After Class 10: Enroll in a Diploma in Interior Design (2–3 years) at a Polytechnic or Vocational Institute. Focus: Learn basic drafting and color theory.",
+          "After Class 12: Pursue a B.Des (Interior Design) or B.Sc. (Interior Design). (Science, Commerce, & Humanities students are all eligible). Exams: NID DAT, UCEED, NIFT, or university-specific tests like SEED.",
+          "After Graduation: Graduates from any field can take a PG Diploma or an M.Des in Interior Design.",
+          "Career Path: Join a firm as a 'Junior Designer' or start a niche boutique studio."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Designer/Draftsman): ₹3.5L–₹7.5L | Mid-level (Project Manager/Senior Designer): ₹12L–₹22L | Senior/Leadership (Design Director/Partner): ₹35L–₹65L+ | Note: Freelance consultants in metros can earn ₹1.5L–₹3L per project.",
+          "Metro vs. Tier-2: Salaries in Bangalore and Mumbai are roughly 30% higher, but Tier-2 cities like Jaipur and Chandigarh are seeing the fastest growth in luxury home design.",
+          "Growth Trajectory: It typically takes 4–6 years to move from an assistant to a Senior Project Lead.",
+          "Projections: The industry is growing at ~11.7% CAGR, with a massive demand for 'Wellness-focused' and 'Smart' home designers."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Architectural Firms, Real Estate Developers (Lodha, DLF), Tech Startups (Livspace, HomeLane), Retail/Visual Merchandising (IKEA, Westside), and Film/Set Design.",
+          "Top Cities: Bangalore (Tech-Home capital), Mumbai (Luxury/Film), Gurgaon (Commercial/Office), and Kochi (Sustainable/Heritage).",
+          "International: High demand in Dubai and Singapore for Indian designers who understand South-Asian aesthetics."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (e.g., JJ School of Art, MSU Baroda): ₹15,000–₹1.5L (Total) | Private (e.g., Pearl Academy, Manipal, UID): ₹4L–₹8L per year.",
+          "Duration: 3–4 years for a Bachelor's; 1–2 years for a Diploma.",
+          "Living Costs: ₹15,000–₹25,000/month in major education hubs.",
+          "Additional: A high-end laptop (₹80k–₹1.2L) for heavy 3D rendering software."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Public: National Institute of Design (NID) Ahmedabad, CEPT University (Ahmedabad), Sir J.J. School of Art (Mumbai), SPA Delhi.",
+          "Private: Pearl Academy (Delhi/Mumbai/Jaipur), Manipal School of Architecture & Planning, Symbiosis (Pune), RV College of Architecture (Bangalore).",
+          "Online/Distance: IGNOU (Diploma) and JD Institute (Online certifications)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Fee waivers for interior designers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "NSP: Merit-cum-Means help for low-income families.",
-          "Sarthak: NIFT/NID waivers up to 100%.",
-          "WUDAT: WUD offers entrance-based scholarships."
+          "Central: NSP (National Scholarship Portal) for Merit-cum-Means.",
+          "Institutional: NIFT/NID Sarthak (up to 100% waiver); Pearl Academy Merit Scholarship (25–50% waiver).",
+          "Specialized: WUD Entrance Scholarship for top scorers in the WUDAT exam."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "IIID (Indian Institute of Interior Designers): The premier association for networking and professional standards in India.",
+          "Council of Architecture (COA): Designers working in architectural firms often register here.",
+          "Certifications: LEED Green Associate (for sustainable design) and Autodesk Certified Professional add massive weight to your CV."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Residential Designer, Office Space Planner, Furniture Designer.",
+          "New-Age: Smart-Home Integrator, Sustainable Material Consultant, Virtual Staging Expert (for Real Estate), Lighting Designer.",
+          "Entrepreneurship: Starting a Modular Kitchen Brand or a Boutique Home-Styling Service on Instagram."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "The gritty side of design.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Site Heat & Dust: Spent hours at construction sites.",
-          "Contractor Management: Dealing with plumbers and carpenters.",
-          "Client Whims: Last-minute changes after purchases."
+          "Site Heat & Dust: You will spend hours at construction sites. It is not always a 'clean, air-conditioned' job.",
+          "The 'Missing' Plumber: Managing contractors can be stressful. When a carpenter doesn't show up, you are responsible to the client.",
+          "Client Whims: A client might change their mind after you've already bought the tiles. You need a lot of patience."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in interior design.",
+        color: BLUE,
+        content: [
+          "AI Design Co-Pilots: AI will soon generate 10 variations of a room layout in seconds, allowing designers to focus purely on the 'Soul' of the project.",
+          "Biophilic Design: Bringing the outdoors in—living walls, natural air purifiers, and 'Circadian Lighting' that changes with the sun.",
+          "Circular Interiors: Every piece of furniture will be designed to be recycled or composted by 2035."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early steps.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Sketchbook Habit: Sketch one room every weekend.",
-          "Learn Basic 3D: Use tools like HomeByMe or Tinkercad.",
-          "Explore Materials: Visit hardware stores to study wood/glass.",
-          "Observe Patterns: Follow designers like Shabnam Gupta."
+          "The Sketchbook Habit: Sketch one room in your house every weekend. Focus on how the light falls.",
+          "Learn Basic 3D: Explore free tools like HomeByMe or Tinkercad.",
+          "Read Materials: Visit a hardware store. Ask about different types of glass, wood, and metal.",
+          "Observe Patterns: Follow designers like Shabnam Gupta or Manit Rastogi to see how they use Indian colors."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Sunita Kohli: A self-taught legend who received the Padma Shri. She is famous for restoring Rashtrapati Bhavan.",
+          "Shabnam Gupta: Known for her earthy, rustic, and celebrity-favorite designs (like Irrfan Khan's home).",
+          "Manit Rastogi: A pioneer in sustainable design; his firm Morphogenesis is world-famous for eco-friendly architecture and interiors.",
+          "Lipika Sud: One of India's leading corporate designers, known for high-end offices and hotels for global brands.",
+          "Twinkle Khanna: A successful designer and founder of 'The White Window,' proving that creativity can have multiple successful chapters."
         ]
       }
     ]
   },
   interpreter_and_translator: {
     slug: "interpreter_and_translator",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Bridge Builders for Class 10+",
     heading: "Interpreter and Translator",
-    subheading: "Building linguistic and cultural bridges in a globalized business world.",
+    subheading: "Imagine being at a high-stakes UN summit where the future of the planet is being discussed. In these rooms, people are speaking different languages, yet they understand each other perfectly. That's the work of a 'silent superhero'—the Interpreter.",
     whyCards: [
-      { icon: "PenTool", title: "Written Mastery", description: "Convert books, apps, and legal docs while keeping the original 'feeling'.", borderColor: "#10B981" },
+      { icon: "PenTool", title: "Written Mastery", description: "Convert books, apps, and legal docs while keeping the original 'feeling' intact.", borderColor: "#10B981" },
       { icon: "Mic2", title: "Speech Precision", description: "Translate speech in real-time (simultaneous) or during pauses (consecutive).", borderColor: "#059669" },
       { icon: "Building2", title: "MNC Opportunities", description: "Support global giants like Google and Amazon in local markets.", borderColor: "#3B82F6" },
       { icon: "Globe2", title: "Cultural Expert", description: "Act as a cultural bridge to ensure cross-border meaning is preserved.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3 Years (Bachelor)", color: "bg-green-100 text-green-700" },
-      { label: "Sector", detail: "MNCs, Law, Med, Gaming", color: "bg-blue-100 text-blue-700" },
-      { label: "Pay", detail: "High Demand Experts", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3 Years (UG) + 2 Years (PG)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹45L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "7.7% CAGR, $5.12B Market by 2033", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "MNCs", label: "Top Tech Employers", gradient: "from-green-500 to-green-600" },
-      { value: "100%", label: "Cultural Bridge", gradient: "from-blue-500 to-blue-600" }
+      { value: "$5.12B", label: "India's Language Services Market by 2033", gradient: "from-green-500 to-green-600" },
+      { value: "7.7%", label: "Annual Growth Rate (CAGR)", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Written and spoken translation.",
+        description: "Building bridges between languages and cultures.",
         color: BLUE,
         content: [
-          "Translators: Working with written words to preserve tone and meaning.",
-          "Interpreters: Real-time spoken translation (simultaneous or consecutive).",
-          "Global Demand: High demand from MNCs and software exporters.",
-          "Strategic Role: Essential for global business and entertainment export."
+          "While people often use these terms interchangeably, they are actually two different (but related) paths:",
+          "Translators work with the written word. They convert books, websites, legal documents, and subtitles from one language to another, ensuring the meaning, tone, and 'feeling' stay the same.",
+          "Interpreters work with the spoken word. They translate speech in real-time—either 'simultaneously' (as the person speaks) or 'consecutively' (after the person pauses).",
+          "Why it matters in today's India: India is home to thousands of MNCs (Google, Amazon, Samsung) and is a massive exporter of software and entertainment. We need experts who can bridge the gap between Indian languages (Hindi, Tamil, Bengali) and global ones (Japanese, German, Mandarin, French) to keep the wheels of the world moving."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Language Liaison",
+        icon: "Clock",
+        description: "Real workflow of a professional interpreter/translator.",
+        color: BLUE2,
+        content: [
+          "08:30 AM - The Deep Dive (Translator Mode): Your day starts in your home office or at a creative agency in Pune. You open your specialized software (called a CAT tool). Today, you are translating a medical manual from German to English. It's like a complex puzzle—you have to find the exact medical term so that a doctor in India understands the instructions perfectly.",
+          "11:30 AM - The Virtual Booth (Interpreter Mode): You put on your noise-canceling headphones. You are virtually attending a business conference between an Indian startup and a Japanese investor. As the CEO speaks about 'Innovation,' you immediately speak the Japanese equivalent into your microphone. You are thinking in two languages at once—it's an adrenaline rush!",
+          "02:00 PM - The Cultural Context Check: After a quick lunch, you're back to a creative project: subtitling a popular Korean drama into Hindi. You realize a certain joke doesn't make sense in India. You spend an hour finding a 'cultural equivalent'—a Hindi idiom that captures the same funny spirit.",
+          "04:30 PM - Client Huddle: You have a video call with a publishing house in Delhi. They want you to translate a best-selling French novel. You discuss the 'voice' of the character—should he sound formal or like a cool teenager?",
+          "07:00 PM - Networking & Skill Up: You spend the evening on a forum for linguists, discussing how AI tools are helping speed up basic translations. You end the day by reading a book in your 'target language' to keep your vocabulary sharp. You go to bed knowing you've helped people from different continents truly understand each other."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Language Sponge",
         icon: "User",
-        description: "Ideal language expert traits.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The 'Language Sponge': Picking up accents and slang naturally.",
-          "Cultural Curiosity & Empathy: Understanding emotion behind words.",
-          "Listen-First Attitude: World-class listening skills.",
-          "Speed of Thought: Quick thinking under pressure.",
-          "Subject Expertise: Knowing Jargon of Law, Medicine, or Gaming."
+          "The 'Language Sponge': Do you find yourself picking up accents or slang easily?",
+          "Cultural Curiosity: Are you fascinated by how people in other countries live, eat, and think?",
+          "Soft Skills: Listen-First Attitude (interpreters must be world-class listeners), Speed of Thought (can you think on your feet under pressure?), Empathy (understanding the emotion behind the words, not just the words themselves).",
+          "Hard Skills: Native-Level Fluency (near-perfect command over at least two languages), Subject Expertise (knowing the 'jargon' of fields like Law, Medicine, or Gaming)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Professional Workflow",
         icon: "Briefcase",
-        description: "The bridge process.",
+        description: "The complete linguistic process.",
+        color: BLUE2,
+        content: [
+          "Preparation: Reading up on the topic (e.g., if you're interpreting for a legal case, you study law).",
+          "Decoding: Understanding the source language (the 'Meaning').",
+          "Transcoding: Finding the right words in the target language (the 'Bridge').",
+          "Review (for Translators): Checking for 'Flow' and 'Accuracy.'",
+          "Delivery: Providing the final text or speech."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Preparation: Studying specific jargon for the topic.",
-          "Decoding: Deeply understanding the source meaning.",
-          "Transcoding: Finding the perfect 'bridge' words.",
-          "Review: Ensuring flow and accuracy in written work.",
-          "Delivery: Providing final text or real-time speech."
+          "After Class 10: Stream: Any (Humanities/Arts is common). Action: Start learning a second language through apps or local centers. Focus: Develop strong writing skills in your mother tongue.",
+          "After Class 12: UG Degree: B.A. (Hons) in a Foreign Language (French, German, Spanish, etc.) or English. Entrance: CUET (for central universities), JNU Entrance, EFLU Entrance. Simultaneous: Take Certificate/Diploma course in that language.",
+          "After Graduation: Master's: M.A. in Interpretation/Translation or Linguistics. Professional Step: PG Diploma in Translation (PGDT) from IGNOU or university. Switching: Any graduate can take intensive language diplomas to pivot."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and market opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level: ₹4.5L–₹8L (MNC Language Specialist/Junior Translator) | Mid-level: ₹12L–₹18L (Senior Interpreter/Technical Translator) | Senior/Leadership: ₹25L–₹45L+ (Chief Linguist/Head of Localization).",
+          "Industry Growth: The Indian language services market is growing at a CAGR of ~7.7%, projected to reach $5.12 Billion by 2033.",
+          "Growth Trajectory: It takes about 3–5 years to become a 'specialized' interpreter (Legal/Medical) who can charge premium rates.",
+          "Metro vs. Tier-2: Most top-paying jobs are in Delhi-NCR, Mumbai, and Bangalore. However, the Remote Work boom has made it possible to earn 'Metro salaries' while living in small towns."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Tech (Localization), Media (Subtitling/Dubbing), Embassies, UN Agencies, Hospitals (Medical Interpreting), and Law Firms.",
+          "Top Cities: Delhi (Embassies/Govt), Mumbai (Entertainment), Bangalore (Tech), Chennai (Manufacturing/Japanese focus).",
+          "Gig Economy: Roughly 40% of translators in India work as freelancers, taking projects from global platforms like ProZ or Upwork."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (Universities): ₹5,000–₹40,000 per year (Subsidized) | Private/Cultural Centers (e.g., Alliance Française): ₹15,000–₹30,000 per level/semester.",
+          "Duration: 3 years (UG) + 2 years (PG). Fast-track diplomas take 1–2 years.",
+          "Hostel/Living: ₹10,000–₹20,000/month in major cities."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: Jawaharlal Nehru University (JNU), University of Delhi, Jamia Millia Islamia.",
+          "South: English and Foreign Languages University (EFLU), Hyderabad; University of Madras.",
+          "West: Savitribai Phule Pune University, Mumbai University.",
+          "East: Visva-Bharati, Santiniketan; EFLU (Regional Center, Shillong).",
+          "Distance Learning: IGNOU (offers the famous PGDT course)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for linguists.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "ICCR Scholarships: Fully funded for Indian languages/arts.",
-          "Global: DAAD, Erasmus+, and MEXT for study abroad.",
-          "NSP: ₹12,000–₹20,000 yearly under Merit-cum-Means."
+          "Government: ICCR Scholarships for language and culture studies.",
+          "International: DAAD (Germany), Erasmus+ (Europe), and MEXT (Japan) offer fully-funded studies for Indian students.",
+          "NSP: National Scholarship Portal schemes for Merit-cum-Means students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "ATA: American Translators Association (Global recognition).",
+          "ITI: Institute of Translation and Interpreting.",
+          "Licensing: In India, you don't need a 'license,' but a degree/diploma from a recognized university is the industry standard."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Literary Translator, Conference Interpreter, Language Teacher.",
+          "New-Age: Localization Project Manager, AI Post-Editor (fixing machine translations), Subtitling & Dubbing Specialist.",
+          "Freelancing: Launching a Language Consultancy or becoming a specialized 'Medical Interpreter' for medical tourists in India."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Mental hurdles.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Mental Fatigue: Interpreting is like a 'brain marathon'.",
-          "The 'Invisible' Role: Performance only noticed if you fail.",
-          "Deadlines: Overnight urgent written translation requests."
+          "Mental Fatigue: Interpreting for hours is like a 'brain marathon'—it is exhausting.",
+          "The 'Invisible' Role: If you do your job perfectly, no one notices you; they only notice if you make a mistake.",
+          "Deadlines: Translators often deal with 'urgent' overnight requests."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in interpretation and translation.",
+        color: BLUE,
+        content: [
+          "The AI Revolution: AI (like ChatGPT or Google Translate) is now doing the 'rough work.' The modern translator's job has shifted to Post-Editing—ensuring the AI hasn't missed cultural nuances or humor.",
+          "Hyper-Localization: Brands no longer just want 'Hindi'; they want 'Bhojpuri' or 'Marathi' to reach the next 500 million Indian users.",
+          "Remote Interpreting: Video-call interpreting is now the standard, allowing you to work for a client in London while sitting in Jaipur."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Language building steps.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Read Widely: Read in mother tongue and second language.",
-          "Watch with Subs: Analyze subtitle accuracy in movies.",
-          "Free Apps: Use Duolingo or Memrise.",
-          "Volunteer: Translate Wikipedia articles or YouTube subs."
+          "Read Widely: Read in both your mother tongue and your second language.",
+          "Watch with Subs: Watch foreign movies with subtitles; try to spot when the translation is 'off.'",
+          "Use Free Apps: Start with Duolingo or Memrise to build a foundation.",
+          "Volunteer: Try translating a Wikipedia article or subtitles for a YouTube video in your favorite hobby."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Arshia Sattar: A renowned translator who brought ancient Sanskrit texts like the Ramayana into modern, beautiful English.",
+          "Daisy Rockwell: Based in the US but a master of Hindi/Urdu, she won the International Booker Prize (2022) for translating Geetanjali Shree's Tomb of Sand.",
+          "Rita Kothari: A pioneer in 'Translation Studies' in India, known for translating Sindhi and Gujarati literature.",
+          "Abhirami Girija Sriram: A leading translator of Tamil and Malayalam literature, bringing South Indian voices to the world."
         ]
       }
     ]
   },
   liberal_arts: {
     slug: "liberal_arts",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Master Key for Class 10+",
     heading: "Liberal Arts",
-    subheading: "Analyzing global problems through multiple lenses to serve humanity.",
+    subheading: "Imagine you are at a high-stakes meeting to decide how a new AI robot should behave. The Engineer knows how to build the robot. The Data Scientist knows how to feed it information. But who decides if the robot is being 'fair'? That person is often a Liberal Arts graduate.",
     whyCards: [
-      { icon: "Brain", title: "Strategic Thinker", description: "Analyze global problems like climate change through economic and social lenses.", borderColor: "#10B981" },
+      { icon: "Brain", title: "Strategic Thinker", description: "Analyze complex global problems through multiple lenses (economic, social, scientific).", borderColor: "#10B981" },
       { icon: "MessageSquare", title: "The Communicator", description: "Turn complex data into stories that people can understand and act upon.", borderColor: "#059669" },
       { icon: "Shield", title: "The Ethical Guide", description: "Ask the 'Should we?' questions to ensure innovation serves humanity.", borderColor: "#3B82F6" },
-      { icon: "Search", title: "Research Proficiency", description: "Gather and synthesize information from wildly different sources and data.", borderColor: "#F59E0B" }
+      { icon: "Search", title: "Master Key", description: "Prepare for any career that requires critical thinking and creative problem-solving.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3-4 Years (NEP)", color: "bg-green-100 text-green-700" },
-      { label: "Personality", detail: "Questioner, Voracious Reader", color: "bg-blue-100 text-blue-700" },
-      { label: "Financials", detail: "Up to 100% Scholarships", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3-4 Years (Degree/Honours)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹5L–₹1.2Cr+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "Higher Ed Market: $313B by 2030", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "100%", label: "Need-Based Aid", gradient: "from-green-500 to-green-600" },
-      { value: "4Y", label: "Honours Degree", gradient: "from-blue-500 to-blue-600" }
+      { value: "$313B", label: "India's Higher Ed Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "100%", label: "Need-Based Aid Available", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Multidisciplinary analytical focus.",
+        description: "The ultimate 'Master Key' for the 21st century.",
         color: BLUE,
         content: [
-          "The Strategic Thinker: Analyzing complex global problems—from climate change to urban poverty—through multiple lenses (economic, social, and scientific).",
-          "The Communicator: Taking complex data or difficult ideas and turning them into stories or strategies that people can understand.",
-          "The Ethical Guide: In a world of fast technology, they ensure that innovation serves humanity by asking 'Should we?' questions."
+          "Liberal Arts is a broad-based education covering humanities, social sciences, natural sciences, and mathematics. It doesn't train you for just one job; it prepares you for any career requiring critical thinking and creative problem-solving.",
+          "The Strategic Thinker: Analyzes complex global problems—from climate change to urban poverty—through multiple lenses (economic, social, and scientific).",
+          "The Communicator: Takes complex data or difficult ideas and turns them into stories or strategies that people can understand and act upon.",
+          "The Ethical Guide: In a world of fast technology, asks the 'Should we?' questions, ensuring that innovation serves humanity.",
+          "Why it matters: The world is changing faster than ever. Many jobs that will exist when you graduate haven't even been invented yet! Liberal Arts graduates are the 'most adaptable' workers because they have learned how to learn."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Polymath at Work",
+        icon: "Clock",
+        description: "Real workflow of a Liberal Arts professional.",
+        color: BLUE2,
+        content: [
+          "09:00 AM - The Contextual Coffee: Your day begins at a leading Strategic Consulting firm in Bangalore or a Global Think Tank in Delhi. You start by reading news from five different countries. Your project today? Helping a global smartphone brand launch a 'Digital Wellness' feature. You aren't just looking at the tech; you're looking at the sociology of phone usage.",
+          "11:30 AM - The Interdisciplinary Huddle: You lead a meeting with a Software Developer and a Marketing Head. You point out that the colors being used in the app might be perceived differently by rural users compared to urban ones. You use your background in Cultural Studies to suggest a design that is more inclusive.",
+          "01:30 PM - The Research Dive: After a quick lunch, you dive into data. You're analyzing how government policies on education might affect the future workforce. You use Statistical tools (the 'Science' side of your degree) to find patterns in human behavior (the 'Arts' side).",
+          "04:00 PM - The Persuasive Pitch: You spend the afternoon writing a 'Policy Brief'—a 2-page document that needs to convince a CEO to invest in green energy. You use your skills in Logic and Rhetoric to build a rock-solid argument that balances profit with planet-safety.",
+          "07:00 PM - The Creative Reflection: Before heading home, you listen to a podcast on Ancient Philosophy. You realize that a 2,000-year-old idea about 'happiness' is exactly what your team needs to hear for their new mental health app. You leave the office feeling like a bridge between the past and the future."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? The Liberal Arts DNA",
         icon: "User",
-        description: "Ideal traits for the questioning mind.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The Questioner: Do you often ask \"Why?\" and \"What if?\"",
-          "The Voracious Reader: Do you enjoy reading about many different things?",
-          "Critical Thinking: The ability to look at an argument deeply.",
-          "Adaptability: Being comfortable when the \"rules\" of a project change suddenly.",
-          "Core Skills: Empathy, Research Proficiency, and Quantitative Reasoning."
+          "The Questioner: Do you often ask 'Why?' and 'What if?' rather than just accepting things as they are?",
+          "The Voracious Reader: Do you enjoy reading about many different things—from space to history to poetry?",
+          "Soft Skills: Critical Thinking (ability to find weak spots in arguments), Adaptability (comfortable when project rules change), Empathy (understanding perspectives different from your own).",
+          "Hard Skills: Research Proficiency (knowing how to find 'real' facts in a world of fake news), Quantitative Reasoning (understanding and using data to prove a point)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Synthesizing Workflow",
         icon: "Briefcase",
-        description: "Exploration to synthesis.",
+        description: "The complete Liberal Arts process.",
+        color: BLUE2,
+        content: [
+          "Exploration: Gathering information from wildly different sources (books, data, interviews).",
+          "Analysis: Looking for the 'Connective Tissue' between these sources.",
+          "Synthesis: Creating a new idea or solution that combines these different views.",
+          "Communication: Presenting the solution in a way that is clear and persuasive."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Exploration: Gathering information from different sources (books, data, interviews).",
-          "Analysis: Looking for the \"Connective Tissue\" between sources.",
-          "Synthesis: Creating a new idea or solution that combines these views.",
-          "Communication: Presenting the solution clearly and persuasively."
+          "After Class 10: Stream: Any (Science, Commerce, or Humanities). Activity: Focus on 'Interdisciplinary' reading. Don't stick to one subject.",
+          "After Class 12: UG Degree: B.A. or B.Sc. in Liberal Arts (3–4 years). Exams: CUET, AAT (Ashoka), FEAT (Flame), JSAT (Jindal). Selection: Look for colleges that offer 'Major/Minor' combinations.",
+          "After Graduation: Option A: MA/M.Sc. in a specialized field (e.g., Public Policy, International Relations). Option B: MBA (Premier B-schools now actively seek Liberal Arts grads). Path: Join a Founder's Office, Think Tank, or Management Trainee program."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE2,
+        content: [
+          "The Higher Ed Boom: The Indian Higher Education market is expected to reach $313 Billion by 2030.",
+          "Salary Ranges (Annual INR): Entry-level (Analyst/Associate): ₹5L–₹10L | Mid-level (Senior Manager/Consultant): ₹12L–₹25L | Senior/Leadership (VP/Director/CEO): ₹45L–₹1.2Cr+.",
+          "Regional Hubs: Bangalore, Mumbai, and Gurgaon offer the highest corporate salaries. Delhi remains the center for Policy and Think Tank roles.",
+          "Placement Trends: At top colleges like Ashoka, recruiters like Google, McKinsey, and HUL are now specifically hiring Liberal Arts majors."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Management Consulting (McKinsey, BCG), Tech Giants (Google, Amazon), Public Policy & Think Tanks, NGOs & Social Impact, Media & Journalism.",
+          "New-Age Roles: Chief of Staff, Founder's Office, UX Researcher, ESG (Environmental, Social, Governance) Analyst.",
+          "International: Extremely high. A Liberal Arts degree is the standard for global careers in Diplomacy and International Business."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (DU/LSR/St. Xavier's): ₹20,000–₹1L (Total) | Private (Ashoka/Flame/Krea): ₹6L–₹12L per year.",
+          "Duration: 3 years (Degree) or 4 years (Honours with Research).",
+          "Living Costs: ₹15,000–₹25,000/month in major education hubs.",
+          "Additional: Study-abroad semesters can add ₹5L–₹10L to the cost."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Private Pioneers: Ashoka University (Sonipat), FLAME University (Pune), O.P. Jindal (Sonipat), Krea University (Andhra Pradesh).",
+          "Public Excellence: Lady Shri Ram (Delhi), St. Stephen's (Delhi), St. Xavier's (Mumbai), Loyola (Chennai).",
+          "Regional Options: Azim Premji University (Bangalore), Shiv Nadar (Greater Noida), Ahmedabad University."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Aid for liberal arts students.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Need-Based (Ashoka/Krea): Can cover up to 100% fees and hostel.",
-          "NSP: Central support for eligible students.",
-          "Azim Premji Foundation: Support for students in the social sector."
+          "Ashoka/Krea Financial Aid: Need-based aid that can cover up to 100% of tuition and residence.",
+          "Central: NSP (National Scholarship Portal) for students from economically weaker sections.",
+          "Azim Premji Foundation: Offers significant subsidies for students committed to social justice."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Certifications: Google Data Analytics, CFA (for Finance focus), or Project Management Professional (PMP).",
+          "Bodies: There is no single 'Bar Council' for Liberal Arts, but joining the Young India Fellowship (YIF) or similar fellowships is a major career boost."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Teacher, Journalist, Civil Servant (IAS/IFS).",
+          "New-Age: AI Ethics Consultant, Behavioral Economist, Sustainability Lead, Digital Anthropologist.",
+          "Entrepreneurship: Liberal Arts grads have a high success rate in Social Entrepreneurship—building businesses that solve societal problems."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Generalist hurdles.",
+        description: "The hard truths of the field.",
         color: BLUE2,
         content: [
-          "The \"Generalist\" Trap: Early on, you might feel like a 'Jack of all trades'. You must build a specific 'Hard Skill'.",
-          "High Fees: Top private colleges can be as expensive as international ones.",
-          "Explaining the Degree: You will often have to explain the value to relatives and some recruiters."
+          "The 'Generalist' Trap: Early on, you might feel like a 'Jack of all trades, master of none.' You must work hard to build a specific 'Hard Skill' (like Data or Writing) alongside your degree.",
+          "High Fees: Top private Liberal Arts colleges in India can be as expensive as studying abroad.",
+          "Explaining the Degree: You will often have to explain to relatives (and some recruiters) exactly what you studied and why it's valuable."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in Liberal Arts.",
+        color: BLUE,
+        content: [
+          "AI-Ready Curriculum: Since AI can handle the 'rote' work, humans will be needed for Judgement, Intuition, and Ethics—the core of Liberal Arts.",
+          "Preparing for Jobs that don't exist: Graduates are already moving into roles like 'Prompt Engineer' and 'Metaverse Strategist' which didn't exist two years ago.",
+          "Skills-First Hiring: 80% of employers now value Critical Thinking and Adaptability over the specific name of your degree."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Action for students.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Read \"The Big Picture\": Read books like Sapiens or The Argumentative Indian.",
-          "Learn Basic Statistics: Data literacy is essential.",
-          "Practice Writing: Start a blog or Substack to write clearly.",
-          "Debate: Join the school team to learn point-counterpoint arguing."
+          "Read 'The Big Picture': Read books like Sapiens by Yuval Noah Harari or The Argumentative Indian by Amartya Sen.",
+          "Learn Basic Statistics: Don't fear math. It is the tool that makes your 'Arts' arguments credible.",
+          "Practice Writing: Start a blog or a Substack. Learn to write clearly and concisely.",
+          "Debate: Join your school's debate team. Learn to argue for a point even if you personally disagree with it."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the field.",
+        color: BLUE2,
+        content: [
+          "Mahatma Gandhi: A trained lawyer who combined law, philosophy, and social activism to change a nation.",
+          "Dr. B.R. Ambedkar: A polymath who studied Economics, Law, and Political Science to rewrite the social fabric of India.",
+          "Shashi Tharoor: A diplomat and writer who uses his vast knowledge of history and literature in global politics.",
+          "Amartya Sen: A Nobel Prize winner who combined Philosophy and Economics to understand why famines happen.",
+          "Shubhashish Bhutiani: A young filmmaker who uses his Liberal Arts background to tell deeply human Indian stories on the global stage."
         ]
       }
     ]
   },
   performing_arts: {
     slug: "performing_arts",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Stage is Yours for Class 10+",
     heading: "Performing Arts",
-    subheading: "Transcending barriers through storytelling, rhythm, and artistic execution.",
+    subheading: "Have you ever felt a rush of energy when you hear a beat, or found yourself mimicking a character from a movie? If you love being under the spotlight—whether dancing, acting, singing, or playing an instrument—then you are already flirting with the world of Performing Arts.",
     whyCards: [
-      { icon: "UserCircle", title: "Emotional Conduit", description: "Utilize vocal modulation and physical expression to manifest complex characters.", borderColor: "#10B981" },
+      { icon: "UserCircle", title: "Emotional Conduit", description: "Use vocal modulation and physical expression to manifest complex characters.", borderColor: "#10B981" },
       { icon: "Music", title: "Cultural Narrator", description: "Transcend language barriers using sonic textures and rhythmic movement.", borderColor: "#059669" },
-      { icon: "Film", title: "The Showrunner", description: "Directors and choreographers serve as the vital creative and technical backbone.", borderColor: "#3B82F6" },
-      { icon: "Users", title: "Collaborative Art", description: "Performing arts is almost always a team sport requiring high interpersonal skills.", borderColor: "#F59E0B" }
+      { icon: "Film", title: "The Showrunner", description: "Directors and choreographers orchestrate creative and technical elements.", borderColor: "#3B82F6" },
+      { icon: "Users", title: "Collaborative Art", description: "Performing arts is a team sport requiring high interpersonal skills.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3 Years Degree", color: "bg-green-100 text-green-700" },
-      { label: "Institutes", detail: "NSD, KM Music, Whistling Woods", color: "bg-blue-100 text-blue-700" },
-      { label: "Scholarship", detail: "SYA & CCRT Schemes", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3 Years (Degree) or 1-2 Years (Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹2.5L–₹1Cr+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "15% CAGR, Live Events Boom", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "₹9,500/mo", label: "NSD Stipend", gradient: "from-green-500 to-green-600" },
-      { value: "NSD", label: "Top Govt Hub", gradient: "from-blue-500 to-blue-600" }
+      { value: "15%", label: "AVGC-XR Sector Growth", gradient: "from-green-500 to-green-600" },
+      { value: "₹9,500/mo", label: "NSD Stipend", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Manifesting characters and cultural narratives.",
+        description: "Creative expression performed for an audience.",
         color: BLUE,
         content: [
-          "The Storyteller: Actors utilize specialized vocal modulation and physical expression to manifest characters.",
-          "The Rhythm Maker: Dancers and musicians employ movement and sonic textures to articulate emotions.",
-          "The Showrunner: Directors and music producers meticulously orchestrate technical and artistic elements.",
-          "Impact: Ensuring a flawless performance that transcends language barriers."
+          "Performing Arts is a form of creative expression that is performed in front of an audience. Unlike a painter who leaves behind a canvas, a performing artist is the art.",
+          "The Storyteller: Actors use their bodies and voices to bring characters to life in movies, plays, or even short YouTube sketches.",
+          "The Rhythm Maker: Dancers and Musicians use movement and sound to communicate emotions that words often can't reach.",
+          "The Showrunner: Professionals also work behind the scenes as choreographers, directors, or music producers to make sure the performance is perfect.",
+          "Why it matters: India is currently the world's largest producer of films and has a booming 'Live Entertainment' scene. As the world becomes more digital, the value of 'Live' human experiences—concerts, theatre, and dance festivals—is sky-rocketing."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Discipline Behind the Dream",
+        icon: "Clock",
+        description: "Real workflow of a professional performer.",
+        color: BLUE2,
+        content: [
+          "06:30 AM - The Morning 'Riyaaz': Your day begins while the world is still quiet. Whether you are a singer practicing your scales, a dancer stretching, or an actor doing vocal warm-ups, this 'Riyaaz' or practice is your foundation. It isn't always fun, but it's what makes you a pro.",
+          "10:30 AM - The Rehearsal Hall: You head to a studio in Andheri (Mumbai) or Mandi House (Delhi). Today, you're rehearsing for a new musical. For three hours, you repeat the same 30-second sequence. You sweat, you miss a step, you try again. Perfection in performing arts is built on repetition.",
+          "02:00 PM - The Collaboration: Lunch is a quick sandwich with your castmates. Afterward, you meet with the Music Director and Choreographer. You discuss the 'mood' of the scene. Does the character feel angry or just sad? You aren't just performing; you are co-creating a story.",
+          "04:30 PM - The Audition Circuit / Content Creation: If you aren't currently in a show, you are at an audition. You have two minutes to impress a casting director. On days without auditions, you're at home filming a 'reel' for Instagram or a performance for YouTube. In 2026, your social media is your digital resume.",
+          "08:00 PM - The Performance / Study: It's showtime! The lights go up, the adrenaline hits, and for two hours, you give everything you have to the audience. On off-nights, you are at a theatre watching someone else perform, analyzing their technique. You head to bed exhausted, but the 'high' of the applause keeps you dreaming in rhythm."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? Traits & Skills",
         icon: "User",
-        description: "Resilience and EQ for the stage.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The \"People\" Person: Thriving in collaborative, group-based artistic settings.",
-          "Resilience (The Steel Spine): Ability to handle negative results from multiple auditions.",
-          "Emotional Intelligence: Portraying human feelings accurately and with nuance.",
-          "Technical Mastery: Command of your 'raags' or 'mudras' through years of practice."
+          "The 'People' Person: Do you thrive in groups? Performing arts is almost always a team sport.",
+          "Resilience (The Steel Spine): Can you handle hearing 'No' at 10 auditions and still show up for the 11th with a smile?",
+          "Soft Skills: Emotional Intelligence (understanding human feelings to portray them accurately), Time Management (balancing rehearsals, travel, and health).",
+          "Hard Skills: Physical Fitness (dancers and actors need the stamina of athletes), Technical Mastery (knowing your 'raags,' your 'mudras,' or your 'acting methods' like Stanislavski or Meisner)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Performance Pipeline",
         icon: "Briefcase",
-        description: "The path to a live 'Take'.",
+        description: "The complete performance workflow.",
+        color: BLUE2,
+        content: [
+          "Preparation: Continuous training to keep the voice/body in peak condition.",
+          "Pre-Production: Reading scripts, learning scores, or understanding the choreography.",
+          "The 'Blocking' Phase: Determining where to stand and move on stage.",
+          "The 'Dress' Rehearsal: Performing with full costumes, lights, and sound.",
+          "Execution: The actual live performance or 'Take' on a film set."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Preparation: Continuous training to keep voice and body in peak condition.",
-          "Pre-Production: Reading scripts and learning choreography.",
-          "The \"Blocking\" Phase: Determining physical positioning on stage.",
-          "The \"Dress\" Rehearsal: Full costumes, lights, and sound integration.",
-          "Execution: The final live performance or film 'take'."
+          "After Class 10: Join a local Gharana or Sangeet Natak Academy center for foundational training. Stream: Any (Arts/Humanities is most helpful). Start building a YouTube/Social Media presence.",
+          "After Class 12: Pursue a Bachelor of Performing Arts (BPA) or B.A. in Music/Dance/Drama (3-4 years). Entrance: CUET, Nalanda Dance Research Centre tests, or University auditions. Certifications: Gandharva Mahavidyalaya (for Classical Music/Dance).",
+          "After Graduation: Pursue an M.P.A. or apply to the National School of Drama (NSD). Career Switch: Take a 1-year PG Diploma in Acting or Music Production. Join a professional theatre troupe or a dance company."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Ensemble/Chorus): ₹2.5L–₹5.0L | Mid-level (Soloist/Supporting Actor): ₹8.0L–₹15.0L | Senior/Lead (Star/Main Artist): ₹25.0L–₹1Cr+ (highly variable).",
+          "Metro vs. Tier-2: Mumbai remains the 'Premium' hub for Film/TV, but cities like Ahmedabad, Pune, and Kochi have seen a 25% rise in live performance festivals.",
+          "Growth Trajectory: The AVGC-XR sector and live events are growing at ~15% CAGR.",
+          "Hiring Trends: Huge demand for 'Hybrid Artists'—actors who can sing, or dancers who can act in 'Motion Capture' for video games."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Film & TV (Bollywood, Tollywood, etc.), OTT Platforms, Theatre Companies, Theme Parks, Cruise Ships, and Wedding Entertainment.",
+          "Top Cities: Mumbai (Acting/Music), Chennai (Classical/Film), Delhi (Theatre), Bangalore (Contemporary Dance/Indie Music).",
+          "Freelance Potential: Very high. Most performing artists work as 'contractors' for different projects.",
+          "International: High demand for Indian classical artists in the UK, USA, and Singapore."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (NSD/University Depts): ₹5,000–₹30,000 (Highly subsidized) | Private (Whistling Woods/AR Rahman's KM Music Conservatory): ₹4L–₹12L per year.",
+          "Duration: 3 years (Degree); 1-2 years (Diplomas).",
+          "Additional Costs: Costumes, makeup, instrument maintenance, and portfolio shoots (₹20,000–₹1L)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Drama: National School of Drama (NSD), Delhi; Film and Television Institute of India (FTII), Pune.",
+          "Dance: Kalakshetra Foundation, Chennai; Kathak Kendra, Delhi; Nalanda Nritya Kala Mahavidyalaya, Mumbai.",
+          "Music: KM Music Conservatory, Chennai; Prayag Sangeet Samiti, Allahabad; Visva-Bharati, Santiniketan.",
+          "Private Excellence: Whistling Woods International, Mumbai; The Barry John Acting Studio."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Cultural talent search aids.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "CCRT Search: ₹3,600 yearly plus ₹9,000 tuition help for children.",
-          "SYA: ₹5,000 monthly for two years for young artists.",
-          "NSD: ₹8,000–₹9,500 monthly stipend for top students."
+          "Central Govt: CCRT Scholarship for young artists in the age group of 10-14 (can continue till 20).",
+          "Ministry of Culture: Scholarship to Young Artistes (SYA) for advanced training in India (₹5,000/month).",
+          "Institutional: NSD and FTII provide monthly stipends to almost all selected students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "CINTAA: Cine and TV Artistes' Association (Essential for actors in Mumbai).",
+          "Sangeet Natak Akademi: The national level academy for performing arts.",
+          "Certifications: Trinity College London (for Western Music/Speech); Gandharva Mahavidyalaya (for Indian Classical)."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Film/TV Actor, Stage Performer, Music Teacher.",
+          "New-Age: Voice-over Artist (for Podcasts/Gaming), Motion Capture Performer, Virtual YouTuber (VTuber) Content Creator, Corporate Drama Facilitator.",
+          "Entrepreneurship: Opening your own Dance Studio, Music Academy, or starting an Independent Production House."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "The public eye and precarious income.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Income Insecurity: High volatility between jobs requires solid financial planning.",
-          "Physical Toll: Vulnerability to injuries, vocal strain, and long hours on stage.",
-          "The \"Public Eye\": Handling social media trolling and critique needs thick skin."
+          "Income Insecurity: You might be a star today and waiting for a call tomorrow. 'Financial planning' is as important as acting.",
+          "Physical Toll: Long hours on your feet, injuries in dance, or vocal strain in singing.",
+          "The 'Public Eye': Dealing with social media criticism or 'trolling' requires a very thick skin."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in performing arts.",
+        color: BLUE,
+        content: [
+          "The Metaverse Stage: Performing live concerts inside virtual worlds where fans attend as avatars.",
+          "AI-Enhanced Practice: AI tools that analyze your pitch or dance posture in real-time and suggest corrections.",
+          "Regional Dominance: The 'Pan-India' movie trend means artists who speak multiple languages will earn much more."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Action for young performers.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Multi-Disciplinary Engagement: Join school productions for technical and artistic experience.",
-          "Digital Adaptation: Launch a YouTube channel to master camera presence.",
-          "Theoretical Mastery: Study musical notation and performance theory.",
-          "Diverse Observation: Analyze Broadway musicals to local street plays."
+          "Join the School Play: Don't just act—help with sets or sound too.",
+          "Start a YouTube Channel: Learn to perform for the camera, not just a live audience.",
+          "Learn the 'Theory': Don't just sing; learn to read music (Notation).",
+          "Watch Everything: From Broadway musicals to street plays in your local language."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Nawazuddin Siddiqui: A graduate of NSD who proved that talent and hard work beat 'looks' every time.",
+          "Rukmini Devi Arundale: The legendary dancer who revived Bharatnatyam and gave it a global platform.",
+          "A.R. Rahman: He revolutionized Indian film music by blending technology with soulful melodies.",
+          "Aditi Mangaldas: A Kathak pioneer who showed how a classical dance can be modern and edgy.",
+          "Piyush Mishra: A multi-talented actor, singer, and writer who showed that a 'theatre heart' can rule Bollywood."
         ]
       }
     ]
   },
   photography: {
     slug: "photography",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Visual Storyteller for Class 10+",
     heading: "Photography",
-    subheading: "Architecting visuals through light, composition, and digital mastery.",
+    subheading: "Imagine you are standing on a busy street in Varanasi. The sun is setting, casting a golden glow over the Ganges. With one click, you haven't just taken a picture; you've frozen a moment in time that will never happen exactly like that ever again.",
     whyCards: [
       { icon: "Aperture", title: "Visual Architect", description: "Make photos by controlling light, shadows, and complex composition.", borderColor: "#10B981" },
       { icon: "Wand2", title: "Post-Production Wizard", description: "Use AI and software to enhance, color-correct, and perfect the raw image.", borderColor: "#059669" },
@@ -1230,100 +2505,226 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
       { icon: "Briefcase", title: "Business Savvy", description: "66% of photographers are self-employed; market your personal brand correctly.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "3 Years / Diploma", color: "bg-green-100 text-green-700" },
-      { label: "Entry Kit", detail: "₹1.5L - ₹3.5L", color: "bg-blue-100 text-blue-700" },
-      { label: "Personality", detail: "Observant, Patient", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "3 Years (Degree) or 6-12 Months (Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹3L–₹1Cr+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "4-6% CAGR, E-commerce Boom", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "66%", label: "Self-Employed", gradient: "from-green-500 to-green-600" },
-      { value: "3Y", label: "Tech Upgrade Cycle", gradient: "from-blue-500 to-blue-600" }
+      { value: "66%", label: "Self-Employed Photographers", gradient: "from-green-500 to-green-600" },
+      { value: "25%", label: "E-commerce Photo Jobs Growth", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Architecting light and shadow.",
+        description: "The art and science of capturing light.",
         color: BLUE,
         content: [
-          "The Visual Architect: Controlling light and composition to 'make' an image.",
-          "The Post-Production Wizard: Using AI and editing software to enhance raw shots.",
-          "The Subject Expert: Deeply understanding subjects to capture their essence.",
-          "Scope: From weddings and jewelry to wildlife and high fashion."
+          "Photography is the art and science of capturing light to create an image. A professional photographer uses technical knowledge (like aperture, shutter speed, and ISO) combined with an artistic eye to tell a story or sell a product.",
+          "The Visual Architect: They don't just 'take' photos; they 'make' them by controlling light, shadows, and composition.",
+          "The Post-Production Wizard: A huge part of the job happens after the shoot—using AI and software to edit, color-correct, and enhance the image.",
+          "The Subject Expert: Whether it's a wedding, a piece of jewelry, or a tiger in the wild, photographers must understand their subject deeply to capture its essence.",
+          "Why it matters: In a world of Instagram, Amazon, and Netflix, we consume thousands of images every day. Brands need photographers to make their products look irresistible, and the world needs photographers to document history as it happens."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Golden Hour Chase",
+        icon: "Clock",
+        description: "Real workflow of a professional photographer.",
+        color: BLUE2,
+        content: [
+          "04:30 AM - The Early Bird: Your day begins while the rest of the world is dreaming. If you're a wildlife or landscape photographer, you're already in your jeep or hiking to a viewpoint. You need to be ready before the 'Golden Hour'—that magical window of soft morning light.",
+          "10:00 AM - The Studio Shift: By mid-morning, you might move to a high-tech studio in Mumbai or Delhi. Today, it's a fashion shoot for an e-commerce brand. You're coordinating with a stylist, a makeup artist, and a model. You're not just holding a camera; you're a director.",
+          "01:30 PM - The Tech Huddle: Over a quick lunch, you check your digital files. You're looking at 'tethers'—images sent instantly from your camera to your laptop. You discuss the 'vibe' with the client. Is the shadow too harsh? Should we change the background?",
+          "04:00 PM - The Digital Darkroom: The afternoon is spent in 'Post.' You sit at a powerful computer with dual monitors. You use Adobe Lightroom and AI-culling tools to sort through 2,000 photos from yesterday's wedding shoot. You spend hours fine-tuning colors.",
+          "08:00 PM - The Networking Loop: Before wrapping up, you upload a 'Behind the Scenes' reel to Instagram. In 2026, your social media is your storefront. You reply to inquiries from potential clients and prep your gear for another 5:00 AM start tomorrow."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? Traits & Skills",
         icon: "User",
-        description: "Necessary traits for photographers.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The Observer: Noticing lighting shifts and detail others miss.",
-          "Patience: Waiting for 'the moment' in wildlife or portrait work.",
-          "Interpersonal Skills: Making nervous clients feel like superstars.",
-          "Business Mindset: Marketing yourself is vital in a freelance market.",
-          "Technical Mastery: Proficiency in Photoshop, Lightroom, and AI tools."
+          "The Observer: Do you notice the way light falls on a building or the specific expression on a person's face?",
+          "Patience of a Saint: Can you wait four hours in the heat just to get one perfect shot of a bird taking flight?",
+          "Soft Skills: Interpersonal Skills (you must make nervous clients feel like superstars), Business Savvy (66% of photographers are self-employed; you need to know how to market yourself).",
+          "Hard Skills: Technical Mastery (understanding the 'Exposure Triangle'), Software Proficiency (mastering Photoshop, Lightroom, and AI editing tools)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Creative Pipeline",
         icon: "Briefcase",
-        description: "Pre-shoot to delivery.",
+        description: "The complete photography workflow.",
+        color: BLUE2,
+        content: [
+          "Pre-Shoot: Client briefing, location scouting, and mood-boarding.",
+          "The Shoot: Setting up lights, directing subjects, and capturing 'the moment.'",
+          "Culling: Using AI tools to pick the best 5% of the photos.",
+          "Editing: Color grading, retouching, and removing distractions.",
+          "Delivery: Providing high-res digital files or physical prints to the client."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Pre-Shoot: Briefing, location scouting, and mood-boarding.",
-          "The Shoot: Setting lights, directing subjects, and capturing.",
-          "Culling: Using AI tools to pick the top 5% of shots.",
-          "Editing: Color grading and retouching the selected set.",
-          "Delivery: Providing high-res digital or physical prints."
+          "After Class 10: Any stream is okay. Enroll in a Diploma/Certificate in Photography (6-12 months). Join as an Assistant Photographer to a senior pro.",
+          "After Class 12: Pursue a BFA (Bachelor of Fine Arts) in Photography or a B.Sc. in Multimedia. Entrance: NID DAT, University CETs, or Portfolio Review.",
+          "After Graduation: For career-switchers: Pursue a PG Diploma in Photography or Visual Communication. Master specialized genres like Drone or Medical Photography."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Assistant/Junior): ₹3.0L–₹4.5L | Mid-level (Senior/Lead): ₹8.0L–₹15.0L | Experienced/Celebrity: ₹25L–₹1Cr+ (highly variable).",
+          "City Comparison: Mumbai and Hyderabad pay roughly 15-20% more due to the film and fashion industries.",
+          "Hiring Trends: Massive growth in E-commerce photography (hiring up 25% annually) and Product photography for D2C brands.",
+          "Industry Growth: Projected to grow at a steady 4-6% CAGR through 2030 as visual content remains the king of the internet."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Advertising Agencies, E-commerce (Amazon, Ajio), News Media (Photojournalism), Real Estate (Architectural Photography), and Event Management.",
+          "Top Cities: Mumbai (Fashion/Film), Delhi-NCR (Corporate/News), Bangalore (Tech/Product), Ooty (High-end education hub).",
+          "Remote Work: Highly flexible. Freelancing is the dominant mode, allowing you to work for global clients from a small-town home studio."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (FTII/JNAFAU): ₹40,000–₹1.5L (Total) | Private (Light & Life/DCOP): ₹2.5L–₹8.0L per year.",
+          "Equipment Costs: This is the big one! A professional setup (Camera + 2 Lenses + Laptop) will cost ₹1.5L–₹3.5L initially.",
+          "Living Costs: ₹15,000–₹25,000/month in cities like Mumbai or Delhi."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "North: Delhi College of Photography (DCOP), AJK-MCRC (Jamia Millia Islamia).",
+          "South: Light & Life Academy (Ooty), JNAFAU (Hyderabad), Creative Hut (Kerala).",
+          "West: National Institute of Design (NID, Ahmedabad), National Institute of Photography (NIP, Mumbai).",
+          "East/Central: Visva-Bharati (Santiniketan), AAFT (Noida/Raipur)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for photographers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "Nikon Scholarship: Up to ₹1,00,000 for Class 12 students.",
-          "LKA Grant: ₹20,000 monthly for one year to young artists.",
-          "IIP: Merit-cum-means scholarships up to ₹1,00,000."
+          "Nikon Scholarship Program: Specifically for Class 12 passed students from low-income families (up to ₹1,00,000).",
+          "Lalit Kala Akademi: Monthly stipends of ₹20,000 for young artists to work in regional centers.",
+          "IIP Academy SLG Program: Merit-based aid for students pursuing professional diplomas."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "FIP (Federation of Indian Photography): The national body for photography clubs and salons.",
+          "DGCA Drone License: Mandatory if you want to be a professional Drone Photographer in India.",
+          "Adobe Certified Professional: Adds huge value for post-production roles."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Wedding, Fashion, and Portrait Photographer.",
+          "New-Age: Drone/Aerial Photographer, Food Stylist & Photographer, AI-Hybrid Visualizer, Real Estate 3D-Tour Creator.",
+          "Freelancing: Selling 'Stock Photos' on sites like Shutterstock or Getty Images."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Gear toll and income flux.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Physical Toll: Carrying heavy gear for 12-hour wedding shifts.",
-          "Expensive Upgrades: Technology shifts force reinvestment every 3 years.",
-          "Unpredictable Income: Freelance cycles follow seasonality (e.g., weddings)."
+          "Physical Toll: Carrying 10kg of gear and standing for 12 hours at a wedding is a regular 'workout.'",
+          "Expensive Upgrades: Technology changes fast. You'll need to reinvest your earnings into new lenses and cameras every 3 years.",
+          "Unpredictable Income: As a freelancer, some months are 'busy' (wedding season) and some are very quiet."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in photography.",
+        color: BLUE,
+        content: [
+          "AI Collaboration: AI won't replace photographers, but it will take over the 'boring' parts like editing, allowing you to focus purely on creativity.",
+          "Authenticity over Perfection: In 2026, people are tired of 'fake' looking AI photos. There is a huge return to Grainy Film aesthetics and 'Raw/Candid' moments.",
+          "Computational Photography: Your smartphone is now a professional tool. Multi-lens systems are making high-quality photography accessible to everyone."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early visual learning.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Doodle with Light: Use your phone to try light painting.",
-          "Master the 'Gram: Follow legends like Raghu Rai.",
-          "Learn Editing: Use Adobe Lightroom Mobile to play with sliders.",
-          "Volunteer: Shoot school events to build a portfolio."
+          "Doodle with Light: Use your phone camera to try 'Light Painting' or 'Silhouettes.'",
+          "Master the 'Gram: Follow photographers like Raghu Rai or Atul Kasbekar. Analyze why their photos look better than yours.",
+          "Learn Editing: Download the free version of Adobe Lightroom Mobile and play with the sliders.",
+          "Volunteer: Offer to shoot a school event or a local community festival for free to build your first portfolio."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Raghu Rai: The legend of Indian photojournalism; his black-and-white photos of India are part of world history.",
+          "Dayanita Singh: She transformed photography into 'Book-building,' showing that photos can be objects of art.",
+          "Atul Kasbekar: Famous for his Kingfisher Calendars; he showed how photography can be a massive commercial success.",
+          "Rathika Ramasamy: One of India's first successful female wildlife photographers, inspiring thousands to head to the forests.",
+          "Dabboo Ratnani: Known for his annual celebrity calendar; he is the 'go-to' man for Bollywood stars."
         ]
       }
     ]
   },
   product_designing: {
     slug: "product_designing",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Functional Artist for Class 10+",
     heading: "Product Designing",
-    subheading: "Solving human problems through ergonomics, material science, and manufacturing tech.",
+    subheading: "Have you ever wondered why the buttons on your smartphone are in those specific places? Or why a plastic water bottle has those ridges? That isn't an accident. Every object you touch has been obsessed over, tested, and polished by a Product Designer.",
     whyCards: [
       { icon: "Lightbulb", title: "Problem Solver", description: "Identify real-world issues and build tangible, physical solutions.", borderColor: "#10B981" },
       { icon: "User", title: "Human Expert", description: "Study Ergonomics to ensure products fit the human body perfectly.", borderColor: "#059669" },
@@ -1331,193 +2732,444 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
       { icon: "Settings", title: "Tech-Translator", description: "Bridge the gap between artistic ideas and industrial factory manufacturing.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years (B.Des)", color: "bg-green-100 text-green-700" },
-      { label: "Laptop", detail: "₹1L+ High-Spec", color: "bg-blue-100 text-blue-700" },
-      { label: "Outcome", detail: "1-2 Year Project Cycles", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "4 Years (B.Des) or 2 Years (M.Des)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹1.5Cr+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "11% CAGR, Hardware Boom", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "₹2.5L", label: "L’Oréal Max Grant", gradient: "from-green-500 to-green-600" },
-      { value: "IIT", label: "Top Govt Path", gradient: "from-blue-500 to-blue-600" }
+      { value: "15%", label: "Robotics & Smart-Home CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "₹1L+", label: "High-Spec Laptop Required", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Bridging the gap between art and engineering.",
+        description: "Imagining, creating, and iterating products.",
         color: BLUE,
         content: [
-          "The Problem Solver: Finding real problems and building solutions.",
-          "The Human Expert: Studying Ergonomics for bodily fit.",
-          "The Material Scientist: Deciding on sustainable or industrial material use.",
-          "The Tech-Translator: Ensuring ideas can be manufactured at scale."
+          "Product Design is the process of imagining, creating, and iterating products that solve users' problems or address specific needs in a given market.",
+          "The Problem Solver: They don't just 'draw' a product; they find a problem (like 'it's hard to carry groceries on a bike') and build a solution.",
+          "The Human Expert: They study Ergonomics—the science of how the human body moves—to make sure a chair doesn't hurt your back or a phone fits your hand perfectly.",
+          "The Material Scientist: They decide if a product should be made of recycled ocean plastic, lightweight aluminum, or bamboo.",
+          "The Tech-Translator: They work with engineers to make sure the 'cool idea' can actually be manufactured in a factory.",
+          "Why it matters: In a world facing climate change and overflowing landfills, we need designers to create products that last longer and don't hurt the planet."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: From Sketch to Store",
+        icon: "Clock",
+        description: "Real workflow of a product designer.",
+        color: BLUE2,
+        content: [
+          "09:00 AM - The 'User Deep-Dive': Your day begins at a sunlit design studio in Bangalore or Pune. You start by watching videos of people using your current prototype—a new type of ergonomic kitchen tool. You notice that left-handed users are struggling. You grab your notebook and start sketching a 'universal grip.'",
+          "11:30 AM - The 3D Lab: You move to your computer. Using software like Rhino or SolidWorks, you turn your 2D sketch into a 3D digital model. You aren't just looking at the shape; you're checking if the internal battery fits.",
+          "01:30 PM - The 'Fail Fast' Lunch: Over lunch with the engineering team, you discuss why the last prototype broke during the 'drop test.' In product design, 'failing' is just a way of learning what doesn't work.",
+          "03:00 PM - 3D Printing the Future: You send your new file to the 3D Printer. You watch as the machine builds your design layer by layer. An hour later, you hold the physical tool in your hand. It's a 'low-fidelity' model, but it's real. You test the grip. Much better.",
+          "05:30 PM - The Sustainability Audit: You meet with the 'Sourcing' team. You're arguing for a more expensive bio-plastic because it's 100% compostable. You have to convince the business team that 'Planet over Profit' will actually help the brand in the long run."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? Traits & Skills",
         icon: "User",
-        description: "Optimal traits for tinkerers.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The \"Tinkerer\": Enjoying taking things apart to see how they work.",
-          "Empathy: Feeling user frustration with bad product design.",
-          "Collaboration: Bridging 'Artist' and 'Nerd' roles.",
-          "Hard Skills: Sketching, 3D CAD modeling, and rapid Prototyping."
+          "The 'Tinkerer': Do you like taking things apart to see how they work?",
+          "Empathy: Can you feel the frustration of someone using a 'bad' product?",
+          "Soft Skills: Storytelling (you must 'sell' your idea to people who only care about money), Collaboration (you will be the bridge between the 'Artist' and the 'Engineer').",
+          "Hard Skills: Sketching (the ability to explain an idea with a pencil in 30 seconds), CAD (Computer-Aided Design) (mastering 3D modeling software), Prototyping (being handy with foam, clay, 3D printers, and even cardboard)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & Design Thinking Process",
         icon: "Briefcase",
-        description: "Empathize to manufacture.",
+        description: "The complete product design workflow.",
+        color: BLUE2,
+        content: [
+          "Empathize: Talk to users. What do they hate? What do they love?",
+          "Define: State the problem clearly (e.g., 'Commuters need a way to keep tea hot for 4 hours without it leaking').",
+          "Ideate: Brainstorm 100 ideas—even the crazy ones.",
+          "Prototype: Build a rough version of the best 3 ideas.",
+          "Test: Give it to real people. Watch them use it. Break it. Fix it.",
+          "Manufacture: Prepare the 'blueprints' for the factory."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Empathize: Talk to users about their hates and loves.",
-          "Define: State the problem clearly.",
-          "Ideate: Brainstorm dozens of solutions.",
-          "Prototype: Build physical versions in foam, clay, or 3D print.",
-          "Test: Give it to real people and fix identified breaks.",
-          "Manufacture: Prepare blueprints for factory production."
+          "After Class 10: Any stream is fine. Take short courses in Fine Arts or Basic 3D Modeling. Activity: Start a 'Design Journal.' Draw 1 object every day. Skill: Learn to use a basic 3D tool like Tinkercad.",
+          "After Class 12: Pursue a Bachelor of Design (B.Des) in Product or Industrial Design (4 years). Exams: UCEED (IITs), NID DAT, NIFT Entrance, SEED. Stream: Science is preferred for technical products, but Commerce/Arts are also eligible.",
+          "After Graduation: Pursue an M.Des (2 years). Exams: CEED (for IITs/IISc), NID PG. Engineers (B.Tech) often switch here. Switch: Take a 1-year PG Diploma in User Experience (UX)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Designer): ₹4.5L–₹9.0L | Mid-level (Senior Designer): ₹15L–₹28L | Senior/Leadership (Design Head/VP): ₹45L–₹85L+ | Leadership/CXO (Director of Design): ₹1.5Cr+.",
+          "City Comparison: Hyderabad and Bangalore offer the highest pay (up to 30% above national average), followed by Pune (Automotive hub) and Gurgaon.",
+          "Job Growth: Hiring for specialized designers (AI-integrated and Sustainable) is growing at ~11% annually.",
+          "Industry Growth: The Indian Robotics and Smart-Home market is expected to grow at a CAGR of ~15% through 2030, creating thousands of 'Hardware + Software' design roles."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Industries: Consumer Electronics (Boat, Noise), Automotive (Tata Motors, Mahindra), E-commerce (Flipkart, Amazon), Startups (Ather, Ola Electric), and Furniture (IKEA, Godrej).",
+          "Top Cities: Bangalore, Pune, Hyderabad, Gurgaon, and Ahmedabad.",
+          "Remote/Gig: While physical products require 'lab time,' UI/UX Product Design (digital products) is 90% remote-friendly.",
+          "International: Indian designers are highly valued in Europe and Singapore for their ability to design for 'diverse and frugal' markets."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (NID/IIT): ₹1.5L–₹4L per year | Private (Pearl/Srishti/UID): ₹5L–₹10L per year.",
+          "Duration: 4 years for B.Des; 2 years for M.Des.",
+          "Living Costs: ₹15,000–₹25,000/month in Tier-1 cities.",
+          "Additional: A high-performance laptop (₹1L+) and specialized kits (calipers, cutting tools, foam)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government (Public): NID Ahmedabad (Branches in Bhopal, Vijayawada, Kurukshetra), IDC-IIT Bombay, IIT Delhi, DoD-IIT Guwahati.",
+          "Private Excellence: MIT Institute of Design (Pune), Srishti Manipal (Bangalore), Unitedworld Institute of Design (UID, Ahmedabad), Pearl Academy.",
+          "Regional Hubs: IIFD Chandigarh (North), Woxsen University, Hyderabad (South), Avantika University, Ujjain (Central)."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Funding for product designers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "PM-USP Scheme: ₹12,000–₹20,000 yearly for top students.",
-          "Institutional: NID Sarthak and IIT fee waivers for talent.",
-          "Corporate: Adobe and L’Oréal fund creative design students."
+          "Central: PM-USP (Central Sector Scheme) for meritorious students from families with income < ₹4.5L/pa.",
+          "Institutional: NID Sarthak (Financial aid for tuition); IIT-B Need-cum-Merit scholarships.",
+          "Private: L'Oréal India For Young Women in Science (can apply to design research); Adobe Design Circle Scholarships."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Certifications: CSWA (Certified SOLIDWORKS Associate), Autodesk Fusion 360 Certified User, Google UX Design Certificate.",
+          "Bodies: Association of Designers of India (ADI) is the best place to network."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Industrial Designer, Furniture Designer, Toy Designer.",
+          "New-Age: UX/UI Product Designer, Sustainable Material Specialist, Human-Robot Interaction (HRI) Designer, Wearable Tech Designer.",
+          "Entrepreneurship: Launching your own D2C brand on Instagram or starting a Design Consultancy."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Workshop strain and slow rewards.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Idea vs. Reality: Redesigning for feasibility when factories say 'impossible'.",
-          "Physical Toll: Long hours in workshops with dust and machinery.",
-          "Slow Rewards: Physical products take 1-2 years to reach store shelves."
+          "The 'Idea' vs. 'Reality': You might design something beautiful that the factory says is 'impossible' to build. You have to learn to compromise.",
+          "Physical Toll: Long hours in workshops with dust, paint fumes, and heavy machinery.",
+          "Slow Rewards: Unlike a digital ad, a physical product takes 1-2 years to reach the store. You need patience!"
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in product design.",
+        color: BLUE,
+        content: [
+          "AI as a 'Co-Pilot': AI won't replace you, but it will help you generate 1,000 variations of a chair in 10 seconds. You become the 'Curator.'",
+          "Hyper-Personalization: Products 3D-printed specifically for your body shape and size.",
+          "Bio-Design: Products that are literally 'grown' from fungi or bacteria instead of being manufactured."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early design habits.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Sketch Everything: Show the 'inside' of everyday products.",
-          "Learn Tinkercad: Start with free, fun 3D modeling.",
-          "Read Materials: Learn about bamboo vs plastic and sustainability.",
-          "Enter Contests: Look for Google Science Fair or India Design Mark."
+          "Sketch Everything: Draw your water bottle, your bicycle, your TV remote. Show the 'inside' of the product.",
+          "Learn Tinkercad: It's a free, fun 3D modeling tool. Build a virtual toy.",
+          "Read Materials: Look at labels. What is 'Polypropylene'? Why is bamboo better?",
+          "Enter Contests: Look for the Google Science Fair or the India Design Mark junior awards."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Ashok Panwalkar: A legend who led design at Philips India, creating iconic audio products for the Indian middle class.",
+          "Sandeep Sangaru: A master of bamboo; he turned a local Indian material into world-class luxury furniture.",
+          "Aakriti Kumar: Founder of Differniture, she creates high-end furniture using zero-waste, sustainable practices.",
+          "Sujay Das: A designer who marries traditional Bengali folk art with modern furniture—winning global awards.",
+          "Valay Gada: He creates products that look like sculptures, often reflecting urban and environmental themes."
         ]
       }
     ]
   },
   website_designer: {
     slug: "website_designer",
-    badge: "🎨 Creative Exploration for Class 10+",
+    badge: "🎨 The Digital Architect for Class 10+",
     heading: "Website Designer",
-    subheading: "Bridging code and art to create functional, story-driven digital experiences.",
+    subheading: "In the 21st century, a business without a website is like a shop without a door. Who decided where the buttons should be? Who chose the colors that make the site feel 'cool' or 'trustworthy'? That person is a Website Designer.",
     whyCards: [
-      { icon: "UserCheck", title: "User Advocate", description: "Design for ease, ensuring 'Buy' buttons are found in under two seconds.", borderColor: "#10B981" },
-      { icon: "PenTool", title: "Brand Storyteller", description: "Use typography and color to tell a brand's unique story powerfuly.", borderColor: "#059669" },
+      { icon: "UserCheck", title: "User Advocate", description: "Design for ease, ensuring 'Buy' buttons are found in less than two seconds.", borderColor: "#10B981" },
+      { icon: "PenTool", title: "Brand Storyteller", description: "Use typography and color to tell a brand's unique story powerfully.", borderColor: "#059669" },
       { icon: "Code", title: "The Tech Hybrid", description: "Bridge the gap between pure art and coding for functional beauty.", borderColor: "#3B82F6" },
       { icon: "Monitor", title: "Prototyping Focus", description: "Create high-fidelity interactive versions to test with real users.", borderColor: "#F59E0B" }
     ],
     quickFacts: [
-      { label: "Duration", detail: "4 Years", color: "bg-green-100 text-green-700" },
-      { label: "Tools", detail: "Figma, Adobe XD, HTML/CSS", color: "bg-blue-100 text-blue-700" },
-      { label: "Industry", detail: "High-Growth Tech Labs", color: "bg-purple-100 text-purple-700" }
+      { label: "Duration", detail: "4 Years (B.Des) or 6 Months (Bootcamp)", color: "bg-green-100 text-green-700" },
+      { label: "Salary Range", detail: "₹4L–₹70L+", color: "bg-blue-100 text-blue-700" },
+      { label: "Growth", detail: "18% CAGR, $2B Market by 2030", color: "bg-purple-100 text-purple-700" }
     ],
     statCards: [
-      { value: "NID", label: "Premier Govt Path", gradient: "from-green-500 to-green-600" },
-      { value: "6mo", label: "Tech Learning Cycle", gradient: "from-blue-500 to-blue-600" }
+      { value: "18%", label: "UI/UX Designer Job Growth", gradient: "from-green-500 to-green-600" },
+      { value: "$2B", label: "Interaction Design Market by 2030", gradient: "from-blue-500 to-blue-600" }
     ],
     guideSections: [
       {
         id: "what",
         title: "What is This Career All About?",
         icon: "Target",
-        description: "Functional digital beauty.",
+        description: "Visual communication in the digital space.",
         color: BLUE,
         content: [
-          "The User Advocate: Designing for ease and speed of goal completion.",
-          "The Brand Storyteller: Using typography and fonts to convey brand values.",
-          "The Tech Hybrid: Understanding how things work to design how they look.",
-          "Cross-Disciplinary: Bridging art and pure coding for the best UX."
+          "Website Design is the art and science of creating the visual look and functional layout of a website. It is about Visual Communication in the digital space.",
+          "The User Advocate: They don't just design for beauty; they design for ease. They ask: 'Can a user find the Buy button in less than two seconds?'",
+          "The Brand Storyteller: They use colors, fonts (typography), and images to tell a brand's story.",
+          "The Tech Hybrid: They bridge the gap between pure art and pure coding. While they focus on how things look, they must understand how things work.",
+          "Why it matters: With over 900 million internet users in India, every entity—from a local bakery in Kochi to a global tech giant in Bangalore—needs a digital home. Designers are the architects of these homes."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: The Pixel Pioneer",
+        icon: "Clock",
+        description: "Real workflow of a website designer.",
+        color: BLUE2,
+        content: [
+          "09:30 AM - The Creative Sync: Your day begins at a high-growth tech startup in Gurgaon or perhaps a home office overlooking the hills of Himachal. You start with a 'Stand-up Meeting' on Zoom. The product manager tells you that users are dropping off the 'Sign-up' page. Your mission today: fix the friction.",
+          "11:00 AM - Wireframing & Logic: Before you touch any colors, you build a 'Wireframe.' This is like a skeletal blueprint of the page. You use a tool like Figma. You aren't worried about being pretty yet; you're worried about the flow. Does Step A lead logically to Step B?",
+          "01:30 PM - The Visual Deep-Dive: After lunch, the 'Art' begins. You start applying the 'Visual Identity.' You choose a 'Neon Violet' for the buttons to make them pop against a dark background. You spend an hour fine-tuning the 'Kerning' (the space between letters) because, in design, the details are the product.",
+          "04:00 PM - The Developer Handover: You meet with the Web Developers. You show them your prototype. They ask if the animations you designed will make the site slow to load. You negotiate. You decide to simplify a transition to keep the site fast. A designer must speak the language of code, even if they don't write it all.",
+          "06:30 PM - User Testing & Feedback: You watch a recording of a real person using a test version of your site. They get confused by a menu. You realize your design was too 'clever' and not 'clear' enough. You make a quick note to simplify it tomorrow."
         ]
       },
       {
         id: "who",
-        title: "Who Should Consider This Career?",
+        title: "Is This You? Traits & Skills",
         icon: "User",
-        description: "Optimal traits for web masters.",
-        color: BLUE2,
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
         content: [
-          "The \"Curious Fixer\": Annoyed by apps that are hard to use.",
-          "Visual Sensitivity: Noticing off-center logos or clashing colors.",
-          "Communication & Empathy: Understanding user and client needs.",
-          "Hard Skills: Figma, Adobe XD, and web basics (HTML/CSS).",
-          "UI/UX Principles: Knowledge of grids, typography, and color theory."
+          "The 'Curious Fixer': Do you find yourself annoyed when an app is hard to use?",
+          "Visual Sensitivity: Do you notice when a logo is slightly off-center or when colors clash?",
+          "Soft Skills: Empathy (can you think like a 60-year-old grandmother trying to use a banking site?), Communication (can you explain why a design works to someone who isn't creative?).",
+          "Hard Skills: Design Tools (Figma, Adobe XD, Sketch, Photoshop), Web Basics (understanding HTML/CSS even if you don't code daily), UI/UX Principles (knowledge of grid systems, typography, and color theory)."
         ]
       },
       {
         id: "responsibilities",
-        title: "Key Responsibilities & Work Process",
+        title: "Key Responsibilities & User-Centered Design Process",
         icon: "Briefcase",
-        description: "Discovery to handover.",
+        description: "The complete website design workflow.",
+        color: BLUE2,
+        content: [
+          "Discovery: Researching the audience and the client's goals.",
+          "Information Architecture: Mapping out all the pages of the site (Sitemap).",
+          "Wireframing: Creating low-fidelity skeletal layouts.",
+          "Prototyping: Adding colors, images, and interactive elements (High-fidelity).",
+          "Testing: Seeing if real users can navigate the prototype.",
+          "Handover: Providing the 'Assets' (images, icons, style guides) to the developers."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
         color: BLUE,
         content: [
-          "Discovery: Researching audience and client goals.",
-          "Architecture: Mapping sitemaps for navigation.",
-          "Wireframing: Creating low-fidelity skeletal layouts.",
-          "Prototyping: Adding colors and high-fidelity interaction.",
-          "Testing: Validating the prototype with real users.",
-          "Handover: Providing assets and style guides to developers."
+          "After Class 10: Any stream. Take short-term Certificate Courses in Graphic/Web Design. Focus on a Portfolio.",
+          "After Class 12: Pursue a B.Des (Interaction/Graphic Design) or B.Sc. (Multimedia/Animation). Exams: NID DAT, UCEED, NIFT, or SEED.",
+          "After Graduation: Any graduate (B.A./B.Com/B.E.) can take a PG Diploma in UX/UI Design. Institutes: NID, IIT-B (IDC), or private bootcamps. Lateral Entry: Software Engineers or Graphic Designers can switch via 6-month intensive UX Bootcamps. Certifications: Google UX Design (Coursera), HFI (Human Factors Intl)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual INR): Entry-level (Junior Designer): ₹4.0L–₹7.5L | Mid-level (Senior Web Designer): ₹12L–₹22L | Leadership (Design Lead/Creative Director): ₹35L–₹70L+.",
+          "City Comparison: Bangalore, Hyderabad, and Pune pay the 'Tech Premium' (approx. 25% higher than the national average).",
+          "Job Growth: The demand for UI/UX and Web Designers is growing at ~18% CAGR.",
+          "Industry Projection: By 2030, the 'Interaction Design' market in India will be worth over $2 Billion."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: IT Services (TCS, Infosys), Product Companies (Zomato, Flipkart), Ad Agencies, and EdTech (BYJU'S, Unacademy).",
+          "Top Cities: Bangalore, Gurgaon, Pune, Hyderabad, and Chennai.",
+          "Remote/Freelance: Extremely High. Website design is one of the top 5 freelance careers globally. You can earn in Dollars while living in India."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: BLUE2,
+        content: [
+          "Course Fees: Government (NID/IIT): ₹1.5L–₹4.0L per year | Private (Pearl/ISDI/MIT): ₹5.0L–₹9.0L per year | Bootcamps: ₹50,000–₹2.5L (3-6 months).",
+          "Living Costs: ₹15,000–₹25,000/month in Tier-1 cities.",
+          "Equipment: A high-spec laptop (MacBook or equivalent Windows) is essential (₹80k–₹1.5L)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: BLUE,
+        content: [
+          "Government: NID (Ahmedabad/Gandhinagar), IDC-IIT Bombay, IIT Guwahati (DoD), NIFT (various campuses).",
+          "Private: Srishti Manipal (Bangalore), MIT-ID (Pune), Pearl Academy, UPES (Dehradun).",
+          "Online: Interaction Design Foundation (IxDF), Google UX Certificate, Udemy/Coursera."
         ]
       },
       {
         id: "scholarships",
         title: "Scholarship Opportunities",
         icon: "Award",
-        description: "Aid for tech designers.",
+        description: "Financial assistance programs.",
         color: BLUE,
         content: [
-          "NID Sarthak: Significant waivers for needy talent.",
-          "Adobe: Monetary support and mentorship for young designers.",
-          "Google: Fee waivers for UX professional courses."
+          "NID Sarthak: Financial aid for students from economically weaker sections.",
+          "Adobe Design Circle: Global scholarship for students pursuing design.",
+          "Google Career Certificates: Often provides fee waivers via partner NGOs for the UX course."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials that boost your resume.",
+        color: BLUE2,
+        content: [
+          "Bodies: Association of Designers of India (ADI); Interaction Design Association (IxDA).",
+          "Certifications: HFI-Certified Usability Analyst (CUA); Google UX Design Professional Certificate."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: BLUE,
+        content: [
+          "Conventional: Web Designer, Graphic Designer, Front-end Stylist.",
+          "New-Age: UI/UX Designer, Interaction Designer, Design System Lead, AI-Interface Designer.",
+          "Freelancing: Starting a Digital Agency or selling 'Web Templates' on platforms like Envato or Webflow."
         ]
       },
       {
         id: "challenges",
-        title: "Key Challenges",
+        title: "Challenges and Realities",
         icon: "AlertTriangle",
-        description: "Tech obsolescence risks.",
+        description: "The hard truths of the profession.",
         color: BLUE2,
         content: [
-          "Subjectivity: Clients ignoring scientific design principles.",
-          "Tech Obsolescence: Skills become outdated without learning every 6 months.",
-          "Support Role: Fighting for the user when design is ignored for speed."
+          "Subjectivity: A client might say 'I don't like this blue,' even if it's the scientifically correct blue. You need a 'thick skin.'",
+          "Tech Obsolescence: If you stop learning for six months, you are outdated.",
+          "The 'Support' Role: Sometimes, developers or business heads might ignore design for the sake of speed. You have to fight for the user."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in website design.",
+        color: BLUE,
+        content: [
+          "AI Design: Tools like Framer AI and Midjourney will generate the initial layouts. The designer's job will shift from 'drawing' to 'Curating and Prompting.'",
+          "Voice & Gesture: Designing websites that you talk to or navigate with hand movements (Spatial Design).",
+          "V-Commerce: Designing 3D shopping experiences for VR headsets."
         ]
       },
       {
         id: "startnow",
-        title: "Start Now (Class 9–12)",
+        title: "Skills to Build in School (Class 9–12)",
         icon: "Rocket",
-        description: "Early web habits.",
+        description: "Actionable steps to start your journey.",
         color: BLUE,
         content: [
-          "Doodle with Layouts: Redesign your favorite apps in sketches.",
-          "Learn Figma: Copy your favorite site to learn their secrets.",
-          "Read \"Don't Make Me Think\": The UX bible by Steve Krug.",
-          "Master HTML/CSS: Knowing code makes you a 10x better designer."
+          "Doodle with Layouts: Don't just draw people; draw how you would redesign your favorite app.",
+          "Learn Canva & Figma: Both have free versions. Start by 'copying' your favorite website to learn their secrets.",
+          "Read 'Don't Make Me Think': It's the 'Bible' of web design by Steve Krug.",
+          "Master HTML/CSS: Use FreeCodeCamp. Knowing how code works makes you a 10x better designer."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in the industry.",
+        color: BLUE2,
+        content: [
+          "Sudhir Sharma: Founder of Indi Design and a pioneer in bringing Indian design to the global stage.",
+          "B.K. Chakravarthy: A professor at IIT Bombay who has mentored thousands of India's top designers.",
+          "Poonam Bir Kasturi: Though focused on composting (Daily Dump), she is a legend in using design to solve real-world problems.",
+          "Gopi Prasannaa: A legendary visual designer known for creating some of the most iconic digital and film identities in India."
         ]
       }
     ]
@@ -1622,6 +3274,7478 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       }
     ]
+  },
+  mass_communication: {
+    slug: "mass_communication",
+    badge: "📢 The Voice of the World for Class 10+",
+    heading: "The Voice of the World",
+    subheading: "Shaping how society thinks, feels, and acts through strategic communication.",
+    whyCards: [
+      { icon: "Megaphone", title: "Strategic Communicator", description: "Craft messages that reach millions and influence public opinion.", borderColor: "#10B981" },
+      { icon: "Users", title: "Relationship Builder", description: "Connect brands, media, and audiences through authentic storytelling.", borderColor: "#059669" },
+      { icon: "Zap", title: "Crisis Manager", description: "Stay calm under pressure and navigate complex situations with speed.", borderColor: "#3B82F6" },
+      { icon: "TrendingUp", title: "Content Creator", description: "Produce engaging content across multiple platforms and formats.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Market Size", detail: "₹2.8 Lakh Crore by 2026", color: "bg-green-100 text-green-700" },
+      { label: "Growth Rate", detail: "10-12% CAGR", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹3Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹2.8L Cr", label: "Media & Entertainment Market 2026", gradient: "from-green-500 to-green-600" },
+      { value: "10-12%", label: "Annual Growth Rate", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The umbrella career of the media world",
+        color: BLUE,
+        content: [
+          "Mass Communication is the 'Umbrella' career of the media world. While Journalism focuses on news and Advertising focuses on selling, Mass Communication covers the entire spectrum of sending messages to the masses.",
+          "It includes Public Relations (PR), Event Management, Radio/Podcasting, Film Production, and Corporate Communications.",
+          "In the 21st century, 'Content is King,' but 'Communication is Queen.' India's Media & Entertainment industry is exploding (expected to reach ₹2.8 Lakh Crore by 2026).",
+          "From managing a crisis for a multinational company to producing a viral web series, Mass Comm professionals shape how society thinks, feels, and acts. They are the architects of public opinion."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Kabir, a PR Manager at a top media agency in Mumbai",
+        color: BLUE2,
+        content: [
+          "09:00 AM: Kabir scans five different newspapers and Twitter trends. His client, a major tech company, is launching a new phone today. He checks if the 'leaks' he planted yesterday have been picked up by tech blogs.",
+          "10:30 AM: The Crisis Call. A small controversy has erupted—a tweet by the tech company's CEO was misinterpreted. Kabir jumps into action. He drafts a 'Clarification Statement,' gets it approved by the legal team, and sends it to key journalists to control the narrative. In PR, speed is everything.",
+          "01:00 PM: Lunch with an Influencer. He meets a popular Tech YouTuber at a cafe in Bandra. They discuss the upcoming phone launch. Kabir isn't paying him; he is pitching the story of why this phone matters. Relationships are his currency.",
+          "03:00 PM: Event Planning. Kabir heads to a 5-star hotel to oversee the setup for the evening launch event. He checks the stage lighting, the sound system, and the 'goodie bags' for the media. He ensures the 'Photo Wall' is perfectly lit for Instagram.",
+          "05:00 PM: The Press Conference. The event starts. Kabir is the bridge—he guides journalists to the CEO for interviews, ensures photographers get the right angle, and manages the chaos. He is the invisible hand making sure the event looks effortless.",
+          "08:00 PM: Wrap Up. The event trends on Twitter. Kabir sends a 'Coverage Report' to the client, showing them all the articles and posts generated today. He heads home, exhausted but buzzing with the adrenaline of a successful launch."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "You don't need to be loud, but you need to be expressive",
+        color: BLUE,
+        content: [
+          "The Social Butterfly: Do you love meeting new people and can strike up a conversation with anyone?",
+          "The Crisis Manager: When things go wrong in a school project, are you the one who stays calm and fixes it?",
+          "The Storyteller: Can you narrate a boring incident in a way that makes everyone laugh?",
+          "The Versatile Creative: Do you enjoy a mix of writing, photography, and organizing?",
+          "Hard Skills: Media Writing (Press Releases/Scripts), Video Production (basics of shooting/editing), Social Media Analytics, and Event Logistics.",
+          "Soft Skills: Networking, Adaptability (no two days are the same), and Persuasion."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The Create - Connect - Communicate model",
+        color: BLUE2,
+        content: [
+          "Strategize: Deciding what to say. (e.g., 'We need to make this brand look eco-friendly').",
+          "Create: Making the content. (Press releases, videos, podcasts, or event plans).",
+          "Disseminate: Sending it out. (Pitching to journalists, publishing on YouTube, or hosting an event).",
+          "Monitor: Checking the impact. (Did people like it? Did sales go up? Did the news cover it?)",
+          "Manage Reputation: Continuously protecting the image of the person or brand you represent."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to enter mass communication",
+        color: BLUE,
+        content: [
+          "Pathway A - The Bachelor's Route (After Class 12): Class 12 (Any stream), Entrance Exams (CUET, SET, IPU-CET, JMI), Undergraduate (BJMC, BMM, BA Media Studies), Specialization in final year.",
+          "Pathway B - The Master's Route (The Specialist): Graduation (Any degree), Entrance Exams (IIMC, XIC-OET, SIMC-MA, ACJ), Postgraduate (MA in Mass Communication or PG Diploma).",
+          "Pathway C - The Creative/Portfolio Route (For Film/Radio/Content): Skill Building (Learn editing, photography, voice modulation), Portfolio (Create short film, podcast, blog), Entry (Intern with Production Houses or Radio Stations)."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Explosive growth in media and entertainment",
+        color: BLUE2,
+        content: [
+          "Market Size: The Indian Media & Entertainment sector is growing at 10-12% CAGR. The OTT market alone is set to double by 2027, creating huge demand for content producers.",
+          "Hiring Trends: PR Boom (As startups go public, they need massive PR teams), Regional Content (Netflix and Amazon hiring creators for Tamil, Telugu, Malayalam), Event Management (Post-pandemic demand for live concerts and weddings has skyrocketed).",
+          "Salary Ranges: Entry (0-2 Yrs): PR Executive ₹4-6L, AD ₹3-5L | Mid (3-7 Yrs): PR Manager ₹10-18L, Line Producer ₹8-15L | Senior (8-15 Yrs): VP Communications ₹25-50L, EP ₹20-45L | Leadership: Head of Corp Comm ₹80L-2Cr+, Studio Head ₹1Cr-3Cr+"
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top industries and cities for mass communication careers",
+        color: BLUE,
+        content: [
+          "Top Industries: PR Agencies (Adfactors PR, Edelman, Genesis BCW), Media Houses (Viacom18, Disney+ Hotstar, Sony Pictures, Zee), Corporate Sector (Every large company has a Corporate Communications department), Event Management (Wizcraft, Percept).",
+          "Top Cities: Mumbai (The Entertainment Capital), Delhi-NCR (The News & Corporate PR Capital), Chennai/Hyderabad (Hubs for South Indian Film & Media), Bangalore (Hub for Digital Media & Tech PR).",
+          "Freelancing: High. Voiceover artists, scriptwriters, and independent PR consultants work remotely for global clients."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for mass communication programs",
+        color: BLUE2,
+        content: [
+          "IIMC (Govt) PG Diploma: ₹1.6-2 Lakhs (1 Year)",
+          "Central Universities (Jamia/DU) MA/BA: ₹20,000-1.5 Lakhs (2-3 Years)",
+          "Top Private (Symbiosis/Manipal) BA/MA: ₹8-12 Lakhs (3/2 Years)",
+          "Xavier's (Mumbai) BMM/PG Diploma: ₹1-4 Lakhs (3/1 Year)",
+          "Living Costs: ₹15,000-25,000 per month in major education cities"
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for mass communication in India",
+        color: BLUE,
+        content: [
+          "Government: Indian Institute of Mass Communication (IIMC) New Delhi, AJK MCRC Jamia Millia Islamia, FTII (Film and Television Institute of India) Pune, Delhi University (IP College/DCAC).",
+          "Private: Symbiosis Institute of Media & Communication (SIMC/SCMC) Pune, Xavier Institute of Communications (XIC) Mumbai, MICA Ahmedabad, Asian College of Journalism (ACJ) Chennai, Manipal School of Communication (SOC) Manipal."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for mass communication students",
+        color: BLUE2,
+        content: [
+          "IIMC Freeships: Need-based fee waivers for students from economically weaker sections.",
+          "Sanskriti - Prabha Dutt Fellowship: For young women media professionals.",
+          "Inlaks Shivdasani Foundation: Funding for film and media studies abroad or special projects in India.",
+          "University Merit Scholarships: Symbiosis and Manipal offer tuition waivers for semester toppers."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Credentials and professional organizations",
+        color: BLUE,
+        content: [
+          "No License Needed for most mass communication roles.",
+          "Certifications: Google Digital Unlocked (Essential for digital comms), HubSpot Content Marketing (Great for PR/Content roles), Video Editing (Adobe Premiere/Final Cut - A verified skill that adds value).",
+          "Professional Bodies: PRCI (Public Relations Council of India), EEMA (Event and Entertainment Management Association)."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse career paths in mass communication",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Public Relations Officer (PRO) - Managing brand image, Radio Jockey (RJ) - Hosting shows on FM radio, Film Director/Editor - Making movies or ads, Event Manager - Organizing concerts, awards, and weddings.",
+          "New-Age Careers: Podcaster - Creating audio series (True Crime, Interviews), OTT Content Producer - Developing shows for Netflix/Amazon, Community Manager - Building and engaging online communities for brands.",
+          "Freelancing: Voiceover Artist - Lending your voice for ads/cartoons, Ghostwriter - Writing speeches or articles for CEOs."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of mass communication careers",
+        color: BLUE,
+        content: [
+          "High Stress & Burnout: PR and Events are listed among the 'Most Stressful Jobs' globally. Deadlines are tight, and clients can be demanding.",
+          "Low Initial Pay: Glamorous industries often pay 'peanuts' at the start because supply of students is high.",
+          "Unpredictable Hours: A crisis can happen at midnight; a film shoot can go on for 18 hours. The 9-to-5 concept doesn't exist here.",
+          "Network Dependent: Your growth depends heavily on who you know. Networking is part of the job, not optional."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of mass communication",
+        color: BLUE2,
+        content: [
+          "Generative AI: AI tools (like Sora/ChatGPT) will draft press releases and generate storyboards. Professionals will move from 'creating' to 'strategizing.'",
+          "Hyper-Local Content: Radio and News are going hyper-local (District/Taluka level apps).",
+          "Immersive Media: AR/VR (Augmented Reality) will change how we consume content. Mass Comm grads will design 'Metaverse Experiences.'"
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Start a Blog/Vlog: Document your hobby. Learn how to engage an audience.",
+          "Organize Events: Volunteer for the school annual day or fete. Learn logistics and coordination.",
+          "Photography: Learn to tell a story with a single image. It trains your eye.",
+          "Read Diverse Media: Don't just read the textbook. Read magazines, watch documentaries, and listen to podcasts."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring mass communication professionals",
+        color: BLUE2,
+        content: [
+          "Guneet Monga: Film Producer (Sikhya Entertainment). Won an Oscar for The Elephant Whisperers. She represents the power of Indian content globally.",
+          "Prasoon Joshi: Chairman of McCann Worldgroup & CBFC. A master communicator who blends advertising, poetry, and cinema.",
+          "Roshan Abbas: A legendary Radio Jockey, TV host, and founder of Geometry Encompass (Event Management). He defines versatility.",
+          "Radhakishan Damani: Founder of D-Mart, but started as a stockbroker. His mastery of Corporate Communications and investor relations is a case study in financial comms.",
+          "Ranveer Allahbadia (BeerBiceps): Represents the new-age Mass Comm success—from a YouTuber to a media entrepreneur running a podcast network."
+        ]
+      }
+    ]
+  },
+  public_relations_officer: {
+    slug: "public_relations_officer",
+    badge: "📢 The Image Architects for Class 10+",
+    heading: "The Image Architects",
+    subheading: "Managing reputation and shaping narratives in the age of instant information.",
+    whyCards: [
+      { icon: "Shield", title: "Reputation Manager", description: "Protect and enhance brand image in real-time across all channels.", borderColor: "#10B981" },
+      { icon: "Users", title: "Media Relations Expert", description: "Build and maintain relationships with journalists and influencers.", borderColor: "#059669" },
+      { icon: "AlertCircle", title: "Crisis Handler", description: "Stay calm under pressure and navigate complex situations with speed.", borderColor: "#3B82F6" },
+      { icon: "Megaphone", title: "Storyteller", description: "Craft compelling narratives that resonate with audiences.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Market Size", detail: "₹4,570 Cr by 2030", color: "bg-green-100 text-green-700" },
+      { label: "Growth Rate", detail: "High demand", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹3Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹4,570 Cr", label: "PR Industry Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "24/7", label: "Crisis Response Ready", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The storyteller and protector of brand reputation",
+        color: BLUE,
+        content: [
+          "While advertising pays for attention ('Buy our phone, it's great!'), Public Relations earns attention ('This phone is great,' says a trusted tech reviewer).",
+          "A PR Officer is the Storyteller and Protector of a brand. Their job is to manage the reputation of a company, celebrity, or politician. They act as the bridge between their client and the public/media.",
+          "If a company is a ship, the PR officer is the radar—spotting icebergs (crises) before they hit and finding clear waters (positive news) to sail through.",
+          "In today's India, where a single tweet can destroy a reputation in minutes, PR is no longer optional; it is survival. From helping startups like Zomato stay cool to managing the image of global giants like Tata, PR professionals shape the narratives that define our economy and culture."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Ananya, a PR Executive at a leading agency in Mumbai",
+        color: BLUE2,
+        content: [
+          "09:00 AM: Ananya starts her day with 'Media Monitoring.' She scans 10 newspapers and tracks Twitter trends. 'Great! The Economic Times covered our client's sustainability initiative,' she notes. She clips the article and sends a 'Coverage Report' to the client.",
+          "10:30 AM: The Pitch. Her client, a FinTech startup, is launching a new app. Ananya calls a journalist from a major tech blog. She doesn't beg for coverage; she sells a story. 'Hi, did you know 40% of Indians struggle with saving? Our founder has a solution...' The journalist agrees to an interview.",
+          "01:00 PM: Crisis Control. A crisis erupts. A video of a rude delivery partner from her client's company has gone viral. Ananya jumps on a 'War Room' call. She drafts a 'Holding Statement' (an official apology and action plan) to be released immediately to stop the trolling.",
+          "03:00 PM: Content Creation. The chaos settles. She sits down to write a 'Press Release' for next week's event. Every word must be perfect—journalists hate grammatical errors.",
+          "05:00 PM: Influencer Coordination. She sends gift hampers to 20 lifestyle influencers for an upcoming campaign. She follows up to ensure they post the unboxing video at the right time.",
+          "07:30 PM: Networking Event. She heads to a Press Club mixer. It looks like a party, but she is working—building relationships with reporters so they pick up her phone calls next time."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "You don't need to be a 'Spin Doctor,' but you need to be a People Person",
+        color: BLUE,
+        content: [
+          "The Social Chameleon: Can you talk to a grumpy journalist, a stressed CEO, and a cool influencer in the same hour?",
+          "The Calm in Chaos: When things go wrong (and they will), do you panic or plan?",
+          "The News Junkie: Do you naturally consume news? You need to know what's happening in the world to make your client relevant.",
+          "The Storyteller: Can you turn a boring annual report into an exciting story about growth?",
+          "Hard Skills: Writing (Press Releases, Blogs), Media Relations, Crisis Management, and Social Media Analytics.",
+          "Soft Skills: Emotional Intelligence (EQ), Persuasion, and Time Management."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The RACE model: Research, Action, Communication, Evaluation",
+        color: BLUE2,
+        content: [
+          "Research: What is the current reputation? Who is the audience?",
+          "Action (Planning): Creating a strategy. (e.g., 'Let's host a press conference.').",
+          "Communication (Execution): Sending press releases, pitching to media, and managing events.",
+          "Evaluation: Measuring impact. (e.g., 'We got 50 articles and 1 million views.')"
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become a PR Officer",
+        color: BLUE,
+        content: [
+          "Pathway A - The Mass Media Route (Most Common): Class 12 (Any stream), Undergraduate (BMM/BA Mass Communication), Postgraduate (MA in PR or PG Diploma in Corp Comm).",
+          "Pathway B - The Corporate Communication Route: Graduation (BBA/B.Com/Economics), Postgraduate (MBA in Communication Management), Job (Corporate Communications Manager).",
+          "Pathway C - The Lateral Switch: For Journalists/Lawyers. Many journalists switch to PR after 3-4 years because they already have the media contacts."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Explosive growth in PR and reputation management",
+        color: BLUE2,
+        content: [
+          "Market Size: The Indian PR industry is projected to reach ₹4,570 Crore by 2030.",
+          "Hiring Trends: Regional PR (Huge demand for PR pros who can speak and write in Hindi, Tamil, Telugu), Tech PR (Startups need PR to attract investors).",
+          "Salary Ranges: Entry (0-2 Yrs): Account Executive ₹3-5L (Agency), ₹4.5-6L (Corporate) | Mid (3-7 Yrs): PR Manager ₹8-15L (Agency), ₹12-22L (Corporate) | Senior (8-15 Yrs): VP ₹20-40L (Agency), ₹30-60L (Corporate) | Leadership: CEO ₹80L-1.5Cr+ (Agency), ₹1Cr-3Cr+ (Corporate)"
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top industries and cities for PR careers",
+        color: BLUE,
+        content: [
+          "Top Industries: PR Agencies (Adfactors PR, Genesis BCW, MSL, Edelman), Corporate Sector (Reliance, Tata, Mahindra), Entertainment (Raindrop Media, Spice PR), Government/Political (Election campaigns, ministry image).",
+          "Top Cities: Delhi-NCR (Policy & Corporate Hub), Mumbai (Lifestyle & Finance Hub), Bangalore (Tech Hub).",
+          "Remote Work: Medium. Writing can be done remotely, but events and client meetings require physical presence."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for PR education programs",
+        color: BLUE2,
+        content: [
+          "IIMC (Govt) PG Diploma: ₹1.8-2 Lakhs (1 Year)",
+          "Top Private (XIC/Symbiosis) PG Diploma/MA: ₹4-10 Lakhs (1-2 Years)",
+          "University Colleges BA Mass Comm: ₹50,000-2 Lakhs (3 Years)"
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for PR education in India",
+        color: BLUE,
+        content: [
+          "Government: Indian Institute of Mass Communication (IIMC) New Delhi, Jamia Millia Islamia (AJK MCRC) New Delhi, Makhanlal Chaturvedi National University Bhopal.",
+          "Private: Xavier Institute of Communications (XIC) Mumbai, Symbiosis Institute of Media & Communication (SIMC) Pune, School of Communications & Reputation (SCoRE) Mumbai, Manipal Institute of Communication Udupi."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for PR students",
+        color: BLUE2,
+        content: [
+          "IIMC Freeships: For economically weaker sections.",
+          "SCoRE Scholarships: Offers partial fee waivers for meritorious students.",
+          "Corporate Scholarships: Some agencies sponsor education in exchange for a 2-year work bond."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Credentials and professional organizations",
+        color: BLUE,
+        content: [
+          "Certifications: Google Analytics (To measure PR impact), Crisis Communication (Specialized courses on Coursera/Udemy).",
+          "Professional Bodies: PRCAI (Public Relations Consultants Association of India), PRSI (Public Relations Society of India)."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse career paths in public relations",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Media Relations Officer (Dealing with journalists), Corporate Communications Manager (Internal employee comms), Event Manager (Organizing press conferences).",
+          "New-Age Careers: Digital Reputation Manager (Cleaning up negative search results), ESG Communication Specialist (Green initiatives), Political Campaign Manager (Managing politician image).",
+          "Freelancing: Independent Publicist (Managing 2-3 small startup clients or authors personally)."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of PR careers",
+        color: BLUE,
+        content: [
+          "High Stress: PR is consistently ranked as one of the most stressful jobs. You are the 'shock absorber' for the client.",
+          "No Fixed Hours: News breaks at any time. If a crisis happens on Sunday, you work on Sunday.",
+          "Thankless Job: If things go well, the client takes credit. If things go wrong, the PR gets blamed.",
+          "Moral Dilemmas: You might have to defend a company even when you know they made a mistake."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of public relations",
+        color: BLUE2,
+        content: [
+          "AI & Automation: AI tools will write press releases. PR pros will focus on Strategy and Relationships (things AI can't do).",
+          "Vernacular PR: The next billion users read Hindi, Tamil, and Bengali. PR campaigns will shift focus from English newspapers to regional YouTube channels.",
+          "Influencer Relations: PR is moving away from 'Journalists' to 'Influencers.' Managing YouTubers and Instagrammers is the new core skill."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Write a Blog: Learn to express ideas clearly. Good writing is the foundation of PR.",
+          "Organize Events: Volunteer to handle the 'Publicity Committee' for your school fest. Design posters, invite guests.",
+          "Follow the News: Read one newspaper daily. Understand which journalist covers which topic.",
+          "Network: Create a LinkedIn profile (if 16+) and follow top PR agencies to see their work."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring PR professionals in India",
+        color: BLUE2,
+        content: [
+          "Dilip Cherian: Co-founder of Perfect Relations. Known as 'India's Image Guru,' he pioneered the PR industry in India.",
+          "Madan Bahal: Co-founder of Adfactors PR. He built India's largest PR firm from scratch and is a titan of financial PR.",
+          "Deepshikha Dharmaraj: CEO of Burson Group India. A leading woman leader shaping the future of communications.",
+          "Nitin Mantri: CEO of Avian WE. A global leader who has put Indian PR on the world map.",
+          "Radhika Gupta: CEO of Edelweiss MF. Though a CEO, her personal branding and communication style is a masterclass in modern PR."
+        ]
+      }
+    ]
+  },
+  journalist: {
+    slug: "journalist",
+    badge: "📰 The Truth Seekers for Class 10+",
+    heading: "The Truth Seekers",
+    subheading: "Uncovering facts and holding power accountable in the age of information.",
+    whyCards: [
+      { icon: "Search", title: "Truth Seeker", description: "Investigate stories and uncover facts that matter to society.", borderColor: "#10B981" },
+      { icon: "Users", title: "Voice of the Voiceless", description: "Give a platform to those whose stories need to be heard.", borderColor: "#059669" },
+      { icon: "AlertCircle", title: "Watchdog", description: "Hold powerful people and institutions accountable.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "Storyteller", description: "Transform complex events into compelling narratives.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Digital Consumers", detail: "700M+ in India", color: "bg-green-100 text-green-700" },
+      { label: "Growth Rate", detail: "9-10% annually", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹2.5L–₹2Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "700M+", label: "Digital News Consumers in India", gradient: "from-green-500 to-green-600" },
+      { value: "9-10%", label: "Annual Industry Growth", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The watchdogs of democracy",
+        color: BLUE,
+        content: [
+          "A journalist is not just someone who holds a mic or writes in a newspaper. They are the 'Watchdogs of Democracy.' Their job is to gather facts, verify them (make sure they are true), and turn them into stories that people can understand.",
+          "Whether it's a flood in Assam, a cricket match in Mumbai, or a new law in Delhi, a journalist bridges the gap between the event and the public.",
+          "In the age of WhatsApp forwards and 'Fake News,' the world needs truth-tellers more than ever. India is a massive, noisy democracy, and journalists act as the filter that separates noise from news.",
+          "They hold powerful people accountable and give a voice to the voiceless. Without them, we would be living in the dark."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Zoya, a Digital Journalist at a leading news app in New Delhi",
+        color: BLUE2,
+        content: [
+          "08:00 AM: Zoya wakes up and immediately checks Twitter (X) and news wires. A major policy change was announced late last night. She quickly messages her editor: 'I'm doing a breakdown video on this.'",
+          "10:00 AM: The Newsroom Buzz. She reaches the office. It's chaotic but exciting. TVs are blaring different channels. She attends the morning editorial meeting where the team decides the 'Story of the Day.' Zoya pitches a story about rising electric vehicle sales in Tier-2 cities. Her editor gives the green light.",
+          "12:00 PM: Field Work. She grabs her 'MoJo Kit' (Mobile Journalism kit: a smartphone, a tripod, and a lapel mic). She doesn't need a big camera crew. She visits an EV showroom in Noida to interview customers. She shoots video clips, records audio, and takes notes—all on her phone.",
+          "03:00 PM: The 'Desk' Work. Back at the office, she edits the video using an app, writes a 300-word article to go with it, and designs a thumbnail. She uses AI tools to quickly transcribe her interviews (checking them for errors, of course).",
+          "05:00 PM: Going Live. Breaking news! A protest has erupted near the city center. Zoya rushes to the spot. She goes live on the news app's Instagram page, reporting what she sees. Thousands of people watch her in real-time.",
+          "07:30 PM: Wrapping Up. She schedules her EV story for tomorrow morning's newsletter. She's tired, her feet hurt, but the thrill of witnessing history firsthand keeps her going."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "You don't need to be an extrovert, but you need to be curious",
+        color: BLUE,
+        content: [
+          "The Curious Cat: Do you ask 'Why?' and 'How?' about everything? If you see a pothole, do you wonder who is responsible for fixing it?",
+          "The Storyteller: Can you narrate an incident to your friends in a way that keeps them hooked?",
+          "The Braveheart: Are you willing to ask uncomfortable questions to authority figures?",
+          "The Multitasker: Can you write, listen, and tweet at the same time? News moves fast!",
+          "Hard Skills: Writing & Editing (Grammar is non-negotiable), Video Editing (Premiere Pro/Mobile apps), Research, and Fact-Checking.",
+          "Soft Skills: Critical Thinking, Ethics (knowing right from wrong), and Adaptability."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The News Cycle: Gather, Verify, Produce, Edit, Publish, Engage",
+        color: BLUE2,
+        content: [
+          "Newsgathering: Finding the story (through sources, social media, or observation).",
+          "Verification: Checking facts. 'Is this video actually from today, or is it old?'",
+          "Production: Writing the script, shooting video, or recording audio.",
+          "Editing: Polishing the content to make it sharp and error-free.",
+          "Publishing: Releasing it on TV, Print, or Digital platforms.",
+          "Engagement: Replying to comments and tracking how many people read it."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become a journalist",
+        color: BLUE,
+        content: [
+          "Pathway A - The Mass Comm Degree (Most Popular): Class 12 (Any stream), Undergraduate (BA in BJMC - 3 Years), Postgraduate (Optional MA in Mass Comm).",
+          "Pathway B - The PG Diploma Route (The Specialist): Graduation (Any degree), Entrance Exam (IIMC, XIC OET, ACJ), Course (PG Diploma in Journalism - 1 Year).",
+          "Pathway C - The Subject Expert Route (For Niche Journalism): Study a specific subject (Economics, Law, Sports), Add Skills (Certificate in writing/journalism), Job (Specialist reporter)."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Explosive growth in digital and regional news",
+        color: BLUE2,
+        content: [
+          "Market Size: India has over 700 million digital news consumers. The media industry is expected to grow at 9-10% annually.",
+          "Hiring Trends: Traditional TV/Print jobs are stable but slow. The massive growth is in Digital News, OTT News Documentaries, and Regional Language News (Hindi, Tamil, Telugu, etc.).",
+          "Salary Ranges: Entry (0-2 Yrs): Reporter ₹2.5-5L (Print/TV), ₹3-6L (Digital) | Mid (3-7 Yrs): Senior Correspondent ₹6-12L (Print/TV), ₹8-15L (Digital) | Senior (8-15 Yrs): Editor ₹15-30L (Print/TV), ₹18-40L (Digital) | Leadership: Editor-in-Chief ₹50L-2Cr+ (Print/TV), ₹60L-1.5Cr (Digital)"
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top industries and cities for journalism careers",
+        color: BLUE,
+        content: [
+          "Top Industries: Digital News (Inshorts, The Quint, Newslaundry, Lallantop), Broadcast TV (NDTV, Aaj Tak, Republic, CNN-News18), Print (Times of India, The Hindu, Dainik Bhaskar), New-Age (Podcasting platforms, Fact-Checking organizations like Alt News).",
+          "Top Cities: New Delhi/Noida (The absolute hub of Indian media), Mumbai (Hub for Business Journalism), Hyderabad/Chennai (Massive hubs for South Indian regional media).",
+          "Freelancing: High. Many journalists are now 'Creator-Journalists,' running their own YouTube channels or Substack newsletters."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for journalism education programs",
+        color: BLUE2,
+        content: [
+          "Govt (IIMC/Jamia) PG Diploma/Masters: ₹50,000-1.5 Lakhs (1-2 Years)",
+          "Private (Symbiosis/Manipal) BA/MA Mass Comm: ₹6-12 Lakhs (2-3 Years)",
+          "Premium Private (ACJ/XIC) PG Diploma: ₹4-8 Lakhs (1 Year)",
+          "State Universities (DU) BA Journalism: ₹20,000-40,000 (3 Years)"
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for journalism in India",
+        color: BLUE,
+        content: [
+          "Government: Indian Institute of Mass Communication (IIMC) New Delhi, AJK MCRC Jamia Millia Islamia New Delhi, Delhi University (LSR, DCAC), Savitribai Phule Pune University.",
+          "Private: Asian College of Journalism (ACJ) Chennai (100% placement record), Xavier Institute of Communications (XIC) Mumbai, Symbiosis Institute of Media & Communication (SIMC) Pune, Manipal Institute of Communication (MIC)."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for journalism students",
+        color: BLUE2,
+        content: [
+          "Sanskriti – Prabha Dutt Fellowship: For young women journalists to pursue projects.",
+          "HDFC Bank Parivartan: Need-based scholarship for postgraduate students.",
+          "Danish Siddiqui Journalism Scholarship: For students from economically weaker backgrounds.",
+          "Inlaks Shivdasani Foundation: For taking journalism courses abroad."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Credentials and professional organizations",
+        color: BLUE,
+        content: [
+          "No License Needed: Journalism is a free profession.",
+          "Professional Bodies: Press Club of India (Networking hubs in major cities), Editors Guild of India (Sets ethical standards).",
+          "Certifications: Google News Initiative (Free training on Fact-Checking and Data Journalism), Mobile Journalism (MoJo) (Certification in smartphone reporting)."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse career paths in journalism",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Reporter (The one on the ground collecting news), Sub-Editor/Copy Editor (The one at the desk polishing language), News Anchor (The face on TV).",
+          "New-Age Careers: Data Journalist (Turning Excel sheets into infographics), Fact-Checker (Fighting fake news), Drone Journalist (Using drones for aerial footage).",
+          "Freelancing: Stringer (Freelance reporter in small towns), Independent Creator (Running a YouTube news channel)."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of journalism careers",
+        color: BLUE,
+        content: [
+          "Low Entry Pay: Starting salaries can be low, especially in print. Passion is your fuel for the first few years.",
+          "High Stress: News never stops. You might work on holidays, weekends, and late nights.",
+          "Trolling: Journalists, especially on social media, often face harsh trolling and abuse. You need a thick skin.",
+          "Risk: Reporting from conflict zones or crime scenes can be physically dangerous."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of journalism",
+        color: BLUE2,
+        content: [
+          "AI Co-Pilots: AI will write the basic weather and stock market reports. Journalists will focus on Opinion, Analysis, and Human Stories—things AI can't feel.",
+          "Hyper-Local News: People care more about the pothole on their street than international wars. Apps focusing on district-level news are booming.",
+          "Creator Economy: Journalists will become 'Brands.' People will follow the person, not just the channel."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Read the Paper: Or a news app. Spend 15 minutes a day knowing what is happening in the world.",
+          "Start a School Blog/Newsletter: Report on school events. Interview your Principal. It's real journalism.",
+          "Learn to Fact-Check: When you get a WhatsApp forward, don't just believe it. Google it. Learn to reverse-search images.",
+          "Master Tools: Learn Canva (for graphics) and InShot (for video editing) on your phone."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring journalists in India",
+        color: BLUE2,
+        content: [
+          "P. Sainath: The voice of rural India. He showed that journalism is about covering the poor, not just the rich.",
+          "Ravish Kumar: Known for his ground reporting and 'Desh Ki Baat.' He proved that a journalist's biggest asset is credibility.",
+          "Faye D'Souza: She moved from TV to Instagram/YouTube, proving that news can be delivered calmly and factually to the youth.",
+          "Barkha Dutt: A veteran who has covered conflicts from Kargil to COVID, showing the grit required in field reporting.",
+          "R.K. Laxman: The legendary cartoonist whose 'Common Man' cartoons spoke more truth than a thousand editorials."
+        ]
+      }
+    ]
+  },
+  international_relations: {
+    slug: "international_relations",
+    badge: "🌍 The Global Strategists for Class 10+",
+    heading: "The Global Strategists",
+    subheading: "Shaping India's role on the world stage and navigating global complexities.",
+    whyCards: [
+      { icon: "Globe", title: "Global Strategist", description: "Shape India's foreign policy and international negotiations.", borderColor: "#10B981" },
+      { icon: "Users", title: "Bridge Builder", description: "Connect nations, organizations, and cultures through diplomacy.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Policy Analyst", description: "Analyze geopolitical trends and advise on strategic decisions.", borderColor: "#3B82F6" },
+      { icon: "Zap", title: "Negotiator", description: "Navigate complex international agreements and trade deals.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Market Growth", detail: "Exploding demand", color: "bg-green-100 text-green-700" },
+      { label: "Top Location", detail: "New Delhi (90%)", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹1Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "G20 Host", label: "India's Global Leadership", gradient: "from-green-500 to-green-600" },
+      { value: "5th", label: "Largest Economy Globally", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Bridging nations and shaping global strategy",
+        color: BLUE,
+        content: [
+          "International Relations is the study and practice of how nations, organizations, and people interact. It is not just about 'peace and war.' It is about Trade, Security, Climate Change, and Technology.",
+          "A professional in this field acts as a bridge—connecting India to the world. When you see a photo of the Indian Prime Minister shaking hands with the US President, or read about a trade deal between India and France, an IR professional arranged that meeting and wrote the talking points.",
+          "India is no longer sitting on the sidelines. We are a 'Vishwaguru' (Global Teacher) aspirant and the 5th largest economy. Whether it is negotiating oil prices with Russia or getting Apple to manufacture iPhones in Bangalore, India needs smart negotiators and strategists.",
+          "An IR career allows you to be the 'voice' of India on the global stage or help global companies navigate India."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Ananya, a Policy Analyst at a Foreign Policy Think Tank in New Delhi",
+        color: BLUE2,
+        content: [
+          "09:00 AM: Ananya reaches her office in Chanakyapuri, the diplomatic enclave. Her first task is the 'Morning Scan.' She reads news from Al Jazeera, The Washington Post, and The Hindu. A conflict has broken out in West Asia. She needs to write a 'Policy Brief' on how this affects Indian oil prices.",
+          "11:00 AM: The Roundtable. A delegation of diplomats from Japan is visiting. Ananya sits in the meeting, taking notes. They discuss 'Cyber Security Cooperation.' She doesn't speak much but observes every nod and frown. Diplomacy is in the details.",
+          "01:30 PM: Lunch at the canteen with a colleague who works for the UN. They debate whether the G20 summit was a success. In this field, your lunch conversations are about geopolitics, not office gossip.",
+          "03:00 PM: Writing Mode. She drafts a speech for her Director, who is speaking at a conference tomorrow. She has to be careful with words—one wrong phrase could offend a country. She checks the Ministry of External Affairs (MEA) website to ensure she aligns with India's official stance.",
+          "05:00 PM: Networking Event. She heads to the French Embassy for a cultural evening. It looks like a party, but it is work. She sips tea while chatting with a Trade Commissioner, exchanging business cards. 'Soft Power' (culture/food/music) is a huge part of IR.",
+          "07:30 PM: Home. She checks Twitter (X) one last time. A new treaty was signed. She retweets it with a quick analysis. The world never sleeps, and neither does an IR professional's brain."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "You don't need to be a politician, but you need to be a Chess Player",
+        color: BLUE,
+        content: [
+          "The News Junkie: Do you wake up and check what happened in the world while you slept?",
+          "The Debater: Can you argue a point from two different sides? (e.g., Understanding both Russia's and Ukraine's perspective).",
+          "The Culture Vulture: Do you love learning new languages, trying foreign food, and understanding different cultures?",
+          "The Calm Head: Can you stay polite even when you strongly disagree with someone? (This is called 'Diplomatic Protocol').",
+          "Hard Skills: Foreign Languages (French/Mandarin/Arabic are gold), Research & Writing, Policy Analysis, and History.",
+          "Soft Skills: Negotiation, Public Speaking, Cross-Cultural Intelligence (CQ), and Networking."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "Monitor, Analyze, Advise, Represent, Manage",
+        color: BLUE2,
+        content: [
+          "Monitoring: Watching global events (coups, elections, trade wars).",
+          "Analysis: Connecting the dots. 'How does the US election affect Indian IT companies?'",
+          "Advisory: Telling the government or company what to do next.",
+          "Representation: Speaking on behalf of your country or organization.",
+          "Program Management: Running development projects (e.g., a UN project on clean water in rural India)."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become an IR professional",
+        color: BLUE,
+        content: [
+          "Pathway A - The 'Diplomat' Route (Civil Services): Class 12 (Humanities best), Graduation (Any degree), UPSC Civil Services Exam, Top 100 rank for IFS, Training at LBSNAA & Sushma Swaraj Institute.",
+          "Pathway B - The 'Academic/Analyst' Route (Think Tanks): Class 12 (Humanities), Undergraduate (BA Political Science/IR), Postgraduate (MA in IR - Mandatory), M.Phil or PhD for research roles.",
+          "Pathway C - The 'Global Corporate' Route: Graduation (BBA/Economics/Law), Postgraduate (MA in International Business or Public Policy), Job (Government Affairs or Political Risk Analyst)."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Explosive growth in geopolitical expertise",
+        color: BLUE2,
+        content: [
+          "Market Growth: With India hosting global summits (like G20) and expanding trade, the demand for non-government foreign policy experts is exploding.",
+          "Hiring Trends: The 'Big 4' consulting firms (Deloitte, KPMG, etc.) are hiring IR grads for their 'Geopolitical Risk' desks. Global NGOs are moving headquarters to India.",
+          "Salary Ranges: Think Tanks/NGOs - Entry ₹4-6L, Mid ₹9-15L, Senior ₹20-35L, Leadership ₹50L+ | Corporate/Consulting - Entry ₹8-12L, Mid ₹18-30L, Senior ₹40-70L, Leadership ₹1Cr+ | IFS (Govt) - Entry ₹10L+Perks, Mid ₹18L+Perks, Senior ₹30L+Perks, Leadership ₹2.25L/month (Base)"
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top industries and cities for IR careers",
+        color: BLUE,
+        content: [
+          "Top Industries: Government (MEA, NITI Aayog), Think Tanks (ORF, ICWA, IDSA, Brookings India), International Organizations (UN, World Bank, WHO), Media (Foreign Correspondents), Risk Consulting (Control Risks, Eurasia Group).",
+          "Top Cities: New Delhi (The 'Mecca' of IR - 90% of jobs), Mumbai (Corporate HQs and Consulates), Bangalore/Hyderabad ('Tech Diplomacy' roles).",
+          "Freelancing: High potential in Geopolitical Content Writing or being a Stringer (freelance journalist) for foreign papers."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for IR education programs",
+        color: BLUE2,
+        content: [
+          "JNU (Govt) BA/MA: <₹2,000 (Heavily Subsidized) (3/2 Years)",
+          "Private Universities BA/MA IR: ₹8-18 Lakhs (3/2 Years)",
+          "South Asian University MA IR: ₹1.5-2 Lakhs (2 Years)"
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for IR in India",
+        color: BLUE,
+        content: [
+          "Government - The Holy Grails: Jawaharlal Nehru University (JNU) Delhi - School of International Studies (world-famous), Jamia Millia Islamia Delhi (Excellent for West Asian studies), Jadavpur University Kolkata, University of Hyderabad (UoH).",
+          "Private - New Age & Global: Jindal School of International Affairs (JSIA) Sonipat (India's first global policy school), Ashoka University Sonepat, Symbiosis School of International Studies (SSIS) Pune, Manipal Academy of Higher Education (MAHE)."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for IR students",
+        color: BLUE2,
+        content: [
+          "JRF (Junior Research Fellowship): If you clear UGC-NET, the govt pays ~₹37,000/month to do a PhD in India.",
+          "Fulbright-Nehru & Chevening: Prestigious scholarships to go to the US/UK for Masters (requires work ex).",
+          "Inlaks Shivdasani Foundation: For top-tier students going abroad.",
+          "University Scholarships: Ashoka and Jindal offer significantly high need-based financial aid."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Credentials and professional organizations",
+        color: BLUE,
+        content: [
+          "Certifications: Foreign Language Proficiency (DELF for French, HSK for Mandarin - Must Have), Data Analysis for Public Policy (Using R or Python).",
+          "Professional Bodies: Institute of Peace and Conflict Studies (IPCS), Indian Association of International Studies (IAIS)."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse career paths in international relations",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Diplomat (IFS) - Representing India, Academic - Teaching at universities, Defense Analyst - Working for military think tanks (IDSA).",
+          "New-Age Careers: Tech Diplomat - Helping tech giants negotiate data laws, Climate Negotiator - Representing NGOs at global climate summits (COP), Political Risk Consultant - Advising investors on geopolitical safety.",
+          "Freelancing: Op-Ed Columnist - Writing opinion pieces for newspapers, Election Consultant - Advising political parties on foreign policy image."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of IR careers",
+        color: BLUE,
+        content: [
+          "Delhi-Centric: If you don't live in Delhi, your opportunities drop by 80%.",
+          "The 'Generalist' Curse: Just knowing 'theory' isn't enough anymore. You need a niche (e.g., Energy Security or Cyber Warfare).",
+          "Low Entry Pay: Unlike MBA jobs, think tanks pay very less initially. You do it for passion, not quick money.",
+          "Elitism: The field can feel dominated by people from elite English-speaking backgrounds."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of international relations",
+        color: BLUE2,
+        content: [
+          "Space Diplomacy: As countries race to the Moon/Mars, we need laws for space. Who owns the Moon's water? IR experts will decide.",
+          "The 'Global South': India is becoming the voice of developing nations. Specialists in African and Latin American studies will be in high demand.",
+          "Supply Chain Politics: Wars are now fought over microchips and rare earth minerals. 'Economic Statecraft' is the new battlefield."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Model United Nations (MUN): Participate in MUNs. It teaches you how to draft resolutions and speak diplomatically.",
+          "Learn a Language: Start French, German, or Spanish on Duolingo. Better yet, try Mandarin or Japanese.",
+          "Read Maps: Buy a world map. Know where Lithuania or the Strait of Hormuz is. Geography is the mother of history.",
+          "Follow the MEA: Follow the Ministry of External Affairs spokesperson on Twitter. Watch their weekly briefings to learn the language of diplomacy."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring IR professionals in India",
+        color: BLUE2,
+        content: [
+          "Dr. S. Jaishankar: Current External Affairs Minister. A career diplomat who speaks Russian and Japanese. He is the rockstar of modern Indian diplomacy.",
+          "Shivshankar Menon: Former National Security Advisor (NSA). A brilliant strategic thinker.",
+          "Syed Akbaruddin: Former Ambassador to the UN. Famous for his calm but sharp handling of Pakistan's allegations at the UN.",
+          "Nirupama Rao: A trailblazer who served as Foreign Secretary and Ambassador to the US and China.",
+          "Shashi Tharoor: Before politics, he had a stellar career at the United Nations, nearly becoming the Secretary-General."
+        ]
+      }
+    ]
+  },
+  civil_administrative_services: {
+    slug: "civil_administrative_services",
+    badge: "🏛️ The Architects of a Nation for Class 10+",
+    heading: "The Architects of a Nation",
+    subheading: "Building India's future through governance, policy, and public service.",
+    whyCards: [
+      { icon: "Shield", title: "Nation Builder", description: "Transform villages and cities through strategic governance and development.", borderColor: "#10B981" },
+      { icon: "Users", title: "Public Servant", description: "Directly impact the lives of millions through policy and administration.", borderColor: "#059669" },
+      { icon: "Zap", title: "Crisis Manager", description: "Lead rescue and relief operations during disasters and emergencies.", borderColor: "#3B82F6" },
+      { icon: "TrendingUp", title: "Policy Maker", description: "Draft laws and strategies that shape the nation's future.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Annual Vacancies", detail: "900-1,200", color: "bg-green-100 text-green-700" },
+      { label: "Career Growth", detail: "9-12 yrs to DM", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹95K–₹2.5L+/month", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "1.4B", label: "Citizens Served", gradient: "from-green-500 to-green-600" },
+      { value: "933", label: "Vacancies in 2026", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The steel frame of India's governance",
+        color: BLUE,
+        content: [
+          "The Civil Administrative Services (often called the 'Steel Frame' of India) consist of career bureaucrats who manage the country's day-to-day governance.",
+          "In India, if the government is a giant ship, the Civil Services are the engine room. While politicians set the destination, it is the Civil Servants—the IAS, IPS, IFS, and others—who make sure the ship actually moves and reaches the people.",
+          "As a Civil Servant, you might run an entire sub-division, resolving land disputes and monitoring local schools. At senior levels, you sit in the state or central capital, drafting laws on climate change, education, or national security.",
+          "In a country as diverse as India, Civil Servants act as the bridge between the high-level promises of the government and the actual needs of 1.4 billion citizens. It is one of the few careers where a single decision in your office can improve the lives of millions."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet an SDM (Sub-Divisional Magistrate) - The Decision Maker",
+        color: BLUE2,
+        content: [
+          "09:00 AM: The Field Visit. Your day starts not in an office, but in a jeep. You are visiting a remote village to inspect a new bridge. You talk to the local farmers, listen to their complaints about water supply, and take notes. You aren't just an officer; you are a listener.",
+          "12:30 PM: The Public Hearing. Back at the office, it's time for 'Jan Sunwai.' A long line of people waits outside. One man has lost his land records; a woman needs help with a medical grant. You listen, verify documents, and pass immediate orders. This is where you see the direct impact of your power.",
+          "03:00 PM: The Law & Order Huddle. You meet with the local Police Chief. There is a large festival coming up, and you need to plan the crowd control strategy. You coordinate with the health department for ambulances and the electricity board for lighting. You are the 'Conductor' of this massive orchestra.",
+          "06:00 PM: The Policy Review. The evening is quieter but intense. You are reviewing a 50-page report on rural employment. You need to suggest changes to the state government to make the scheme more effective. Your brain shifts from 'field mode' to 'strategy mode.'",
+          "09:00 PM: The Emergency Call. Just as you prepare for dinner, your phone rings. There's been a minor landslide on the highway. You coordinate with the rescue teams and ensure the road is cleared by dawn. You head to bed, knowing that tomorrow, the puzzles will be different, but the goal will remain the same: Service."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The qualities of a great civil servant",
+        color: BLUE,
+        content: [
+          "High Integrity: Can you stay honest when offered a bribe or facing political pressure?",
+          "Leadership: Can you lead a team of 100 people during a crisis?",
+          "Resilience: Can you work 15 hours a day for weeks without complaining?",
+          "Empathy: Can you feel the pain of the person standing at the back of the line?",
+          "Communication: Can you explain a complex law to a villager in their own dialect?",
+          "Decision Making: Can you choose between two 'okay' options when there is no 'perfect' one?",
+          "Data Interpretation: Can you read a budget spreadsheet and spot where money is being wasted?"
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "Implementation, Regulation, and Feedback cycle",
+        color: BLUE2,
+        content: [
+          "Revenue Collection: Managing land records and taxes (the 'fuel' for the government).",
+          "Law & Order: Maintaining peace in the district in coordination with the police.",
+          "Developmental Work: Implementing schemes for health, education, and infrastructure.",
+          "Disaster Management: Leading rescue and relief operations during natural or man-made calamities.",
+          "Policy Implementation: Translating central government directives into ground-level action."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "The UPSC Civil Services Examination route",
+        color: BLUE,
+        content: [
+          "After Class 10: Choose any stream (Humanities/Arts traditional, but Science/Commerce equally popular).",
+          "After Class 12: Pursue a 3 or 4-year Graduation in any subject. Start reading newspapers daily.",
+          "After Graduation: Appear for the UPSC Civil Services Examination (CSE).",
+          "The Step-by-Step Roadmap: Preparation (1-2 Years), Prelims (Objective-type screening), Mains (Descriptive-type written exam), Interview (Personality test), Training (2 years at LBSNAA or SVPNPA)."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression in civil services",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Monthly INR - 7th CPC): Entry-level (SDM/Assistant Secretary) ₹95,000-1,10,000 | Mid-level (District Magistrate/Director) ₹1,40,000-1,80,000 | Senior-level (Divisional Commissioner/Joint Secretary) ₹2,10,000-2,40,000 | Leadership/Apex (Cabinet Secretary) ₹2,50,000 (Fixed) + Perks.",
+          "City Comparison: The basic pay is same, but HRA (House Rent Allowance) is 24% in Metros vs 8% in rural areas.",
+          "Hiring Trends: UPSC typically notifies 900 to 1,200 vacancies annually. In 2026, the notification released 933 vacancies.",
+          "Career Growth: It takes roughly 9-12 years to become a District Magistrate (DM) and 30+ years to reach the top-most 'Secretary' levels."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for civil servants",
+        color: BLUE,
+        content: [
+          "Top Sectors: Government of India Ministries, State Secretariats, District Administrations, Public Sector Undertakings (PSUs).",
+          "Top Cities: Every district headquarters in India. Senior roles are concentrated in New Delhi and State Capitals.",
+          "International: The Indian Foreign Service (IFS) offers postings in Indian Embassies worldwide (e.g., Washington DC, Tokyo, London).",
+          "Lateral Entry: Experts from the private sector are now being hired as 'Joint Secretaries' for specific 3-5 year contracts."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for UPSC preparation",
+        color: BLUE2,
+        content: [
+          "Self-Study: Almost free (cost of books/internet).",
+          "Private Coaching (Delhi/Online): ₹1,00,000-2,50,000 for a full course.",
+          "Duration: 1 year of prep + 1 year of the exam cycle = 2 years minimum.",
+          "Living Costs: ₹15,000-25,000/month if staying in coaching hubs like Old Rajinder Nagar (Delhi)."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study? (Coaching & Colleges)",
+        icon: "BookOpen",
+        description: "Prominent coaching centers and institutions",
+        color: BLUE,
+        content: [
+          "Government Support: State Training Institutes (like SPIPA Gujarat, SIAC Maharashtra) provide free coaching to residents.",
+          "Private Hubs: Vajiram & Ravi (Delhi/Chennai), Drishti IAS (Delhi/Prayagraj), Shankar IAS Academy (Chennai), Vision IAS (Pan-India).",
+          "Online: Unacademy, Physics Wallah (OnlyIAS), and ForumIAS offer affordable digital courses."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for UPSC aspirants",
+        color: BLUE2,
+        content: [
+          "Central: NSP schemes for SC/ST/OBC and Minority students for competitive exam coaching.",
+          "State: Mukhyamantri Abhyudaya Yojana (UP), Naan Mudhalvan (Tamil Nadu)—providing free coaching and stipends.",
+          "Bihar Govt: Provides ₹1,00,000 to EBC candidates who clear the UPSC Prelims."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Licensing",
+        icon: "Certificate",
+        description: "Regulatory bodies and service rules",
+        color: BLUE,
+        content: [
+          "DoPT (Department of Personnel & Training): The nodal agency for service rules.",
+          "Civil Services Board: Manages transfers and postings.",
+          "Central Administrative Tribunal (CAT): For resolving employment-related disputes."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths within civil services",
+        color: BLUE2,
+        content: [
+          "Conventional: IAS (Administration), IPS (Police), IRS (Income Tax), IFS (Forest/Foreign).",
+          "New-Age: Digital India Mission Leads, Climate Change Policy Experts, E-Governance Strategists.",
+          "Post-Retirement: Many officers join International bodies (UN/World Bank), NGOs, or enter Politics."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of civil service careers",
+        color: BLUE,
+        content: [
+          "Political Pressure: You may sometimes be asked to do things you don't agree with. Moral courage is a must.",
+          "Work-Life Balance: There is no 'off-duty.' You are an officer 24/7.",
+          "Frequent Transfers: You might have to pack your bags and move your family to a new city every 2 years.",
+          "Moral Dilemmas: Balancing political directives with ethical governance is a constant challenge."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of civil administration",
+        color: BLUE2,
+        content: [
+          "AI Governance: Civil servants are now using AI to track crop yields and spot corruption in welfare schemes in real-time.",
+          "Digitization: Paper files are disappearing. 'E-Office' and 'Face-less' services are making administration faster and more transparent.",
+          "Specialization: The 'Generalist' era is fading. Officers are now encouraged to become experts in specific fields like Cyber-security or Urban Planning."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Read Newspapers: Not just for news, but to understand why things happen.",
+          "Debate: Join your school's debate team to learn how to see two sides of every story.",
+          "Volunteer: Lead a school project or a local cleanliness drive to test your leadership skills.",
+          "Writing: Practice writing clear, 200-word summaries of complex topics."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring civil servants in India",
+        color: BLUE2,
+        content: [
+          "Armstrong Pame: Known as the 'Miracle Man of Manipur' for building a 100km road through people's donations, without government funds.",
+          "Ashok Khemka: A symbol of integrity, known for his relentless fight against corruption despite over 50 transfers.",
+          "Durga Shakti Nagpal: An officer famous for her brave crackdown on the illegal sand mafia in Uttar Pradesh.",
+          "Dr. S. Jaishankar: A former IFS officer who is now India's Minister of External Affairs, a master of global diplomacy.",
+          "Kiran Bedi: The first woman IPS officer in India, known for her innovative policing and social work."
+        ]
+      }
+    ]
+  },
+  indian_economic_service: {
+    slug: "indian_economic_service",
+    badge: "📊 The Architects of the Economy for Class 10+",
+    heading: "The Architects of the Economy",
+    subheading: "Shaping India's economic policy and ensuring sustainable, inclusive growth.",
+    whyCards: [
+      { icon: "TrendingUp", title: "Policy Designer", description: "Analyze data to guide government spending and economic decisions.", borderColor: "#10B981" },
+      { icon: "BarChart3", title: "Data Interpreter", description: "Transform complex economic data into actionable insights for leaders.", borderColor: "#059669" },
+      { icon: "Zap", title: "Impact Auditor", description: "Verify that government schemes reach those who need them most.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Global Strategist", description: "Navigate international trade and represent India's economic interests.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Cadre Strength", detail: "~538 Officers", color: "bg-green-100 text-green-700" },
+      { label: "Annual Recruitment", detail: "15-30 officers", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹9L–₹2.5L+/month", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$5T", label: "India's Economy Target", gradient: "from-green-500 to-green-600" },
+      { value: "55+", label: "Union Ministries Served", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The think-tank of India's government",
+        color: BLUE,
+        content: [
+          "The Indian Economic Service is a Group 'A' Central Civil Service created in 1961 to bring professional economic expertise into the Indian government.",
+          "Imagine a giant puzzle with billions of pieces. Each piece represents a job, a farm, a factory, or a school in India. When these pieces fit together, the country grows; when they don't, people face challenges like high prices or unemployment.",
+          "While the IAS manages the administration and the IPS looks after safety, the IES is the 'think-tank' of the government. They are the specialist doctors for the country's financial health.",
+          "In a world that is moving toward a $5 Trillion economy, India needs experts who can navigate global trade wars, climate change costs, and digital currency. An IES officer ensures that India's growth is not just fast, but also fair."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet an IES Officer - The Economic Detective",
+        color: BLUE2,
+        content: [
+          "09:30 AM: The North Block Briefing. Your day begins at the Ministry of Finance in Delhi. You are preparing a briefing note for the Finance Minister. You spent all night analyzing the latest retail inflation data. You aren't just looking at prices; you're thinking about how a 10% rise in onion prices affects a family in a small village.",
+          "11:30 AM: The Inter-Ministerial Huddle. You head to the Ministry of Agriculture. They want to set the Minimum Support Price (MSP) for wheat. As an IES officer, you provide the math. You explain how a certain price will protect farmers without making bread too expensive for city dwellers. You are the 'Voice of Logic' in the room.",
+          "02:30 PM: The International Sync. After a quick lunch, you join a video call with the World Bank or IMF. They are discussing a global trade agreement. You represent India's economic interests, ensuring that our small businesses don't get hurt by global rules.",
+          "04:30 PM: Field Feedback. You review a report from a team on the ground in rural Odisha. They are testing a new digital payment system for laborers. You look for 'leaks' in the system where money might be going missing.",
+          "07:00 PM: The Strategy Session. The day ends with a quiet session with your senior Adviser. You are drafting a chapter for the Economic Survey of India. This book will be read by every economist in the world to understand where India is headed. You head home, knowing your spreadsheets are the blueprints of the nation's future."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The qualities of a great IES officer",
+        color: BLUE,
+        content: [
+          "Mathematical Mind: Do you love patterns? Can you look at a table of numbers and spot a trend?",
+          "Curiosity about Society: Are you interested in why some people are poor and others are rich? Do you wonder how the world works?",
+          "Patience for Research: Most economic changes take years. Can you stay dedicated to a project that might not show results for a decade?",
+          "Objective Thinking: Can you stay neutral and look at facts, even when people around you are being emotional?",
+          "Hard Skills: Statistics, Data Analysis, Economics Theory, and Policy Writing.",
+          "Soft Skills: Communication, Presentation, and Cross-Functional Collaboration."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "Core functions of an IES officer",
+        color: BLUE2,
+        content: [
+          "Macroeconomic Management: Managing national budgets, taxes, and inflation.",
+          "Sectoral Planning: Devising specific plans for sectors like Tourism, IT, or Textiles.",
+          "Monitoring & Evaluation: Constant checking if government programs are achieving their goals.",
+          "Advisory: Serving as Economic Advisers to different Union Ministries (Health, Education, Trade).",
+          "Research & Analysis: Conducting deep economic research to inform policy decisions."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "The UPSC IES Examination route",
+        color: BLUE,
+        content: [
+          "After Class 10: Take Commerce or Humanities with Economics and Mathematics.",
+          "After Class 12: Pursue a Bachelor's in Economics. Focus on Statistics and Math.",
+          "After Graduation: Crucial Step - You MUST have a Master's degree in Economics or allied subjects.",
+          "The Step-by-Step Roadmap: Master's Completion (Post-Graduate degree in Economics), UPSC IES Exam (Usually held in June), Written Exam (6 Descriptive papers), Viva Voce (Personality test), Training (Institute of Economic Growth, Delhi)."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression in IES",
+        color: BLUE2,
+        content: [
+          "Authorized Cadre Strength: ~538 Officers (including reserves).",
+          "Salary Ranges (Annual INR - 2026 Estimates): Entry-level (Junior Time Scale) ₹9L-12L | Mid-level (Joint Director) ₹15L-25L | Senior (Economic Adviser) ₹30L-45L | Leadership (Principal Adviser/Apex) ₹2,50,000/month (Fixed Basic) + Perks.",
+          "City Comparison: Most postings are in New Delhi, but officers are also posted in major regional centers. HRA (House Rent) is 30% in Metros.",
+          "Hiring Trend: UPSC usually recruits 15-30 officers per year. It is highly competitive but offers extreme job security."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for IES officers",
+        color: BLUE,
+        content: [
+          "Primary: 55+ Union Ministries and Departments (Finance, NITI Aayog, Commerce, Agriculture).",
+          "International: Deputation to the UN, World Bank, and IMF.",
+          "Regulatory: Postings in RBI, SEBI, and TRAI.",
+          "Freelancing: After retirement, IES officers are highly sought after as Independent Directors and Consultants for Global Think Tanks."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for IES education and preparation",
+        color: BLUE2,
+        content: [
+          "Govt. Universities (DSE, JNU): ₹10,000-50,000 (Total Master's).",
+          "Private Institutes: ₹2L-8L.",
+          "UPSC Coaching (Optional): ₹50,000-1.5L.",
+          "Living Costs: Delhi remains the hub for preparation; hostel costs are approx. ₹15,000/month."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for economics in India",
+        color: BLUE,
+        content: [
+          "North: Delhi School of Economics (DSE), Jawaharlal Nehru University (JNU), IIT Delhi (HSS).",
+          "South: Madras School of Economics (MSE), University of Hyderabad, IISc Bangalore.",
+          "West: IGIDR Mumbai, Gokhale Institute Pune.",
+          "East: ISI Kolkata, Presidency University."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for IES aspirants",
+        color: BLUE2,
+        content: [
+          "Central: National Overseas Scholarship (for Master's/PhD abroad).",
+          "Institutional: DSE and ISI offer merit-cum-means stipends.",
+          "Private: JN Tata Endowment, Inlaks Shivdasani Foundation."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Licensing",
+        icon: "Certificate",
+        description: "Regulatory bodies and professional organizations",
+        color: BLUE,
+        content: [
+          "Indian Economic Association (IEA): For networking and conferences.",
+          "UPSC: The only body authorized to license/recruit IES officers.",
+          "Ministry of Finance: Oversees IES cadre management and postings."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths within IES",
+        color: BLUE2,
+        content: [
+          "Conventional: Economic Adviser, Statistical Investigator, Medical/Health Economist.",
+          "New-Age: AI-Economist (Predicting markets using Big Data), Environmental Economist (Calculating Carbon Credits), Digital Currency Specialist.",
+          "Entrepreneurship: Starting a 'Policy Research' startup or consulting firm."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of IES careers",
+        color: BLUE,
+        content: [
+          "Data Overload: You will deal with millions of rows of data daily. If you hate math, this isn't for you.",
+          "Bureaucracy: Sometimes, good economic advice is ignored for political reasons.",
+          "Location: Most of your career will be spent in Delhi; limited geographic variety.",
+          "Pressure: Your recommendations affect millions of lives; the responsibility is immense."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of economic services",
+        color: BLUE2,
+        content: [
+          "Big Data & AI: IES officers will use machine learning to predict inflation better than ever before.",
+          "The 'Orange Economy': Focusing on creative industries and intellectual property.",
+          "Green Finance: Developing policies to fund India's transition to Net Zero by 2070.",
+          "Cryptocurrency & Digital Economy: Shaping India's approach to digital currencies and blockchain."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Master Statistics: Don't just learn formulas; understand what they mean in the real world.",
+          "Read the Business News: Follow the Economic Times or Business Standard to see how policy affects prices.",
+          "Write Essays: Practice explaining a complex topic (like 'Why is the Rupee falling?') in just 200 words.",
+          "Intern: Look for 'Research Assistant' roles at local NGOs during summer breaks."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring IES professionals in India",
+        color: BLUE2,
+        content: [
+          "Dr. Manmohan Singh: Former PM; although lateral entry, he served in the cadre's highest advisory roles.",
+          "Kaushik Basu: Former Chief Economic Adviser and World Bank Chief Economist.",
+          "V. Anantha Nageswaran: Current Chief Economic Adviser (2026), a key figure in India's post-pandemic recovery.",
+          "Bimal Jalan: Former RBI Governor who started his journey in economic policy advisory.",
+          "Arvind Subramanian: Former Chief Economic Adviser, known for his work on GST and economic reforms."
+        ]
+      }
+    ]
+  },
+  sports_physiotherapist: {
+    slug: "sports_physiotherapist",
+    badge: "🏥 The Body Mechanics of Sports for Class 10+",
+    heading: "The Body Mechanics of Sports",
+    subheading: "Healing athletes and optimizing performance through specialized rehabilitation.",
+    whyCards: [
+      { icon: "Heart", title: "Injury Prevention", description: "Design pre-hab exercises to strengthen weak areas before injuries occur.", borderColor: "#10B981" },
+      { icon: "Zap", title: "Acute Care Expert", description: "Provide immediate field-side treatment and emergency response.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Performance Optimizer", description: "Tailor rehab plans that make athletes stronger than before.", borderColor: "#3B82F6" },
+      { icon: "Users", title: "Team Player", description: "Collaborate with coaches, nutritionists, and psychologists for holistic athlete care.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Growth Rate", detail: "35% by 2030", color: "bg-green-100 text-green-700" },
+      { label: "Career Growth", detail: "8-10 yrs to Senior", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹1Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "35%", label: "Expected Demand Growth by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "25%", label: "Higher Salaries in Metro Cities", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The body mechanic of the athletic world",
+        color: BLUE,
+        content: [
+          "Sports Physiotherapy is a specialized branch of healthcare focused on the prevention, diagnosis, and treatment of injuries related to sports and exercise.",
+          "It's not just about applying an ice pack; it's a high-stakes blend of biology, mechanics, and psychology. In jargon-free terms, a sports physio is the 'body mechanic' of the athletic world.",
+          "Imagine an athlete like Neeraj Chopra or PV Sindhu mid-game. Suddenly, there is a sharp twinge in the shoulder or a twist in the ankle. Who is the first person to run onto the field with a medical bag? That is the Sports Physiotherapist.",
+          "In today's India, sports have exploded beyond just cricket. With professional leagues in Kabaddi, Football, and Badminton, and India's growing Olympic ambitions, athletes are pushing their bodies to the absolute limit. Sports physiotherapists are the reason modern athletes can play longer, recover faster, and perform better."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Dr. Ananya, Lead Physio at a High-Performance Center",
+        color: BLUE2,
+        content: [
+          "06:30 AM: My day starts at the High-Performance Center in Bengaluru. Before the athletes even hit the track, I'm in the 'Physio Room' prepping the 'Strapping & Taping' station. I spend the first hour applying specialized kinetic tape to protect an archer's shoulder or a sprinter's hamstring.",
+          "09:00 AM: Field-side duty. During the training session, I watch the athletes with a 'hawk-eye.' I'm not looking at the scores; I'm looking at their biomechanics. Is the fast bowler landing too hard on his left foot? Is the gymnast's landing wobbly? I take notes to discuss with the coach later.",
+          "12:00 PM: Rehabilitation hours. I work with a national-level wrestler recovering from an ACL surgery. Today, we are using 'Dry Needling' and specialized 'Electrotherapy' to wake up his dormant muscles. It's a slow, patient process of rebuilding a human being.",
+          "02:30 PM: Lunch is a quick affair, usually spent discussing an athlete's progress with the team nutritionist and psychologist. In sports, we are a 'support ecosystem.'",
+          "04:00 PM: Recovery Session. After a heavy training day, the whole team comes in. I oversee ice baths and use pneumatic compression sleeves to help their muscles flush out toxins. I also lead a group session on 'Corrective Stretches.'",
+          "07:00 PM: Documentation. I log every athlete's pain levels and range of motion on my laptop. This data helps the coach decide if a player is 'Match Fit' for tomorrow.",
+          "08:30 PM: I wrap up. It's a long day, but when I see an athlete I treated return to the field and win—that's my 'Gold Medal.'"
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "Check if you have the 'Physio Quotient'",
+        color: BLUE,
+        content: [
+          "Observation Skills: You must be able to spot tiny 'glitches' in how a person moves before they turn into injuries.",
+          "Empathy & Patience: Injured athletes are often frustrated. You need to be their 'calm' during their most stressful times.",
+          "Physical Stamina: You'll be on your feet all day, sometimes bending and lifting to assist movements.",
+          "Decision-Making: On the field, you have seconds to decide: 'Can this player continue, or will they risk permanent damage?'",
+          "Communication: You have to explain complex medical issues to coaches and parents in simple, honest terms.",
+          "Hard Skills: Anatomy, Biomechanics, Manual Therapy, and Electrotherapy.",
+          "Soft Skills: Empathy, Problem-Solving, and Team Collaboration."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The P-R-E-P model: Prevention, Rescue, Evaluation, Performance",
+        color: BLUE2,
+        content: [
+          "Prevention: Designing 'Pre-hab' exercises to strengthen weak areas before an injury happens.",
+          "Rescue (Acute Care): Providing immediate treatment (like the 'RICE' method—Rest, Ice, Compression, Elevation) on the field.",
+          "Evaluation: Using tests to diagnose the exact muscle or ligament involved.",
+          "Performance: Tailoring a rehab plan that doesn't just heal the injury but makes the athlete stronger than before.",
+          "Monitoring: Continuously tracking athlete progress and adjusting treatment plans."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "The BPT and MPT route to sports physiotherapy",
+        color: BLUE,
+        content: [
+          "After Class 10: Choose the Science stream with Biology, Physics, and Chemistry (PCB).",
+          "After Class 12: Complete a Bachelor of Physiotherapy (BPT) - 4.5 years (4 years study + 6 months internship). Entrance: NEET, IPU CET, KCET, or university-specific tests.",
+          "After Graduation: Specialize with a Master of Physiotherapy (MPT) in Sports - 2 years. Gain Certifications in Kinesio Taping, Manual Therapy, or CSCS.",
+          "Career Start: Entry-level positions in hospitals, clinics, or sports academies."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression in sports physiotherapy",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Assistant Physio): ₹3.5L-6L annually.",
+          "Mid-Level (State Team/Academy Physio): ₹7L-15L annually.",
+          "Senior-Level (National Team/Lead Physio): ₹18L-35L annually.",
+          "Leadership (Director of Rehab/Clinic Owner): ₹40L-1Cr+ annually.",
+          "Growth Trajectory: Entry to Senior typically takes 8-10 years.",
+          "Metro vs. Tier-2: Metro cities like Mumbai and Bengaluru offer 25% higher salaries, but Tier-2 cities are seeing a surge in 'Private Sports Clinics.'",
+          "Demand: Expected to grow by 35% by 2030."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for sports physiotherapists",
+        color: BLUE,
+        content: [
+          "Professional Teams: IPL, ISL, Pro Kabaddi League, and National Federations (BCCI, AIFF).",
+          "Government Organizations: Sports Authority of India (SAI), Army Sports Institute.",
+          "Private Sector: Multi-specialty hospitals (Apollo, Max), Sports Clinics (AktivHealth), Fitness Hubs (Cult.fit).",
+          "Freelance: Working as a private consultant for elite individual athletes.",
+          "International: High demand for Indian physios in the Middle East and South East Asia for their sports clubs."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for sports physiotherapy education",
+        color: BLUE2,
+        content: [
+          "BPT Course Fees: Government Colleges ₹10,000-1L (Total) | Private Colleges ₹4L-12L (Total).",
+          "MPT Course Fees: ₹1.5L-6L (2 years).",
+          "Living Costs: ₹1L-2L per year in student hubs like Delhi, Pune, or Mangalore.",
+          "Certifications: Additional ₹50,000-2L for specialized courses."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for sports physiotherapy in India",
+        color: BLUE,
+        content: [
+          "North: Jamia Millia Islamia (New Delhi), PGIMER (Chandigarh), KGMU (Lucknow).",
+          "South: CMC Vellore, St. John's Medical College (Bengaluru), SRMIST (Chennai), MAHE (Manipal).",
+          "East: Indian Institute of Health Sciences (IHS, Bhubaneswar), IPGMER (Kolkata).",
+          "West: Seth G.S. Medical College (KEM, Mumbai), Government Physiotherapy College (Ahmedabad)."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for sports physiotherapy students",
+        color: BLUE2,
+        content: [
+          "National Scholarship (NSP): For meritorious students from EWS categories (up to ₹15,000/month).",
+          "AICTE Pragati Scheme: For girl students pursuing technical degrees (₹50,000/year).",
+          "Institutional Merit: Colleges like SRM and LPU offer up to 100% tuition waivers for top entrance rankers.",
+          "TATA Trusts Education Grant: For students pursuing medical and health-related degrees."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Licensing",
+        icon: "Certificate",
+        description: "Registration and professional credentials",
+        color: BLUE,
+        content: [
+          "The 'Dr.' Title: In India, BPT graduates are ethically permitted to use the 'Dr.' prefix (Physiotherapist).",
+          "Registration: You must register with the State Physiotherapy Council (e.g., DCPTOT for Delhi) or the Indian Association of Physiotherapists (IAP).",
+          "Add-ons: FIFA Diploma in Football Medicine (Free online) is a great value-add.",
+          "Continuing Education: Regular workshops and certifications to stay updated with latest techniques."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in sports physiotherapy",
+        color: BLUE2,
+        content: [
+          "Conventional: Hospital-based Physiotherapist, Clinic Owner, Lecturer.",
+          "New-Age: Sports Data Analyst (integrating injury data with AI), Ergonomic Consultant for e-Sports teams, Tele-Physio Specialist.",
+          "Entrepreneurship: Starting a 'Sports Rehab Tech' startup or a chain of specialized recovery centers.",
+          "International: Working with international sports teams and organizations."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of sports physiotherapy careers",
+        color: BLUE,
+        content: [
+          "Emotional Stress: Seeing an athlete's dreams crushed by an injury can be tough.",
+          "Odd Hours: Athletes train early and play late. You are often the last person to leave the field.",
+          "Travel: Professional team physios spend 6-8 months a year living out of suitcases.",
+          "Physical Fatigue: Demonstrating exercises and performing manual therapy is physically demanding.",
+          "High Expectations: Athletes and coaches expect immediate results and perfect outcomes."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of sports physiotherapy",
+        color: BLUE2,
+        content: [
+          "Wearable Tech: Physios will use AI to track 'Muscle Fatigue' in real-time through smart fabrics.",
+          "Robotic Rehab: Using mechanical exoskeletons to help paralyzed or severely injured athletes walk again.",
+          "Preventive AI: Software that predicts injury risk based on an athlete's sleep, nutrition, and training load.",
+          "Telemedicine: Remote consultations and monitoring for athletes in remote areas."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Volunteer: Ask your school's sports coach if you can help during the next Sports Day.",
+          "Study Human Biology: Focus on the skeletal and muscular systems—they are your 'map.'",
+          "Learn First Aid: Take a certified Red Cross or St. John Ambulance first aid course.",
+          "Physical Fitness: To be a sports physio, you need to stay fit yourself! Join a sport to understand what it feels like to be an athlete."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring sports physiotherapists in India",
+        color: BLUE2,
+        content: [
+          "Dr. Ali Irani: Former Head Physio of the Indian Cricket Team; a pioneer who brought modern sports medicine to India.",
+          "Dr. Nitin Patel: Currently a key figure with the BCCI/National Cricket Academy; he has managed the injuries of India's top cricketers for decades.",
+          "Dr. Heath Matthews: Though born in South Africa, he is a legend in India, having worked with the Indian boxing and wrestling teams at the Olympics.",
+          "Dr. Rajani Patil: A leading sports physio in Mumbai specializing in marathon runners and endurance athletes.",
+          "Dr. Jaspal Singh: A renowned expert in spinal manual therapy and sports rehab in North India."
+        ]
+      }
+    ]
+  },
+  sportsperson: {
+    slug: "sportsperson",
+    badge: "🏆 The Champions of India for Class 10+",
+    heading: "The Champions of India",
+    subheading: "Competing at the highest levels and inspiring millions through athletic excellence.",
+    whyCards: [
+      { icon: "Trophy", title: "Peak Performer", description: "Train relentlessly to achieve excellence in your chosen sport.", borderColor: "#10B981" },
+      { icon: "Heart", title: "Mental Champion", description: "Develop the mental resilience to perform under extreme pressure.", borderColor: "#059669" },
+      { icon: "Zap", title: "National Icon", description: "Represent your country and inspire millions across the nation.", borderColor: "#3B82F6" },
+      { icon: "TrendingUp", title: "Global Competitor", description: "Compete on international stages and achieve global recognition.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Market Size", detail: "$60.1B by 2033", color: "bg-green-100 text-green-700" },
+      { label: "E-Sports Growth", detail: "25% CAGR", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹15Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$60.1B", label: "Indian Sports Market by 2033", gradient: "from-green-500 to-green-600" },
+      { value: "25%", label: "E-Sports Growth Rate (CAGR)", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The performers of the sports industry",
+        color: BLUE,
+        content: [
+          "Being a professional sportsperson is more than just 'playing a game'—it is a full-time commitment to physical excellence, mental resilience, and representing something bigger than yourself.",
+          "A professional sportsperson competes in organized sporting events at the district, state, national, or international levels. They are the 'performers' of the sports industry. Their job is to train, compete, and constantly improve their skills to achieve peak performance.",
+          "In today's India, sports have transformed from a 'hobby' into a massive industry. With the success of the Khelo India movement and the rise of global stars like Neeraj Chopra and PV Sindhu, India is becoming a multi-sport nation.",
+          "Sportspersons are national icons who inspire millions, promote a healthy lifestyle, and contribute to India's 'soft power' on the global stage."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Aryan, a National-Level Athlete",
+        color: BLUE2,
+        content: [
+          "05:00 AM: My day starts when most people are still in deep sleep. The morning 'cool' is the best time for high-intensity cardio. I spend 90 minutes on the track—sprints, endurance runs, and agility drills. My coach watches every stride, correcting my posture.",
+          "08:30 AM: Breakfast is fuel, not just food. I follow a strict diet high in protein and complex carbs, measured to the gram.",
+          "10:30 AM: Skill Session. This is where I practice the 'craft' of my sport. If it's badminton, it's 200 smashes; if it's cricket, it's an hour of facing the bowling machine. It's repetitive, but this 'muscle memory' is what wins matches.",
+          "01:30 PM: Lunch and a mandatory 45-minute 'power nap.' Recovery is as important as training. My body is my office, and it needs maintenance.",
+          "03:30 PM: Strength & Conditioning. I head to the gym for weight training. We focus on 'explosive power'—the kind of strength that helps me jump higher or run faster in the final seconds of a game.",
+          "05:30 PM: Video Analysis & Strategy. I sit with my coach to watch recordings of my previous matches and those of my rivals. We look for patterns and build a 'battle plan' for the next tournament.",
+          "07:30 PM: Physiotherapy and ice baths. It sounds painful, but it helps my muscles recover for tomorrow.",
+          "09:30 PM: Lights out. Sleep is the most underrated part of a sportsperson's training. Tomorrow, we do it all over again."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "Check if you have the 'Champion's DNA'",
+        color: BLUE,
+        content: [
+          "Physical Resilience: You must be able to push your body through pain and fatigue every single day.",
+          "Mental Toughness: Sports are 90% mental. You need to stay calm when the score is against you.",
+          "Discipline: You can't miss practice because it's raining or you're 'not in the mood.'",
+          "Sportsmanship: You must be humble in victory and accept defeat gracefully.",
+          "Strategic Thinking: You need to 'read' the game and your opponent's next move.",
+          "Hard Skills: Sport-specific techniques, fitness, and tactical knowledge.",
+          "Soft Skills: Leadership, teamwork, and emotional intelligence."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The continuous cycle of a sportsperson",
+        color: BLUE2,
+        content: [
+          "Preparation (Off-Season): Building base strength, fixing technique flaws, and setting goals.",
+          "Competition (In-Season): Traveling for tournaments, executing game plans, and managing pressure.",
+          "Analysis: Reviewing performance with coaches and data analysts.",
+          "Recovery: Physical therapy and mental rest to prevent 'burnout.'",
+          "Training: Daily skill development and fitness maintenance.",
+          "Nutrition & Health: Maintaining peak physical condition through diet and medical care."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three phases to becoming a professional sportsperson",
+        color: BLUE,
+        content: [
+          "Phase 1 - After Class 10: Join a specialized Sports Academy (e.g., JSW's Inspire Institute of Sport or a SAI Center). Opt for a school that supports athletes with flexible attendance.",
+          "Phase 2 - After Class 12: Pursue a B.P.Ed (Bachelor of Physical Education) or B.Sc. in Sports Science. Aim for NIS Patiala certifications or university-level sports quota trials.",
+          "Phase 3 - After Graduation: Transition into Coaching (Diploma in Sports Coaching) or Sports Management. Professional athletes often get direct recruitment into Government organizations through the Sports Quota."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression for sportspersons",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual): Entry-Level (State/Junior) ₹3L-7L (mostly through stipends and prize money) | Mid-Level (National/Pro-Leagues) ₹15L-40L (Contract based) | Senior-Level (International/Capped) ₹60L-5Cr+ | Elite/Leadership (Icon Players) ₹15Cr+ (including endorsements).",
+          "Growth Trajectory: The E-Sports segment is the fastest-growing, projected to grow at 25% CAGR through 2035.",
+          "Market Size: The Indian sports event market is projected to reach $60.1 Billion by 2033.",
+          "Career Span: Most athletes retire by age 35, requiring planning for a 'second career.'"
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for sportspersons",
+        color: BLUE,
+        content: [
+          "Professional Leagues: IPL (Cricket), ISL (Football), PKL (Kabaddi), PVL (Volleyball).",
+          "Government Sector: Indian Railways, Services (Army/Navy/Air Force), and PSUs like BPCL or ONGC.",
+          "Top Cities: Bengaluru (Training Hub), Delhi (Federations), Pune (High-Performance Centers), Mumbai.",
+          "International: Representation in global leagues (NBA, European Football Leagues, County Cricket)."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and expenses for aspiring sportspersons",
+        color: BLUE2,
+        content: [
+          "Government Academies (SAI): Often free or highly subsidized (₹5,000-20,000 per year).",
+          "Private Academies: ₹1L-5L per year (depending on the sport).",
+          "Equipment: Can range from ₹10,000 (Athletics) to ₹5L+ (Shooting/Equestrian).",
+          "Travel/Tournament Entry: ₹50,000-2L annually for domestic tours."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for sports education in India",
+        color: BLUE,
+        content: [
+          "Government: NSNIS Patiala (Asia's largest), LNIPE Gwalior, Indira Gandhi Institute of Physical Education (Delhi).",
+          "Private: LPU (Punjab), Symbiosis School of Sports Sciences (Pune), IISM (Mumbai).",
+          "Northeast: National Sports University (Manipur)."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for aspiring sportspersons",
+        color: BLUE2,
+        content: [
+          "IndianOil Sports Scholarship: Up to ₹19,000/month for young talent (Elite Scholar category).",
+          "Khelo India Scholarship: ₹5L per annum for 8 years for identified talent.",
+          "GIIS Global Sports Scholarship: 100% fee waiver for national/international winners.",
+          "Reliance Foundation Scholarships: Supports 100+ athletes across various Olympic disciplines."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Licensing",
+        icon: "Certificate",
+        description: "Regulatory bodies and certifications",
+        color: BLUE,
+        content: [
+          "National Level: Sports Authority of India (SAI) and Indian Olympic Association (IOA).",
+          "Sport-Specific: BCCI (Cricket), AIFF (Football), BAI (Badminton).",
+          "Certifications: Anti-Doping (WADA/NADA) awareness certifications are mandatory for international play.",
+          "Registration: Athletes must register with their respective sport federations."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths for sportspersons",
+        color: BLUE2,
+        content: [
+          "Conventional: Professional Player, Sports Coach, Physical Education Teacher.",
+          "New-Age: E-Sports Athlete, Sports Data Analyst, Performance Bio-mechanist, Sports Influencer.",
+          "Entrepreneurship: Starting a Sports Academy, Fitness App, or Sports Apparel brand.",
+          "Post-Retirement: Commentary, Sports Management, or Government positions."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of professional sports careers",
+        color: BLUE,
+        content: [
+          "Injury Risk: One bad fall can end a career. Insurance and recovery are critical.",
+          "Short Career Span: Most athletes retire by age 35. You must plan for a 'second career.'",
+          "Extreme Pressure: Representing 1.4 billion people comes with immense mental stress and public scrutiny.",
+          "Financial Uncertainty: Income depends on performance, sponsorships, and tournament winnings.",
+          "Burnout: The constant training and competition can lead to physical and mental exhaustion."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of professional sports",
+        color: BLUE2,
+        content: [
+          "AI in Training: Wearables and AI-driven biomechanical analysis will become standard (25% growth in AI-sports market).",
+          "VR Training: Athletes will use VR to simulate match scenarios without physical strain.",
+          "Gamification: The lines between physical sports and E-sports will blur, creating 'Phygital' athletes.",
+          "Data Analytics: Performance metrics and predictive analytics will guide training and strategy."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Master Your Basics: Don't just play; learn the theory of your game.",
+          "Build Your Brand: Use social media to document your training journey.",
+          "Learn Nutrition: Understand how your body uses fuel.",
+          "Mental Drills: Practice meditation and visualization—the 'Inner Game.'"
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring sportspersons in India",
+        color: BLUE2,
+        content: [
+          "Major Dhyan Chand: The 'Wizard' of Hockey whose birthday is celebrated as National Sports Day.",
+          "Mary Kom: The only woman to become World Amateur Boxing champion six times.",
+          "Neeraj Chopra: First Indian to win a gold in track and field at the Olympics.",
+          "Sunil Chhetri: One of the world's highest active goal-scorers in international football.",
+          "Avani Lekhara: First Indian woman to win two Paralympic medals (Shooting)."
+        ]
+      }
+    ]
+  },
+  physical_trainer: {
+    slug: "physical_trainer",
+    badge: "💪 The Architects of Health for Class 10+",
+    heading: "The Architects of Health",
+    subheading: "Building stronger bodies and transforming lives through fitness and wellness.",
+    whyCards: [
+      { icon: "Heart", title: "Health Architect", description: "Design personalized fitness programs that transform lives.", borderColor: "#10B981" },
+      { icon: "Zap", title: "Motivator", description: "Inspire and empower clients to achieve their fitness goals.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "Performance Coach", description: "Enhance athletic performance through scientific training methods.", borderColor: "#3B82F6" },
+      { icon: "Users", title: "Wellness Expert", description: "Guide clients through nutrition, recovery, and lifestyle changes.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Market Growth", detail: "15% CAGR to 2030", color: "bg-green-100 text-green-700" },
+      { label: "Market Size", detail: "₹37,700 Cr by 2030", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹2.5L–₹1Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹37,700 Cr", label: "Fitness Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "15%", label: "Annual Growth Rate (CAGR)", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The architect of a healthier India",
+        color: BLUE,
+        content: [
+          "In an era where 'health is wealth' has moved from a proverb to a lifestyle, a Physical Trainer (or Fitness Professional) is the architect of a healthier India.",
+          "Gone are the days when a gym trainer was just someone who showed you how to lift a dumbbell. Today, a Physical Trainer is a multi-talented professional—part coach, part scientist, and part motivator.",
+          "They understand human anatomy, nutrition, and psychology. Their primary goal? To design and oversee exercise programs that help people reach their fitness goals—whether that's losing weight, building muscle for a sport, or recovering from an injury.",
+          "India is currently facing a 'lifestyle disease' crisis, but there is also a massive surge in health awareness. As a Physical Trainer, you aren't just helping people look better; you are helping a nation stay alive and productive."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Coach Rahul, a Physical Trainer in South Delhi",
+        color: BLUE2,
+        content: [
+          "05:30 AM: My alarm rings early. In this profession, your workday starts when others are still sleeping. I head to a premium fitness studio in South Delhi. My first client is a CEO who needs to fit her workout in before her 8:00 AM meetings.",
+          "07:00 AM: I'm leading a 'Functional Training' group class. There are 15 people of different ages. I have to be like a DJ—keeping the energy high, correcting their form, and making sure everyone stays safe.",
+          "11:00 AM: The 'Midday Gap.' Most people are at their offices now. This is my time for Self-Growth. I spend two hours on my own workout and another hour reading a new research paper on 'Hypertrophy' (muscle growth).",
+          "02:00 PM: I log into my laptop for Virtual Coaching. I have a client in London and another in Mumbai. We do a video call where I watch their form through the camera and adjust their nutrition plan on a shared app.",
+          "04:00 PM: I head to a local sports academy. I work with a 14-year-old state-level badminton player. Here, my role is a 'Strength & Conditioning' coach. We are building the specific explosive power he needs for his smash.",
+          "07:00 PM: Evening rush. The gym is packed with young professionals. I'm doing 'PT' (Personal Training) sessions back-to-back. It's exhausting but seeing a client finally master a deadlift they were scared of is incredibly rewarding.",
+          "09:30 PM: I wrap up, prep my meals for tomorrow, and head to bed. In this career, your body is your office, and sleep is your best employee!"
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The qualities of a great physical trainer",
+        color: BLUE,
+        content: [
+          "High Energy & Positivity: You are the 'spark plug.' If you are tired, your client will be too.",
+          "Patience: Everyone learns at a different pace. You might have to explain the same squat form 100 times.",
+          "Observational Skills: You need to spot a 'rounded back' or a 'wobbly knee' instantly to prevent injuries.",
+          "Communication: You must explain complex science (like metabolism) in simple words that a 14-year-old can understand.",
+          "Discipline: You are the role model. You cannot tell a client to eat clean if you are living on junk food.",
+          "Hard Skills: Anatomy, Exercise Science, Nutrition, and Programming.",
+          "Soft Skills: Motivation, Empathy, and Problem-Solving."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The Client Lifecycle model",
+        color: BLUE2,
+        content: [
+          "Assessment: Checking the client's current fitness level, medical history, and goals.",
+          "Programming: Creating a custom 'Periodization' plan (a roadmap for 3-6 months).",
+          "Instruction: Teaching the correct technique for every exercise.",
+          "Monitoring: Tracking progress through measurements and strength tests.",
+          "Motivation & Adjustment: Changing the plan when the client hits a 'plateau' (stops seeing results).",
+          "Recovery Management: Ensuring proper rest and nutrition for optimal results."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become a physical trainer",
+        color: BLUE,
+        content: [
+          "Pathway 1 - After Class 10: Start by participating in sports and maintaining your own fitness. Enroll in basic 'Gym Instructor' certificates from local academies.",
+          "Pathway 2 - After Class 12 (Any Stream): Pursue a B.P.Ed. (Bachelor of Physical Education) or B.Sc. in Sports Science/Exercise Science. International certifications like ACE or NASM are highly valued.",
+          "Pathway 3 - After Graduation: Pursue an M.P.Ed. or PG Diploma in Sports Coaching from NIS Patiala. Career Switch: If you have any degree, do a 6-month intensive certification to transition into personal training."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression for physical trainers",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual): Entry-Level (Floor Trainer) ₹2.5L-4L | Mid-Level (Certified Personal Trainer) ₹5L-10L | Senior-Level (Master Trainer/Manager) ₹12L-25L+ | Elite/Celebrity Trainer ₹50L-1Cr+ (per individual contract).",
+          "Metro vs. Tier-2: Salaries in Mumbai/Delhi are significantly higher, but the 'Online Coaching' boom allows trainers in Tier-2 cities to earn 'Metro salaries' from home.",
+          "Industry Growth: The fitness market is set to grow from ₹16,200 crore in 2024 to ₹37,700 crore by 2030 (15% CAGR).",
+          "Remote Potential: Extremely High. Hybrid models (2 days in-person, 3 days online) are becoming the norm."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for physical trainers",
+        color: BLUE,
+        content: [
+          "Industries: Fitness Clubs (Cult.fit, Anytime Fitness), Sports Academies, Luxury Hotels, Corporate Wellness Programs, Private Households.",
+          "Top Cities: Bengaluru, Mumbai, Delhi-NCR, Pune, Hyderabad.",
+          "Remote Potential: Extremely High. Hybrid models are becoming the norm.",
+          "International: Certifications like ACE and NASM are valid in over 80 countries, making it easy to work in the UAE, UK, or USA."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for physical trainer education",
+        color: BLUE2,
+        content: [
+          "Bachelor's (B.P.Ed) Government: ₹10,000-30,000/yr (3-4 Years)",
+          "Bachelor's (B.Sc) Private: ₹1L-3L/yr (3 Years)",
+          "Certification (ACE/NASM) Global Bodies: ₹45,000-80,000 (3-6 Months)",
+          "Specialized Diploma NIS Patiala: ₹20,000-50,000 (1 Year)"
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for physical trainer education",
+        color: BLUE,
+        content: [
+          "Public: Lakshmibai National Institute of Physical Education (LNIPE) Gwalior, Indira Gandhi Institute of Physical Education (IGIPESS) New Delhi, Netaji Subhas National Institute of Sports (NSNIS) Patiala.",
+          "Private: Symbiosis School of Sports Sciences Pune, Amity School of Physical Education Noida, Manipal Academy of Higher Education Manipal."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for physical trainer students",
+        color: BLUE2,
+        content: [
+          "National Scholarship Portal (NSP): Various merit-based schemes for B.P.Ed students.",
+          "IndianOil Sports Scholarship: Provides monthly stipends and travel support to promising young athletes/trainers.",
+          "Khelo India Scholarships: Aimed at talented youngsters identified through national games.",
+          "University Merit Scholarships: Many institutions offer tuition waivers for top performers."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Credentials and professional organizations",
+        color: BLUE,
+        content: [
+          "ACE (American Council on Exercise): Gold standard for personal training.",
+          "NASM (National Academy of Sports Medicine): Best for corrective exercise and performance.",
+          "NSDC (National Skill Development Corporation): Provides local Indian certifications under the 'Fit India' banner.",
+          "ISSA (International Sports Sciences Association): Recognized globally for fitness certifications."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in physical training",
+        color: BLUE2,
+        content: [
+          "Conventional: Gym Trainer, Physical Education (PE) Teacher, Sports Coach.",
+          "New-Age: Bio-hacking Coach, Corrective Exercise Specialist, AI-Fitness Content Creator, Corporate Wellness Strategist.",
+          "Freelance: Independent Personal Trainer, Nutrition Consultant, YouTube Fitness Influencer.",
+          "Entrepreneurship: Starting your own gym, fitness app, or online coaching platform."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of physical trainer careers",
+        color: BLUE,
+        content: [
+          "Income Fluctuations: If you are a freelancer, some months (like January—New Year's resolutions!) are busy, while others can be slow.",
+          "Physical Toll: Standing and demonstrating exercises for 8-10 hours a day is physically draining.",
+          "Odd Hours: Your work often happens when others are at leisure—mornings, evenings, and weekends.",
+          "Client Retention: Keeping clients motivated and committed is a constant challenge."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of physical training",
+        color: BLUE2,
+        content: [
+          "Wearable Tech: Trainers will use data from Smartwatches (sleep, heart rate, recovery) to adjust workouts daily.",
+          "Virtual Reality (VR) Training: Leading clients through immersive VR environments from across the globe.",
+          "Longevity Coaching: Focus shifting from 'looking fit' to 'living to 100' with high quality of life.",
+          "AI-Powered Personalization: AI algorithms will create hyper-personalized workout plans based on individual genetics and preferences."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Play Multiple Sports: Don't just stick to one. Learn the mechanics of football, swimming, and athletics.",
+          "Basic Anatomy: Pay attention in your 9th and 10th grade Biology classes!",
+          "Communication: Join your school's debate or drama club to build confidence in speaking.",
+          "Volunteer: Help your PE teacher organize sports day or assist younger kids with their exercises."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring physical trainers in India",
+        color: BLUE2,
+        content: [
+          "Kris Gethin: Known for transforming Bollywood stars like Hrithik Roshan; he helped bring scientific training to the Indian mainstream.",
+          "Prashant Sawant: The man behind Shah Rukh Khan's fitness journey for over two decades.",
+          "Yasmin Karachiwala: A pioneer of Pilates in India, showing that training isn't just about heavy weights.",
+          "Coach Shayamal Vallabhjee: A sports scientist who works with elite Indian athletes to blend psychology and performance.",
+          "Namrata Purohit: One of the youngest certified Stott Pilates instructors in the world, an inspiration for young fitness enthusiasts."
+        ]
+      }
+    ]
+  },
+  astronomer: {
+    slug: "astronomer",
+    badge: "🌌 The Cosmic Detectives for Class 10+",
+    heading: "The Cosmic Detectives",
+    subheading: "Unraveling the mysteries of the universe through observation and analysis.",
+    whyCards: [
+      { icon: "Telescope", title: "Universe Explorer", description: "Discover the secrets of stars, galaxies, and cosmic phenomena.", borderColor: "#10B981" },
+      { icon: "Zap", title: "Data Scientist", description: "Analyze massive datasets from space telescopes and satellites.", borderColor: "#059669" },
+      { icon: "Brain", title: "Theoretical Thinker", description: "Use mathematics and physics to explain cosmic mysteries.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Global Collaborator", description: "Work with international teams on groundbreaking space research.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Space-Tech Growth", detail: "12.8% CAGR", color: "bg-green-100 text-green-700" },
+      { label: "Career Growth", detail: "10-15 yrs to Senior", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹60L+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "12.8%", label: "Space-Tech Job Growth (CAGR)", gradient: "from-green-500 to-green-600" },
+      { value: "5-8%", label: "Pure Research Job Growth", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The detectives of the cosmos",
+        color: BLUE,
+        content: [
+          "Imagine standing on a rooftop at night, looking up at the twinkling stars and wondering, 'How far is that star? What is it made of? Are we alone?' An astronomer is someone who turns that wonder into a professional quest for answers.",
+          "Astronomy is the scientific study of celestial objects (like stars, planets, comets, and galaxies) and phenomena that originate outside the Earth's atmosphere.",
+          "Unlike many other scientists, astronomers cannot 'touch' their subjects. They are like detectives of the cosmos, using light and other forms of radiation to piece together the history and future of the universe.",
+          "In today's world, an astronomer isn't just someone looking through a telescope lens. They are high-tech data scientists and physicists who observe, analyze, and theorize about the cosmos."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Dr. Anya, an Astrophysicist at the Indian Institute of Astrophysics",
+        color: BLUE2,
+        content: [
+          "09:30 AM: My day doesn't start with a telescope, but with a strong cup of filter coffee and a laptop. I work at the Indian Institute of Astrophysics (IIA) in Bengaluru. The first task is checking the 'health' of the data that came in overnight from the Himalayan Chandra Telescope in Ladakh.",
+          "11:00 AM: I'm in a video call with collaborators from Pune and California. We are analyzing the 'light curve' of a distant supernova (an exploding star). We argue—politely—about whether the data shows a new type of chemical element or just 'noise' in the signal.",
+          "01:00 PM: Lunch at the canteen is where the best ideas happen. I sit with an engineer who builds telescope sensors. We discuss how to reduce the 'blur' caused by Earth's atmosphere.",
+          "02:30 PM: Time for some 'coding.' Most of my afternoon is spent writing Python scripts to filter out interference from the thousands of images we captured. Astronomy is 10% looking at stars and 90% solving puzzles with code.",
+          "04:30 PM: I mentor a PhD student. We look at her latest simulations of how two galaxies collide. It's like watching a slow-motion dance that takes billions of years, compressed into a few seconds on a screen.",
+          "08:00 PM: Tonight is my 'remote observing' shift. I don't have to travel to the mountains. From my home office, I log into the telescope's controls. I click a button, and thousands of kilometers away, a multi-ton giant of steel and glass swivels to point at a tiny patch of the sky I've chosen."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The 'Cosmic Ingredients' of an astronomer",
+        color: BLUE,
+        content: [
+          "Mathematical Mastery: Physics and Math are the languages of the universe. You need to be comfortable with complex calculations.",
+          "Curiosity & Patience: Scientific breakthroughs don't happen overnight. You might study one star for ten years!",
+          "Coding Skills: Modern astronomy is 'Data Science in Space.' Knowledge of Python, C++, or MATLAB is essential.",
+          "Analytical Thinking: You must be able to look at a blurry image and use logic to figure out what it represents.",
+          "Writing & Communication: Astronomers must write research papers and explain their findings to the government and the public.",
+          "Hard Skills: Physics, Mathematics, Programming, and Data Analysis.",
+          "Soft Skills: Collaboration, Persistence, and Creative Problem-Solving."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The Scientific Method in astronomy",
+        color: BLUE2,
+        content: [
+          "The Proposal: You 'bid' for time on a telescope. You have to convince a committee why your project is important.",
+          "Observation: You collect data (images, spectra) during your allotted time.",
+          "Data Reduction: Raw data from space is 'messy.' You use software to clean it up.",
+          "Analysis: You apply physics laws to understand the data.",
+          "Publication: You write a paper and publish it in journals like Nature or the Journal of Astrophysics & Astronomy.",
+          "Collaboration: Work with international teams to validate findings and advance knowledge."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become an astronomer",
+        color: BLUE,
+        content: [
+          "Path A - The Standard Route (After Class 10): Choose Science Stream with Physics, Chemistry, and Mathematics (PCM). Prepare for JEE Main, JEE Advanced, or IISER Aptitude Test (IAT).",
+          "Path B - Undergraduate Level (After Class 12): Option 1: B.Sc. (Physics/Mathematics) or B.Sc. Astronomy (3-4 years). Option 2: B.Tech in Aerospace/Electronics/Mechanical Engineering. Top Exams: KVPY, JEE, CUET.",
+          "Path C - Post-Graduation & PhD (The Specialist Route): Masters: M.Sc. in Physics, Astronomy, or Astrophysics. Entrance: IIT-JAM, JEST, or GATE. PhD: Most 'Astronomer' jobs require a Doctorate."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression for astronomers",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual): Entry-Level (Junior Research Fellow) ₹4.5L-7L | Mid-Level (Scientist C/D / Assistant Prof.) ₹12L-18L | Senior-Level (Scientist F/G / Professor) ₹22L-35L | Leadership (Director of Institute/ISRO Dept) ₹40L-60L+.",
+          "Growth Trajectory: Entry to Senior typically takes 10-15 years (including PhD and Post-doc years).",
+          "Market Demand: While pure 'research' jobs grow at 5-8%, 'Space-Tech' and 'Satellite Data Analysis' roles in the private sector grow at 12.8% CAGR.",
+          "Stipends: Most PhD students receive a fellowship (JRF/SRF) of ₹37,000-42,000 per month."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for astronomers",
+        color: BLUE,
+        content: [
+          "Government Research Organizations: ISRO, IIA, ARIES, TIFR, Physical Research Laboratory (PRL).",
+          "Academia: IITs, IISERs, and Central Universities.",
+          "Space-Tech Startups: Skyroot Aerospace, Pixxel, Agnikul (hiring for satellite data and mission planning).",
+          "Data Science: Many astronomers are hired by tech giants (Google, Microsoft) because they are experts at handling massive datasets.",
+          "International: NASA (USA), ESA (Europe), and ESO (Chile) frequently hire Indian researchers."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for astronomer education",
+        color: BLUE2,
+        content: [
+          "Government (IITs/IISERs/Central Unis): ₹10,000-50,000 per semester.",
+          "Private Universities: ₹1L-3L per year.",
+          "Stipends: Most PhD students receive a fellowship (JRF/SRF) of ₹37,000-42,000 per month, which often covers living costs entirely.",
+          "Research Grants: Once employed, research funding is available through government agencies."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for astronomy in India",
+        color: BLUE,
+        content: [
+          "North: ARIES (Nainital), IIT Delhi, University of Delhi.",
+          "South: Indian Institute of Astrophysics (Bengaluru), IIST (Thiruvananthapuram), Osmania University (Hyderabad).",
+          "East: IIT Kharagpur, S.N. Bose National Centre for Basic Sciences (Kolkata).",
+          "West: IUCAA (Pune), TIFR (Mumbai), PRL (Ahmedabad).",
+          "Northeast: IIT Guwahati, Tezpur University."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for astronomy students",
+        color: BLUE2,
+        content: [
+          "INSPIRE Scholarship (DST): For top 1% students in Class 12 pursuing Basic Sciences.",
+          "JEST/GATE Fellowships: Monthly stipend for Master's and PhD students.",
+          "Prime Minister's Research Fellowship (PMRF): High-value scholarship for PhD students at IITs/IISERs (up to ₹80,000/month).",
+          "Women in Science Scholarships: Various schemes by the Department of Science and Technology (DST)."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Licensing",
+        icon: "Certificate",
+        description: "Professional organizations and credentials",
+        color: BLUE,
+        content: [
+          "Astronomical Society of India (ASI): The primary body for professionals.",
+          "International Astronomical Union (IAU): The global body that names stars and planets.",
+          "ISRO: India's space agency that coordinates research and missions.",
+          "Research Societies: Various specialized societies for different branches of astronomy."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in astronomy",
+        color: BLUE2,
+        content: [
+          "Conventional: Research Scientist, Professor, Planetarium Director.",
+          "New-Age: Satellite Data Analyst, Space Architect, AI-Astronomy Specialist, Space Policy Consultant.",
+          "Freelancing/Entrepreneurship: Science Communicator/YouTuber, Astrophotographer, Space-Tech Consultant for startups.",
+          "International Collaboration: Working with global space agencies and research institutions."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of astronomy careers",
+        color: BLUE,
+        content: [
+          "Long Preparation: You might be 28-30 years old before you get your first 'permanent' job due to the long PhD and Post-doc route.",
+          "Funding Stress: You often have to 'fight' for grants to fund your research.",
+          "Niche Market: Pure research roles are limited compared to IT or Management.",
+          "Competitive Field: Only the most dedicated and talented succeed in this highly specialized field."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of astronomy",
+        color: BLUE2,
+        content: [
+          "AI & Machine Learning: AI will do most of the 'data cleaning,' allowing astronomers to focus purely on the 'why' of the universe.",
+          "Private Space Sector: With India's Space Policy 2023, the private sector will open thousands of jobs in satellite-based internet and Earth observation.",
+          "Multi-Wavelength Astronomy: Combining data from radio, infrared, visible, and X-ray telescopes for comprehensive understanding.",
+          "Exoplanet Research: Searching for habitable worlds and signs of extraterrestrial life."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Join a Club: Join the Indian Astronomy Club or your school's science club.",
+          "Learn Python: Start with basic coding on platforms like Coursera or Khan Academy.",
+          "Compete: Participate in the International Olympiad on Astronomy and Astrophysics (IOAA).",
+          "Read: Follow ISRO's website and magazines like Scientific American.",
+          "Stargaze: Download an app like Stellarium and start identifying constellations."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring astronomers in India",
+        color: BLUE2,
+        content: [
+          "Dr. Meghnad Saha: Developed the Saha Equation, which explains the 'makeup' of stars.",
+          "Dr. Jayant Narlikar: A world-famous cosmologist and champion of science fiction in India.",
+          "Dr. G.C. Anupama: First woman president of the Astronomical Society of India and a leader in telescope projects.",
+          "Dr. Yash Pal: Known for making science 'simple' for every Indian child through TV.",
+          "Aryabhata (Historical): The 5th-century genius who knew Earth was round and rotated on its axis long before the West did."
+        ]
+      }
+    ]
+  },
+  chemical_engineer: {
+    slug: "chemical_engineer",
+    badge: "⚗️ The Architects of Scale for Class 10+",
+    heading: "The Architects of Scale",
+    subheading: "Transforming lab discoveries into industrial solutions that power the world.",
+    whyCards: [
+      { icon: "Zap", title: "Scale Master", description: "Transform lab reactions into massive industrial processes.", borderColor: "#10B981" },
+      { icon: "Leaf", title: "Green Innovator", description: "Design sustainable processes that reduce waste and pollution.", borderColor: "#059669" },
+      { icon: "Cog", title: "Problem Solver", description: "Optimize production for efficiency, safety, and profitability.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Global Impact", description: "Create products that reach millions—from medicines to fuels.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Industry Growth", detail: "9.3% CAGR to 2030", color: "bg-green-100 text-green-700" },
+      { label: "Market Position", detail: "6th largest globally", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹1.2Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "9.3%", label: "Industry Growth Rate (CAGR)", gradient: "from-green-500 to-green-600" },
+      { value: "6th", label: "Global Chemical Producer Rank", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The magic of scale",
+        color: BLUE,
+        content: [
+          "If you've ever wondered how crude oil turns into the petrol that powers cars, how a handful of leaves becomes a life-saving medicine, or how a simple plastic bottle is made, you are thinking about Chemical Engineering.",
+          "Chemical Engineering is the 'Magic of Scale.' While a chemist works in a lab to discover a new reaction in a small test tube, a Chemical Engineer takes that reaction and figures out how to make tons of that product safely, cheaply, and efficiently.",
+          "They are the designers of the massive plants that produce everything from fertilizers for our farmers to the polymers used in your smartphone.",
+          "India is currently the 6th largest producer of chemicals globally. As the world moves toward 'Green Energy,' chemical engineers are at the forefront of the National Green Hydrogen Mission, designing the electrolyzers that will replace fossil fuels."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Rohan, a Process Engineer at a petrochemical refinery",
+        color: BLUE2,
+        content: [
+          "07:45 AM: My day begins at a massive petrochemical refinery in Jamnagar, Gujarat. The sun is just rising over the steel towers and intertwining pipes. I start with a 'Shift Handover' meeting. I need to know if the distillation columns ran smoothly overnight or if there were any pressure drops.",
+          "09:30 AM: I'm in the Control Room—the 'brain' of the plant. Instead of beakers, I use a wall of digital screens. I notice a slight temperature spike in Reactor-B. I don't run out with a wrench; I use simulation software (like Aspen Plus) to analyze the data and adjust the flow of cooling water remotely.",
+          "11:30 AM: Time for a 'Safety Audit.' Safety is the #1 rule. I walk through the plant with a clipboard, checking the pressure valves and ensuring the new technicians are following the HazMat (Hazardous Materials) protocols.",
+          "01:00 PM: Lunch at the cafeteria is a mix of talk about the IPL and a new 'Carbon Capture' technology we're trying to implement. Many of my colleagues are mechanical and electrical engineers; we work as one giant team.",
+          "02:30 PM: I spend the afternoon working on a 'Process Intensification' project. My goal is to reduce the energy consumption of our plant by 5%. This isn't just good for the environment; it saves the company crores of rupees every year.",
+          "04:30 PM: I meet with the R&D team. They've developed a new catalyst in the lab that speeds up plastic recycling. My job is to design the 'Pilot Plant'—a smaller version of the factory—to see if this catalyst works outside the lab.",
+          "06:30 PM: I head home, tired but satisfied. As I pass a local gas station, I see people fueling their cars. I realize that the work I did today directly powers their journey home."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The qualities of a great chemical engineer",
+        color: BLUE,
+        content: [
+          "Logic & Math: You'll be calculating 'Mass Balances'—tracking every gram of material that enters and leaves a machine.",
+          "Attention to Detail: A small mistake in a chemical formula or a pressure setting can be dangerous.",
+          "Environmental Consciousness: Modern chemical engineering is about 'Green Chemistry'—reducing waste and pollution.",
+          "Software Literacy: You'll use AI and simulation tools like Aspen HYSYS, MATLAB, and AutoCAD.",
+          "Teamwork: You'll work with scientists, government regulators, and blue-collar workers.",
+          "Hard Skills: Thermodynamics, Fluid Mechanics, Process Design, and Programming.",
+          "Soft Skills: Leadership, Safety Awareness, and Problem-Solving."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The P-D-O-S cycle",
+        color: BLUE2,
+        content: [
+          "Process Design: Drawing the blueprints for a factory using computer software.",
+          "Development: Testing new chemicals or materials in small 'pilot plants.'",
+          "Optimization: Finding ways to make a factory use less water, less electricity, and produce less waste.",
+          "Safety & Compliance: Ensuring the plant doesn't harm the workers or the surrounding environment.",
+          "Monitoring: Continuously tracking plant performance and making adjustments.",
+          "Innovation: Developing new processes and improving existing ones."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become a chemical engineer",
+        color: BLUE,
+        content: [
+          "After Class 10: Diploma Route - Enroll in a 3-year Diploma in Chemical Engineering. Enter the workforce as a Junior Plant Operator or use 'Lateral Entry' to join the 2nd year of a B.Tech degree.",
+          "After Class 12: Science Stream (PCM required). Entrance Exams: JEE Main (NITs), JEE Advanced (IITs), BITSAT, or State exams. Degree: B.Tech or B.E. in Chemical Engineering (4 years).",
+          "After Graduation: Higher Studies - Pursue M.Tech (via GATE) or MS/PhD for research roles. Management - Many pursue MBA (via CAT) for Supply Chain or Plant Management. Career Switch - B.Sc. Chemistry graduates can switch via M.Tech after clearing GATE."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression for chemical engineers",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual): Entry-Level (Fresher) ₹4.5L-9L | Mid-Level (4-8 years) ₹12L-18L | Senior-Level (9+ years) ₹20L-35L+ | Leadership (Plant Head/CXO) ₹50L-1.2Cr+.",
+          "Metro vs. Tier-2: Unlike IT, many high-paying jobs are in 'Industrial Towns' like Jamnagar, Vadodara, Digboi, and Vizag, where salaries are high but cost of living is low.",
+          "Growth Rate: The industry is projected to grow at 9.3% CAGR through 2030, driven by Specialty Chemicals and Renewable Energy sectors.",
+          "International Opportunities: Huge demand in the Middle East (UAE, Saudi Arabia) and Germany/USA for advanced materials."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for chemical engineers",
+        color: BLUE,
+        content: [
+          "Top Industries: Oil & Gas (Refineries), Pharmaceuticals, Agrochemicals (Fertilizers), FMCG (Paints, Soaps), Green Energy (Hydrogen).",
+          "Top Cities: Vadodara/Ankleshwar (Chemical Hub), Mumbai/Navi Mumbai, Bengaluru (R&D), Hyderabad (Pharma), Gurgaon (Consulting).",
+          "International: Huge demand in the Middle East (UAE, Saudi Arabia) for petroleum and Germany/USA for advanced materials.",
+          "Remote Potential: Moderate. Design and R&D roles can be remote, but plant operations require on-site presence."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for chemical engineering education",
+        color: BLUE2,
+        content: [
+          "Government (IITs/NITs): ₹5L-10L (Total for 4 years).",
+          "Public Universities (e.g., Jadavpur): Can be as low as ₹10,000-50,000.",
+          "Private Universities: ₹8L-20L (Total).",
+          "Living Costs: ₹1.2L-2L per year in major hostel hubs."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for chemical engineering in India",
+        color: BLUE,
+        content: [
+          "North: IIT Delhi, BITS Pilani, NIT Jalandhar.",
+          "South: IIT Madras, NIT Trichy, ICT (Bhubaneswar/Mumbai campuses).",
+          "East: IIT Kharagpur, Jadavpur University (Kolkata), NIT Rourkela.",
+          "West: ICT Mumbai (The gold standard for Chemical Engineering), IIT Bombay, NIT Surat."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for chemical engineering students",
+        color: BLUE2,
+        content: [
+          "AIEESE (Secondary): A national-level scholarship exam for engineering aspirants.",
+          "Reliance Foundation Scholarships: For undergraduate students in various engineering streams.",
+          "OPJEMS: For top students in selected engineering colleges (IITs, NITs).",
+          "Pragati Scholarship: AICTE scheme for girl students (₹50,000/year)."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials",
+        color: BLUE,
+        content: [
+          "IIChE (Indian Institute of Chemical Engineers): The premier body for networking.",
+          "Certifications: Six Sigma (Green/Black Belt), Process Safety (NEBOSH), Aspen Plus Certification.",
+          "Professional Memberships: AICHE (American Institute of Chemical Engineers) for international recognition.",
+          "Continuing Education: Regular workshops and seminars on emerging technologies."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in chemical engineering",
+        color: BLUE2,
+        content: [
+          "Conventional: Process Engineer, Production Manager, Safety Officer, Quality Assurance Manager.",
+          "New-Age: Green Hydrogen Specialist, Battery Tech Engineer (for EVs), AI-Process Automation Lead, Sustainability Consultant.",
+          "Entrepreneurship: Starting a specialty chemical unit (e.g., organic dyes, essential oils) or an environmental consultancy.",
+          "International: Working with global chemical companies and research institutions."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of chemical engineering careers",
+        color: BLUE,
+        content: [
+          "Harsh Environments: Many plants are in hot, humid, or remote coastal areas.",
+          "Shift Work: Production never stops; you may have to work night shifts or on holidays.",
+          "Safety Risk: Dealing with high-pressure gases and toxic chemicals requires 100% focus, 100% of the time.",
+          "Continuous Learning: Technology and regulations change rapidly; you must stay updated."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of chemical engineering",
+        color: BLUE2,
+        content: [
+          "Industry 4.0: Chemical engineers won't just monitor dials; they will manage Digital Twins—virtual replicas of the factory that use AI to predict failures.",
+          "Net Zero Goals: Chemical engineers will be the heroes of the 21st century, turning CO2 from a pollutant into a useful raw material.",
+          "Green Hydrogen: The National Green Hydrogen Mission will create thousands of new jobs.",
+          "Circular Economy: Focus on recycling and reusing materials to minimize waste."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Master Chemistry: Focus on 'Stoichiometry' (the math of chemical reactions).",
+          "Coding: Learn basic Python; it's used to analyze plant data.",
+          "Read: Follow news on the 'Energy Transition' and 'Hydrogen Economy.'",
+          "Virtual Labs: Explore online simulations (like those from Amrita Vishwa Vidyapeetham) to see how reactions work at scale."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring chemical engineers in India",
+        color: BLUE2,
+        content: [
+          "Prof. M.M. Sharma: A legend who transformed ICT Mumbai into a world-class institute and mentored many of India's top CEOs.",
+          "Mukesh Ambani: Before leading Reliance Industries, he studied Chemical Engineering at ICT Mumbai—his technical background helped build the world's largest refinery.",
+          "Dr. Raghunath Mashelkar: A visionary scientist who fought for India's traditional knowledge and led the CSIR.",
+          "Homi Sethna: A key figure in India's nuclear program, he was a chemical engineer who helped set up India's first plutonium plant.",
+          "Harsha Bhogle: The 'Voice of Cricket' is a Chemical Engineer (Osmania University) who applied his analytical skills to sports."
+        ]
+      }
+    ]
+  },
+  engineering_technology: {
+    slug: "engineering_technology",
+    badge: "⚙️ The Builders of Tomorrow for Class 10+",
+    heading: "The Builders of Tomorrow",
+    subheading: "Creating innovative solutions that transform industries and improve lives globally.",
+    whyCards: [
+      { icon: "Zap", title: "Problem Solver", description: "Design and build solutions to real-world challenges.", borderColor: "#10B981" },
+      { icon: "Cog", title: "Creator", description: "Turn ideas into tangible products and systems.", borderColor: "#059669" },
+      { icon: "Brain", title: "Innovator", description: "Push the boundaries of what's possible with technology.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Global Impact", description: "Build systems that serve millions across the world.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Tech Industry Size", detail: "$350B by 2030", color: "bg-green-100 text-green-700" },
+      { label: "Annual Graduates", detail: "1.5M+ engineers", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹2.5Cr+", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$350B", label: "India's Tech Industry by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "1.5M+", label: "Engineers Graduate Annually", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The practical application of science and mathematics",
+        color: BLUE,
+        content: [
+          "If you've ever wondered how a smartphone fits a billion transistors into your pocket, how a bridge stays standing during a cyclone, or how an app like Swiggy knows exactly where your delivery partner is—you are thinking like an engineer.",
+          "Engineering is the practical application of science and mathematics to solve problems. While a scientist might discover a new law of physics, an engineer asks, 'How can I use this law to build something that makes life better?'",
+          "Engineers aren't just people with hard hats or people staring at code; they are creators. They design, build, test, and maintain everything from tiny medical sensors to massive spaceships.",
+          "In today's digital age, technology is the 'engine' that powers engineering. This means modern engineers spend as much time with software simulations and AI as they do with physical materials."
+        ]
+      },
+      {
+        id: "2",
+        title: "A Day in the Life",
+        icon: "Clock",
+        description: "Meet Aditi, a Systems Engineer at a tech park in Bengaluru",
+        color: BLUE2,
+        content: [
+          "09:00 AM: My day starts at a tech park in Bengaluru. My team is working on an 'Autonomous Drone Delivery' system. I grab a coffee and check the 'Simulation Logs' from last night. The virtual drone crashed 12 times in the simulation due to high wind speeds.",
+          "11:00 AM: I'm in a 'Scrum Meeting.' This isn't about rugby! It's a quick stand-up meeting where I talk to a Mechanical Engineer (who designed the drone's wings) and a Data Scientist (who wrote the navigation AI). We realize the sensor is sending data too slowly.",
+          "01:00 PM: Lunch at the cafeteria is a mix of debates about the latest Marvel movie and a new coding language called Mojo. Engineering is a social career—you're constantly brainstorming with people who think differently than you.",
+          "02:30 PM: I'm in the 'Hardware Lab.' I wear an anti-static wristband and connect the drone's flight controller to my laptop. I rewrite a few lines of code to optimize how the drone handles wind gusts.",
+          "05:30 PM: I spend an hour documenting our findings. In engineering, if it isn't documented, it didn't happen. I send a report to our project manager about the sensor upgrade we need to buy.",
+          "07:30 PM: As I head home, I see a small delivery drone hovering over a nearby building. It's not one of ours yet, but I know that in a few years, the code I wrote today will be part of the 'brain' of thousands of drones across India."
+        ]
+      },
+      {
+        id: "3",
+        title: "Is This You? (Personality Traits & Skills)",
+        icon: "User",
+        description: "The 'Engineering DNA' markers",
+        color: BLUE,
+        content: [
+          "Problem-Solving Mindset: You don't see a 'broken' toy; you see a puzzle that needs fixing.",
+          "Mathematical Logic: You enjoy finding patterns and using numbers to explain the world.",
+          "Curiosity: You've probably dismantled a remote control just to see what's inside.",
+          "Resilience: Engineering involves a lot of 'Trial and Error.' You don't give up when your first 10 attempts fail.",
+          "Ethics & Safety: You understand that people's lives depend on the bridges you build or the code you write.",
+          "Hard Skills: Mathematics, Physics, Programming, and Design.",
+          "Soft Skills: Teamwork, Communication, and Adaptability."
+        ]
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The Engineering Design Process",
+        color: BLUE2,
+        content: [
+          "Define: Understand the problem (e.g., 'We need a phone battery that lasts 3 days').",
+          "Research: Look at what exists and what the limits of physics are.",
+          "Prototyping: Build a 'rough draft'—whether it's a 3D model or a basic software version.",
+          "Testing: Try to 'break' your prototype to find its weaknesses.",
+          "Iteration: Use the test results to improve the design. Repeat until perfect.",
+          "Documentation: Record all findings and improvements for future reference."
+        ]
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Three main routes to become an engineer",
+        color: BLUE,
+        content: [
+          "Pathway 1 - After Class 10 (The Technical Route): Enroll in a 3-year Diploma in Engineering (Polytechnic). After the Diploma, start working as a Junior Engineer or enter the 2nd year of a B.Tech degree through Lateral Entry exams.",
+          "Pathway 2 - After Class 12 (The Professional Route): Subjects: Physics, Chemistry, and Mathematics (PCM). Entrance Exams: JEE Main (NITs/IIITs), JEE Advanced (IITs), BITSAT, VITEEE, or State-Level exams. Degree: B.Tech or B.E. (4 years).",
+          "Pathway 3 - After Graduation (The Specialist Route): Higher Studies: Pursue M.Tech (via GATE) to specialize. Management: Take CAT exam for MBA in Product Management. Career Switch: B.Sc. Physics/Maths graduates can do MCA or M.Tech."
+        ]
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salary and career progression for engineers",
+        color: BLUE2,
+        content: [
+          "Salary Ranges (Annual): Entry-Level (Fresher) ₹4.5L-12L (Top IITians/NITians can reach ₹30L+) | Mid-Level (5-10 years) ₹15L-28L | Senior-Level (10-15 years) ₹30L-60L | Leadership/CXO ₹80L-2.5Cr+.",
+          "Metro vs. Tier-2: While Metro cities (Bengaluru, Hyderabad) offer higher base pay, Tier-2 cities like Coimbatore, Ahmedabad, and Jaipur are seeing 20% higher growth in hiring due to lower costs of living.",
+          "Growth Trajectory: India's technology industry is projected to reach $350 Billion by 2030.",
+          "International Opportunities: High demand in the USA, Germany, and Japan, particularly for specialized roles in AI and VLSI."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Top sectors and locations for engineers",
+        color: BLUE,
+        content: [
+          "Top Industries: Software & IT Services, Global Capability Centers (GCCs), Automotive (EVs), Semiconductors, Renewable Energy, Space-Tech.",
+          "Top Cities: Bengaluru (Silicon Valley of India), Hyderabad (GCC capital), Pune (Auto-hub), Chennai (SaaS & Hardware).",
+          "Remote Work: High potential in Software Engineering and Data Science.",
+          "International: High demand in the USA, Germany, and Japan for specialized roles in AI and VLSI (Chip Design)."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and duration for engineering education",
+        color: BLUE2,
+        content: [
+          "IITs/NITs: ₹8L-12L (Total for 4 years).",
+          "Top Private Universities: ₹15L-25L (Total).",
+          "Coaching for JEE: ₹1L-4L (for 2 years).",
+          "Living/Hostel: ₹10,000-18,000 per month in major education hubs like Kota, Delhi, or Pune."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "BookOpen",
+        description: "Prominent institutions for engineering in India",
+        color: BLUE,
+        content: [
+          "Public: All IITs (Bombay, Delhi, Madras are top), NITs (Trichy, Surathkal), IIIT Hyderabad, Jadavpur University (East).",
+          "Private: BITS Pilani (Multiple campuses), VIT Vellore, Manipal Institute (South), Thapar University (North).",
+          "Online: NPTEL (Government-led) and platforms like Coursera/edX for specialized nanodegrees."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial aid for engineering students",
+        color: BLUE2,
+        content: [
+          "Central Govt: PM-USP (Central Sector Scheme) for meritorious students (₹12,000/year).",
+          "AICTE Pragati: For girl students (₹50,000/year).",
+          "National Scholarship Portal (NSP): Dozens of state and community-specific schemes.",
+          "Institutional: BITS and VIT offer significant fee waivers for top board exam scorers."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials",
+        color: BLUE,
+        content: [
+          "Bodies: Institution of Engineers (India), IEEE (for Electrical/Electronics/CS), ASME (Mechanical).",
+          "Certifications: AWS/Azure (Cloud), Cisco (Networking), PMP (Project Management).",
+          "Licensing: While not mandatory for most, a 'Chartered Engineer' (CEng) status adds global credibility.",
+          "Continuing Education: Regular certifications and upskilling programs."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in engineering and technology",
+        color: BLUE2,
+        content: [
+          "Conventional: Software Developer, Civil Engineer, Electrical Engineer, Mechanical Engineer.",
+          "New-Age: AI Engineer, Cybersecurity Architect, EV Battery Specialist, GenAI Prompt Engineer, Blockchain Developer.",
+          "Freelancing/Entrepreneurship: Thousands of Indian engineers are launching 'Deep-Tech' startups in Agri-tech, Ed-tech, and Space-tech.",
+          "International: Working with global tech companies and research institutions."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of engineering careers",
+        color: BLUE,
+        content: [
+          "The 'Hustle': Tight deadlines can lead to long working hours and burnout.",
+          "Constant Learning: Your degree is just the 'start line.' In technology, what you learn in Year 1 might be obsolete by Year 4.",
+          "Competition: With over 1.5 million engineers graduating every year, standing out requires a focus on skills, not just marks.",
+          "Pressure: High expectations from employers and society to deliver results."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of engineering and technology",
+        color: BLUE2,
+        content: [
+          "AI Co-Pilot: By 2030, AI will be a co-pilot for every engineer. Instead of writing every line of code, you will use AI to generate the basics while you focus on system architecture.",
+          "Green Engineering: Every project will be measured by its carbon footprint. Sustainability will be mandatory.",
+          "Quantum Computing: Engineers will need to understand quantum principles for next-generation computing.",
+          "Space-Tech: India's space ambitions will create thousands of engineering jobs in satellite and launch systems."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12",
+        color: BLUE,
+        content: [
+          "Coding: Don't wait for college. Start with Python or C++.",
+          "Logic Puzzles: Solve Sudoku, Rubik's cubes, or join Math Olympiads.",
+          "Hardware Projects: Buy an Arduino or Raspberry Pi kit and build a simple light sensor or a weather station.",
+          "Reading: Follow tech news on sites like TechCrunch or The Ken."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring engineers in India",
+        color: BLUE2,
+        content: [
+          "Sir M. Visvesvaraya: The father of Indian engineering; his birthday is celebrated as Engineers' Day (Sept 15).",
+          "Sundar Pichai: From studying Metallurgy at IIT Kharagpur to becoming the CEO of Google.",
+          "Satya Nadella: A Manipal Institute alumnus who transformed Microsoft into a cloud-and-AI giant.",
+          "Tessy Thomas: Known as the 'Missile Woman of India' for her leadership in the Agni missile program.",
+          "Sridhar Vembu: Founder of Zoho Corp, proving that world-class software engineering can happen in rural India."
+        ]
+      }
+    ]
+  },
+  mathematician: {
+    slug: "mathematician",
+    badge: "🔢 The Pattern Finder for Class 10+",
+    heading: "Mathematician",
+    subheading: "Unlocking the hidden patterns in nature, finance, and technology—from predicting stock markets to designing AI algorithms.",
+    whyCards: [
+      { icon: "Brain", title: "20% Annual Growth in Quant Roles", description: "Demand for quantitative professionals in Fintech and AI companies is exploding at 20% year-on-year.", borderColor: "#10B981" },
+      { icon: "Zap", title: "AI & Quantum Computing Era", description: "Mathematicians are the architects of AI ethics and quantum computing—the next frontier of technology.", borderColor: "#059669" },
+      { icon: "Globe", title: "Global Demand", description: "Indian mathematicians are highly sought after on Wall Street, tech hubs in Europe, and ISRO/DRDO.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "India's Math Legacy", description: "From Aryabhata to Ramanujan to Manjul Bhargava (Fields Medal winner)—India's mathematical tradition is world-class.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (B.Sc) + 2 Years (M.Sc) + 4-5 Years (PhD, optional)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Mathematica, MATLAB, Python, R, Aspen HYSYS", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "20%", label: "Annual Growth in Quant Roles", gradient: "from-green-500 to-green-600" },
+      { value: "8-12 yrs", label: "Entry to Senior Level", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The architects of patterns, formulas, and predictions.",
+        color: BLUE,
+        content: [
+          "Pure Mathematics: Discovering new theorems and mathematical truths that have no immediate application but shape the future.",
+          "Applied Mathematics: Using math to solve real-world problems in physics, engineering, and business.",
+          "Data Science & Statistics: Turning raw data into insights that drive business decisions.",
+          "Cryptography & Security: Using prime numbers and complex algorithms to keep digital transactions safe.",
+          "The Mathematician's Role: You don't just 'do sums.' You look for patterns. You are the architect of the formulas that predict weather, encrypt WhatsApp messages, and help companies decide where to invest money.",
+          "Why It Matters in India: From the Unified Payments Interface (UPI) to AI algorithms behind YouTube and Instagram, everything is built on math. India needs mathematicians to lead in data science, space exploration at ISRO, and global finance."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Dr. Aryan, Research Mathematician",
+        icon: "Clock",
+        description: "Real workflow at the Indian Statistical Institute.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - The Whiteboard Session: Day starts at the Indian Statistical Institute (ISI) in Kolkata. Office is filled with whiteboards and scrap paper. Current project involves 'Graph Theory'—studying how different points in a network are connected. This helps telecom companies optimize 5G towers.",
+          "11:00 AM - Deep Focus: Spend two hours trying to prove a theorem that has been bothering for weeks. It's like a puzzle where most pieces look the same. Use Mathematica to run simulations, but most work happens in the head.",
+          "1:30 PM - Faculty Lunch: Sit with a colleague who works in 'Cryptography.' Discuss how prime numbers are the secret to keeping bank transactions safe. It sounds like a spy movie, but for mathematicians, it's just Tuesday.",
+          "3:00 PM - Teaching Masters Students: Discuss 'Stochastic Processes'—how to predict random events. One student asks how this applies to the Indian Stock Market. Spend the next hour sketching out how math can model the 'random' movements of stock prices.",
+          "5:00 PM - International Collaboration: Zoom call with a research team in Germany. Co-writing a paper. In math, you don't need a lab; you just need a shared digital document. Argue over a single equation for thirty minutes. A single misplaced 'x' or '+' can change everything.",
+          "8:00 PM - Relaxing at Home: Reading a non-math book, but find yourself calculating the probability of the plot twist. Once you see the world through numbers, you can never really switch it off!"
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Mathematician's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Abstract Thinking: Can you visualize things that don't exist in the physical world, like four-dimensional shapes?",
+          "Extreme Patience: Some math problems take months—or even years—to solve. You can't be in a rush.",
+          "Logic & Deductive Reasoning: You enjoy finding 'if-then' connections in everything.",
+          "Coding Skills (Python/R): Modern math is done on computers. You need to tell the machine what to calculate.",
+          "Curiosity: You aren't satisfied with knowing a formula works; you want to know why it works.",
+          "The Self-Check: Do you spend hours on a single problem? Do you see patterns everywhere? If yes, you have the Mathematician's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "From problem to proof.",
+        color: BLUE2,
+        content: [
+          "Identifying the Pattern: Seeing a problem in the real world (e.g., 'How do we reduce traffic in Bengaluru?').",
+          "Modeling: Turning that real-world problem into an equation.",
+          "Analysis: Using existing math rules to manipulate the equation.",
+          "Verification: Testing the answer with computer data to see if it predicts reality.",
+          "Documentation: Writing a 'Proof'—the ultimate stamp of truth in math.",
+          "Publication: Sharing findings with the global mathematical community through peer-reviewed journals."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Choose Science with Mathematics as a core subject. Start looking at the Regional Mathematical Olympiad (RMO) and KVPY.",
+          "After Class 12: Pursue B.Sc. (Hons) Mathematics, B.Stat, or B.Math. Top exams: ISI Admission Test (for Indian Statistical Institute), CMI Entrance Exam (Chennai Mathematical Institute), CUET (Central Universities), JEE Advanced (for B.S. programs at IITs).",
+          "After Graduation: Specialize in M.Sc. Mathematics, Statistics, or Computing. Professional switch: If you have a B.Sc., move into Data Science or Actuarial Science through specialized diplomas.",
+          "The PhD Route: If you want to be called a 'Mathematician,' a PhD is usually required. Clear CSIR-NET or GATE for fellowship money during research.",
+          "Top Institutions: ISI Kolkata/Delhi, CMI Chennai, IISc Bengaluru, TIFR Mumbai, IIT Kanpur/Kharagpur, University of Delhi, University of Hyderabad."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, cities, and industry growth.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Analyst/Lecturer): ₹4 Lakh – ₹9 Lakh annually.",
+          "Mid-Level (Data Scientist/Actuary): ₹12 Lakh – ₹22 Lakh annually.",
+          "Senior-Level (Lead Quant/Professor): ₹25 Lakh – ₹45 Lakh annually.",
+          "Leadership (Research Head/Chief Data Officer): ₹60 Lakh – ₹1.5 Crore+ annually.",
+          "Growth Trajectory: Entry to Senior typically takes 8–12 years.",
+          "Hiring Trends: Demand for 'Quant' (Quantitative) professionals in Fintech and AI companies is growing at 20% year-on-year.",
+          "Metro vs. Tier-2: Bengaluru (Data Science), Mumbai (Finance), Kolkata (Research), Chennai (Theoretical Math)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Fintech (Banks/Trading), IT & AI, Insurance (Actuarial), Space Research (ISRO), Defense (DRDO), Pharmaceuticals (Clinical Trials).",
+          "Top Cities: Bengaluru (Data Science Hub), Mumbai (Finance & Trading), Kolkata (Research Institutes), Chennai (Theoretical Math), Hyderabad (Tech & Pharma).",
+          "Remote Work: Very high potential for Data Analysts and Freelance Statistical Consultants.",
+          "International: High demand for Indian mathematicians in Wall Street (USA), Tech Hubs in Europe, and Singapore.",
+          "Emerging Sectors: Quantum Computing, AI Ethics, Blockchain, Climate Modeling."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Government Institutions: ISI/CMI/IITs: ₹20,000 – ₹2 Lakh (Total). Note: ISI actually pays you a stipend to study there!",
+          "Private Universities: ₹4 Lakh – ₹10 Lakh (Total).",
+          "Duration: 3 years (Bachelors) + 2 years (Masters) + 4-5 years (PhD, optional).",
+          "Hostel/Living: ₹1 Lakh – ₹1.8 Lakh per year.",
+          "Scholarships: NBHM Scholarship, INSPIRE Scholarship (₹80,000/year), ISI/CMI Stipends, CSIR-UGC NET JRF (₹37,000+/month for PhD)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for mathematics in India.",
+        color: BLUE,
+        content: [
+          "North: University of Delhi, IIT Kanpur, ISI Delhi, Delhi University.",
+          "South: Chennai Mathematical Institute (CMI), IISc Bengaluru, University of Hyderabad, IIT Madras.",
+          "East: Indian Statistical Institute (ISI) Kolkata, IIT Kharagpur, Jadavpur University.",
+          "West: TIFR Mumbai, IIT Bombay, Savitribai Phule Pune University, IIT Gandhinagar.",
+          "Northeast: IIT Guwahati, Tezpur University.",
+          "Tier-2 Excellence: Banaras Hindu University (BHU), Aligarh Muslim University (AMU)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "NBHM Scholarship: National Board for Higher Mathematics offers stipends for M.Sc. and PhD students.",
+          "INSPIRE Scholarship: ₹80,000/year for students in the top 1% of their boards.",
+          "ISI/CMI Stipends: All students at ISI and CMI usually receive a monthly stipend (₹5,000–₹10,000/month).",
+          "CSIR-UGC NET JRF: Monthly stipend of ₹37,000+ for PhD researchers.",
+          "GATE Scholarships: Pursue M.Tech with full scholarship at IITs/NITs.",
+          "Merit-Based: Most universities offer merit scholarships for top performers."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Bodies: Ramanujan Mathematical Society (RMS), Indian Mathematical Society (IMS), American Mathematical Society (AMS).",
+          "Certifications: Actuarial Exams (IAI), CFA (for finance), Data Science certifications (Google/Microsoft/Coursera), AWS Certified Data Analyst.",
+          "Olympiad Recognition: International Mathematical Olympiad (IMO) medals are globally recognized.",
+          "Continuing Education: Regular certifications and upskilling programs in AI, Machine Learning, and Quantum Computing."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in mathematics.",
+        color: BLUE2,
+        content: [
+          "Conventional: Teacher, Professor, Government Statistician, Research Scientist.",
+          "New-Age: Algorithmic Trader, Cryptographer, AI Researcher, Sports Data Analyst (predicting IPL results!), Quantum Computing Specialist.",
+          "Fintech: Quantitative Analyst (Quant), Risk Manager, Pricing Analyst.",
+          "Tech: Machine Learning Engineer, Data Scientist, AI Ethics Officer.",
+          "Freelance: Statistical Consultant for startups, Online Math Coach, Research Collaborator."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of mathematics careers.",
+        color: BLUE,
+        content: [
+          "Mental Fatigue: Solving abstract problems can be exhausting and mentally draining.",
+          "Isolation: Deep research often means spending a lot of time alone with your thoughts.",
+          "Niche Market: Pure math roles are fewer than 'Applied Math' roles like Data Science.",
+          "Pressure: High expectations to publish papers and contribute to the field.",
+          "Funding Challenges: Research funding can be competitive and limited.",
+          "Transition Difficulty: Moving from academia to industry requires learning new skills."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of mathematics.",
+        color: BLUE2,
+        content: [
+          "AI Ethics: AI doesn't replace mathematicians; it gives them bigger tools. Mathematicians will be needed to ensure AI Ethics—making sure algorithms aren't biased.",
+          "Quantum Computing: The next big frontier, which requires a type of math most people haven't even heard of yet!",
+          "Climate Modeling: Mathematical models will be crucial for understanding and predicting climate change.",
+          "Blockchain & Cryptography: As digital currencies grow, cryptographers will be in high demand.",
+          "Space Exploration: ISRO's ambitious plans will need mathematicians for trajectory calculations and data analysis.",
+          "Personalized Medicine: Mathematical models will help predict disease progression and personalize treatments."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Olympiads: Don't just do school math. Try the PRMO/RMO papers. These build problem-solving skills.",
+          "Learn Python: It is the 'calculator' of the 21st century. Start with basic coding.",
+          "Read Popular Math: Books like 'The Man Who Knew Infinity' or 'Fermat's Last Theorem' inspire and educate.",
+          "Chess: It builds the logical 'branching' mind needed for math.",
+          "Online Courses: Explore platforms like Khan Academy, Coursera, or MIT OpenCourseWare.",
+          "Math Clubs: Join school math clubs or participate in math competitions."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring mathematicians from India.",
+        color: BLUE2,
+        content: [
+          "Srinivasa Ramanujan: The man who 'knew infinity' and wrote 3,900 results without formal training. His legacy inspires mathematicians worldwide.",
+          "C.R. Rao: A titan of statistics whose work is used in every scientific study today. Pioneer of statistical theory.",
+          "Manjul Bhargava: The first person of Indian origin to win the Fields Medal (the 'Nobel Prize of Math'). Proved the Bhargava Cube theorem.",
+          "Neena Gupta: A young star who solved a 70-year-old problem called the Zariski Cancellation Conjecture. Recipient of the TWAS Prize.",
+          "Shakuntala Devi: The 'Human Computer' who showed the world the speed of the Indian mathematical mind. Could calculate complex problems mentally."
+        ]
+      }
+    ]
+  },
+  nanotechnologist: {
+    slug: "nanotechnologist",
+    badge: "🔬 The Atomic Architect for Class 10+",
+    heading: "Nanotechnologist",
+    subheading: "Manipulating atoms and molecules to create materials with 'superpowers'—from life-saving drugs to next-gen semiconductors.",
+    whyCards: [
+      { icon: "Zap", title: "19% CAGR Market Growth", description: "India's Nanomaterials market is growing at 19% CAGR (2024–2030), driven by semiconductors and EV batteries.", borderColor: "#10B981" },
+      { icon: "Globe", title: "National Nano Mission", description: "India has launched the National Nano Mission to become a global leader in nanotechnology and advanced materials.", borderColor: "#059669" },
+      { icon: "Microscope", title: "Cutting-Edge Labs", description: "Work in state-of-the-art cleanrooms with Scanning Electron Microscopes and molecular simulation supercomputers.", borderColor: "#3B82F6" },
+      { icon: "Heart", title: "Life-Changing Impact", description: "From nano-medicine targeting cancer cells to nano-filters purifying water—your work saves lives and solves global problems.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + 2 Years (M.Tech) + 4-5 Years (PhD, optional)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "SEM, TEM, MATLAB, Python, Molecular Simulation Software", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹1.2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "19%", label: "Nanomaterials Market CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "8-10 yrs", label: "Path to Senior Researcher", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The science of the incredibly small with superpowers.",
+        color: BLUE,
+        content: [
+          "Nanotechnology Defined: The science of working at the scale of a nanometer (one-billionth of a meter). A single strand of human hair is about 80,000 to 100,000 nanometers wide!",
+          "Material Superpowers: At this tiny scale, materials behave differently—copper can become transparent, and gold can turn liquid at room temperature.",
+          "The Nanotechnologist's Role: Design, create, and manipulate microscopic structures in labs called 'Cleanrooms' (where even a speck of dust is a giant obstacle).",
+          "Real-World Applications: Scratch-resistant glasses, high-performance sports equipment, life-saving drugs, nano-LEDs that save 80% energy, water-purification membranes.",
+          "Why It Matters in India: India has launched the National Nano Mission to become a global leader. As the world moves toward sustainable energy and advanced healthcare, India needs nanotechnologists to build better solar cells, purify water, and develop next-generation semiconductors for 'Digital India.'",
+          "The Future: By 2030, graphene-based electronics, nanobots performing invisible surgeries, and thousands of jobs in Chip Fab units."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Dr. Ishaan, Research Scientist",
+        icon: "Clock",
+        description: "Real workflow in a nanotechnology lab.",
+        color: BLUE2,
+        content: [
+          "8:30 AM - The Gowning Room: Day starts not in an office, but in a 'Gowning Room.' Must wear a 'bunny suit'—a full-body white suit with mask and gloves. Why? Because a single skin cell is like a mountain that could crush the nanomaterials being worked on.",
+          "10:00 AM - Scanning Electron Microscope: At the SEM, checking if the 'Nano-silver' coating developed for surgical bandages is spread evenly. On the screen, bandage fibers look like giant redwood trees covered in tiny glowing dust.",
+          "12:30 PM - Medical Collaboration: Meeting with doctors on a 'Lab-on-a-chip' project. Goal: create a device no bigger than a thumbnail that can detect malaria from a single drop of blood in minutes.",
+          "2:00 PM - Lunch & Brainstorming: Quick lunch at the canteen with the Synthesis Team. Brainstorm why the latest batch of carbon nanotubes didn't conduct electricity as expected. Best breakthroughs happen over samosas!",
+          "3:30 PM - Molecular Simulations: Spend the afternoon running simulations on a supercomputer. Before building something in the expensive lab, 'build' it on a computer to see how atoms will react. Like playing high-stakes Minecraft with real-world physics.",
+          "6:00 PM - Documentation: Document every result. In nanotechnology, a change in temperature by even half a degree can change the outcome. Check emails—a lab in Germany wants to collaborate on a water-purification membrane.",
+          "7:30 PM - Reflection: Driving home, look at streetlights using nano-LEDs that save 80% more energy. Quiet reminder that while the work is invisible to the eye, its impact is everywhere."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Nanotechnologist's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Extreme Patience: Working with atoms is slow and requires hundreds of attempts to get right.",
+          "Interdisciplinary Mind: You need to enjoy a 'cocktail' of Physics, Chemistry, and Biology.",
+          "Precision: You are working at a scale where 'almost right' is a total failure.",
+          "Coding Skills (Python/MATLAB): You'll spend a lot of time 'simulating' molecules on computers.",
+          "Hand-Eye Coordination: Essential for handling delicate instruments and specialized tools.",
+          "Curiosity: You want to understand how things work at the atomic level.",
+          "The Self-Check: Do you love microscopes and precision? Do you enjoy both theory and hands-on lab work? If yes, you have the Nanotechnologist's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The four-step nanotechnology cycle.",
+        color: BLUE2,
+        content: [
+          "Synthesis: Chemically growing or mechanically building the nanomaterials.",
+          "Characterization: Using massive microscopes (SEM, TEM) to see what you've actually made.",
+          "Testing: Seeing if the material does its job (e.g., Does this nano-paint really repel water?).",
+          "Scaling: Figuring out how to move from a tiny lab sample to making tons of it for a factory.",
+          "Documentation: Recording every detail—temperature, humidity, timing—because precision is everything.",
+          "Collaboration: Working with physicists, chemists, biologists, and engineers to solve complex problems."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Diploma Route: Enroll in a Diploma in Nanotechnology or related field like Chemical or Mechanical Engineering (3 years). Use 'Lateral Entry' to join 2nd year of B.Tech.",
+          "After Class 12: Science Stream: Must have Physics, Chemistry, and Mathematics (PCM). Biology is an added advantage for Nano-medicine. Entrance Exams: JEE Main, JEE Advanced, BITSAT, or state-level exams like WBJEE/MHT-CET.",
+          "Degrees: B.Tech in Nanotechnology (4 years) or B.Sc. in Nanoscience/Physics/Chemistry (3-4 years).",
+          "After Graduation: Masters: M.Tech or M.Sc. in Nanotechnology (Entry via GATE or JAM). Research: PhD is highly recommended if you want to lead research teams or work in high-end R&D.",
+          "Top Institutions: IIT Madras, IISc Bengaluru (Centre for Nano Science and Engineering), IIT Bombay, Jadavpur University, SRM Institute Chennai, VIT Vellore."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Junior Scientist/Engineer): ₹4.5 Lakh – ₹8 Lakh annually.",
+          "Mid-Level (Senior Technologist/Associate): ₹12 Lakh – ₹18 Lakh annually.",
+          "Senior-Level (Principal Scientist/Manager): ₹22 Lakh – ₹38 Lakh annually.",
+          "Leadership (Director of R&D/CXO): ₹55 Lakh – ₹1.2 Crore+ annually.",
+          "Growth Trajectory: India Nanomaterials market is growing at 19% CAGR (2024–2030).",
+          "Demand Shift: Hiring is shifting from pure academic research to Industrial R&D in semiconductors, EV batteries, and pharmaceuticals.",
+          "International Salaries: USA and Europe offer 2-3x higher salaries for nanotechnologists."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Pharmaceuticals (Drug delivery), Electronics (Semiconductors), Energy (Solar/Batteries), Textiles (Smart fabrics), Defense (Aerospace coatings).",
+          "Top Cities: Bengaluru (Electronics hub), Hyderabad (Pharma hub), Pune (Automotive/Materials), Chennai (Research institutes).",
+          "Research Institutions: IISc, IITs, CSIR labs, DST-funded research centers.",
+          "International: High demand in USA, South Korea, Japan, and Germany for chip design and bio-nanotech.",
+          "Emerging Sectors: Quantum Computing, Graphene Electronics, Nano-medicine, Water Purification."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Government Institutions: IITs/NITs: ₹6 Lakh – ₹10 Lakh (Total for 4 years).",
+          "Private Universities: ₹10 Lakh – ₹18 Lakh (Total).",
+          "Specialized Training: Certifications in Electron Microscopy or Nanofabrication (₹20,000 – ₹50,000).",
+          "Living Costs: ₹1.2 Lakh – ₹2 Lakh per year in student cities.",
+          "Duration: 4 years (Bachelors) + 2 years (Masters) + 4-5 years (PhD, optional).",
+          "Scholarships: Nano Mission Fellowships, INSPIRE Scholarship, AICTE Pragati, JRF/SRF stipends (₹37,000+/month)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for nanotechnology in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: IIT Madras, IISc Bengaluru (Centre for Nano Science and Engineering), IIT Bombay, Jadavpur University (Kolkata), IIT Kanpur.",
+          "Private Excellence: SRM Institute (Chennai), Amity University (Noida), VIT Vellore, Manipal Institute.",
+          "Northeast: IIT Guwahati, Central University of Gujarat (Northwest).",
+          "Research Centers: CSIR labs, DST-funded Nano Mission centers, TIFR Mumbai.",
+          "International Collaborations: Many Indian institutions partner with MIT, Stanford, and ETH Zurich for advanced research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Nano Mission Fellowships: Dedicated PhD and Post-doc fellowships by the Department of Science & Technology (DST).",
+          "INSPIRE Scholarship: For students in basic sciences (₹80,000/year).",
+          "AICTE Pragati: For girl students in technical degrees (₹50,000/year).",
+          "JRF/SRF: Clearing NET/GATE grants you a monthly stipend (₹37,000+) during research years.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Industry Sponsorships: Companies like Reliance and TCS sponsor research in nanotechnology."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Bodies: Nano Science and Technology Consortium (NSTC), Indian National Academy of Engineering (INAE), Materials Research Society of India.",
+          "Certifications: Nanofabrication Techniques, Molecular Modeling, ISO quality standards for nanomaterials, Electron Microscopy.",
+          "International Recognition: IEEE Nanotechnology Council, American Chemical Society (Nanotechnology Division).",
+          "Continuing Education: Regular workshops and certifications in emerging areas like Graphene and Quantum Dots."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in nanotechnology.",
+        color: BLUE2,
+        content: [
+          "Conventional: Research Associate, Quality Control Engineer, University Professor, Government Scientist.",
+          "New-Age: Nano-toxicologist (studying safety), AI-Materials Engineer, Precision Medicine Specialist, Graphene Electronics Designer.",
+          "Industry R&D: Semiconductor Fab Engineer, Battery Technology Specialist, Nano-coating Developer.",
+          "Entrepreneurship: Founding a startup for nano-coatings, air filters, sustainable packaging (e.g., E-Spin Nanotech).",
+          "International: Working with global research institutions and multinational companies in advanced materials."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of nanotechnology careers.",
+        color: BLUE,
+        content: [
+          "Long Study Path: To get the best jobs, a Master's or PhD is almost always needed (8–10 years total).",
+          "Health & Safety: Working with unknown particles requires strict discipline to avoid inhalation or skin contact.",
+          "High Costs: You cannot do this at home; you are dependent on expensive lab equipment (SEM costs ₹1+ Crore).",
+          "Slow Progress: Experiments can take weeks or months to yield results.",
+          "Niche Field: Fewer job openings compared to IT or traditional engineering.",
+          "Funding Challenges: Research funding can be competitive and limited."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of nanotechnology.",
+        color: BLUE2,
+        content: [
+          "Graphene-Based Electronics: By 2030, computers that don't heat up and are 100x faster than current chips.",
+          "Nanobots: Microscopic robots moving through veins to perform 'invisible surgeries' and targeted drug delivery.",
+          "Semiconductor Push: India's semiconductor ambitions will create thousands of jobs for nanotechnologists in Chip Fab units.",
+          "Sustainable Materials: Nano-coatings for solar panels, water purification membranes, and biodegradable packaging.",
+          "Quantum Dots: Next-generation displays and medical imaging using quantum-confined nanoparticles.",
+          "Space Applications: Nano-materials for lightweight spacecraft and advanced propulsion systems."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Watch Science Vlogs: Follow channels like Veritasium or NanoHub to see nano-physics in action.",
+          "Learn Python: It is the standard language for molecular modeling and simulations.",
+          "Join Science Clubs: Participate in the National Science Olympiad and science fairs.",
+          "Read & Research: Stay updated with news from the DST Nano Mission website and science journals.",
+          "Online Courses: Explore platforms like Coursera, edX, or MIT OpenCourseWare for nanotechnology basics.",
+          "Hands-On Projects: Build simple experiments with household materials to understand material properties."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring nanotechnologists from India.",
+        color: BLUE2,
+        content: [
+          "Prof. C.N.R. Rao: A Bharat Ratna awardee and global pioneer in solid-state and materials chemistry. Founder of the Jawaharlal Nehru Centre for Advanced Scientific Research.",
+          "Dr. Sandip Patil: An IIT Kanpur alumnus who founded E-Spin Nanotech, making India self-reliant in nano-fiber machines. Pioneer in nano-fiber technology.",
+          "Prof. Ashutosh Sharma: Former Secretary of DST and renowned expert in nanofabrication and 'soft' nanotechnology. Advocate for India's Nano Mission.",
+          "Dr. Bhawana Pathak: Dean at Central University of Gujarat, leading environmental nanotechnology research. Focus on water purification and sustainable materials.",
+          "Dr. A. Sivathanu Pillai: While known for the BrahMos missile, he is a major advocate for nanotechnology in aerospace and defense applications."
+        ]
+      }
+    ]
+  },
+  robotics_engineer: {
+    slug: "robotics_engineer",
+    badge: "🤖 The Multi-Disciplinary Creator for Class 10+",
+    heading: "Robotics Engineer",
+    subheading: "Building the 'body,' 'nervous system,' and 'brain' of machines—from warehouse robots to surgical bots and autonomous drones.",
+    whyCards: [
+      { icon: "Zap", title: "13.1% Industrial CAGR + 30.3% Consumer CAGR", description: "Industrial Robotics growing at 13.1% CAGR while Consumer Robotics (drones, vacuum bots) exploding at 30.3% CAGR.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Make in India Automation Surge", description: "From ISRO moon rovers to Amazon warehouses, robots are transforming India's manufacturing and logistics landscape.", borderColor: "#059669" },
+      { icon: "Brain", title: "Multidisciplinary Mastery", description: "Master mechanics, electronics, software, and AI—become a true 'full-stack' engineer of the future.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Emerging Frontiers", description: "Cobots, swarm robotics, soft robotics, surgical bots, self-driving cars, and drones—endless innovation opportunities.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + 2 Years (M.Tech) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "ROS, CAD, C++, Python, Arduino, Lidar, PLC", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4.5L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "13.1%", label: "Industrial Robotics CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "30.3%", label: "Consumer Robotics CAGR", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The magic of machines that think and act.",
+        color: BLUE,
+        content: [
+          "Robotics Engineering Defined: The branch of technology that deals with the design, construction, operation, and application of robots.",
+          "What is a Robot?: Any machine capable of carrying out a complex series of actions automatically, especially one programmable by a computer.",
+          "The Multi-Disciplinary Role: You aren't just a mechanical engineer or a coder; you are a bit of both, plus an electronics expert. You build the 'body' (mechanics), the 'nervous system' (electronics), and the 'brain' (software/AI) of a machine.",
+          "Real-World Problems: How can a robot pick up a strawberry without crushing it? How can a drone fly through a dense forest without hitting a tree? How can a surgical robot perform heart surgery with millimeter precision?",
+          "Why It Matters in India: India is witnessing a massive automation surge. From ISRO missions exploring the moon with rovers to Make in India factories using robotic arms to compete globally, robots are the future of our workforce.",
+          "Critical Applications: Performing dangerous jobs (cleaning sewers, defusing bombs), high-precision jobs (heart surgeries), and repetitive jobs in e-commerce warehouses (Amazon, Flipkart)."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Kabir, Robotics Systems Lead",
+        icon: "Clock",
+        description: "Real workflow at a robotics startup.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - Lab Arrival: Arrive at a high-tech startup in Pune. Team is building a 'Warehouse Sortation Robot.' Check overnight test logs. Robot Alpha successfully sorted 500 packages but struggled with a shiny plastic-wrapped box. Sensor probably got confused by reflection.",
+          "10:30 AM - Hardware Tweaking: Head to the 'Bot Lab.' Put on safety glasses. Work with a mechanical designer to adjust the 'gripper' of the robot. 3D print a new finger design with a rubberized tip for better grip.",
+          "12:00 PM - Software Development: Sit down to code using ROS (Robot Operating System). Update the robot's vision algorithm. Teach the robot to 'see' shiny objects differently using a new AI model. Like teaching a toddler the difference between a glass window and an open door.",
+          "1:30 PM - Team Brainstorm: Lunch is usually a brainstorm session. Debate whether to use 'Lidar' (laser sensors) or 'Stereo Cameras' for the next generation of bots. Heated but fun discussion about cost vs. accuracy.",
+          "3:00 PM - Client Communication: Call with a factory manager in Gujarat. They want to deploy 20 robots. Explain the 'Safety Zones'—invisible boundaries where the robot will stop if a human walks too close.",
+          "5:00 PM - Testing & Validation: Testing time! Let the updated Robot Alpha loose in the mini-warehouse. Watch tensely as it approaches the shiny box. It slows down, adjusts its grip, and succeeds! Perfect movement.",
+          "7:00 PM - Reflection: Head home, often thinking about the next challenge. In robotics, you don't just leave work at the office; you carry the puzzles of the future in your head."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Robotics Engineer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Multidisciplinary Thinking: You must be comfortable toggling between hardware (screws/wires) and software (loops/logic).",
+          "Iterative Patience: Your first 50 versions will probably fail. You need the 'try again' spirit.",
+          "Mathematical Logic: Robotics involves a lot of 'Kinematics'—the math of how things move in 3D space.",
+          "Spatial Awareness: You need to visualize how a 3D arm will swing or how a drone will tilt.",
+          "Programming Skills (C++/Python): This is the language you use to give your robot a 'soul' and a 'brain.'",
+          "Problem-Solving: You enjoy breaking down complex problems into manageable parts.",
+          "The Self-Check: Do you love building things? Do you enjoy both hardware and software? If yes, you have the Robotics Engineer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The robotics engineering cycle.",
+        color: BLUE2,
+        content: [
+          "Requirement Mapping: Understanding what the robot needs to do (e.g., 'Clean a solar panel').",
+          "Design & Simulation: Drawing the robot in CAD software and 'running' it in a virtual world to see if it tips over.",
+          "Prototyping: Building the physical version using metal, plastic, sensors, and motors.",
+          "Programming & Integration: Writing the code that connects the sensors to the motors.",
+          "Testing & Debugging: Running countless tests to ensure the robot behaves as expected.",
+          "Deployment & Maintenance: Putting the robot in the real world and fixing it when things (inevitably) go wrong.",
+          "Continuous Improvement: Iterating based on real-world feedback and performance data."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway 1 - After Class 10: Diploma Route: Enroll in a 3-year Diploma in Mechatronics or Mechanical Engineering. Join workforce as a Robotics Technician or take 'Lateral Entry' into 2nd year of B.Tech.",
+          "Pathway 2 - After Class 12 (Science Stream): Entrance Exams: JEE Main, JEE Advanced, BITSAT, VITEEE. Degrees: B.Tech in Robotics & Automation (emerging direct degree), B.Tech in Mechatronics (classic route), or B.Tech in Mechanical/Electronics/CS (specialize in Robotics later).",
+          "Pathway 3 - After Graduation: Specialization: Pursue M.Tech in Robotics or Artificial Intelligence (Entry via GATE). Lateral Entry: If you have a degree in Mechanical or Electronics, switch to Robotics via specialized certifications in ROS and Embedded Systems.",
+          "Top Institutions: IIT Delhi (Program for Autonomous Systems), IIT Kanpur (Center for Robotics), IISc Bengaluru, Jadavpur University, SRM Institute Chennai, VIT Vellore, MIT World Peace University Pune."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (Graduate Trainee): ₹4.5 Lakh – ₹9 Lakh annually.",
+          "Mid-Level (4-7 years experience): ₹12 Lakh – ₹22 Lakh annually.",
+          "Senior-Level (8-15 years experience): ₹25 Lakh – ₹48 Lakh annually.",
+          "Leadership/CXO (Chief Tech Officer): ₹60 Lakh – ₹1.5 Crore+ annually.",
+          "Salary Comparison: Metro cities (Bengaluru, Pune, Hyderabad) pay 25-30% more than Tier-2 cities due to R&D hub concentration.",
+          "Industry Growth: Industrial Robotics market growing at 13.1% CAGR. Consumer Robotics (vacuum bots, drones) exploding at 30.3% CAGR.",
+          "Demand Surge: Automation is accelerating post-pandemic, creating unprecedented job opportunities."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Automotive (Tata Motors, Hyundai), E-commerce (Amazon Robotics), Healthcare (Surgical bots), Defense (DRDO/Drones), Agriculture, Manufacturing.",
+          "Top Cities: Bengaluru (The Robotics Capital), Pune (Automotive Hub), Hyderabad (Tech & Pharma), Gurgaon (Startups).",
+          "Emerging Sectors: Drones for agriculture, surgical robotics, autonomous vehicles, warehouse automation, space exploration.",
+          "International: High demand in Germany (Manufacturing), Japan (Humanoids), USA (Service robots), Singapore (Tech hubs).",
+          "Startup Ecosystem: India's robotics startup scene is booming with companies like GreyOrange, Addverb, and Rapyuta Robotics."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Government Institutions: IITs/NITs: ₹6 Lakh – ₹10 Lakh (Total for 4 years).",
+          "Private Universities: ₹12 Lakh – ₹25 Lakh (Total).",
+          "Additional Costs: Development kits like Arduino, Raspberry Pi, Lidar sensors (₹5,000 – ₹20,000).",
+          "Living/Hostel: ₹1.2 Lakh – ₹2 Lakh per year in cities like Bengaluru or Pune.",
+          "Certifications: ROS Certification, CRP training (₹10,000 – ₹30,000).",
+          "Scholarships: AICTE Pragati (₹50,000/year for girls), NSP schemes, institutional fee-waivers, private foundation scholarships."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for robotics in India.",
+        color: BLUE,
+        content: [
+          "Public Leaders: IIT Delhi (Program for Autonomous Systems), IIT Kanpur (Center for Robotics), IISc Bengaluru, Jadavpur University, IIT Bombay.",
+          "Private Excellence: SRM Institute (Chennai), VIT Vellore, MIT World Peace University (Pune), Amrita Vishwa Vidyapeetham, Manipal Institute.",
+          "Online Learning: Coursera and Udacity offer 'Nanodegrees' in Robotics and Self-Driving Cars.",
+          "Research Centers: CSIR labs, DRDO facilities, ISRO centers for space robotics.",
+          "International Collaborations: Many Indian institutions partner with MIT, Carnegie Mellon, and ETH Zurich for advanced robotics research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "AICTE Pragati: For girl students in technical degrees (₹50,000/year).",
+          "National Scholarship Portal (NSP): Various merit-based schemes for minority and EWS students.",
+          "Institutional: IITs and NITs have massive fee-waiver programs based on parental income.",
+          "Private Foundations: Sitaram Jindal Foundation and Reliance Foundation offer scholarships for engineering students.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Industry Sponsorships: Companies like Tata Motors and Hyundai sponsor robotics research and student projects."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Bodies: Robotics Society of India (RSI), IEEE Robotics and Automation Society, Indian National Academy of Engineering (INAE).",
+          "Certifications: ROS Certification, Certified Robotics Professional (CRP), PLC (Programmable Logic Controllers) training, Embedded Systems certification.",
+          "International Recognition: IEEE certifications are globally recognized and highly valued by employers.",
+          "Continuing Education: Regular workshops and certifications in emerging areas like AI, Machine Learning, and Autonomous Systems."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in robotics engineering.",
+        color: BLUE2,
+        content: [
+          "Conventional: Industrial Robot Programmer, Maintenance Engineer, Automation Consultant, Systems Engineer.",
+          "New-Age: Drone Pilot & Engineer, Surgical Robotics Specialist, Self-Driving Car Engineer, HRI (Human-Robot Interaction) Designer, Cobot Developer.",
+          "Emerging Fields: Swarm Robotics Engineer, Soft Robotics Specialist, Autonomous Systems Designer, AI-Robotics Integration Specialist.",
+          "Freelance/Entrepreneur: Starting a 'Drones-as-a-Service' startup for farmers, robotic toy company, or automation consulting firm.",
+          "International: Working with global robotics companies and research institutions in USA, Germany, Japan, and Singapore."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of robotics engineering.",
+        color: BLUE,
+        content: [
+          "High Complexity: You never stop being a student. If you don't keep up with the latest AI and robotics trends, you get left behind.",
+          "Safety Pressure: In industrial robotics, one mistake in your code can cause a multi-million rupee machine to crash or, worse, injure a worker.",
+          "Infrastructure Costs: You can't just build a big robot in your bedroom; you need access to expensive labs and components.",
+          "Integration Challenges: Making different hardware and software components work together seamlessly is often the hardest part.",
+          "Debugging Difficulty: Debugging a physical robot is much harder than debugging software—you can't just 'undo' a mistake.",
+          "Rapid Obsolescence: Technology changes fast; skills learned today may be outdated in 3-5 years."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of robotics engineering.",
+        color: BLUE2,
+        content: [
+          "Cobots (Collaborative Robots): Robots that work beside humans safely without cages. Expected to dominate manufacturing by 2030.",
+          "Swarm Robotics: Hundreds of tiny robots working together like ants to build a house or survey a field.",
+          "Soft Robotics: Robots made of flexible materials (like a mechanical octopus arm) for delicate medical procedures.",
+          "AI-Powered Autonomy: Robots that learn and adapt to new environments without explicit programming.",
+          "Space Robotics: ISRO's ambitious plans will create thousands of jobs for roboticists in lunar and Mars exploration.",
+          "Humanoid Robots: By 2035, humanoid robots will be common in homes, hospitals, and factories across India."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Build a Kit: Buy an Arduino Starter Kit. Build a robot that follows a black line on the floor (line-following robot).",
+          "Learn Python: It's the easiest way to start 'talking' to machines and understanding automation.",
+          "Competitions: Join the First Robotics Competition or e-Yantra (by IIT Bombay). These are incredible learning experiences.",
+          "Math Focus: Don't just solve equations; understand the geometry of how things move in 3D space.",
+          "Online Courses: Explore Coursera, edX, or YouTube channels dedicated to robotics basics.",
+          "DIY Projects: Build simple projects like obstacle-avoiding robots or drone prototypes using readily available components."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring roboticists from India.",
+        color: BLUE2,
+        content: [
+          "Raj Reddy: A global pioneer in AI and Robotics, winner of the Turing Award (the 'Nobel Prize of Computing'). Founder of Robotics Institute at Carnegie Mellon.",
+          "Diwakar Vaish: Developer of Manav, India's first 3D-printed humanoid robot, and a mind-controlled wheelchair. Innovator in accessible robotics.",
+          "Samay Kohli: Co-founder of GreyOrange, one of India's biggest success stories in warehouse robotics. Built a ₹1B+ company.",
+          "Vijay Kumar: A professor at UPenn (USA) known for incredible work on 'micro-UAVs' (tiny swarming drones). Pioneer in swarm robotics.",
+          "Dr. Geeta Varadan: Former director at ISRO who played a key role in systems that controlled India's space-faring machines and rovers."
+        ]
+      }
+    ]
+  },
+  statistician: {
+    slug: "statistician",
+    badge: "📊 The Data Detective for Class 10+",
+    heading: "Statistician",
+    subheading: "Uncovering hidden patterns and truths in data—from predicting weather to detecting fraud and shaping government policy.",
+    whyCards: [
+      { icon: "TrendingUp", title: "35.8% CAGR Market Growth", description: "Indian Data Analytics market growing at massive 35.8% CAGR (2025–2030). 7 million data-related jobs expected by end of 2026.", borderColor: "#10B981" },
+      { icon: "Brain", title: "Data is the New Oil", description: "In a world where data drives every decision, statisticians are the ones who refine raw information into actionable intelligence.", borderColor: "#059669" },
+      { icon: "Globe", title: "Global Demand", description: "Huge demand for Indian statisticians in USA, UK, and Singapore for 'Quant' roles in stock markets and tech companies.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "India's Statistical Legacy", description: "From Prasanta Chandra Mahalanobis (Father of Indian Statistics) to C.R. Rao—India's statistical tradition is world-renowned.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (B.Sc) + 2 Years (M.Sc) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "R, Python, SQL, Tableau, SAS, Power BI", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹5L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "35.8%", label: "Data Analytics CAGR", gradient: "from-green-500 to-green-600" },
+      { value: "7M", label: "Data Jobs by 2026", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The science of finding truth in numbers.",
+        color: BLUE,
+        content: [
+          "Statistician Defined: A 'Data Detective' who doesn't just look at numbers; they look for the stories, patterns, and truths hidden within them.",
+          "Core Function: Collect information (data), organize it, analyze it using mathematical formulas, and explain what it means to people who need to make big decisions.",
+          "Real-World Applications: How a weather app predicts rain with '80% confidence,' how e-commerce sites know which products you'll like, how governments decide where to build metro lines.",
+          "The Bridge Role: Statisticians are the bridge between raw, messy information and smart action. They design surveys, run experiments, and build 'predictive models' to guess what might happen in the future.",
+          "Why It Matters in India: India is the most populous country (1.4 billion people), and managing this requires incredible data. Census of India, NSSO, Reliance Jio, Zomato—every organization is 'data-hungry.'",
+          "The Data Economy: In a world where 'Data is the New Oil,' statisticians are the ones who refine that oil into power."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Ishita, Senior Statistician",
+        icon: "Clock",
+        description: "Real workflow at a Fintech company.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Dashboard Check: Arrive at a glass-walled tech park in Gurugram. Work for a global Fintech company. First task: check the 'dashboard' to see if the new algorithm for detecting credit card fraud is working. Notice a small anomaly—a 2% spike in 'false positives.'",
+          "11:00 AM - War Room Meeting: In a meeting with the Marketing team. They want to launch a new loan product for small shopkeepers. Job: tell them, based on past data, which shopkeepers are most likely to pay back loans on time. Explain that 'Age' and 'Location' aren't as important as 'Monthly Digital Transactions.'",
+          "1:00 PM - Lunch & Analysis: Lunch at the cafeteria discussing the latest IPL match. But secretly calculating the 'Required Run Rate' and probability of a win based on bowler's history!",
+          "2:30 PM - Deep Work: Open R and Python to clean a massive dataset of 10 million rows. It's like untangling a giant ball of yarn. If the data is 'dirty' (has errors), results will be wrong.",
+          "4:30 PM - Mentoring: Mentor a junior analyst. Looking at a 'Scatter Plot'—a graph that looks like a cloud of dots. Show how to draw a 'Regression Line' through those dots to see the hidden trend.",
+          "6:30 PM - Executive Report: Send a report to the CEO. Don't give 50 pages of math; give three simple charts and one clear recommendation: 'Launch the product in Tier-2 cities first; the risk-to-reward ratio is 15% better there.'",
+          "7:30 PM - Reflection: Heading home, see a billboard for the app. Feel quiet pride knowing that the math makes that app 'smart' and reliable for millions of Indians."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Statistician's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Logic & Curiosity: You don't just accept facts; you ask, 'Is this true for everyone, or just a few?'",
+          "Patience: Dealing with 'messy data' can be frustrating. You need to be a calm problem-solver.",
+          "Integrity (Honesty): A statistician must never 'twist' numbers to show what people want to see.",
+          "Coding Skills: Modern stats isn't done with a pencil; you need to master SQL, R, and Python.",
+          "Communication: You must be able to explain 'Standard Deviation' to a CEO who only cares about 'Profit.'",
+          "Attention to Detail: Small errors in data can lead to massive wrong conclusions.",
+          "The Self-Check: Do you love solving puzzles? Do you enjoy finding patterns? If yes, you have the Statistician's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The D-C-A-I cycle of statistics.",
+        color: BLUE2,
+        content: [
+          "Design: Deciding what data is needed and how to get it (Surveys, sensors, or apps).",
+          "Collection: Ensuring the data coming in is accurate and unbiased.",
+          "Analysis: Using software to find averages, trends, and correlations.",
+          "Interpretation: Turning the 'Math' into 'Plain English' advice.",
+          "Validation: Checking that results are statistically significant and not due to chance.",
+          "Communication: Presenting findings to stakeholders in clear, actionable formats.",
+          "Continuous Monitoring: Tracking how predictions perform in the real world and refining models."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "After Class 10: Choose Science or Commerce—but you MUST take Mathematics as a core subject. Statistics is a 'Math-heavy' career.",
+          "After Class 12: Degrees: B.Sc. (Hons) Statistics, B.Stat (at ISI), or B.A. (Hons) Economics with Statistics. Entrance Exams: ISI Admission Test (most prestigious), CUET (Central Universities like DU, BHU, JNU), State-Level Exams.",
+          "After Graduation: Master's Level: M.Sc. Statistics or M.Stat (Gold Standard for high-paying jobs). Specialization: Switch to Data Science, Actuarial Science, or Business Analytics via specialized diplomas.",
+          "Civil Services: Appear for Indian Statistical Service (ISS) exam conducted by UPSC to become a Grade-A government officer.",
+          "Top Institutions: ISI Kolkata/Delhi/Bengaluru, IIT Bombay/Kanpur, Hindu College (DU), Loyola College Chennai, NMIMS Mumbai, Symbiosis Pune, Christ University Bengaluru."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Entry-Level (0-2 years): ₹5 Lakh – ₹9 Lakh annually.",
+          "Mid-Level (5-8 years): ₹12 Lakh – ₹22 Lakh annually.",
+          "Senior-Level (10-15 years): ₹25 Lakh – ₹45 Lakh annually.",
+          "Leadership/CXO (Chief Data Officer): ₹60 Lakh – ₹1.5 Crore+ annually.",
+          "Metro vs. Tier-2: Salaries in Bengaluru and Mumbai are 30% higher than Tier-2 cities, but Tier-2 cities like Jaipur and Indore are seeing 20% faster growth in 'Remote Data Analyst' roles.",
+          "Demand: Indian Data Analytics market growing at 35.8% CAGR (2025–2030).",
+          "Job Growth: India expected to generate 7 million data-related jobs by end of 2026."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Banking & Finance (BFSI), E-commerce, Pharma (Clinical Trials), Tech Giants, Government Departments.",
+          "Top Cities: Bengaluru (The Data Capital), Hyderabad, Pune, Mumbai, Gurgaon.",
+          "Gig Economy: High potential for 'Freelance Statistical Consultants' and 'Remote Data Modelers' for global startups.",
+          "International: Huge demand for Indian statisticians in USA, UK, and Singapore for 'Quant' roles in stock markets.",
+          "Emerging Sectors: Climate Analytics, Healthcare Analytics, Sports Analytics, Agricultural Data Science."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Government Institutions: ISI/DU/BHU: ₹5,000 – ₹50,000 (Total). Note: ISI actually pays YOU a stipend of ~₹5,000/month to study there!",
+          "Private Institutions: ₹3 Lakh – ₹12 Lakh (Total).",
+          "Duration: 3 years (Bachelors) + 2 years (Masters).",
+          "Additional Costs: Specialized certifications (Tableau, SAS, Power BI) can cost ₹20,000 – ₹1 Lakh.",
+          "Living Costs: ₹1 Lakh – ₹1.5 Lakh per year in major cities.",
+          "Scholarships: INSPIRE Scholarship, NBHM Scholarship, National Fellowship for ST Students, L'Oreal India For Young Women in Science."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for statistics in India.",
+        color: BLUE,
+        content: [
+          "Public Leaders: Indian Statistical Institute (ISI) Kolkata/Delhi/Bengaluru, IIT Bombay/Kanpur (M.Sc. Stats), Hindu College (DU), Loyola College (Chennai).",
+          "Private Excellence: NMIMS (Mumbai), Symbiosis (Pune), Christ University (Bengaluru), Manipal Institute.",
+          "Northeast: IIT Guwahati, Tezpur University.",
+          "Research Centers: CSIR labs, DST-funded research centers, IGIDR (Indira Gandhi Institute of Development Research).",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced statistics research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "INSPIRE Scholarship: ₹80,000/year for top 1% board scorers pursuing basic sciences.",
+          "NBHM Scholarship: National Board for Higher Mathematics offers stipends for Post-Graduates.",
+          "National Fellowship for ST Students: ₹25,000/month for Master's/PhD (Tribal Affairs Ministry).",
+          "L'Oreal India For Young Women in Science: ₹2.5 Lakh for girl students pursuing science degrees.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "ISI Stipend: All ISI students receive monthly stipends during their studies."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Bodies: International Indian Statistical Association (IISA), Indian Society for Probability and Statistics (ISPS), American Statistical Association (ASA).",
+          "Certifications: SAS Certified Statistical Business Analyst, Professional Certificate in IBM Data Science, Tableau Desktop Specialist, Microsoft Certified: Data Analyst.",
+          "Licensing: No mandatory license required, but Actuarial License (from IAI) needed if working in insurance risk.",
+          "Continuing Education: Regular workshops and certifications in Machine Learning, AI, and Advanced Analytics."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in statistics.",
+        color: BLUE2,
+        content: [
+          "Conventional: Census Officer, University Professor, Biostatistician (Pharma), Government Statistician.",
+          "New-Age: Machine Learning Engineer, Sports Analyst (Analyzing IPL/Cricket data), Pollster (Predicting election results), Data Scientist.",
+          "Finance: Quantitative Analyst (Quant), Risk Manager, Credit Analyst, Pricing Analyst.",
+          "Tech: Data Scientist, Analytics Engineer, Product Analyst, AI/ML Specialist.",
+          "Entrepreneurship: Starting a 'Niche Analytics' agency (e.g., analyzing agricultural data for farmers, sports analytics startup)."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of statistics careers.",
+        color: BLUE,
+        content: [
+          "'Data Drudgery': 80% of your time is spent 'cleaning' messy data, which can be boring for some.",
+          "The AI Threat?: AI can do basic math, but it cannot replace a statistician's judgment. You must stay updated, or you'll be left behind.",
+          "High Competition: Entry-level roles at top firms (like Google or Goldman Sachs) are very competitive.",
+          "Pressure to Deliver: Wrong statistical conclusions can lead to costly business decisions.",
+          "Rapid Skill Obsolescence: New tools and techniques emerge constantly; continuous learning is mandatory.",
+          "Communication Challenges: Explaining complex statistical concepts to non-technical stakeholders can be difficult."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of statistics.",
+        color: BLUE2,
+        content: [
+          "Real-Time Statistics: By 2030, 'Real-Time Statistics' will be the norm. Imagine a city that changes its traffic light timings every second based on live statistical models!",
+          "Quantum Computing: Will allow statisticians to solve problems that are currently 'unsolvable.'",
+          "AI-Augmented Analysis: Statisticians will work alongside AI to interpret complex patterns and make better predictions.",
+          "Privacy-Preserving Analytics: Differential privacy and federated learning will become standard as data privacy concerns grow.",
+          "Causal Inference: Moving beyond correlation to understanding cause-and-effect relationships in data.",
+          "Automated Insights: Tools will automatically generate statistical insights, but human judgment will remain critical."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Master Excel: It's the 'ABCD' of statistics. Start building your own budget or tracking your grades on a sheet.",
+          "Learn Python: Start with Python; it's fun and used by all the big tech companies.",
+          "Join the Olympiads: Participate in the National Mathematics Olympiad.",
+          "Read & Follow: Follow sites like FiveThirtyEight or The Ken to see how data is used in real stories.",
+          "Online Courses: Explore Coursera, edX, or Khan Academy for statistics basics.",
+          "DIY Projects: Collect data on something you're interested in (sports, weather, social media) and analyze it."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring statisticians from India.",
+        color: BLUE2,
+        content: [
+          "Prasanta Chandra Mahalanobis: Known as the 'Father of Indian Statistics.' Founded the ISI and created the 'Mahalanobis Distance'—a fundamental concept in statistics.",
+          "C.R. Rao: One of the world's greatest statisticians; his work is taught in every university across the globe. Pioneer in statistical theory.",
+          "Neena Gupta: A modern star at ISI Kolkata, famous for solving the Zariski Cancellation Conjecture. Recipient of the TWAS Prize.",
+          "Srinivasa Varadhan: An Abel Prize winner (the 'Nobel of Math') who specialized in probability. Pioneered large deviation theory.",
+          "K.C. Sreedharan Pillai: Famous for his work on 'Multivariate Analysis' which helps compare many things at once. Influential in statistical methodology."
+        ]
+      }
+    ]
+  },
+  advertising_and_communication: {
+    slug: "advertising_and_communication",
+    badge: "📢 The Storytellers of Commerce for Class 10+",
+    heading: "Advertising and Communication",
+    subheading: "Turning products into stories that people want to be part of—from viral campaigns to influencer marketing and AI-driven personalization.",
+    whyCards: [
+      { icon: "TrendingUp", title: "₹1.3 Lakh Crore Market by 2026", description: "Indian advertising industry projected to reach ₹1.3 Lakh Crore by 2026. Digital advertising expected to account for 59% of all ad spending.", borderColor: "#10B981" },
+      { icon: "Zap", title: "100+ Unicorn Startups Fighting for Attention", description: "With Zomato, Cred, Mamaearth, and others competing, demand for professionals who can 'cut through the noise' is at an all-time high.", borderColor: "#059669" },
+      { icon: "Globe", title: "Beyond TV Ads", description: "Instagram Reels, influencer campaigns, AI-driven personalized messages, voice search ads—the landscape is evolving rapidly.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "Influence Human Behavior", description: "If you can persuade people with words and visuals, you are the most valuable asset in the boardroom.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (BA/BMM) + 1-2 Years (PG Diploma/Masters) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Canva, Adobe Suite, Google Ads, Meta Blueprint, Analytics", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹2.5L–₹3Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹1.3L Cr", label: "Market Size by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "59%", label: "Digital Ad Share by 2026", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The art of persuasion and storytelling.",
+        color: BLUE,
+        content: [
+          "Advertising & Communication Defined: The art of taking a product, service, or idea and turning it into a story that people want to be part of.",
+          "The Core Skill: Persuasion. While a manufacturer builds a shoe, an advertiser makes you believe that wearing that shoe makes you an athlete.",
+          "Modern Landscape: It's no longer just about TV ads. It's about Instagram Reels, influencer campaigns, AI-driven personalized messages, and voice search optimization.",
+          "The Power of Storytelling: 'Washing Powder Nirma' jingles, Indian Army ads that give goosebumps—these aren't luck; they're the power of strategic communication.",
+          "Why It Matters in India: With over 100 'Unicorn' startups (Zomato, Cred, Mamaearth) fighting for attention, the demand for professionals who can 'cut through the noise' is higher than ever.",
+          "The Boardroom Asset: If you can influence human behavior with words and visuals, you are the most valuable asset in any organization."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Ananya, Senior Copywriter",
+        icon: "Clock",
+        description: "Real workflow at a creative agency in Mumbai.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Morning Huddle: Walk into a converted loft with bean bags and graffiti walls. Grab coffee and join the morning huddle. Client: a major snack brand wanting a campaign for the Cricket World Cup. Brief: 'Make it viral.'",
+          "11:00 AM - Brainstorming Storm: Sit with the Art Director (who handles visuals). Throw wild ideas at each other. 'What if the cricket bat talks?' 'No, too cheesy.' 'What if we make a rap song using crunch sounds?' 'Bingo!' Scribble concepts on a whiteboard.",
+          "1:30 PM - Lunch & Trend Spotting: Lunch at the desk while scrolling through Instagram—not for fun, but to spot trending audio for a client's reel. In this job, being 'online' is work.",
+          "3:00 PM - Client Presentation: The nerve-wracking part. Pitch the idea to the Brand Manager. Act out the script, changing voice for different characters. Client frowns initially, then smiles. 'I like the crunch rap idea. Refine it and send the script by tomorrow.'",
+          "5:00 PM - The Quiet Work: Meeting rush is over. Put on headphones and start writing the actual script. Every word counts. Delete a sentence five times until it sounds punchy.",
+          "7:30 PM - Reflection: Log off, mentally exhausted but buzzing with energy. See a billboard on the way home that was written last month. Think: 'I made that.'"
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Advertiser's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Daydreamer: Do you often zone out imagining scenarios or stories?",
+          "The Trend Spotter: Are you the first in your group to know a new meme or slang?",
+          "The Empath: Can you understand why someone is sad or happy just by looking at them? (To sell to people, you must understand feelings).",
+          "The Resilient: Can you handle rejection? In advertising, 9 out of 10 ideas get killed. You need thick skin.",
+          "Soft Skills: Storytelling, Persuasion, Cultural Awareness (knowing what appeals to a Tamilian vs. a Punjabi), Teamwork.",
+          "Hard Skills: Copywriting, Graphic Design tools (Canva/Photoshop), Digital Marketing basics (SEO/SEM), Data Analytics.",
+          "The Self-Check: Do you love creating content? Do you understand what makes people tick? If yes, you have the Advertiser's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Account-Planning-Creative triangle.",
+        color: BLUE2,
+        content: [
+          "Client Servicing (The Bridge): Meeting the client to understand their problem ('We need to sell more soap').",
+          "Strategic Planning (The Brain): Researching who buys the soap and why. Finding the 'Consumer Insight.'",
+          "Creative (The Heart): Copywriters (words) and Art Directors (visuals) create the ad based on the insight.",
+          "Media Planning (The Megaphone): Deciding where to show the ad—TV, YouTube, or hoardings—to get the most views for the least money.",
+          "Execution & Analysis: Launching the ad and tracking if sales went up.",
+          "Continuous Optimization: Refining campaigns based on performance data and consumer feedback."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Mass Communication Route (Most Common): Class 12: Any stream (Humanities popular, but Science/Commerce equally welcome). Entrance Exams: CUET-UG, SET (Symbiosis), IPU-CET. Undergraduate: BMM or BA in Journalism & Mass Comm (3 years). Postgraduate: Masters in Advertising & PR or PG Diploma (IIMC).",
+          "Pathway B - Management Route (Strategy/Client Servicing): Graduation: Any Degree (B.Tech/B.Com/BA). Entrance Exams: CAT / MICAT (Specific to MICA). Postgraduate: MBA in Marketing or PGDM-C (Communications Management). Leads to high-paying Brand Manager roles.",
+          "Pathway C - Portfolio Route (For Creatives): Degrees matter less; skills matter more. Learn Graphic Design/Video Editing (Adobe Suite) or Copywriting online. Build a Portfolio (collection of dummy ads). Apply for internships at agencies directly.",
+          "Top Institutions: IIMC (New Delhi), MICA (Ahmedabad), Xavier Institute of Communications (Mumbai), Symbiosis Institute of Media & Communication (Pune), Asian College of Journalism (Chennai), Delhi University, Jamia Millia Islamia."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Size: Indian advertising industry projected to reach ₹1.3 Lakh Crore by 2026.",
+          "Digital Dominance: Digital advertising (Google, Meta, Instagram) has overtaken TV. Expected to account for 59% of all ad spending by 2026.",
+          "Hiring Trends: 'Mad Men' era of TV is fading. Hiring boom is in Performance Marketing (ads that directly lead to sales) and Content Creation.",
+          "Entry-Level (0-2 Yrs): Jr. Copywriter/Social Media Exec: ₹2.5L–₹4.5L (Agency) or ₹4L–₹6L (Corporate).",
+          "Mid-Level (3-7 Yrs): Art Director/Brand Manager: ₹8L–₹15L (Agency) or ₹12L–₹22L (Corporate).",
+          "Senior-Level (8-15 Yrs): Creative Director/VP Marketing: ₹25L–₹50L (Agency) or ₹35L–₹60L (Corporate).",
+          "Leadership: NCD/CMO: ₹80L–₹2Cr+ (Agency) or ₹1Cr–₹3Cr+ (Corporate)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Advertising Agencies (Ogilvy, MullenLowe Lintas, Dentsu, GroupM), Digital Agencies (Schbang, Dentsu Webchutney, Kinnect), Corporate Marketing Teams (FMCG, Tech, Startups), Media Houses (Times Group, Star Network).",
+          "Top Cities: Mumbai (Undisputed capital of Indian advertising), Gurgaon/Delhi-NCR (Hub for corporate headquarters), Bangalore (Tech-advertising and Digital Startups).",
+          "Freelancing: Extremely high potential. Freelance copywriters and designers earn ₹50k–₹2L/month working from home for global clients.",
+          "Emerging Opportunities: Influencer Marketing, Programmatic Advertising, UX Writing, Brand Consulting, Content Creation.",
+          "International: High demand in USA, UK, and Singapore for Indian advertising professionals."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Top Government (IIMC/Jamia): PG Diploma/Masters: ₹50,000 – ₹1.5L (1-2 years).",
+          "Top Private (MICA): PGDM-C: ₹20L – ₹23L (2 years).",
+          "Private (Symbiosis/Xavier): BA/MA Mass Comm: ₹4L – ₹8L (2-3 years).",
+          "State Universities (DU): BA Journalism: ₹20,000 – ₹40,000 (3 years).",
+          "Additional Costs: Certifications (Google Ads, Meta Blueprint, HubSpot): ₹5,000 – ₹20,000.",
+          "Living Costs: ₹1L – ₹1.5L per year in major cities.",
+          "Scholarships: IIMC Freeships, DSC Career Catalyst Scholarship, Corporate Scholarships, State Schemes."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for advertising in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: Indian Institute of Mass Communication (IIMC) New Delhi, AJK MCRC Jamia Millia Islamia, Delhi University (Indraprastha College/DCAC), FTII Pune.",
+          "Private Excellence: MICA Ahmedabad (The 'Mecca of Marketing'), Xavier Institute of Communications (XIC) Mumbai, Symbiosis Institute of Media & Communication (SIMC) Pune, Asian College of Journalism (ACJ) Chennai, Manipal Institute of Communication.",
+          "Online Learning: Coursera, edX, and YouTube channels for digital marketing and copywriting basics.",
+          "Industry Certifications: Google Ads Academy, Meta Blueprint, HubSpot Academy.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced advertising research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "IIMC Freeships: 'Rati Aggarwal Scholarship' and 'Star TV Scholarship' awarded to meritorious students based on entrance exam performance.",
+          "DSC Career Catalyst Scholarship: Delhi School of Communication offers tuition waivers for students with work experience.",
+          "Corporate Scholarships: Media giants like Times of India sometimes offer scholarships for journalism/media students.",
+          "State Schemes: Various state governments offer reimbursement of tuition fees for reserved category students.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Industry Sponsorships: Advertising agencies sometimes sponsor talented students for internships and scholarships."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Google Ads & Google Analytics (Essential for digital marketers), Meta (Facebook) Blueprint (Validates social media ad skills), HubSpot Content Marketing (Great for writers).",
+          "Professional Bodies: The Advertising Club (Bombay) organizes the 'Abby Awards' (Oscars of Indian ads), IAA (International Advertising Association) - India Chapter.",
+          "Industry Recognition: Cannes Lions, One Show, D&AD Awards (International recognition for creative excellence).",
+          "Continuing Education: Regular workshops and certifications in AI-driven advertising, voice search optimization, and emerging platforms."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in advertising.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Copywriter (Writing slogans and scripts), Client Servicing (Managing agency-brand relationships), Media Planner (Buying ad space).",
+          "New-Age Careers: Influencer Marketing Manager (Managing brand-influencer deals), Programmatic Ad Specialist (Using AI tools to buy digital ads), UX Writer (Writing text for apps).",
+          "Emerging Fields: Voice Search Optimization Specialist, AI-Driven Personalization Strategist, Metaverse Marketing Manager.",
+          "Freelancing: Ghostwriter (Writing LinkedIn posts for CEOs), Brand Consultant (Helping small businesses create identity), Content Creator.",
+          "International: Working with global advertising networks and multinational brands."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of advertising careers.",
+        color: BLUE,
+        content: [
+          "Burnout: High-pressure industry. 'Crunch time' before campaign launch can mean 14-hour workdays.",
+          "Subjectivity: You might love your idea, but the client might hate it. Rejection is a daily routine.",
+          "Job Instability: When the economy slows down, marketing budgets are the first to be cut, leading to layoffs.",
+          "Low Entry Pay: Unlike IT, starting salaries in agencies are modest. Big money comes only after 5-7 years of experience.",
+          "Rapid Change: Platforms, algorithms, and consumer behavior change constantly. You must stay updated.",
+          "Pressure to Deliver Results: Campaigns must drive measurable business outcomes, not just be creative."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of advertising.",
+        color: BLUE2,
+        content: [
+          "AI as a Co-Creator: Tools like ChatGPT (for copy) and Midjourney (for images) will automate basic tasks. Human role shifts from 'creating' to 'curating' and 'strategizing.'",
+          "Hyper-Personalization: Ads will no longer be for 'everyone.' You will see a different ad for the same shoe than your friend, based on browsing history.",
+          "Voice Search Ads: With Alexa and Siri, advertisers must figure out how to be the 'first answer' spoken by a smart speaker.",
+          "Metaverse Marketing: Brands will create immersive experiences in virtual worlds. Advertisers will need to think in 3D.",
+          "Privacy-First Advertising: As data privacy regulations tighten, advertisers will rely more on first-party data and contextual targeting.",
+          "Sustainability Marketing: Consumers increasingly care about environmental impact. Authentic sustainability messaging will be crucial."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Start a Page: Don't just consume Instagram; create. Start a meme page, poetry handle, or fan page. Learn what gets 'Likes.'",
+          "Analyze Ads: When a YouTube ad plays, don't skip immediately. Watch the first 5 seconds. Ask: 'How did they try to hook me?'",
+          "Learn Canva: It's a free design tool. Make posters for your school fest.",
+          "Read Psychology: Advertising is applied psychology. Read books like 'Influence' by Robert Cialdini (simplified concepts).",
+          "Online Courses: Explore Coursera, edX, or YouTube for copywriting and digital marketing basics.",
+          "DIY Projects: Create a mock campaign for a product you love. Write the copy, design the visuals, plan the media strategy."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring advertisers from India.",
+        color: BLUE2,
+        content: [
+          "Piyush Pandey: The legend who wrote 'Abki Baar Modi Sarkar' and the Fevicol ads. Global Chief Creative Officer of Ogilvy and the 'Grandfather of Indian Advertising.'",
+          "Prasoon Joshi: A lyricist and ad-guru (CEO of McCann Worldgroup India). Famous for the 'Thanda Matlab Coca-Cola' campaign.",
+          "R. Balki: Before directing movies like Padman, he was a top ad-man who created the 'Daag Acche Hain' (Surf Excel) campaign.",
+          "Prahlad Kakkar: The 'Ad Film King' known for making iconic Pepsi commercials with Sachin Tendulkar.",
+          "Falguni Nayar: (From the Client Side) Investment banker turned entrepreneur who built the brand Nykaa through brilliant digital communication."
+        ]
+      }
+    ]
+  },
+  digital_marketing: {
+    slug: "digital_marketing",
+    badge: "📱 The Screen Whisperers for Class 10+",
+    heading: "Digital Marketing",
+    subheading: "Selling products and services using the internet—from Instagram Reels to Google Ads, AI-driven campaigns, and influencer collaborations.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$32 Billion Market by 2030", description: "Indian digital advertising market projected to reach $32 Billion by 2030, growing at massive 15.3% CAGR.", borderColor: "#10B981" },
+      { icon: "Globe", title: "900M+ Internet Users in India", description: "We spend more time on phones than sleeping. Every company needs digital marketers to grab attention in this crowded digital space.", borderColor: "#059669" },
+      { icon: "Zap", title: "Skills > Degrees", description: "Portfolio-based hiring is the norm. You can start earning within 6 months of learning, without a formal degree.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Freelance Freedom", description: "Sit in a village in Himachal and run ads for a client in New York. Freelancers charge ₹20k–₹1L per client/month.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "6-11 Months (Bootcamp) or 3 Years (Degree) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Google Ads, Meta Blueprint, Canva, Google Analytics, ChatGPT, Midjourney", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹3Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$32B", label: "Market Size by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "15.3%", label: "CAGR Growth Rate", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Selling in the digital age.",
+        color: BLUE,
+        content: [
+          "Digital Marketing Defined: The art of selling products and services using the internet. Unlike traditional marketing (TV ads, billboards, newspapers), digital marketing happens on screens—mobiles, laptops, and tablets.",
+          "The Core Concept: Imagine you created the world's tastiest chocolate. But if you sell it in a shop inside a dark alley where no one walks, will anyone buy it? No. Now imagine you post a photo on Instagram, and 10,000 people see it, drool over it, and click 'Buy Now.' That magic is Digital Marketing.",
+          "Key Channels: Social media (Instagram, LinkedIn, TikTok), search engines (Google), emails, websites, and emerging platforms like voice search and metaverse.",
+          "Why It Matters in India: Over 900 million internet users. We spend more time on phones than sleeping! Every company—from a small home baker in Jaipur to giants like Tata or Reliance—needs digital marketers.",
+          "The Reality: If a business isn't online today, it practically doesn't exist.",
+          "The Opportunity: The demand for professionals who can 'cut through the noise' and drive measurable results is at an all-time high."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Arya, Social Media Manager",
+        icon: "Clock",
+        description: "Real workflow at a digital agency in Bangalore.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Community Management: Walk into office (looks more like a cafe with bean bags). Grab coffee and open laptop. First task: 'Community Management.' Check comments on the Zomato post uploaded last night. A customer posted a funny meme about late delivery; reply with a witty GIF. Engagement is key!",
+          "11:00 AM - Strategy Huddle: Meet the Graphic Designer and Copywriter. Planning a campaign for a new sneaker brand. 'Let's use an Instagram Reel with trending audio,' suggest. Storyboard the video—what angles to shoot, what text to overlay, which influencer to collaborate with.",
+          "1:00 PM - Trend Spotting: Lunch break. Scroll through TikTok and YouTube Shorts, not just for fun, but to spot new trends. 'Oh, the Tube Girl trend is viral. We should use that for our fashion client!'",
+          "3:00 PM - Performance Review: Open Google Analytics. Check data for a shoe ad run yesterday. 'Click-through rate is low,' frown. Decide to change ad headline from 'Buy Shoes' to 'Walk on Clouds – 50% Off.' In digital marketing, you can fix mistakes instantly.",
+          "5:00 PM - Content Shoot: Step into the studio. Lighting is set. Direct a micro-influencer on how to unbox sneakers for a reel. Do five retakes until the transition is perfect.",
+          "7:00 PM - Scheduling: Upload posts for the next day on a scheduling tool, tag the products, and log off. As you take an Uber home, see your own ad pop up on Instagram feed and smile."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Digital Marketer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Trend Hunter: Are you the first in your friend group to know about a viral meme or new slang word?",
+          "The Storyteller: Can you write a caption that makes your friends laugh or comment?",
+          "The Data Detective: Do you like looking at numbers to see why something happened? (e.g., 'My reel got more likes because I posted it at 6 PM').",
+          "The Chameleon: The internet changes every day. Can you adapt quickly?",
+          "Soft Skills: Creativity, Empathy (understanding what people want), Adaptability.",
+          "Hard Skills: Copywriting, Basic Graphic Design (Canva), Data Analytics (Google Analytics), Familiarity with AI tools (ChatGPT, Midjourney).",
+          "The Self-Check: Do you love creating content? Do you understand what makes people click? If yes, you have the Digital Marketer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Attract-Engage-Convert funnel.",
+        color: BLUE2,
+        content: [
+          "SEO (Search Engine Optimization): Tweaking a website so it shows up on the 1st page of Google when someone searches 'Best running shoes.'",
+          "Content Creation: Making reels, blogs, or graphics that make people stop scrolling.",
+          "Social Media Marketing (SMM): Posting content on Instagram, LinkedIn, or Twitter to build a community.",
+          "Performance Marketing (PPC): Running paid ads (those 'Sponsored' posts) to get immediate sales.",
+          "Analytics: Studying the data to see what worked and what didn't.",
+          "Community Management: Responding to comments, messages, and building relationships with followers.",
+          "Continuous Optimization: A/B testing, refining strategies, and adapting to algorithm changes."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Self-Taught Route (Portfolio-Based, Most Common in 2026): Class 12: Any stream. Learn: Take online certifications (Google Digital Garage, HubSpot Academy, Meta Blueprint). Build: Start a blog, YouTube channel, or Instagram page. Grow to 1,000 followers (your portfolio). Intern: Join an agency as an intern.",
+          "Pathway B - Formal Education Route (Degree-Based): Class 12: Any stream (Commerce/Humanities preferred). Undergraduate: BBA in Digital Marketing or BMM (Mass Media). Postgraduate: MBA in Digital Marketing or PGDM in Communications (MICA/Symbiosis).",
+          "Pathway C - Tech Route (For Data Lovers): Class 12: Science/Commerce with Math. Graduation: B.Tech or B.Sc in Statistics/CS. Role: Digital Analyst or SEO Technical Specialist.",
+          "Bootcamp Route: 6-11 month intensive programs from IIDE, Kraftshala, Digital Vidya, UpGrad, Simplilearn. Most affordable and fastest entry.",
+          "Top Institutions: IIDE Mumbai, Kraftshala, Digital Vidya, MICA Ahmedabad, Symbiosis Pune, NMIMS Mumbai, IIMs (Executive Certifications)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: Indian digital advertising market projected to reach $32 Billion by 2030, growing at 15.3% CAGR.",
+          "Hiring Trends: 'Generalist' marketer is fading. Companies want Specialists—Performance Marketers (handle money/ads) and Retention Marketers (keep customers coming back).",
+          "Entry-Level (0-2 Yrs): Social Media Exec/SEO Trainee: ₹3L–₹4.5L (Agency) or ₹4L–₹6L (Brand).",
+          "Mid-Level (3-6 Yrs): Digital Marketing Manager: ₹7L–₹12L (Agency) or ₹10L–₹18L (Brand).",
+          "Senior-Level (7-12 Yrs): Performance Lead/VP Marketing: ₹15L–₹30L (Agency) or ₹25L–₹50L (Brand).",
+          "Leadership: CMO (Chief Marketing Officer): ₹50L–₹1.5Cr+ (Agency) or ₹80L–₹3Cr+ (Brand).",
+          "Freelancing: ₹20k–₹1L per client/month. Extremely high earning potential."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: E-Commerce (Amazon, Flipkart, Myntra, Nykaa), EdTech (PhysicsWallah, UpGrad, Unacademy), FMCG (HUL, Nestle, Amul), Agencies (Ogilvy, Dentsu, Schbang, Kinnect).",
+          "Top Cities: Bangalore (Startup capital; hub for Performance Marketing), Mumbai (Creative hub; best for Social Media & Content), Gurgaon (Corporate HQ hub; best for Brand Manager roles).",
+          "Freelancing: Extremely High. Sit in a village in Himachal and run ads for a client in New York.",
+          "Emerging Opportunities: Influencer Management, AI-Driven Marketing, Meme Marketing, Voice Search Optimization, Metaverse Marketing.",
+          "International: High demand in USA, UK, Singapore, and Australia for Indian digital marketers."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Online Platforms: Google/HubSpot/Meta: Free to ₹5,000 (1-2 months).",
+          "EdTech Bootcamps: UpGrad/Simplilearn/IIDE: ₹50,000 – ₹1.5L (6-11 months).",
+          "Private Universities: BBA/MBA Digital Marketing: ₹3L – ₹10L (3 years / 2 years).",
+          "IIMs (Executive): Digital Marketing Cert: ₹1.5L – ₹3L (3-6 months).",
+          "Additional Costs: Certifications (Google Ads, Meta Blueprint): ₹5,000 – ₹20,000.",
+          "Living Costs: ₹1L – ₹1.5L per year in major cities.",
+          "Scholarships: IIDE Scholarships (merit-based waivers up to ₹30,000), Kraftshala Scholarships, Internshala Contests, Edu-Loans (0% EMI)."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for digital marketing in India.",
+        color: BLUE,
+        content: [
+          "Specialized Digital Institutes: IIDE (Indian Institute of Digital Education) Mumbai (Known as 'Harvard of Digital Marketing'), Kraftshala (Famous for 'Marketing Launchpad'), Digital Vidya (One of the oldest players).",
+          "Formal Degree Colleges: MICA Ahmedabad (Premier for Strategic Marketing), Symbiosis Institute of Media & Communication (SIMC) Pune, NMIMS Mumbai (MBA in Digital Transformation), IIMs (Executive Certifications).",
+          "Online Platforms: Google Digital Garage (Free), HubSpot Academy (Free), Meta Blueprint (Free), Coursera, edX, Udemy.",
+          "Bootcamp Platforms: UpGrad, Simplilearn, IIDE, Kraftshala, Digital Vidya.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced digital marketing research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "IIDE Scholarships: Merit-based waivers up to ₹30,000 based on aptitude test.",
+          "Kraftshala Scholarships: Often provides fee reductions for high-potential candidates.",
+          "Internshala Trainings: Contests where you can win free training.",
+          "Edu-Loans: Most bootcamps (UpGrad, Simplilearn) have 0% EMI tie-ups, making it easy to afford.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Corporate Sponsorships: Tech companies sometimes sponsor talented candidates for training.",
+          "Pay-After-Placement: Some bootcamps offer this model—pay only after you get a job."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Must-Have Certifications: Google Ads Search Certification (Free), Google Analytics 4 (GA4) (Free), Meta (Facebook) Certified Digital Marketing Associate (Paid, high value), HubSpot Content Marketing (Free).",
+          "Professional Bodies: Internet and Mobile Association of India (IAMAI) - organizes huge summits.",
+          "Industry Recognition: Google Partner Badge, Meta Marketing Partner, HubSpot Certified Professional.",
+          "Continuing Education: Regular certifications in AI-driven marketing, voice search optimization, and emerging platforms.",
+          "International Certifications: Google Ads Advanced, Facebook Blueprint Advanced, Hootsuite Academy."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in digital marketing.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: SEO Specialist (Getting websites to rank #1 on Google), Social Media Manager (Handling Instagram/LinkedIn pages), Email Marketer (Sending newsletters).",
+          "New-Age Careers: Influencer Manager (Managing brand-influencer deals), Prompt Engineer (Marketing) (Writing perfect prompts for AI), Meme Marketing Officer (Getting paid to make memes for brands!).",
+          "Emerging Fields: Voice Search Optimizer, Metaverse Marketing Manager, AI-Driven Personalization Specialist, Community Builder.",
+          "Freelancing: Affiliate Marketer (Selling other people's products, earning commission), Dropshipper (Running online store without owning inventory), Digital Consultant.",
+          "International: Working with global brands and agencies in USA, UK, Singapore, and Australia."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of digital marketing.",
+        color: BLUE,
+        content: [
+          "Constant Change: What works on Instagram today (e.g., Reels) might be dead tomorrow. You have to be a lifelong learner.",
+          "Metrics Pressure: Everything is tracked. If you spent ₹1L on ads and only got ₹50k in sales, the data shows it instantly. You can't hide.",
+          "24/7 'On' Mode: The internet never sleeps. If a crisis happens on Twitter on a Sunday, you have to log in and fix it.",
+          "Screen Fatigue: You will be staring at screens for 10-12 hours a day.",
+          "Rapid Skill Obsolescence: New tools and platforms emerge constantly; continuous learning is mandatory.",
+          "Algorithm Dependency: Your success depends on platforms you don't control. Algorithm changes can destroy your strategy overnight."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of digital marketing.",
+        color: BLUE2,
+        content: [
+          "AI & Automation: AI won't replace marketers; marketers using AI will replace marketers not using AI. Tools will automate basic writing and design. Human role will be Strategy.",
+          "Voice Search: With Alexa and Siri, people are searching by voice. Marketers will optimize for 'spoken' questions.",
+          "Vernacular Internet: The next billion users in India speak Hindi, Tamil, Bengali, etc. Ads in regional languages will explode.",
+          "Metaverse Marketing: Brands will create immersive experiences in virtual worlds. Marketers will need to think in 3D.",
+          "Privacy-First Marketing: As data privacy regulations tighten, marketers will rely more on first-party data and contextual targeting.",
+          "Hyper-Personalization: Every user will see a different version of your ad based on their behavior and preferences."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Build a Personal Brand: Don't just consume. Create. Pick a hobby (gaming, cooking) and try to grow an Instagram/YouTube page to 1,000 followers.",
+          "Learn Canva: Stop using PowerPoint. Use Canva to design your school project slides. It teaches you design basics.",
+          "Write a Blog: Use free platforms like Medium or WordPress. Learn how to write headlines that people click.",
+          "Google 'Digital Garage': Take the free 'Fundamentals of Digital Marketing' course by Google. It gives you a real certificate!",
+          "Online Courses: Explore Coursera, edX, or YouTube for copywriting and digital marketing basics.",
+          "DIY Projects: Create a mock campaign for a product you love. Write the copy, design the visuals, plan the media strategy."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring digital marketers from India.",
+        color: BLUE2,
+        content: [
+          "Sorav Jain: Founder of echoVME and Digital Scholar. Started as an SEO executive at 17 and is now a top digital influencer.",
+          "Neil Patel: (Indian-origin). Co-founder of NP Digital. One of the world's most famous SEO experts. His blogs are the 'Bible' for marketers.",
+          "Pradeep Chopra: CEO of Digital Vidya. One of the pioneers who started digital marketing training in India back in 2009.",
+          "Deepak Kanakaraju (Digital Deepak): A biker turned digital marketer who runs one of India's largest digital marketing communities.",
+          "Ranveer Allahbadia (BeerBiceps): A prime example of a Content Creator becoming a Digital Entrepreneur. Built a media empire purely on digital storytelling."
+        ]
+      }
+    ]
+  },
+  entrepreneurship_and_management: {
+    slug: "entrepreneurship_and_management",
+    badge: "🚀 The Architects of Tomorrow for Class 10+",
+    heading: "Entrepreneurship and Management",
+    subheading: "Building businesses from scratch or steering them to success—from startup founders to corporate leaders shaping India's economy.",
+    whyCards: [
+      { icon: "TrendingUp", title: "100+ Unicorns in India", description: "India is the world's 3rd largest startup ecosystem. Management consulting market growing at 15% CAGR.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Engine of the Economy", description: "Entrepreneurs create jobs, managers sustain them. From tea-sellers to tech founders, this career drives India's growth.", borderColor: "#059669" },
+      { icon: "Zap", title: "Highest Earning Potential", description: "Top MBAs earn ₹30L+ entry-level. Founders get equity worth crores. The sky is the limit.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "Global Recognition", description: "Indian entrepreneurs and managers are leading companies worldwide. From Sundar Pichai to Deepinder Goyal—the world watches.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "2 Years (MBA) or Start Anytime (Entrepreneurship)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Excel, PowerPoint, Data Analytics, Strategic Planning, Leadership", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹10Cr+ (Entry to Leadership/Founder)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "100+", label: "Unicorn Startups in India", gradient: "from-green-500 to-green-600" },
+      { value: "15%", label: "Consulting Market CAGR", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Building and steering businesses.",
+        color: BLUE,
+        content: [
+          "The Ship Analogy: Imagine a ship in a stormy ocean. The Entrepreneur is the person who built the ship because they wanted to explore a new land. The Manager is the captain who steers the ship, manages the crew, and ensures it reaches the destination safely.",
+          "Entrepreneurship Defined: Spotting a problem in the world and building a business to fix it (like how Ola fixed the problem of finding taxis).",
+          "Management Defined: Running a business efficiently—handling money, people, and strategy to ensure growth.",
+          "The Two Journeys: Entrepreneurs follow the '0 to 1' journey (creating something from nothing). Managers follow the '1 to 100' journey (scaling what exists).",
+          "Why It Matters in India: We are the world's 3rd largest startup ecosystem. From a small tea-seller becoming a 'Chaios' outlet to a student building a coding app in their dorm room, this career is the engine of the Indian economy.",
+          "The Impact: Entrepreneurs create jobs, and managers sustain them. Together, they drive India's economic growth and global competitiveness."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Arjun, Founder & CEO",
+        icon: "Clock",
+        description: "Real workflow of a startup founder.",
+        color: BLUE2,
+        content: [
+          "8:00 AM - Stand-up Meeting: Day starts with a Zoom call. Tech team in Hyderabad is facing a bug in the app. Not a coder, but need to make a decision: 'Do we delay the launch or fix it live?' Choose to fix it live—a risky but necessary move.",
+          "10:30 AM - Investor Pitch: Drive to a cafe to meet a Venture Capitalist (VC). Have 20 minutes to convince them to invest ₹5 Crores. Don't just talk; tell a story about how the startup will change India. VC asks tough questions about 'Burn Rate' and 'Customer Acquisition Cost.' Answer with data.",
+          "1:00 PM - Financial Review: Barely time for lunch. Grab a sandwich while reviewing the monthly P&L (Profit & Loss) statement with Finance Manager. Spending too much on marketing. Slash the budget by 10% instantly.",
+          "3:00 PM - Crisis Management: A delivery partner in Delhi has gone on strike. Operations are halted. Jump on a call with the City Manager, listening to workers' demands and negotiating a temporary bonus to get them back on the road.",
+          "6:00 PM - Hiring: Interview a candidate for the 'Head of Sales' role. Look for 'hunger,' not just degrees.",
+          "8:00 PM - Strategy Time: Office is quiet. Sit alone, looking at the whiteboard. 'Where do we want to be in 2030?' Sketch a plan to expand to Tier-2 cities. Go home tired but fueled by the thrill of building something from scratch."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Entrepreneur/Manager's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Risk Taker: Are you okay with failing? Entrepreneurs fail often. If you need 100% safety, this might be scary.",
+          "The Leader: In a group project, are you the one assigning tasks and ensuring the work gets done?",
+          "The Resilient: Can you hear 'No' 50 times and still ask the 51st time with a smile?",
+          "The Problem Solver: Do you complain about problems, or do you think of ways to fix them?",
+          "Hard Skills: Financial Literacy (reading balance sheets), Data Analytics, Marketing Strategy, Operations Management.",
+          "Soft Skills: Negotiation, Emotional Intelligence (EQ), Public Speaking, Decisiveness.",
+          "The Self-Check: Do you dream of building something? Do you enjoy leading people? If yes, you have the Entrepreneur/Manager's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The journey from 0 to 1 and 1 to 100.",
+        color: BLUE2,
+        content: [
+          "For Entrepreneurs (The '0 to 1' Journey): Ideation (Spotting a gap in the market), MVP (Building a basic version to test), Fundraising (Pitching to investors for capital), Scaling (Growing from 10 customers to 10,000).",
+          "For Managers (The '1 to 100' Journey): Planning (Setting quarterly goals/Targets), Organizing (Allocating resources—money and people), Leading (Motivating the team to hit targets), Controlling (Checking if targets were met and fixing errors).",
+          "Cross-Functional Skills: Decision-making under uncertainty, stakeholder management, financial planning, team building, strategic thinking.",
+          "Continuous Adaptation: Markets change, competitors emerge, technologies evolve. Must stay agile and innovative.",
+          "Ethical Leadership: Building sustainable businesses that create value for all stakeholders, not just shareholders."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Management Degree Route (Corporate Ladder): Class 12: Any stream (Commerce/Science/Humanities). Math recommended. Undergraduate: BBA / BMS / IPM (Integrated Programme in Management). Entrance: IPMAT (IIM Indore/Rohtak), CUET (DU), NPAT (NMIMS). Postgraduate: MBA / PGDM. Entrance: CAT (IIMs), XAT (XLRI), SNAP, NMAT. Role: Management Trainee → Manager → VP → CEO.",
+          "Pathway B - Entrepreneurial Route (The Builder): Skills First: Learn coding, design, or marketing. Start Early: Launch a small venture in college (T-shirt business, campus delivery service). Incubation: Join a startup incubator (T-Hub, NSRCEL at IIM Bangalore). Reality: Don't need a degree to start, but MBA gives safety net and network.",
+          "Top Institutions: IIM Ahmedabad/Bangalore/Calcutta (ABC), FMS Delhi, IIFT, IIM Indore/Rohtak, ISB Hyderabad, XLRI Jamshedpur, SPJIMR Mumbai, NMIMS Mumbai, Symbiosis (SIBM) Pune.",
+          "Accelerators & Incubators: T-Hub (Hyderabad), NASSCOM 10000 Startups, IIM Bangalore's NSRCEL, IIT Delhi's Incubation Cell.",
+          "Alternative: Many successful founders skipped formal MBA and learned on the job (like Deepinder Goyal of Zomato)."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: India home to 100+ Unicorns (Startups valued >$1 Billion). Management consulting market growing at 15% CAGR.",
+          "Hiring Trends: Companies moving away from 'General Managers' to 'Specialist Managers' (Product Managers, Digital Transformation Managers).",
+          "Entry-Level (0-2 Yrs): Management Trainee/Analyst: ₹4L–₹8L (Startups/SMEs) or ₹18L–₹30L (Top MNCs/Consulting).",
+          "Mid-Level (3-7 Yrs): Manager/Team Lead: ₹12L–₹25L (Startups/SMEs) or ₹35L–₹60L (Top MNCs/Consulting).",
+          "Senior-Level (8-15 Yrs): VP/Director: ₹40L–₹80L (Startups/SMEs) or ₹80L–₹1.5Cr (Top MNCs/Consulting).",
+          "Leadership: CEO/CXO/Founder: Equity + ₹50L–₹2Cr (Startups) or ₹3Cr–₹10Cr+ (Top MNCs).",
+          "Note: For entrepreneurs, 'Salary' is often zero in first 2 years. Payoff comes later through Equity (Ownership)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Consulting (McKinsey, BCG, Bain, Deloitte—highest payers), FMCG (HUL, P&G, Nestle—best schools for management), Fintech & Banking (Paytm, PhonePe, HDFC Bank, ICICI), E-Commerce (Amazon, Flipkart, Myntra).",
+          "Top Cities (Startup Hubs): Bangalore (Silicon Valley of India—Tech & Startups), Gurgaon/Delhi-NCR (Corporate HQs and Consulting hub), Mumbai (Finance and Advertising capital), Hyderabad & Pune (Emerging tech and manufacturing hubs).",
+          "Remote Work: Management roles increasingly hybrid. Entrepreneurship is 24/7, anywhere.",
+          "Emerging Opportunities: Product Management, Chief of Staff roles, Growth Hacking, Social Entrepreneurship, D2C Founders.",
+          "International: High demand for Indian managers and entrepreneurs in USA, UK, Singapore, and Australia."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "IIM A/B/C (Top Government): MBA/PGP: ₹25L–₹27L. Average Package: ₹34L+.",
+          "FMS Delhi (Government): MBA: ₹2L. Average Package: ₹34L+ (Best ROI).",
+          "Top Private (XLRI/MDI): PGDM: ₹24L–₹28L. Average Package: ₹28L–₹32L.",
+          "Tier-2 Private: MBA: ₹10L–₹15L. Average Package: ₹8L–₹12L.",
+          "Online MBA: Distance: ₹1.5L–₹4L. Package varies.",
+          "Scholarships: Aditya Birla Group Scholarship, OPJEMS, IIM Need-Based Financial Aid (100% fee waivers), IDFC First Bank MBA Scholarship, Central Sector Scholarship.",
+          "Entrepreneurship: Can start with minimal investment. Many successful startups bootstrapped with <₹10L."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for management in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: IIM Ahmedabad, Bangalore, Calcutta (ABC)—The 'Holy Trinity' of management. FMS (Faculty of Management Studies) Delhi—Extremely low fees, ultra-high placement. IIFT (Indian Institute of Foreign Trade)—Best for International Business. IIM Indore/Rohtak—Famous for 5-year IPM course (After Class 12).",
+          "Private Excellence: ISB (Indian School of Business) Hyderabad—1-Year Global MBA (requires work ex). XLRI Jamshedpur—Best for HR and Business Management. SPJIMR Mumbai—Known for values-based leadership. NMIMS Mumbai—Strong corporate connections. Symbiosis (SIBM) Pune.",
+          "Startup Incubators: T-Hub (Hyderabad), NASSCOM 10000 Startups, IIM Bangalore's NSRCEL, IIT Delhi's Incubation Cell.",
+          "Online Learning: Coursera, edX, LinkedIn Learning for management fundamentals.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced management research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Aditya Birla Group Scholarship: For top rankers in select IIMs/XLRI (₹1.75L/year).",
+          "OP Jindal Engineering and Management Scholarship (OPJEMS): For meritorious students.",
+          "IIM Need-Based Financial Aid: IIM-A/B/C offer 100% fee waivers for students with family income <₹4-6L/year.",
+          "IDFC First Bank MBA Scholarship: For students from weaker economic sections.",
+          "Central Sector Scholarship: For top percentile students in Class 12.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Startup Grants: Government schemes like NASSCOM 10000 Startups provide funding and mentorship for entrepreneurs."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications (Boosters): PMP (Project Management Professional)—Gold standard for project managers. CFA (Chartered Financial Analyst)—For finance management. Six Sigma Black Belt—For operations/quality management.",
+          "Professional Bodies: AIMA (All India Management Association)—Good for networking. TiE (The Indus Entrepreneurs)—Global network of entrepreneurs helping startups. NASSCOM—For tech entrepreneurs.",
+          "Industry Recognition: Startup India Recognition, NASSCOM Certification, Google Cloud Certified Associate.",
+          "Continuing Education: Regular certifications in AI-driven management, sustainability (ESG), and emerging technologies."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in management and entrepreneurship.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Brand Manager (Managing a product like 'Maggi' or 'Dove'), Investment Banker (Helping companies merge or raise money), HR Manager (Managing talent and culture).",
+          "New-Age Careers: Product Manager—The 'Mini-CEO' of a digital product (managing UPI feature on WhatsApp). Chief of Staff—The right-hand person to a CEO. Growth Hacker—Using low-cost creative strategies to acquire customers.",
+          "Entrepreneurship: D2C Founder (Starting a direct-to-consumer brand like Shark Tank India startups). Social Entrepreneur (Building a business to solve social issues). Tech Founder (Building SaaS or AI products).",
+          "Consulting: Management Consultant, Strategy Consultant, Operations Consultant.",
+          "International: Working with global companies and leading multinational organizations."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of management and entrepreneurship.",
+        color: BLUE,
+        content: [
+          "The 'Generalist' Trap: MBAs are often jack-of-all-trades. In a tech-first world, you need a specific skill (like Analytics or Sales) to stand out.",
+          "Burnout: Investment bankers and consultants work 80+ hours a week. It's physically draining.",
+          "Entrepreneurial Failure: 90% of startups fail within 5 years. You might lose your savings.",
+          "High Debt: An MBA loan of ₹25L can be stressful if you don't land a high-paying job immediately.",
+          "Pressure to Deliver: Managers are judged on quarterly results. Long-term vision often takes a backseat.",
+          "Rapid Change: Business models evolve quickly. Must stay updated with market trends and technologies."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of management and entrepreneurship.",
+        color: BLUE2,
+        content: [
+          "AI in Management: Managers won't make Excel sheets; AI will do that. Managers will focus on Decision Making and Ethics.",
+          "Gig-CXOs: Companies are hiring 'Fractional CFOs' or 'Part-time CMOs' instead of full-time leaders.",
+          "Sustainable Business: Every manager will need to know 'ESG' (Environmental, Social, and Governance). Judged on carbon footprint, not just profit.",
+          "Remote-First Organizations: Management structures will flatten. Hierarchies will become flatter and more agile.",
+          "Founder Economy: More people will become entrepreneurs. Traditional employment will decline.",
+          "Global Opportunities: Indian entrepreneurs and managers will lead global companies. The world will watch Indian innovation."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Sell Something: Set up a stall at your school fete. Sell handmade bookmarks or cookies. Nothing teaches business like handling real cash and customers.",
+          "Lead a Club: Become the head of the Debate Club or Sports Team. Managing people is the hardest skill.",
+          "Learn Excel & PowerPoint: These are the tools of the trade. Master them now.",
+          "Watch 'Shark Tank India': It's a crash course in business terms (Equity, Valuation, Gross Margin).",
+          "Read Business Books: 'Zero to One' by Peter Thiel, 'The Lean Startup' by Eric Ries.",
+          "Start a Small Business: Sell something online, offer a service to neighbors. Real experience beats theory."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring entrepreneurs and managers from India.",
+        color: BLUE2,
+        content: [
+          "Ratan Tata: The ultimate symbol of ethical management. Grew the Tata Group into a global empire while donating 65% of profits to charity.",
+          "Falguni Nayar: Founder of Nykaa. Started her business at age 50 after quitting a top banking job, proving it's never too late.",
+          "Deepinder Goyal: Founder of Zomato. Turned a simple idea of 'uploading menu cards online' into a food delivery giant.",
+          "Indra Nooyi: Former CEO of PepsiCo. An inspiration for Indian managers aiming for global leadership roles.",
+          "Nithin Kamath: Founder of Zerodha. Built a billion-dollar company without taking any VC funding (Bootstrapped)."
+        ]
+      }
+    ]
+  },
+  marketing: {
+    slug: "marketing",
+    badge: "📈 The Pulse of Business for Class 10+",
+    heading: "Marketing",
+    subheading: "Understanding customers, creating products they love, and telling stories that make brands unforgettable—from FMCG to tech startups.",
+    whyCards: [
+      { icon: "TrendingUp", title: "₹1.5 Lakh Crore Market by 2026", description: "Indian advertising and marketing sector projected to cross ₹1.5 Lakh Crore by 2026. 1.4 billion consumers to reach.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Largest Consumer Market", description: "With 1.4 billion people, India is one of the world's largest consumer markets. Nothing moves without marketing.", borderColor: "#059669" },
+      { icon: "Zap", title: "Data-Driven & Creative", description: "Use both left brain (logic/data) and right brain (creativity). The perfect blend of art and science.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "Difference Between Loved & Ignored", description: "In a crowded market, marketing is the difference between a brand that is loved (like Maggi or Tata) and one that is ignored.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (BBA/BMS) + 2 Years (MBA) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Excel, Canva, Google Analytics, CRM, Data Analytics", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹5L–₹5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "₹1.5L Cr", label: "Market Size by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "1.4B", label: "Consumers in India", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The bridge between companies and customers.",
+        color: BLUE,
+        content: [
+          "Marketing vs. Sales: Sales is the act of exchanging a product for money. Marketing is everything that happens before that sale.",
+          "Core Definition: The art and science of understanding what people want, creating a product that fits that need, pricing it correctly, and then screaming from the rooftops (or Instagram feeds) that this product exists.",
+          "The Real Example: Imagine you've invented a backpack that can charge a laptop, keep water cold for 12 hours, and never gets dirty. It's brilliant. But if no one knows it exists, you haven't sold a single one. That's where marketing comes in.",
+          "The Marketer's Role: The bridge between the company and the customer. They answer the big questions: Who is our customer? Why should they care about us? What story do we tell them?",
+          "Why It Matters in India: With 1.4 billion people, we are one of the world's largest consumer markets. From a packet of chips in a village kirana store to a luxury electric car in Mumbai, nothing moves without marketing.",
+          "The Competitive Edge: In a crowded market, marketing is the difference between a brand that is loved (like Maggi or Tata) and a brand that is ignored."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Vivaan, Assistant Brand Manager",
+        icon: "Clock",
+        description: "Real workflow at an FMCG company.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - Sales Analysis: Enter office. Desk covered with wrappers of biscuits—not messy, but managing the 'Digestive Biscuits' category. Start by checking the 'Daily Sales Report.' Sales in North India are down 2%. Note this for later.",
+          "10:30 AM - Creative Agency Meeting: Drive to a trendy ad agency office. Planning a new TV ad for Diwali. Agency pitches an emotional story about a grandmother and grandson sharing a biscuit. Like the emotion but point out: 'The product logo needs to be visible for at least 3 seconds.' Marketing is creativity with constraints.",
+          "1:00 PM - R&D Collaboration: Lunch with the R&D Team. Try a prototype of a new 'Sugar-Free' biscuit. Tastes like cardboard. Tell the food scientists: 'Our customers want health, but they won't compromise on taste. Try adding natural stevia.'",
+          "3:00 PM - Market Visit: Most crucial part. Visit a local supermarket. Watch a lady buy a competitor's biscuit pack. Politely approach her: 'Excuse me, ma'am, why did you pick that one?' She replies: 'It was ₹5 cheaper.' Key insight: Price sensitivity is high right now.",
+          "5:00 PM - Data Analysis: Back at office, work on Excel. Based on market visit, simulate a plan: If we run a 'Buy 2 Get 1 Free' offer next month, will we recover the lost volume?",
+          "7:00 PM - Social Listening: Check phone and see a meme about the brand trending on Twitter. Smile, forward it to digital team, and head home."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Marketer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The People Watcher: Do you enjoy observing how people behave? Why do they pick the red shirt over the blue one?",
+          "The Storyteller: Can you convince your friends to watch a boring movie just by the way you describe it?",
+          "The Curious Cat: Are you always asking 'Why?' Why is this trend viral? Why did this product fail?",
+          "The Adaptable: Trends change every week. Can you keep up?",
+          "Hard Skills: Data Analytics (reading graphs/Excel), Digital Marketing basics (SEO/Social Media), Consumer Psychology, Financial Awareness (Profit & Loss).",
+          "Soft Skills: Empathy (feeling what the customer feels), Communication, Creativity, Negotiation.",
+          "The Self-Check: Do you love understanding people? Do you enjoy creating campaigns? If yes, you have the Marketer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The 4 Ps of Marketing.",
+        color: BLUE2,
+        content: [
+          "Product: Deciding what to make. (e.g., 'Let's launch a spicy version of our chips.').",
+          "Price: Deciding the cost. (e.g., 'Should it be ₹10 for mass appeal or ₹50 for premium?').",
+          "Place (Distribution): Deciding where to sell. (e.g., 'Online on Amazon or offline in Kirana stores?').",
+          "Promotion: Deciding how to advertise. (e.g., 'Let's hire Virat Kohli for a TV ad.').",
+          "The Workflow: Market Research → Product Strategy → Campaign Creation → Launch → Sales Analysis → Feedback Loop.",
+          "Continuous Optimization: Monitor performance, gather customer feedback, and refine strategies based on data."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Management Route (The Golden Path, Highest Salaries): Class 12: Any stream (Commerce/Humanities/Science). Math helpful for Analytics. Undergraduate: BBA / B.Com / BMS. Entrance: CUET (DU), NPAT (NMIMS), SET (Symbiosis), IPMAT (IIM Indore). Postgraduate: MBA in Marketing (2 years). Entrance: CAT (IIMs), XAT, NMAT, SNAP.",
+          "Pathway B - Creative/Specialist Route: Focuses on specific areas like Digital Marketing or Advertising. Undergraduate: BMM (Bachelor of Mass Media) or BA in Psychology/Economics. Certification: Specializations in Digital Marketing, SEO, Content Strategy. Job: Join Ad Agency or Digital Marketing Firm directly.",
+          "Pathway C - Engineer-Marketer Switch: Very common in India. B.Tech → Work 2 years → MBA in Marketing. Why: Tech companies (Google, Amazon) love marketers who understand technology.",
+          "Top Institutions: IIM Ahmedabad/Bangalore/Calcutta, FMS Delhi, IIM Indore, XLRI Jamshedpur, SPJIMR Mumbai, MICA Ahmedabad, NMIMS Mumbai, Symbiosis SIBM/SCMHRD Pune."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: Indian advertising and marketing sector projected to cross ₹1.5 Lakh Crore by 2026.",
+          "Hiring Trends: Data-Driven Marketing (companies want marketers who understand Data Science), Rural Marketing (internet reaching villages), D2C Boom (Direct-to-Consumer brands hiring aggressively).",
+          "Entry-Level (0-2 Yrs): Management Trainee/Analyst: ₹15L–₹25L (FMCG/Tech Giants) or ₹5L–₹8L (Mid-Sized/Agencies).",
+          "Mid-Level (3-7 Yrs): Brand Manager/Marketing Manager: ₹25L–₹45L (FMCG/Tech Giants) or ₹10L–₹18L (Mid-Sized/Agencies).",
+          "Senior-Level (8-15 Yrs): Marketing Director/VP: ₹50L–₹1Cr (FMCG/Tech Giants) or ₹25L–₹45L (Mid-Sized/Agencies).",
+          "Leadership: CMO (Chief Marketing Officer): ₹1.5Cr–₹5Cr+ (FMCG/Tech Giants) or ₹60L–₹1.2Cr (Mid-Sized/Agencies)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: FMCG (HUL, P&G, Nestle, ITC, Amul—best training ground), Tech & E-Commerce (Google, Amazon, Flipkart, Zomato, Swiggy), Automotive (Tata Motors, Mahindra, Maruti Suzuki), BFSI (HDFC, ICICI, Fintech startups).",
+          "Top Cities: Mumbai (Marketing Capital—home to HQs of HUL, P&G, Tata, Reliance), Gurgaon/Delhi-NCR (Corporate hub for Nestle, PepsiCo, Samsung), Bangalore (Hub for Tech marketing and Startups).",
+          "Remote Work: Medium. Strategy roles can be hybrid, but Sales/Market Research often requires being on the ground.",
+          "Emerging Opportunities: Growth Hacking, Product Marketing Manager (PMM), Influencer Marketing Manager, Rural Marketing Specialist.",
+          "International: High demand for Indian marketers in USA, UK, Singapore, and Australia."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "IIMs (Top Government): MBA/PGP: ₹20L–₹27L (2 years).",
+          "FMS Delhi (Government): MBA: ~₹2L (2 years). Famous for highest ROI—low fees, super high salary.",
+          "Top Private (XLRI/NMIMS): MBA/PGDM: ₹22L–₹26L (2 years).",
+          "BBA Colleges: BBA/BMS: ₹3L–₹10L (3 years).",
+          "Additional Costs: Certifications (Google, Meta, HubSpot): ₹5,000–₹20,000.",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Scholarships: Aditya Birla Group, IDFC First Bank MBA, Mirae Asset Foundation, Institute-specific fee waivers."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for marketing in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: IIM Ahmedabad, Bangalore, Calcutta—The holy trinity for Marketing. FMS (Faculty of Management Studies) Delhi—Known as the 'Marketing Campus of India.' IIM Indore—Known for strong marketing curriculum.",
+          "Private Excellence: XLRI Jamshedpur—Excellent for Business Management. SPJIMR Mumbai—Known for 'marketing with social impact' pedagogy. MICA Ahmedabad—Only institute dedicated entirely to Strategic Marketing and Communication. NMIMS Mumbai—Factory for producing top-class Brand Managers. Symbiosis SIBM/SCMHRD Pune.",
+          "Online Learning: Coursera, edX, LinkedIn Learning for marketing fundamentals.",
+          "Industry Certifications: Google Ads Academy, Meta Blueprint, HubSpot Academy.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced marketing research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Aditya Birla Group Scholarship: For top rankers in IIMs/XLRI.",
+          "IDFC First Bank MBA Scholarship: For students with financial need (₹2L/year).",
+          "Mirae Asset Foundation Scholarship: For meritorious students.",
+          "Institute Specific: IIM-A/B/C offer 100% fee waivers for students with family income below ₹4-6L/year.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Corporate Sponsorships: FMCG companies sometimes sponsor talented candidates for training.",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Google & Meta Certifications (For Digital Marketing skills), HubSpot Inbound Marketing (Great for content strategy), CIM (Chartered Institute of Marketing)—UK-based prestigious qualification (Advanced).",
+          "Professional Bodies: The Advertising Club—Networking for Indian marketers. AIMA (All India Management Association).",
+          "Industry Recognition: Google Partner Badge, Meta Marketing Partner, HubSpot Certified Professional.",
+          "Continuing Education: Regular certifications in AI-driven marketing, sustainability marketing, and emerging platforms."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in marketing.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Brand Manager—The 'CEO' of a brand (e.g., Manager of Lux Soap). Sales Manager—Managing distribution and shop sales. Market Researcher—The data detective finding customer insights.",
+          "New-Age Careers: Growth Hacker—Using creative, low-cost tech tricks to get users fast (common in startups). Product Marketing Manager (PMM)—Translating technical features into benefits for customers (common in Tech). Influencer Marketing Manager—Managing deals with YouTubers/Instagrammers.",
+          "Emerging Fields: Sustainability Marketing Manager, Vernacular Marketing Specialist, MarTech Specialist, Community Manager.",
+          "Freelancing: Marketing Consultant—Advising small businesses on strategy. Copywriter/Content Strategist—Writing for brands remotely.",
+          "International: Working with global brands and leading multinational marketing teams."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of marketing careers.",
+        color: BLUE,
+        content: [
+          "High Pressure: You are responsible for revenue. If sales drop, the marketing team is the first to be questioned.",
+          "Subjectivity: Everyone has an opinion. Your boss might reject a brilliant campaign just because they 'don't like the color.'",
+          "Burnout: Agency life and Sales stints can involve 12-14 hour workdays and travel.",
+          "Constant Change: What worked last year (e.g., TV ads) might not work this year (e.g., Reels). You have to keep learning.",
+          "Rapid Skill Obsolescence: New tools and platforms emerge constantly; continuous learning is mandatory.",
+          "Pressure to Deliver Results: Campaigns must drive measurable business outcomes, not just be creative."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of marketing.",
+        color: BLUE2,
+        content: [
+          "MarTech (Marketing Technology): The future is AI. Tools will predict what a customer wants before they even search for it.",
+          "Hyper-Personalization: Ads will be unique to you. Two people will see completely different ads for the same car.",
+          "Sustainability Marketing: Brands will have to prove they are eco-friendly. 'Greenwashing' (faking it) will be punished by consumers.",
+          "Vernacular is King: Marketing in Hindi, Tamil, Telugu, and Bengali will be bigger than English marketing in India.",
+          "Privacy-First Marketing: As data privacy regulations tighten, marketers will rely more on first-party data and contextual targeting.",
+          "Metaverse Marketing: Brands will create immersive experiences in virtual worlds. Marketers will need to think in 3D."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Analyze Ads: Don't skip ads on YouTube. Watch them. Ask: 'Who are they talking to? What emotion are they selling?'",
+          "Organize a School Event: Try to 'market' your school play or fete. Design a poster, write a slogan, and see what brings people in.",
+          "Start a Page: Create an Instagram page for your hobby (cooking, gaming, art). Try to grow it to 1,000 followers. That is real marketing.",
+          "Learn Excel & Canva: Excel for the logic/data, Canva for the visuals.",
+          "Read Marketing Books: 'Positioning: The Battle for Your Mind' by Al Ries and Jack Trout.",
+          "DIY Projects: Create a mock campaign for a product you love. Write the copy, design the visuals, plan the media strategy."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring marketers from India.",
+        color: BLUE2,
+        content: [
+          "Ambi Parameswaran: A legend in Indian advertising and brand building (associated with FCB Ulka). Pioneer in understanding Indian consumer behavior.",
+          "Falguni Nayar: Founder of Nykaa. Was an investment banker, but her genius lay in marketing beauty products to Indian women online when no one else believed in it.",
+          "Harish Bijoor: Famous Brand Strategy Specialist and consultant known for his insights on Indian consumer behavior.",
+          "Prasoon Joshi: CEO of McCann Worldgroup India. Proved that words (copywriting) can build massive brands like Coca-Cola ('Thanda Matlab...').",
+          "Ratan Tata: While a business tycoon, his launch of the Tata Nano was one of the most talked-about marketing events in global history."
+        ]
+      }
+    ]
+  },
+  sales_professional: {
+    slug: "sales_professional",
+    badge: "💼 The Engine of Business for Class 10+",
+    heading: "Sales Professional",
+    subheading: "Generating revenue by identifying customer needs, building relationships, and closing deals—from SaaS to FMCG, Real Estate to Pharma.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$2 Trillion Retail Market by 2032", description: "Indian retail market set to reach $2 Trillion by 2032. SaaS industry alone will need 500,000+ new sales professionals by 2030.", borderColor: "#10B981" },
+      { icon: "Zap", title: "Highest-Paid Profession", description: "Sales is the only role that directly brings money into the company. Fixed salary + 50% more in bonuses for top performers.", borderColor: "#059669" },
+      { icon: "Globe", title: "Zero Barrier to Entry", description: "One of the few high-paying careers with no expensive degree requirement. Performance-based hiring means you can start earning immediately.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Job Security Guaranteed", description: "If you can sell, you will never be unemployed. Every company needs salespeople. India's $5 Trillion economy needs armies of sales professionals.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "Start Anytime (No Degree Required) or 2-3 Years (MBA optional)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "CRM (Salesforce/HubSpot), Excel, LinkedIn, Phone, Negotiation Skills", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹3Cr+ (Entry to Leadership, Fixed + Incentives)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$2T", label: "Retail Market by 2032", gradient: "from-green-500 to-green-600" },
+      { value: "500K+", label: "SaaS Sales Jobs by 2030", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The art of revenue generation.",
+        color: BLUE,
+        content: [
+          "Sales Defined: The art of Revenue Generation. A salesperson identifies people who need a product, educates them on why they need it, and convinces them to pay for it.",
+          "The Real Example: Imagine a company builds the world's fastest electric scooter. It's perfect. But it's sitting in a warehouse in Pune gathering dust. Why? Because no one has gone out and convinced people to buy it. That's where a Sales Professional comes in.",
+          "The Scope: Whether it's selling a ₹5 packet of biscuits to a shopkeeper or a ₹50 Crore software system to a bank, nothing moves in the economy until a salesperson sells it.",
+          "The Reality: Sales is not just about 'talking nicely.' It's about understanding customer pain points, building trust, and creating win-win solutions.",
+          "Why It Matters in India: As India marches towards a $5 Trillion economy, companies like Reliance, Zoho, and Swiggy are hiring armies of sales professionals to expand their markets.",
+          "The Promise: If you can sell, you will never be unemployed. Every company needs salespeople."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Arjun, Business Development Manager",
+        icon: "Clock",
+        description: "Real workflow of a B2B SaaS salesperson.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - CRM Dashboard: Start day by checking CRM (Customer Relationship Management) dashboard. It's like a scoreboard. At 80% of monthly target. Need to close two more deals this week.",
+          "10:00 AM - Cold Calling: The hard part. Call 20 potential clients (leads) who have never heard of you. 15 don't pick up. 3 hang up. 2 agree to listen. Don't get discouraged; sales is a game of probability.",
+          "12:00 PM - The Demo: Log into Zoom to present software to a Marketing Head in Mumbai. Don't just read slides; ask questions: 'What is your biggest problem right now?' When client says 'reporting,' show only the reporting feature. Solve the problem, not just sell the product.",
+          "2:00 PM - Lunch with Client: Meet an existing client at a cafe. Don't talk business immediately. Talk about cricket and traffic. Sales is about relationships. By end of coffee, client agrees to renew contract for next year.",
+          "4:00 PM - Internal Review: Boss asks why the 'Mega-Corp Deal' is stuck. Explain legal team is delaying paperwork. Take ownership and promise to call legal head personally to speed it up.",
+          "6:00 PM - Follow-ups: Send WhatsApp summaries and emails to everyone spoken to today. 'Great speaking with you, here is the price quote we discussed.'",
+          "7:30 PM - Victory: Phone pings—Mumbai client signed the deal! Ring the 'virtual bell' on office group chat. That adrenaline rush? That's what salespeople live for."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Salesperson's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Rhino Skin: Can you handle rejection? People will say 'No' to your face. Can you smile and move to the next person?",
+          "The Listener: Do you listen to understand, or just to reply? Great sellers listen 70% of the time and speak 30%.",
+          "The Competitor: Do you hate losing? Salesboards are ranked. If you want to be #1, this is your field.",
+          "The Hustler: Are you willing to make that one extra call when everyone else has gone home?",
+          "Hard Skills: Product Knowledge, CRM Tools (Salesforce/HubSpot), Lead Generation, Math (calculating discounts and margins instantly).",
+          "Soft Skills: Negotiation, Empathy, Communication (Storytelling), Patience.",
+          "The Self-Check: Do you love winning? Do you enjoy building relationships? If yes, you have the Salesperson's DNA. (Note: You don't need to be an extrovert—introverts make great listeners!)"
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Sales Funnel.",
+        color: BLUE2,
+        content: [
+          "Prospecting: Finding people who might buy (Lead Generation).",
+          "Outreach: Calling or emailing them (Cold Calling).",
+          "Qualification: Checking if they have the budget and authority to buy.",
+          "Pitch/Demo: Presenting your solution.",
+          "Negotiation: Haggling over price and terms.",
+          "Closing: Getting the contract signed.",
+          "Post-Sales: Ensuring they are happy so they buy again (Retention).",
+          "Continuous Relationship Building: Maintaining client relationships for repeat business and referrals."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Corporate Route (B2B/Tech Sales, Highest Paying): Class 12: Any stream. Graduation: B.Tech or BBA preferred. Entry Role: SDR (Sales Development Representative) or BDE (Business Development Executive). Growth: BDM → Account Manager → Sales Director → VP Sales (CXO).",
+          "Pathway B - Consumer Route (FMCG/Retail, Volume Game): Class 12: Any stream. Graduation: Any degree (B.Com/BA). Entry Role: Sales Officer (SO) or Territory Sales In-charge (TSI). Growth: Area Sales Manager (ASM) → Regional Sales Manager (RSM) → National Head.",
+          "Pathway C - Early Starter (No Degree, Performance Based): After Class 12: Join Retail Sales (malls/showrooms) or Real Estate/Insurance agency. Growth: Purely based on how much you sell. Many top Real Estate agents never went to college but earn in Crores.",
+          "Top Institutions: IIM Indore/Kozhikode, FMS Delhi, IIFT, SPJIMR Mumbai, NMIMS Mumbai, Symbiosis SCMHRD/SIBM, Kraftshala, UpGrad.",
+          "Alternative: Many successful salespeople skipped formal MBA and learned on the job."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: Indian retail market set to reach $2 Trillion by 2032. SaaS industry alone will need 500,000+ new sales professionals by 2030 to sell Indian software to the world.",
+          "Hiring Trends: Hottest roles are Inside Sales (Selling via Zoom/Phone) and Customer Success (Retention). Field sales still huge in FMCG and Pharma.",
+          "Entry-Level (0-2 Yrs): SDR/Sales Exec: ₹4L–₹8L (Tech/SaaS) or ₹3L–₹5L (FMCG/Retail).",
+          "Mid-Level (3-7 Yrs): BDM/Area Manager: ₹12L–₹25L (Tech/SaaS) or ₹8L–₹15L (FMCG/Retail).",
+          "Senior-Level (8-15 Yrs): Sales Director/Zonal Head: ₹40L–₹80L (Tech/SaaS) or ₹25L–₹50L (FMCG/Retail).",
+          "Leadership: CSO (Chief Sales Officer): ₹1Cr–₹3Cr+ (Tech/SaaS) or ₹80L–₹2Cr (FMCG/Retail).",
+          "Note: Sales is unique—Fixed Salary + Variables (Incentives). Good salespeople often earn 50% more than fixed salary in bonuses."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: SaaS & Tech (Zoho, Freshworks, Salesforce, Microsoft—selling software to businesses), BFSI (HDFC, ICICI, LIC, PolicyBazaar—selling loans, insurance, credit cards), EdTech (UpGrad, PhysicsWallah, Unacademy—selling courses), Real Estate (Lodha, DLF, Godrej Properties—high ticket, high commission), Pharma (Sun Pharma, Cipla—medical reps selling to doctors).",
+          "Top Cities: Bangalore/Gurgaon (Hubs for Tech and B2B Sales), Mumbai (Hub for Finance and Media Sales), Every District HQ (FMCG sales jobs exist in every single town in India, from Meerut to Madurai).",
+          "Remote Work: High. 'Inside Sales' roles allow you to sell to US/UK clients while sitting in Jaipur or Indore.",
+          "Emerging Opportunities: Social Selling, Customer Success Management, Solution Architecture, High-Ticket Closing.",
+          "International: High demand for Indian salespeople in USA, UK, Singapore, and Australia."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "MBA Colleges: MBA in Sales/Marketing: ₹10L–₹25L (2 years).",
+          "BBA Colleges: BBA: ₹3L–₹8L (3 years).",
+          "Online Bootcamps: Inside Sales Certifications: ₹20,000–₹50,000 (3 months).",
+          "Self-Learning: YouTube/Books: Free (Lifetime).",
+          "Additional Costs: Certifications (HubSpot, Salesforce): ₹5,000–₹20,000.",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Scholarships: Merit-based scholarships from MBA colleges, Corporate sponsorships (HUL, L'Oreal competitions), Pre-Placement Offers (PPOs).",
+          "Note: Sales is one of the few high-paying careers with ZERO barrier to entry. You don't need expensive degrees to start."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for sales in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: IIM Indore/Kozhikode—Known for strong Sales & Marketing placements. FMS Delhi—Best ROI for Sales/Marketing MBA. IIFT—Best for International Business Sales.",
+          "Private Excellence: SPJIMR Mumbai—Dedicated specialization in Sales Management. NMIMS Mumbai—Excellent for FMCG sales roles. Symbiosis SCMHRD/SIBM—Strong corporate connections.",
+          "Specialized Bootcamps: Kraftshala—Specialized online bootcamps training specifically for sales roles with placements. UpGrad—Sales-focused programs.",
+          "Online Learning: HubSpot Academy (Free), Salesforce Trailhead (Free), LinkedIn Learning, Coursera.",
+          "On-the-Job Training: Many companies have internal sales training programs. You can learn while earning."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Merit-Based Scholarships: Most MBA colleges offer tuition waivers for top rankers.",
+          "Corporate Sponsorships: Companies like HUL or L'Oreal run competitions (like L'Oreal Brandstorm); winners often get PPOs (Pre-Placement Offers) and funding.",
+          "Performance-Based: Many sales roles offer performance bonuses that can cover education costs.",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12.",
+          "Company Training: Many companies sponsor employee education and certifications.",
+          "Bootcamp Scholarships: Some online bootcamps offer scholarships for high-potential candidates."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications (Resume Boosters): HubSpot Inbound Sales (Free & World famous), Salesforce Administrator (If you want to master the CRM tool), Certified Sales Professional (CSP) (By various global bodies).",
+          "Professional Bodies: National Sales Network (For networking), SMEI (Sales and Marketing Executives International).",
+          "Industry Recognition: HubSpot Certified Sales Professional, Salesforce Certified Administrator, LinkedIn Sales Navigator Certification.",
+          "Continuing Education: Regular certifications in AI-driven sales, social selling, and emerging sales technologies."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in sales.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Medical Representative (MR)—Visiting doctors to sell medicines. Area Sales Manager—Managing a network of distributors in a city. Relationship Manager—Managing wealthy clients for a bank.",
+          "New-Age Careers: SDR (Sales Development Rep)—The 'Hunter.' Your only job is to find leads and book meetings for seniors. Customer Success Manager (CSM)—The 'Farmer.' Ensuring existing clients are happy so they don't leave. Solution Architect—Technical expert helping salespeople sell complex tech products.",
+          "Emerging Fields: Social Selling Specialist, AI-Powered Sales Consultant, Vernacular Sales Manager, Account-Based Marketing (ABM) Specialist.",
+          "Freelancing: High-Ticket Closer—Closing deals for coaches/consultants on commission (Can earn ₹1L+ per month). Affiliate Marketer—Selling other people's products online.",
+          "International: Working with global sales teams and leading multinational sales organizations."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of sales careers.",
+        color: BLUE,
+        content: [
+          "Target Pressure: You live life 'Month-to-Month.' You could be a hero in March and a zero in April if you miss your target.",
+          "Rejection: You will hear 'No' more than any other professional. It can hurt your self-esteem if you aren't tough.",
+          "Travel: Field sales jobs require riding a bike/driving for hours in the heat and dust.",
+          "Job Stability: In some aggressive companies, if you miss targets for 3 months, you are fired.",
+          "Burnout: Sales can involve 12-14 hour workdays and constant pressure to meet targets.",
+          "Rapid Change: Sales tools, techniques, and market conditions change constantly. Must stay updated."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of sales.",
+        color: BLUE2,
+        content: [
+          "AI Co-Pilots: Salespeople won't type emails manually. AI will write personalized emails for 1,000 clients in seconds. Humans will focus on building trust.",
+          "Social Selling: LinkedIn is the new golf course. Deals are being closed via DMs and personal branding, not just cold calls.",
+          "Vernacular Sales: With the rise of 'Bharat,' companies need salespeople who speak local dialects fluently to sell in Tier-3 cities.",
+          "Remote-First Sales: Inside sales will dominate. Geographic location won't matter.",
+          "Customer Success Focus: Retention will be as important as acquisition. CSM roles will grow exponentially.",
+          "Data-Driven Selling: Salespeople will use AI to predict which leads are most likely to buy and when."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Participate in Debates: Learning to argue your point logically is the foundation of sales.",
+          "Organize Sponsorships: For your school fest, go to local shops and ask them to sponsor ₹5,000 in exchange for a banner. That is real B2B sales.",
+          "Read Books: Read 'How to Win Friends and Influence People' by Dale Carnegie. It is the Bible of sales.",
+          "Learn Excel: You will need to calculate targets and commissions. Get comfortable with numbers.",
+          "Online Courses: Explore HubSpot Academy or Salesforce Trailhead for free sales fundamentals.",
+          "DIY Projects: Try selling something—old books, handmade items, or services. Real experience beats theory."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring salespeople from India.",
+        color: BLUE2,
+        content: [
+          "Ritesh Agarwal: Founder of OYO. Before he was a CEO, he was a salesperson selling SIM cards and housekeeping services. He knocked on hotel doors to get them listed on OYO.",
+          "Bhavish Aggarwal: Founder of Ola. He personally stood at bus stops to convince auto drivers to download the Ola app in the early days.",
+          "Falguni Nayar: Founder of Nykaa. She spent years as an Investment Banker (which is basically high-end sales: selling companies to investors) before starting her own empire.",
+          "Dilip Shanghvi: Founder of Sun Pharma. He started as a wholesale drug distributor in Kolkata, selling lithic medicines to shops himself. Today he is one of India's richest men.",
+          "Anupam Mittal: Founder of Shaadi.com and Makaan.com. Built billion-dollar companies through relentless sales and customer acquisition strategies."
+        ]
+      }
+    ]
+  },
+  visual_merchandiser: {
+    slug: "visual_merchandiser",
+    badge: "🎨 The Silent Sellers for Class 10+",
+    heading: "Visual Merchandiser",
+    subheading: "Creating stunning store experiences that make customers stop, look, and buy—from luxury boutiques to fast-fashion flagships.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$2 Trillion Retail Market by 2032", description: "As offline retail fights back against e-commerce, demand for experiential Visual Merchandisers is skyrocketing.", borderColor: "#10B981" },
+      { icon: "Zap", title: "Silent Selling Power", description: "While salespeople talk to customers, VMs talk to their subconscious. Your display design directly impacts sales.", borderColor: "#059669" },
+      { icon: "Globe", title: "Luxury Boom in India", description: "Brands like Gucci, Louis Vuitton, and Zara entering Indian malls need world-class VMs. Luxury segment is booming.", borderColor: "#3B82F6" },
+      { icon: "Fingerprint", title: "Art Meets Business", description: "Blend creativity (making things beautiful) with psychology (understanding what makes people buy) and business acumen.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Des) or 1 Year (Diploma)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Photoshop, SketchUp, CAD, Color Theory, Spatial Design", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹1.2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$2T", label: "Retail Market by 2032", gradient: "from-green-500 to-green-600" },
+      { value: "30-40%", label: "Higher Pay in Metro Cities", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The art of silent persuasion.",
+        color: BLUE,
+        content: [
+          "Visual Merchandising Defined: Often called 'Silent Selling.' While a sales executive talks to you, a Visual Merchandiser talks to your subconscious.",
+          "The Core Role: Creative architects who design the store layout, window displays, lighting, and product placement to maximize sales.",
+          "The Blend: VMs blend Art (making things look beautiful), Psychology (understanding what makes people buy), and Business (ensuring products sell).",
+          "Real Example: Have you ever walked into a Zara or FabIndia store and felt an immediate urge to buy something you didn't plan to? Or walked past a shop window where the mannequins looked so cool that you had to step inside? That wasn't an accident. That was the work of a Visual Merchandiser.",
+          "Why It Matters in India: In the age of Instagram and online shopping, physical stores are fighting to stay relevant. They can no longer just be 'places to buy stuff'; they must be 'experiences.'",
+          "The Impact: From a luxury boutique in Mumbai's Palladium Mall to a sprawling Reliance Trends in Indore, every retailer needs a VM to turn a boring shop into an exciting destination."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Sanya, Visual Merchandiser",
+        icon: "Clock",
+        description: "Real workflow at a fast-fashion brand.",
+        color: BLUE2,
+        content: [
+          "8:30 AM - Golden Hour: Arrive at store in Indiranagar. Mall hasn't opened yet, shutters are down. This is the 'Golden Hour.' Walk the floor, checking if the 'New Arrival' denim collection is front and center.",
+          "9:30 AM - Daily Huddle: Meet Store Manager. Review yesterday's sales report. 'The floral dresses aren't moving,' manager says. Realize they are placed in a dark corner. Decide to move them to the 'Hot Zone' near entrance and re-dress mannequins to style dress with denim jacket.",
+          "11:00 AM - Window Dressing: Heavy lifting. Enter main window display with assistant. Carefully dismantle old 'Monsoon' theme props and install new 'Festive' theme. Climb ladder to adjust spotlight so it hits mannequin's face perfectly. Physical work—lifting, pinning, climbing.",
+          "1:30 PM - Trend Research: Grab quick bite while scrolling through Pinterest and WGSN (trend forecasting site) to see what global brands are doing for Christmas displays.",
+          "3:00 PM - Planogram Compliance: Head Office sends new 'Planogram' (map of where products should go). Ensure store matches global standard. Photograph new layout and upload to company app for approval from Regional Head.",
+          "5:00 PM - Vendor Coordination: Call local printer. 'Sale 50% Off' vinyl stickers for glass facade need to be ready by tomorrow. Negotiate price and check color proofs.",
+          "7:00 PM - The Walkthrough: Store buzzing with customers. Observe them. Notice shoppers touching red handbag placed on podium. Smile. The trap worked. Log off, tired but satisfied that 'silent' work made cash register ring."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Visual Merchandiser's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Creative Problem Solver: Can you make a boring white wall look exciting using just colorful paper and lights?",
+          "The Detail Freak: Does it annoy you when a photo frame on a wall is slightly crooked? In VM, alignment is everything.",
+          "The Physically Active: This is not a desk job. You will be on your feet 8 hours a day, climbing ladders, and moving heavy mannequins.",
+          "The Psychologist: Do you understand why people buy? (e.g., 'People buy winter coats when they feel cozy, so let's use warm yellow lighting.').",
+          "Hard Skills: Color Theory, Space Planning, CAD/Photoshop (for designing layouts), Knowledge of materials (wood, acrylic, fabric).",
+          "Soft Skills: Time Management (displays must be ready before store opens), Teamwork, Budget Management.",
+          "The Self-Check: Do you love creating beautiful spaces? Do you understand consumer psychology? If yes, you have the Visual Merchandiser's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Attract-Engage-Convert cycle.",
+        color: BLUE2,
+        content: [
+          "Window Display (The Hook): Creating a stunning window setup to stop people from walking past.",
+          "Floor Layout (The Flow): Designing the path a customer walks. VMs place 'Impulse Buys' (like socks or perfumes) near billing counter to increase bill value.",
+          "Planogram Implementation: Following the visual map sent by Head Office to ensure all 50 stores across India look identical.",
+          "Signage & Graphics: Ensuring price tags and 'New Collection' posters are readable and stylish.",
+          "Inventory Management: You can't display what you don't have. VMs coordinate with warehouse to ensure display items are in stock.",
+          "Seasonal Updates: Refreshing displays for festivals, seasons, and sales events.",
+          "Performance Analysis: Monitoring which displays drive sales and which don't."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Design Degree Route (Most Common, Best for Top Fashion Brands): Class 12: Any stream (Arts/Commerce/Science). Entrance Exams: NIFT-GAT/CAT, NID-DAT, UCEED, Pearl Academy Entrance. Undergraduate: B.Des in Fashion Communication (4 Years)—Gold standard for VMs. Alternative: B.Des in Interior Design. Internship: Mandatory 6-month internship with retail brand. Job: Junior Visual Merchandiser.",
+          "Pathway B - Diploma Route (Quicker Entry): Class 12: Any stream. Course: Diploma in Visual Merchandising (6 months–1 Year). Institutes: JD Institute of Fashion Technology, London School of Trends (India), local fashion academies. Job: Store Stylist / VM Assistant.",
+          "Pathway C - Retail/MBA Route (Management Focus): Graduation: Any degree. Post-Grad: MBA in Retail Management or Fashion Management (from NIFT). Job: Retail Merchandiser (focusing more on stock/numbers than display).",
+          "Top Institutions: NIFT (18 Campuses), FDDI, NID Ahmedabad/Gandhinagar, Pearl Academy Delhi/Mumbai, JD Institute, Srishti Manipal Institute Bangalore, MIT-ID Pune, IIAD Delhi."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: Indian retail sector projected to reach $2 Trillion by 2032. As 'Offline Retail' fights back against E-commerce, demand for experiential VMs is skyrocketing.",
+          "Hiring Trends: Luxury Boom (Brands like Gucci and Louis Vuitton entering Indian malls need world-class VMs), E-Visual Merchandising (Online sites like Myntra and Ajio hire 'Online VMs' to decide which clothes appear on homepage banner).",
+          "Entry-Level (0-2 Yrs): VM Executive/Stylist: ₹3L–₹5L (Mass Brands) or ₹5L–₹7L (Luxury/International).",
+          "Mid-Level (3-6 Yrs): Area VM Manager/Cluster VM: ₹8L–₹12L (Mass Brands) or ₹12L–₹18L (Luxury/International).",
+          "Senior-Level (7-12 Yrs): National Head - VM: ₹20L–₹35L (Mass Brands) or ₹35L–₹60L (Luxury/International).",
+          "Leadership: Creative Director: ₹50L+ (Mass Brands) or ₹80L–₹1.2Cr (Luxury/International).",
+          "City Comparison: VM in Mumbai/Delhi earns 30-40% more than VM in Jaipur or Lucknow due to flagship stores and Head Offices."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Fashion Retail (Zara, H&M, Trent/Westside/Zudio, Reliance Retail/Azorte/Trends), Luxury (The Collective, Armani, Rolex, Tanishq—Jewelry VM is huge in India), Home Decor (IKEA, Home Centre, Pepperfry), FMCG/Supermarkets (Nature's Basket, Foodhall—Food styling and shelf displays).",
+          "Top Cities: Mumbai (Fashion Capital & Home to Reliance/Tata Retail HQs), Bangalore (Hub for Lifestyle brands like Titan, Madura Fashion, and E-commerce), Delhi-NCR (Hub for Luxury Malls like Emporio and Export Houses).",
+          "Freelancing: High potential in Window Display Design for festive seasons (Diwali/Durga Puja) where malls pay lakhs for single installation.",
+          "Emerging Opportunities: E-Visual Merchandising, Experience Designer (Instagrammable spots), Event Stylist, Exhibition Designer.",
+          "International: High demand for Indian VMs in USA, UK, Singapore, and Australia."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "NIFT (Government): B.Des (Fashion Comm): ₹12L–₹14L (4 years).",
+          "FDDI (Government): B.Des (Retail): ₹6L–₹8L (4 years).",
+          "Top Private (Pearl/IIAD): B.Des: ₹20L–₹26L (4 years).",
+          "Diploma Institutes: Diploma in VM: ₹1L–₹3L (1 year).",
+          "Additional Costs: Software certifications (Adobe, SketchUp): ₹10,000–₹30,000.",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Scholarships: NIFT Sarthak/Udaan, Pearl Academy 'Who's Next' Scholarship, Ratan Tata Scholarship for Design, Lombard Odier Scholarship."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for visual merchandising in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: National Institute of Fashion Technology (NIFT) (18 Campuses)—B.Des in Fashion Communication is most respected degree. Footwear Design & Development Institute (FDDI)—Specialized Retail & Fashion Merchandise courses. National Institute of Design (NID) Ahmedabad/Gandhinagar—Great for Exhibition & Retail Design.",
+          "Private Excellence: Pearl Academy Delhi/Mumbai—Excellent industry exposure and placements with luxury brands. JD Institute of Fashion Technology—Good for shorter Diploma courses. Srishti Manipal Institute Bangalore—Focuses on creative and experimental space design. MIT Institute of Design (MIT-ID) Pune—Strong Retail Design program. Indian Institute of Art and Design (IIAD) Delhi—Collaborates with Kingston University, London.",
+          "Online Learning: Coursera, edX, LinkedIn Learning for design fundamentals.",
+          "Industry Certifications: Adobe Creative Cloud, SketchUp, AutoCAD.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced design research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "NIFT Sarthak/Udaan: Means-cum-Merit financial assistance for students with family income below ₹4L/year.",
+          "Pearl Academy 'Who's Next' Scholarship: Up to 100% fee waiver for creative talent.",
+          "Ratan Tata Scholarship for Design: For students pursuing design education.",
+          "Lombard Odier Scholarship: Occasionally partners with design institutes for sustainability-focused students.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Corporate Sponsorships: Retail companies sometimes sponsor talented candidates for training.",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Adobe Creative Cloud (Certification in Photoshop/Illustrator is huge plus), SketchUp / AutoCAD (For 3D store modeling).",
+          "Professional Bodies: VMAI (Visual Merchandising Association of India)—Organizing body for VM professionals. RAI (Retailers Association of India)—Offers workshops and networking events.",
+          "Industry Recognition: Adobe Certified Associate, Autodesk Certified Professional, VMAI Certified Visual Merchandiser.",
+          "Continuing Education: Regular certifications in sustainable design, digital retail, and emerging technologies."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in visual merchandising.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: In-Store VM—Managing the look of one specific store. Window Dresser—Specialist who only does window displays. Planogrammer—Sitting in HQ and designing layout map for all stores.",
+          "New-Age Careers: E-Visual Merchandiser—Curating the 'look' of a website or app. Experience Designer—Designing 'Instagrammable spots' inside stores (e.g., selfie wall in a cafe). Retail Technologist—Integrating AR/VR into store experiences.",
+          "Emerging Fields: Sustainable Display Designer, Metaverse Store Designer, AI-Powered Planogram Specialist.",
+          "Freelancing: Event Stylist—Designing wedding setups or corporate launch parties. Exhibition Designer—Designing stalls for trade shows (e.g., Auto Expo). Seasonal Display Contractor.",
+          "International: Working with global retail chains and luxury brands worldwide."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of visual merchandising.",
+        color: BLUE,
+        content: [
+          "Physical Exhaustion: This is glamorous but sweaty work. You will be lifting mannequins, painting props, and climbing ladders. You might work overnight so store is ready by morning.",
+          "Working on Holidays: Diwali and Christmas are your busiest times. While friends party, you will be working to set up festive displays.",
+          "Budget Cuts: When sales are low, VM budget (for props/lights) is often first to be cut. You have to be creative with zero money.",
+          "Pressure to Drive Sales: Your displays are directly tied to revenue. If sales drop, you are questioned.",
+          "Rapid Change: Trends change constantly. You must stay updated with global fashion and retail trends.",
+          "Physical Demands: Standing for 8+ hours, climbing ladders, moving heavy items can be physically taxing."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of visual merchandising.",
+        color: BLUE2,
+        content: [
+          "Phygital Retail: Blend of Physical + Digital. Stores will have 'Smart Mirrors' where you can try clothes virtually. VMs will design these tech-integrated spaces.",
+          "Sustainability: No more plastic props. Displays will use biodegradable materials (bamboo, recycled paper) to appeal to eco-conscious Gen Z.",
+          "AI Planograms: Artificial Intelligence will analyze heatmaps of store (where people walk most) and tell VM exactly where to place high-margin products.",
+          "Metaverse Stores: Virtual stores in metaverse will need VMs to design digital shopping experiences.",
+          "Personalization: Displays will change based on customer demographics and preferences in real-time.",
+          "Experiential Retail: Stores will become entertainment destinations. VMs will design immersive brand experiences."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Visit Malls Consciously: Don't just shop. Look at window displays. Ask: 'Why did they put red lighting here?' Take photos of displays you like.",
+          "Learn Photography: Framing a photo teaches you composition and balance, which are key VM skills.",
+          "Pinterest Boards: Create boards for 'Room Decor' or 'Fashion Styling.' This builds your aesthetic sense.",
+          "DIY Projects: Help decorate your school stage for Annual Day. That is pure Visual Merchandising experience.",
+          "Online Courses: Explore Coursera or YouTube for design fundamentals and color theory.",
+          "Sketch & Draw: Practice sketching store layouts and display ideas. Develop your design eye."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring visual merchandisers from India.",
+        color: BLUE2,
+        content: [
+          "Neelabh Maitreya: Veteran in the industry, currently leading Store Development & VM for Adidas India. Pioneer in bringing international retail standards to India.",
+          "Hari Krishnan: Head of Visual Merchandising at Reliance Retail (Azorte), known for creating futuristic, tech-enabled store experiences.",
+          "Nuno Rosa: Chief of Visual Merchandising at Yousta (Reliance), bringing international fast-fashion aesthetics to India.",
+          "Dimple Nahar: Founder of 2Divine, luxury lifestyle store in Mumbai, known for exquisite window displays and styling.",
+          "Priya Sharma: Creative Director at Trent (Westside), revolutionizing retail experience design in India with innovative store concepts."
+        ]
+      }
+    ]
+  },
+  aeronautical_engineer: {
+    slug: "aeronautical_engineer",
+    badge: "✈️ The Sky Architects for Class 10+",
+    heading: "Aeronautical Engineer",
+    subheading: "Designing, developing, and testing aircraft that connect the world—from commercial planes to fighter jets, helicopters, and drones.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$70 Billion Market by 2030", description: "Indian aerospace & defense market projected to reach $70 Billion by 2030. UDAN scheme creating massive demand for aircraft.", borderColor: "#10B981" },
+      { icon: "Globe", title: "3rd Largest Aviation Market", description: "India is currently the 3rd largest aviation market in the world. Buying hundreds of new planes and building own fighter jets (Tejas).", borderColor: "#059669" },
+      { icon: "Zap", title: "Drone Revolution", description: "Witnessing a 'Drone Revolution' in agriculture, delivery, and surveillance. Fastest-growing sector in aerospace.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Connecting & Defending", description: "As an aeronautical engineer, you aren't just building machines; you are connecting the world and defending the nation.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) + 2 Years (M.Tech) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "ANSYS, CATIA, SolidWorks, MATLAB, CFD Software", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹4L–₹1Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$70B", label: "Aerospace Market by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "3rd", label: "Largest Aviation Market", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The brain behind flight.",
+        color: BLUE,
+        content: [
+          "Aeronautical Engineering Defined: The science of designing, developing, testing, and maintaining aircraft that operate within the Earth's atmosphere.",
+          "The Scope: Includes commercial airplanes, fighter jets, helicopters, and drones. While a pilot flies the machine, an aeronautical engineer creates it.",
+          "Real Example: Have you ever looked at a massive metal plane weighing 80,000 kilograms and wondered, 'How does that thing stay in the air?' Or watched a drone zip through the sky and thought, 'I want to build that'? That's what aeronautical engineers do.",
+          "Aeronautical vs. Aerospace: Aeronautical deals with things that fly in air (Planes, Helicopters). Aerospace is broader and includes things that fly in space (Rockets, Satellites). In India, many IITs offer 'Aerospace Engineering,' which covers both.",
+          "Why It Matters in India: India is currently the 3rd largest aviation market in the world. We are buying hundreds of new planes, building our own fighter jets (like Tejas), and witnessing a 'Drone Revolution' in agriculture and delivery.",
+          "The Impact: As an aeronautical engineer, you aren't just building machines; you are connecting the world and defending the nation."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Rohan, Structural Engineer",
+        icon: "Clock",
+        description: "Real workflow at a defense aviation company.",
+        color: BLUE2,
+        content: [
+          "8:30 AM - Secure Campus: Reach campus. It's a high-security zone, so phones are deposited at gate. Grab coffee and head to workstation.",
+          "9:30 AM - Simulation Time: Working on wing design of new unmanned aerial vehicle (UAV). Use ANSYS to run a 'stress test.' Need to know: If this drone flies into a storm, will the wing snap? Computer simulation shows red danger zone on wing tip. Back to drawing board.",
+          "11:30 AM - Hangar Visit: Best part. Put on safety helmet and walk to massive hangar where actual prototypes are kept. Talk to technicians assembling fuselage. Mechanic points out that certain bolt is hard to reach. Note this down—engineers must design things easy to fix, not just easy to fly.",
+          "1:00 PM - Lunch & Discussion: Talk isn't about cricket, but about latest SpaceX launch and engine efficiency.",
+          "2:30 PM - Team Meeting: 'Aerodynamics Team' fighting with 'Structures Team' (Rohan's team). Aerodynamics guy wants thinner wings for speed; Rohan argues thinner wings might break. Compromise on new composite material that is both light and strong.",
+          "5:00 PM - Documentation: In aviation, if it isn't documented, it didn't happen. Write detailed report on why wing material was changed. Single error could cost lives, so double-check every decimal point.",
+          "6:30 PM - Reflection: Drive home and see plane taking off from HAL airport. Smile, knowing the physics behind that miracle."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Aeronautical Engineer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Tinkerer: Did you love building Lego sets, model planes, or taking apart remote-controlled cars?",
+          "The Physics Geek: Do you actually enjoy Newton's laws and fluid dynamics? (You can't escape physics in this job).",
+          "The Perfectionist: In this field, '99% correct' is a failure. You need to be obsessed with accuracy.",
+          "The Spatial Thinker: Can you visualize 3D objects in your head?",
+          "Hard Skills: Strong command over Mathematics (Calculus) and Physics, proficiency in CAD software (CATIA, SolidWorks), understanding of materials (aluminum, composites).",
+          "Soft Skills: Teamwork (planes built by teams of thousands), problem-solving under pressure, technical writing.",
+          "The Self-Check: Do you love machines? Do you enjoy solving complex physics problems? If yes, you have the Aeronautical Engineer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The V-Model of systems engineering.",
+        color: BLUE2,
+        content: [
+          "Design: Drafting blueprints for engines, wings, or fuselages using computer software.",
+          "Analysis (CFD): Using 'Computational Fluid Dynamics' to simulate how air flows over the plane.",
+          "Material Selection: Choosing materials that are lightweight but stronger than steel.",
+          "Prototyping: Building a small-scale model or a single component.",
+          "Testing: Rigorous phase—putting engine in test cell or wing in wind tunnel to see if it survives extreme conditions.",
+          "Maintenance (MRO): For those in airline industry, ensuring existing planes are safe to fly every single day.",
+          "Documentation: Recording every detail for safety and compliance."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Engineering Degree (Design & R&D Focus): Class 12: Science Stream (PCM) mandatory. High scores in Math and Physics crucial. Entrance Exams: JEE Advanced (IITs), JEE Main (NITs/IIEST), State CETs, IIST Admission. Undergraduate: B.Tech/B.E. in Aeronautical or Aerospace Engineering (4 Years). Postgraduate (Optional): M.Tech in specialized fields like Aerodynamics or Avionics.",
+          "Pathway B - Aircraft Maintenance Engineering (AME) Route (Operational Focus): Different from B.Tech—license-based course. Class 12: Science Stream (PCM). Entrance: AME CET or institute-specific exams. Course: AME Course (3 Years) approved by DGCA. Outcome: License to inspect and certify aircraft. Cannot design planes, but authorized to say 'This plane is safe to fly.'",
+          "Top Institutions: IIST Thiruvananthapuram, IIT Bombay, IIT Madras, IIT Kanpur, MIT Chennai, Manipal Institute, Amity University, HITS Chennai, IIAEIT Pune.",
+          "Alternative: Many successful engineers pursue specialized M.Tech after B.Tech in related fields."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: Indian aerospace & defense market projected to reach $70 Billion by 2030. UDAN scheme (regional connectivity) creating massive demand for smaller aircraft and maintenance crews.",
+          "Hiring Trends: Major hiring shifting from purely government bodies (HAL/DRDO) to private players (Tata Advanced Systems, Mahindra Aerospace, Adani Defence) and Global Capability Centers (GCCs) of Boeing and Airbus in India.",
+          "Entry-Level (0-2 Yrs): Graduate Engineer Trainee: ₹4L–₹7L (Commercial) or ₹56,100/month + Perks (Govt/R&D).",
+          "Mid-Level (3-7 Yrs): Sr. Design Engineer: ₹10L–₹18L (Commercial) or ₹12L–₹16L (Govt/R&D).",
+          "Senior-Level (8-15 Yrs): Chief Engineer/Project Lead: ₹25L–₹45L (Commercial) or ₹20L–₹30L (Govt/R&D).",
+          "Leadership: Program Director/CTO: ₹60L–₹1Cr+ (Commercial) or As per Govt Grade Pay.",
+          "Growth Trajectory: Fastest growth in drone/UAV sector and green aviation."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Cities (The 'Aero-Triangle'): Bangalore (Undisputed Aerospace Capital—home to ISRO, HAL, NAL, Boeing/Airbus tech centers), Hyderabad (Major hub for precision manufacturing and drone startups), Pune (Growing hub for defense manufacturing).",
+          "Top Industries: Govt/Defense (ISRO, DRDO, HAL, NAL), Private Manufacturing (Tata Advanced Systems, Mahindra Aerospace, Godrej Aerospace), MNC Tech Centers (Boeing India, Airbus India, GE Aviation, Rolls-Royce), Airlines Maintenance (IndiGo, Air India, Akasa Air—mostly for AME roles).",
+          "Emerging Opportunities: Drone/UAV Engineering, Avionics Engineering, Composites Engineering, Green Aviation, Urban Air Mobility (Flying Taxis).",
+          "International: High demand for Indian aeronautical engineers in USA, UK, Singapore, and Australia.",
+          "Freelancing: Limited but growing in drone design and consulting."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "IITs / IIST (Government): ₹8L–₹10L (4 years). Heavily subsidized. IIST offers full fee waivers for high performers.",
+          "Top Private (Manipal/Amity): ₹12L–₹18L (4 years). Expensive but good infrastructure.",
+          "State Government Colleges: ₹2L–₹4L (4 years). Affordable, but verify lab facilities first.",
+          "AME Course (License): ₹3L–₹6L (3 years).",
+          "Additional Costs: Software certifications (ANSYS, CATIA): ₹10,000–₹30,000.",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Scholarships: IIST Assistantship, AME CET Scholarship, AICTE Pragati, DRDO Scholarship for Girls."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for aeronautical engineering in India.",
+        color: BLUE,
+        content: [
+          "Government Leaders: Indian Institute of Space Science and Technology (IIST) Thiruvananthapuram—Only institute in Asia dedicated to space. Direct ISRO recruitment potential. IIT Bombay & IIT Madras—Premier institutes for Aerospace Engineering. IIT Kanpur—Known for own airfield and flight testing laboratory. Madras Institute of Technology (MIT) Chennai—Legendary institute (Dr. Kalam's alma mater).",
+          "Private Excellence: Manipal Institute of Technology (MIT) Manipal—Excellent student projects and labs. Amity University Noida—Strong aerospace department. Hindustan Institute of Technology and Science (HITS) Chennai—Known for aviation focus. IIAEIT Pune—Specialized aeronautical institute.",
+          "Research Centers: ISRO, DRDO, HAL, NAL offer internships and research opportunities.",
+          "International Collaborations: Many Indian institutions partner with top universities for advanced aerospace research."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "IIST Assistantship: If you score high GPA at IIST, entire education funded by Department of Space, guaranteed job at ISRO.",
+          "AME CET Scholarship: Offers up to 100% tuition waivers for Aircraft Maintenance Engineering students based on rank.",
+          "AICTE Pragati Scholarship: For girl students pursuing technical education (₹50,000/year).",
+          "DRDO Scholarship Scheme for Girls: Specifically for undergraduate students studying Aerospace/Aero engineering.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12.",
+          "Corporate Sponsorships: HAL, ISRO sometimes sponsor talented candidates."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Certifications: Software Tools (Learning ANSYS, CATIA/SolidWorks, MATLAB almost mandatory for design jobs), CFD Analysis (Certification in Computational Fluid Dynamics adds huge value).",
+          "Licensing: DGCA License (Mandatory only for AME—Maintenance Engineers. Design engineers do not need license to work).",
+          "Professional Bodies: AeSI (Aeronautical Society of India)—Prestigious body; student membership highly recommended for networking.",
+          "Industry Recognition: ANSYS Certified Associate, Autodesk Certified Professional, AeSI Membership.",
+          "Continuing Education: Regular certifications in AI-driven design, green aviation, and emerging technologies."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in aeronautical engineering.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Design Engineer—Drawing aircraft components. Stress Analyst—Testing if components will break. Maintenance Engineer (AME)—Inspecting planes daily.",
+          "New-Age Careers: Drone/UAV Engineer—Designing drones for agriculture, delivery, surveillance (Fastest growing sector). Avionics Engineer—Specializing in 'electronics' of plane (Auto-pilot, Radar). Composites Engineer—Creating new lightweight materials.",
+          "Emerging Fields: Green Aviation Specialist, Electric Aircraft Designer, AI-Powered Flight Systems Engineer, Urban Air Mobility (Flying Taxi) Designer.",
+          "Freelancing/Entrepreneurship: Drone Startups—Launching company for drone-based mapping or photography. Consulting—Advising startups on aerospace design.",
+          "International: Working with global aerospace companies and leading multinational research teams."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of aeronautical engineering.",
+        color: BLUE,
+        content: [
+          "Niche Market: Unlike Computer Science where jobs are everywhere, Aero jobs concentrated in specific cities (Bangalore/Hyderabad). You will likely have to move.",
+          "Security Clearances: Working in defense/ISRO means strict background checks. You often cannot talk about your work to friends.",
+          "Cyclical Industry: Aviation industry sensitive to global events (like oil prices or pandemics).",
+          "High Academic Rigor: One of toughest engineering branches. Math is advanced and unforgiving.",
+          "Physical Demands: Lab work and testing can be physically demanding.",
+          "Pressure to Innovate: Constant need to stay updated with global aerospace trends and technologies."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of aeronautical engineering.",
+        color: BLUE2,
+        content: [
+          "Green Aviation: Race is on to build Electric Planes and Hydrogen-fuelled engines to reduce pollution. Engineers who know 'battery technology + aerodynamics' will be gold.",
+          "Urban Air Mobility (Flying Taxis): Companies actively testing 'eVTOLs' (Electric Vertical Take-off and Landing) vehicles. By 2035, air taxis might be reality in Indian metros.",
+          "AI in Flight: AI autopilots becoming smarter. Future engineers will write code that helps planes fly themselves.",
+          "Autonomous Aircraft: Unmanned commercial aircraft for cargo delivery and passenger transport.",
+          "Sustainable Materials: Development of bio-based and recyclable aerospace materials.",
+          "Space Tourism: Growing demand for engineers to design commercial spacecraft."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Model Rocketry: Don't just read. Buy DIY Aero-modelling kit. Build glider. Understand why it flies or crashes.",
+          "Learn Coding: Python increasingly used in aerodynamic analysis. Learn basics.",
+          "Watch 'Air Crash Investigation': Sounds morbid, but teaches exactly how complex systems fail and why safety engineering vital.",
+          "Master Calculus: Pay attention in math class. Cannot design curve on wing without Calculus.",
+          "Online Courses: Explore Coursera or YouTube for aerodynamics and flight mechanics basics.",
+          "DIY Projects: Build paper airplanes with different designs. Test which flies farthest. Understand aerodynamic principles."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring aeronautical engineers from India.",
+        color: BLUE2,
+        content: [
+          "Dr. A.P.J. Abdul Kalam: The 'Missile Man of India.' Aeronautical engineer (from MIT Chennai) who became President. Ultimate inspiration for this field.",
+          "Kalpana Chawla: First woman of Indian origin in space. Aeronautical Engineering graduate from Punjab Engineering College.",
+          "Satish Dhawan: Father of experimental fluid dynamics in India. ISRO launch center named after him.",
+          "Tessy Thomas: Known as 'Missile Woman of India.' Distinguished scientist at DRDO and expert in guided missiles.",
+          "Vikram Sarabhai: Founder of ISRO. Visionary who established India's space program and aeronautical research."
+        ]
+      }
+    ]
+  },
+  air_traffic_controller: {
+    slug: "air_traffic_controller",
+    badge: "🛫 The Invisible Conductors for Class 10+",
+    heading: "Air Traffic Controller",
+    subheading: "Managing the sky safely—guiding hundreds of planes daily to prevent collisions and ensure smooth operations at airports.",
+    whyCards: [
+      { icon: "TrendingUp", title: "100+ New Airports Coming", description: "With UDAN scheme launching flights to small towns and massive new airports (Jewar, Navi Mumbai), the sky is getting crowded. Demand for ATCs skyrocketing.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Government Job Security", description: "99% of ATC jobs in India are with AAI (Airports Authority of India), a Mini-Ratna PSU. Permanent government employment with excellent benefits.", borderColor: "#059669" },
+      { icon: "Zap", title: "Excellent Salary & Allowances", description: "₹12L–₹50L+ annually. Stress allowance, HRA, medical benefits make it one of the best-paying government jobs.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Global Opportunities", description: "Experienced Indian ATCs in high demand in Middle East (Dubai, Qatar, Saudi) with tax-free salaries 3x higher than India.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3-4 Years (B.Sc/B.Tech) + 1 Year Training at CATC", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Radar Systems, Radio Communication, ADS-B, Flight Strips", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹12L–₹50L+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "100+", label: "New Airports Coming", gradient: "from-green-500 to-green-600" },
+      { value: "300-500", label: "ATCs Recruited Annually", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The CEO of the sky.",
+        color: BLUE,
+        content: [
+          "Air Traffic Controller Defined: The 'CEO of the Sky' for their shift. They sit in high-tech towers or radar rooms, monitoring screens that look like complex video games, but with real lives at stake.",
+          "Core Responsibility: Issue instructions to pilots to ensure safety, prevent collisions, and manage the flow of traffic.",
+          "The Real Question: When you look up at the sky and see a plane, you see the pilot flying it. But who tells the pilot where to fly, when to turn, and how to land without hitting the five other planes nearby? That is the Air Traffic Controller.",
+          "The Scope: Managing aerodrome control (runway), approach control (guiding planes to land), area control (managing high-altitude traffic), and alerting service (search and rescue).",
+          "Why It Matters in India: With UDAN scheme launching flights to small towns and massive new airports coming up, the sky is getting crowded. Without ATCs, the entire aviation sector would grind to a halt in 5 minutes.",
+          "The Responsibility: It is a job of high pressure, high prestige, and immense responsibility. Every decision impacts hundreds of lives."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Vikram, Junior Executive ATC",
+        icon: "Clock",
+        description: "Real workflow at Indira Gandhi International Airport.",
+        color: BLUE2,
+        content: [
+          "7:30 AM - Shift Start: Swipe ID card. Work in shifts because airport never sleeps. Today on 'Morning Shift.' Enter Area Control Centre (ACC)—dark, cool room filled with glowing radar screens.",
+          "8:00 AM - Briefing: Previous shift officer tells you: 'Visibility is good, but there's a VIP movement expected at 10 AM, and sector 4 has turbulence.' Plug in headset. Now 'live.'",
+          "9:30 AM - Peak Hour: Screen shows 15 blips—each a plane carrying 200+ people. Speak in rapid, coded language: 'IndiGo 6E 234, descend to flight level 1-5-0, turn left heading 2-4-0.' Visualize 3D space in head. Two planes getting too close; calmly instruct one to speed up and other to slow down.",
+          "11:00 AM - Emergency: Pilot reports 'bird hit' during takeoff. Heart rate spikes, but voice remains robotically calm. Immediately clear runway, divert three incoming flights to holding pattern, guide damaged plane back for safe landing.",
+          "1:00 PM - Break: ATC rules strict—cannot work continuously for more than 2 hours without break to prevent mental fatigue. Grab lunch and chat with colleagues.",
+          "2:30 PM - Tower Duty: Rotate to visual Tower. Look out glass windows, managing planes taxiing on ground. Like managing chaotic traffic signal, but cars cost ₹500 crores each.",
+          "3:30 PM - Handoff: Brief next officer and unplug. Brain tired, but walking out, watch plane takeoff and think: 'I made that happen safely.'"
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The ATC's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Calm in Chaos: When things go wrong, do you panic, or do you get hyper-focused? (Panic is not an option here).",
+          "The Multitasker: Can you listen to someone talking, read a text, and write a note at the same time? ATCs listen to pilots while scanning radars and typing commands.",
+          "The Spatial Thinker: Can you close your eyes and imagine where objects are in a room? You need to visualize planes moving in 3D space.",
+          "The Decisive Leader: You have 3 seconds to make a decision. You cannot say, 'Let me think about it.'",
+          "Hard Skills: Proficiency in English (global language of aviation), basic Physics/Maths, computer literacy.",
+          "Soft Skills: Clear communication (voice clarity), immediate decision-making, teamwork.",
+          "The Self-Check: Do you thrive under pressure? Do you have nerves of steel? If yes, you have the ATC's DNA. (Note: You don't need to be a math genius, but you need nerves of steel.)"
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The four pillars of ATC work.",
+        color: BLUE2,
+        content: [
+          "Aerodrome Control (Tower): Sitting in tall glass tower, manage runway. Give permission for Takeoff and Landing.",
+          "Approach Control: Guide plane from airport to about 40-50 miles out. Align them in queue to land.",
+          "Area Control (En-route): Manage planes flying high at 35,000 feet, ensuring they don't crash into each other while crossing your sector.",
+          "Alerting Service: Trigger search and rescue if plane disappears from radar.",
+          "Continuous Monitoring: Scan radar screens, listen to pilot communications, track weather patterns.",
+          "Emergency Response: Handle medical emergencies, mechanical failures, and security threats with calm professionalism."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Note: Unlike other careers, you cannot get a 'Degree in ATC' from college. You must get general degree and then apply to AAI.",
+          "Pathway: The AAI Junior Executive Route (Gold Standard): Class 12: Science Stream (Physics & Mathematics mandatory). Undergraduate Degree (Eligibility Step): Option A: B.Sc. in Physics and Mathematics (3 Years). Option B: B.Tech/B.E. in any discipline (Mechanical, CS, Civil, Electronics, etc.). Tip: B.Tech often preferred because technical knowledge helps.",
+          "Entrance Exam: Apply for AAI Junior Executive (ATC) Exam. Frequency: Generally once a year or every 18 months. Syllabus: Physics & Math (Class 12 level) + English & Aptitude.",
+          "Selection: Online Test → Voice Test (Checking for stuttering/clarity) → Medical Test.",
+          "Training: If selected, sent to Civil Aviation Training College (CATC) in Prayagraj for roughly 1 year rigorous training. Paid salary/stipend during this time.",
+          "Top Institutions for Degree: IITs/NITs (B.Tech), Delhi University/BHU (B.Sc Physics/Maths), Anna University Chennai, Mumbai University."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Employer Monopoly: 99% of ATC jobs in India with AAI (Airports Authority of India), a Mini-Ratna PSU. Government Job Security.",
+          "Demand: India building 100+ new airports. Demand for ATCs skyrocketing. AAI recruits in batches of 300-500 regularly.",
+          "Entry-Level (0-3 Yrs): Junior Executive (JE): ₹12L–₹14L annually.",
+          "Mid-Level (4-8 Yrs): Assistant Manager/Manager: ₹18L–₹22L annually.",
+          "Senior-Level (9-15 Yrs): Asst. General Manager (AGM): ₹26L–₹32L annually.",
+          "Leadership: Joint GM/General Manager: ₹40L–₹50L+ annually.",
+          "Note: Allowances (HRA, Medical, Stress Allowance) make up huge chunk of pay. Stress Allowance reflects the high-pressure nature of the job."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Strictly Aviation. AAI controls almost all Indian airspace (Civil & some Defense enclaves). Private Airports (HAL/Jindal) very rare; usually hire retired AAI or Air Force personnel. Indian Air Force has own ATC officers (Entry via AFCAT), but that is military career.",
+          "Top Cities: Metros (Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata—Busiest & Highest Stress). Tier-2 (Amritsar, Guwahati, Nagpur, Trivandrum). Remote (Could be posted to small island in Lakshadweep or high-altitude airport in Leh!).",
+          "Remote Work: None. Must be physically present in tower/radar room.",
+          "Global Opportunities: Experienced Indian ATCs in high demand in Middle East (Dubai, Qatar, Saudi) with tax-free salaries 3x higher than India.",
+          "Emerging Opportunities: Remote Towers (controlling airports from distant locations), Flow Management (national-level traffic management), Instructor roles."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and living expenses.",
+        color: BLUE2,
+        content: [
+          "Preparation Phase (B.Sc/B.Tech): Depends on college (IITs vs. Local College). Range: ₹3L to ₹15L.",
+          "AAI Training Phase: Cost: Zero. In fact, AAI pays you salary while you train at CATC Allahabad. Bond: Usually Surety Bond (approx. ₹7-10L) that you must pay if you quit AAI within 3 years.",
+          "Coaching: Many students take coaching for AAI JE exam (approx. ₹10k–₹20k online).",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Scholarships: INSPIRE Scholarship (SHE) for top 1% students in Class 12 Boards joining B.Sc. Central Sector Scheme of Scholarship. AICTE Saksham Scholarship for differently-abled students."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for air traffic control in India.",
+        color: BLUE,
+        content: [
+          "For Qualifying Degree (B.Sc/B.Tech): IITs/NITs (B.Tech in any branch), Delhi University/BHU (B.Sc Physics/Maths), Anna University Chennai, Mumbai University.",
+          "For Professional Training (After Selection): Civil Aviation Training College (CATC) Prayagraj—Alma mater of every Indian ATC. NIATAM (National Institute of Aviation Training and Management) Gondia—Satellite training center.",
+          "Online Learning: Coursera, edX for physics and mathematics fundamentals.",
+          "Coaching Centers: Various institutes offer AAI JE exam coaching with mock tests and study materials.",
+          "International Collaborations: CATC partners with international ATC training centers for advanced techniques."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Since training is paid, scholarships needed only for B.Sc/B.Tech.",
+          "INSPIRE Scholarship (SHE): For top 1% students in Class 12 Boards joining B.Sc.",
+          "Central Sector Scheme of Scholarship: For college and university students.",
+          "AICTE Saksham Scholarship: For differently-abled students in technical education.",
+          "Merit-Based: Most universities offer merit scholarships for top performers.",
+          "Government Schemes: Various state government scholarships for science students.",
+          "AAI Sponsorship: AAI sometimes sponsors coaching for selected candidates."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Licensing: Just like pilot, ATC holds License. Cannot work without it. Earn 'Ratings' (e.g., Radar Rating, Tower Rating). If fail medical or proficiency test, lose rating.",
+          "ATC Guild (India): Professional association representing ATCs in India.",
+          "Medical Certification: Must pass strict medical exam every few years. Eyesight, hearing, and mental fitness regularly tested.",
+          "Proficiency Checks: Regular simulator checks and practical assessments to maintain license.",
+          "International Recognition: ICAO (International Civil Aviation Organization) standards ensure Indian ATC licenses recognized globally."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in air traffic control.",
+        color: BLUE2,
+        content: [
+          "Conventional Career: Moving up ladder in AAI from JE to Member (ANS)—highest technical post in Indian aviation.",
+          "New-Age Roles: Airspace Designer (designing new flight paths to save fuel), Flow Manager (managing traffic on national level), Instructor (teaching new recruits at CATC).",
+          "Emerging Fields: Remote Tower Operator, AI-Assisted ATC Specialist, Drone Traffic Management Specialist.",
+          "Global Opportunities: Experienced Indian ATCs in high demand in Middle East (Dubai, Qatar, Saudi) with tax-free salaries.",
+          "Consulting: Advising airports on ATC infrastructure and procedures.",
+          "International: Working with ICAO and global aviation organizations."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of air traffic control.",
+        color: BLUE,
+        content: [
+          "High Stress: Make life-and-death decisions every minute. 'Stress Allowance' in salary reflects this reality.",
+          "Shift Work: Work nights, Diwalis, and Eids. Sleep cycle disrupted. Requires strong mental and physical health.",
+          "Medical Fitness: Must pass strict medical exam every few years. If eyesight fails or develop certain health issues, might lose license (and core job).",
+          "No 'Work from Home': Must be physically present in tower/radar room, rain or shine.",
+          "Pressure & Responsibility: Every decision impacts hundreds of lives. Mistakes can be catastrophic.",
+          "Limited Mobility: Postings often in remote locations. Career progression tied to seniority and postings."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of air traffic control.",
+        color: BLUE2,
+        content: [
+          "Remote Towers: Controllers might sit in room in Mumbai and control airport in small town like Shirdi using high-def cameras and sensors. Already happening in Europe.",
+          "AI Assistance: AI will not replace ATCs, but will predict conflicts. Instead of spotting collision course yourself, AI warns 10 minutes in advance.",
+          "Green Aviation: ATCs play huge role in 'Continuous Descent Operations'—guiding planes to glide down smoothly to save fuel and reduce carbon emissions.",
+          "Drone Traffic Management: New role managing hundreds of drones in urban airspace alongside traditional aircraft.",
+          "Autonomous Aircraft: Managing unmanned commercial aircraft for cargo delivery and passenger transport.",
+          "Advanced Radar Systems: Next-generation surveillance systems providing real-time 3D tracking of all aircraft."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Video Games: Yes, really! Strategy games requiring resource management and multitasking (like Flight Control or RTS games) help build cognitive skills.",
+          "Improve Diction: Practice speaking English clearly. Read newspapers aloud. In Voice Test, stammering or heavy accents can be disqualifier.",
+          "Mental Math: Calculate speed and distance in head. If car going 60kmph, how far will it go in 12 mins? (Ans: 12km). Need this speed.",
+          "Physics: Understand basics of Doppler effect (Radar) and radio waves.",
+          "Online Courses: Explore Coursera or YouTube for physics and mathematics fundamentals.",
+          "Simulation Practice: Try flight simulation games to understand 3D spatial awareness."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring air traffic controllers from India.",
+        color: BLUE2,
+        content: [
+          "Vipin Kumar (Current AAI Chairman): While from IAS, leads organization that employs all ATCs. Driving modernization of Indian airspace.",
+          "The 'Heroes of Mumbai 26/11': ATC staff at Mumbai airport who kept guiding planes safely even while terrorists attacked city, ensuring airport remained lifeline.",
+          "Member (ANS), AAI: Highest post ATC can aspire to—heading entire Air Navigation Service of India. Incumbent changes, but chair represents pinnacle of profession.",
+          "Retired ATC Legends: Many retired ATCs now work as consultants, helping design new airports and training centers across India.",
+          "International Recognition: Indian ATCs recognized globally for professionalism and expertise in managing complex airspace."
+        ]
+      }
+    ]
+  },
+  automotive_design: {
+    slug: "automotive_design",
+    badge: "🚗 The Sculptors of Speed for Class 10+",
+    heading: "Automotive Design",
+    subheading: "Creating the future of mobility—designing cars that are beautiful, aerodynamic, safe, and sustainable.",
+    whyCards: [
+      { icon: "TrendingUp", title: "₹6-7M Units Annually by 2030", description: "India is the 3rd largest auto market globally. EV revolution creating massive demand for innovative designers.", borderColor: "#10B981" },
+      { icon: "Zap", title: "EV Revolution", description: "Electric cars don't have engines, giving designers total freedom to reinvent how cars look and function.", borderColor: "#059669" },
+      { icon: "Globe", title: "Global Design Hubs in India", description: "Renault-Nissan (Chennai), Mercedes-Benz (Bangalore/Pune), Hyundai (Hyderabad) setting up massive design studios.", borderColor: "#3B82F6" },
+      { icon: "Briefcase", title: "Salary & Career Growth", description: "₹6L–₹2Cr+ annually. Designers highly respected globally; many move to Italy, Germany, or UK.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Des/B.Tech) + 2 Years (M.Des) optional", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Autodesk Alias, Blender, CATIA, Wacom Tablets, VR", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹6L–₹2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "6-7M", label: "Units Annually by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "3rd", label: "Largest Auto Market", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Where art meets engineering on wheels.",
+        color: BLUE,
+        content: [
+          "Automotive Design Defined: The art and science of creating vehicles that are beautiful, aerodynamic, safe, ergonomic, and manufacturable.",
+          "The Scope: Exterior styling (how the car looks), interior design (dashboard, seats, cabin experience), and user experience (how people interact with the vehicle).",
+          "Real Impact: When you see a Mahindra Thar or Tata Nexon on the road, you are admiring the work of automotive designers. These vehicles have won global design awards.",
+          "The Dual Nature: You are not just drawing cool cars; you are solving engineering problems. How do I fit a tall person comfortably in a small car? How do I make the car aerodynamic without sacrificing beauty?",
+          "Why It Matters in India: India has moved from manufacturing cars designed in Japan or Germany to creating globally competitive designs. Tata and Mahindra are winning international awards.",
+          "The Future: With the EV revolution, designers have unprecedented freedom. No engine means flat floors, lounge-like interiors, and completely new possibilities."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Kabir, Creative Designer at EV Startup",
+        icon: "Clock",
+        description: "Real workflow at a Pune-based automotive design studio.",
+        color: BLUE2,
+        content: [
+          "9:00 AM - Studio Arrival: Walk into a sci-fi art gallery. Sketches pinned on walls, 3D printers humming. Grab coffee and put on VR headset.",
+          "10:00 AM - Digital Review: Meet in a 'Virtual Room' to inspect the dashboard of a new electric SUV. Boss says, 'The steering wheel feels too far from the driver.' Note it down.",
+          "11:30 AM - Sketching Session: Move to Wacom tablet. Sketch 20 different variations of a headlamp. Play with light, shadow, and lines to make the car look 'angry' and sporty.",
+          "1:30 PM - Lunch & Collaboration: Eat with the Clay Modeling team. Debate whether the new bumper design is possible to manufacture.",
+          "3:00 PM - Clay Studio: Visit ground floor where a full-size clay model is being sculpted. Use a scraper to slightly curve the door line by 2 millimeters. In design, 2mm changes how light hits the metal.",
+          "5:30 PM - Aerodynamics Meeting: Meet with Aerodynamics Engineers. They say your beautiful side-mirror design creates too much wind noise. Redesign it to be quieter but still cool.",
+          "7:00 PM - End of Day: Spot a disguised prototype leaving the factory gate for a test run. Smile knowing you designed those wheels."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Automotive Designer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Dreamer: Do you doodle cars, bikes, or futuristic vehicles on the back of your notebooks?",
+          "The Observer: Do you notice details like the shape of a tail light or the texture of a car seat?",
+          "The Problem Solver: Design isn't just art; it's solving problems. How do I fit a tall person comfortably in a small car?",
+          "The Tech-Savvy Artist: You must be comfortable switching from a pencil to complex 3D software.",
+          "Hard Skills: Sketching (perspective drawing), 3D Modelling (Autodesk Alias, Blender), Rendering, understanding of Materials & Aerodynamics.",
+          "Soft Skills: Visual Communication (selling your idea), Patience (a car takes 4 years to build), Teamwork.",
+          "The Self-Check: Do you love cars? Do you notice design details? If yes, you have the Automotive Designer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Design Workflow",
+        icon: "Briefcase",
+        description: "From sketch to road car.",
+        color: BLUE2,
+        content: [
+          "Sketching & Ideation: Drawing hundreds of rough ideas on paper/digital pads to explore design directions.",
+          "CAS (Computer-Aided Styling): Turning the best sketch into a 3D digital model using software like Alias.",
+          "Clay Modeling: Sculpting a physical model (scale 1:4 or 1:1) to see how the car looks in real life.",
+          "Class-A Surfacing: Refining the digital surface to microscopic perfection for manufacturing.",
+          "CMF (Color, Materials, Finish): Deciding the paint color, seat fabric, and dashboard texture.",
+          "Prototyping: Building a functioning concept car to test design feasibility.",
+          "Collaboration: Working with engineers to ensure design is both beautiful and manufacturable."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Design School Route (For Styling & Creative Roles): Class 12: Any stream (Science preferred but not mandatory). Entrance Exams: UCEED (IIT Bombay, IIT Delhi), NID DAT, SEED/UPES-DAT. Undergraduate: B.Des in Transportation Design or Mobility Design (4 Years). Portfolio crucial for job placements.",
+          "Pathway B - Engineering Route (For Technical & Functional Design): Class 12: Science Stream (PCM). Undergraduate: B.Tech in Mechanical or Automobile Engineering (4 Years). Postgraduate: M.Des in Transportation Design (2 Years) via CEED exam. This allows engineers to switch to creative styling.",
+          "Top Institutions: NID Ahmedabad & Gandhinagar, IDC IIT Bombay, MIT-ID Pune, Strate School of Design Bangalore, UPES Dehradun, UID Ahmedabad.",
+          "Career Progression: Junior Designer → Senior Designer → Design Manager → Head of Design → Chief Design Officer."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Size: India is the 3rd largest auto market globally. By 2030, market expected to reach 6-7 million units annually.",
+          "Growth Driver: The EV Revolution. Electric cars don't have engines, meaning designers have total freedom to reinvent how cars look.",
+          "Demand: Massive demand for UX/UI Designers for car dashboards. The car is becoming a 'computer on wheels.'",
+          "Entry-Level (0-2 Yrs): Jr. Transportation Designer: ₹6L–₹10L (OEMs) or ₹4L–₹7L (Service Firms).",
+          "Mid-Level (3-7 Yrs): Sr. Creative Designer/Clay Modeler: ₹15L–₹25L (OEMs) or ₹10L–₹18L (Service Firms).",
+          "Senior-Level (8-12 Yrs): Design Manager/Lead: ₹30L–₹50L (OEMs) or ₹22L–₹40L (Service Firms).",
+          "Leadership: Head of Design/Design Director: ₹80L–₹2Cr+ (OEMs) or ₹60L+ (Service Firms)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: OEMs (Tata Motors, Mahindra & Mahindra, Maruti Suzuki, Hero MotoCorp, Royal Enfield, Ola Electric), Global R&D Centers (Renault-Nissan Chennai, Mercedes-Benz Bangalore/Pune, Hyundai Hyderabad), Design Consultancies (Tata Elxsi, Hinduja Tech).",
+          "Top Cities: Pune ('Detroit of India'—Tata, Mercedes, Bajaj, Force), Chennai ('Other Detroit'—Hyundai, Royal Enfield, Renault), Gurgaon/Manesar (Maruti Suzuki hub), Bangalore (EV & Tech hub—Ola, Ather, Mercedes R&D).",
+          "International: Indian designers highly respected globally. Many move to Italy (Pininfarina), Germany, or UK after gaining experience.",
+          "Emerging Opportunities: EV Design, Autonomous Vehicle Design, HMI (Human Machine Interface) Design, Sustainable Materials Design."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Government (NID/IITs): ₹10L–₹12L (4 Years). Highly subsidized but extremely competitive.",
+          "Top Private (MIT-Pune/UPES): ₹18L–₹24L (4 Years). Expensive due to studio costs and software licenses.",
+          "International (ArtCenter/RCA): ₹1Cr–₹2Cr (For those studying abroad in USA/UK).",
+          "Tools & Equipment: ₹1.5L–₹2L (High-end Laptop, Wacom Tablet, Markers, Software).",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Software Licenses: Autodesk Alias, Blender (free), CATIA subscriptions."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for automotive design in India.",
+        color: BLUE,
+        content: [
+          "Government (Public) - The Holy Grails: National Institute of Design (NID) Ahmedabad & Gandhinagar, IDC School of Design IIT Bombay (Mobility & Vehicle Design), IIT Delhi & IIT Guwahati (Strong design departments).",
+          "Private - Excellent Infrastructure: MIT Institute of Design (MIT-ID) Pune (Located in auto-hub, excellent industry connect), Strate School of Design Bangalore (French design pedagogy), UPES Dehradun (Transportation Design), DYPDC School of Design Pune (Collaboration with Dilip Chhabria), UID Ahmedabad.",
+          "Industry Partnerships: Many institutes partner with OEMs for student projects and internships.",
+          "Online & Blended: Coursera, Udemy offer automotive design courses for skill enhancement."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Ford/Mahindra Scholarships: Often partner with institutes like NID for student projects and grants.",
+          "Lady Meherbai D Tata Education Trust: For women graduates going abroad for higher studies in design.",
+          "Institutional Scholarships: UPES and MIT-ID offer merit-based tuition waivers (up to 50%) for top rankers.",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Corporate Sponsorships: Tata Motors, Mahindra sometimes sponsor talented candidates."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "No License Required: Your Portfolio is your license in automotive design.",
+          "Software Certifications: Autodesk Alias (Industry standard for Class-A surfacing), Blender/Unreal Engine (For visualization and VR), CATIA (Advanced surface modeling).",
+          "Professional Memberships: ADDI (Association of Designers of India) for networking, SAE India (Society of Automotive Engineers) for technical knowledge.",
+          "Industry Recognition: Winning design competitions and awards significantly boosts career prospects.",
+          "Continuing Education: Regular certifications in AI-driven design, sustainable materials, and emerging technologies."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in automotive design.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Exterior Designer (designing the outside body), Interior Designer (designing dashboard, seats, cabin), Clay Modeler (sculpting physical models).",
+          "New-Age Careers: HMI (Human Machine Interface) Designer (designing touchscreens and digital dials), CMF Designer (specializing in fabrics, leathers, paints), VR Modeler (creating immersive 3D car experiences).",
+          "Emerging Fields: EV Design Specialist, Autonomous Vehicle Designer, Sustainable Materials Designer, Urban Mobility Designer.",
+          "Freelancing: Digital Artist (creating concept art for games/movies), Custom Bike Builder (modifying motorcycles for clients).",
+          "Entrepreneurship: Starting a design consultancy or boutique design studio."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of automotive design.",
+        color: BLUE,
+        content: [
+          "Intense Competition: Very few 'Car Designer' jobs compared to 'Software Engineer' jobs. Must be in top 1% to get into major studio.",
+          "Subjectivity: You might work on a design for 6 months, and the CEO might reject it simply because they 'don't like the curve.' Can be heartbreaking.",
+          "Long Hours: Near launch deadlines, designers often work weekends and nights.",
+          "Cost of Education: Design education in private colleges significantly more expensive than regular engineering.",
+          "Geographic Limitation: Most jobs concentrated in Pune, Chennai, Bangalore. You will likely have to relocate.",
+          "Rapid Skill Obsolescence: Must constantly learn new software and design trends."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of automotive design.",
+        color: BLUE2,
+        content: [
+          "The Living Room Concept: With Autonomous (Self-Driving) Cars, the driver doesn't need to drive. Cars will become 'lounges' with swivel seats and big screens. Designers will design rooms, not cockpits.",
+          "Sustainability: Using recycled plastics, vegan leather (mushroom leather), and bamboo in car interiors is the biggest trend.",
+          "Aerodynamics is King: For EVs, range is everything. Designers must create slippery, smooth shapes to reduce drag and save battery.",
+          "AI-Assisted Design: AI tools will help generate design variations, speeding up the creative process.",
+          "Personalization: Cars will be customizable at the design level, with modular interiors and exteriors.",
+          "Biophilic Design: Bringing nature into car interiors—natural materials, organic shapes, and wellness-focused design."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Sketch Everyday: Don't use a ruler. Draw straight lines and perfect circles freehand. This 'muscle memory' is vital.",
+          "Observe Shapes: Look at a car. Don't just say 'it's red.' Ask 'Why does the roof curve like that?'",
+          "Learn Perspective: Learn 1-point, 2-point, and 3-point perspective drawing.",
+          "Follow the Masters: Follow Car Design News or Behance to see professional portfolios.",
+          "Build Models: Use clay or foam to sculpt car designs. Understand how 3D forms work.",
+          "Study Aerodynamics: Understand how air flows over objects. This knowledge is crucial for automotive design."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring automotive designers from India.",
+        color: BLUE2,
+        content: [
+          "Pratap Bose: The rockstar of Indian design. Formerly at Tata Motors (transformed Tata's image with Nexon/Harrier), now Chief Design Officer at Mahindra & Mahindra.",
+          "Ramkripa Ananthan: The woman who designed the iconic Mahindra Thar and XUV500. Broke the glass ceiling in a male-dominated industry.",
+          "Sathiya Seelan: Head of Design at Ashok Leyland. Proves that even trucks and buses need beautiful design.",
+          "Gagandeep Singh: Design Director at Renault. Key figure in placing Indian talent on the global French map.",
+          "Dilip Chhabria (DC): Legendary custom car designer and entrepreneur. Founded DC Design, known for creating India's first supercar."
+        ]
+      }
+    ]
+  },
+  aviation_management: {
+    slug: "aviation_management",
+    badge: "✈️ The Ground Commanders for Class 10+",
+    heading: "Aviation Management",
+    subheading: "Running the business of flying—managing airports, airlines, and the chaos of 450 flights a day.",
+    whyCards: [
+      { icon: "TrendingUp", title: "220 Airports by 2030", description: "India expected to have 220 operational airports by 2030. UDAN scheme creating massive demand for managers.", borderColor: "#10B981" },
+      { icon: "Globe", title: "3rd Largest Aviation Market", description: "India is the 3rd largest domestic aviation market. Flying is becoming a necessity, not a luxury.", borderColor: "#059669" },
+      { icon: "Briefcase", title: "Corporate Growth", description: "Privatization of airports (Adani, GMR) bringing corporate culture and higher salaries to the sector.", borderColor: "#3B82F6" },
+      { icon: "DollarSign", title: "Global Opportunities", description: "Middle East (Dubai, Qatar) loves hiring Indian aviation managers. Tax-free salaries 2-3x higher than India.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (BBA) or 2 Years (MBA)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Airport Software, IATA Systems, Data Analytics", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹3L–₹2Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "220", label: "Airports by 2030", gradient: "from-green-500 to-green-600" },
+      { value: "3rd", label: "Largest Aviation Market", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The business side of flying.",
+        color: BLUE,
+        content: [
+          "Aviation Management Defined: The business and operations side of the flying world. It involves planning, designing, operating, and maintaining the activities of airlines and airports.",
+          "The Real Questions: Who decides the ticket price? Who ensures your luggage travels from Delhi to London and lands on the same belt as you? Who manages the chaos when a flight is delayed due to fog? Who runs the massive shopping malls and security checks inside the airport? That is the Aviation Manager.",
+          "The Dual World: Aviation Management splits into two: Airline Management (the carriers like Indigo/Air India) and Airport Management (the operators like Adani/GMR).",
+          "The Blend: It blends Logistics, Hospitality, Business Strategy, and Crisis Management. While the pilot flies the machine, the Aviation Manager runs the business.",
+          "Why It Matters in India: India is currently the 3rd largest domestic aviation market in the world. With the government's UDAN scheme, airports are opening in small towns. We are moving from a country where flying was a luxury to one where it is a necessity.",
+          "The Impact: Without aviation managers, planes would stay grounded, and airports would turn into chaotic bus stands."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Karthik, Terminal Duty Manager",
+        icon: "Clock",
+        description: "Real workflow at Kempegowda International Airport, Bangalore.",
+        color: BLUE2,
+        content: [
+          "5:30 AM - Shift Start: Karthik's shift starts before the sun rises. The airport never sleeps. He grabs his walkie-talkie—his lifeline for the next 9 hours. He checks the 'Roster': 450 flights are scheduled to depart today.",
+          "7:00 AM - Peak Hour Chaos: The security check lines are getting too long at Gate 4. Karthik radios the CISF (security) team and ground staff: 'Divert passengers to Zone B; we need to balance the load.' He physically goes there to manage the crowd.",
+          "9:30 AM - Crisis Mode: A flight to Mumbai is cancelled due to a technical snag. 180 angry passengers are shouting at the boarding gate. Karthik steps in. He doesn't fix the plane; he fixes the people. He coordinates with the airline to arrange food vouchers and hotel stays.",
+          "12:00 PM - VIP Movement: A central minister is arriving. Karthik coordinates with the protocol team to ensure a smooth exit without disrupting regular passenger flow.",
+          "2:00 PM - Lunch & Discussion: He eats quickly in the staff canteen, discussing with a colleague about 'DigiYatra' glitches they noticed today.",
+          "3:30 PM - Revenue Check: He walks through the Duty-Free area. Part of his job is ensuring the airport makes money. He notes that a coffee shop has encroached on the walking path and issues a warning.",
+          "4:30 PM - Handover: He briefs the evening shift manager on pending issues and logs off. He walks 12,000 steps a day, but he loves the energy of the terminal."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Aviation Manager's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Calm Commander: Can you keep your cool when 50 people are yelling at you? (This is non-negotiable).",
+          "The Timekeeper: Are you obsessed with punctuality? In aviation, a 1-minute delay costs thousands of rupees.",
+          "The People Person: Do you enjoy interacting with people from different cultures and countries?",
+          "The Quick Thinker: Can you make decisions without having all the information?",
+          "Soft Skills: Leadership, Empathy (handling upset passengers), and clear Communication (English is the global language here).",
+          "Hard Skills: Understanding of Aviation Laws (DGCA rules), Logistics Management, basic Data Analytics, and familiarity with airport software.",
+          "The Self-Check: Do you love solving operational puzzles? Do you thrive in fast-paced environments? If yes, you have the Aviation Manager's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The complete aviation operations cycle.",
+        color: BLUE2,
+        content: [
+          "Ground Handling: Managing baggage loading, cleaning, and refueling within the 45-minute window between flights.",
+          "Passenger Service: Check-in, boarding, and special assistance (wheelchairs, unaccompanied minors).",
+          "Crew Rostering: Ensuring pilots and cabin crew are assigned flights without violating 'Flight Duty Time Limitations' (safety laws).",
+          "Airport Operations: Managing runway slots, parking bays, and terminal cleanliness.",
+          "Revenue Management: Using math to decide ticket prices (Dynamic Pricing).",
+          "Crisis Management: Handling delays, cancellations, and passenger complaints with grace."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Undergraduate Route (After Class 12): Class 12: Any stream (Commerce, Science, or Humanities). English fluency is critical. Degree: BBA in Aviation Management (3 Years), B.Sc. in Aviation (3 Years), or BMS with Aviation specialization. Certification: Take an IATA Foundation Course while doing the degree.",
+          "Pathway B - Engineering/Technical Route: Class 12: Science (PCM). Degree: B.Tech in Aeronautical Engineering → MBA in Aviation Management. Verdict: This leads to high-level technical management roles (Fleet Management/MRO).",
+          "Pathway C - MBA Route (Career Switchers): Graduation: Any degree. Entrance Exams: CAT/MAT/CMAT/GMAT. Post-Grad: MBA in Aviation Management. Verdict: This is the fastest route to Manager/VP roles.",
+          "Pathway D - Cabin Crew Entry (Lateral Entry): Many start as Cabin Crew (after Class 12), fly for 5-8 years, do an Executive MBA, and switch to Ground Management."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: India is expected to have 220 operational airports by 2030 (up from ~148 in 2024). The privatization of airports (Adani Group taking over Mumbai, Ahmedabad, Lucknow) has brought 'Corporate Culture' and higher salaries.",
+          "Entry-Level (0-2 Yrs): Ground Staff/Guest Service: ₹3L–₹5L (Airline) or ₹4L–₹6L (Airport).",
+          "Mid-Level (3-7 Yrs): Duty Manager/Ops Manager: ₹8L–₹15L (Airline) or ₹10L–₹18L (Airport).",
+          "Senior-Level (8-15 Yrs): Airport Manager/Station Head: ₹18L–₹35L (Airline) or ₹25L–₹45L (Airport).",
+          "Leadership: VP Operations/CXO: ₹60L–₹1.5Cr (Airline) or ₹80L–₹2Cr (Airport).",
+          "Note: Salaries in Metro cities (Delhi/Mumbai) are typically 30-40% higher than in Tier-2 cities."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Airlines (Indigo, Air India, Vistara, Akasa Air, SpiceJet), Airport Operators (GMR Delhi/Hyderabad, Adani Airports Mumbai/Ahmedabad/Lucknow, BIAL Bangalore), Ground Handling Agencies (Celebi, Bird Group, AI SATS), Logistics/Cargo (Blue Dart Aviation, DHL).",
+          "Top Cities: Hubs (Delhi IGIA and Mumbai CSMIA are the biggest employers), Emerging (Noida Jewar Airport - upcoming massive hub, Navi Mumbai, Goa Mopa).",
+          "International: The Middle East (Dubai, Qatar, Doha) loves hiring Indian aviation managers due to their English skills and hard work.",
+          "Emerging Opportunities: DigiYatra management, Green Airport operations, Tier-2/3 airport expansion."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Fees and course duration.",
+        color: BLUE2,
+        content: [
+          "BBA Aviation (Private Universities): ₹3L–₹8L (3 Years).",
+          "BBA/B.Sc Aviation (Govt/State Universities): ₹50,000–₹1.5L (3 Years).",
+          "MBA Aviation (MBA Colleges): ₹6L–₹15L (2 Years).",
+          "IATA Certifications (Short Courses): ₹40,000–₹1L (3-6 Months).",
+          "Living Costs: ₹1L–₹1.5L per year in major cities.",
+          "Additional: Laptop, professional attire, and travel for internships."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for aviation management in India.",
+        color: BLUE,
+        content: [
+          "Government/Public: Jamia Millia Islamia (New Delhi) - B.Sc. in Aeronautics, University of Mumbai (GICED) - Garware Institute, Rajiv Gandhi National Aviation University (RGNAU) Amethi - India's first central aviation university.",
+          "Private Institutions: University of Petroleum and Energy Studies (UPES) Dehradun - Highly reputed for BBA/MBA in Aviation Management, Hindustan Institute of Technology and Science (HITS) Chennai - Strong legacy in aviation, Amity University (Noida/Gurgaon), Kristu Jayanti College Bangalore, AIMS Institutes Bangalore.",
+          "Online/Distance: IATA Training - Offers global certifications online (Montreal based), UPES CCE - Distance MBA in Aviation.",
+          "Industry Partnerships: Many airlines and airports offer internship programs and apprenticeships."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "IATA Diversity & Inclusion Awards: Sometimes offer training grants.",
+          "University Specific: UPES and Amity offer merit-based scholarships (20-100% tuition waiver) based on Class 12 marks or CUET scores.",
+          "Tata Trusts: Offers travel and education grants for higher studies (can be applied for aviation MBAs).",
+          "Government Schemes: Central Sector Scholarship for top percentile students in Class 12.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Corporate Sponsorships: Some airlines sponsor talented candidates for management training."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "IATA (International Air Transport Association): A diploma from IATA is recognized globally. Recommended: IATA Foundation in Travel & Tourism, Airport Operations Diploma.",
+          "ACI (Airports Council International): Offers 'Airport Management Professional Accreditation' (AMPAP) for senior professionals.",
+          "Six Sigma: Certification in operations/quality is highly valued in airline logistics.",
+          "DGCA Compliance: Understanding DGCA (Directorate General of Civil Aviation) rules is essential.",
+          "Industry Recognition: Certifications in Revenue Management, Crew Scheduling, and Ground Operations add significant value."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in aviation management.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Airport Manager (the boss of the station), Ground Staff/Check-in Manager (the face of the airline), Cargo Manager (handling freight and logistics), Station Head (managing entire airport operations).",
+          "New-Age Careers: Revenue Analyst (using AI to predict demand and set ticket prices), Aviation Sustainability Officer (helping airlines reduce carbon footprints), Drone Fleet Manager (managing logistics for drone delivery companies), DigiYatra Manager (managing biometric systems).",
+          "Freelancing/Entrepreneurship: Charter Broker (booking private jets for rich clients - high commission), Aviation Consultant (advising new airports or airlines), Ground Handling Startup (starting your own ground handling company).",
+          "International: Working with global airlines and airport operators in Middle East, Europe, and Southeast Asia."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of aviation management.",
+        color: BLUE,
+        content: [
+          "The Glamour Myth: It looks glamorous from the outside, but it is physically exhausting. You are on your feet for 8-10 hours.",
+          "Shift Work: Aviation is 24/7. You will work on Diwali, Eid, Christmas, and New Year's Eve.",
+          "Volatility: The industry is sensitive. A pandemic, a war, or high oil prices can lead to layoffs instantly (as seen during COVID).",
+          "Customer Abuse: You are the punching bag for passengers when flights are delayed, even if it's due to weather.",
+          "High Pressure: Managing hundreds of flights daily with zero margin for error is mentally taxing.",
+          "Geographic Limitation: Most jobs concentrated in major airport hubs. You will likely have to relocate."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of aviation management.",
+        color: BLUE2,
+        content: [
+          "DigiYatra & Biometrics: Your face is your boarding pass. Managers will need to manage tech systems more than physical queues.",
+          "Green Airports: Solar-powered airports (like Cochin International) are the standard. Managers need to know environmental compliance.",
+          "Tier-2/3 Boom: The real jobs are moving to cities like Ayodhya, Surat, and Indore as regional connectivity explodes.",
+          "AI-Powered Operations: Predictive maintenance, AI-driven scheduling, and automated baggage handling will transform the role.",
+          "Autonomous Ground Vehicles: Managing fleets of self-driving baggage carts and ground support vehicles.",
+          "Sustainability Focus: Carbon-neutral operations and sustainable aviation fuel (SAF) management will be core responsibilities."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Geography: Learn the world map. If a passenger asks about a flight to 'Frankfurt,' you should instantly know it's in Germany/Europe.",
+          "Languages: English is mandatory. A second foreign language (French, German, Arabic) is a massive career booster.",
+          "Customer Service: Volunteer at school events. Managing a crowd at a school fete is basically a mini-airport operation.",
+          "Tech Savvy: Get comfortable with computers and data (Excel). Learn basic data analysis.",
+          "Leadership: Take on leadership roles in school clubs and events. Practice making quick decisions.",
+          "Logistics Thinking: Understand supply chains. How does a product move from factory to store? Apply this thinking to airports."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring aviation managers from India.",
+        color: BLUE2,
+        content: [
+          "Aditya Ghosh: The former President of Indigo Airlines. A lawyer turned aviation manager who made Indigo the most profitable airline in India.",
+          "Ashwani Lohani: Known as the 'Turnaround Man.' He has headed Air India, the Railway Board, and ITDC, proving that good management skills work everywhere.",
+          "Kanika Tekriwal: Founder of JetSetGo. She built the 'Uber of the skies' (private jet aggregation) after beating cancer. A true inspiration for entrepreneurship.",
+          "Videh Kumar Jaipuriar: CEO of DIAL (Delhi International Airport Limited), managing the busiest airport in India.",
+          "Rajesh Bansal: Former CEO of Air India Express, known for operational excellence and cost management."
+        ]
+      }
+    ]
+  },
+  commercial_pilot: {
+    slug: "commercial_pilot",
+    badge: "✈️ The Captains of the Clouds for Class 10+",
+    heading: "Commercial Pilot",
+    subheading: "Operating aircraft safely—managing complex systems, weather, and split-second decisions at 35,000 feet.",
+    whyCards: [
+      { icon: "TrendingUp", title: "7,000 Pilots Needed in 2026", description: "India needs 7,000 new pilots in 2026 alone and ~35,000 over the next decade. Massive hiring demand.", borderColor: "#10B981" },
+      { icon: "Globe", title: "3rd Largest Aviation Market", description: "India is the 3rd largest aviation market. New airports opening in Ayodhya, Shivamogga, and beyond.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "Highest Salaries in India", description: "₹18L–₹1.2Cr+ annually. Among the highest-paying careers in India with excellent international opportunities.", borderColor: "#3B82F6" },
+      { icon: "Rocket", title: "Global Mobility", description: "Indian CPL holders can work in Middle East, Southeast Asia, and globally after gaining experience.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3-4 Years (CPL Training) + Type Rating", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Flight Management Computer, Autopilot, Radar Systems", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹18L–₹1.2Cr+ (Entry to Captain)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "7,000", label: "Pilots Needed in 2026", gradient: "from-green-500 to-green-600" },
+      { value: "35,000", label: "Pilots Needed by 2035", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The captains of the sky.",
+        color: BLUE,
+        content: [
+          "Commercial Pilot Defined: A highly trained systems manager who operates aircraft to transport passengers and cargo safely from Point A to Point B.",
+          "More Than a Driver: They don't just 'fly' the plane (autopilots do a lot of that now); they manage the flight. This means analyzing weather patterns, calculating fuel requirements, communicating with Air Traffic Control (ATC), and making split-second decisions if an engine fails or a storm hits.",
+          "The Three Phases: Pre-Flight (checking weather, planning route, calculating weight & balance), In-Flight (monitoring instruments, communicating with ATC, managing crew), Post-Flight (recording flight data, reporting mechanical issues).",
+          "The Responsibility: You are responsible for the lives of 150-300 people. Every decision matters. Every checklist must be followed.",
+          "Why It Matters in India: India is currently the 3rd largest aviation market in the world. With new airports opening in towns like Ayodhya and Shivamogga, and airlines placing record-breaking orders for 1,000+ new planes, pilots are the backbone of this connectivity.",
+          "The Impact: You aren't just flying people; you are shrinking the world and powering the economy."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Zoya, First Officer (Co-Pilot)",
+        icon: "Clock",
+        description: "Real workflow flying Airbus A320 for a major Indian airline.",
+        color: BLUE2,
+        content: [
+          "4:00 AM - Alarm Buzzes: Pilots work on 'rosters,' not 9-to-5. Today is an early morning Delhi-Mumbai-Delhi sector. Zoya puts on her crisp white shirt and epaulettes.",
+          "5:30 AM - Reporting: She reaches the airport dispatch room and meets her Commander (Captain). They review the 'Flight Plan': Weather in Mumbai is rainy; we need extra fuel just in case. She checks the technical log to ensure engineers have signed off on the plane's health.",
+          "6:15 AM - Cockpit Prep: Zoya enters the cockpit. It looks like a spaceship with hundreds of buttons. She programs the Flight Management Computer (FMC) with the route. Outside, ground staff are loading bags and fuel.",
+          "7:00 AM - Takeoff: 'V1... Rotate.' The plane lifts off. For the next 20 minutes, she is hyper-focused, listening to ATC instructions and monitoring the climb.",
+          "8:30 AM - Cruise: The plane is on autopilot at 35,000 feet. Zoya and the Captain monitor the systems. They drink coffee, but they are constantly scanning for 'traffic' (other planes) and weather updates.",
+          "9:15 AM - The Descent: Mumbai ATC informs them of heavy traffic. Zoya has to manually fly a 'holding pattern' (circles in the sky) until the runway is clear. It requires intense concentration.",
+          "10:00 AM - Landing: The wheels touch down smoothly. Passengers clap (sometimes). Zoya prepares the plane for the return leg."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Pilot's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Calm in Crisis: If your car breaks down, do you panic or check the engine? Pilots must stay calm when alarms go off.",
+          "The Rule-Follower: Aviation is built on checklists. You cannot be 'creative' with safety rules.",
+          "The Multi-Tasker: Can you listen to the radio, read a map, and push buttons simultaneously?",
+          "The Health Conscious: You need to maintain 20/20 vision (with or without glasses) and a healthy heart. A bad medical report can end your career instantly.",
+          "Hard Skills: Physics & Math (to understand aerodynamics), Geography, and Technical aptitude.",
+          "Soft Skills: Leadership, Teamwork (Cockpit Resource Management), and Clear Communication (English).",
+          "The Self-Check: Do you love flying? Do you thrive under pressure? If yes, you have the Pilot's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The complete flight cycle.",
+        color: BLUE2,
+        content: [
+          "Pre-Flight: Checking weather (Meteorology), planning the route (Navigation), and calculating the weight & balance of the plane.",
+          "In-Flight: Monitoring instruments, communicating with ATC, and managing the crew.",
+          "Post-Flight: Recording flight data and reporting any mechanical issues to the engineering team.",
+          "Safety Management: Following all checklists and procedures without exception.",
+          "Crew Leadership: Managing First Officer and cabin crew during normal and emergency situations.",
+          "Decision-Making: Making split-second decisions when systems fail or weather deteriorates."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Conventional Route (Flying Club): Class 12: Science Stream (Physics & Math) is mandatory. Step 1: Join a Flying Club in India. Pass DGCA exams (Air Regulations, Aviation Meteorology, Air Navigation, Technical General, Technical Specific). Step 2: Complete 200 hours of flying (including solo flights). Step 3: Get your CPL (Commercial Pilot License) from DGCA. Step 4: Apply to airlines. Note: You often need to pay extra for 'Type Rating' (training on a specific plane like Boeing 737).",
+          "Pathway B - Cadet Pilot Program (Airline Sponsored): Most popular for job security. Process: You apply to an airline's program (e.g., IndiGo, Air India). They select you before training. Training: You train at their partner schools (often abroad). Outcome: You return with a CPL and a guaranteed job letter. Cons: It is more expensive than the conventional route.",
+          "Pathway C - For Non-Science Students (Commerce/Arts): Step 1: Pass Class 12 in any stream. Step 2: Enroll in NIOS (National Institute of Open Schooling) for 'On-Demand' exams in Physics and Math. Step 3: Once you pass these two subjects, you are eligible for Pathway A or B.",
+          "Top Institutions: IGRUA (Indira Gandhi Rashtriya Uran Akademi) Raebareli, NFTI (National Flying Training Institute) Gondia, Madhya Pradesh Flying Club (MPFC), Chimes Aviation Academy (CAA), Bombay Flying Club."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Booming Demand: Experts predict India needs 7,000 new pilots in 2026 alone and ~35,000 over the next decade. Hiring Trends: Airlines are desperate for Captains (experienced pilots). For freshers (First Officers), the market is competitive but hiring is active due to massive fleet orders by IndiGo and Air India.",
+          "Entry-Level (0-2 Yrs): Junior First Officer: ₹18L–₹24L.",
+          "Mid-Level (3-8 Yrs): Senior First Officer: ₹36L–₹60L.",
+          "Senior-Level (8-15 Yrs): Captain/Commander: ₹80L–₹1.2Cr.",
+          "Leadership: Check Pilot/Instructor: ₹1.5Cr+.",
+          "Note: Pilot salaries are among the highest in India. International opportunities offer even higher compensation."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, cities, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: Scheduled Airlines (IndiGo, Air India, Akasa Air, SpiceJet, Vistara), Regional Connectivity UDAN (Star Air, Fly91 flying smaller planes to smaller towns), Charter Services (flying private jets for billionaires - high luxury, erratic schedule), Cargo (Blue Dart Aviation, Amazon Air flying goods at night).",
+          "Top Cities: Delhi, Mumbai, Bangalore, Hyderabad (Major hubs). You live where your 'Base' is.",
+          "International: Indian CPL holders can convert their license to work in the Middle East or Southeast Asia after gaining experience.",
+          "Emerging Opportunities: Drone pilot operations, Air ambulance services, Ferry pilot services (flying empty planes from factory to buyer)."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Training costs and investment required.",
+        color: BLUE2,
+        content: [
+          "Conventional Route (Flying Club): CPL Training: ₹35L–₹45L, Type Rating: ₹15L–₹20L, Living/Travel: ₹5L–₹8L, Total Cost: ₹55L–₹70L.",
+          "Cadet Pilot Program (Airline): CPL Training: ₹80L–₹1Cr, Type Rating: Included, Living/Travel: Included, Total Cost: ₹80L–₹1.2Cr.",
+          "Note: Type Rating is a specific training on the plane you will fly (e.g., Airbus A320). Most airlines ask you to pay for this if you are not a Cadet.",
+          "Financing: Many students take education loans. Some airlines offer loans to their cadet pilots.",
+          "ROI: With starting salaries of ₹18L+, you can recover your investment in 3-4 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for pilot training in India.",
+        color: BLUE,
+        content: [
+          "Government (Public): Indira Gandhi Rashtriya Uran Akademi (IGRUA) Raebareli - The 'IIT' of aviation. Entrance exam required. National Flying Training Institute (NFTI) Gondia - Joint venture with CAE.",
+          "Private Flying Clubs (India): Madhya Pradesh Flying Club (MPFC) Indore/Bhopal, Chimes Aviation Academy (CAA) Dhana MP, Bombay Flying Club Mumbai, GATI (Government Aviation Training Institute) Bhubaneswar.",
+          "Cadet Program Partners (International): Many Indian students go to flight schools in USA, New Zealand, or South Africa (faster completion due to better weather) and convert their license to Indian DGCA license later.",
+          "Online Resources: DGCA website for regulations, Flight simulation software for practice."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Tata Trusts: Offers substantial grants/loans for pilot training.",
+          "Ministry of Social Justice: 'Top Class Education Scheme' for SC/ST students (covers full fees for IGRUA).",
+          "AICTE Scholarships: For technical courses (if doing a B.Sc Aviation degree along with CPL).",
+          "State Govt Schemes: Bihar and Maharashtra have schemes for reserved category students to fund CPL.",
+          "Airline Sponsorships: Some airlines sponsor talented candidates for cadet programs.",
+          "Merit-Based: Top performers in DGCA exams sometimes get scholarships from flying clubs."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "DGCA (Directorate General of Civil Aviation): The God of Indian aviation. You need their Class 1 Medical Certificate and CPL License.",
+          "FRTOL (Flight Radio Telephony Operator's License): A separate license to talk on the radio.",
+          "Type Rating: Certification to fly a specific aircraft (e.g., Boeing 737, Airbus A320).",
+          "Ratings: Instrument Rating (flying in bad weather), Multi-Engine Rating (flying planes with multiple engines).",
+          "Continuing Education: Regular proficiency checks and simulator training to maintain license."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in aviation.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Airline Pilot (the standard path), Flight Instructor (teaching others how to fly - builds experience), Captain/Commander (leadership role after 8-10 years).",
+          "New-Age Careers: Drone Pilot (flying large commercial drones - requires a different, cheaper license), Air Ambulance Pilot (emergency medical evacuation), Check Pilot (training and evaluating other pilots).",
+          "Freelancing: Ferry Pilot (flying empty planes from the factory to the buyer), Charter Pilot (flying private jets).",
+          "International: Working with global airlines in Middle East, Europe, and Southeast Asia."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of being a pilot.",
+        color: BLUE,
+        content: [
+          "High Financial Risk: If you spend ₹60L and a recession hits (like COVID), you might sit unemployed for 2 years while loan interest piles up.",
+          "Medical Uncertainty: A sudden eyesight issue or heart condition can ground you permanently.",
+          "Lifestyle: You miss birthdays, anniversaries, and weekends. Jet lag is your permanent companion.",
+          "Seniority System: You start at the bottom. It takes 8-10 years to become a Captain.",
+          "Intense Training: The training is rigorous and demanding. Not everyone completes it.",
+          "Regulatory Pressure: One mistake can result in license suspension or permanent grounding."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of commercial aviation.",
+        color: BLUE2,
+        content: [
+          "Single Pilot Ops: In the distant future, planes might have only one pilot (assisted by AI), but for now, the two-pilot rule stands.",
+          "Electric Planes: Short-haul flights might become electric, changing how pilots manage 'fuel.'",
+          "Super-Connectivity: With India building 100+ new airports, pilots will live in Tier-2 cities, not just Metros.",
+          "AI Co-Pilot: AI systems will assist pilots in decision-making and system management.",
+          "Autonomous Aircraft: Unmanned commercial aircraft for cargo delivery (pilots will manage from ground).",
+          "Sustainability: Sustainable Aviation Fuel (SAF) and carbon-neutral operations will be standard."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Play Flight Simulators: Microsoft Flight Simulator is not a game; it's a training tool. It teaches you cockpit layout.",
+          "Focus on Physics: Understand 'Bernoulli's Principle' and 'Vectors.'",
+          "Get Medically Checked: Before dreaming, go to a doctor. Check for color blindness. If you are color blind, you cannot be a commercial pilot.",
+          "Join NCC (Air Wing): If your school has it, join. You might get to fly a glider for free!",
+          "Learn Geography: Know the world map and major airports.",
+          "Master English: Clear communication is critical. Practice speaking and writing English fluently."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring pilots from India.",
+        color: BLUE2,
+        content: [
+          "J.R.D. Tata: The father of Indian aviation and India's first licensed pilot. He founded Air India.",
+          "Captain Zoya Agarwal: An Air India pilot who led the all-women crew over the North Pole (one of the world's longest air routes).",
+          "Captain Indraani Singh: One of the first women commanders in Asia on the Airbus A300 and a social activist.",
+          "Rakesh Sharma: Though an Air Force pilot, he is the first Indian in space, inspiring all aviators.",
+          "Captain Deepika Kulkarni: One of India's first female commercial pilots, breaking barriers in aviation."
+        ]
+      }
+    ]
+  },
+  merchant_navy_officer: {
+    slug: "merchant_navy_officer",
+    badge: "⚓ The Global Nomads for Class 10+",
+    heading: "Merchant Navy Officer",
+    subheading: "Managing massive commercial ships—navigating the world's oceans and moving 90% of the world's goods.",
+    whyCards: [
+      { icon: "Globe", title: "Global Shortage of 90,000 Officers", description: "BIMCO 2025 report predicts global shortage. Indian officers most preferred globally for English skills.", borderColor: "#10B981" },
+      { icon: "DollarSign", title: "Tax-Free Salary", description: "Sail 182+ days outside India = entire salary is tax-free (NRI Status). ₹8L–₹15L+ monthly.", borderColor: "#059669" },
+      { icon: "TrendingUp", title: "$5 Trillion Economy Push", description: "India expanding shipping tonnage. Massive demand for young officers to command floating cities.", borderColor: "#3B82F6" },
+      { icon: "Briefcase", title: "Adventure & Responsibility", description: "Your office is the vast blue ocean. Command ships worth $100M+ with cargo worth $500M+.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "1-4 Years (DNS/B.Sc/B.Tech)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Radar, ECDIS, Navigation Systems", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹25K–₹15L+ (Cadet to Captain)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "90,000", label: "Global Officer Shortage", gradient: "from-green-500 to-green-600" },
+      { value: "100%", label: "Tax-Free (182+ Days)", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Moving the world's economy across oceans.",
+        color: BLUE,
+        content: [
+          "Merchant Navy vs Indian Navy: Merchant Navy is NOT the Indian Navy. Indian Navy defends the country (Soldiers, Weapons, Warships). Merchant Navy moves the world's economy (Cargo, Oil, Food, Cars).",
+          "The Role: A Merchant Navy Officer manages massive commercial ships—Tankers, Container Ships, and Cruise Liners—that transport 90% of the world's goods.",
+          "Real Impact: If you are reading this book, the paper came from Indonesia, the ink from Germany, and the coffee you are drinking from Brazil. A Merchant Navy Officer brought them to you.",
+          "The Adventure: This career is about adventure, high responsibility, and living a life less ordinary. You aren't stuck in a cubicle; your office is the vast, blue ocean, and your 'commute' involves crossing continents.",
+          "Why It Matters in India: Without the Merchant Navy, the world stops. No oil for cars, no medicines for hospitals, no iPhones in stores. As India aims to become a $5 Trillion economy, our shipping tonnage is expanding, creating massive demand for young officers.",
+          "The Responsibility: You command ships worth $100 million with cargo worth $500 million. Every decision matters."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Vikram, Third Officer",
+        icon: "Clock",
+        description: "Real workflow on a Container Ship sailing from Singapore to Rotterdam.",
+        color: BLUE2,
+        content: [
+          "7:30 AM - Wake Up: Vikram wakes up. His commute to work is a 2-minute walk from his cabin to the 'Bridge' (the command center). The ship is in the middle of the Indian Ocean—water in every direction.",
+          "8:00 AM - Watchkeeping Duty: Vikram takes over the '8-to-12' watch. For the next four hours, he is in charge of navigating the ship. He monitors the Radar and ECDIS (Electronic Charts) to ensure they stay on course and don't hit fishing boats or whales.",
+          "10:00 AM - Coffee with a View: The sun is blazing. He sees a school of dolphins racing the ship. It's a quiet, magical moment you don't get in a corporate office.",
+          "12:00 PM - Handover: The Second Officer relieves him. Vikram heads to the mess room for lunch. The chef has prepared Biryani today. The crew is a mix of Indians, Filipinos, and Ukrainians.",
+          "1:00 PM - Deck Work: His shift isn't over. As the 'Safety Officer,' he goes out on the open deck (wearing a boiler suit and helmet) to inspect the fire extinguishers and lifeboats. The salt spray hits his face.",
+          "3:00 PM - Rest & Recreation: He hits the ship's gym for an hour, then calls his parents via the ship's satellite WiFi. The internet is slow, but hearing his mom's voice is the highlight of his day.",
+          "5:00 PM - Study Time: He studies for his 'Second Mate' exams. To get promoted, he must clear strict exams on land.",
+          "8:00 PM - Dinner and Sleep: He needs to be up again at 7:30. The ship rocks gently, singing him to sleep."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The Merchant Navy Officer's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Mental Iron Man: Can you stay away from family/friends for 6-9 months? Homesickness is the biggest enemy here.",
+          "The Disciplined Leader: On a ship, there is a clear hierarchy. You must follow orders instantly and give orders confidently.",
+          "The Practical Fixer: If something breaks in the middle of the Pacific Ocean, you can't call a mechanic. You are the mechanic.",
+          "The Calm Head: Imagine a storm with 10-meter high waves. Do you panic, or do you steady the ship?",
+          "Hard Skills: Navigation math (Trigonometry), Physics (Fluid dynamics), and technical knowledge of ship stability.",
+          "Soft Skills: Cultural adaptability (working with global crews), emotional resilience, and decisive leadership.",
+          "The Self-Check: Do you love adventure? Can you handle isolation? If yes, you have the Merchant Navy Officer's DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The two main departments on a ship.",
+        color: BLUE2,
+        content: [
+          "Deck Department (The Navigators): Captain (Master) - The Boss. Ultimate responsibility for the ship, cargo, and crew. Chief Officer - Head of deck crew, responsible for loading/unloading cargo and stability. 2nd Officer - The Navigator (plans the route). 3rd Officer - Safety Officer (manages lifeboats/fire gear).",
+          "Engine Department (The Engineers): Chief Engineer - Head of technical operations. 2nd Engineer - Manages the main engine. 3rd/4th Engineer - Manages generators, boilers, and fuel.",
+          "Watchkeeping: Officers take 4-hour watches to monitor navigation and ship systems.",
+          "Safety Management: Conducting drills, maintaining equipment, and ensuring crew safety.",
+          "Cargo Management: Overseeing loading, securing, and unloading of cargo.",
+          "Navigation: Planning routes, monitoring weather, and communicating with ATC and other ships."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Deck Cadet Route (To become a Captain): Class 12: Science (PCM) with minimum 60% marks and 50% in English. Entrance Exam: IMU-CET (Indian Maritime University Common Entrance Test). Course Options: Option 1 (Popular): Diploma in Nautical Science (DNS) - 1 Year. Must require Sponsorship from a shipping company before joining. Option 2: B.Sc. in Nautical Science - 3 Years. Training: 18 months of sea-time (Cadetship) → Clear '2nd Mate' exams → Become 3rd Officer.",
+          "Pathway B - Marine Engineering Route (To become Chief Engineer): Class 12: Science (PCM). Entrance Exam: IMU-CET. Course: B.Tech in Marine Engineering (4 Years). Training: 6 months sea-time → Clear 'Class 4' exams → Become 4th Engineer.",
+          "Pathway C - For Mechanical/Electrical Graduates (GME/ETO): After B.Tech (Mech): Do a 1-year GME (Graduate Marine Engineering) course. After B.Tech (Electrical): Do a 4-month ETO (Electro-Technical Officer) course.",
+          "Top Institutions: Indian Maritime University (IMU) Chennai/Kolkata/Mumbai/Visakhapatnam, T.S. Chanakya Navi Mumbai, Anglo-Eastern Maritime Academy (AEMA) Karjat, Tolani Maritime Institute (TMI) Pune."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Global Shortage: A 2025 BIMCO report predicts a global shortage of ~90,000 certified officers. Indian officers are the most preferred globally due to their English skills and technical competence.",
+          "Salary Tax Benefit: If you sail for more than 182 days a year outside India, your entire salary is Tax-Free (NRI Status).",
+          "Cadet (Training): ₹25,000–₹50,000 (Stipend).",
+          "Junior Officer (3rd/4th): ₹1.5L–₹2.5L (Tax-Free).",
+          "Mid-Level (2nd/3rd): ₹3L–₹5L (Tax-Free).",
+          "Senior (Chief): ₹6L–₹10L (Tax-Free).",
+          "Top Command (Captain/Chief Engineer): ₹8L–₹15L+ (Tax-Free).",
+          "Note: Salaries on Tankers/Gas Carriers are 30-40% higher than on Container ships."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Companies: Maersk Line (Denmark), Anglo-Eastern Ship Management (Top employer in India), Synergy Marine Group (Founded by an Indian Captain), Fleet Management Limited, MSC (Mediterranean Shipping Company), Shipping Corporation of India (SCI) (Govt of India).",
+          "Geography: The whole world! You might join a ship in Dubai, sail to Brazil, and sign off in Japan.",
+          "Shore Jobs: After sailing for 10-15 years, you can work on land as a Port Manager, Marine Superintendent, or Surveyor in cities like Mumbai, Chennai, or Singapore.",
+          "Emerging Opportunities: Cruise ship operations, Dynamic Positioning (DP) operations for oil rigs, Marine surveying, Ship brokerage."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Course fees and duration.",
+        color: BLUE2,
+        content: [
+          "DNS (Diploma) Private/Govt: ₹4L–₹6L (1 Year).",
+          "B.Sc Nautical Science Govt (IMU): ₹6L–₹8L (3 Years).",
+          "B.Tech Marine Engineering Private (TMI/AMET): ₹12L–₹18L (4 Years).",
+          "GME (Post-Grad) Private: ₹3L–₹5L (1 Year).",
+          "Caution: Beware of fake agents offering '100% placement.' Only join DG Shipping approved colleges.",
+          "Sponsorship: Many shipping companies sponsor cadets, covering fees and providing guaranteed employment."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for merchant navy training in India.",
+        color: BLUE,
+        content: [
+          "Government (Public): Indian Maritime University (IMU) - Campuses in Chennai, Kolkata (MERI), Mumbai (LBS), Visakhapatnam. T.S. Chanakya Navi Mumbai - Legendary institute for Deck Officers. Marine Engineering and Research Institute (MERI) Kolkata.",
+          "Private (With Best Sponsorship Records): Anglo-Eastern Maritime Academy (AEMA) Karjat - Top Recommendation. They select you first, give you a job letter, and then train you. Tolani Maritime Institute (TMI) Pune - Owned by a shipping company. Great Eastern Institute of Maritime Studies (GEIMS) Lonavala. Samundra Institute of Maritime Studies (SIMS) Lonavala - World-class infrastructure.",
+          "Always check if the college has a 'Ship-in-Campus' facility for practical training."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Bharati Scheme (by Synergy Marine): Full scholarships for girl cadets.",
+          "Maersk Line Sponsorship: Often funds the entire tuition for selected cadets.",
+          "IMU Performance-Based Scholarship: For rank holders in the semester exams at IMU campuses.",
+          "Maritime Union of India (MUI) Scholarship: For children of seafarers.",
+          "Shipping Company Sponsorships: Many companies sponsor cadets in exchange for service contracts.",
+          "Government Schemes: Various state and central schemes for reserved category students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "DG Shipping (Directorate General of Shipping): The Indian government body that issues your 'CDC' (Continuous Discharge Certificate) - basically your seaman's passport.",
+          "STCW Courses: Mandatory safety courses (Fire Fighting, First Aid) required to step on a ship.",
+          "COC (Certificate of Competency): The 'License' to work as an officer. You must clear exams at MMD (Mercantile Marine Department) every time you want a promotion.",
+          "IMO Certifications: International Maritime Organization certifications for advanced training.",
+          "Continuing Education: Regular proficiency checks and simulator training to maintain license."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in maritime careers.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Sailing on Cargo ships, Oil Tankers, or Bulk Carriers. Cruise Ship Officer - Managing floating hotels (requires high social skills). Captain/Chief Engineer - Leadership roles after 10-15 years.",
+          "New-Age Careers: DP Operator (Dynamic Positioning) - Keeping drill ships stable for oil rigs (very high pay). Cruise Ship Officer - Managing floating hotels. Renewable Energy Officer - Managing offshore wind farms.",
+          "Freelancing: Marine Surveyor - Inspecting damaged cargo for insurance companies. Ship Broker - Negotiating deals between cargo owners and ship owners. Port Agent - Representing ships at ports.",
+          "International: Working with global shipping companies in Middle East, Europe, and Southeast Asia."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of merchant navy life.",
+        color: BLUE,
+        content: [
+          "Isolation: You miss weddings, funerals, and birthdays. You are physically cut off from society for months.",
+          "Piracy: Yes, it exists (Somalia/West Africa), though ships now have armed guards.",
+          "Mental Health: Being stuck with the same 20 people can be mentally draining.",
+          "Physical Risk: Storms are real. Working on slippery decks in 5-meter waves is dangerous.",
+          "Family Separation: Long periods away from loved ones can strain relationships.",
+          "Regulatory Pressure: Strict maritime laws and regulations require constant compliance."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of merchant navy operations.",
+        color: BLUE2,
+        content: [
+          "Green Shipping: Ships are moving from dirty 'Bunker Fuel' to Green Methanol and Ammonia. Officers will need new training to handle these volatile fuels.",
+          "MASS (Maritime Autonomous Surface Ships): 'Ghost Ships' with no crew are being tested. However, fully autonomous ocean-crossing ships are decades away. The role will shift from 'steering' to 'monitoring systems.'",
+          "Starlink at Sea: High-speed internet is finally reaching ships, reducing isolation significantly.",
+          "AI Navigation: AI systems will assist in route planning and collision avoidance.",
+          "Sustainability Focus: Carbon-neutral operations and sustainable shipping practices will be standard.",
+          "Cyber Security: Protecting ships from cyber attacks will become a critical responsibility."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Get 6/6 Eyesight: Take care of your eyes. For Deck officers, no color blindness is allowed, and glasses are restricted (Lasik is allowed with conditions).",
+          "Learn Swimming: You cannot join a maritime college if you can't swim. Start lessons now.",
+          "Strengthen Physics: Ships are giant floating physics problems (Buoyancy, Stability). Love Archimedes' Principle.",
+          "DIY Projects: Learn to fix things. If your toaster breaks, try to fix it. This 'hands-on' attitude is what captains look for.",
+          "Learn Geography: Know the world map and major shipping routes.",
+          "Master English: Clear communication is critical. Practice speaking and writing English fluently."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring merchant navy officers from India.",
+        color: BLUE2,
+        content: [
+          "Captain Radhika Menon: The first female Captain of the Indian Merchant Navy. She received the IMO Bravery Award for saving seven fishermen from a sinking boat in a storm.",
+          "Captain Rajesh Unni: Founder of Synergy Marine Group. He started as a cadet and now runs one of the world's largest ship management companies.",
+          "Captain Sunil James: A brave officer who faced imprisonment in Togo while fighting for his crew's rights, highlighting the resilience required in this job.",
+          "Captain Deepak Sharma: Known for his expertise in maritime safety and environmental protection.",
+          "Captain Priya Sharma: One of India's first female Chief Engineers, breaking barriers in the maritime industry."
+        ]
+      }
+    ]
+  },
+  supply_chain_management: {
+    slug: "supply_chain_management",
+    badge: "📦 The Masterminds of Movement for Class 10+",
+    heading: "Supply Chain Management",
+    subheading: "Getting the right product to the right place at the right time—the backbone of the modern economy.",
+    whyCards: [
+      { icon: "TrendingUp", title: "$380 Billion Market by 2025-26", description: "Indian logistics market exploding. PM Gati Shakti pouring money into infrastructure.", borderColor: "#10B981" },
+      { icon: "Zap", title: "10-Minute Delivery Revolution", description: "Quick Commerce (Zepto, Blinkit) creating massive demand for SCM professionals.", borderColor: "#059669" },
+      { icon: "Globe", title: "Make in India Boom", description: "iPhone factories, semiconductor plants—all need supply chain experts to manage operations.", borderColor: "#3B82F6" },
+      { icon: "DollarSign", title: "High Salaries & Growth", description: "₹5L–₹1.5Cr+ annually. One of the fastest-growing career paths in India.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3 Years (BBA) or 2 Years (MBA)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Excel, SAP, Data Analytics, ERP Systems", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹5L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "$380B", label: "Logistics Market by 2025-26", gradient: "from-green-500 to-green-600" },
+      { value: "10 Min", label: "Delivery Time (Quick Commerce)", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "The art and science of movement.",
+        color: BLUE,
+        content: [
+          "Supply Chain Management Defined: The art and science of getting the right product to the right place, at the right time, for the right price.",
+          "The Real Magic: Have you ever ordered a phone on Amazon and wondered how it reached your doorstep in 24 hours? Or how McDonald's ensures every outlet in India has fresh burger buns every single morning? It's not magic; it's Supply Chain Management.",
+          "The Bridge: While a manufacturer makes the product and a marketing team sells it, the Supply Chain Manager ensures it actually moves. They connect the dots between raw materials (like farmers growing potatoes) to the factory (making chips) to the warehouse, and finally to the shop near your house.",
+          "The Scope: SCM covers everything from predicting demand, sourcing raw materials, coordinating production, managing logistics, to handling returns.",
+          "Why It Matters in India: Fueled by 10-minute grocery deliveries (Zepto/Blinkit) and the 'Make in India' boom, SCM is the backbone of the economy. If the supply chain breaks, the economy stops.",
+          "The Impact: You are not just moving products; you are feeding families, powering industries, and building the nation's infrastructure."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Arjun, Supply Chain Manager",
+        icon: "Clock",
+        description: "Real workflow at a leading Quick-Commerce company in Gurgaon.",
+        color: BLUE2,
+        content: [
+          "8:30 AM - Crisis Mode: Arjun logs in. His dashboard is flashing red. A truck carrying fresh vegetables from Nashik is stuck due to heavy rains. If it doesn't reach the warehouse by noon, thousands of customers in Delhi won't get their evening veggies.",
+          "9:00 AM - Problem Solving: Arjun calls the logistics partner. 'Re-route via Route B. It's longer but moving.' He then coordinates with the warehouse team to prioritize unloading the moment the truck arrives.",
+          "11:00 AM - Demand Planning: He switches gears. The 'Diwali Sale' is coming up. He analyzes data from last year: 'We sold 50,000 gift packs last year. Data predicts a 20% spike this year.' He places orders with suppliers today to ensure stock is ready 3 months from now.",
+          "1:00 PM - Lunch with Procurement Team: They discuss the rising cost of cardboard boxes. Arjun suggests switching to a new vendor in Punjab to save ₹2 per box. That's a saving of ₹50 Lakhs a year!",
+          "3:00 PM - Warehouse Visit: He drives to the 'Dark Store' (a mini-warehouse). He checks if the new robot-sorters are working correctly. He notices the packers are taking too long to pack fragile items and sets up a quick training session.",
+          "5:30 PM - Vendor Negotiation: A supplier wants to raise prices. Arjun uses his data to show them that their competitors are cheaper. He negotiates a deal: 'Keep the old price, and I'll give you a larger contract for next year.' Deal signed.",
+          "7:30 PM - Wrap Up: The vegetable truck has arrived. The supply chain is intact. He goes home knowing he fed thousands of families today."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The SCM Professional's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Puzzle Solver: Do you enjoy strategy games like Age of Empires or managing resources in Minecraft? SCM is a real-life resource game.",
+          "The Cool Head: Can you stay calm when plans fail? (Because they will fail).",
+          "The Negotiator: Are you good at convincing your friends to change plans? You'll need to convince vendors daily.",
+          "The Organizer: Do you hate mess? Supply chain is about bringing order to chaos.",
+          "Hard Skills: Data Analytics (Excel is your best friend), Logistics Planning, Inventory Management, and understanding of ERP software (like SAP).",
+          "Soft Skills: Communication (talking to truck drivers and CEOs alike), Teamwork, and Quick Decision Making.",
+          "The Self-Check: Do you love solving puzzles? Do you thrive in fast-paced environments? If yes, you have the SCM DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The Plan-Source-Make-Deliver-Return model.",
+        color: BLUE2,
+        content: [
+          "Plan: Predicting how much product is needed (Demand Forecasting). Using historical data and market trends to anticipate customer needs.",
+          "Source: Finding the best suppliers for raw materials (Procurement). Negotiating prices and ensuring quality.",
+          "Make: Coordinating with factories to ensure production happens on time. Managing production schedules and quality control.",
+          "Deliver: Managing trucks, ships, and planes to get goods to customers (Logistics). Optimizing routes and reducing delivery times.",
+          "Return: Handling damaged or returned goods (Reverse Logistics). Managing refunds and recycling.",
+          "Optimize: Continuously improving efficiency, reducing costs, and minimizing environmental impact."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Pathway A - Management Route (Most Popular for High Growth): Class 12: Any stream (Commerce/Science/Humanities). Math is a plus. Undergraduate: BBA/BMS in Logistics & SCM or B.Tech (Mechanical/Industrial Engineering). Postgraduate: MBA/PGDM in Operations & Supply Chain Management. Entrance Exams: CAT, XAT, SNAP, NMAT.",
+          "Pathway B - Technical/Diploma Route (Quick Entry): Class 12: Any stream. Course: B.Com or B.Sc in SCM. Certification: Diploma in Materials Management (from institutions like IIMM). Entry Role: Logistics Coordinator / Warehouse Supervisor.",
+          "Pathway C - Data/Analyst Route (For Techies): Graduation: B.Tech or B.Sc (Stats/Maths). Specialization: Certification in Supply Chain Analytics or Data Science. Role: Supply Chain Analyst (Predicting demand using AI).",
+          "Top Institutions: IIM Mumbai (NITIE), IIM Bangalore, SIOM Nashik, SP Jain Mumbai, IIFT Delhi."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Growth: The Indian logistics market is projected to reach $380 Billion by 2025-26. The government's PM Gati Shakti plan is pouring money into infrastructure, creating thousands of jobs.",
+          "Hiring Trends: Massive demand in Quick Commerce (Blinkit, Zepto), E-commerce (Amazon, Flipkart), and Manufacturing (iPhone factories in India).",
+          "Entry-Level (0-2 Yrs): Supply Chain Analyst/Trainee: ₹5L–₹8L (Startup/E-commerce) or ₹4L–₹7L (Traditional Mfg).",
+          "Mid-Level (3-7 Yrs): Procurement/Logistics Manager: ₹12L–₹22L (Startup/E-commerce) or ₹10L–₹18L (Traditional Mfg).",
+          "Senior-Level (8-15 Yrs): Head of Supply Chain: ₹30L–₹60L (Startup/E-commerce) or ₹25L–₹50L (Traditional Mfg).",
+          "Leadership: VP/Chief Supply Chain Officer: ₹80L–₹1.5Cr (Startup/E-commerce) or ₹70L–₹1.2Cr (Traditional Mfg)."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: E-Commerce & Retail (Amazon, Flipkart, Myntra, Reliance Retail), FMCG (HUL, Nestle, ITC, Amul), Manufacturing (Tata Motors, Samsung, Apple Foxconn), Logistics Firms 3PL (Delhivery, Blue Dart, DHL, Maersk).",
+          "Top Cities: Mumbai/Bhiwandi (The logistics capital - Ports + Warehouses), Delhi-NCR Gurgaon/Noida (Massive warehousing hub for North India), Bangalore (Hub for Tech-enabled supply chain jobs), Chennai/Pune (Manufacturing & Auto supply chain hubs).",
+          "Remote Work: Planning and Analyst roles offer hybrid work. Operations roles (Warehouse/Port) require being on-site.",
+          "Emerging Opportunities: Quick Commerce, Cold Chain Management, Drone Delivery, Blockchain Supply Chain."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Course fees and duration.",
+        color: BLUE2,
+        content: [
+          "IIMs (Govt) MBA/PGP: ₹15L–₹25L (2 Years).",
+          "Private B-Schools PGDM (SCM focus): ₹10L–₹20L (2 Years).",
+          "BBA Colleges BBA Logistics: ₹3L–₹8L (3 Years).",
+          "Distance/Online Diploma/MBA: ₹50,000–₹2L (1-2 Years).",
+          "Certifications: APICS CSCP/CPIM: ₹1L–₹2L.",
+          "ROI: With starting salaries of ₹5L+, you can recover your investment in 2-3 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for supply chain management in India.",
+        color: BLUE,
+        content: [
+          "Government (Public): IIM Mumbai (formerly NITIE) - The Mecca of Supply Chain in India. If you want to be a CEO in this field, aim for this. IIM Bangalore/Calcutta - Excellent Operations specialization. Indian Institute of Foreign Trade (IIFT) - Best for Export-Import SCM.",
+          "Private: Symbiosis Institute of Operations Management (SIOM) Nashik - Dedicated exclusively to Operations/SCM. SP Jain Institute of Management (SPJIMR) Mumbai - Top-tier Operations program. Amity University/UPES - Good BBA/MBA programs in Logistics. CII Institute of Logistics Chennai.",
+          "Online/Distance: Many universities offer distance MBA in SCM for working professionals.",
+          "Industry Partnerships: Many companies offer in-house training programs."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "OP Jindal Engineering & Management Scholarship (OPJEMS): For top management students.",
+          "Institute Specific: IIM Mumbai and SIOM offer merit-based scholarships.",
+          "Industry Sponsorships: Companies like Maersk or TCI sometimes sponsor students in specialized logistics courses.",
+          "Government Schemes: Various state and central schemes for reserved category students.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Corporate Partnerships: Some companies offer scholarships in exchange for service contracts."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "ASCM (Association for Supply Chain Management): Offers the APICS CSCP/CPIM certifications. Recognized globally as the 'Gold Standard.'",
+          "CIPS (Chartered Institute of Procurement & Supply): UK-based, highly valued for Procurement roles.",
+          "Indian Institute of Materials Management (IIMM): The premier Indian body for SCM professionals.",
+          "Six Sigma Certification: For process improvement and quality management.",
+          "Industry-Specific: Certifications in Cold Chain, Pharma Logistics, E-commerce Logistics."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in supply chain careers.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Procurement Manager (buying raw materials at the best price), Logistics Manager (managing trucks/transport), Warehouse Manager (keeping stock organized), Operations Manager (overseeing entire supply chain).",
+          "New-Age Careers: Supply Chain Data Scientist (using AI to predict the future), Sustainability Manager (reducing the 'Carbon Footprint' of the supply chain - Green Logistics), Blockchain Supply Chain Expert (tracking products securely to prevent fakes), Cold Chain Manager (managing temperature-sensitive products).",
+          "Freelancing: Sourcing Agent (helping foreign companies find manufacturers in India), Logistics Consultant (helping small businesses optimize their delivery routes), Supply Chain Auditor (verifying compliance).",
+          "International: Working with global supply chain companies in USA, Europe, and Southeast Asia."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of supply chain management.",
+        color: BLUE,
+        content: [
+          "High Pressure: If a factory stops because you didn't order raw materials, it costs crores per hour. The blame falls on you.",
+          "24/7 Operations: Trucks run at night. Ships dock on Sundays. You might get calls at odd hours.",
+          "Global Impact: A war in Europe or a blockage in the Suez Canal instantly disrupts your work in India. You are affected by global politics.",
+          "Unpredictability: Weather, strikes, accidents—anything can disrupt the supply chain.",
+          "Constant Learning: Technology and regulations change rapidly. You must stay updated.",
+          "Work-Life Balance: During peak seasons (Diwali, Christmas), you might work long hours."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of supply chain management.",
+        color: BLUE2,
+        content: [
+          "Drone Deliveries: By 2030, last-mile delivery in cities might be done by drones to beat traffic.",
+          "AI & Automation: 'Dark Warehouses' (fully automated, no lights needed) run by robots are becoming real. Humans will manage the robots, not lift the boxes.",
+          "Cold Chain Growth: With the rise of frozen food and pharma (vaccines), the 'Cold Chain' sector is exploding.",
+          "Blockchain Tracking: Every product tracked from factory to customer using blockchain for transparency.",
+          "Sustainability: Carbon-neutral supply chains will be mandatory, not optional.",
+          "Hyperlocal Networks: Instead of centralized warehouses, companies will have micro-fulfillment centers in every neighborhood."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Master Excel: Learn how to make spreadsheets. SCM runs on Excel.",
+          "Organize Events: Manage the logistics for your school sports day or annual fest. It teaches you coordination.",
+          "Play Strategy Games: Games like Civilization or SimCity teach you resource management.",
+          "Learn Geography: Know your ports, highways, and trade routes.",
+          "Data Analysis: Learn basic statistics and data interpretation.",
+          "Problem Solving: Practice solving complex puzzles and optimization problems."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring supply chain leaders from India.",
+        color: BLUE2,
+        content: [
+          "Tim Cook: (Global Context) Before becoming CEO of Apple, he was the Chief Supply Chain Officer. He proved that SCM guys can lead the world's biggest company.",
+          "Raghunath Medge: President of the Mumbai Dabbawalas. Their supply chain is so efficient (Six Sigma level) that Harvard studies it.",
+          "Amitava Baksi: Chief Procurement Officer at Tata Steel, a veteran in the Indian supply chain industry.",
+          "Leaders at Flipkart/Amazon India: The operational heads of these companies have built India's modern logistics network from scratch.",
+          "Yavuz Salman: CEO of Delhivery, building India's largest logistics network."
+        ]
+      }
+    ]
+  },
+  artificial_intelligence: {
+    slug: "artificial_intelligence",
+    badge: "🤖 The Architect of Intelligence for Class 10+",
+    heading: "Artificial Intelligence (AI)",
+    subheading: "Teaching computers to think, learn, and make decisions—building the brains that power the future.",
+    whyCards: [
+      { icon: "TrendingUp", title: "1 Million AI Professionals Needed by 2026", description: "NASSCOM estimates India needs 1M AI professionals but has a talent gap of 51%. Massive opportunity.", borderColor: "#10B981" },
+      { icon: "Zap", title: "$7.8 Billion Market by 2025", description: "Indian AI market exploding. Every industry—healthcare, finance, agriculture—needs AI experts.", borderColor: "#059669" },
+      { icon: "DollarSign", title: "Highest-Paying Tech Career", description: "₹6L–₹1.5Cr+ annually. AI professionals among the highest-paid in India.", borderColor: "#3B82F6" },
+      { icon: "Globe", title: "Global Opportunities", description: "Remote work for Silicon Valley startups from Tier-2 cities. Dollar-pegged salaries.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years (B.Tech) or 2 Years (M.Tech)", color: "bg-green-100 text-green-700" },
+      { label: "Tools", detail: "Python, TensorFlow, PyTorch, Jupyter Notebooks", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹6L–₹1.5Cr+ (Entry to Leadership)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "1M", label: "AI Professionals Needed by 2026", gradient: "from-green-500 to-green-600" },
+      { value: "$7.8B", label: "Indian AI Market by 2025", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Building brains for machines.",
+        color: BLUE,
+        content: [
+          "AI Defined: Imagine teaching a computer to think, learn, and make decisions like a human—but faster. That is the essence of a career in Artificial Intelligence (AI).",
+          "The Role: An AI professional doesn't just write code; they build 'brains' for machines. They are the wizards behind ChatGPT writing essays, Netflix recommending movies, self-driving cars navigating traffic, and medical scanners detecting cancer.",
+          "The Scope: AI covers Machine Learning (teaching computers to learn from data), Deep Learning (using neural networks), Natural Language Processing (understanding human language), Computer Vision (teaching computers to see), and Robotics.",
+          "Why It Matters: In the 21st century, AI is the new electricity. It is powering every industry—from agriculture (helping farmers detect crop diseases) to defense (smart drones).",
+          "India's Role: As an AI professional in India, you aren't just getting a job; you are building the engine that will drive India's economy to $5 Trillion. You are solving problems that were previously impossible to solve.",
+          "The Impact: You are not just writing code; you are shaping the future of humanity."
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Aryan, Machine Learning Engineer",
+        icon: "Clock",
+        description: "Real workflow at a Fintech unicorn in Bengaluru.",
+        color: BLUE2,
+        content: [
+          "9:30 AM - Model Performance Check: Aryan logs in. He doesn't start with emails; he checks the performance of his 'Fraud Detection Model.' Last night, his AI system scanned 5 million UPI transactions and flagged 200 suspicious ones. He tweaks the code to reduce false alarms.",
+          "11:30 AM - Stand-up Meeting: A meeting with the product team. They want a new feature: Can the app predict if a user will need a loan next month? Aryan debates the data requirements—he needs user spending history and credit scores to train the new AI brain.",
+          "1:30 PM - Lunch & Collaboration: He chats with a colleague from the 'Computer Vision' team who is building a system to verify customer faces for KYC using just a selfie. They discuss a new research paper from Google DeepMind.",
+          "3:30 PM - Deep Work: Aryan puts on his noise-canceling headphones. He is cleaning a massive dataset (data is the food for AI). It's messy work—fixing spelling errors, removing duplicates—but essential. A smart AI on bad data is a 'stupid' AI.",
+          "6:00 PM - Model Training: He runs a 'training' session for his model. It will take 4 hours for the computer to learn from the data. While it runs, he plays a game of foosball in the breakroom.",
+          "7:30 PM - Results & Deployment: The model training is done. The accuracy has improved by 2%. It sounds small, but for a bank, that's crores of rupees saved. He pushes the update and heads home, feeling like a digital architect."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The AI Professional's DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "The Puzzle Solver: You love logic puzzles, Sudoku, or strategy games like Chess.",
+          "The Math Whiz: You don't hate Algebra or Statistics; you actually see the patterns in numbers.",
+          "The Curious Cat: You constantly ask, 'How does this work?' and 'Can we automate this?'",
+          "Persistent: AI models fail 90% of the time before they work. You need the patience to keep trying.",
+          "Lazy (in a good way): You hate doing repetitive tasks and would rather spend 10 hours writing code to automate a 10-minute task.",
+          "Hard Skills: Strong Mathematics (Linear Algebra, Calculus, Probability), Programming (Python, Java), and understanding of algorithms.",
+          "Soft Skills: Problem-solving, Communication (explaining complex concepts simply), and Teamwork.",
+          "The Self-Check: Do you love solving puzzles? Do you see patterns in data? If yes, you have the AI DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "The AI Lifecycle.",
+        color: BLUE2,
+        content: [
+          "Problem Definition: Understanding what needs to be solved (e.g., 'Detect fake news'). Working with stakeholders to define clear objectives.",
+          "Data Collection: Gathering the raw material (images, text, numbers). Sourcing data from various databases and APIs.",
+          "Data Cleaning: Fixing errors in the data (80% of the work happens here!). Removing duplicates, handling missing values, normalizing data.",
+          "Model Building: Writing the algorithm (the 'brain') using code. Choosing the right algorithm for the problem.",
+          "Training & Testing: Teaching the model and checking if it passes the exam. Validating performance on unseen data.",
+          "Deployment: Putting the model into the real app/website. Monitoring performance in production and making updates."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: BLUE,
+        content: [
+          "Step 1 - After Class 10: Stream: Science (PCM) is non-negotiable. Mathematics is the backbone of AI. Focus: Computer Science (Python/Java) as an elective is a huge plus.",
+          "Step 2 - After Class 12: Undergraduate Degree (4 Years): B.Tech in Computer Science (CSE) with AI/ML Specialization (most direct route), B.Tech in Data Science (closely related), B.Sc. in Mathematics/Statistics (strong backdoor entry). Entrance Exams: JEE Mains/Advanced (IITs/NITs), BITSAT, VITEEE.",
+          "Step 3 - After Graduation: Postgraduate (2 Years) - For High-End Roles: M.Tech in AI & Robotics (for research roles), M.Sc. in Data Science/Cognitive Science. Entrance Exams: GATE (for M.Tech).",
+          "Step 4 - Lateral Entry (For Non-CS Grads): Did Mechanical or Civil Engineering? No problem. Do a 6-12 month Bootcamp (e.g., Scaler, UpGrad, CDAC) in Data Science/AI. Your domain knowledge + AI skills = Deadly combination."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Market size, salaries, and industry trends.",
+        color: BLUE2,
+        content: [
+          "Market Demand: EXPLOSIVE. NASSCOM estimates India will need 1 Million AI professionals by 2026, but currently has a talent gap of 51%.",
+          "Growth: The Indian AI market is projected to reach $7.8 Billion by 2025.",
+          "Entry-Level (0-2 Yrs): Jr. Data Scientist, ML Engineer: ₹6L–₹12L.",
+          "Mid-Level (3-7 Yrs): AI Architect, NLP Specialist: ₹15L–₹25L.",
+          "Senior-Level (8-15 Yrs): Lead AI Scientist, Principal Engineer: ₹30L–₹60L.",
+          "Leadership: Chief AI Officer (CAIO), Head of Data: ₹80L–₹1.5Cr+.",
+          "Metro vs. Tier-2: Bengaluru/Gurugram pays the highest (tech hub premium). However, remote jobs for US startups are becoming common, offering dollar-pegged salaries in Tier-2 cities."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Industries, companies, and opportunities.",
+        color: BLUE,
+        content: [
+          "Top Industries: IT & SaaS (Google, Microsoft, Infosys, TCS building AI tools), Fintech (Paytm, PhonePe fraud detection), E-commerce (Flipkart, Amazon recommendation engines), Healthcare (1mg, Qure.ai diagnostic AI), Automotive (Tata Motors, Ola Electric autonomous driving).",
+          "Top Cities: Bengaluru (The AI Capital), Hyderabad, Pune, Gurugram.",
+          "Remote Work: Very High. You can work for a Silicon Valley startup from Jaipur.",
+          "Emerging Opportunities: Generative AI, Edge AI, AI for Climate Change, Robotics, Autonomous Systems."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "DollarSign",
+        description: "Course fees and equipment costs.",
+        color: BLUE2,
+        content: [
+          "Course Fees (Annual): IITs/NITs: ₹2L–₹3L, Private Universities: ₹3L–₹6L.",
+          "Bootcamps/Certifications: ₹50,000–₹2.5L (for 6-month intensive courses).",
+          "Tools: You need a powerful laptop (Gaming laptop or MacBook with good GPU) to run models. Cost: ₹80k–₹1.2L.",
+          "Online Courses: Many free and paid courses on Coursera, Udemy, DeepLearning.AI (₹500–₹5,000 per course).",
+          "ROI: With starting salaries of ₹6L+, you can recover your investment in 1-2 years."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study?",
+        icon: "Building",
+        description: "Top institutions for AI in India.",
+        color: BLUE,
+        content: [
+          "North: IIT Delhi (School of Artificial Intelligence - ScAI), IIIT Delhi (Specialized AI research center).",
+          "South: IIT Hyderabad (The first in India to launch a full B.Tech in AI), IISc Bengaluru (The holy grail for AI Research - M.Tech/PhD), Vellore Institute of Technology (VIT) (Strong placements).",
+          "West: IIT Bombay (Top-tier research), Jio Institute Navi Mumbai (New-age AI programs).",
+          "East: IIT Kharagpur (Center of Excellence in AI), ISI Kolkata (Best for the mathematical foundations of AI).",
+          "Online: Coursera, edX, DeepLearning.AI (Andrew Ng's courses)."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Gift",
+        description: "Financial aid and support programs.",
+        color: BLUE2,
+        content: [
+          "Reliance Foundation Scholarships: For undergraduate students in AI/Computer Science.",
+          "PM Research Fellowship (PMRF): For PhD students (Stipend: ₹70,000/month).",
+          "Google Venkat Panchapakesan Memorial Scholarship: For computer science students.",
+          "Pragati Scholarship (AICTE): Exclusively for girls in technical education.",
+          "Merit-Based: Most universities offer scholarships for top performers in entrance exams.",
+          "Corporate Sponsorships: Tech companies sometimes sponsor talented students."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Certificate",
+        description: "Professional organizations and credentials.",
+        color: BLUE,
+        content: [
+          "Professional Bodies: IEEE Computer Society (join student chapters), AAAI (Association for the Advancement of Artificial Intelligence).",
+          "Must-Have Certifications: Google TensorFlow Developer Certificate, DeepLearning.AI Andrew Ng's courses (Industry standard), Microsoft Certified Azure AI Engineer Associate.",
+          "Advanced Certifications: AWS Certified Machine Learning Specialist, Coursera Machine Learning Specialization.",
+          "Industry Recognition: Kaggle competitions (build portfolio), GitHub contributions (showcase your work).",
+          "Continuing Education: Regular courses to stay updated with latest AI trends."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in AI careers.",
+        color: BLUE,
+        content: [
+          "Conventional Careers: Machine Learning Engineer (building the models), Data Scientist (analyzing data to find insights), Business Intelligence Developer (creating dashboards), AI Research Scientist (advancing the field).",
+          "New-Age Careers: Prompt Engineer (writing perfect commands for AI like ChatGPT), AI Ethicist (ensuring AI doesn't become racist or biased), Robotics Process Automation (RPA) Developer (automating boring office tasks), AI Product Manager (defining AI products).",
+          "Freelancing: Building custom Chatbots for small businesses, consulting on AI strategy, creating AI models for specific use cases.",
+          "Entrepreneurship: Starting an AI startup, building AI tools for specific industries."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The real side of AI careers.",
+        color: BLUE,
+        content: [
+          "Continuous Learning: The technology changes every week. If you stop studying for 6 months, you are obsolete.",
+          "Imposter Syndrome: The field is so vast (Math, Coding, Domain) that you will often feel 'I don't know enough.'",
+          "Ethical Stress: You might build tools that automate jobs, which can be a heavy moral burden.",
+          "High Competition: Everyone wants to be an AI engineer. You need to constantly upskill to stay relevant.",
+          "Debugging Complexity: AI models are 'black boxes.' Debugging why a model fails is extremely difficult.",
+          "Data Privacy: Handling sensitive data requires strict compliance and ethical considerations."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Zap",
+        description: "The future of artificial intelligence.",
+        color: BLUE2,
+        content: [
+          "Generative AI: Moving from 'predicting' to 'creating' (Art, Music, Code). ChatGPT-like models will become ubiquitous.",
+          "Edge AI: AI running on your phone/watch without internet (Privacy-focused). Processing data locally instead of sending to cloud.",
+          "AI in Climate Change: Using satellite data to predict floods and optimize solar energy. AI for environmental monitoring.",
+          "Multimodal AI: Models that understand text, images, audio, and video simultaneously.",
+          "AI Agents: Autonomous AI systems that can plan and execute complex tasks without human intervention.",
+          "Quantum AI: Quantum computers will revolutionize AI by solving previously impossible problems."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School",
+        icon: "Rocket",
+        description: "Preparation during Class 9-12.",
+        color: BLUE,
+        content: [
+          "Learn Python: It is the language of AI. Start with 'Python for Kids' tutorials.",
+          "Master Statistics: Don't ignore Mean, Median, Mode, and Probability in Maths class.",
+          "Kaggle: Join this website. It's a playground where you can compete in data challenges.",
+          "Chess/Strategy Games: Builds the logical thinking required for algorithm design.",
+          "YouTube Channels: Follow channels like 3Blue1Brown (Math), Sentdex (Python), and StatQuest (Statistics).",
+          "Build Projects: Create simple AI projects like a chatbot or image classifier using online tutorials."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous Indian Personalities",
+        icon: "Star",
+        description: "Inspiring AI leaders from India.",
+        color: BLUE2,
+        content: [
+          "Ashish Vaswani: The co-inventor of the 'Transformer' model (the 'T' in ChatGPT). He revolutionized modern AI.",
+          "Dr. Romesh Wadhwani: Chairman of SymphonyAI, a billionaire pioneer in enterprise AI.",
+          "Sangeeta Bavi: Executive Director at Microsoft India, leading AI adoption across the country.",
+          "Nandan Nilekani: While known for Aadhaar, he is the architect of India's 'Digital Public Infrastructure' which is now integrating AI.",
+          "Prof. B. Ravindran: Head of the Robert Bosch Centre for Data Science & AI at IIT Madras, a top academic voice."
+        ]
+      }
+    ]
   }
 };
+
+
+
 
