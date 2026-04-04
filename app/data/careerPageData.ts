@@ -6,6 +6,7 @@ import { hospitalityUpdateData } from './hospitalityUpdateData';
 import { healthScienceUpdateData } from './healthScienceUpdateData';
 import { educationUpdateData } from './educationUpdateData';
 import { businessManagementUpdateData } from './businessManagementUpdateData';
+import { publicSafetyAndSecurityUpdateData } from './publicSafetyAndSecurityUpdateData';
 export interface CareerHeroStat {
   value: string;
   label: string;
@@ -5831,9 +5832,10 @@ export const careerPageData: Record<string, CareerPageData> = {
   },
   ...hospitalityUpdateData,
   ...healthScienceUpdateData,
+  ...publicSafetyAndSecurityUpdateData,
 };
 
 export function getCareerPageData(slug: string): CareerPageData | null {
-  return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || architectureAndConstructionUpdateData[slug] || educationUpdateData[slug] || businessManagementUpdateData[slug] || careerPageData[slug] || null;
+  return agricultureUpdateData[slug] || artsAndDesignUpdateData[slug] || bioScienceUpdateData[slug] || architectureAndConstructionUpdateData[slug] || educationUpdateData[slug] || businessManagementUpdateData[slug] || publicSafetyAndSecurityUpdateData[slug] || careerPageData[slug] || null;
 }
 

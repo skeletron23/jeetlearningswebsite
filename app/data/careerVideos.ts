@@ -1717,6 +1717,78 @@ export const careerVideos: Record<string, CareerVideo[]> = {
       url: "https://www.youtube.com/embed/yy0eICeMRJo",
     },
   ],
+  indian_navy: [
+    {
+      id: 1,
+      title: "Indian Navy Career Overview - The Silent Guardians of the Seas",
+      url: "https://www.youtube.com/embed/DdVOeCAO6T8",
+    },
+    {
+      id: 2,
+      title: "Naval Operations & Career Opportunities in the Indian Navy",
+      url: "https://www.youtube.com/embed/oJ24JpmC3lU",
+    },
+  ],
+  indian_police: [
+    {
+      id: 1,
+      title: "Indian Police Career Overview - The Shield of the Nation",
+      url: "https://www.youtube.com/embed/eQB7zyUEHqQ",
+    },
+    {
+      id: 2,
+      title: "Police System Reality & Reforms in India",
+      url: "https://www.youtube.com/embed/dWHy4RxPDHY",
+    },
+  ],
+  disaster_management: [
+    {
+      id: 1,
+      title: "Disaster Management Career Overview - The Guardians of Safety",
+      url: "https://www.youtube.com/embed/EnObsrW5yRI",
+    },
+    {
+      id: 2,
+      title: "Disaster Response & Emergency Management in India",
+      url: "https://www.youtube.com/embed/tmj7fDPFlTA",
+    },
+  ],
+  indian_army: [
+    {
+      id: 1,
+      title: "Indian Army Career Overview - The Ultimate Badge of Honour",
+      url: "https://www.youtube.com/embed/xcu470wmte0",
+    },
+    {
+      id: 2,
+      title: "Army Officer Life & Career Opportunities in India",
+      url: "https://www.youtube.com/embed/DnfE13xFYko",
+    },
+  ],
+  indian_air_force: [
+    {
+      id: 1,
+      title: "Indian Air Force Career Overview - Touch the Sky with Glory",
+      url: "https://www.youtube.com/embed/VL1CzT6X7JQ",
+    },
+    {
+      id: 2,
+      title: "Fighter Pilot Life & IAF Career Opportunities in India",
+      url: "https://www.youtube.com/embed/XOwujug8SvU",
+    },
+  ],
+  merchant_navy: [
+    {
+      id: 1,
+      title: "Merchant Navy Career Overview - The Silent Guardians of the Seas",
+      url: "https://www.youtube.com/embed/DdVOeCAO6T8",
+    },
+    {
+      id: 2,
+      title: "Naval Operations & Career Opportunities in the Merchant Navy",
+      url: "https://www.youtube.com/embed/oJ24JpmC3lU",
+    },
+  ],
 };
 
 export function getCareerVideos(careerSlug: string): CareerVideo[] {

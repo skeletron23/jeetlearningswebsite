@@ -191,7 +191,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
                            <img 
                              src={getRelevantImage(career, idx)}
                              alt={formatCareerName(career)}
-                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                             className="w-full h-full object-cover"
                              onError={(e) => {
                                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80";
                              }}
