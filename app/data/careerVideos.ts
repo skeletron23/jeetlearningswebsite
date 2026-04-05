@@ -1789,6 +1789,18 @@ export const careerVideos: Record<string, CareerVideo[]> = {
       url: "https://www.youtube.com/embed/oJ24JpmC3lU",
     },
   ],
+  biomedical_engineer: [
+    {
+      id: 1,
+      title: "Biomedical Engineering Career Overview - The Bridge Between Engineering and Medicine",
+      url: "https://www.youtube.com/embed/8UmxpxPmSBc",
+    },
+    {
+      id: 2,
+      title: "Medical Device Innovation & Healthcare Technology in India",
+      url: "https://www.youtube.com/embed/CcvK1VeICp0",
+    },
+  ],
 };
 
 export function getCareerVideos(careerSlug: string): CareerVideo[] {

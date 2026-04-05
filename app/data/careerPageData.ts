@@ -297,6 +297,254 @@ export const careerPageData: Record<string, CareerPageData> = {
     ],
   },
 
+  // ─── BIOMEDICAL ENGINEERING ─────────────────────────────────────
+  biomedical_engineer: {
+    slug: "biomedical_engineer",
+    badge: "🏥 The Bridge Between Engineering and Medicine for Class 10+",
+    heading: "Biomedical Engineering",
+    subheading: "Design the tools that save lives. From thermometers to MRI machines to artificial limbs, become the invisible architect behind modern healthcare.",
+    whyCards: [
+      { icon: "Heart", title: "Life-Saving Impact", description: "Your innovations directly save lives and improve healthcare for 1.4 billion people.", borderColor: "#EF4444" },
+      { icon: "Zap", title: "MedTech Revolution", description: "India's 'Make in India' initiative creating urgent demand for affordable medical devices.", borderColor: "#F59E0B" },
+      { icon: "TrendingUp", title: "Explosive Growth", description: "Indian Medical Device market expected to reach $50 Billion by 2030 with 15% CAGR.", borderColor: "#10B981" },
+      { icon: "Globe", title: "Global Opportunities", description: "High demand in USA, Germany, Japan for Indian biomedical engineers.", borderColor: "#3B82F6" },
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "4 Years B.Tech / 2 Years M.Tech", color: "bg-red-100 text-red-700" },
+      { label: "Salary Range", detail: "₹3.5L–₹45L+ (Entry to Senior)", color: "bg-orange-100 text-orange-700" },
+      { label: "Growth", detail: "15% CAGR, India's MedTech Hub", color: "bg-green-100 text-green-700" },
+    ],
+    statCards: [
+      { value: "$50B", label: "Medical Device Market by 2030", gradient: "from-red-500 to-red-600" },
+      { value: "15%", label: "CAGR Growth Rate", gradient: "from-orange-500 to-orange-600" },
+    ],
+    guideSections: [
+      {
+        id: "1",
+        title: "What is This Career All About?",
+        icon: "Heart",
+        description: "The bridge between Engineering and Biology/Medicine.",
+        color: RED,
+        content: [
+          "Biomedical Engineering is the 'bridge' between Engineering and Biology/Medicine. It involves applying physics, mathematics, and design to develop tools that save lives. From thermometers to MRI machines to artificial limbs, biomedical engineers are the invisible architects behind modern healthcare.",
+          "India is undergoing a 'MedTech Revolution' with the government's 'Make in India' initiative. There's urgent need for professionals who can design affordable medical devices. As the 'Pharmacy of the World' transitions into a 'MedTech Hub,' biomedical engineers will ensure high-quality healthcare is accessible for 1.4 billion people.",
+          "This career combines the precision of engineering with the compassion of healthcare. You'll work on cutting-edge technologies like robotic surgical systems, wearable health monitors, artificial organs, and diagnostic equipment that transform patient outcomes.",
+          "The field is rapidly evolving with AI integration, 3D bioprinting, nanomedicine, and personalized healthcare solutions. India needs skilled biomedical engineers to lead this transformation and make advanced healthcare affordable for all."
+        ],
+      },
+      {
+        id: "2",
+        title: "A Day in the Life: Sameer, Senior Biomedical Engineer",
+        icon: "Clock",
+        description: "Real workflow of a biomedical engineer in Hyderabad.",
+        color: RED2,
+        content: [
+          "08:30 AM - Hospital ICU Troubleshooting: Starts at a large multi-specialty hospital. First stop is the ICU where a ventilator is acting up. Runs diagnostic check - it's a sensor calibration issue. Five minutes later, the machine is back online, potentially saving a patient's life.",
+          "10:30 AM - R&D Innovation: Heads to R&D wing. Team is working on a 'low-cost portable ECG' for rural clinics. Testing new biocompatible material for electrodes. Spends two hours analyzing data on how well the material conducts electrical signals and meets safety standards.",
+          "01:30 PM - Cross-Functional Collaboration: Over lunch, meets with surgeons who want modification to a robotic surgical tool to make it more ergonomic. Discusses design changes that could improve precision and reduce surgeon fatigue during long procedures.",
+          "03:00 PM - Quality Control Call: On call with manufacturing plant in Chennai discussing Quality Control standards for orthopedic implants. Zero room for error; 0.1mm mistake can mean failed surgery. Reviews batch testing reports and compliance documentation.",
+          "05:30 PM - Regulatory Compliance: Reviews Regulatory Compliance document. Before any medical device can be sold in India, it must pass strict safety tests by CDSCO (Central Drugs Standard Control Organization). Ensures all documentation is complete for upcoming audit.",
+          "07:00 PM - Inspiration: Drives home seeing billboard for robotic-assisted surgery center, knowing an engineer like him made it possible. Reflects on the lives changed by his work."
+        ],
+      },
+      {
+        id: "3",
+        title: "Is This You? Personality Traits & Skills",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: RED,
+        content: [
+          "Empathy: You care about helping people heal and understand patient needs deeply. You see healthcare challenges as personal missions.",
+          "Interdisciplinary Curiosity: You love both Biology and Physics/Math equally. You're excited by the intersection of life sciences and engineering.",
+          "Precision & Detail: You understand that small errors can have life-altering consequences. You're meticulous and quality-focused.",
+          "Problem Solving: You're a detective when machines fail. You enjoy troubleshooting complex systems and finding elegant solutions.",
+          "Communication: You can explain technical concepts to non-technical doctors and hospital staff. You bridge the gap between engineering and medicine.",
+          "Continuous Learning: You stay updated with latest medical technologies and regulatory standards. You're passionate about innovation."
+        ],
+      },
+      {
+        id: "4",
+        title: "Key Responsibilities and Workflow",
+        icon: "Briefcase",
+        description: "The complete biomedical engineering process.",
+        color: RED2,
+        content: [
+          "Needs Assessment: Identifying medical problems and understanding patient/doctor requirements. Conducting research to understand clinical challenges.",
+          "Design & Prototyping: Using CAD software (SolidWorks, CATIA) to design medical devices. Building physical prototypes and testing concepts.",
+          "Testing & Validation: Conducting rigorous testing including biocompatibility tests, sterilization validation, and clinical trials under strict supervision.",
+          "Maintenance & Training: Ensuring devices work perfectly in real-world conditions. Training doctors and hospital staff on proper usage and maintenance.",
+          "Regulatory Compliance: Navigating CDSCO approval process, ISO 13485 certification, and international standards like FDA approval for global markets.",
+          "Quality Assurance: Implementing quality control measures throughout manufacturing to ensure zero defects in life-critical devices."
+        ],
+      },
+      {
+        id: "5",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Educational journey from Class 10 onwards.",
+        color: RED,
+        content: [
+          "Path A - After Class 10: Diploma Route: 3-year Diploma in Biomedical Engineering from polytechnic. Enter workforce as Service Technician or Lateral Entry to B.Tech 2nd year.",
+          "Path B - After Class 12: Must have Physics, Chemistry, Biology/Mathematics (PCMB/PCB). Entrance Exams: JEE Main, JEE Advanced, NEET, state-level exams. B.Tech/B.E. in Biomedical Engineering (4 years).",
+          "Path C - After Graduation: For Engineers (Mechanical/Electronics/IT): M.Tech in Biomedical Engineering via GATE exam. For Life Science Graduates: M.Sc. in Biomedical Science followed by PhD.",
+          "Specialization Options: Medical Device Design, Clinical Engineering, Rehabilitation Engineering, Biomedical Instrumentation, Tissue Engineering, Biomaterials."
+        ],
+      },
+      {
+        id: "6",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, growth, and opportunities.",
+        color: RED2,
+        content: [
+          "Entry-Level (Service/Clinical Engineers, 0-2 years): ₹3.5L–₹6L annually.",
+          "Mid-Level (R&D/Project Managers, 5–10 years): ₹10L–₹18L annually.",
+          "Senior-Level (Senior Scientists/Directors, 15+ years): ₹22L–₹45L annually.",
+          "Leadership/CXO (MNCs like GE, Siemens, Philips): ₹50L+ annually.",
+          "Metro vs. Tier-2: Metro cities offer 20–30% higher salaries than tier-2 cities.",
+          "Industry Growth: Indian Medical Device market expected to reach $50 Billion by 2030 with 15% CAGR. Fastest growing segment in healthcare."
+        ]
+      },
+      {
+        id: "7",
+        title: "Where Are the Jobs?",
+        icon: "Briefcase",
+        description: "Industries, cities, and opportunities.",
+        color: RED,
+        content: [
+          "Top Industries: Medical Device Manufacturing (Abbott, Medtronic, Stryker), Hospitals (Clinical Engineering departments), Rehabilitation Centers, Diagnostic Centers, Government Research Labs (ICMR, CSIR).",
+          "Top Cities: Bengaluru (MedTech Hub with 500+ companies), Hyderabad (Pharma & Devices), Chennai (Manufacturing excellence), Pune (Innovation hub), Delhi-NCR (Research institutions).",
+          "Remote/Gig Work: Low for hands-on roles, high for Biomedical Data Analysts and Regulatory Consultants working with global firms.",
+          "International: High demand in USA, Germany, Japan for Indian biomedical engineers. Many Indian companies have R&D centers in these countries."
+        ]
+      },
+      {
+        id: "8",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Course fees and additional expenses.",
+        color: RED2,
+        content: [
+          "Government Institutions: ₹50,000–₹2L (Total for 4 years). Highly affordable with excellent quality education.",
+          "Private Institutions: ₹6L–₹15L (Total for 4 years). Premium institutions with industry connections.",
+          "Hostel/Living: ₹8,000–₹15,000 per month depending on city and accommodation type.",
+          "Additional Costs: Software training (₹10,000–₹30,000), internships, certifications, and lab equipment access."
+        ]
+      },
+      {
+        id: "9",
+        title: "Where to Study?",
+        icon: "Building2",
+        description: "Top institutions across India.",
+        color: RED,
+        content: [
+          "Government Institutions: IIT Madras (Tier-1), IIT Bombay (Tier-1), IIT Hyderabad (Tier-1), NIT Rourkela, COEP Pune, Anna University Chennai.",
+          "Private Institutions: VIT Vellore (Excellent placements), SRM IST Chennai, Manipal Institute of Technology, Thapar Institute Patiala.",
+          "Online/Distance Learning: NPTEL (Free courses from IITs), Coursera (Specializations in Biomedical Engineering), edX (University-level courses).",
+          "Specialization Centers: IIT Madras (Tissue Engineering), IIT Bombay (Medical Devices), IIT Hyderabad (Biomedical Instrumentation)."
+        ]
+      },
+      {
+        id: "10",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: RED2,
+        content: [
+          "AICTE Pragati Scholarship: ₹50,000/year for girls from economically weaker sections.",
+          "NSP (National Scholarship Portal): Merit-cum-means based scholarships for SC/ST/OBC students.",
+          "PMRF (Prime Minister's Research Fellowship): ₹80,000/month for PhD students in engineering.",
+          "Institutional Scholarships: Top colleges offer up to 100% tuition waivers for merit students.",
+          "Corporate Sponsorships: Companies like Medtronic, Abbott sponsor talented students' education in exchange for work commitment."
+        ]
+      },
+      {
+        id: "11",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials and regulatory requirements.",
+        color: RED,
+        content: [
+          "BMESI (Biomedical Engineering Society of India): Premier professional body for biomedical engineers in India.",
+          "Clinical Engineer Certification: Offered by BMESI for practicing clinical engineers in hospitals.",
+          "ISO 13485: Medical Device Quality Management System certification - essential for device manufacturers.",
+          "CDSCO Registration: Central Drugs Standard Control Organization approval required for all medical devices sold in India.",
+          "International Certifications: FDA (USA), CE Mark (Europe) for global market access."
+        ]
+      },
+      {
+        id: "12",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Conventional and emerging roles.",
+        color: RED2,
+        content: [
+          "Conventional Roles: Clinical Engineer (hospital maintenance), Maintenance Engineer (device support), Quality Control Officer (manufacturing), Design Engineer (R&D).",
+          "New-Age Roles: AI in Healthcare specialist, Tele-health system designer, 3D Bioprinting researcher, Wearable Tech developer, Robotic Surgery specialist.",
+          "Entrepreneurship: Starting MedTech company, developing innovative medical devices, creating healthcare solutions for rural India.",
+          "Research: PhD opportunities in tissue engineering, nanomedicine, organ printing, and advanced biomaterials."
+        ]
+      },
+      {
+        id: "13",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of the profession.",
+        color: RED,
+        content: [
+          "Curriculum Gap: Some colleges teaching outdated syllabus not aligned with industry needs. Choose institutions with strong industry partnerships.",
+          "Competition: Competing with Electronics/Mechanical engineers for biomedical roles. Need specialized knowledge to stand out.",
+          "High Stakes: Patient's life depends on your machine. Pressure is immense but rewarding. Zero tolerance for errors.",
+          "Regulatory Complexity: Navigating CDSCO, ISO standards, and international regulations is time-consuming and requires expertise.",
+          "Long Development Cycles: Medical devices take years to develop, test, and get approved. Patience and persistence are essential."
+        ]
+      },
+      {
+        id: "14",
+        title: "Emerging Trends (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in biomedical engineering.",
+        color: RED2,
+        content: [
+          "AI & Big Data: Predicting organ failure before it happens. AI-driven diagnostic systems with 99%+ accuracy.",
+          "Nanomedicine: Tiny robots delivering medicine directly to cancer cells. Revolutionizing treatment with minimal side effects.",
+          "3D Organ Printing: Using patient's own cells to print organs. Solving organ transplant shortage crisis.",
+          "Wearable Technology: Smart patches monitoring vital signs continuously. Real-time health alerts and preventive care.",
+          "Personalized Medicine: Devices tailored to individual patient genetics and physiology. Moving from one-size-fits-all to customized healthcare."
+        ]
+      },
+      {
+        id: "15",
+        title: "Skills to Build While in School",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: RED,
+        content: [
+          "Master the Basics: Don't ignore Biology or Math. Both are equally important. Strong foundation in both is non-negotiable.",
+          "Learn Coding: Python for medical data analysis, MATLAB for signal processing. Coding is the language of modern biomedical engineering.",
+          "Dismantle & Understand: Take apart old medical equipment (with permission). Understand how sensors, circuits, and mechanical systems work together.",
+          "Volunteer: Visit hospitals to see equipment in real time. Shadow clinical engineers. Understand real-world challenges.",
+          "CAD Software: Learn SolidWorks or Fusion 360. Design simple medical devices or improvements to existing ones.",
+          "Stay Updated: Follow biomedical engineering journals, attend webinars, join BMESI student chapters."
+        ]
+      },
+      {
+        id: "16",
+        title: "Famous Indian Personalities",
+        icon: "User",
+        description: "Inspiring figures in biomedical engineering.",
+        color: RED2,
+        content: [
+          "Dr. B. Ravi (IIT Bombay): Founder of BETiC (Biomedical Engineering and Technology Innovation Centre). Pioneer in medical device innovation in India.",
+          "Dr. S. Radhakrishnan (IIT Madras): IIT Madras pioneer in biomedical engineering. Established one of India's first biomedical engineering departments.",
+          "Sir M. Visvesvaraya: Civil engineer and public health engineering visionary. Laid foundation for healthcare infrastructure in India.",
+          "Kiran Mazumdar-Shaw (Biocon): While primarily biotech, her company pioneered affordable biologics and healthcare solutions for India.",
+          "Dr. Devi Shetty (Cardiac Surgeon): Working closely with biomedical engineers to develop affordable cardiac care solutions. Revolutionizing healthcare accessibility."
+        ]
+      }
+    ],
+  },
+
   // ─── BANKING & FINANCIAL SERVICES ────────────────────────────────
   banking_and_related_services: {
     slug: "banking_and_related_services",

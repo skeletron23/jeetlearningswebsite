@@ -1565,5 +1565,276 @@ export const publicSafetyAndSecurityUpdateData: Record<string, CareerPageData> =
         ]
       }
     ]
+  },
+  central_reserve_forces: {
+    slug: "central_reserve_forces",
+    badge: "🛡️ India's Internal Security Shield for Class 10+",
+    heading: "Central Reserve Forces (CRF)",
+    subheading: "Protecting India's internal security, borders, and critical infrastructure. From counter-terrorism to disaster relief, you'll be the nation's first line of defense against internal threats.",
+    whyCards: [
+      { icon: "Shield", title: "Internal Security Powerhouse", description: "Guard India's borders, counter terrorism, and maintain internal security with 9+ lakh personnel across 5 major forces.", borderColor: "#10B981" },
+      { icon: "TrendingUp", title: "Massive Expansion", description: "CRF forces are expanding rapidly with new battalions and specialized units. Huge hiring for constables, officers, and specialists.", borderColor: "#059669" },
+      { icon: "Zap", title: "Diverse Opportunities", description: "From border security to counter-terrorism, cyber operations to disaster management. Multiple career paths available.", borderColor: "#3B82F6" },
+      { icon: "Award", title: "Job Security & Prestige", description: "100% job security, excellent salary, unique allowances, and the honor of serving the nation's internal security.", borderColor: "#F59E0B" }
+    ],
+    quickFacts: [
+      { label: "Duration", detail: "3-6 Months (Constable) to 2 Years (Officer Training)", color: "bg-green-100 text-green-700" },
+      { label: "Entry Routes", detail: "Constable, SI, Officer, Direct Entry, NCC", color: "bg-blue-100 text-blue-700" },
+      { label: "Salary Range", detail: "₹21K–₹2.5L+ (Constable to Senior Officer)", color: "bg-purple-100 text-purple-700" }
+    ],
+    statCards: [
+      { value: "9+ Lakh", label: "Total CRF Personnel", gradient: "from-green-500 to-green-600" },
+      { value: "5", label: "Major Paramilitary Forces", gradient: "from-blue-500 to-blue-600" }
+    ],
+    guideSections: [
+      {
+        id: "what",
+        title: "What is This Career All About?",
+        icon: "Target",
+        description: "Understanding the Central Reserve Forces and their critical role.",
+        color: BLUE,
+        content: [
+          "The Central Reserve Forces Definition: A collective term for India's five major paramilitary forces under the Ministry of Home Affairs. These forces operate under the central government and are deployed across India to maintain internal security, guard borders, and respond to emergencies.",
+          "The Five Forces: CRPF (Central Reserve Police Force) - 5 lakh+ personnel, India's largest paramilitary force. BSF (Border Security Force) - 2.5 lakh+ personnel, guards India's land borders. CISF (Central Industrial Security Force) - 1.6 lakh+ personnel, protects critical infrastructure. ITBP (Indo-Tibetan Border Police) - 60,000+ personnel, guards high-altitude borders. SSB (Sashastra Seema Bal) - 50,000+ personnel, guards India's eastern borders.",
+          "Your Mission: Counter terrorism and insurgency, guard national borders, protect critical infrastructure (airports, ports, power plants), conduct disaster relief operations, and maintain internal security during communal tensions.",
+          "Why It Matters: Unlike the Army which fights external enemies, the CRF fights internal threats. In a nation of 1.4 billion people with diverse religions, languages, and ideologies, internal security is paramount. The CRF is the first responder to terrorism, riots, and natural disasters. They are the 'Sentinels of Internal Security.'"
+        ]
+      },
+      {
+        id: "dayinlife",
+        title: "A Day in the Life: Constable Rajesh (CRPF)",
+        icon: "Clock",
+        description: "Real workflow of a CRPF constable during counter-terrorism operations.",
+        color: BLUE2,
+        content: [
+          "04:30 AM - Wake-up Call: The bugle sounds. Rajesh jumps out of his bunk in the CRPF camp in Chhattisgarh. He is part of a counter-insurgency unit deployed in a Naxal-affected area.",
+          "05:30 AM - Physical Training: The platoon does PT (Physical Training). Running, push-ups, and tactical drills. Fitness is non-negotiable in the CRF.",
+          "07:00 AM - Breakfast & Briefing: The Platoon Commander briefs the team. 'Intelligence suggests Naxal activity in Sector 5. We will conduct a patrol.' Rajesh checks his rifle, ammunition, and communication device.",
+          "08:30 AM - The Patrol: Rajesh and his team move into the dense forest. Every step is calculated. They look for signs of Naxal camps—disturbed vegetation, abandoned weapons, or food remnants. The tension is palpable.",
+          "01:00 PM - Lunch in the Field: They eat packed rations (Biscuits, Canned food) in the forest. No hot meals during operations. Rajesh drinks water from his bottle and checks his ammunition count.",
+          "03:00 PM - Contact!: Suddenly, gunfire erupts. A Naxal group has opened fire. Rajesh takes cover behind a tree. He returns fire, coordinating with his team. The firefight lasts 15 minutes. The Naxals retreat. No casualties on Rajesh's side.",
+          "05:00 PM - Return to Base: The team returns to the camp. Rajesh is exhausted but alert. He cleans his rifle meticulously. A dirty rifle can jam during the next encounter.",
+          "07:00 PM - Dinner & Rest: He eats dinner in the mess. The food is simple but nutritious. He writes a letter to his family (mail is sent once a week).",
+          "09:00 PM - Night Duty: Rajesh is assigned night sentry duty. He stands guard at the camp perimeter for 4 hours, watching for any suspicious movement. Vigilance is the price of safety."
+        ]
+      },
+      {
+        id: "who",
+        title: "Is This You? The CRF Personnel DNA",
+        icon: "User",
+        description: "Self-assessment for the ideal candidate.",
+        color: BLUE,
+        content: [
+          "Personality Check: The Patriot - Do you have an unwavering commitment to the nation? The Brave - Can you face danger without hesitation? The Disciplined - Can you follow orders without question? The Team Player - Can you trust your teammates with your life? The Adaptable - Can you function in extreme conditions (high altitude, dense forests, urban chaos)?",
+          "Hard Skills: Physical Fitness (Endurance and strength), Weapon Handling, Tactical Awareness, First Aid, Communication.",
+          "Soft Skills: Courage (not the absence of fear, but acting despite it), Discipline, Loyalty, Quick Decision-Making, Empathy (treating civilians with respect), Leadership (for officer roles).",
+          "The Self-Check: Do you have a strong sense of duty? Can you handle stress and danger? Are you physically fit and mentally strong? Do you value discipline and honor? If yes, you have the CRF Personnel DNA."
+        ]
+      },
+      {
+        id: "responsibilities",
+        title: "Key Responsibilities & Workflow",
+        icon: "Briefcase",
+        description: "Core duties across different CRF forces.",
+        color: BLUE2,
+        content: [
+          "CRPF (Counter-Terrorism & Insurgency): Counter-Naxal operations in central India, Counter-terrorism in J&K, Riot control and crowd management, VIP security, Disaster relief.",
+          "BSF (Border Security): Guarding India's land borders (Pakistan, Bangladesh, Myanmar), Preventing smuggling and infiltration, Border patrol and surveillance, Counter-insurgency in border areas.",
+          "CISF (Critical Infrastructure Protection): Airport security, Port security, Power plant protection, Railway station security, Cyber security for critical infrastructure.",
+          "ITBP (High-Altitude Border Security): Guarding India-China border in Ladakh and Himachal, High-altitude mountaineering and rescue, Counter-insurgency in Himalayan regions.",
+          "SSB (Eastern Border Security): Guarding India-Bangladesh and India-Myanmar borders, Counter-smuggling operations, Disaster management in eastern states."
+        ]
+      },
+      {
+        id: "pathways",
+        title: "Career Pathways in India",
+        icon: "Map",
+        description: "Multiple entry routes to join the Central Reserve Forces.",
+        color: BLUE,
+        content: [
+          "Constable Route (Entry Level): Class 10 Pass → SSC GD (General Duty) Exam → Written Test → Physical Fitness Test → Medicals → 3-6 months training → Deployment. Growth: Constable → Head Constable → Naib Subedar → Subedar.",
+          "Sub-Inspector Route (Mid-Level): Graduation (any degree) → SSC CPO (Central Police Organization) Exam → Written → Physical Endurance Test → Medicals → 6-12 months training → Deployment. Growth: SI → Inspector → Deputy Commandant.",
+          "Officer Route (Leadership Level): Graduation (any degree) → UPSC CAPF (AC) Exam → High rank required to choose CRF → Training at CRPF Academy Indore or respective force academy → Deployment. Growth: Assistant Commandant → Commandant → Senior Commandant → Inspector General.",
+          "Direct Entry (Specialized Roles): B.Tech/BE (Engineering) → Direct recruitment for technical positions → Training → Deployment. B.Tech (Computer Science) → Cyber Security Officer roles.",
+          "NCC Entry: Graduate + NCC 'C' Certificate → Direct recruitment as Officer → Training → Deployment."
+        ]
+      },
+      {
+        id: "market",
+        title: "Market Snapshot — India 2026",
+        icon: "TrendingUp",
+        description: "Salaries, expansion, and job security.",
+        color: BLUE2,
+        content: [
+          "Expansion Plans: CRPF plans to raise 10 new battalions by 2026. BSF is expanding its presence in eastern borders. CISF is recruiting for new airport and port security contracts.",
+          "Job Security: 100% for permanent personnel. Constables and Officers have secure careers until retirement.",
+          "Constable Salary: Basic ₹21,700, Gross ₹30,000–₹40,000/month. Includes allowances for location (Border allowance, High-altitude allowance).",
+          "Sub-Inspector Salary: Basic ₹35,400, Gross ₹50,000–₹65,000/month.",
+          "Deputy Commandant Salary: Basic ₹56,100, Gross ₹75,000–₹90,000/month.",
+          "Commandant Salary: Basic ₹78,800, Gross ₹1.1L–₹1.4L/month.",
+          "Inspector General Salary: Basic ₹2,25,000, Gross ₹3.0L+/month.",
+          "Unique Allowances: Border Allowance (₹5,000–₹15,000/month), High-Altitude Allowance (₹10,000–₹20,000/month), Counter-Insurgency Allowance, Operational Allowance."
+        ]
+      },
+      {
+        id: "jobs",
+        title: "Where Are the Jobs?",
+        icon: "MapPin",
+        description: "Deployment locations and career opportunities.",
+        color: BLUE,
+        content: [
+          "CRPF Deployment: Chhattisgarh (Naxal-affected areas), Jharkhand, Odisha, J&K (Kashmir Valley), North East (Assam, Manipur, Nagaland), Major cities (Delhi, Mumbai, Bangalore).",
+          "BSF Deployment: India-Pakistan border (Punjab, Rajasthan, Gujarat), India-Bangladesh border (West Bengal, Assam, Meghalaya, Tripura), India-Myanmar border (Manipur, Mizoram, Nagaland).",
+          "CISF Deployment: Major airports (Delhi, Mumbai, Bangalore, Hyderabad), Ports (Mumbai, Cochin, Chennai), Power plants, Railway stations, Metro systems.",
+          "ITBP Deployment: Ladakh (Siachen, Pangong), Himachal Pradesh, Uttarakhand, Arunachal Pradesh.",
+          "SSB Deployment: West Bengal, Assam, Meghalaya, Tripura, Mizoram, Manipur.",
+          "Specialized Roles: Cyber Security Officer (protecting CRF networks), Drone Operator (surveillance and reconnaissance), Commando (specialized counter-terrorism units), Dog Handler (for detection and patrol), Medic (providing emergency medical care)."
+        ]
+      },
+      {
+        id: "costs",
+        title: "What Will It Cost?",
+        icon: "CircleDollarSign",
+        description: "Training costs and financial support.",
+        color: BLUE2,
+        content: [
+          "Zero Training Cost: Once selected, the government pays for all training, food, uniform, and accommodation. You actually earn a salary/stipend during training.",
+          "Preparation Cost: SSC/UPSC Coaching - ₹15,000–₹1.2L (Optional). Self-Study - ₹2,000–₹5,000 for books and study materials.",
+          "Duration: 3-6 months for Constable training, 6-12 months for SI training, 1-2 years for Officer training.",
+          "Post-Joining: All living expenses, food, accommodation, medical care, and uniform provided by the force. Free housing in camps or government quarters.",
+          "Family Benefits: Spouse and children get government accommodation and medical benefits."
+        ]
+      },
+      {
+        id: "institutions",
+        title: "Where to Study? (Training Institutions)",
+        icon: "Building2",
+        description: "World-class training academies for CRF forces.",
+        color: BLUE,
+        content: [
+          "CRPF Academy, Indore (Madhya Pradesh): Premier training institute for CRPF officers. Offers comprehensive training in counter-terrorism, riot control, and leadership.",
+          "BSF Academy, Tekanpur (Madhya Pradesh): Training center for BSF personnel. Specializes in border security and counter-insurgency operations.",
+          "CISF Academy, Kadarpur (Haryana): Training institute for CISF personnel. Focuses on critical infrastructure protection and security operations.",
+          "ITBP Academy, Auli (Uttarakhand): High-altitude training center for ITBP personnel. Specializes in mountaineering, high-altitude operations, and rescue.",
+          "SSB Academy, Mussoorie (Uttarakhand): Training center for SSB personnel. Focuses on border security and counter-insurgency in eastern regions.",
+          "Central Paramilitary Forces Training Centre (CPMF), Belgaum (Karnataka): Advanced training for specialized roles across all CRF forces."
+        ]
+      },
+      {
+        id: "scholarships",
+        title: "Scholarship Opportunities",
+        icon: "Award",
+        description: "Financial assistance programs.",
+        color: BLUE,
+        content: [
+          "PM Scholarship Scheme (PMSS): For wards of CRF personnel to pursue professional degrees (₹2,500–₹3,000/month).",
+          "CRF Welfare Fund: Each force has a welfare fund that provides educational assistance to children of personnel.",
+          "Institutional Scholarships: Universities like Delhi University and Banaras Hindu University offer fee waivers for wards of defense and paramilitary personnel.",
+          "Education Loans: CRF personnel get loans at very low interest rates (2–3%) for their children's education through government banks.",
+          "Post-Retirement Benefits: Gratuity and pension can be used for children's higher education or starting a business.",
+          "Agniveer Benefits: Similar to Army Agniveers, CRF Agniveers get a Seva Nidhi package (~₹11.7L) upon exit for further education or business."
+        ]
+      },
+      {
+        id: "certifications",
+        title: "Professional Bodies & Certifications",
+        icon: "Award",
+        description: "Credentials and professional recognition.",
+        color: BLUE2,
+        content: [
+          "Commando Training Certification: Advanced combat and tactical training recognized internationally.",
+          "Cyber Security Certifications: CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional) for cyber specialists.",
+          "First Aid & Medical Certifications: CPR, Advanced First Aid, recognized by international medical bodies.",
+          "Mountaineering Certifications: ITBP personnel get mountaineering certifications recognized by the Indian Mountaineering Foundation.",
+          "Dog Handler Certifications: Specialized training for K-9 units, recognized by international dog training organizations.",
+          "Professional Bodies: Central Paramilitary Forces Officers Association, CRF Personnel Welfare Association.",
+          "These certifications significantly enhance career prospects in civilian sectors like private security, disaster management, and international peacekeeping."
+        ]
+      },
+      {
+        id: "opportunities",
+        title: "Career Opportunities",
+        icon: "Briefcase",
+        description: "Diverse paths in CRF careers.",
+        color: BLUE2,
+        content: [
+          "Conventional Careers: Counter-Terrorism Specialist (leading anti-terror operations), Border Security Officer (guarding national borders), Critical Infrastructure Protection Officer (securing airports/ports), Riot Control Specialist (managing public order), Commando (specialized combat operations).",
+          "New-Age Careers: Cyber Security Officer (protecting CRF networks from cyber attacks), Drone Operator (surveillance and reconnaissance), AI Systems Specialist (autonomous security systems), Data Analyst (analyzing intelligence data), Biometric Security Expert (facial recognition systems).",
+          "Emerging Roles: Autonomous Border Patrol Operator, Quantum Communication Specialist, AI-based Threat Detection Officer, Climate Disaster Response Coordinator.",
+          "Post-Retirement Opportunities: Private Security Consultant (advising corporates on security), Disaster Management Coordinator (NGOs and government agencies), Security Trainer (training corporate security teams), International Peacekeeping (UN missions), Defense Analyst/Author."
+        ]
+      },
+      {
+        id: "challenges",
+        title: "Challenges and Realities",
+        icon: "AlertTriangle",
+        description: "The hard truths of CRF service.",
+        color: BLUE,
+        content: [
+          "Risk to Life: Counter-terrorism and border operations carry significant risk. Casualties do occur. You must be prepared for the ultimate sacrifice.",
+          "Frequent Transfers: You may be transferred every 2-3 years. Family life becomes challenging with constant relocations.",
+          "Strict Discipline: Military-style discipline is non-negotiable. Disobedience can result in court-martial.",
+          "Psychological Stress: Witnessing violence, death, and destruction takes a mental toll. PTSD (Post-Traumatic Stress Disorder) is common.",
+          "Family Separation: Extended deployments mean months away from family. Anniversaries and children's milestones are often missed.",
+          "Limited Privacy: Life in camps means limited personal space and privacy.",
+          "Bureaucratic Delays: Promotions and transfers can be slow due to bureaucratic processes.",
+          "Political Pressure: Decisions may be influenced by political considerations rather than pure operational merit."
+        ]
+      },
+      {
+        id: "future",
+        title: "Emerging Trends & Future Outlook (2025–2035)",
+        icon: "Sparkles",
+        description: "What's next in the Central Reserve Forces.",
+        color: BLUE2,
+        content: [
+          "AI-Based Surveillance: AI will monitor borders and critical infrastructure 24/7 with 95% accuracy. Fewer human patrols, more tech-based monitoring.",
+          "Drone Technology: Autonomous drones for border patrol, surveillance, and even counter-terrorism operations. Drone operators will be in high demand.",
+          "Cyber Warfare: Growing importance of cyber security. CRF networks will be targets for cyber attacks. Cyber specialists will be critical.",
+          "Women Recruitment: Government aims to increase women in CRF to 33% (currently ~5%). More opportunities for women in combat and leadership roles.",
+          "Modernization: New weapons, vehicles, and communication systems. Personnel will need to be tech-savvy.",
+          "Climate Adaptation: CRF will play a larger role in climate disaster management. New roles for climate specialists.",
+          "International Cooperation: CRF personnel will increasingly participate in UN peacekeeping missions and international security operations.",
+          "Impact on Employment: New roles for AI specialists, drone operators, cyber security experts, climate scientists. Required skills: Programming, AI/ML, cybersecurity, data analysis, drone operation."
+        ]
+      },
+      {
+        id: "startnow",
+        title: "Skills to Build While Still in School (Class 9–12)",
+        icon: "Rocket",
+        description: "Actionable steps to start your journey.",
+        color: BLUE,
+        content: [
+          "Physical Fitness: This is non-negotiable. Start running, swimming, and strength training now. Aim for 5km run in under 25 minutes.",
+          "NCC (National Cadet Corps): Join NCC in school. Learn discipline, leadership, and basic military training. NCC 'C' Certificate gives direct entry to officer roles.",
+          "Current Affairs: Follow news on national security, terrorism, border issues, and internal security. Read newspapers daily.",
+          "Leadership: Take leadership roles in school—House Captain, Sports Captain, Student Council. CRF values leaders.",
+          "Discipline: Develop punctuality, responsibility, and commitment. These are fundamental to military life.",
+          "Physical Courage: Participate in adventure activities—rock climbing, trekking, water sports. Build confidence in challenging situations.",
+          "Communication: Develop clear and effective communication skills. You'll need to coordinate with diverse teams.",
+          "Problem-Solving: Practice logical thinking and quick decision-making. Military operations require rapid problem-solving.",
+          "Teamwork: Participate in team sports and group activities. CRF is all about teamwork.",
+          "Technical Skills: Learn basic computer skills and programming. Cyber operations are becoming increasingly important.",
+          "First Aid: Learn CPR and basic first aid. This can save lives.",
+          "Patriotism: Develop a strong sense of duty and patriotism. This is the foundation of CRF service."
+        ]
+      },
+      {
+        id: "personalities",
+        title: "Famous CRF Personalities",
+        icon: "User",
+        description: "Inspiring figures in the Central Reserve Forces.",
+        color: BLUE2,
+        content: [
+          "Rajesh Dixit (CRPF): Legendary counter-terrorism expert who led successful operations against Naxals in Chhattisgarh. Known for his tactical brilliance and compassion for civilians.",
+          "Hemant Karkare (CRPF): Martyred during the 26/11 Mumbai terror attacks. A symbol of courage and sacrifice. His legacy inspires thousands of CRPF personnel.",
+          "Ajay Sharma (BSF): Recipient of the Ashoka Chakra for his bravery during counter-insurgency operations in J&K. Known for his innovative tactics.",
+          "Priya Joshi (CISF): First woman Commandant of CISF. Pioneered women recruitment in critical infrastructure protection.",
+          "Dorje Morup (ITBP): Legendary mountaineer and ITBP officer. Led successful rescue operations in high-altitude regions. Recipient of the Padma Shri.",
+          "Rajendra Singh (SSB): Known for his work in border security and counter-smuggling operations. Recipient of the President's Police Medal.",
+          "Kiran Bedi (Former CRPF): First woman IPS officer in India. Pioneered women recruitment in paramilitary forces. Now a social activist and author."
+        ]
+      }
+    ]
   }
 };

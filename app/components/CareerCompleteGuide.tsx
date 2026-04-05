@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { CareerGuideSection } from "@/app/data/careerPageData";
 import { DynamicIcon } from "./DynamicIcon";
+import { DayInLifeCarousel } from "./DayInLifeCarousel";
 import {
   Brain, Hourglass, Microscope, MessageSquare, Monitor,
   ClipboardList, Target, Star,
@@ -24,8 +25,23 @@ interface Props {
   sections: CareerGuideSection[];
 }
 
-// ─── 1. CREATIVE CAROUSEL INFO CARDS ──────────────────────────────
+// ─── 1. DAY IN THE LIFE CAROUSEL ──────────────────────────────────
 function SectionWhat({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+  // Check if this is a "Day in the Life" section
+  const isDayInLife = section.title.toLowerCase().includes("day in the life");
+  
+  if (isDayInLife) {
+    return (
+      <DayInLifeCarousel
+        content={section.content}
+        title={section.title}
+        description={section.description}
+        color={section.color}
+      />
+    );
+  }
+
+  // Fallback to original carousel for other "What" sections
   const [active, setActive] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -43,7 +59,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
 
   const scrollToCard = (index: number) => {
     if (scrollRef.current) {
-      const cardWidth = 280 + 16; // card width + gap
+      const cardWidth = 280 + 16;
       scrollRef.current.scrollTo({
         left: index * cardWidth,
         behavior: "smooth",
@@ -51,7 +67,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
     }
   };
 
-  const colors = [BLUE, GOLD, GREEN, INDIGO, ROSE, TEAL];
+  const colors = ["#1E40AF", "#F59E0B", "#059669", "#6366F1", "#E11D48", "#0D9488"];
 
   return (
     <section className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-x-hidden border-b border-blue-200">
@@ -64,9 +80,29 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
           <div ref={scrollRef} className="flex gap-3 md:gap-4 overflow-x-auto py-6 px-2 sm:px-4 scrollbar-hide snap-x snap-mandatory scroll-smooth items-center">
             {section.content.map((pt, i) => {
               const colonIndex = pt.indexOf(":");
-              // Fix duplication bug: If no colon, provide a default title and use the whole string as content.
-              const title = colonIndex > -1 ? pt.slice(0, colonIndex).trim() : `Key Insight 0${i + 1}`;
-              const content = colonIndex > -1 ? pt.slice(colonIndex + 1).trim() : pt;
+              let title = "";
+              let content = "";
+              
+              if (colonIndex > -1) {
+                title = pt.slice(0, colonIndex).trim();
+                content = pt.slice(colonIndex + 1).trim();
+              } else {
+                const sentences = pt.split(/(?<=[.!?])\s+/);
+                if (sentences.length > 1) {
+                  title = sentences[0].trim();
+                  content = sentences.slice(1).join(" ").trim();
+                } else {
+                  const firstSentence = pt.trim();
+                  if (firstSentence.length > 50) {
+                    title = firstSentence.substring(0, 50) + "...";
+                    content = firstSentence;
+                  } else {
+                    title = firstSentence;
+                    content = firstSentence;
+                  }
+                }
+              }
+              
               const color = colors[i % colors.length];
               const isActive = active === i;
 
@@ -79,7 +115,8 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                   }}
                   className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[32px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-lg group flex flex-col`}
                   style={{
-                    width: isActive ? "min(360px, 80vw)" : "min(220px, 65vw)",
+                    width: isActive ? "min(360px, 80vw)" : "min(280px, 70vw)",
+                    minHeight: "320px",
                     background: "white",
                   }}
                 >
@@ -109,14 +146,14 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
 
                   {/* Content Area */}
                   <div 
-                    className="relative z-10 px-4 sm:px-6 pb-4 transition-all duration-700 ease-out flex-1 flex flex-col"
+                    className="relative z-10 px-4 sm:px-6 pb-4 transition-all duration-700 ease-out flex-1 flex flex-col min-h-0"
                     style={{ marginTop: isActive ? "40px" : "20px" }}
                   >
-                    <h3 className={`font-poppins font-black transition-all duration-500 ${isActive ? 'text-2xl mb-4' : 'text-xl mb-3'}`} style={{ color: "var(--color-slate-900)" }}>
+                    <h3 className={`font-poppins font-black transition-all duration-500 line-clamp-2 ${isActive ? 'text-xl mb-3' : 'text-base mb-2'}`} style={{ color: "#1F2937" }}>
                       {title}
                     </h3>
                     
-                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 ${isActive ? 'text-base opacity-100' : 'text-sm opacity-80'}`}>
+                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 ${isActive ? 'text-sm opacity-100 line-clamp-4' : 'text-xs opacity-90 line-clamp-2'}`}>
                        {content}
                     </p>
                   </div>
@@ -139,7 +176,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
             <button
               onClick={handlePrev}
               className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl bg-white border border-slate-100 backdrop-blur-sm group"
-              style={{ color: BLUE }}
+              style={{ color: "#1E40AF" }}
             >
               <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 group-hover:-translate-x-1 transition-transform" />
             </button>
@@ -149,7 +186,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
             <button
               onClick={handleNext}
               className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl bg-white border border-slate-100 backdrop-blur-sm group"
-              style={{ color: BLUE }}
+              style={{ color: "#1E40AF" }}
             >
               <ChevronRight className="w-6 h-6 md:w-7 md:h-7 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -170,7 +207,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                 style={{
                   width: active === i ? "32px" : "10px",
                   height: "10px",
-                  background: active === i ? BLUE : "#CBD5E1",
+                  background: active === i ? "#1E40AF" : "#CBD5E1",
                 }}
               />
             ))}
@@ -184,38 +221,151 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
   );
 }
 
-// ─── 2. TRAIT BADGE GRID with MODAL ──────────────────────────────
-function SectionWho({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const icons = [Brain, Hourglass, Microscope, MessageSquare, Monitor, ClipboardList, Target, Star];
-  const bg = [
-    "from-violet-400 to-purple-500",
-    "from-blue-400 to-cyan-500",
-    "from-emerald-400 to-teal-500",
-    "from-amber-400 to-orange-500",
-    "from-rose-400 to-pink-500",
-    "from-indigo-400 to-blue-500",
-    "from-green-400 to-emerald-500",
-    "from-yellow-400 to-amber-500",
-  ];
+// ─── 2. DAY IN THE LIFE CAROUSEL (for index 1) ──────────────────
+function SectionDayInLife({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   return (
-    <section className="py-16 px-4 sm:px-6 bg-white border-b border-gray-200">
+    <DayInLifeCarousel
+      content={section.content}
+      title={section.title}
+      description={section.description}
+      color={section.color}
+    />
+  );
+}
+
+// ─── 3. TRAIT BADGE GRID with MODAL ──────────────────────────────
+function SectionWho({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+  const [expanded, setExpanded] = useState<number | null>(null);
+  
+  const icons = [Brain, Hourglass, Microscope, MessageSquare, Monitor, ClipboardList, Target, Star];
+  const colors = [
+    "#7C3AED", // violet
+    "#0EA5E9", // cyan
+    "#10B981", // emerald
+    "#F59E0B", // amber
+    "#EC4899", // rose
+    "#6366F1", // indigo
+    "#22C55E", // green
+    "#EAB308", // yellow
+  ];
+
+  return (
+    <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        {/* Traits Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {section.content.map((point, i) => {
-            const label = point.split(":")[0];
+            const colonIndex = point.indexOf(":");
+            const title = colonIndex > -1 ? point.substring(0, colonIndex).trim() : point;
+            const description = colonIndex > -1 ? point.substring(colonIndex + 1).trim() : "";
+            const isExpanded = expanded === i;
+            const color = colors[i % colors.length];
+            const Icon = icons[i % icons.length];
+
             return (
               <div
                 key={i}
-                className={`relative rounded-2xl p-5 cursor-pointer transition-all duration-400 shadow-md hover:shadow-lg`}
+                className="group cursor-pointer"
+                onClick={() => setExpanded(isExpanded ? null : i)}
               >
-                <div className={`bg-gradient-to-br ${bg[i % bg.length]} rounded-2xl p-5 h-full flex flex-col gap-3 transition-all`}>
-                  {(() => { const IC = icons[i % icons.length]; return <IC className="w-8 h-8 text-white" />; })()}
-                  <p className="text-white font-bold text-sm leading-tight">{label}</p>
+                {/* Card */}
+                <div
+                  className="relative rounded-2xl overflow-hidden transition-all duration-300 shadow-md hover:shadow-xl h-full"
+                  style={{
+                    background: "white",
+                    border: `2px solid ${color}20`,
+                  }}
+                >
+                  {/* Top gradient bar */}
+                  <div
+                    className="h-1 w-full"
+                    style={{ background: color }}
+                  />
+
+                  {/* Content */}
+                  <div className="p-6 md:p-8">
+                    {/* Icon and Title */}
+                    <div className="flex items-start gap-4 mb-4">
+                      <div
+                        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
+                        style={{ background: `${color}15`, color }}
+                      >
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-black text-slate-900 leading-tight flex-1">
+                        {title}
+                      </h3>
+                    </div>
+
+                    {/* Description - Always visible */}
+                    {description && (
+                      <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+                        {description}
+                      </p>
+                    )}
+
+                    {/* Expand indicator */}
+                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-100">
+                      <div
+                        className="w-2 h-2 rounded-full"
+                        style={{ background: color }}
+                      />
+                      <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                        {isExpanded ? "Less" : "More"} Details
+                      </span>
+                    </div>
+
+                    {/* Expanded content */}
+                    {isExpanded && description && (
+                      <div className="mt-4 pt-4 border-t border-slate-100 animate-in fade-in slide-in-from-top-2 duration-300">
+                        <div
+                          className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-3"
+                          style={{ background: `${color}15`, color }}
+                        >
+                          Key Insight
+                        </div>
+                        <p className="text-slate-700 text-sm leading-relaxed font-medium">
+                          {description}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Hover accent */}
+                  <div
+                    className="absolute bottom-0 right-0 w-20 h-20 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                    style={{ background: color }}
+                  />
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="mt-12 md:mt-16 p-8 md:p-10 rounded-2xl bg-white border-2 border-slate-200 text-center">
+          <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3">
+            Do These Traits Sound Like You?
+          </h3>
+          <p className="text-slate-600 text-base md:text-lg mb-6 max-w-2xl mx-auto">
+            If you recognize yourself in most of these traits, this career path could be a great fit for your skills and personality.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <button
+              className="px-6 md:px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 text-white"
+              style={{ background: section.color ?? "#1E40AF" }}
+            >
+              Explore This Career
+            </button>
+            <button
+              className="px-6 md:px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 border-2"
+              style={{ borderColor: section.color ?? "#1E40AF", color: section.color ?? "#1E40AF" }}
+            >
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -271,66 +421,190 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
   );
 }
 
-// ─── 5. SCHOLARSHIP BADGE ACCORDION ──────────────────────────────
-function SectionScholarship({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+// ─── 5. INSTITUTIONS SHOWCASE ────────────────────────────────────
+function SectionInstitutions({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   const [expanded, setExpanded] = useState<number | null>(null);
-  const colors = [GREEN, TEAL, BLUE, INDIGO, "#7C3AED"];
-  const badges = ["Medal", "Handshake", "Star", "Target", "Building"];
   
+  const institutionTypes = [
+    { type: "Public/Premier", icon: "Building2", color: "#1E40AF" },
+    { type: "Private", icon: "Sparkles", color: "#7C3AED" },
+    { type: "Online/Distance", icon: "Monitor", color: "#0EA5E9" },
+  ];
+
+  // Group content by institution type
+  const groupedContent = section.content.reduce((acc: Record<string, string[]>, item: string) => {
+    const typeMatch = institutionTypes.find(t => item.includes(t.type));
+    const type = typeMatch?.type || "Other";
+    if (!acc[type]) acc[type] = [];
+    acc[type].push(item);
+    return acc;
+  }, {});
+
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-green-50 to-emerald-50 border-b border-green-200 relative overflow-hidden">
-      {/* Decorative topic illustration */}
-      <div className="absolute top-0 right-0 w-1/4 h-full opacity-[0.06] pointer-events-none hidden lg:block transform translate-x-1/2">
-        <img src={`https://loremflickr.com/600/800/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},education?lock=${careerName.length + 50}`} alt="" className="w-full h-full object-cover" />
-      </div>
-      <div className="max-w-5xl mx-auto relative z-10">
+    <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-b border-slate-200">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
+
+        {/* Institution Types Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+          {institutionTypes.map((instType, idx) => {
+            const institutions = groupedContent[instType.type] || [];
+            const isExpanded = expanded === idx;
+
+            return (
+              <div
+                key={idx}
+                className="group cursor-pointer"
+                onClick={() => setExpanded(isExpanded ? null : idx)}
+              >
+                {/* Card */}
+                <div
+                  className="relative rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-2xl h-full bg-white border-2"
+                  style={{ borderColor: `${instType.color}30` }}
+                >
+                  {/* Top accent bar */}
+                  <div
+                    className="h-1 w-full"
+                    style={{ background: instType.color }}
+                  />
+
+                  {/* Content */}
+                  <div className="p-6 md:p-8">
+                    {/* Icon and Title */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <div
+                        className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
+                        style={{ background: `${instType.color}15`, color: instType.color }}
+                      >
+                        <DynamicIcon name={instType.icon} className="w-7 h-7" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg md:text-xl font-black text-slate-900">
+                          {instType.type}
+                        </h3>
+                        <p className="text-xs text-slate-500 font-semibold mt-1">
+                          {institutions.length} institution{institutions.length !== 1 ? 's' : ''}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Institution count badge */}
+                    <div
+                      className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4"
+                      style={{ background: `${instType.color}15`, color: instType.color }}
+                    >
+                      {institutions.length} Option{institutions.length !== 1 ? 's' : ''}
+                    </div>
+
+                    {/* Expand indicator */}
+                    <div className="flex items-center gap-2 pt-4 border-t border-slate-100">
+                      <div
+                        className="w-2 h-2 rounded-full"
+                        style={{ background: instType.color }}
+                      />
+                      <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                        {isExpanded ? "Hide" : "View"} Details
+                      </span>
+                    </div>
+
+                    {/* Expanded content */}
+                    {isExpanded && institutions.length > 0 && (
+                      <div className="mt-6 pt-6 border-t border-slate-100 animate-in fade-in slide-in-from-top-2 duration-300">
+                        <div className="space-y-3">
+                          {institutions.map((inst, i) => (
+                            <div key={i} className="flex items-start gap-3">
+                              <div
+                                className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                                style={{ background: instType.color }}
+                              />
+                              <p className="text-slate-700 text-sm leading-relaxed">
+                                {inst.replace(instType.type + ": ", "").trim()}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Hover accent */}
+                  <div
+                    className="absolute bottom-0 right-0 w-24 h-24 rounded-full opacity-0 group-hover:opacity-5 transition-opacity duration-300"
+                    style={{ background: instType.color }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Info Box */}
+        <div
+          className="p-6 md:p-8 rounded-2xl border-2 bg-white"
+          style={{ borderColor: `${section.color}30` }}
+        >
+          <div className="flex items-start gap-4">
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+              style={{ background: `${section.color}15`, color: section.color }}
+            >
+              <DynamicIcon name="Info" className="w-6 h-6" />
+            </div>
+            <div>
+              <h4 className="font-bold text-slate-900 mb-2">Pro Tip</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Most actuarial education requires classroom interaction and practical problem-solving. Choose an institution that offers strong faculty mentorship and industry connections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── 6. SCHOLARSHIP BADGE ACCORDION ──────────────────────────────
+function SectionScholarship({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+  const lineColors = [GOLD, GREEN, BLUE, INDIGO, TEAL, ROSE, "#7C3AED"];
+
+  return (
+    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-purple-50 to-blue-50 relative">
+      <div className="absolute bottom-0 right-0 w-1/3 h-2/3 opacity-10 pointer-events-none hidden md:block mix-blend-multiply">
+        <img src={`https://loremflickr.com/600/600/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},success?lock=99`} alt="" className="w-full h-full object-contain" />
+      </div>
+      <div className="max-w-4xl mx-auto relative z-10">
+        <SectionHeader section={section} light={false} />
+
+        {/* checklist steps */}
         <div className="flex flex-col gap-4">
           {section.content.map((point, i) => {
-            const label = point.includes(":") ? point.split(":")[0] : `Scholarship ${i + 1}`;
-            const detail = point.includes(":") ? point.slice(point.indexOf(":") + 1).trim() : point;
-            const color = colors[i % colors.length];
-            const isExpanded = expanded === i;
-            
+            const color = lineColors[i % lineColors.length];
             return (
               <div
                 key={i}
-                className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                className="relative flex items-start gap-5 p-6 rounded-2xl text-left transition-all duration-300 shadow-sm hover:shadow-md"
                 style={{
-                  border: `2px solid ${color}`,
                   background: "white",
+                  border: `2px solid ${color}`,
                 }}
               >
-                <button
-                  onClick={() => setExpanded(isExpanded ? null : i)}
-                  className="w-full flex items-center gap-4 p-5 text-left hover:bg-slate-50 transition-colors"
+                {/* circle */}
+                <div
+                  className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-black transition-all duration-300"
+                  style={{
+                    background: color,
+                    color: "white",
+                  }}
                 >
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: `${color}20`, color }}
-                  >
-                    <DynamicIcon name={badges[i % badges.length]} className="w-6 h-6" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-bold text-slate-800">{label}</p>
-                  </div>
-                  <div
-                    className="flex-shrink-0 transition-transform duration-300"
-                    style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
-                  >
-                    <ChevronLeft className="w-5 h-5" style={{ color }} />
-                  </div>
-                </button>
-                
-                {isExpanded && (
-                  <div className="px-5 pb-5 pl-[76px] border-t border-slate-100 pt-4 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div
-                      className="h-0.5 mb-3 rounded-full"
-                      style={{ background: `${color}30` }}
-                    />
-                    <p className="text-slate-600 leading-relaxed whitespace-pre-wrap">{detail}</p>
-                  </div>
-                )}
+                  {i + 1}
+                </div>
+
+                {/* text content */}
+                <div className="flex-1 pt-1">
+                  <p className="text-base leading-relaxed font-medium text-slate-800">
+                    {point}
+                  </p>
+                </div>
               </div>
             );
           })}
@@ -340,7 +614,7 @@ function SectionScholarship({ section, careerName }: { section: CareerGuideSecti
   );
 }
 
-// ─── 6. CHALLENGE ALERT CARDS (expandable) ─────────────────────
+// ─── 7. CHALLENGE ALERT CARDS (expandable) ─────────────────────
 function SectionChallenges({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   const [expanded, setExpanded] = useState<number | null>(null);
   const severity = ["Critical", "High", "Medium", "Critical", "High", "Medium"];
@@ -402,7 +676,7 @@ function SectionChallenges({ section, careerName }: { section: CareerGuideSectio
   );
 }
 
-// ─── 7. ANIMATED ROADMAP CHECKLIST ───────────────────────────────
+// ─── 8. ANIMATED ROADMAP CHECKLIST ───────────────────────────────
 function SectionStartNow({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   const lineColors = [GOLD, GREEN, BLUE, INDIGO, TEAL, ROSE, "#7C3AED"];
 
@@ -477,12 +751,15 @@ function SectionHeader({ section, light = false }: { section: CareerGuideSection
 
 // ─── SECTION ROUTER ───────────────────────────────────────────────
 const SECTION_COMPONENTS = [
-  SectionWhat,
-  SectionWho,
-  SectionResponsibilities,
-  SectionScholarship,
-  SectionChallenges,
-  SectionStartNow,
+  SectionWhat,           // Index 0: What is This Career
+  SectionDayInLife,      // Index 1: A Day in the Life
+  SectionWho,            // Index 2: Is This You
+  SectionResponsibilities, // Index 3: Key Responsibilities
+  SectionResponsibilities, // Index 4: Career Pathways (reuse Responsibilities style)
+  SectionInstitutions,   // Index 5: Where to Study
+  SectionScholarship,    // Index 6: Scholarships
+  SectionChallenges,     // Index 7: Challenges
+  SectionStartNow,       // Index 8: Skills to Build
 ];
 
 // ─── MAIN EXPORT ─────────────────────────────────────────────────
