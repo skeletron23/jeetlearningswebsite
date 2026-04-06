@@ -190,18 +190,7 @@ export function CostBreakdown({
               ))}
             </div>
 
-            {/* Summary Box */}
-            <div className="mt-10 md:mt-14 p-6 md:p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200">
-              <div className="flex items-start gap-4">
-                <Target className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-black text-slate-900 mb-2">Total Investment Range</h4>
-                  <p className="text-slate-700 leading-relaxed">
-                    The total cost of pursuing this career ranges from <span className="font-bold">₹5-15 lakhs</span> depending on your choice of institution (government vs. private) and location. This includes tuition fees, living expenses, professional exams, and study materials over the entire duration of your education and professional qualification.
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* Summary Box - REMOVED */}
           </div>
         </section>
       )}

@@ -44,16 +44,6 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
   }
 
   // Modern professional carousel for "What is This Career All About?"
-  const [active, setActive] = useState(0);
-
-  const handleNext = () => {
-    setActive((prev) => (prev + 1) % section.content.length);
-  };
-
-  const handlePrev = () => {
-    setActive((prev) => (prev - 1 + section.content.length) % section.content.length);
-  };
-
   const parseContent = (text: string) => {
     const colonIndex = text.indexOf(":");
     if (colonIndex > -1) {
@@ -75,121 +65,45 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
     };
   };
 
-  const currentItem = section.content[active];
-  const { title, content } = parseContent(currentItem);
-
   return (
     <section className="py-8 md:py-10 px-4 sm:px-6 bg-white border-b border-canam-border">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
 
-        {/* Clean Professional Carousel */}
-        <div className="mt-6 relative">
-          {/* Main Content Card */}
-          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-slate-50 to-white border border-canam-border shadow-sm hover:shadow-md transition-shadow duration-300">
-            {/* Accent Line */}
-            <div 
-              className="h-1 w-full"
-              style={{ background: section.color }}
-            />
-            
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12">
-              {/* Left: Content (2 columns on desktop) */}
-              <div className="lg:col-span-2 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-6">
+        {/* Simple Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {section.content.map((item, idx) => {
+            const { title, content } = parseContent(item);
+            return (
+              <div
+                key={idx}
+                className="p-6 rounded-xl bg-gradient-to-br from-slate-50 to-white border border-canam-border shadow-sm hover:shadow-md transition-shadow"
+              >
+                {/* Header */}
+                <div className="flex items-start gap-3 mb-4">
                   <div 
                     className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold flex-shrink-0"
                     style={{ background: section.color }}
                   >
                     <DynamicIcon name={section.icon} className="w-5 h-5" />
                   </div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                    Point {active + 1} of {section.content.length}
+                  <div>
+                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                      Point {idx + 1}
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1">
+                      {title}
+                    </h3>
                   </div>
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 leading-tight font-poppins">
-                  {title}
-                </h3>
-
-                <p className="text-base md:text-lg text-slate-600 leading-relaxed font-inter">
+                {/* Content */}
+                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                   {content}
                 </p>
               </div>
-
-              {/* Right: Visual Element (1 column on desktop) */}
-              <div className="hidden lg:flex items-center justify-center">
-                <div className="relative w-full h-64 flex items-center justify-center">
-                  {/* Subtle background circle */}
-                  <div 
-                    className="absolute inset-0 rounded-full opacity-5"
-                    style={{ background: section.color }}
-                  />
-                  
-                  {/* Icon container */}
-                  <div 
-                    className="w-24 h-24 rounded-full flex items-center justify-center text-white shadow-lg"
-                    style={{ background: `linear-gradient(135deg, ${section.color}, ${section.color}dd)` }}
-                  >
-                    <DynamicIcon name={section.icon} className="w-12 h-12" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Progress Bar */}
-            <div className="px-8 md:px-12 pb-6">
-              <div className="w-full h-1 bg-slate-200 rounded-full overflow-hidden">
-                <div 
-                  className="h-full transition-all duration-500"
-                  style={{
-                    width: `${((active + 1) / section.content.length) * 100}%`,
-                    background: section.color,
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Navigation Controls */}
-          <div className="flex items-center justify-between mt-8">
-            {/* Left Button */}
-            <button
-              onClick={handlePrev}
-              className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 bg-white border border-canam-border shadow-sm hover:shadow-md group"
-              style={{ color: section.color }}
-              aria-label="Previous"
-            >
-              <ChevronLeft className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" />
-            </button>
-
-            {/* Dot Indicators */}
-            <div className="flex gap-2">
-              {section.content.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className="rounded-full transition-all duration-300 hover:scale-125"
-                  style={{
-                    width: active === i ? "28px" : "10px",
-                    height: "10px",
-                    background: active === i ? section.color : `${section.color}30`,
-                  }}
-                  aria-label={`Go to point ${i + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Right Button */}
-            <button
-              onClick={handleNext}
-              className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 bg-white border border-canam-border shadow-sm hover:shadow-md group"
-              style={{ color: section.color }}
-              aria-label="Next"
-            >
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
-            </button>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -210,8 +124,6 @@ function SectionDayInLife({ section, careerName }: { section: CareerGuideSection
 
 // ─── 3. TRAIT BADGE GRID with MODAL ──────────────────────────────
 function SectionWho({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [expanded, setExpanded] = useState<number | null>(null);
-  
   const icons = [Brain, Hourglass, Microscope, MessageSquare, Monitor, ClipboardList, Target, Star];
   const colors = [
     "#7C3AED", // violet
@@ -225,122 +137,49 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 border-b border-slate-200">
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
         
         {/* Traits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {section.content.map((point, i) => {
             const colonIndex = point.indexOf(":");
             const title = colonIndex > -1 ? point.substring(0, colonIndex).trim() : point;
             const description = colonIndex > -1 ? point.substring(colonIndex + 1).trim() : "";
-            const isExpanded = expanded === i;
             const color = colors[i % colors.length];
             const Icon = icons[i % icons.length];
 
             return (
               <div
                 key={i}
-                className="group cursor-pointer"
-                onClick={() => setExpanded(isExpanded ? null : i)}
+                className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+                style={{
+                  borderTop: `3px solid ${color}`,
+                }}
               >
-                {/* Card */}
-                <div
-                  className="relative rounded-2xl overflow-hidden transition-all duration-300 shadow-md hover:shadow-xl h-full"
-                  style={{
-                    background: "white",
-                    border: `2px solid ${color}20`,
-                  }}
-                >
-                  {/* Top gradient bar */}
+                {/* Icon and Title */}
+                <div className="flex items-start gap-3 mb-3">
                   <div
-                    className="h-1 w-full"
-                    style={{ background: color }}
-                  />
-
-                  {/* Content */}
-                  <div className="p-6 md:p-8">
-                    {/* Icon and Title */}
-                    <div className="flex items-start gap-4 mb-4">
-                      <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-                        style={{ background: `${color}15`, color }}
-                      >
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      <h3 className="text-lg md:text-xl font-black text-slate-900 leading-tight flex-1">
-                        {title}
-                      </h3>
-                    </div>
-
-                    {/* Description - Always visible */}
-                    {description && (
-                      <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-                        {description}
-                      </p>
-                    )}
-
-                    {/* Expand indicator */}
-                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-100">
-                      <div
-                        className="w-2 h-2 rounded-full"
-                        style={{ background: color }}
-                      />
-                      <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                        {isExpanded ? "Less" : "More"} Details
-                      </span>
-                    </div>
-
-                    {/* Expanded content */}
-                    {isExpanded && description && (
-                      <div className="mt-4 pt-4 border-t border-slate-100 animate-in fade-in slide-in-from-top-2 duration-300">
-                        <div
-                          className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-3"
-                          style={{ background: `${color}15`, color }}
-                        >
-                          Key Insight
-                        </div>
-                        <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                          {description}
-                        </p>
-                      </div>
-                    )}
+                    className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ background: `${color}15`, color }}
+                  >
+                    <Icon className="w-5 h-5" />
                   </div>
-
-                  {/* Hover accent */}
-                  <div
-                    className="absolute bottom-0 right-0 w-20 h-20 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                    style={{ background: color }}
-                  />
+                  <h3 className="text-base font-bold text-slate-900 leading-tight">
+                    {title}
+                  </h3>
                 </div>
+
+                {/* Description */}
+                {description && (
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {description}
+                  </p>
+                )}
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="mt-12 md:mt-16 p-8 md:p-10 rounded-2xl bg-white border-2 border-slate-200 text-center">
-          <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3">
-            Do These Traits Sound Like You?
-          </h3>
-          <p className="text-slate-600 text-base md:text-lg mb-6 max-w-2xl mx-auto">
-            If you recognize yourself in most of these traits, this career path could be a great fit for your skills and personality.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button
-              className="px-6 md:px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 text-white"
-              style={{ background: section.color ?? "#1E40AF" }}
-            >
-              Explore This Career
-            </button>
-            <button
-              className="px-6 md:px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 border-2"
-              style={{ borderColor: section.color ?? "#1E40AF", color: section.color ?? "#1E40AF" }}
-            >
-              Learn More
-            </button>
-          </div>
         </div>
       </div>
     </section>
@@ -349,43 +188,37 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
 
 // ─── 3. HORIZONTAL STEP PROCESS TILES ────────────────────────────
 function SectionResponsibilities({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const stepIcons = ["Search", "BarChart3", "DollarSign", "ShieldAlert", "FileText", "Megaphone", "Link"];
   const stepColors = ["#3B82F6", "#8B5CF6", "#EC4899", "#F59E0B", "#10B981", "#06B6D4", "#6366F1"];
   
   return (
-    <section className="py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden border-b border-slate-200">
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
 
-        {/* row of flat tiles */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {section.content.map((content, i) => {
+            const colonIndex = content.indexOf(":");
+            const title = colonIndex > -1 ? content.substring(0, colonIndex).trim() : content;
+            const description = colonIndex > -1 ? content.substring(colonIndex + 1).trim() : content;
             const color = stepColors[i % stepColors.length];
+
             return (
               <div
                 key={i}
-                className="flex flex-col items-start gap-3 p-6 md:p-8 rounded-xl transition-all duration-300 hover:translate-y-[-4px]"
+                className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
                 style={{
-                  background: "white",
                   borderLeft: `4px solid ${color}`,
                 }}
               >
-                {/* icon */}
-                <div
-                  className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: `${color}15`, color }}
-                >
-                  <DynamicIcon name={stepIcons[i % stepIcons.length]} className="w-6 h-6" />
-                </div>
+                {/* Title */}
+                <h3 className="text-base font-bold text-slate-900 mb-2">
+                  {title}
+                </h3>
 
-                {/* step number */}
-                <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                  Step {i + 1}
-                </div>
-
-                {/* content */}
-                <p className="text-slate-700 text-base leading-relaxed font-medium">
-                  {content}
+                {/* Description */}
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {description}
                 </p>
               </div>
             );
@@ -538,57 +371,6 @@ function SectionInstitutions({ section, careerName }: { section: CareerGuideSect
   );
 }
 
-// ─── 6. SCHOLARSHIP BADGE ACCORDION ──────────────────────────────
-function SectionScholarship({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const lineColors = [GOLD, GREEN, BLUE, INDIGO, TEAL, ROSE, "#7C3AED"];
-
-  return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-purple-50 to-blue-50 relative">
-      <div className="absolute bottom-0 right-0 w-1/3 h-2/3 opacity-10 pointer-events-none hidden md:block mix-blend-multiply">
-        <img src={`https://loremflickr.com/600/600/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},success?lock=99`} alt="" className="w-full h-full object-contain" />
-      </div>
-      <div className="max-w-4xl mx-auto relative z-10">
-        <SectionHeader section={section} light={false} />
-
-        {/* checklist steps */}
-        <div className="flex flex-col gap-4">
-          {section.content.map((point, i) => {
-            const color = lineColors[i % lineColors.length];
-            return (
-              <div
-                key={i}
-                className="relative flex items-start gap-5 p-6 rounded-2xl text-left transition-all duration-300 shadow-sm hover:shadow-md"
-                style={{
-                  background: "white",
-                  border: `2px solid ${color}`,
-                }}
-              >
-                {/* circle */}
-                <div
-                  className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-lg font-black transition-all duration-300"
-                  style={{
-                    background: color,
-                    color: "white",
-                  }}
-                >
-                  {i + 1}
-                </div>
-
-                {/* text content */}
-                <div className="flex-1 pt-1">
-                  <p className="text-base leading-relaxed font-medium text-slate-800">
-                    {point}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ─── 6. COST CHALLENGES SECTION ──────────────────────────────────
 function SectionCosts({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   return (
@@ -615,57 +397,38 @@ function SectionWhereToStudy({ section, careerName }: { section: CareerGuideSect
 
 // ─── 7. CHALLENGE ALERT CARDS (expandable) ─────────────────────
 function SectionChallenges({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [expanded, setExpanded] = useState<number | null>(null);
-  const severity = ["Critical", "High", "Medium", "Critical", "High", "Medium"];
   const alertColors = ["#EF4444", "#F97316", "#EAB308", "#EF4444", "#F97316", "#EAB308"];
   
   return (
-    <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-red-50 to-orange-50 overflow-hidden border-b border-red-200 relative">
-      <div className="absolute top-1/2 left-0 w-1/4 h-2/3 opacity-[0.06] pointer-events-none hidden lg:block transform -translate-y-1/2 -translate-x-1/3 rotate-[-10deg]">
-        <img src={`https://loremflickr.com/400/400/flat,illustration,cartoon,${careerName.replace(/ /g, '-')},challenge?lock=8`} alt="" className="w-full h-full object-contain" />
-      </div>
-      <div className="max-w-5xl mx-auto relative z-10">
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-red-50 to-orange-50 overflow-hidden border-b border-red-200 relative">
+      <div className="max-w-6xl mx-auto relative z-10">
         <SectionHeader section={section} light={false} />
 
-        {/* expandable challenge cards */}
-        <div className="flex flex-col gap-4">
+        {/* Challenge Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {section.content.map((point, i) => {
-            const isExpanded = expanded === i;
+            const colonIndex = point.indexOf(":");
+            const title = colonIndex > -1 ? point.substring(0, colonIndex).trim() : point;
+            const description = colonIndex > -1 ? point.substring(colonIndex + 1).trim() : point;
+            const color = alertColors[i % alertColors.length];
+
             return (
               <div
                 key={i}
-                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
                 style={{
-                  background: "white",
+                  borderTop: `3px solid ${color}`,
                 }}
               >
-                {/* top bar */}
-                <button
-                  onClick={() => setExpanded(isExpanded ? null : i)}
-                  className="w-full px-5 py-3 flex items-center justify-between hover:opacity-90 transition-opacity"
-                  style={{ background: alertColors[i % alertColors.length] }}
-                >
-                  <div className="flex items-center gap-3">
-                    <AlertTriangle className="w-5 h-5 text-white flex-shrink-0" />
-                    <span className="text-white font-bold text-sm uppercase tracking-wider">
-                      Challenge #{i + 1}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-white text-xs">{severity[i % severity.length]}</span>
-                    <div
-                      className="transition-transform duration-300"
-                      style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
-                    >
-                      <ChevronLeft className="w-5 h-5 text-white" />
-                    </div>
-                  </div>
-                </button>
-                
-                {/* body */}
-                <div className="p-6 bg-white">
-                  <p className="text-slate-700 leading-relaxed text-base whitespace-pre-wrap">{point}</p>
-                </div>
+                {/* Title */}
+                <h3 className="text-base font-bold text-slate-900 mb-2">
+                  {title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {description}
+                </p>
               </div>
             );
           })}
@@ -759,7 +522,7 @@ const SECTION_COMPONENTS = [
   SectionResponsibilities, // Index 6: Where Are the Jobs (reuse Responsibilities style)
   SectionCosts,          // Index 7: What Will It Cost
   SectionWhereToStudy,   // Index 8: Where to Study (carousel)
-  SectionScholarship,    // Index 9: Scholarships
+  SectionChallenges,     // Index 9: Challenges (was Scholarships)
   SectionChallenges,     // Index 10: Challenges
   SectionStartNow,       // Index 11: Skills to Build
   SectionStartNow,       // Index 12: Emerging Trends (reuse StartNow style)

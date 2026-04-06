@@ -120,14 +120,6 @@ export function WhereToStudyCarousel({
             </div>
           ))}
         </div>
-
-        {/* Summary Box */}
-        <div className="mt-10 md:mt-14 p-6 md:p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200">
-          <h3 className="font-black text-slate-900 mb-3">Institution Selection Guide</h3>
-          <p className="text-slate-700 leading-relaxed">
-            Choose institutions based on your budget, location preferences, and career goals. Government institutions offer affordability and quality, private institutions provide industry connections, and online options offer flexibility for working professionals.
-          </p>
-        </div>
       </div>
     </section>
   );
