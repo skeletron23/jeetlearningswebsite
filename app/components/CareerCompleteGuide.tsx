@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { CareerGuideSection } from "@/app/data/careerPageData";
 import { DynamicIcon } from "./DynamicIcon";
 import { DayInLifeCarousel } from "./DayInLifeCarousel";
@@ -43,180 +43,153 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
     );
   }
 
-  // Fallback to original carousel for other "What" sections
+  // Modern professional carousel for "What is This Career All About?"
   const [active, setActive] = useState(0);
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleNext = () => {
-    const newIndex = (active + 1) % section.content.length;
-    setActive(newIndex);
-    scrollToCard(newIndex);
+    setActive((prev) => (prev + 1) % section.content.length);
   };
 
   const handlePrev = () => {
-    const newIndex = (active - 1 + section.content.length) % section.content.length;
-    setActive(newIndex);
-    scrollToCard(newIndex);
+    setActive((prev) => (prev - 1 + section.content.length) % section.content.length);
   };
 
-  const scrollToCard = (index: number) => {
-    if (scrollRef.current) {
-      const cardWidth = 280 + 16;
-      scrollRef.current.scrollTo({
-        left: index * cardWidth,
-        behavior: "smooth",
-      });
+  const parseContent = (text: string) => {
+    const colonIndex = text.indexOf(":");
+    if (colonIndex > -1) {
+      return {
+        title: text.slice(0, colonIndex).trim(),
+        content: text.slice(colonIndex + 1).trim(),
+      };
     }
+    const sentences = text.split(/(?<=[.!?])\s+/);
+    if (sentences.length > 1) {
+      return {
+        title: sentences[0].trim(),
+        content: sentences.slice(1).join(" ").trim(),
+      };
+    }
+    return {
+      title: text.substring(0, 50).trim(),
+      content: text.trim(),
+    };
   };
 
-  const colors = ["#1E40AF", "#F59E0B", "#059669", "#6366F1", "#E11D48", "#0D9488"];
+  const currentItem = section.content[active];
+  const { title, content } = parseContent(currentItem);
 
   return (
-    <section className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-x-hidden border-b border-blue-200">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-white border-b border-canam-border">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
 
-        {/* carousel container */}
-        <div className="relative mt-6">
-          {/* cards carousel — py-6 prevents shadow/scale clipping */}
-          <div ref={scrollRef} className="flex gap-3 md:gap-4 overflow-x-auto py-6 px-2 sm:px-4 scrollbar-hide snap-x snap-mandatory scroll-smooth items-center">
-            {section.content.map((pt, i) => {
-              const colonIndex = pt.indexOf(":");
-              let title = "";
-              let content = "";
-              
-              if (colonIndex > -1) {
-                title = pt.slice(0, colonIndex).trim();
-                content = pt.slice(colonIndex + 1).trim();
-              } else {
-                const sentences = pt.split(/(?<=[.!?])\s+/);
-                if (sentences.length > 1) {
-                  title = sentences[0].trim();
-                  content = sentences.slice(1).join(" ").trim();
-                } else {
-                  const firstSentence = pt.trim();
-                  if (firstSentence.length > 50) {
-                    title = firstSentence.substring(0, 50) + "...";
-                    content = firstSentence;
-                  } else {
-                    title = firstSentence;
-                    content = firstSentence;
-                  }
-                }
-              }
-              
-              const color = colors[i % colors.length];
-              const isActive = active === i;
-
-              return (
-                <div
-                  key={i}
-                  onClick={() => {
-                    setActive(i);
-                    scrollToCard(i);
-                  }}
-                  className={`snap-center flex-shrink-0 relative overflow-hidden rounded-[32px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] shadow-lg group flex flex-col`}
-                  style={{
-                    width: isActive ? "min(360px, 80vw)" : "min(280px, 70vw)",
-                    minHeight: "320px",
-                    background: "white",
-                  }}
-                >
-                  {/* Background gradient block at the top */}
+        {/* Clean Professional Carousel */}
+        <div className="mt-6 relative">
+          {/* Main Content Card */}
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-slate-50 to-white border border-canam-border shadow-sm hover:shadow-md transition-shadow duration-300">
+            {/* Accent Line */}
+            <div 
+              className="h-1 w-full"
+              style={{ background: section.color }}
+            />
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12">
+              {/* Left: Content (2 columns on desktop) */}
+              <div className="lg:col-span-2 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-6">
                   <div 
-                    className="absolute top-0 left-0 right-0 transition-all duration-700 ease-out"
-                    style={{ 
-                      height: isActive ? "140px" : "100px",
-                      background: `linear-gradient(135deg, ${color}, ${color}dd)` 
-                    }}
+                    className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold flex-shrink-0"
+                    style={{ background: section.color }}
                   >
-                    {/* Watermarked giant icon */}
-                    <div className="absolute -right-8 -top-8 opacity-[0.15] transform group-hover:rotate-12 transition-transform duration-700">
-                       <DynamicIcon name={section.icon} className="w-48 h-48 text-white" />
-                    </div>
+                    <DynamicIcon name={section.icon} className="w-5 h-5" />
                   </div>
-
-                  {/* Top Badge */}
-                  <div className="relative z-10 px-4 sm:px-6 pt-4 flex justify-between items-start">
-                    <div className="bg-white/20 backdrop-blur-md p-2 rounded-xl shadow-sm border border-white/30">
-                      <DynamicIcon name={section.icon} className="w-5 h-5 text-white" />
-                    </div>
-                    <div className="text-white/90 font-black text-3xl opacity-50 font-poppins">
-                      {i + 1}
-                    </div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    Point {active + 1} of {section.content.length}
                   </div>
-
-                  {/* Content Area */}
-                  <div 
-                    className="relative z-10 px-4 sm:px-6 pb-4 transition-all duration-700 ease-out flex-1 flex flex-col min-h-0"
-                    style={{ marginTop: isActive ? "40px" : "20px" }}
-                  >
-                    <h3 className={`font-poppins font-black transition-all duration-500 line-clamp-2 ${isActive ? 'text-xl mb-3' : 'text-base mb-2'}`} style={{ color: "#1F2937" }}>
-                      {title}
-                    </h3>
-                    
-                    <p className={`font-inter font-medium text-slate-600 leading-relaxed transition-all duration-500 ${isActive ? 'text-sm opacity-100 line-clamp-4' : 'text-xs opacity-90 line-clamp-2'}`}>
-                       {content}
-                    </p>
-                  </div>
-
-                  {/* Animated Border indicator for Active State */}
-                  <div 
-                    className="absolute bottom-0 left-0 h-2 bg-gradient-to-r transition-all duration-700"
-                    style={{
-                      width: isActive ? "100%" : "0%",
-                      backgroundImage: `linear-gradient(90deg, ${color}, transparent)`
-                    }}
-                  />
                 </div>
-              );
-            })}
+
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 leading-tight font-poppins">
+                  {title}
+                </h3>
+
+                <p className="text-base md:text-lg text-slate-600 leading-relaxed font-inter">
+                  {content}
+                </p>
+              </div>
+
+              {/* Right: Visual Element (1 column on desktop) */}
+              <div className="hidden lg:flex items-center justify-center">
+                <div className="relative w-full h-64 flex items-center justify-center">
+                  {/* Subtle background circle */}
+                  <div 
+                    className="absolute inset-0 rounded-full opacity-5"
+                    style={{ background: section.color }}
+                  />
+                  
+                  {/* Icon container */}
+                  <div 
+                    className="w-24 h-24 rounded-full flex items-center justify-center text-white shadow-lg"
+                    style={{ background: `linear-gradient(135deg, ${section.color}, ${section.color}dd)` }}
+                  >
+                    <DynamicIcon name={section.icon} className="w-12 h-12" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Progress Bar */}
+            <div className="px-8 md:px-12 pb-6">
+              <div className="w-full h-1 bg-slate-200 rounded-full overflow-hidden">
+                <div 
+                  className="h-full transition-all duration-500"
+                  style={{
+                    width: `${((active + 1) / section.content.length) * 100}%`,
+                    background: section.color,
+                  }}
+                />
+              </div>
+            </div>
           </div>
 
-          {/* navigation buttons floating outside the cards */}
-          <div className="absolute -left-2 sm:-left-6 top-1/2 -translate-y-1/2 z-20">
+          {/* Navigation Controls */}
+          <div className="flex items-center justify-between mt-8">
+            {/* Left Button */}
             <button
               onClick={handlePrev}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl bg-white border border-slate-100 backdrop-blur-sm group"
-              style={{ color: "#1E40AF" }}
+              className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 bg-white border border-canam-border shadow-sm hover:shadow-md group"
+              style={{ color: section.color }}
+              aria-label="Previous"
             >
-              <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 group-hover:-translate-x-1 transition-transform" />
+              <ChevronLeft className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" />
             </button>
-          </div>
 
-          <div className="absolute -right-2 sm:-right-6 top-1/2 -translate-y-1/2 z-20">
+            {/* Dot Indicators */}
+            <div className="flex gap-2">
+              {section.content.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActive(i)}
+                  className="rounded-full transition-all duration-300 hover:scale-125"
+                  style={{
+                    width: active === i ? "28px" : "10px",
+                    height: "10px",
+                    background: active === i ? section.color : `${section.color}30`,
+                  }}
+                  aria-label={`Go to point ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Right Button */}
             <button
               onClick={handleNext}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg hover:shadow-xl bg-white border border-slate-100 backdrop-blur-sm group"
-              style={{ color: "#1E40AF" }}
+              className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 bg-white border border-canam-border shadow-sm hover:shadow-md group"
+              style={{ color: section.color }}
+              aria-label="Next"
             >
-              <ChevronRight className="w-6 h-6 md:w-7 md:h-7 group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </div>
-        </div>
-
-        {/* progress indicators */}
-        <div className="mt-8 flex justify-center items-center gap-3">
-          <div className="flex gap-2">
-            {section.content.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => {
-                  setActive(i);
-                  scrollToCard(i);
-                }}
-                className="rounded-full transition-all duration-300 hover:scale-125"
-                style={{
-                  width: active === i ? "32px" : "10px",
-                  height: "10px",
-                  background: active === i ? "#1E40AF" : "#CBD5E1",
-                }}
-              />
-            ))}
-          </div>
-          <span className="text-xs md:text-sm font-semibold text-slate-600 ml-4">
-            {active + 1} / {section.content.length}
-          </span>
         </div>
       </div>
     </section>
@@ -756,19 +729,19 @@ function SectionStartNow({ section, careerName }: { section: CareerGuideSection;
 // ─── SHARED HEADER ────────────────────────────────────────────────
 function SectionHeader({ section, light = false }: { section: CareerGuideSection; light?: boolean }) {
   return (
-    <div className="mb-10">
-      <div className="flex items-center gap-4 mb-3">
+    <div className="mb-6">
+      <div className="flex items-center gap-3 mb-2">
         <div
-          className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md"
+          className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm"
           style={{ background: section.color ?? "#1E40AF" }}
         >
-          <DynamicIcon name={section.icon} className="w-7 h-7 text-white" />
+          <DynamicIcon name={section.icon} className="w-6 h-6 text-white" />
         </div>
-        <h3 className={`text-2xl sm:text-3xl md:text-4xl font-black leading-tight ${light ? "text-white" : "text-slate-900"}`}>
+        <h3 className={`text-xl sm:text-2xl md:text-3xl font-black leading-tight ${light ? "text-white" : "text-slate-900"}`}>
           {section.title}
         </h3>
       </div>
-      <p className={`text-base md:text-lg leading-relaxed max-w-2xl ${light ? "text-white/70" : "text-slate-500"}`}>
+      <p className={`text-sm md:text-base leading-relaxed max-w-2xl ${light ? "text-white/70" : "text-slate-500"}`}>
         {section.description}
       </p>
     </div>
