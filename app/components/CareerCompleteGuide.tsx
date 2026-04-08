@@ -137,7 +137,7 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
         <SectionHeader section={section} light={false} />
         
         {/* Traits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-max">
           {section.content.map((point, i) => {
             const colonIndex = point.indexOf(":");
             const title = colonIndex > -1 ? point.substring(0, colonIndex).trim() : point;
@@ -148,20 +148,20 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
             return (
               <div
                 key={i}
-                className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+                className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow h-full"
                 style={{
                   borderTop: `3px solid ${color}`,
                 }}
               >
                 {/* Icon and Title */}
-                <div className="flex items-start gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
                     style={{ background: `${color}15`, color }}
                   >
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 leading-tight">
+                  <h3 className="text-base font-bold text-slate-900">
                     {title}
                   </h3>
                 </div>
@@ -507,8 +507,8 @@ function SectionStartNow({ section, careerName }: { section: CareerGuideSection;
 // ─── SHARED HEADER ────────────────────────────────────────────────
 function SectionHeader({ section, light = false }: { section: CareerGuideSection; light?: boolean }) {
   return (
-    <div className="mb-6">
-      <div className="flex items-center gap-3 mb-2">
+    <div className="mb-6 text-center">
+      <div className="flex items-center justify-center gap-3 mb-2">
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm"
           style={{ background: section.color ?? "#1E40AF" }}
@@ -519,7 +519,7 @@ function SectionHeader({ section, light = false }: { section: CareerGuideSection
           {section.title}
         </h3>
       </div>
-      <p className={`text-sm md:text-base leading-relaxed max-w-2xl ${light ? "text-white/70" : "text-slate-500"}`}>
+      <p className={`text-sm md:text-base leading-relaxed max-w-2xl mx-auto ${light ? "text-white/70" : "text-slate-500"}`}>
         {section.description}
       </p>
     </div>
