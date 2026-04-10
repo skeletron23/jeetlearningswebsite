@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { CareerGuideSection } from "@/app/data/careerPageData";
 import { DynamicIcon } from "./DynamicIcon";
 import { DayInLifeCarousel } from "./DayInLifeCarousel";
@@ -185,8 +184,9 @@ function SectionWho({ section, careerName }: { section: CareerGuideSection; care
 function SectionResponsibilities({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   const stepColors = ["#3B82F6", "#8B5CF6", "#EC4899", "#F59E0B", "#10B981", "#06B6D4", "#6366F1"];
   
-  // Check if this is the scholarship section
+  // Check if this is the scholarship or institutions section
   const isScholarshipSection = section.id === "scholarships";
+  const isInstitutionsSection = section.id === "institutions";
   
   return (
     <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden border-b border-slate-200">
@@ -194,15 +194,15 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
         <SectionHeader section={section} light={false} />
 
         {/* Grid Layout - responsive columns */}
-        <div className={`grid gap-4 ${isScholarshipSection ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"}`}>
+        <div className={`grid gap-4 ${(isScholarshipSection || isInstitutionsSection) ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"}`}>
           {section.content.map((content, i) => {
             const colonIndex = content.indexOf(":");
             const mainTitle = colonIndex > -1 ? content.substring(0, colonIndex).trim() : content;
             const description = colonIndex > -1 ? content.substring(colonIndex + 1).trim() : content;
             const color = stepColors[i % stepColors.length];
             
-            // For scholarship section, treat each item as a simple card
-            if (isScholarshipSection) {
+            // For scholarship and institutions sections, treat each item as a simple card
+            if (isScholarshipSection || isInstitutionsSection) {
               return (
                 <div
                   key={i}
@@ -248,15 +248,21 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                       const subdesc = parenIndex > -1 ? trimmed.substring(parenIndex).trim() : "";
                       
                       return (
-                        <div key={idx}>
-                          <p className="text-base font-semibold text-slate-800">
-                            {subheading}
-                          </p>
-                          {subdesc && (
-                            <p className="text-base text-slate-600 leading-relaxed">
-                              {subdesc}
+                        <div key={idx} className="flex items-start gap-2">
+                          <div
+                            className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                            style={{ background: color }}
+                          />
+                          <div className="flex-1">
+                            <p className="text-base font-semibold text-slate-800">
+                              {subheading}
                             </p>
-                          )}
+                            {subdesc && (
+                              <p className="text-base text-slate-600 leading-relaxed">
+                                {subdesc}
+                              </p>
+                            )}
+                          </div>
                         </div>
                       );
                     })}
@@ -269,13 +275,19 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                       const subheading = item.substring(0, subColonIndex).trim();
                       const subdesc = item.substring(subColonIndex + 1).trim().replace(/[.!?]$/, "");
                       return (
-                        <div key={idx}>
-                          <p className="text-base font-semibold text-slate-800 mb-1">
-                            {subheading}
-                          </p>
-                          <p className="text-base text-slate-600 leading-relaxed">
-                            {subdesc}
-                          </p>
+                        <div key={idx} className="flex items-start gap-2">
+                          <div
+                            className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                            style={{ background: color }}
+                          />
+                          <div className="flex-1">
+                            <p className="text-base font-semibold text-slate-800 mb-1">
+                              {subheading}
+                            </p>
+                            <p className="text-base text-slate-600 leading-relaxed">
+                              {subdesc}
+                            </p>
+                          </div>
                         </div>
                       );
                     })}
@@ -295,142 +307,168 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
   );
 }
 
-// ─── 5. INSTITUTIONS SHOWCASE ────────────────────────────────────
+// ─── 5. MARKET SNAPSHOT TABLE ───────────────────────────────────
+function SectionMarketSnapshot({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
+  // Parse content to extract table data and additional info
+  const tableData = [
+    { level: "Entry-Level (Analyst)", experience: "0–2 years", salary: "₹6 Lakhs – ₹10 Lakhs" },
+    { level: "Mid-Level (Associate)", experience: "3–7 years", salary: "₹15 Lakhs – ₹30 Lakhs" },
+    { level: "Senior (Fellow)", experience: "8–12 years", salary: "₹35 Lakhs – ₹70 Lakhs" },
+    { level: "Leadership/Appointed Actuary", experience: "15+ years", salary: "₹1 Crore – ₹3 Crores+" },
+  ];
+
+  // Extract growth and hiring info from content
+  const growthInfo = section.content.find((item: string) => item.includes("Growth Projections"));
+  const hiringInfo = section.content.find((item: string) => item.includes("Hiring Trends"));
+
+  const growthText = growthInfo ? growthInfo.substring(growthInfo.indexOf(":") + 1).trim() : "";
+  const hiringText = hiringInfo ? hiringInfo.substring(hiringInfo.indexOf(":") + 1).trim() : "";
+
+  return (
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden border-b border-slate-200">
+      <div className="max-w-6xl mx-auto">
+        <SectionHeader section={section} light={false} />
+
+        {/* Table */}
+        <div className="overflow-x-auto rounded-xl border border-slate-300 shadow-sm mb-6">
+          <table className="w-full bg-white">
+            {/* Header */}
+            <thead>
+              <tr className="bg-slate-100 border-b-2 border-slate-300">
+                <th className="px-6 py-4 text-left font-bold text-slate-900 text-base md:text-lg border-r border-slate-300">
+                  Career Level
+                </th>
+                <th className="px-6 py-4 text-left font-bold text-slate-900 text-base md:text-lg border-r border-slate-300">
+                  Typical Experience
+                </th>
+                <th className="px-6 py-4 text-left font-bold text-slate-900 text-base md:text-lg">
+                  Average Annual Salary (INR)
+                </th>
+              </tr>
+            </thead>
+            {/* Body */}
+            <tbody>
+              {tableData.map((row, idx) => (
+                <tr
+                  key={idx}
+                  className={`border-b border-slate-300 ${idx % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
+                >
+                  <td className="px-6 py-4 font-semibold text-slate-900 text-base border-r border-slate-300">
+                    {row.level}
+                  </td>
+                  <td className="px-6 py-4 text-slate-700 text-base border-r border-slate-300">
+                    {row.experience}
+                  </td>
+                  <td className="px-6 py-4 text-slate-700 text-base font-semibold">
+                    {row.salary}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Additional Info as Bullet Points */}
+        <div className="space-y-3">
+          {growthText && (
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: section.color }} />
+              <p className="text-slate-700 text-base leading-relaxed">
+                <span className="font-bold">Growth Projections:</span> {growthText}
+              </p>
+            </div>
+          )}
+          {hiringText && (
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: section.color }} />
+              <p className="text-slate-700 text-base leading-relaxed">
+                <span className="font-bold">Hiring Trends:</span> {hiringText}
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
 function SectionInstitutions({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
-  const [expanded, setExpanded] = useState<number | null>(null);
-  
   const institutionTypes = [
     { type: "Public/Premier", icon: "Building2", color: "#1E40AF" },
     { type: "Private", icon: "Sparkles", color: "#7C3AED" },
     { type: "Online/Distance", icon: "Monitor", color: "#0EA5E9" },
   ];
 
-  // Group content by institution type
-  const groupedContent = section.content.reduce((acc: Record<string, string[]>, item: string) => {
-    const typeMatch = institutionTypes.find(t => item.includes(t.type));
-    const type = typeMatch?.type || "Other";
-    if (!acc[type]) acc[type] = [];
-    acc[type].push(item);
-    return acc;
-  }, {});
+  // Parse content to extract institutions for each type
+  const groupedContent: Record<string, string[]> = {};
+  
+  section.content.forEach((item: string) => {
+    const colonIndex = item.indexOf(":");
+    if (colonIndex > -1) {
+      const type = item.substring(0, colonIndex).trim();
+      const content = item.substring(colonIndex + 1).trim();
+      
+      // Split by semicolon to get individual institutions
+      const institutions = content.split(";").map(i => i.trim()).filter(i => i);
+      
+      groupedContent[type] = institutions;
+    }
+  });
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-b border-slate-200">
+    <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <SectionHeader section={section} light={false} />
 
-        {/* Institution Types Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+        {/* Institution Types Grid - All Content Visible */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {institutionTypes.map((instType, idx) => {
             const institutions = groupedContent[instType.type] || [];
-            const isExpanded = expanded === idx;
 
             return (
               <div
                 key={idx}
-                className="group cursor-pointer"
-                onClick={() => setExpanded(isExpanded ? null : idx)}
+                className="rounded-xl overflow-hidden bg-white border border-slate-200 shadow-sm"
+                style={{ borderTop: `3px solid ${instType.color}` }}
               >
-                {/* Card */}
-                <div
-                  className="relative rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-2xl h-full bg-white border-2"
-                  style={{ borderColor: `${instType.color}30` }}
-                >
-                  {/* Top accent bar */}
-                  <div
-                    className="h-1 w-full"
-                    style={{ background: instType.color }}
-                  />
-
-                  {/* Content */}
-                  <div className="p-6 md:p-8">
-                    {/* Icon and Title */}
-                    <div className="flex items-center gap-4 mb-6">
-                      <div
-                        className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-                        style={{ background: `${instType.color}15`, color: instType.color }}
-                      >
-                        <DynamicIcon name={instType.icon} className="w-7 h-7" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg md:text-xl font-black text-slate-900">
-                          {instType.type}
-                        </h3>
-                        <p className="text-xs text-slate-500 font-semibold mt-1">
-                          {institutions.length} institution{institutions.length !== 1 ? 's' : ''}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Institution count badge */}
+                {/* Content */}
+                <div className="p-5">
+                  {/* Icon and Title */}
+                  <div className="flex items-center gap-3 mb-4">
                     <div
-                      className="inline-block px-3 py-1 rounded-full text-sm font-bold mb-4"
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{ background: `${instType.color}15`, color: instType.color }}
                     >
-                      {institutions.length} Option{institutions.length !== 1 ? 's' : ''}
+                      <DynamicIcon name={instType.icon} className="w-5 h-5" />
                     </div>
-
-                    {/* Expand indicator */}
-                    <div className="flex items-center gap-2 pt-4 border-t border-slate-100">
-                      <div
-                        className="w-2 h-2 rounded-full"
-                        style={{ background: instType.color }}
-                      />
-                      <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
-                        {isExpanded ? "Hide" : "View"} Details
-                      </span>
-                    </div>
-
-                    {/* Expanded content */}
-                    {isExpanded && institutions.length > 0 && (
-                      <div className="mt-6 pt-6 border-t border-slate-100 animate-in fade-in slide-in-from-top-2 duration-300">
-                        <div className="space-y-3">
-                          {institutions.map((inst, i) => (
-                            <div key={i} className="flex items-start gap-3">
-                              <div
-                                className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                                style={{ background: instType.color }}
-                              />
-                              <p className="text-slate-700 text-base leading-relaxed">
-                                {inst.replace(instType.type + ": ", "").trim()}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+                    <h3 className="text-lg font-bold text-slate-900">
+                      {instType.type}
+                    </h3>
                   </div>
 
-                  {/* Hover accent */}
-                  <div
-                    className="absolute bottom-0 right-0 w-24 h-24 rounded-full opacity-0 group-hover:opacity-5 transition-opacity duration-300"
-                    style={{ background: instType.color }}
-                  />
+                  {/* Institutions List - All Visible */}
+                  <div className="space-y-2">
+                    {institutions.length > 0 ? (
+                      institutions.map((inst, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <div
+                            className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0"
+                            style={{ background: instType.color }}
+                          />
+                          <p className="text-slate-600 text-base leading-relaxed">
+                            {inst}
+                          </p>
+                        </div>
+                      ))
+                    ) : (
+                      <p className="text-slate-600 text-base leading-relaxed">
+                        No institutions listed
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             );
           })}
-        </div>
-
-        {/* Info Box */}
-        <div
-          className="p-6 md:p-8 rounded-2xl border-2 bg-white"
-          style={{ borderColor: `${section.color}30` }}
-        >
-          <div className="flex items-start gap-4">
-            <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: `${section.color}15`, color: section.color }}
-            >
-              <DynamicIcon name="Info" className="w-6 h-6" />
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 mb-2 text-lg">Pro Tip</h4>
-              <p className="text-slate-600 text-base leading-relaxed">
-                Most actuarial education requires classroom interaction and practical problem-solving. Choose an institution that offers strong faculty mentorship and industry connections.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -452,12 +490,7 @@ function SectionCosts({ section, careerName }: { section: CareerGuideSection; ca
 // ─── 6B. WHERE TO STUDY CAROUSEL SECTION ─────────────────────────
 function SectionWhereToStudy({ section, careerName }: { section: CareerGuideSection; careerName: string }) {
   return (
-    <WhereToStudyCarousel
-      title={section.title}
-      description={section.description}
-      items={section.content}
-      sectionColor={section.color}
-    />
+    <SectionResponsibilities section={section} careerName={careerName} />
   );
 }
 
@@ -579,14 +612,14 @@ function SectionStartNow({ section, careerName }: { section: CareerGuideSection;
 function SectionHeader({ section, light = false }: { section: CareerGuideSection; light?: boolean }) {
   return (
     <div className="mb-8 text-center">
-      <div className="flex items-center justify-center gap-4 mb-3">
+      <div className="flex items-center justify-center gap-3 mb-3">
         <div
           className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md"
           style={{ background: section.color ?? "#1E40AF" }}
         >
           <DynamicIcon name={section.icon} className="w-7 h-7 text-white" />
         </div>
-        <h2 className={`text-3xl sm:text-4xl md:text-5xl font-black leading-tight ${light ? "text-white" : "text-slate-900"}`}>
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl font-black leading-tight whitespace-nowrap ${light ? "text-white" : "text-slate-900"}`}>
           {section.title}
         </h2>
       </div>
@@ -604,7 +637,7 @@ const SECTION_COMPONENTS = [
   SectionWho,            // Index 2: Is This You
   SectionResponsibilities, // Index 3: Key Responsibilities
   SectionResponsibilities, // Index 4: Career Pathways
-  SectionResponsibilities, // Index 5: Market Snapshot
+  SectionMarketSnapshot, // Index 5: Market Snapshot
   SectionResponsibilities, // Index 6: Where Are the Jobs
   SectionInstitutions,   // Index 7: Where to Study
   SectionChallenges,     // Index 8: Professional Bodies

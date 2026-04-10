@@ -1,11 +1,5 @@
 "use client";
 
-interface InstitutionType {
-  type: string;
-  institutions: string[];
-  color: string;
-}
-
 interface WhereToStudyCarouselProps {
   title?: string;
   description?: string;
@@ -19,42 +13,23 @@ export function WhereToStudyCarousel({
   items,
   sectionColor = "#1E40AF",
 }: WhereToStudyCarouselProps) {
-  // Parse items into institution types
-  const institutionTypes: InstitutionType[] = [];
-  let currentType: InstitutionType | null = null;
   const colors = ["#EF4444", "#F97316", "#EAB308"];
 
-  items.forEach((item) => {
-    // Check if this is a type header (ends with colon or is a category)
-    if (item.includes(":") && !item.match(/^[A-Z][a-z]+:/)) {
-      // This is a type header like "Public/Premier:" or "Private:"
-      const typeMatch = item.match(/^([^:]+):/);
-      if (typeMatch) {
-        if (currentType) {
-          institutionTypes.push(currentType);
-        }
-        currentType = {
-          type: typeMatch[1].trim(),
-          institutions: [],
-          color: colors[institutionTypes.length % colors.length],
-        };
-      }
-    } else if (currentType) {
-      // Add to current type's institutions
-      currentType.institutions.push(item.trim());
-    }
-  });
+  // Parse items into institution types
+  const institutionTypes = items.map((item, idx) => {
+    const colonIndex = item.indexOf(":");
+    const type = colonIndex > -1 ? item.substring(0, colonIndex).trim() : item;
+    const content = colonIndex > -1 ? item.substring(colonIndex + 1).trim() : item;
+    
+    // Split by semicolon to get individual institutions
+    const institutions = content.split(";").map(i => i.trim()).filter(i => i);
 
-  // If no types were parsed, create a single type with all items
-  if (institutionTypes.length === 0) {
-    institutionTypes.push({
-      type: "Institutions",
-      institutions: items,
-      color: "#1E40AF",
-    });
-  } else if (currentType) {
-    institutionTypes.push(currentType);
-  }
+    return {
+      type,
+      institutions,
+      color: colors[idx % colors.length],
+    };
+  });
 
   return (
     <section className="py-8 md:py-10 px-4 sm:px-6 bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-b border-blue-200">
@@ -77,12 +52,12 @@ export function WhereToStudyCarousel({
           </p>
         </div>
 
-        {/* Grid Layout */}
+        {/* Grid Layout - All Content Visible, No Clickable Elements */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {institutionTypes.map((institution, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+              className="p-5 rounded-xl bg-white border border-slate-200 shadow-sm"
               style={{
                 borderTop: `3px solid ${institution.color}`,
               }}
@@ -92,7 +67,7 @@ export function WhereToStudyCarousel({
                 {institution.type}
               </h3>
 
-              {/* Institutions List */}
+              {/* Institutions List - All Visible */}
               <div className="space-y-2">
                 {institution.institutions.map((inst, instIdx) => (
                   <div key={instIdx} className="flex items-start gap-2">
