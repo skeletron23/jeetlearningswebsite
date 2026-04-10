@@ -77,7 +77,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
             return (
               <div
                 key={idx}
-                className="p-6 rounded-xl bg-gradient-to-br from-slate-50 to-white border border-canam-border shadow-sm hover:shadow-md transition-shadow"
+                className="p-6 rounded-xl bg-gradient-to-br from-slate-50 to-white border border-canam-border shadow-sm hover:shadow-md transition-shadow flex flex-col h-full"
               >
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-4">
@@ -93,7 +93,7 @@ function SectionWhat({ section, careerName }: { section: CareerGuideSection; car
                 </div>
 
                 {/* Content */}
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm md:text-base text-slate-600 leading-relaxed text-justify flex-1">
                   {content}
                 </p>
               </div>

@@ -197,8 +197,7 @@ export const careerPageData: Record<string, CareerPageData> = {
         content: [
           "IAI Trust Scholarships: Merit-based fee waivers for students from economically weaker sections.",
           "Corporate: Firms like Milliman and Swiss Re often sponsor the exam fees for their employees.",
-          "NSP: General government scholarships for merit students (B.Sc. level).",
-          "State Schemes: Post-Matric scholarships for SC/ST/OBC students."
+          "NSP: General government scholarships for merit students (B.Sc. level)."
         ]
       },
       {
