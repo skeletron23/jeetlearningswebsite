@@ -1,33 +1,34 @@
 "use client";
 
 import { BookOpen, Newspaper, FileText, Award } from "lucide-react";
+import Link from "next/link";
 
 const resources = [
   {
     icon: BookOpen,
     title: "Career Library",
-    description: "Comprehensive guides for 100+ career paths with detailed insights.",
+    description: "Comprehensive guides across career clusters with practical pathways.",
     color: "#3B82F6",
     link: "/career-library",
   },
   {
     icon: FileText,
     title: "Entrance Exams",
-    description: "Complete preparation guides for JEE, NEET, CAT, and more.",
+    description: "Exam strategy and planning for JEE, NEET, CUET, CAT, and more.",
     color: "#10B981",
     link: "/entrance-exams",
   },
   {
     icon: Newspaper,
     title: "Education News",
-    description: "Latest updates on education policies, scholarships, and opportunities.",
+    description: "Updates on policy, scholarships, admissions, and opportunity alerts.",
     color: "#F59E0B",
     link: "/education-news",
   },
   {
     icon: Award,
-    title: "Blog & Insights",
-    description: "Expert articles on career planning, skill development, and success stories.",
+    title: "Blog",
+    description: "Articles on counselling, skills, and student success stories.",
     color: "#EC4899",
     link: "/blog",
   },
@@ -35,7 +36,7 @@ const resources = [
 
 export function ResourcesSection() {
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-slate-50 to-indigo-50 border-b border-slate-200">
+    <section id="resources" className="py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-slate-50 to-indigo-50 border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -46,7 +47,7 @@ export function ResourcesSection() {
             Resources & Support
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Access comprehensive resources to guide your academic and career journey.
+            Access Entrance Exams, Education News, Career Library content, and expert blog insights.
           </p>
         </div>
 
@@ -78,10 +79,25 @@ export function ResourcesSection() {
         </div>
 
         {/* CTA */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+          <Link href="/dmit" className="rounded-xl border border-slate-200 bg-white p-4 text-center font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-700 transition-colors">
+            DMIT
+          </Link>
+          <Link href="/psychometric" className="rounded-xl border border-slate-200 bg-white p-4 text-center font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-700 transition-colors">
+            Psychometric Analysis Test
+          </Link>
+          <Link href="/contact" className="rounded-xl border border-slate-200 bg-white p-4 text-center font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-700 transition-colors">
+            Contact
+          </Link>
+        </div>
+
         <div className="text-center">
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-lg hover:shadow-lg transition-shadow">
+          <Link
+            href="/resources"
+            className="inline-flex px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-lg hover:shadow-lg transition-shadow"
+          >
             Explore All Resources
-          </button>
+          </Link>
         </div>
       </div>
     </section>
