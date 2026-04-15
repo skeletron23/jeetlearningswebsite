@@ -251,10 +251,10 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                   {mainTitle}
                 </h3>
 
-                {/* Content for jobs section - split by comma and add bullets */}
+                {/* Content for jobs section - split by semicolon and add bullets */}
                 {isJobsSection ? (
                   <div className="space-y-2">
-                    {description.split(",").map((item, idx) => {
+                    {description.split(";").map((item, idx) => {
                       const trimmed = item.trim();
                       if (!trimmed) return null;
                       return (

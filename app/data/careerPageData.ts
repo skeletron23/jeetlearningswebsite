@@ -172,8 +172,8 @@ export const careerPageData: Record<string, CareerPageData> = {
         description: "Industries, cities, and opportunities.",
         color: RED,
         content: [
-          "Top Industries: Life & General Insurance (LIC, HDFC Life), Reinsurance (Swiss Re, Munich Re), Consulting Firms (EY, Deloitte, Milliman), and Pension Funds.",
-          "Top Cities: Mumbai (The Financial Hub), Gurugram/Delhi, Bengaluru, Hyderabad.",
+          "Top Industries: Life & General Insurance (LIC, HDFC Life); Reinsurance (Swiss Re, Munich Re); Consulting Firms (EY, Deloitte, Milliman); Pension Funds.",
+          "Top Cities: Mumbai (The Financial Hub); Gurugram/Delhi; Bengaluru; Hyderabad.",
           "Remote Work: High potential for 'Consulting Actuaries' and data analysts to work for global firms (UK/USA) from India.",
           "International: Strong demand in USA, UK, Australia, Canada for Indian actuaries."
         ]
