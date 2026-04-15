@@ -1,6 +1,7 @@
 "use client";
 
 import { BarChart3, Users, Lightbulb, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 const assessments = [
   {
@@ -31,7 +32,7 @@ const assessments = [
 
 export function PsychometricOverview() {
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 bg-white border-b border-slate-200">
+    <section id="psychometric" className="py-16 md:py-24 px-4 sm:px-6 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -42,7 +43,7 @@ export function PsychometricOverview() {
             Psychometric Analysis Tests
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Scientific measurement of your mental capabilities, personality traits, and behavioral patterns. Make informed decisions about your future.
+            Psychometric assessments use standardized methods to measure behavior, aptitude, personality, and cognitive ability so students and professionals can make clearer academic and career decisions.
           </p>
         </div>
 
@@ -72,11 +73,74 @@ export function PsychometricOverview() {
           })}
         </div>
 
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+          <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <h3 className="text-lg font-extrabold text-slate-900 mb-3">Aptitude Tests</h3>
+            <p className="text-slate-600 text-sm mb-3">
+              Evaluate natural capacity to learn and solve new challenges through numerical, verbal, logical, and perceptual tasks.
+            </p>
+            <ul className="text-sm text-slate-700 space-y-1.5">
+              <li>Career-stream and subject alignment</li>
+              <li>Strength and weakness mapping</li>
+              <li>Future role-fit prediction</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <h3 className="text-lg font-extrabold text-slate-900 mb-3">IQ Assessments</h3>
+            <p className="text-slate-600 text-sm mb-3">
+              Measure logical reasoning, processing speed, working memory, and visual-spatial problem-solving for high-demand learning paths.
+            </p>
+            <ul className="text-sm text-slate-700 space-y-1.5">
+              <li>Cognitive benchmarking by age group</li>
+              <li>Academic acceleration planning</li>
+              <li>Role suitability in technical domains</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <h3 className="text-lg font-extrabold text-slate-900 mb-3">Personality Tests</h3>
+            <p className="text-slate-600 text-sm mb-3">
+              Understand communication style, behavioral preferences, and motivation patterns for better team fit and long-term growth.
+            </p>
+            <ul className="text-sm text-slate-700 space-y-1.5">
+              <li>Self-awareness and confidence building</li>
+              <li>Leadership and soft-skill development</li>
+              <li>Conflict and relationship management</li>
+            </ul>
+          </article>
+        </div>
+
+        <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8 mb-12">
+          <h3 className="text-2xl font-black text-slate-900 mb-4">Who Benefits</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+            <div className="rounded-xl bg-white border border-orange-100 p-4">
+              <p className="font-bold text-slate-900 mb-1">Junior Primary (7-8)</p>
+              <p className="text-slate-600">Baseline cognition and early learning-style identification.</p>
+            </div>
+            <div className="rounded-xl bg-white border border-orange-100 p-4">
+              <p className="font-bold text-slate-900 mb-1">Middle to Secondary (9-16)</p>
+              <p className="text-slate-600">Subject mapping, stream selection, and career cluster discovery.</p>
+            </div>
+            <div className="rounded-xl bg-white border border-orange-100 p-4">
+              <p className="font-bold text-slate-900 mb-1">Higher Secondary (15+)</p>
+              <p className="text-slate-600">College-course planning with aptitude-personality alignment.</p>
+            </div>
+            <div className="rounded-xl bg-white border border-orange-100 p-4">
+              <p className="font-bold text-slate-900 mb-1">Adults and Corporates</p>
+              <p className="text-slate-600">Role fit, leadership pipeline, and long-term career direction.</p>
+            </div>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="text-center">
-          <button className="px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white font-bold rounded-lg hover:shadow-lg transition-shadow">
-            Explore Psychometric Tests
-          </button>
+          <Link
+            href="/contact"
+            className="inline-flex px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white font-bold rounded-lg hover:shadow-lg transition-shadow"
+          >
+            Book Psychometric Consultation
+          </Link>
         </div>
       </div>
     </section>

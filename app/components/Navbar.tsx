@@ -90,7 +90,7 @@ export default function Navbar() {
                 href="/psychometric"
                 className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
               >
-                Psychometric
+                Psychometric Analysis Test
               </Link>
 
               <Link
@@ -209,6 +209,51 @@ export default function Navbar() {
           >
             Home
           </Link>
+
+          <div className="space-y-1 mb-8">
+            <Link
+              href="/career-library"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              Career Library
+            </Link>
+            <Link
+              href="/dmit"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              DMIT
+            </Link>
+            <Link
+              href="/psychometric"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              Psychometric Analysis Test
+            </Link>
+            <Link
+              href="/resources"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              Resources
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-slate-700 font-medium rounded-lg hover:bg-slate-100"
+            >
+              Contact
+            </Link>
+          </div>
 
           <div className="mb-8">
             <button
