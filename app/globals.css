@@ -272,7 +272,3 @@ html {
 nav {
   overflow: visible !important;
 }
-
-.group:hover > div {
-  overflow: visible !important;
-}

@@ -179,15 +179,16 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
                 >
                   <Link href={`/${category}/${career}`}>
                     <div
-                      className="group relative flex flex-col p-4 bg-white cursor-pointer h-full transition-all duration-500 hover:shadow-2xl overflow-hidden"
+                      className="group relative flex flex-col p-4 bg-white cursor-pointer h-full transition-shadow duration-500 hover:shadow-2xl"
                       style={{
                         borderRadius: "24px",
                         border: "1px solid #EEEEEE",
                         boxShadow: "0px 10px 30px rgba(0,0,0,0.03)",
+                        overflow: "hidden",
                       }}
                     >
                         {/* Specific Photo from Internet */}
-                        <div className="relative aspect-[16/10] mb-5 overflow-hidden rounded-2xl bg-slate-50 border border-[#F5F5F5]">
+                        <div className="relative aspect-[16/10] mb-5 overflow-hidden rounded-2xl bg-slate-50 border border-[#F5F5F5] flex-shrink-0">
                            <img 
                              src={getRelevantImage(career, idx)}
                              alt={formatCareerName(career)}

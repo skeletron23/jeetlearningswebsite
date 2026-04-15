@@ -44,12 +44,12 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? "backdrop-blur-xl bg-white/80 border-b border-slate-200/50 shadow-sm py-2"
-            : "bg-white/95 backdrop-blur-sm border-b border-slate-100 py-4"
+            ? "backdrop-blur-xl bg-white/90 border-b border-slate-200/40 shadow-md py-2"
+            : "bg-white border-b border-slate-200 py-3"
           }`}
       >
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-          <div className="flex justify-between items-center h-[60px]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 relative group">
               <div className="absolute inset-0 bg-[var(--color-canam-red)] blur-xl opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-full" />
@@ -58,58 +58,58 @@ export default function Navbar() {
                 alt="Canam Study Abroad"
                 width={146}
                 height={78}
-                className="h-[50px] w-auto object-contain relative z-10"
+                className="h-12 w-auto object-contain relative z-10"
                 priority
               />
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-10">
+            <div className="hidden lg:flex items-center gap-8">
               <Link
                 href="/"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 Home
               </Link>
 
               <Link
                 href="/career-library"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 Career Library
               </Link>
 
               <Link
                 href="/dmit"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 DMIT
               </Link>
 
               <Link
                 href="/psychometric"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
-                Psychometric Analysis Test
+                Psychometric
               </Link>
 
               <Link
                 href="/resources"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 Resources
               </Link>
 
               <Link
                 href="/blog"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 Blog
               </Link>
 
               <Link
                 href="/contact"
-                className="font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-canam-red)] after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors"
               >
                 Contact
               </Link>
@@ -120,28 +120,28 @@ export default function Navbar() {
                 onMouseEnter={handleDropdownEnter}
                 onMouseLeave={handleDropdownLeave}
               >
-                <button className="flex items-center gap-1.5 font-inter text-slate-600 font-medium hover:text-[var(--color-canam-red)] transition-colors py-2">
+                <button className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-[var(--color-canam-red)] transition-colors py-2">
                   Programs
                   <ChevronDown 
-                    className={`w-4 h-4 text-slate-400 hover:text-[var(--color-canam-red)] transition-all duration-300 ${isDropdownHovered ? 'rotate-180 text-[var(--color-canam-red)]' : ''}`}
+                    className={`w-4 h-4 text-slate-400 transition-all duration-300 ${isDropdownHovered ? 'rotate-180 text-[var(--color-canam-red)]' : ''}`}
                   />
                 </button>
 
                 {/* Dropdown Menu - Full width from left */}
                 {isDropdownHovered && (
-                  <div className="fixed top-[92px] left-0 right-0 pt-4 z-50 animate-in fade-in duration-200">
+                  <div className="fixed top-16 left-0 right-0 pt-2 z-50 animate-in fade-in duration-200">
                     <div 
-                      className="w-full bg-white/95 backdrop-blur-xl border-b border-slate-100/50 shadow-2xl p-6"
+                      className="w-full bg-white border-b border-slate-200 shadow-lg p-6"
                       onMouseEnter={handleDropdownEnter}
                       onMouseLeave={handleDropdownLeave}
                     >
-                      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-                        <div className="grid grid-cols-5 gap-8">
+                      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-5 gap-6">
                           {categories.map((category) => (
                             <Link
                               key={category.slug}
                               href={`/${category.slug}`}
-                              className="group flex items-center justify-between px-3 py-2 text-slate-600 hover:text-[var(--color-canam-red)] hover:bg-[var(--color-canam-red)]/5 rounded-lg transition-all duration-200 font-inter text-sm font-medium"
+                              className="group flex items-center justify-between px-3 py-2 text-slate-600 hover:text-[var(--color-canam-red)] hover:bg-red-50 rounded-lg transition-all duration-200 text-sm font-medium"
                               onClick={() => setIsDropdownHovered(false)}
                             >
                               <span className="flex-1">{category.name}</span>
@@ -158,21 +158,17 @@ export default function Navbar() {
             </div>
 
             {/* Contact & CTA */}
-            <div className="hidden md:flex items-center gap-6">
-              <div className="flex flex-col items-end">
-                <span className="text-[10px] text-slate-400 font-medium tracking-widest uppercase mb-0.5">24/7 Support</span>
-                <a href="tel:18001378055" className="group flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-slate-400 group-hover:text-[var(--color-canam-red)] transition-colors" />
-                  <span className="font-poppins text-slate-700 font-semibold text-sm group-hover:text-[var(--color-canam-red)] transition-colors">1800 137 8055</span>
-                </a>
-              </div>
+            <div className="hidden md:flex items-center gap-4">
+              <a href="tel:18001378055" className="group flex items-center gap-2 px-3 py-2">
+                <Phone className="w-4 h-4 text-slate-400 group-hover:text-[var(--color-canam-red)] transition-colors" />
+                <span className="text-xs font-semibold text-slate-600 group-hover:text-[var(--color-canam-red)] transition-colors">1800 137 8055</span>
+              </a>
 
               <Link
                 href="/contact"
-                className="relative overflow-hidden group bg-gradient-to-r from-[var(--color-canam-red)] to-[var(--color-canam-red-dark)] text-white px-7 py-2.5 rounded-full font-inter font-medium shadow-md shadow-red-500/20 hover:shadow-lg hover:shadow-red-500/40 transition-all duration-300 transform hover:-translate-y-0.5"
+                className="bg-[var(--color-canam-red)] text-white px-6 py-2.5 rounded-lg font-semibold text-sm hover:bg-[var(--color-canam-red-dark)] transition-colors shadow-md hover:shadow-lg"
               >
-                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-                <span className="relative">Book Consultation</span>
+                Book Consultation
               </Link>
             </div>
 
@@ -298,7 +294,7 @@ export default function Navbar() {
       </div>
 
       {/* Spacer */}
-      <div className="h-[92px]" />
+      <div className="h-20" />
     </>
   );
 }

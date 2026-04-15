@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { CareerDetail } from "@/app/data/careerDetails";
 import Footer from "@/app/components/Footer";
-import { FloatingNavbar } from "@/app/components/FloatingNavbar";
+import Navbar from "@/app/components/Navbar";
 import { SidebarNav } from "@/app/components/SidebarNav";
 import { CareerHero } from "@/app/components/CareerHero";
 import { CareerCompleteGuide } from "@/app/components/CareerCompleteGuide";
@@ -51,8 +51,8 @@ export function CareerPageClient({
 
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       <SidebarNav items={navItems} />
-      <FloatingNavbar />
 
       {/* All content offset on lg screens to clear the sidebar */}
       <div className="lg:pl-20">
