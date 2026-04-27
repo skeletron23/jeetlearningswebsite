@@ -70,11 +70,13 @@ export function WhereToStudyCarousel({
               {/* Institutions List - All Visible */}
               <div className="space-y-2">
                 {institution.institutions.map((inst, instIdx) => (
-                  <div key={instIdx} className="flex items-start gap-2">
-                    <div
-                      className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0"
-                      style={{ background: institution.color }}
-                    />
+                  <div key={instIdx} className="flex gap-2">
+                    <span
+                      className="text-base font-bold flex-shrink-0 leading-relaxed"
+                      style={{ color: institution.color }}
+                    >
+                      →
+                    </span>
                     <p className="text-slate-600 text-base leading-relaxed">
                       {inst}
                     </p>

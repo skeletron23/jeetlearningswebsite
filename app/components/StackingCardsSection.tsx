@@ -106,17 +106,14 @@ export default function StackingCardsSection({
                   {card.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className="flex items-start gap-3 font-poppins text-[#505050]"
+                      className="flex gap-3 font-poppins text-[#505050]"
                       style={{ fontSize: "17px", lineHeight: "24px" }}
                     >
                       <span
-                        className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
-                        style={{ background: "rgba(194, 0, 0, 0.2)" }}
+                        className="text-base font-bold flex-shrink-0 leading-relaxed"
+                        style={{ color: "#C20000" }}
                       >
-                        <span
-                          className="w-2 h-2 rounded-full"
-                          style={{ background: "#C20000" }}
-                        />
+                        →
                       </span>
                       <span>{item}</span>
                     </li>

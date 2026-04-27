@@ -126,12 +126,14 @@ export function ActuarialPathAccordion({ items }: ActuarialPathAccordionProps) {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: pointIdx * 0.05 }}
-                            className="flex gap-3 items-start"
+                            className="flex gap-3 items-center"
                           >
-                            <div
-                              className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                              style={{ background: item.color }}
-                            />
+                            <span
+                              className="text-base font-bold flex-shrink-0 leading-relaxed"
+                              style={{ color: item.color }}
+                            >
+                              →
+                            </span>
                             <p className="text-[#505050] leading-relaxed">{point}</p>
                           </motion.div>
                         ))}

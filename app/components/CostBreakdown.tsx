@@ -187,11 +187,13 @@ export function CostBreakdown({
                     <div className="px-5 md:px-7 pb-6 md:pb-8 bg-gradient-to-b from-slate-50 to-white border-t-2" style={{ borderTopColor: item.color }}>
                       <div className="space-y-3">
                         {item.details.map((detail: string, detailIdx: number) => (
-                          <div key={detailIdx} className="flex gap-3 items-start">
-                            <div
-                              className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                              style={{ background: item.color }}
-                            />
+                          <div key={detailIdx} className="flex gap-3">
+                            <span
+                              className="text-base font-bold flex-shrink-0 leading-relaxed"
+                              style={{ color: item.color }}
+                            >
+                              →
+                            </span>
                             <p className="text-sm md:text-base text-slate-700 leading-relaxed font-medium">{detail}</p>
                           </div>
                         ))}

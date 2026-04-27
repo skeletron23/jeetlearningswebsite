@@ -233,11 +233,13 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                       const subdesc = colonIndex > -1 ? trimmed.substring(colonIndex + 1).trim() : "";
                       
                       return (
-                        <div key={idx} className="flex items-start gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                            style={{ background: color }}
-                          />
+                        <div key={idx} className="flex gap-2">
+                          <span
+                            className="text-base font-bold flex-shrink-0 leading-relaxed"
+                            style={{ color }}
+                          >
+                            →
+                          </span>
                           <div className="flex-1">
                             <p className="text-base font-semibold text-slate-800">
                               {subheading}
@@ -261,11 +263,13 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                       const subdesc = colonIndex > -1 ? trimmed.substring(colonIndex + 1).trim() : "";
                       
                       return (
-                        <div key={idx} className="flex items-start gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                            style={{ background: color }}
-                          />
+                        <div key={idx} className="flex gap-2">
+                          <span
+                            className="text-base font-bold flex-shrink-0 leading-relaxed"
+                            style={{ color }}
+                          >
+                            →
+                          </span>
                           <div className="flex-1">
                             <p className="text-base font-semibold text-slate-800">
                               {subheading}
@@ -287,11 +291,13 @@ function SectionResponsibilities({ section, careerName }: { section: CareerGuide
                       const subheading = item.substring(0, subColonIndex).trim();
                       const subdesc = item.substring(subColonIndex + 1).trim().replace(/[.!?]$/, "");
                       return (
-                        <div key={idx} className="flex items-start gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                            style={{ background: color }}
-                          />
+                        <div key={idx} className="flex gap-2">
+                          <span
+                            className="text-base font-bold flex-shrink-0 leading-relaxed"
+                            style={{ color }}
+                          >
+                            →
+                          </span>
                           <div className="flex-1">
                             <p className="text-base font-semibold text-slate-800 mb-1">
                               {subheading}
@@ -384,8 +390,8 @@ function SectionMarketSnapshot({ section, careerName }: { section: CareerGuideSe
             const text = colonIndex > -1 ? item.substring(colonIndex + 1).trim() : item.trim();
 
             return (
-              <div key={idx} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: section.color }} />
+              <div key={idx} className="flex gap-3">
+                <span className="text-base font-bold flex-shrink-0 leading-relaxed" style={{ color: section.color }}>→</span>
                 <p className="text-slate-700 text-base leading-relaxed">
                   <span className="font-bold">{label}:</span> {text}
                 </p>
@@ -394,8 +400,8 @@ function SectionMarketSnapshot({ section, careerName }: { section: CareerGuideSe
           })}
 
           {parsedRows.length === 0 && infoBullets.length === 0 && (
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: section.color }} />
+            <div className="flex gap-3">
+              <span className="text-base font-bold flex-shrink-0 leading-relaxed" style={{ color: section.color }}>→</span>
               <p className="text-slate-700 text-base leading-relaxed">Market details will be updated soon.</p>
             </div>
           )}
@@ -486,11 +492,13 @@ function SectionInstitutions({ section, careerName }: { section: CareerGuideSect
                     {/* Institutions List - All Visible */}
                     <div className="space-y-2">
                       {institutions.map((inst, i) => (
-                        <div key={i} className="flex items-start gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0"
-                            style={{ background: instType.color }}
-                          />
+                        <div key={i} className="flex gap-2">
+                          <span
+                            className="text-base font-bold flex-shrink-0 leading-relaxed"
+                            style={{ color: instType.color }}
+                          >
+                            →
+                          </span>
                           <p className="text-slate-600 text-base leading-relaxed">
                             {inst}
                           </p>
@@ -559,11 +567,13 @@ function SectionChallenges({ section, careerName }: { section: CareerGuideSectio
 
                 {/* Description */}
                 {isCertificationsSection ? (
-                  <div className="flex items-start gap-2">
-                    <div
-                      className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                      style={{ background: color }}
-                    />
+                  <div className="flex gap-2">
+                    <span
+                      className="text-base font-bold flex-shrink-0 leading-relaxed"
+                      style={{ color }}
+                    >
+                      →
+                    </span>
                     <p className="text-slate-600 text-base leading-relaxed">
                       {description}
                     </p>
