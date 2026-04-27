@@ -106,42 +106,7 @@ export function ActuarialPathwayVisual() {
                     </div>
                 </div>
 
-                {/* Jobs */}
-                <div>
-                    <h4 className="flex items-center gap-2 text-lg font-bold text-slate-800 mb-6 pb-2 border-b border-slate-100"><MapPin className="text-rose-500" /> Where Are the Jobs?</h4>
-
-                    <div className="space-y-6">
-                        <div className="flex gap-4 items-start">
-                            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
-                                <MapPin className="w-5 h-5" />
-                            </div>
-                            <div>
-                                <div className="font-bold text-slate-800 mb-1">Top Cities</div>
-                                <div className="text-slate-600 text-sm leading-relaxed">Mumbai, Gurugram/Delhi-NCR, Bangalore, Hyderabad, Pune</div>
-                            </div>
-                        </div>
-
-                        <div className="flex gap-4 items-start">
-                            <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 border border-rose-100">
-                                <Building2 className="w-5 h-5" />
-                            </div>
-                            <div>
-                                <div className="font-bold text-slate-800 mb-1">Top Industries</div>
-                                <div className="text-slate-600 text-sm leading-relaxed">Life/Health/General Insurance, Consulting (Aon, WTW, PwC, Deloitte), Reinsurance, Banking, Pensions, InsurTech</div>
-                            </div>
-                        </div>
-
-                        <div className="flex gap-4 items-start">
-                            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
-                                <Globe2 className="w-5 h-5" />
-                            </div>
-                            <div>
-                                <div className="font-bold text-slate-800 mb-1">Global Demand</div>
-                                <div className="text-slate-600 text-sm leading-relaxed">Growing remote & freelance opportunities. Strong demand in UK, USA, UAE, Singapore.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
     );

@@ -229,7 +229,7 @@ export default function PsychometricPage() {
         <section className="px-4 sm:px-6 pb-14">
           <div className="max-w-6xl mx-auto rounded-2xl bg-slate-900 text-slate-100 p-6 sm:p-8">
             <h2 className="text-2xl sm:text-3xl font-black mb-5">Age and Stage Utility</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {ageBuckets.map((bucket) => (
                 <article key={bucket.label} className="rounded-xl border border-white/15 bg-white/5 p-4">
                   <h3 className="font-bold text-white">{bucket.label}</h3>
