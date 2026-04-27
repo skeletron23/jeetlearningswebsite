@@ -1,15 +1,61 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Calendar, User, Clock, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
-import { blogPosts, categories } from "@/app/data/blogData";
+import { blogPosts as staticBlogPosts, categories as staticCategories } from "@/app/data/blogData";
+
+interface AdminBlog {
+  id: number;
+  title: string;
+  category: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  date: string;
+  author: string;
+}
 
 export default function BlogClient() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [expandedPost, setExpandedPost] = useState<string | null>(null);
+  const [blogPosts, setBlogPosts] = useState(staticBlogPosts);
+  const [categories, setCategories] = useState(staticCategories);
   const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
+
+  // Load admin-added blogs from localStorage
+  useEffect(() => {
+    const savedBlogs = localStorage.getItem("blogs");
+    if (savedBlogs) {
+      const adminBlogs: AdminBlog[] = JSON.parse(savedBlogs);
+      
+      // Convert admin blogs to match the blog post format
+      const convertedAdminBlogs = adminBlogs.map((blog) => ({
+        id: blog.id.toString(),
+        title: blog.title,
+        category: blog.category,
+        excerpt: blog.excerpt,
+        content: blog.content,
+        image: blog.image || "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80",
+        date: blog.date,
+        author: blog.author,
+        featured: false,
+        readTime: 5,
+      }));
+
+      // Use only admin blogs
+      setBlogPosts(convertedAdminBlogs);
+
+      // Get unique categories from admin blogs only
+      const adminCategories = [...new Set(adminBlogs.map((b) => b.category))];
+      setCategories(["All", ...adminCategories]);
+    } else {
+      // If no admin blogs, show empty state
+      setBlogPosts([]);
+      setCategories(["All"]);
+    }
+  }, []);
 
   const filteredPosts = selectedCategory === "All" 
     ? blogPosts 
@@ -34,19 +80,19 @@ export default function BlogClient() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <p className="font-poppins text-[#757575] text-sm font-medium mb-2">
+            <p className="font-poppins text-[#757575] text-base font-medium mb-2">
               Career Insights
             </p>
             <div className="w-10 h-0.5 bg-[#C20000] mx-auto mb-4" />
             <h1
               className="font-poppins text-[#505050] font-bold mb-4"
-              style={{ fontSize: "clamp(24px, 2.5vw, 32px)", lineHeight: "1.2" }}
+              style={{ fontSize: "clamp(32px, 3.5vw, 48px)", lineHeight: "1.2" }}
             >
               Career Blog & Articles
             </h1>
             <p
               className="font-poppins text-[#757575] max-w-2xl mx-auto"
-              style={{ fontSize: "16px", lineHeight: "26px" }}
+              style={{ fontSize: "20px", lineHeight: "30px" }}
             >
               Explore insights, trends, and expert advice on career development and professional growth
             </p>
@@ -114,6 +160,9 @@ export default function BlogClient() {
                           src={post.image}
                           alt={post.title}
                           className="w-full h-full object-cover"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80";
+                          }}
                         />
                       </div>
 
@@ -181,6 +230,9 @@ export default function BlogClient() {
                               src={post.image}
                               alt={post.title}
                               className="w-full h-auto object-cover"
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80";
+                              }}
                             />
                           </div>
 

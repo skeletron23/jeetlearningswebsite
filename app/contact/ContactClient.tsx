@@ -53,13 +53,13 @@ export default function ContactClient() {
             <div className="w-10 h-0.5 bg-[#C20000] mx-auto mb-4" />
             <h1
               className="font-poppins text-[#505050] font-bold mb-4"
-              style={{ fontSize: "clamp(24px, 2.5vw, 32px)", lineHeight: "1.2" }}
+              style={{ fontSize: "clamp(32px, 3.5vw, 48px)", lineHeight: "1.2" }}
             >
               Contact Our Expert Team
             </h1>
             <p
               className="font-poppins text-[#757575] max-w-2xl mx-auto"
-              style={{ fontSize: "16px", lineHeight: "26px" }}
+              style={{ fontSize: "20px", lineHeight: "30px" }}
             >
               Have questions about your career path? Reach out to us and our counselors will get back to you within 24 hours
             </p>
@@ -92,8 +92,8 @@ export default function ContactClient() {
                     <p className="font-poppins text-[#757575] text-sm mb-2">
                       Call us during business hours
                     </p>
-                    <a href="tel:+918001278055" className="font-poppins font-semibold text-[#C20000] hover:text-[#B30000] transition-colors">
-                      +91 800 127 8055
+                    <a href="tel:+919670699777" className="font-poppins font-semibold text-[#C20000] hover:text-[#B30000] transition-colors">
+                      +91 9670699777
                     </a>
                   </div>
                 </div>
@@ -112,8 +112,8 @@ export default function ContactClient() {
                     <p className="font-poppins text-[#757575] text-sm mb-2">
                       Send us an email anytime
                     </p>
-                    <a href="mailto:info@careerguidance.com" className="font-poppins font-semibold text-[#C20000] hover:text-[#B30000] transition-colors break-all">
-                      info@careerguidance.com
+                    <a href="mailto:jeetfoundation2016@gmail.com" className="font-poppins font-semibold text-[#C20000] hover:text-[#B30000] transition-colors break-all">
+                      jeetfoundation2016@gmail.com
                     </a>
                   </div>
                 </div>
@@ -130,8 +130,8 @@ export default function ContactClient() {
                       Address
                     </h3>
                     <p className="font-poppins text-[#757575] text-sm">
-                      123 Career Street<br />
-                      New Delhi, India 110001
+                      5/126 Vikash Khand<br />
+                      Gomtinagar, Lucknow (U.P) - 226010
                     </p>
                   </div>
                 </div>
