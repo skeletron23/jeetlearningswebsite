@@ -48,7 +48,7 @@ export function PsychometricOverview() {
         </div>
 
         {/* Assessment Types Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-4 mb-12">
           {assessments.map((assessment, idx) => {
             const Icon = assessment.icon;
             return (
@@ -109,7 +109,7 @@ export function PsychometricOverview() {
 
         <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8 mb-12">
           <h3 className="text-2xl font-black text-slate-900 mb-4">Who Benefits</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 text-sm">
             <div className="rounded-xl bg-white border border-orange-100 p-4">
               <p className="font-bold text-slate-900 mb-1">Junior Primary (7-8 yrs)</p>
               <p className="text-slate-600">Baseline cognition and early learning-style identification.</p>

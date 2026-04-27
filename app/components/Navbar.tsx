@@ -71,7 +71,7 @@ export default function Navbar() {
                 href="/psychometric"
                 className="px-2 py-1.5 text-xs font-medium text-slate-600 hover:text-[var(--color-canam-red)] whitespace-nowrap transition-all duration-200"
               >
-                Psychometric
+                Psychometric test
               </Link>
 
               <Link

@@ -74,7 +74,7 @@ export function DMITOverview() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-4 mb-12">
           {features.map((feature, idx) => {
             const Icon = feature.icon;
             return (
@@ -103,7 +103,7 @@ export function DMITOverview() {
 
         <div className="rounded-2xl bg-slate-900 text-slate-100 p-6 sm:p-8 mb-10">
           <h3 className="text-2xl font-black mb-4">Practical Utility Across Life Stages</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 text-sm">
             <div className="rounded-xl border border-white/15 bg-white/5 p-4">
               <p className="font-bold mb-2">For Students</p>
               <p className="text-slate-200">Choose study methods and academic streams that fit natural cognitive style.</p>

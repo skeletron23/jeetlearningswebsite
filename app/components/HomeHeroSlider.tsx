@@ -51,7 +51,7 @@ const slides: Slide[] = [
   },
   {
     id: 4,
-    tag: "Psychometric",
+    tag: "Psychometric ",
     title: "Psychometric Testing",
     description:
       "Aptitude, IQ, and personality assessments provide objective insight into cognitive style, behavior, and decision-making under pressure.",
