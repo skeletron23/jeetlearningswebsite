@@ -109,7 +109,7 @@ export function HomeHeroSlider() {
         >
           <div className={`w-full h-full bg-gradient-to-br ${slide.bgColor} flex items-center justify-center px-4 sm:px-6`}>
             <div className="w-full max-w-6xl mx-auto">
-              <div className="max-w-4xl rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-10 backdrop-blur-md text-white shadow-2xl">
+              <div className="max-w-5xl rounded-3xl border border-white/20 bg-white/10 p-8 sm:p-14 md:p-16 backdrop-blur-md text-white shadow-2xl">
                 <span className="inline-flex rounded-full border border-white/30 bg-white/15 px-4 py-1.5 text-xs sm:text-sm font-semibold tracking-wide uppercase">
                   {slide.tag}
                 </span>

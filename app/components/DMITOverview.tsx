@@ -51,7 +51,7 @@ export function DMITOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
           <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-xl font-extrabold text-slate-900 mb-3">The Science Behind DMIT</h3>
-            <ul className="space-y-2 text-slate-700 text-sm list-disc list-inside">
+            <ul className="space-y-2 text-slate-700 text-sm list-disc pl-5">
               <li>During the 13th to 21st week of gestation, fingerprints and the neocortex develop from the same ectoderm layer</li>
               <li>DMIT uses this biological timeline to interpret likely cognitive patterns</li>
               <li>Biological link between ridges and brain lobe development</li>
@@ -62,7 +62,7 @@ export function DMITOverview() {
 
           <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-xl font-extrabold text-slate-900 mb-3">What the Report Highlights</h3>
-            <ul className="space-y-2 text-slate-700 text-sm list-disc list-inside">
+            <ul className="space-y-2 text-slate-700 text-sm list-disc pl-5">
               <li>Helps families and counsellors understand learning style</li>
               <li>Identifies possible lobe dominance patterns</li>
               <li>Suggests practical environments where the child can thrive</li>

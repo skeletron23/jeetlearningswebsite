@@ -55,7 +55,7 @@ export default function Navbar() {
 
               <Link
                 href="/career-path"
-                className="px-2 py-1.5 text-xs font-medium text-slate-600 hover:text-[var(--color-canam-red)] whitespace-nowrap transition-all duration-200"
+                className="px-2 py-1.5 text-xs font-medium text-slate-600 hover:text-[var(--coAlor-canam-red)] whitespace-nowrap transition-all duration-200"
               >
                 Career Path
               </Link>

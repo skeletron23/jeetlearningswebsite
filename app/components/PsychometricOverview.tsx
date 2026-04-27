@@ -78,7 +78,7 @@ export function PsychometricOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
           <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
             <h3 className="text-lg font-extrabold text-slate-900 mb-3">Aptitude Tests</h3>
-            <ul className="text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <ul className="text-sm text-slate-700 space-y-2 list-disc pl-5">
               <li>Evaluate natural capacity to learn and solve new challenges through numerical, verbal, logical, and perceptual tasks</li>
               <li>Career-stream and subject alignment</li>
               <li>Strength and weakness mapping</li>
@@ -88,7 +88,7 @@ export function PsychometricOverview() {
 
           <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
             <h3 className="text-lg font-extrabold text-slate-900 mb-3">IQ Assessments</h3>
-            <ul className="text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <ul className="text-sm text-slate-700 space-y-2 list-disc pl-5">
               <li>Measure logical reasoning, processing speed, working memory, and visual-spatial problem-solving for high-demand learning paths</li>
               <li>Cognitive benchmarking by age group</li>
               <li>Academic acceleration planning</li>
@@ -98,7 +98,7 @@ export function PsychometricOverview() {
 
           <article className="rounded-2xl border border-slate-200 p-6 bg-slate-50">
             <h3 className="text-lg font-extrabold text-slate-900 mb-3">Personality Tests</h3>
-            <ul className="text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <ul className="text-sm text-slate-700 space-y-2 list-disc pl-5">
               <li>Understand communication style, behavioral preferences, and motivation patterns for better team fit and long-term growth</li>
               <li>Self-awareness and confidence building</li>
               <li>Leadership and soft-skill development</li>

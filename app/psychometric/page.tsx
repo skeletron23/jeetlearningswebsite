@@ -199,7 +199,7 @@ export default function PsychometricPage() {
               {testFamilies.map((group) => (
                 <article key={group.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                   <h3 className="text-xl font-extrabold text-slate-900 mb-3">{group.title}</h3>
-                  <ul className="space-y-2 text-slate-700 list-disc list-inside">
+                  <ul className="space-y-2 text-slate-700 list-disc pl-5">
                     {group.points.map((point) => (
                       <li key={point}>{point}</li>
                     ))}
@@ -289,7 +289,7 @@ export default function PsychometricPage() {
                       <p key={paragraph}>{paragraph}</p>
                     ))}
                     {chapter.bullets && chapter.bullets.length > 0 && (
-                      <ul className="space-y-2 list-disc list-inside">
+                      <ul className="space-y-2 list-disc pl-5">
                         {chapter.bullets.map((bullet) => (
                           <li key={bullet}>{bullet}</li>
                         ))}
