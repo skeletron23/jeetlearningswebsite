@@ -1,6 +1,9 @@
 // Individual Career Cost Breakdowns
 // For careers without specific costs, falls back to category-level costs
 
+import { getCareerPageData, CareerGuideSection } from "./careerPageData";
+import { careerCategories } from "./careers";
+
 export interface CareerCostData {
   career: string;
   category: string;
@@ -12,6 +15,141 @@ export interface CareerCostData {
     color: string;
     details?: string[];
   }>;
+}
+
+const COST_ITEM_COLORS = ["#1E40AF", "#6366F1", "#F59E0B", "#10B981", "#EC4899", "#3B82F6"];
+const DEFAULT_CATEGORY = "Cost Item";
+const DEFAULT_AMOUNT = "Varies";
+const COST_SECTION_IDS = new Set(["costs", "8"]);
+const COST_SECTION_TITLE_MATCHES = ["what will it cost", "investment required"];
+
+const careerCategoryMap: Record<string, string> = {};
+for (const [categorySlug, category] of Object.entries(careerCategories)) {
+  for (const careerSlug of category.careers) {
+    careerCategoryMap[careerSlug] = categorySlug;
+  }
+}
+
+function findCostSection(sections: CareerGuideSection[]): CareerGuideSection | undefined {
+  return sections.find((section) => {
+    const id = section.id?.toLowerCase() || "";
+    const title = section.title?.toLowerCase() || "";
+    if (COST_SECTION_IDS.has(id)) return true;
+    return COST_SECTION_TITLE_MATCHES.some((match) => title.includes(match));
+  });
+}
+
+function normalizeCostLine(line: string): string {
+  return line.replace(/\s+/g, " ").trim();
+}
+
+function cleanupDescription(text: string): string {
+  return text
+    .replace(/\(\s*\)/g, "")
+    .replace(/\(\s*$/, "")
+    .replace(/^\s*\)/, "")
+    .replace(/^[\s,.;\-–—]+/, "")
+    .replace(/[\s,.;\-–—]+$/, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function splitAmountAndDescription(rest: string): { amount: string; description: string } {
+  const amountIndex = rest.indexOf("₹");
+  if (amountIndex === -1) {
+    return { amount: DEFAULT_AMOUNT, description: cleanupDescription(rest) };
+  }
+
+  const prefix = rest.slice(0, amountIndex).trim();
+  const amountAndAfter = rest.slice(amountIndex).trim();
+
+  let amountPhrase = amountAndAfter;
+  let suffix = "";
+  const sentenceMatch = amountAndAfter.match(/[.;](\s|$)/);
+  if (sentenceMatch) {
+    const splitIndex = amountAndAfter.indexOf(sentenceMatch[0]);
+    amountPhrase = amountAndAfter.slice(0, splitIndex).trim();
+    suffix = amountAndAfter.slice(splitIndex + 1).trim();
+  }
+
+  amountPhrase = amountPhrase.replace(/[\s,.;]+$/, "").trim();
+
+  const openParens = (amountPhrase.match(/\(/g) || []).length;
+  const closeParens = (amountPhrase.match(/\)/g) || []).length;
+  if (closeParens > openParens) {
+    amountPhrase = amountPhrase.replace(/\)+\s*$/, "").trim();
+  }
+
+  const parenMatch = amountPhrase.match(/\(([^)]*)\)\s*$/);
+  let parenDescription = "";
+  if (parenMatch && (amountPhrase.match(/₹/g) || []).length === 1) {
+    const parenText = parenMatch[1].trim();
+    if (/depending|varies|approx|approx\.|approximate/i.test(parenText)) {
+      amountPhrase = amountPhrase.replace(/\s*\([^)]*\)\s*$/, "").trim();
+      parenDescription = parenText;
+    }
+  }
+
+  const descriptionParts = [prefix, parenDescription, suffix].filter(Boolean);
+  const description = cleanupDescription(descriptionParts.join(" "));
+
+  return {
+    amount: amountPhrase || DEFAULT_AMOUNT,
+    description,
+  };
+}
+
+function inferIcon(label: string): string {
+  const lower = label.toLowerCase();
+  if (lower.includes("government") || lower.includes("public")) return "🏫";
+  if (lower.includes("private") || lower.includes("premier")) return "🏢";
+  if (lower.includes("living") || lower.includes("hostel") || lower.includes("rent")) return "🏠";
+  if (lower.includes("certification") || lower.includes("exam") || lower.includes("license")) return "📜";
+  if (lower.includes("coaching") || lower.includes("training")) return "📚";
+  if (lower.includes("equipment") || lower.includes("software") || lower.includes("tools")) return "💻";
+  if (lower.includes("books") || lower.includes("study") || lower.includes("materials")) return "📝";
+  return "💼";
+}
+
+function buildCostItem(line: string, index: number): CareerCostData["costs"][number] {
+  const normalized = normalizeCostLine(line);
+  if (!normalized) {
+    return {
+      category: DEFAULT_CATEGORY,
+      amount: DEFAULT_AMOUNT,
+      description: "See details",
+      icon: "💼",
+      color: COST_ITEM_COLORS[index % COST_ITEM_COLORS.length],
+    };
+  }
+
+  const colonIndex = normalized.indexOf(":");
+  const category = colonIndex > -1 ? normalized.slice(0, colonIndex).trim() : DEFAULT_CATEGORY;
+  const rest = colonIndex > -1 ? normalized.slice(colonIndex + 1).trim() : normalized;
+  const { amount, description } = splitAmountAndDescription(rest);
+
+  return {
+    category,
+    amount,
+    description: description || "See details",
+    icon: inferIcon(category),
+    color: COST_ITEM_COLORS[index % COST_ITEM_COLORS.length],
+  };
+}
+
+function buildCareerCostsFromGuide(
+  careerSlug: string,
+  categorySlug: string,
+  sections: CareerGuideSection[],
+): CareerCostData | undefined {
+  const costSection = findCostSection(sections);
+  if (!costSection || !costSection.content?.length) return undefined;
+
+  return {
+    career: careerSlug,
+    category: categorySlug,
+    costs: costSection.content.map((line, index) => buildCostItem(line, index)),
+  };
 }
 
 // ─── ACCOUNT & FINANCE - DETAILED COSTS ───────────────────────────
@@ -165,7 +303,21 @@ export const allIndividualCareerCosts: Record<string, CareerCostData> = {
 
 // Helper function to get costs for a specific career
 export function getCareerCosts(careerSlug: string): CareerCostData | undefined {
-  return allIndividualCareerCosts[careerSlug];
+  const directCosts = allIndividualCareerCosts[careerSlug];
+  if (directCosts) return directCosts;
+
+  const pageData = getCareerPageData(careerSlug);
+  if (!pageData) return undefined;
+
+  const canonicalCosts = allIndividualCareerCosts[pageData.slug];
+  if (canonicalCosts) return canonicalCosts;
+
+  const categorySlug =
+    careerCategoryMap[careerSlug] ||
+    careerCategoryMap[pageData.slug] ||
+    "unknown";
+
+  return buildCareerCostsFromGuide(pageData.slug, categorySlug, pageData.guideSections);
 }
 
 
@@ -2892,6 +3044,104 @@ export const creativeWriterCosts: CareerCostData = {
   ],
 };
 
+export const physicalTrainerCosts: CareerCostData = {
+  career: "physical_trainer",
+  category: "sports_and_physical_activities",
+  costs: [
+    {
+      category: "B.P.Ed (Government)",
+      amount: "₹10,000-30,000/yr",
+      description: "3-4 years",
+      icon: "🏫",
+      color: "#1E40AF",
+      details: [
+        "Type: Government institution",
+        "Duration: 3-4 years",
+      ],
+    },
+    {
+      category: "B.Sc (Private)",
+      amount: "₹1 Lakh-₹3 Lakh/yr",
+      description: "3 years",
+      icon: "🏢",
+      color: "#F59E0B",
+      details: [
+        "Type: Private institution",
+        "Duration: 3 years",
+      ],
+    },
+    {
+      category: "Certification (ACE/NASM)",
+      amount: "₹45,000-80,000",
+      description: "3-6 months",
+      icon: "📜",
+      color: "#6366F1",
+      details: [
+        "Global bodies certification",
+        "Duration: 3-6 months",
+      ],
+    },
+    {
+      category: "Specialized Diploma (NIS Patiala)",
+      amount: "₹20,000-50,000",
+      description: "1 year",
+      icon: "🎓",
+      color: "#10B981",
+      details: [
+        "Institute: NIS Patiala",
+        "Duration: 1 year",
+      ],
+    },
+  ],
+};
+
+export const sportspersonCosts: CareerCostData = {
+  career: "sportsperson",
+  category: "sports_and_physical_activities",
+  costs: [
+    {
+      category: "Government Academies (SAI)",
+      amount: "₹5,000-20,000 per year",
+      description: "Often free or highly subsidized",
+      icon: "🏫",
+      color: "#1E40AF",
+      details: [
+        "Subsidized training at SAI centers",
+      ],
+    },
+    {
+      category: "Private Academies",
+      amount: "₹1L-5L per year",
+      description: "Depending on the sport",
+      icon: "🏢",
+      color: "#6366F1",
+      details: [
+        "Costs vary by academy and discipline",
+      ],
+    },
+    {
+      category: "Equipment",
+      amount: "₹10,000-₹5L+",
+      description: "Varies by sport (Athletics to Shooting/Equestrian)",
+      icon: "🏋️",
+      color: "#F59E0B",
+      details: [
+        "Sport-specific gear and maintenance",
+      ],
+    },
+    {
+      category: "Travel/Tournament Entry",
+      amount: "₹50,000-2L annually",
+      description: "Domestic tours",
+      icon: "✈️",
+      color: "#10B981",
+      details: [
+        "Travel, lodging, and entry fees",
+      ],
+    },
+  ],
+};
+
 // Update allIndividualCareerCosts with new careers
 allIndividualCareerCosts.chartered_accountant = charteredAccountantCosts;
 allIndividualCareerCosts.financial_analyst = financialAnalystCosts;
@@ -2913,6 +3163,9 @@ allIndividualCareerCosts.urban_planning_and_management = urbanPlanningAndManagem
 allIndividualCareerCosts.animator = animatorCosts;
 allIndividualCareerCosts.cosmetology = cosmetologyCosts;
 allIndividualCareerCosts.creative_writer = creativeWriterCosts;
+allIndividualCareerCosts.physical_trainer = physicalTrainerCosts;
+allIndividualCareerCosts.sportsperson = sportspersonCosts;
+allIndividualCareerCosts.sports_person = sportspersonCosts;
 allIndividualCareerCosts.fashion_designing = fashionDesigningCosts;
 allIndividualCareerCosts.fashion_technology = fashionTechnologyCosts;
 allIndividualCareerCosts.fine_arts = fineArtsCosts;

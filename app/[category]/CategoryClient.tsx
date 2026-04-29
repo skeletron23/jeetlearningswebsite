@@ -58,8 +58,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
       {/* Hero */}
       <section
         ref={heroRef}
-        className="relative overflow-hidden border-b border-[#EEEEEE]"
-        style={{ minHeight: "250px" }}
+        className="relative overflow-hidden border-b border-[#EEEEEE] min-h-[220px] sm:min-h-[260px]"
       >
         {/* Full-bleed absolute background image for the Category */}
         <div className="absolute inset-0 z-0">
@@ -77,7 +76,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
           <div className="absolute inset-0 bg-white/80" />
         </div>
 
-        <div className="max-w-[1090px] mx-auto px-4 sm:px-6 py-10 relative z-10 flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className="max-w-[1090px] mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8">
           <div className="flex-1 text-center">
             {/* Label */}
             <motion.div
@@ -96,8 +95,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
               initial={{ opacity: 0, y: 20 }}
               animate={heroVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-poppins text-[#505050] font-bold mb-4"
-              style={{ fontSize: "clamp(32px, 3.5vw, 48px)", lineHeight: "1.2" }}
+              className="font-poppins text-[#505050] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight"
             >
               {displayName || "Career Programs"}
             </motion.h1>
@@ -106,8 +104,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
               initial={{ opacity: 0, y: 20 }}
               animate={heroVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-poppins text-[#757575] mb-8"
-              style={{ fontSize: "20px", lineHeight: "30px" }}
+              className="font-poppins text-[#757575] mb-6 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed"
             >
               Discover your perfect career path with our comprehensive programs and expert guidance
             </motion.p>
@@ -119,13 +116,13 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
               transition={{ duration: 0.6, delay: 0.3 }}
               className="relative max-w-lg mx-auto"
             >
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#757575] w-5 h-5" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#757575] w-4 h-4 sm:w-5 sm:h-5" />
               <input
                 type="text"
                 placeholder="Search careers..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-12 pr-5 py-3.5 bg-white/80 backdrop-blur-sm border border-[#EEEEEE] rounded-xl text-[#505050] placeholder-[#757575] focus:outline-none focus:border-[#C20000] font-poppins text-sm transition-colors shadow-sm"
+                className="w-full pl-11 sm:pl-12 pr-4 sm:pr-5 py-3 sm:py-3.5 bg-white/80 backdrop-blur-sm border border-[#EEEEEE] rounded-xl text-[#505050] placeholder-[#757575] focus:outline-none focus:border-[#C20000] font-poppins text-sm sm:text-base transition-colors shadow-sm"
               />
             </motion.div>
           </div>
@@ -136,7 +133,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
       <div className="border-t border-[#EEEEEE]" />
 
       {/* Results count */}
-      <div className="max-w-[1090px] mx-auto px-4 sm:px-6 py-6">
+      <div className="max-w-[1090px] mx-auto px-4 sm:px-6 md:px-8 py-4 sm:py-6">
         <p className="font-poppins text-[#757575] text-sm">
           Showing{" "}
           <span className="font-semibold text-[#C20000]">{filteredCareers.length}</span>{" "}
@@ -145,8 +142,8 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
       </div>
 
       {/* Careers Grid */}
-      <section className="pb-16">
-        <div className="max-w-[1090px] mx-auto px-4 sm:px-6">
+      <section className="pb-10 sm:pb-12 md:pb-16">
+        <div className="max-w-[1090px] mx-auto px-4 sm:px-6 md:px-8">
           {filteredCareers.length === 0 ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -168,7 +165,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
             </motion.div>
           ) : (
             // Show grid for all careers
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
               {filteredCareers.map((career, idx) => (
                 <motion.div
                   key={career}
@@ -179,7 +176,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
                 >
                   <Link href={`/${category}/${career}`}>
                     <div
-                      className="group relative flex flex-col p-4 bg-white cursor-pointer h-full transition-shadow duration-500 hover:shadow-2xl"
+                      className="group relative flex flex-col p-4 sm:p-5 bg-white cursor-pointer h-full transition-shadow duration-500 hover:shadow-2xl"
                       style={{
                         borderRadius: "24px",
                         border: "1px solid #EEEEEE",
@@ -188,7 +185,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
                       }}
                     >
                         {/* Specific Photo from Internet */}
-                        <div className="relative aspect-[16/10] mb-5 overflow-hidden rounded-2xl bg-slate-50 border border-[#F5F5F5] flex-shrink-0">
+                        <div className="relative aspect-[16/10] mb-4 sm:mb-5 overflow-hidden rounded-2xl bg-slate-50 border border-[#F5F5F5] flex-shrink-0">
                            <img 
                              src={getRelevantImage(career, idx)}
                              alt={formatCareerName(career)}
@@ -212,17 +209,17 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
                       <div className="px-1 flex-1 flex flex-col">
                         <div className="flex items-center justify-between mb-2">
                            <h3
-                             className="font-poppins font-bold text-[#333333] text-lg group-hover:text-[#C20000] transition-colors leading-tight"
+                             className="font-poppins font-bold text-[#333333] text-base sm:text-lg group-hover:text-[#C20000] transition-colors leading-tight"
                            >
                              {formatCareerName(career)}
                            </h3>
                            <div
-                             className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-50 border border-[#EEEEEE] group-hover:bg-[#C20000] group-hover:border-[#C20000] transition-all duration-500"
+                             className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center bg-slate-50 border border-[#EEEEEE] group-hover:bg-[#C20000] group-hover:border-[#C20000] transition-all duration-500"
                            >
-                             <ArrowRight className="w-4 h-4 text-[#757575] group-hover:text-white" />
+                             <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#757575] group-hover:text-white" />
                            </div>
                         </div>
-                        <p className="font-poppins text-[#757575] text-sm line-clamp-2 mt-auto">
+                        <p className="font-poppins text-[#757575] text-xs sm:text-sm line-clamp-2 mt-auto">
                           Premium career track with industry-recognized certifications and expert mentorship.
                         </p>
                       </div>
@@ -238,16 +235,15 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
       {/* CTA */}
       <section
         ref={ctaRef}
-        className="py-12"
+        className="py-10 sm:py-12 md:py-14"
         style={{ background: "rgba(238, 238, 238, 0.50)", borderTop: "1px solid #EEEEEE" }}
       >
-        <div className="max-w-[700px] mx-auto px-4 text-center">
+        <div className="max-w-[700px] mx-auto px-4 sm:px-6 text-center">
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             animate={ctaVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
-            className="font-poppins font-bold text-[#505050] mb-2"
-            style={{ fontSize: "26px" }}
+            className="font-poppins font-bold text-[#505050] mb-2 text-xl sm:text-2xl md:text-3xl"
           >
             Not sure which career is right for you?
           </motion.h3>
@@ -255,7 +251,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
             initial={{ opacity: 0, y: 20 }}
             animate={ctaVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-poppins text-[#757575] mb-6 text-sm"
+            className="font-poppins text-[#757575] mb-6 text-sm sm:text-base"
           >
             Get personalized guidance from our expert counselors
           </motion.p>
@@ -263,7 +259,7 @@ export function CategoryClient({ careers, category, categoryName }: CategoryClie
             initial={{ opacity: 0, scale: 0.95 }}
             animate={ctaVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-8 py-3 font-poppins font-semibold text-white rounded-xl transition-all hover:opacity-90 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 text-sm sm:text-base font-poppins font-semibold text-white rounded-xl transition-all hover:opacity-90 hover:-translate-y-0.5"
             style={{ background: "#C20000" }}
           >
             Book Free Consultation

@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-[#FAFAFA] min-h-[50vh] flex items-center pt-16 pb-12 lg:pt-20 lg:pb-16"
+      className="relative overflow-hidden bg-[#FAFAFA] min-h-[50vh] flex items-center pt-12 sm:pt-16 lg:pt-20 pb-10 sm:pb-12 lg:pb-16"
     >
       {/* Abstract Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -21,52 +21,52 @@ export default function HeroSection() {
         <div className="absolute left-0 top-0 w-full h-full opacity-[0.02]" style={{ backgroundImage: "url('/assets/hero-bg-pattern.png')", backgroundSize: "cover" }} />
       </div>
 
-      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between w-full h-full gap-12 lg:gap-20">
+      <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col lg:flex-row items-center justify-between w-full h-full gap-8 sm:gap-10 lg:gap-16 xl:gap-20">
         {/* Left: Text content */}
         <div className={`relative z-10 w-full lg:w-[50%] transition-all duration-1000 ease-out ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}>
           {/* Label */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/60 mb-8 shadow-sm hover:shadow-md hover:border-red-100 transition-all cursor-default">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/60 mb-6 sm:mb-8 shadow-sm hover:shadow-md hover:border-red-100 transition-all cursor-default">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-canam-red)] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-canam-red)]"></span>
             </span>
-            <span className="font-inter text-slate-700 text-sm font-semibold tracking-wide uppercase">
+            <span className="font-inter text-slate-700 text-xs sm:text-sm font-semibold tracking-wide uppercase">
               Empower Your Future
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-poppins text-slate-900 mb-6 text-6xl lg:text-8xl xl:text-[100px] font-bold leading-[1.05] tracking-tight">
+          <h1 className="font-poppins text-slate-900 mb-5 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight">
             Premium <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-canam-red)] to-red-500">Study Abroad</span> Counselling
           </h1>
 
           {/* Description */}
-          <p className="font-inter text-slate-600 mb-10 text-xl lg:text-2xl leading-relaxed max-w-xl">
+          <p className="font-inter text-slate-600 mb-8 sm:mb-10 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-xl">
             From university selection to visa assistance, get expert guidance
             throughout the application journey. Personalized services
             for undergrad, master's, PhD, and MBA aspirants.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-4">
             <Link
               href="/consultation"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-[var(--color-canam-red)] text-white font-inter font-semibold text-lg hover:bg-[var(--color-canam-red-dark)] hover:shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center gap-2 group"
+              className="w-full md:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-[var(--color-canam-red)] text-white font-inter font-semibold text-base sm:text-lg hover:bg-[var(--color-canam-red-dark)] hover:shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center gap-2 group"
             >
               Book Free Consultation
               <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
             <Link
               href="/programs"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-slate-700 font-inter font-semibold text-lg border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-300 flex items-center justify-center transform hover:scale-[1.02] shadow-sm"
+              className="w-full md:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white text-slate-700 font-inter font-semibold text-base sm:text-lg border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-300 flex items-center justify-center transform hover:scale-[1.02] shadow-sm"
             >
               Explore Programs
             </Link>
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-8 border-t border-slate-200">
+          <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-slate-200">
             <div className="flex -space-x-3">
               {[
                 "https://i.pravatar.cc/100?img=1",
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 "https://i.pravatar.cc/100?img=3",
                 "https://i.pravatar.cc/100?img=4"
               ].map((src, i) => (
-                <div key={i} className={`relative w-12 h-12 rounded-full border-2 border-white overflow-hidden shadow-sm z-[${10 - i}]`}>
+                <div key={i} className={`relative w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white overflow-hidden shadow-sm z-[${10 - i}]`}>
                   <img src={src} alt="Student" className="w-full h-full object-cover" />
                 </div>
               ))}

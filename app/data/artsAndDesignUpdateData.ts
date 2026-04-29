@@ -5073,19 +5073,6 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         ]
       },
       {
-        id: "8",
-        title: "What Will It Cost?",
-        icon: "DollarSign",
-        description: "Fees and expenses for aspiring sportspersons",
-        color: BLUE2,
-        content: [
-          "Government Academies (SAI): Often free or highly subsidized (₹5,000-20,000 per year).",
-          "Private Academies: ₹1L-5L per year (depending on the sport).",
-          "Equipment: Can range from ₹10,000 (Athletics) to ₹5L+ (Shooting/Equestrian).",
-          "Travel/Tournament Entry: ₹50,000-2L annually for domestic tours."
-        ]
-      },
-      {
         id: "9",
         title: "Where to Study?",
         icon: "BookOpen",
@@ -5332,10 +5319,10 @@ export const artsAndDesignUpdateData: Record<string, CareerPageData> = {
         description: "Fees and duration for physical trainer education",
         color: BLUE2,
         content: [
-          "Bachelor's (B.P.Ed) Government: ₹10,000-30,000/yr (3-4 Years)",
-          "Bachelor's (B.Sc) Private: ₹1L-3L/yr (3 Years)",
-          "Certification (ACE/NASM) Global Bodies: ₹45,000-80,000 (3-6 Months)",
-          "Specialized Diploma NIS Patiala: ₹20,000-50,000 (1 Year)"
+          "Bachelor's (B.P.Ed) Government: ₹10,000 – ₹30,000/yr (3–4 Years)",
+          "Bachelor's (B.Sc) Private: ₹1 Lakh – ₹3 Lakh/yr (3 Years)",
+          "Certification (ACE/NASM) Global Bodies: ₹45,000 – ₹80,000 (3–6 Months)",
+          "Specialized Diploma NIS Patiala: ₹20,000 – ₹50,000 (1 Year)"
         ]
       },
       {

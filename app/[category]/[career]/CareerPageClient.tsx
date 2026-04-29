@@ -67,7 +67,7 @@ export function CareerPageClient({
           />
         )}
         {!pageData && (
-          <section className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
+          <section className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20">
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-10 text-center shadow-sm">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">
                 {careerName}
@@ -151,10 +151,10 @@ export function CareerPageClient({
                 <button
                   key={idx}
                   onClick={() => setCurrentVideoIndex(idx)}
-                  className="rounded-full transition-all"
+                  className={`rounded-full transition-all h-3 sm:h-3.5 ${
+                    currentVideoIndex === idx ? "w-8 sm:w-10" : "w-3 sm:w-3.5"
+                  }`}
                   style={{
-                    width:      currentVideoIndex === idx ? "32px" : "12px",
-                    height:     "12px",
                     background: currentVideoIndex === idx ? PRIMARY_BLUE : `${PRIMARY_BLUE}40`,
                   }}
                 />

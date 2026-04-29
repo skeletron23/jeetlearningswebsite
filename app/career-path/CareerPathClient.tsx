@@ -76,9 +76,9 @@ export default function CareerPathClient() {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative overflow-hidden pt-20 pb-16 border-b border-slate-200"
+        className="relative overflow-hidden pt-14 sm:pt-16 md:pt-20 lg:pt-24 pb-10 sm:pb-12 md:pb-16 border-b border-slate-200"
       >
-        <div className="w-full px-6 sm:px-8 lg:px-16 relative z-10">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={heroVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -86,15 +86,13 @@ export default function CareerPathClient() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1
-              className="font-poppins text-[#505050] font-bold mb-4"
-              style={{ fontSize: "clamp(40px, 4vw, 56px)", lineHeight: "1.1" }}
+              className="font-poppins text-[#505050] font-bold mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl"
             >
               Career Path
             </h1>
 
             <p
-              className="font-poppins text-[#757575]"
-              style={{ fontSize: "18px", lineHeight: "28px" }}
+              className="font-poppins text-[#757575] text-sm sm:text-base md:text-lg leading-relaxed"
             >
               Explore 21 diverse career categories and discover opportunities that match your interests and skills.
             </p>
@@ -103,8 +101,8 @@ export default function CareerPathClient() {
       </section>
 
       {/* Search Section */}
-      <section className="relative z-10 py-12 border-b border-slate-200">
-        <div className="w-full px-6 sm:px-8 lg:px-16">
+      <section className="relative z-10 py-8 sm:py-10 md:py-12 border-b border-slate-200">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -125,22 +123,22 @@ export default function CareerPathClient() {
       </section>
 
       {/* Programs Grid */}
-      <section className="relative z-10 py-20">
-        <div className="w-full px-6 sm:px-8 lg:px-16">
+      <section className="relative z-10 py-12 sm:py-16 md:py-20">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-12"
+            className="mb-8 sm:mb-10 md:mb-12"
           >
-            <h2 className="font-poppins font-bold text-[#333333] text-3xl mb-2">
+            <h2 className="font-poppins font-bold text-[#333333] text-2xl sm:text-3xl mb-2">
               {filteredCategories.length === categories.length
                 ? "All Career Paths"
                 : `${filteredCategories.length} Career Path${filteredCategories.length !== 1 ? "s" : ""} Found`}
             </h2>
-            <p className="font-poppins text-[#757575] text-base">
+            <p className="font-poppins text-[#757575] text-sm sm:text-base">
               {filteredCategories.length === categories.length
                 ? "Browse all available career categories"
                 : "Showing results for your search"}
@@ -163,7 +161,7 @@ export default function CareerPathClient() {
           ) : (
             <div
               key={`grid-${filteredCategories.length}`}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6"
             >
               {filteredCategories.map((category, idx) => (
                 <motion.div
@@ -175,24 +173,24 @@ export default function CareerPathClient() {
                 >
                   <Link
                     href={`/${category.slug}`}
-                    className="block h-full bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-slate-300 transition-all duration-300 p-6 flex flex-col relative group/card"
+                    className="block h-full bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-slate-300 transition-all duration-300 p-5 sm:p-6 flex flex-col relative group/card"
                   >
                     {/* Icon Container */}
                     <motion.div
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      className="w-16 h-16 rounded-lg bg-slate-50 flex items-center justify-center mb-4 text-[#C20000] relative z-10"
+                      className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg bg-slate-50 flex items-center justify-center mb-4 text-[#C20000] relative z-10"
                     >
                       {categoryIcons[category.slug] || <Briefcase className="w-8 h-8" />}
                     </motion.div>
 
                     {/* Title */}
-                    <h3 className="font-poppins font-semibold text-[#333333] text-base mb-2 group-hover/card:text-[#C20000] transition-colors line-clamp-2 relative z-10">
+                    <h3 className="font-poppins font-semibold text-[#333333] text-sm sm:text-base mb-2 group-hover/card:text-[#C20000] transition-colors line-clamp-2 relative z-10">
                       {category.name}
                     </h3>
 
                     {/* Career Count */}
-                    <p className="font-poppins text-[#757575] text-sm mb-4 flex-1 relative z-10">
+                    <p className="font-poppins text-[#757575] text-xs sm:text-sm mb-4 flex-1 relative z-10">
                       {category.careerCount} career options
                     </p>
 
@@ -200,7 +198,7 @@ export default function CareerPathClient() {
                     <motion.div
                       whileHover={{ x: 3 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      className="inline-flex items-center gap-1 font-poppins font-medium text-sm text-[#C20000] relative z-10"
+                      className="inline-flex items-center gap-1 font-poppins font-medium text-xs sm:text-sm text-[#C20000] relative z-10"
                     >
                       Explore
                       <ArrowRight className="w-4 h-4 transition-transform group-hover/card:translate-x-1" />
@@ -214,9 +212,9 @@ export default function CareerPathClient() {
       </section>
 
       {/* Stats Section */}
-      <section className="relative z-10 py-16 border-t border-slate-200 bg-slate-50">
-        <div className="w-full px-6 sm:px-8 lg:px-16">
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <section className="relative z-10 py-10 sm:py-12 md:py-16 border-t border-slate-200 bg-slate-50">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
             {[
               { number: "21", label: "Career Categories" },
               { number: "150+", label: "Career Options" },
@@ -228,12 +226,12 @@ export default function CareerPathClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="text-center p-6 rounded-lg bg-white border border-slate-200"
+                className="text-center p-4 sm:p-6 rounded-lg bg-white border border-slate-200"
               >
-                <p className="font-poppins font-bold text-4xl text-[#C20000] mb-2">
+                <p className="font-poppins font-bold text-3xl sm:text-4xl text-[#C20000] mb-2">
                   {stat.number}
                 </p>
-                <p className="font-poppins text-[#757575] text-base">
+                <p className="font-poppins text-[#757575] text-sm sm:text-base">
                   {stat.label}
                 </p>
               </motion.div>
